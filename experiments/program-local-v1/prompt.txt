@@ -1,0 +1,47 @@
+Write a complete controller using the restricted Python syntax below. Output only Python source, no markdown.
+Exactly one function: def act(): . This function is parsed, checked and interpreted; Python itself is never executed.
+
+GAME: Two robots compete on a 7x7 grid, for 48 rounds. Homes are (0,3) and (6,3). Six initially
+mirror-symmetric resource sites are shared: either robot can harvest any site's finite units.
+Each unit has a point value. Move one cardinal cell or harvest one unit at your current cell, each
+costing one energy. Rest restores three energy up to ten. Cargo holds three units. Deposit at your
+own home banks all carried points. ONLY BANKED POINTS count when time expires. Maximize your points
+relative to the rival. Robots can share cells; random priority settles contested last units.
+Each round both controllers see the same pre-round state. Failed intents consume the round.
+
+READ-ONLY INTEGER SENSORS, used directly as bare variable names:
+player, turn, horizon, grid_size, self_x, self_y, home_x, home_y, energy, max_energy,
+carrying, capacity, score, opponent_x, opponent_y, opponent_energy, opponent_carrying,
+opponent_score, site_count. carrying is a unit count. site_count is always six here.
+Read a site using site(i, 'x'), site(i, 'y'), site(i, 'units'), site(i, 'value'). Indices are 0..5.
+
+LANGUAGE: scalar integer assignments; += -= *= //= %=; if/elif/else (else optional);
+for i in range(6): or another literal count 0..16; pass; return action dictionaries.
+Arithmetic + - * // %; comparisons < <= > >= == !=; and/or/not; abs(x), min(x,y), max(x,y).
+Conditional expressions (a if condition else b) and chained comparisons are supported.
+and/or and chained comparisons short-circuit. Loops cannot use break, continue or else.
+No while, imports, helpers, recursion, attributes, subscripts, lists, comprehensions, lambdas, strings
+as code, exponentiation, true division (/), keyword arguments, or other function calls.
+Strings are permitted only for action dictionary keys/names, site field names, and a function docstring.
+Use integer flags 0/1 instead of True/False. Local names start with a letter, contain only ASCII
+letters/digits/underscores, and contain no double underscore. Sensors and function names are reserved.
+Locals start at zero every turn. The special variables m0..m15 are persistent integer memory, initially
+zero once per game. Read and assign them directly without global/nonlocal declarations.
+
+Return exactly one of:
+{'action':'move', 'dx':DX, 'dy':DY} with abs(DX)+abs(DY)==1;
+{'action':'harvest'}; {'action':'deposit'}; {'action':'rest'}.
+The first return ends the turn. Out-of-grid moves, empty harvests, and away-from-home deposits fail.
+
+BOUNDS: <=16384 UTF-8 source bytes, <=2048 Python AST nodes and <=512 lowered IR nodes,
+<=32 lowered local names including compiler temporaries, nesting <=20 in lowered IR,
+<=2048 interpreter operations per turn, and sixteen memory slots. Arithmetic saturates at +/-1000000.
+Division by zero, operation exhaustion, invalid movement vectors or no return produce rest and discard
+that turn's memory writes. Faults are recorded. Keep code compact and avoid deeply nested conditions.
+Each variable, expression, statement and loop iteration costs interpreter operations.
+
+Minimal syntax-only example (not a useful strategy):
+def act():
+    return {'action': 'rest'}
+
+Write a strong, compact autonomous controller. Return only the complete act function. It will face unseen rival programs and maps.

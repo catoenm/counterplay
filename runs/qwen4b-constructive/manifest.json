@@ -1,0 +1,34 @@
+{
+  "config": {
+    "backend": "mlx",
+    "model": "mlx-community/Qwen3-4B-4bit",
+    "revision": null,
+    "tasks": 6,
+    "depths": "1,2,3",
+    "attempts": 2,
+    "proposals": 8,
+    "proposal_mode": "construct",
+    "seed": 17,
+    "max_tokens": 256,
+    "temperature": 0.7,
+    "max_calls": 400,
+    "max_minutes": 10.0,
+    "variants": "canonical,renamed_reordered",
+    "out": "runs/qwen4b-constructive"
+  },
+  "model": {
+    "model": "mlx-community/Qwen3-4B-4bit",
+    "snapshot": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+    "backend": "mlx",
+    "thinking": false
+  },
+  "started_utc": "2026-10-20T22:01:43.134729+00:00",
+  "python": "3.12.14",
+  "source_sha256": {
+    "pilot.py": "023684b07ce6737c4f7d653be3cf17f0d7b5267031cb630e738151944465b3f2",
+    "__init__.py": "54b3c9dd5c0cc6221ed5af3bcaae9445ced78d30114e5c79b32833ce6d37f495",
+    "environment.py": "08275810f28aadae554f25e0eb3fef5181f2188318601b1b2f12a54bd9b16846"
+  },
+  "training": false,
+  "max_planned_calls": 64
+}

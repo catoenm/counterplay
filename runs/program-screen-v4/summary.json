@@ -1,0 +1,1372 @@
+{
+  "all_replays_verified": true,
+  "attempts": 2,
+  "complete": true,
+  "costs": {
+    "evaluation_api_cost_usd": 0,
+    "new_generation_cost_usd": 0,
+    "original_response_cost_upper_usd": 0.005733,
+    "original_response_cost_usd": 0.0051186,
+    "reused_generation_responses": true,
+    "scope": "This run's generation arm only. Prior JSON screen and other pilot costs are separate; copied responses are not charged again."
+  },
+  "diagnostic_amendment": "Post-hoc packaging diagnostic on the identical two original responses. The accepted-program count is not a fresh capability rate or an independent experiment. This is not RL training. Strict v2 and parser-only v3 results remain immutable; same seeds, horizons, references, original responses, and v3 parser/IR/runtime limits.",
+  "evaluation_api_calls": 0,
+  "evaluation_sha256": "b2d5af707451ba43a7e2fa86ba82f79d5cd67966bfe24486adea2b1a08e7ff6a",
+  "failures": {
+    "invalidsyntax": 1
+  },
+  "fixed_reference_matches": 24,
+  "format_version": 1,
+  "generation_reuse": {
+    "reason": "Revalidate unchanged v2 responses under v3 parser limits plus deterministic extraction of exactly one Python fence; no semantic code edits.",
+    "source_generation_sha256": {
+      "generation-1.json": "564b2a2626e782ee7c6159e027ad673d9aa81b95669e1efa69346936be17c5c5",
+      "generation-2.json": "ced4f697c179bee064510f4beb44b4ded14faa03c0982431956d5761922cdfa1"
+    },
+    "source_run": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-screen-v2"
+  },
+  "generation_sha256": {
+    "generation-1.json": "564b2a2626e782ee7c6159e027ad673d9aa81b95669e1efa69346936be17c5c5",
+    "generation-2.json": "ced4f697c179bee064510f4beb44b4ded14faa03c0982431956d5761922cdfa1"
+  },
+  "generations": [
+    {
+      "compiled_program": {
+        "compiled_ir": {
+          "body": [
+            {
+              "else": [
+                {
+                  "set": "v_noop",
+                  "value": 0
+                }
+              ],
+              "if": {
+                "args": [
+                  {
+                    "var": "energy"
+                  },
+                  3
+                ],
+                "op": "<"
+              },
+              "then": [
+                {
+                  "emit": {
+                    "action": "rest"
+                  }
+                }
+              ]
+            },
+            {
+              "else": [
+                {
+                  "set": "v_noop",
+                  "value": 0
+                }
+              ],
+              "if": {
+                "args": [
+                  {
+                    "var": "carrying"
+                  },
+                  {
+                    "var": "capacity"
+                  }
+                ],
+                "op": ">="
+              },
+              "then": [
+                {
+                  "set": "v_t0",
+                  "value": {
+                    "args": [
+                      {
+                        "var": "self_x"
+                      },
+                      {
+                        "var": "home_x"
+                      }
+                    ],
+                    "op": "=="
+                  }
+                },
+                {
+                  "else": [
+                    {
+                      "set": "v_noop",
+                      "value": 0
+                    }
+                  ],
+                  "if": {
+                    "var": "v_t0"
+                  },
+                  "then": [
+                    {
+                      "set": "v_t0",
+                      "value": {
+                        "args": [
+                          {
+                            "var": "self_y"
+                          },
+                          {
+                            "var": "home_y"
+                          }
+                        ],
+                        "op": "=="
+                      }
+                    }
+                  ]
+                },
+                {
+                  "else": [
+                    {
+                      "set": "v_noop",
+                      "value": 0
+                    }
+                  ],
+                  "if": {
+                    "var": "v_t0"
+                  },
+                  "then": [
+                    {
+                      "emit": {
+                        "action": "deposit"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "set": "v_l0",
+                  "value": 0
+                },
+                {
+                  "set": "v_l1",
+                  "value": 0
+                },
+                {
+                  "else": [
+                    {
+                      "set": "v_noop",
+                      "value": 0
+                    }
+                  ],
+                  "if": {
+                    "args": [
+                      {
+                        "var": "self_x"
+                      },
+                      {
+                        "var": "home_x"
+                      }
+                    ],
+                    "op": "<"
+                  },
+                  "then": [
+                    {
+                      "set": "v_l0",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "else": [
+                    {
+                      "set": "v_noop",
+                      "value": 0
+                    }
+                  ],
+                  "if": {
+                    "args": [
+                      {
+                        "var": "self_x"
+                      },
+                      {
+                        "var": "home_x"
+                      }
+                    ],
+                    "op": ">"
+                  },
+                  "then": [
+                    {
+                      "set": "v_l0",
+                      "value": {
+                        "args": [
+                          1
+                        ],
+                        "op": "neg"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "else": [
+                    {
+                      "set": "v_noop",
+                      "value": 0
+                    }
+                  ],
+                  "if": {
+                    "args": [
+                      {
+                        "var": "self_y"
+                      },
+                      {
+                        "var": "home_y"
+                      }
+                    ],
+                    "op": "<"
+                  },
+                  "then": [
+                    {
+                      "set": "v_l1",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "else": [
+                    {
+                      "set": "v_noop",
+                      "value": 0
+                    }
+                  ],
+                  "if": {
+                    "args": [
+                      {
+                        "var": "self_y"
+                      },
+                      {
+                        "var": "home_y"
+                      }
+                    ],
+                    "op": ">"
+                  },
+                  "then": [
+                    {
+                      "set": "v_l1",
+                      "value": {
+                        "args": [
+                          1
+                        ],
+                        "op": "neg"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "set": "v_t1",
+                  "value": {
+                    "args": [
+                      {
+                        "var": "v_l0"
+                      },
+                      0
+                    ],
+                    "op": "!="
+                  }
+                },
+                {
+                  "else": [
+                    {
+                      "set": "v_noop",
+                      "value": 0
+                    }
+                  ],
+                  "if": {
+                    "var": "v_t1"
+                  },
+                  "then": [
+                    {
+                      "set": "v_t1",
+                      "value": {
+                        "args": [
+                          {
+                            "var": "v_l1"
+                          },
+                          0
+                        ],
+                        "op": "!="
+                      }
+                    }
+                  ]
+                },
+                {
+                  "else": [
+                    {
+                      "set": "v_noop",
+                      "value": 0
+                    }
+                  ],
+                  "if": {
+                    "var": "v_t1"
+                  },
+                  "then": [
+                    {
+                      "else": [
+                        {
+                          "set": "v_l0",
+                          "value": 0
+                        }
+                      ],
+                      "if": {
+                        "args": [
+                          {
+                            "args": [
+                              {
+                                "args": [
+                                  {
+                                    "var": "self_x"
+                                  },
+                                  {
+                                    "var": "home_x"
+                                  }
+                                ],
+                                "op": "-"
+                              }
+                            ],
+                            "op": "abs"
+                          },
+                          {
+                            "args": [
+                              {
+                                "args": [
+                                  {
+                                    "var": "self_y"
+                                  },
+                                  {
+                                    "var": "home_y"
+                                  }
+                                ],
+                                "op": "-"
+                              }
+                            ],
+                            "op": "abs"
+                          }
+                        ],
+                        "op": ">="
+                      },
+                      "then": [
+                        {
+                          "set": "v_l1",
+                          "value": 0
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "emit": {
+                    "action": "move",
+                    "dx": {
+                      "var": "v_l0"
+                    },
+                    "dy": {
+                      "var": "v_l1"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "set": "v_l2",
+              "value": {
+                "args": [
+                  1
+                ],
+                "op": "neg"
+              }
+            },
+            {
+              "set": "v_l3",
+              "value": {
+                "args": [
+                  1
+                ],
+                "op": "neg"
+              }
+            },
+            {
+              "body": [
+                {
+                  "set": "v_l5",
+                  "value": {
+                    "site": {
+                      "field": "units",
+                      "index": {
+                        "var": "v_l4"
+                      }
+                    }
+                  }
+                },
+                {
+                  "else": [
+                    {
+                      "set": "v_noop",
+                      "value": 0
+                    }
+                  ],
+                  "if": {
+                    "args": [
+                      {
+                        "var": "v_l5"
+                      },
+                      0
+                    ],
+                    "op": ">"
+                  },
+                  "then": [
+                    {
+                      "set": "v_l6",
+                      "value": {
+                        "site": {
+                          "field": "value",
+                          "index": {
+                            "var": "v_l4"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "set": "v_l7",
+                      "value": {
+                        "site": {
+                          "field": "x",
+                          "index": {
+                            "var": "v_l4"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "set": "v_l8",
+                      "value": {
+                        "site": {
+                          "field": "y",
+                          "index": {
+                            "var": "v_l4"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "set": "v_l9",
+                      "value": {
+                        "args": [
+                          {
+                            "args": [
+                              {
+                                "args": [
+                                  {
+                                    "var": "self_x"
+                                  },
+                                  {
+                                    "var": "v_l7"
+                                  }
+                                ],
+                                "op": "-"
+                              }
+                            ],
+                            "op": "abs"
+                          },
+                          {
+                            "args": [
+                              {
+                                "args": [
+                                  {
+                                    "var": "self_y"
+                                  },
+                                  {
+                                    "var": "v_l8"
+                                  }
+                                ],
+                                "op": "-"
+                              }
+                            ],
+                            "op": "abs"
+                          }
+                        ],
+                        "op": "+"
+                      }
+                    },
+                    {
+                      "else": [
+                        {
+                          "set": "v_noop",
+                          "value": 0
+                        }
+                      ],
+                      "if": {
+                        "args": [
+                          {
+                            "var": "v_l9"
+                          },
+                          0
+                        ],
+                        "op": "=="
+                      },
+                      "then": [
+                        {
+                          "emit": {
+                            "action": "harvest"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "set": "v_l10",
+                      "value": {
+                        "args": [
+                          {
+                            "args": [
+                              {
+                                "var": "v_l6"
+                              },
+                              10
+                            ],
+                            "op": "*"
+                          },
+                          {
+                            "args": [
+                              {
+                                "var": "v_l9"
+                              },
+                              2
+                            ],
+                            "op": "*"
+                          }
+                        ],
+                        "op": "-"
+                      }
+                    },
+                    {
+                      "else": [
+                        {
+                          "set": "v_noop",
+                          "value": 0
+                        }
+                      ],
+                      "if": {
+                        "args": [
+                          {
+                            "var": "v_l5"
+                          },
+                          3
+                        ],
+                        "op": "<"
+                      },
+                      "then": [
+                        {
+                          "set": "v_l10",
+                          "value": {
+                            "args": [
+                              {
+                                "var": "v_l10"
+                              },
+                              5
+                            ],
+                            "op": "-"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "else": [
+                        {
+                          "set": "v_noop",
+                          "value": 0
+                        }
+                      ],
+                      "if": {
+                        "args": [
+                          {
+                            "var": "v_l10"
+                          },
+                          {
+                            "var": "v_l3"
+                          }
+                        ],
+                        "op": ">"
+                      },
+                      "then": [
+                        {
+                          "set": "v_l3",
+                          "value": {
+                            "var": "v_l10"
+                          }
+                        },
+                        {
+                          "set": "v_l2",
+                          "value": {
+                            "var": "v_l4"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "index": "v_l4",
+              "repeat": 6
+            },
+            {
+              "else": [
+                {
+                  "set": "v_noop",
+                  "value": 0
+                }
+              ],
+              "if": {
+                "args": [
+                  {
+                    "var": "v_l2"
+                  },
+                  0
+                ],
+                "op": ">="
+              },
+              "then": [
+                {
+                  "set": "v_l7",
+                  "value": {
+                    "site": {
+                      "field": "x",
+                      "index": {
+                        "var": "v_l2"
+                      }
+                    }
+                  }
+                },
+                {
+                  "set": "v_l8",
+                  "value": {
+                    "site": {
+                      "field": "y",
+                      "index": {
+                        "var": "v_l2"
+                      }
+                    }
+                  }
+                },
+                {
+                  "set": "v_l0",
+                  "value": 0
+                },
+                {
+                  "set": "v_l1",
+                  "value": 0
+                },
+                {
+                  "else": [
+                    {
+                      "set": "v_noop",
+                      "value": 0
+                    }
+                  ],
+                  "if": {
+                    "args": [
+                      {
+                        "var": "self_x"
+                      },
+                      {
+                        "var": "v_l7"
+                      }
+                    ],
+                    "op": "<"
+                  },
+                  "then": [
+                    {
+                      "set": "v_l0",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "else": [
+                    {
+                      "set": "v_noop",
+                      "value": 0
+                    }
+                  ],
+                  "if": {
+                    "args": [
+                      {
+                        "var": "self_x"
+                      },
+                      {
+                        "var": "v_l7"
+                      }
+                    ],
+                    "op": ">"
+                  },
+                  "then": [
+                    {
+                      "set": "v_l0",
+                      "value": {
+                        "args": [
+                          1
+                        ],
+                        "op": "neg"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "else": [
+                    {
+                      "set": "v_noop",
+                      "value": 0
+                    }
+                  ],
+                  "if": {
+                    "args": [
+                      {
+                        "var": "self_y"
+                      },
+                      {
+                        "var": "v_l8"
+                      }
+                    ],
+                    "op": "<"
+                  },
+                  "then": [
+                    {
+                      "set": "v_l1",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "else": [
+                    {
+                      "set": "v_noop",
+                      "value": 0
+                    }
+                  ],
+                  "if": {
+                    "args": [
+                      {
+                        "var": "self_y"
+                      },
+                      {
+                        "var": "v_l8"
+                      }
+                    ],
+                    "op": ">"
+                  },
+                  "then": [
+                    {
+                      "set": "v_l1",
+                      "value": {
+                        "args": [
+                          1
+                        ],
+                        "op": "neg"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "set": "v_t2",
+                  "value": {
+                    "args": [
+                      {
+                        "var": "v_l0"
+                      },
+                      0
+                    ],
+                    "op": "!="
+                  }
+                },
+                {
+                  "else": [
+                    {
+                      "set": "v_noop",
+                      "value": 0
+                    }
+                  ],
+                  "if": {
+                    "var": "v_t2"
+                  },
+                  "then": [
+                    {
+                      "set": "v_t2",
+                      "value": {
+                        "args": [
+                          {
+                            "var": "v_l1"
+                          },
+                          0
+                        ],
+                        "op": "!="
+                      }
+                    }
+                  ]
+                },
+                {
+                  "else": [
+                    {
+                      "set": "v_noop",
+                      "value": 0
+                    }
+                  ],
+                  "if": {
+                    "var": "v_t2"
+                  },
+                  "then": [
+                    {
+                      "else": [
+                        {
+                          "set": "v_l0",
+                          "value": 0
+                        }
+                      ],
+                      "if": {
+                        "args": [
+                          {
+                            "args": [
+                              {
+                                "args": [
+                                  {
+                                    "var": "self_x"
+                                  },
+                                  {
+                                    "var": "v_l7"
+                                  }
+                                ],
+                                "op": "-"
+                              }
+                            ],
+                            "op": "abs"
+                          },
+                          {
+                            "args": [
+                              {
+                                "args": [
+                                  {
+                                    "var": "self_y"
+                                  },
+                                  {
+                                    "var": "v_l8"
+                                  }
+                                ],
+                                "op": "-"
+                              }
+                            ],
+                            "op": "abs"
+                          }
+                        ],
+                        "op": ">="
+                      },
+                      "then": [
+                        {
+                          "set": "v_l1",
+                          "value": 0
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "emit": {
+                    "action": "move",
+                    "dx": {
+                      "var": "v_l0"
+                    },
+                    "dy": {
+                      "var": "v_l1"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "set": "v_t3",
+              "value": {
+                "args": [
+                  {
+                    "var": "self_x"
+                  },
+                  {
+                    "var": "home_x"
+                  }
+                ],
+                "op": "=="
+              }
+            },
+            {
+              "else": [
+                {
+                  "set": "v_noop",
+                  "value": 0
+                }
+              ],
+              "if": {
+                "var": "v_t3"
+              },
+              "then": [
+                {
+                  "set": "v_t3",
+                  "value": {
+                    "args": [
+                      {
+                        "var": "self_y"
+                      },
+                      {
+                        "var": "home_y"
+                      }
+                    ],
+                    "op": "=="
+                  }
+                }
+              ]
+            },
+            {
+              "else": [
+                {
+                  "set": "v_noop",
+                  "value": 0
+                }
+              ],
+              "if": {
+                "var": "v_t3"
+              },
+              "then": [
+                {
+                  "emit": {
+                    "action": "rest"
+                  }
+                }
+              ]
+            },
+            {
+              "set": "v_l0",
+              "value": 0
+            },
+            {
+              "set": "v_l1",
+              "value": 0
+            },
+            {
+              "else": [
+                {
+                  "set": "v_noop",
+                  "value": 0
+                }
+              ],
+              "if": {
+                "args": [
+                  {
+                    "var": "self_x"
+                  },
+                  {
+                    "var": "home_x"
+                  }
+                ],
+                "op": "<"
+              },
+              "then": [
+                {
+                  "set": "v_l0",
+                  "value": 1
+                }
+              ]
+            },
+            {
+              "else": [
+                {
+                  "set": "v_noop",
+                  "value": 0
+                }
+              ],
+              "if": {
+                "args": [
+                  {
+                    "var": "self_x"
+                  },
+                  {
+                    "var": "home_x"
+                  }
+                ],
+                "op": ">"
+              },
+              "then": [
+                {
+                  "set": "v_l0",
+                  "value": {
+                    "args": [
+                      1
+                    ],
+                    "op": "neg"
+                  }
+                }
+              ]
+            },
+            {
+              "else": [
+                {
+                  "set": "v_noop",
+                  "value": 0
+                }
+              ],
+              "if": {
+                "args": [
+                  {
+                    "var": "self_y"
+                  },
+                  {
+                    "var": "home_y"
+                  }
+                ],
+                "op": "<"
+              },
+              "then": [
+                {
+                  "set": "v_l1",
+                  "value": 1
+                }
+              ]
+            },
+            {
+              "else": [
+                {
+                  "set": "v_noop",
+                  "value": 0
+                }
+              ],
+              "if": {
+                "args": [
+                  {
+                    "var": "self_y"
+                  },
+                  {
+                    "var": "home_y"
+                  }
+                ],
+                "op": ">"
+              },
+              "then": [
+                {
+                  "set": "v_l1",
+                  "value": {
+                    "args": [
+                      1
+                    ],
+                    "op": "neg"
+                  }
+                }
+              ]
+            },
+            {
+              "set": "v_t4",
+              "value": {
+                "args": [
+                  {
+                    "var": "v_l0"
+                  },
+                  0
+                ],
+                "op": "!="
+              }
+            },
+            {
+              "else": [
+                {
+                  "set": "v_noop",
+                  "value": 0
+                }
+              ],
+              "if": {
+                "var": "v_t4"
+              },
+              "then": [
+                {
+                  "set": "v_t4",
+                  "value": {
+                    "args": [
+                      {
+                        "var": "v_l1"
+                      },
+                      0
+                    ],
+                    "op": "!="
+                  }
+                }
+              ]
+            },
+            {
+              "else": [
+                {
+                  "set": "v_noop",
+                  "value": 0
+                }
+              ],
+              "if": {
+                "var": "v_t4"
+              },
+              "then": [
+                {
+                  "else": [
+                    {
+                      "set": "v_l0",
+                      "value": 0
+                    }
+                  ],
+                  "if": {
+                    "args": [
+                      {
+                        "args": [
+                          {
+                            "args": [
+                              {
+                                "var": "self_x"
+                              },
+                              {
+                                "var": "home_x"
+                              }
+                            ],
+                            "op": "-"
+                          }
+                        ],
+                        "op": "abs"
+                      },
+                      {
+                        "args": [
+                          {
+                            "args": [
+                              {
+                                "var": "self_y"
+                              },
+                              {
+                                "var": "home_y"
+                              }
+                            ],
+                            "op": "-"
+                          }
+                        ],
+                        "op": "abs"
+                      }
+                    ],
+                    "op": ">="
+                  },
+                  "then": [
+                    {
+                      "set": "v_l1",
+                      "value": 0
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "emit": {
+                "action": "move",
+                "dx": {
+                  "var": "v_l0"
+                },
+                "dy": {
+                  "var": "v_l1"
+                }
+              }
+            }
+          ],
+          "version": 1
+        },
+        "frontend_version": 2,
+        "ir_sha256": "9a23f52ffc4d42af2c8a78154e8e44ec5bdf408cc306741c45ca9d0933489a49",
+        "python_sha256": "83fb11c6279996a667be4a811d4c0df3455103d2c558e439b2fd9ae9507d4d5c",
+        "python_source": "def act():\n    if energy < 3:\n        return {'action': 'rest'}\n    if carrying >= capacity:\n        if self_x == home_x and self_y == home_y:\n            return {'action': 'deposit'}\n        dx = 0\n        dy = 0\n        if self_x < home_x:\n            dx = 1\n        if self_x > home_x:\n            dx = -1\n        if self_y < home_y:\n            dy = 1\n        if self_y > home_y:\n            dy = -1\n        if dx != 0 and dy != 0:\n            if abs(self_x - home_x) >= abs(self_y - home_y):\n                dy = 0\n            else:\n                dx = 0\n        return {'action': 'move', 'dx': dx, 'dy': dy}\n    best = -1\n    best_val = -1\n    for i in range(6):\n        u = site(i, 'units')\n        if u > 0:\n            v = site(i, 'value')\n            sx = site(i, 'x')\n            sy = site(i, 'y')\n            dist = abs(self_x - sx) + abs(self_y - sy)\n            if dist == 0:\n                return {'action': 'harvest'}\n            score_est = v * 10 - dist * 2\n            if u < 3:\n                score_est -= 5\n            if score_est > best_val:\n                best_val = score_est\n                best = i\n    if best >= 0:\n        sx = site(best, 'x')\n        sy = site(best, 'y')\n        dx = 0\n        dy = 0\n        if self_x < sx:\n            dx = 1\n        if self_x > sx:\n            dx = -1\n        if self_y < sy:\n            dy = 1\n        if self_y > sy:\n            dy = -1\n        if dx != 0 and dy != 0:\n            if abs(self_x - sx) >= abs(self_y - sy):\n                dy = 0\n            else:\n                dx = 0\n        return {'action': 'move', 'dx': dx, 'dy': dy}\n    if self_x == home_x and self_y == home_y:\n        return {'action': 'rest'}\n    dx = 0\n    dy = 0\n    if self_x < home_x:\n        dx = 1\n    if self_x > home_x:\n        dx = -1\n    if self_y < home_y:\n        dy = 1\n    if self_y > home_y:\n        dy = -1\n    if dx != 0 and dy != 0:\n        if abs(self_x - home_x) >= abs(self_y - home_y):\n            dy = 0\n        else:\n            dx = 0\n    return {'action': 'move', 'dx': dx, 'dy': dy}",
+        "source_language": "bounded_python_syntax"
+      },
+      "cost_upper_usd": 0.0027053,
+      "cost_usd": 0.0027053,
+      "failure": null,
+      "finish_reason": "stop",
+      "missing_final": false,
+      "normalization": "none",
+      "normalization_source_sha256": "4b0095b507dc50b05285b3c10931923543ba2bd976c6f54511d5ab1bc5a85163",
+      "normalization_version": 2,
+      "normalized_source": "def act():\n    if energy < 3:\n        return {'action': 'rest'}\n    if carrying >= capacity:\n        if self_x == home_x and self_y == home_y:\n            return {'action': 'deposit'}\n        dx = 0\n        dy = 0\n        if self_x < home_x:\n            dx = 1\n        if self_x > home_x:\n            dx = -1\n        if self_y < home_y:\n            dy = 1\n        if self_y > home_y:\n            dy = -1\n        if dx != 0 and dy != 0:\n            if abs(self_x - home_x) >= abs(self_y - home_y):\n                dy = 0\n            else:\n                dx = 0\n        return {'action': 'move', 'dx': dx, 'dy': dy}\n    best = -1\n    best_val = -1\n    for i in range(6):\n        u = site(i, 'units')\n        if u > 0:\n            v = site(i, 'value')\n            sx = site(i, 'x')\n            sy = site(i, 'y')\n            dist = abs(self_x - sx) + abs(self_y - sy)\n            if dist == 0:\n                return {'action': 'harvest'}\n            score_est = v * 10 - dist * 2\n            if u < 3:\n                score_est -= 5\n            if score_est > best_val:\n                best_val = score_est\n                best = i\n    if best >= 0:\n        sx = site(best, 'x')\n        sy = site(best, 'y')\n        dx = 0\n        dy = 0\n        if self_x < sx:\n            dx = 1\n        if self_x > sx:\n            dx = -1\n        if self_y < sy:\n            dy = 1\n        if self_y > sy:\n            dy = -1\n        if dx != 0 and dy != 0:\n            if abs(self_x - sx) >= abs(self_y - sy):\n                dy = 0\n            else:\n                dx = 0\n        return {'action': 'move', 'dx': dx, 'dy': dy}\n    if self_x == home_x and self_y == home_y:\n        return {'action': 'rest'}\n    dx = 0\n    dy = 0\n    if self_x < home_x:\n        dx = 1\n    if self_x > home_x:\n        dx = -1\n    if self_y < home_y:\n        dy = 1\n    if self_y > home_y:\n        dy = -1\n    if dx != 0 and dy != 0:\n        if abs(self_x - home_x) >= abs(self_y - home_y):\n            dy = 0\n        else:\n            dx = 0\n    return {'action': 'move', 'dx': dx, 'dy': dy}",
+      "normalized_source_sha256": "83fb11c6279996a667be4a811d4c0df3455103d2c558e439b2fd9ae9507d4d5c",
+      "original_text": "def act():\n    if energy < 3:\n        return {'action': 'rest'}\n    if carrying >= capacity:\n        if self_x == home_x and self_y == home_y:\n            return {'action': 'deposit'}\n        dx = 0\n        dy = 0\n        if self_x < home_x:\n            dx = 1\n        if self_x > home_x:\n            dx = -1\n        if self_y < home_y:\n            dy = 1\n        if self_y > home_y:\n            dy = -1\n        if dx != 0 and dy != 0:\n            if abs(self_x - home_x) >= abs(self_y - home_y):\n                dy = 0\n            else:\n                dx = 0\n        return {'action': 'move', 'dx': dx, 'dy': dy}\n    best = -1\n    best_val = -1\n    for i in range(6):\n        u = site(i, 'units')\n        if u > 0:\n            v = site(i, 'value')\n            sx = site(i, 'x')\n            sy = site(i, 'y')\n            dist = abs(self_x - sx) + abs(self_y - sy)\n            if dist == 0:\n                return {'action': 'harvest'}\n            score_est = v * 10 - dist * 2\n            if u < 3:\n                score_est -= 5\n            if score_est > best_val:\n                best_val = score_est\n                best = i\n    if best >= 0:\n        sx = site(best, 'x')\n        sy = site(best, 'y')\n        dx = 0\n        dy = 0\n        if self_x < sx:\n            dx = 1\n        if self_x > sx:\n            dx = -1\n        if self_y < sy:\n            dy = 1\n        if self_y > sy:\n            dy = -1\n        if dx != 0 and dy != 0:\n            if abs(self_x - sx) >= abs(self_y - sy):\n                dy = 0\n            else:\n                dx = 0\n        return {'action': 'move', 'dx': dx, 'dy': dy}\n    if self_x == home_x and self_y == home_y:\n        return {'action': 'rest'}\n    dx = 0\n    dy = 0\n    if self_x < home_x:\n        dx = 1\n    if self_x > home_x:\n        dx = -1\n    if self_y < home_y:\n        dy = 1\n    if self_y > home_y:\n        dy = -1\n    if dx != 0 and dy != 0:\n        if abs(self_x - home_x) >= abs(self_y - home_y):\n            dy = 0\n        else:\n            dx = 0\n    return {'action': 'move', 'dx': dx, 'dy': dy}",
+      "original_text_sha256": "83fb11c6279996a667be4a811d4c0df3455103d2c558e439b2fd9ae9507d4d5c",
+      "python_ast_nodes": 543,
+      "reasoning_mode": "off",
+      "response_file": "generation-1.json",
+      "response_sha256": "564b2a2626e782ee7c6159e027ad673d9aa81b95669e1efa69346936be17c5c5",
+      "returned_model": "deepseek/deepseek-v4-pro-0813",
+      "returned_provider": "DeepInfra",
+      "sample_id": "controller-python-1",
+      "source_bytes": 2059,
+      "usage": {
+        "completion_tokens": 629,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "image_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "cost": 0.0027053,
+        "cost_details": {
+          "upstream_inference_completions_cost": 0.0016354,
+          "upstream_inference_cost": 0.0027053,
+          "upstream_inference_prompt_cost": 0.0010699
+        },
+        "is_byok": false,
+        "prompt_tokens": 823,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "video_tokens": 0
+        },
+        "total_tokens": 1452
+      },
+      "valid": true
+    },
+    {
+      "compiled_program": null,
+      "cost_upper_usd": 0.0030277,
+      "cost_usd": 0.0024133,
+      "error": "line 13: sensors are read-only",
+      "failure": "invalidsyntax",
+      "finish_reason": "stop",
+      "missing_final": false,
+      "normalization": "extracted_single_python_fence_with_prose",
+      "normalization_source_sha256": "4b0095b507dc50b05285b3c10931923543ba2bd976c6f54511d5ab1bc5a85163",
+      "normalization_version": 2,
+      "normalized_source": "def act():\n    # Identify the best site to visit next based on value and distance\n    best_site = -1\n    best_score = -1000000\n    for i in range(6):\n        sx = site(i, 'x')\n        sy = site(i, 'y')\n        units = site(i, 'units')\n        val = site(i, 'value')\n        if units > 0:\n            dist = abs(sx - self_x) + abs(sy - self_y)\n            # Prefer high value, close sites; penalize distance\n            score = val * 100 - dist * 10\n            if score > best_score:\n                best_score = score\n                best_site = i\n\n    # If we are at home and carrying something, deposit\n    if self_x == home_x and self_y == home_y and carrying > 0:\n        return {'action': 'deposit'}\n\n    # If cargo is full, go home\n    if carrying >= capacity:\n        if self_x < home_x:\n            return {'action': 'move', 'dx': 1, 'dy': 0}\n        if self_x > home_x:\n            return {'action': 'move', 'dx': -1, 'dy': 0}\n        if self_y < home_y:\n            return {'action': 'move', 'dx': 0, 'dy': 1}\n        if self_y > home_y:\n            return {'action': 'move', 'dx': 0, 'dy': -1}\n        return {'action': 'rest'}\n\n    # If no good site found, rest or go home\n    if best_site < 0:\n        if self_x == home_x and self_y == home_y:\n            return {'action': 'rest'}\n        if self_x < home_x:\n            return {'action': 'move', 'dx': 1, 'dy': 0}\n        if self_x > home_x:\n            return {'action': 'move', 'dx': -1, 'dy': 0}\n        if self_y < home_y:\n            return {'action': 'move', 'dx': 0, 'dy': 1}\n        if self_y > home_y:\n            return {'action': 'move', 'dx': 0, 'dy': -1}\n        return {'action': 'rest'}\n\n    # If at a site with units, harvest if energy allows\n    sx = site(best_site, 'x')\n    sy = site(best_site, 'y')\n    if self_x == sx and self_y == sy:\n        if site(best_site, 'units') > 0 and energy > 0:\n            return {'action': 'harvest'}\n        else:\n            return {'action': 'rest'}\n\n    # Move toward the best site\n    if self_x < sx:\n        return {'action': 'move', 'dx': 1, 'dy': 0}\n    if self_x > sx:\n        return {'action': 'move', 'dx': -1, 'dy': 0}\n    if self_y < sy:\n        return {'action': 'move', 'dx': 0, 'dy': 1}\n    if self_y > sy:\n        return {'action': 'move', 'dx': 0, 'dy': -1}\n    return {'action': 'rest'}\n",
+      "normalized_source_sha256": "f7bcca992777a6d513d0c91c9a929df4baa9cdc5d944145f9d319c4192341427",
+      "original_text": "-model-only\nHere is a complete controller written in the restricted syntax. It is a compact, self-contained strategy that tries to bank high-value resources efficiently while managing energy and avoiding wasted trips.\n\n```python\ndef act():\n    # Identify the best site to visit next based on value and distance\n    best_site = -1\n    best_score = -1000000\n    for i in range(6):\n        sx = site(i, 'x')\n        sy = site(i, 'y')\n        units = site(i, 'units')\n        val = site(i, 'value')\n        if units > 0:\n            dist = abs(sx - self_x) + abs(sy - self_y)\n            # Prefer high value, close sites; penalize distance\n            score = val * 100 - dist * 10\n            if score > best_score:\n                best_score = score\n                best_site = i\n\n    # If we are at home and carrying something, deposit\n    if self_x == home_x and self_y == home_y and carrying > 0:\n        return {'action': 'deposit'}\n\n    # If cargo is full, go home\n    if carrying >= capacity:\n        if self_x < home_x:\n            return {'action': 'move', 'dx': 1, 'dy': 0}\n        if self_x > home_x:\n            return {'action': 'move', 'dx': -1, 'dy': 0}\n        if self_y < home_y:\n            return {'action': 'move', 'dx': 0, 'dy': 1}\n        if self_y > home_y:\n            return {'action': 'move', 'dx': 0, 'dy': -1}\n        return {'action': 'rest'}\n\n    # If no good site found, rest or go home\n    if best_site < 0:\n        if self_x == home_x and self_y == home_y:\n            return {'action': 'rest'}\n        if self_x < home_x:\n            return {'action': 'move', 'dx': 1, 'dy': 0}\n        if self_x > home_x:\n            return {'action': 'move', 'dx': -1, 'dy': 0}\n        if self_y < home_y:\n            return {'action': 'move', 'dx': 0, 'dy': 1}\n        if self_y > home_y:\n            return {'action': 'move', 'dx': 0, 'dy': -1}\n        return {'action': 'rest'}\n\n    # If at a site with units, harvest if energy allows\n    sx = site(best_site, 'x')\n    sy = site(best_site, 'y')\n    if self_x == sx and self_y == sy:\n        if site(best_site, 'units') > 0 and energy > 0:\n            return {'action': 'harvest'}\n        else:\n            return {'action': 'rest'}\n\n    # Move toward the best site\n    if self_x < sx:\n        return {'action': 'move', 'dx': 1, 'dy': 0}\n    if self_x > sx:\n        return {'action': 'move', 'dx': -1, 'dy': 0}\n    if self_y < sy:\n        return {'action': 'move', 'dx': 0, 'dy': 1}\n    if self_y > sy:\n        return {'action': 'move', 'dx': 0, 'dy': -1}\n    return {'action': 'rest'}\n```",
+      "original_text_sha256": "9a9a89856cb7a38aa9f1e25fafa3c7a94632c1a3c5fd9c4220c3f6b157c6cd57",
+      "python_ast_nodes": 437,
+      "reasoning_mode": "off",
+      "rejection_kind": "language_contract",
+      "response_file": "generation-2.json",
+      "response_sha256": "ced4f697c179bee064510f4beb44b4ded14faa03c0982431956d5761922cdfa1",
+      "returned_model": "deepseek/deepseek-v4-pro-0813",
+      "returned_provider": "DeepInfra",
+      "sample_id": "controller-python-2",
+      "source_bytes": 2325,
+      "usage": {
+        "completion_tokens": 753,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "image_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "cost": 0.0024133,
+        "cost_details": {
+          "upstream_inference_completions_cost": 0.0019578,
+          "upstream_inference_cost": 0.0024133,
+          "upstream_inference_prompt_cost": 0.0004555
+        },
+        "is_byok": false,
+        "prompt_tokens": 823,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cache_write_tokens": 0,
+          "cached_tokens": 512,
+          "video_tokens": 0
+        },
+        "total_tokens": 1576
+      },
+      "valid": false
+    }
+  ],
+  "interpretation": "Post-hoc packaging revalidation of the same two existing responses. The accepted-program count is not a fresh model capability rate. No semantic code repairs, new API generation, or gradient training.",
+  "model_matches": 24,
+  "peer_crossplay_matches": 0,
+  "plan_sha256": "4e99e3e3d13ba729461942413e4cac59a5598938a53b0dcb5f4aae289dc6326e",
+  "players": {
+    "controller-python-1": {
+      "by_opponent": {
+        "nearest": {
+          "banked_points": 206,
+          "decision_turns": 576,
+          "draws": 2,
+          "failed_game_actions": 0,
+          "fault_types": {},
+          "games": 12,
+          "losses": 8,
+          "mean_banked_points": 17.166666666666668,
+          "mean_return": -0.06660549595332203,
+          "opponent_banked_points": 244,
+          "program_faults": 0,
+          "return_sum": -0.7992659514398645,
+          "wins": 2
+        },
+        "value": {
+          "banked_points": 196,
+          "decision_turns": 576,
+          "draws": 2,
+          "failed_game_actions": 0,
+          "fault_types": {},
+          "games": 12,
+          "losses": 10,
+          "mean_banked_points": 16.333333333333332,
+          "mean_return": -0.09835152769935378,
+          "opponent_banked_points": 250,
+          "program_faults": 0,
+          "return_sum": -1.1802183323922453,
+          "wins": 0
+        }
+      },
+      "overall": {
+        "banked_points": 402,
+        "decision_turns": 1152,
+        "draws": 4,
+        "failed_game_actions": 0,
+        "fault_types": {},
+        "games": 24,
+        "losses": 18,
+        "mean_banked_points": 16.75,
+        "mean_return": -0.08247851182633792,
+        "opponent_banked_points": 494,
+        "program_faults": 0,
+        "return_sum": -1.97948428383211,
+        "wins": 2
+      }
+    },
+    "controller-python-2": {
+      "by_opponent": {},
+      "overall": {
+        "banked_points": 0,
+        "decision_turns": 0,
+        "draws": 0,
+        "failed_game_actions": 0,
+        "fault_types": {},
+        "games": 0,
+        "losses": 0,
+        "mean_banked_points": null,
+        "mean_return": null,
+        "opponent_banked_points": 0,
+        "program_faults": 0,
+        "return_sum": 0.0,
+        "wins": 0
+      }
+    }
+  },
+  "posthoc_diagnostic": true,
+  "response_normalization": {
+    "mode": "single_python_fence_with_optional_prose",
+    "source_archive": "source/response_normalization.py",
+    "source_sha256": "4b0095b507dc50b05285b3c10931923543ba2bd976c6f54511d5ab1bc5a85163",
+    "version": 2
+  },
+  "scoring": "W/D/L is the sign of final banked-point difference at the game's fixed time limit. This is the game's actual objective, not distance/material adjudication. Return is that difference divided by initial resource value; unbanked cargo scores zero.",
+  "screen": "post-hoc Python packaging revalidation",
+  "source_sha256": {
+    "selfplay/program_api.py": "d0dbc828da02823978c1dda9eec72347cadc8ef93f6d82fa1c2fd161d7f92272",
+    "selfplay/program_arena/__init__.py": "2c405b142b39f6f350996f812875afbe4ec845005a662eaf43bc28a7e2d4c7d2",
+    "selfplay/program_arena/demo.py": "f918f494d7ad39b78cda0d1672ef19d9244e3c52ef07739b696725b7b6f9105f",
+    "selfplay/program_arena/dsl.py": "91cc93d24e9c61b0cc04b4bf3d34a7e3515bda59fed62eeb766006ec9df74968",
+    "selfplay/program_arena/examples.py": "5261337c5ac1415c14da1505e76d2ed99a5916da70a2f02397d5d0242757894a",
+    "selfplay/program_arena/game.py": "7986796669d4622d53536b2b9b6984778372e2cf2354b9885a384680e66f0246",
+    "selfplay/program_arena/runner.py": "bdc8f5ce3471d4018fe2c893c7d49351c8e23d75f151bc9abcd36e637ef1445e",
+    "selfplay/program_arena/spec.py": "bd236885f4864e56a8003abe81ab9726386ed11399648318fe2eff7f87920ff3",
+    "selfplay/program_python.py": "598d27639d004230976066d18e6fc6ed6bcd8a5f5f1e6c741b634ebad3f8fb56"
+  },
+  "training": false,
+  "valid_programs": 1
+}

@@ -1,0 +1,158 @@
+{
+  "kind": "native_nonthinking_revision_calibration_plan",
+  "config": {
+    "format_version": 1,
+    "backend": "cuda",
+    "algorithm": "none_calibration_only",
+    "iterations": 0,
+    "group_size": 8,
+    "opponent_count": 2,
+    "opponent_attempt_cap": 0,
+    "eval_samples": 0,
+    "map_seeds_per_group": 2,
+    "max_rounds": 48,
+    "max_new_tokens": 4096,
+    "sample_seconds": 900,
+    "max_context_tokens": 16384,
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "top_k": 0,
+    "thinking": true,
+    "learning_rate": 1e-05,
+    "lora_rank": 8,
+    "lora_alpha": 16,
+    "lora_dropout": 0.0,
+    "lora_targets": [
+      "q_proj",
+      "v_proj"
+    ],
+    "gradient_clip": 0.5,
+    "compute_dtype": "float32",
+    "attention": "eager",
+    "token_logprob_tolerance": 0.002,
+    "sequence_logprob_tolerance": 0.02,
+    "invalid_authorship_reward": -1.0,
+    "seed": 325401,
+    "deadline": "2026-10-23T04:36:53+00:00",
+    "train_seed_start": 8200000,
+    "holdout_seed_start": 8300000,
+    "calibration_seed_start": 8100000,
+    "reward": "Diagnostic final controller return/banking/validity only; never used for training",
+    "sampling": "full softmax temperature one; all sampled completion tokens incl actual EOS",
+    "scope": "Fixed eight-trajectory authoring capability calibration; no learning or improvement comparison",
+    "kind": "native_nonthinking_revision_calibration",
+    "condition": "debug-revision-calibration-v1",
+    "model_repo": "Qwen/Qwen3.8-27B",
+    "model_revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+    "loader": "image_text_to_text",
+    "endpoint_choices": [],
+    "batch_size": 2,
+    "worker_seconds": 9000,
+    "capability_samples": 8,
+    "minimum_productive_programs": 4,
+    "minimum_productive_distinct_ir": 2,
+    "minimum_positive_calibration_games": 12,
+    "league_refresh_every": 5,
+    "maximum_model_opponents": 6,
+    "profile_attempt_cap": 0,
+    "timing_safety_factor": 1.5,
+    "audit_export_reserve_seconds": 1800,
+    "evaluation_batch_reserve_seconds": 2400,
+    "reasoning_effort": "low",
+    "turn_native_modes": {
+      "draft": {
+        "authoring_stage": "draft",
+        "thinking_enabled": true,
+        "reasoning_effort": "low",
+        "reasoning_mode": "native_low"
+      },
+      "revision": {
+        "authoring_stage": "revision",
+        "thinking_enabled": false,
+        "reasoning_effort": null,
+        "reasoning_mode": "native_disabled"
+      }
+    },
+    "authoring_calls": 2,
+    "practice_maps_per_trajectory": 2,
+    "baseline": "Exact prior SFT-step32 weights and zero-step RL Adam; no further SFT or RL",
+    "history_transform": "exact_compiled_source_else_exact_final_suffix_else_raw_completion; prior_reasoning_archived_not_replayed"
+  },
+  "schedule": {
+    "practice_maps": {
+      "0": [
+        191000000,
+        191000001
+      ],
+      "1": [
+        191000010,
+        191000011
+      ],
+      "2": [
+        191000020,
+        191000021
+      ],
+      "3": [
+        191000030,
+        191000031
+      ],
+      "4": [
+        191000040,
+        191000041
+      ],
+      "5": [
+        191000050,
+        191000051
+      ],
+      "6": [
+        191000060,
+        191000061
+      ],
+      "7": [
+        191000070,
+        191000071
+      ]
+    },
+    "scoring_maps": [
+      192000000,
+      192000001,
+      192000002,
+      192000003,
+      192000004,
+      192000005
+    ],
+    "generation_seeds": [
+      201000000,
+      201000002,
+      201000004,
+      201000006,
+      201000008,
+      201000010,
+      201000012,
+      201000014
+    ],
+    "revision_seed_rule": "draft_seed+1; paired consecutive seeds, no retry"
+  },
+  "design_plan_sha256": "86dd73681c67daaa38812ef2baac1ae38db3f98bed25f1e17ab7b809d8ba8c90",
+  "authoring": "Exactly two calls per trajectory, draft then fixed factual practice feedback and mandatory revision. Eight trajectories, batch2, all draws retained.",
+  "reasoning": "Draft uses native low thinking; revision uses native enable_thinking=False with a fixed empty thinking prefix. Both caps4096. Initial messages and factual feedback identical to previous calibration. Draft boundary parser unchanged; whole revision completion uses existing cardinal parser.",
+  "baseline": "Exact prior SFT32/zero-RL-step adapter and optimizer. No zero-SFT comparison, SFT, API authoring or optimizer updates.",
+  "scoring": "Seal all8 final revisions, pass full16-turn unchanged eval/train likelihood admission, then score six new maps against nearest/value in both seats,24games per compiled final; invalid authorship zero yield with no fabricated games.",
+  "gate": "At least4/8 final controllers fault-free on all24 games and bank-positive on at least12 games; at least2 distinct compiled IRs. Missing output means incomplete, not failure or zero.",
+  "numerics": "Fresh mixed-native batch2 32-token derivative smoke; then full unchanged eval/train replay of all16 actual turns before any final scoring. Token0.002/sequence0.02 tolerances unchanged. No update; no full-length backward feasibility claim.",
+  "interpretation": "Fresh descriptive calibration of native revision thinking disabled; unchanged draft/feedback/caps and exact SFT32 base. Fresh maps/seeds do not supply a paired causal comparison. No learned improvement claim.",
+  "resources": {
+    "cumulative_ceiling_usd": 200,
+    "reservation_usd": 25,
+    "rental_maximum_seconds": 10800,
+    "persistent_worker_seconds": 9000,
+    "maximum_sample_batches": 8,
+    "sample_batch_seconds": 900,
+    "worst_case_sample_seconds": 7200,
+    "worker_smoke_feedback_export_allowance_seconds": 1800,
+    "rental_setup_export_allowance_seconds": 1800,
+    "deadline_unix": 1792730213.0,
+    "completion_guaranteed": false
+  },
+  "next": "Only a complete, audited passing calibration may inform a separately frozen longer RL run; no automatic training in this job."
+}

@@ -1,0 +1,91 @@
+{
+  "unique_tasks": 7,
+  "calls": 9,
+  "by_variant": {
+    "renamed_reordered": {
+      "attempts": 4,
+      "success_rate": 0.25,
+      "statuses": {
+        "truncated": 3,
+        "solved": 1
+      }
+    },
+    "canonical": {
+      "attempts": 5,
+      "success_rate": 0.4,
+      "statuses": {
+        "solved": 2,
+        "truncated": 3
+      }
+    }
+  },
+  "paired_renamed_reordered_minus_canonical": {
+    "paired_tasks": 2,
+    "mean": 0.0,
+    "task_bootstrap_95_interval": [
+      0.0,
+      0.0
+    ],
+    "note": "Exploratory task-cluster bootstrap; a tiny pilot cannot establish a general effect."
+  },
+  "task_scores": [
+    {
+      "task_id": "f12fe9248dbbb2c560acd013036cc7eb8962a8180357e368fbab0fe54fdbfb96",
+      "rates": {
+        "canonical": 1.0,
+        "renamed_reordered": 1.0
+      },
+      "failure_reward": 0.0,
+      "frontier_reward": 0.0,
+      "robust_frontier_reward": 0.0,
+      "presentation_range": 0.0
+    },
+    {
+      "task_id": "defafaa75ce969d6812a25c668f9a292ac324cc73a3909c16cc67376b954cd1f",
+      "rates": {
+        "renamed_reordered": 0.0,
+        "canonical": 0.0
+      },
+      "failure_reward": 1.0,
+      "frontier_reward": 0.0,
+      "robust_frontier_reward": 0.0,
+      "presentation_range": 0.0
+    },
+    {
+      "task_id": "f52c3da9197ed73052bac7138c3b015ecf71bc3f9ac3f5bb0798a6ae3f891c0e",
+      "rates": {
+        "canonical": 0.0
+      },
+      "failure_reward": 1.0,
+      "frontier_reward": 0.0,
+      "robust_frontier_reward": 0.0,
+      "presentation_range": 0.0
+    },
+    {
+      "task_id": "989646972ed60ee47978434e9a4c7d3c1d8a4bba6505f7608f592d0a2294cb57",
+      "rates": {
+        "canonical": 0.0
+      },
+      "failure_reward": 1.0,
+      "frontier_reward": 0.0,
+      "robust_frontier_reward": 0.0,
+      "presentation_range": 0.0
+    },
+    {
+      "task_id": "d88204208af171c446d208cd15b205c11b3e47f026568e5ad418dc0135123e79",
+      "rates": {
+        "canonical": 1.0
+      },
+      "failure_reward": 0.0,
+      "frontier_reward": 0.0,
+      "robust_frontier_reward": 0.0,
+      "presentation_range": 0.0
+    }
+  ],
+  "proposals_attempted": 0,
+  "proposals_accepted": 0,
+  "elapsed_seconds": 96.79875154099997,
+  "training": false,
+  "complete": false,
+  "model_calls": 10
+}

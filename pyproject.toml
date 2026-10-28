@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "verified-selfplay"
+version = "0.1.0"
+description = "Small experiments in verified LLM self-play and interface robustness"
+requires-python = ">=3.9"
+dependencies = []
+
+[tool.setuptools.packages.find]
+include = ["selfplay*"]

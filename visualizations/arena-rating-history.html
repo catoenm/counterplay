@@ -1,0 +1,206 @@
+<div id="arena-rating-history">
+  <h2>League ratings by environment</h2>
+  <div id="er-run" class="text-small"></div>
+  <div id="er-legend" class="viz-row" aria-label="Visible checkpoints"></div>
+  <div class="viz-controls">
+    <label class="form-label">Rating snapshot<select class="form-select" id="er-stage"></select></label>
+  </div>
+  <div id="er-charts"></div>
+  <div id="er-status" class="text-small" aria-live="polite"></div>
+  <div class="text-small">Initial 1500 · K = 24 · small sample · order-dependent · fixed opponent matching</div>
+  <div class="text-small">Positive / zero / negative returns score win / draw / loss. Caps are adjudicated outcomes.</div>
+  <div id="er-tooltip" class="tooltip" role="tooltip" hidden></div>
+  <script id="er-data" type="application/json">{"run":"arena-v2","initial_rating":1500.0,"k_factor":24.0,"observed_iterations":[0,1,2,3],"games":{"chess":{"ratings":{"base":1477.6495673272407,"heuristic":1672.060246511944,"cycle1":1511.0152508613348,"cycle2":1382.0951882505276,"cycle3":1457.179747048953},"series":{"base":[{"iteration":0,"rating":1447.640072338911,"games":6,"new_games":6},{"iteration":1,"rating":1458.0313938537631,"games":12,"new_games":6},{"iteration":2,"rating":1478.7195011755919,"games":18,"new_games":6},{"iteration":3,"rating":1477.6495673272407,"games":24,"new_games":6}],"heuristic":[{"iteration":0,"rating":1552.359927661089,"games":6,"new_games":6},{"iteration":1,"rating":1585.327250277713,"games":12,"new_games":6},{"iteration":2,"rating":1632.2148608325492,"games":18,"new_games":6},{"iteration":3,"rating":1672.060246511944,"games":24,"new_games":6}],"cycle1":[{"iteration":1,"rating":1456.641355868524,"games":12,"new_games":12},{"iteration":2,"rating":1485.1730466308768,"games":18,"new_games":6},{"iteration":3,"rating":1511.0152508613348,"games":24,"new_games":6}],"cycle2":[{"iteration":2,"rating":1403.8925913609821,"games":18,"new_games":18},{"iteration":3,"rating":1382.0951882505276,"games":24,"new_games":6}],"cycle3":[{"iteration":3,"rating":1457.179747048953,"games":24,"new_games":24}]},"stages":{"0":{"matches":6,"termination_counts":{"material_adjudication_at_cap":5,"checkmate":1}},"1":{"matches":12,"termination_counts":{"material_adjudication_at_cap":11,"claimed_threefold_repetition":1}},"2":{"matches":18,"termination_counts":{"material_adjudication_at_cap":18}},"3":{"matches":24,"termination_counts":{"material_adjudication_at_cap":24}}},"rated_matches":60,"termination_counts":{"material_adjudication_at_cap":58,"checkmate":1,"claimed_threefold_repetition":1},"same_policy_matches_excluded":6},"market":{"ratings":{"base":1478.9887270121908,"heuristic":1628.1085361618175,"cycle1":1456.225027117975,"cycle2":1467.9473880174908,"cycle3":1468.730321690526},"series":{"base":[{"iteration":0,"rating":1458.6693903660125,"games":6,"new_games":6},{"iteration":1,"rating":1478.8633101194685,"games":12,"new_games":6},{"iteration":2,"rating":1478.4936386045092,"games":18,"new_games":6},{"iteration":3,"rating":1478.9887270121908,"games":24,"new_games":6}],"heuristic":[{"iteration":0,"rating":1541.3306096339875,"games":6,"new_games":6},{"iteration":1,"rating":1575.5888781440808,"games":12,"new_games":6},{"iteration":2,"rating":1604.145596701385,"games":18,"new_games":6},{"iteration":3,"rating":1628.1085361618175,"games":24,"new_games":6}],"cycle1":[{"iteration":1,"rating":1445.5478117364507,"games":12,"new_games":12},{"iteration":2,"rating":1451.0393159511475,"games":18,"new_games":6},{"iteration":3,"rating":1456.225027117975,"games":24,"new_games":6}],"cycle2":[{"iteration":2,"rating":1466.3214487429582,"games":18,"new_games":18},{"iteration":3,"rating":1467.9473880174908,"games":24,"new_games":6}],"cycle3":[{"iteration":3,"rating":1468.730321690526,"games":24,"new_games":24}]},"stages":{"0":{"matches":6,"termination_counts":{"settlement":6}},"1":{"matches":12,"termination_counts":{"settlement":12}},"2":{"matches":18,"termination_counts":{"settlement":18}},"3":{"matches":24,"termination_counts":{"settlement":24}}},"rated_matches":60,"termination_counts":{"settlement":60},"same_policy_matches_excluded":6},"maze":{"ratings":{"base":1439.939243805028,"heuristic":1667.8031750402167,"cycle1":1436.7304386400576,"cycle2":1466.2319139692697,"cycle3":1489.295228545428},"series":{"base":[{"iteration":0,"rating":1461.5818865590934,"games":6,"new_games":6},{"iteration":1,"rating":1458.0643290128805,"games":12,"new_games":6},{"iteration":2,"rating":1450.2415745622818,"games":18,"new_games":6},{"iteration":3,"rating":1439.939243805028,"games":24,"new_games":6}],"heuristic":[{"iteration":0,"rating":1538.4181134409066,"games":6,"new_games":6},{"iteration":1,"rating":1592.8365973785899,"games":12,"new_games":6},{"iteration":2,"rating":1627.2368270807679,"games":18,"new_games":6},{"iteration":3,"rating":1667.8031750402167,"games":24,"new_games":6}],"cycle1":[{"iteration":1,"rating":1449.0990736085296,"games":12,"new_games":12},{"iteration":2,"rating":1444.1855002043146,"games":18,"new_games":6},{"iteration":3,"rating":1436.7304386400576,"games":24,"new_games":6}],"cycle2":[{"iteration":2,"rating":1478.3360981526357,"games":18,"new_games":18},{"iteration":3,"rating":1466.2319139692697,"games":24,"new_games":6}],"cycle3":[{"iteration":3,"rating":1489.295228545428,"games":24,"new_games":24}]},"stages":{"0":{"matches":6,"termination_counts":{"goal":4,"distance_adjudication_at_cap":2}},"1":{"matches":12,"termination_counts":{"goal":6,"distance_adjudication_at_cap":6}},"2":{"matches":18,"termination_counts":{"goal":8,"distance_adjudication_at_cap":10}},"3":{"matches":24,"termination_counts":{"goal":7,"distance_adjudication_at_cap":14,"simultaneous_finish":3}}},"rated_matches":60,"termination_counts":{"goal":25,"distance_adjudication_at_cap":32,"simultaneous_finish":3},"same_policy_matches_excluded":6}},"warnings":["Exploratory league-relative ratings; fixed opponent matching and small samples.","Elo is order-dependent; ratings are not calibrated across environments.","Historical ratings can change without weight updates when new matches arrive.","A new checkpoint enters at 1500 only when its first rated match is completed.","Same-policy self-play cannot distinguish persistent policy strength and is excluded.","No unobserved training iterations or matches are extrapolated."],"simulator_replay_verified":true,"stage_coverage":{"0":{"scheduled_rated_matches":18,"completed_rated_matches":18,"partial":false},"1":{"scheduled_rated_matches":36,"completed_rated_matches":36,"partial":false},"2":{"scheduled_rated_matches":54,"completed_rated_matches":54,"partial":false},"3":{"scheduled_rated_matches":72,"completed_rated_matches":72,"partial":false}},"rating_pool":{"rating_compatibility":"arena-v2-fp32","policy_arithmetic":{"floating_model_parameters":"float32","activation_arithmetic":"float32","quantized_integer_storage":"unchanged uint32 packed 4-bit weights","adapter_parameters":"float32","action_policy":"one-token legal categorical distribution","temperature":1.0,"thinking":false},"policy_arithmetic_sha256":"0dd0cf0c88a5ba9797be2255a52251d0649869f964e7f0369378eaf5a6ee8e81"},"completed_matches_verified":198}</script>
+</div>
+<style>
+#arena-rating-history { position:relative; }
+#arena-rating-history .er-chart { display:block; width:100%; }
+#arena-rating-history .er-chart text { fill:var(--foreground); font-size:12px; }
+#arena-rating-history .er-chart [data-chart-hover-guide], #arena-rating-history .er-chart [data-chart-hover-marker] { pointer-events:none; }
+#arena-rating-history .er-game { margin-block:16px; }
+#arena-rating-history .er-title { margin-bottom:2px; }
+#arena-rating-history .er-counts { margin-bottom:2px; }
+#arena-rating-history .er-values { overflow-wrap:anywhere; }
+#arena-rating-history .er-legend-button { display:inline-flex; align-items:center; gap:5px; padding:4px 0; border:0; background:transparent; color:var(--foreground); font:inherit; border-radius:0; }
+#arena-rating-history .er-legend-button[aria-pressed="false"] { opacity:.45; }
+#arena-rating-history .er-swatch { display:inline-block; width:14px; height:3px; }
+#arena-rating-history #er-tooltip { position:absolute; pointer-events:none; background:var(--popover); color:var(--popover-foreground); max-width:240px; }
+@media (pointer:coarse) { #arena-rating-history .er-legend-button { min-height:44px; } }
+</style>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+<script>
+(() => {
+  const root=document.getElementById('arena-rating-history');
+  const data=JSON.parse(root.querySelector('#er-data').textContent);
+  const get=id=>root.querySelector('#er-'+id);
+  get('run').textContent=`${data.rating_pool?.policy_arithmetic?.activation_arithmetic==='float32'?'FP32 policy · ':''}${data.run} · ${data.completed_matches_verified} verified evaluation / league matches`;
+  const names={market:'Market',maze:'Maze race',chess:'Chess endgames'};
+  const display=id=>id==='base'?'Base':id==='heuristic'?'Heuristic':/^cycle\d+$/.test(id)?'Checkpoint '+id.slice(5):id;
+  const rank=id=>id==='base'?0:id==='heuristic'?10000:Number(id.match(/\d+/)?.[0]||9999);
+  const identities=[...new Set(Object.values(data.games).flatMap(g=>Object.keys(g.series)))].sort((a,b)=>rank(a)-rank(b)||a.localeCompare(b));
+  const color=id=>`var(--viz-series-${id==='heuristic'?6:1+(rank(id)%5)})`;
+  const dash=id=>id==='heuristic'?'5 3':rank(id)>=5?'2 3':null;
+  let selected={iteration:data.observed_iterations.at(-1),hidden:[],revision:0};
+  let pinned=false;
+  function restore(saved){
+    const state=saved?.privateContent;
+    if(!state||state.run!==data.run||(state.revision||0)<selected.revision)return;
+    if(data.observed_iterations.includes(state.iteration))selected.iteration=state.iteration;
+    selected.hidden=(state.hidden||[]).filter(id=>identities.includes(id));
+    selected.revision=state.revision||0;
+  }
+  function save(){
+    selected.revision=Math.max(Date.now(),selected.revision+1);
+    window.openai?.setWidgetState?.({modelContent:{run:data.run,iteration:selected.iteration,
+      visible_checkpoints:identities.filter(id=>!selected.hidden.includes(id)),rating:'per-environment Elo'},
+      privateContent:{...selected,run:data.run}})?.catch(()=>{});
+  }
+  function element(tag,attrs={},text){
+    const node=document.createElement(tag);
+    for(const [key,value] of Object.entries(attrs))node.setAttribute(key,value);
+    if(text!==undefined)node.textContent=text;
+    return node;
+  }
+  function currentValues(game){
+    return identities.flatMap(id=>{
+      if(selected.hidden.includes(id))return [];
+      const point=game.series[id]?.filter(p=>p.iteration<=selected.iteration).at(-1);
+      return point?[{id,...point}]:[];
+    });
+  }
+  function clearHover(){
+    get('tooltip').hidden=true;
+    root.querySelectorAll('[data-chart-hover-guide],[data-chart-hover-marker]').forEach(node=>node.remove());
+  }
+  function interpolate(points,iteration){
+    if(iteration<points[0].iteration||iteration>points.at(-1).iteration)return null;
+    const index=d3.bisector(p=>p.iteration).left(points,iteration);
+    if(index===0)return points[0].rating;
+    const a=points[index-1],b=points[Math.min(index,points.length-1)];
+    if(a.iteration===b.iteration)return a.rating;
+    return a.rating+(b.rating-a.rating)*(iteration-a.iteration)/(b.iteration-a.iteration);
+  }
+  function describeReasons(counts){
+    return Object.entries(counts).map(([reason,count])=>{
+      const short=reason==='material_adjudication_at_cap'?'material caps':
+        reason==='distance_adjudication_at_cap'?'distance caps':
+        reason==='goal'?'goal finishes':reason==='checkmate'?'checkmates':
+        reason==='settlement'?'settlements':reason.replaceAll('_',' ');
+      return `${count} ${short}`;
+    }).join(' · ');
+  }
+  function draw(){
+    clearHover();pinned=false;
+    get('charts').replaceChildren();get('legend').replaceChildren();
+    if(!data.observed_iterations.length){
+      get('status').textContent='Awaiting completed matches between distinct policies';
+      get('stage').disabled=true;return;
+    }
+    for(const id of identities){
+      const button=element('button',{type:'button',class:'er-legend-button cursor-interaction',
+        'aria-pressed':!selected.hidden.includes(id),'aria-label':`Show ${display(id)}`});
+      button.append(element('span',{class:'er-swatch',style:`background:${color(id)}`,'aria-hidden':'true'}),
+        document.createTextNode(display(id)));
+      button.addEventListener('click',()=>{
+        selected.hidden=selected.hidden.includes(id)?selected.hidden.filter(x=>x!==id):[...selected.hidden,id];draw();save();
+      });get('legend').append(button);
+    }
+    get('stage').replaceChildren(...data.observed_iterations.map(value=>element('option',{value},
+      (value===0?'0 · Base evaluation':`${value} · After update ${value}`)+(data.stage_coverage?.[value]?.partial?' · partial':''))));
+    get('stage').value=selected.iteration;
+    const allPoints=Object.values(data.games).flatMap(g=>Object.values(g.series).flat());
+    const yExtent=d3.extent([data.initial_rating,...allPoints.map(p=>p.rating)]);
+    const yPad=Math.max(12,(yExtent[1]-yExtent[0])*.12),yDomain=[yExtent[0]-yPad,yExtent[1]+yPad];
+    const xExtent=d3.extent(data.observed_iterations),single=xExtent[0]===xExtent[1];
+    const xDomain=single?[xExtent[0]-.5,xExtent[1]+.5]:xExtent;
+    for(const [gameId,game] of Object.entries(data.games)){
+      const section=element('section',{class:'er-game','aria-label':`${names[gameId]||gameId} ratings`});
+      section.append(element('div',{class:'er-title'},`${names[gameId]||gameId} · ${game.rated_matches} rated matches`));
+      section.append(element('div',{class:'er-counts text-small'},describeReasons(game.termination_counts)));
+      const svgNode=document.createElementNS('http://www.w3.org/2000/svg','svg');
+      svgNode.classList.add('er-chart');svgNode.setAttribute('role','img');
+      svgNode.setAttribute('aria-label',`${names[gameId]||gameId} Elo after recorded training iterations. All models start at 1500. ${game.rated_matches} rated matches.`);
+      section.append(svgNode);
+      const values=element('div',{class:'er-values viz-row text-small tabular-nums'});
+      for(const point of currentValues(game))values.append(element('span',{},`${display(point.id)} ${Math.round(point.rating)} (${point.games} games)`));
+      section.append(values);get('charts').append(section);
+      const width=section.clientWidth,height=214,left=64,right=14,top=12,bottom=48;
+      const svg=d3.select(svgNode).attr('viewBox',`0 0 ${width} ${height}`).attr('height',height);
+      const x=d3.scaleLinear().domain(xDomain).range([left+6,width-right-6]);
+      const y=d3.scaleLinear().domain(yDomain).range([height-bottom-6,top+6]);
+      const plot={left,top,right:width-right,bottom:height-bottom};
+      svg.append('rect').attr('data-chart-frame','').attr('x',plot.left).attr('y',plot.top)
+        .attr('width',plot.right-plot.left).attr('height',plot.bottom-plot.top)
+        .attr('fill','none').attr('stroke','var(--border)').attr('stroke-width',1);
+      const yTicks=y.ticks(4);
+      for(const tick of yTicks){
+        if(y(tick)<plot.top||y(tick)>plot.bottom)continue;
+        svg.append('line').attr('x1',plot.left).attr('x2',plot.right).attr('y1',y(tick)).attr('y2',y(tick))
+          .attr('stroke','var(--border)').attr('stroke-width',.6);
+        svg.append('text').attr('x',left-8).attr('y',y(tick)+4).attr('text-anchor','end').text(Math.round(tick));
+      }
+      svg.append('line').attr('x1',plot.left).attr('x2',plot.right).attr('y1',y(1500)).attr('y2',y(1500))
+        .attr('stroke','var(--muted-foreground)').attr('stroke-width',1).attr('stroke-dasharray','2 4');
+      const maxTicks=width<=360?4:6,step=Math.max(1,Math.ceil((data.observed_iterations.length-1)/(maxTicks-1)));
+      const ticks=data.observed_iterations.filter((_,i)=>i%step===0||i===data.observed_iterations.length-1);
+      for(const tick of ticks)svg.append('text').attr('x',x(tick)).attr('y',height-bottom+19).attr('text-anchor','middle').text(tick);
+      svg.append('text').attr('class','axis-title').attr('data-axis','x').attr('x',(left+plot.right)/2)
+        .attr('y',height-7).attr('text-anchor','middle').text('Training iteration');
+      svg.append('text').attr('class','axis-title').attr('data-axis','y').attr('transform',`translate(17 ${(top+plot.bottom)/2}) rotate(-90)`)
+        .attr('text-anchor','middle').text('Elo');
+      if(game.stages[selected.iteration])svg.append('line').attr('x1',x(selected.iteration)).attr('x2',x(selected.iteration))
+        .attr('y1',plot.top).attr('y2',plot.bottom).attr('stroke','var(--border)').attr('stroke-width',1);
+      const visible=identities.filter(id=>game.series[id]&&!selected.hidden.includes(id));
+      for(const id of visible){
+        const points=game.series[id];
+        svg.append('path').datum(points).attr('data-series',id).attr('fill','none').attr('stroke',color(id))
+          .attr('stroke-width',2).attr('stroke-dasharray',dash(id))
+          .attr('d',d3.line().x(p=>x(p.iteration)).y(p=>y(p.rating)));
+        svg.selectAll(`circle.er-${id.replace(/[^a-zA-Z0-9]/g,'')}`).data(points).enter().append('circle')
+          .attr('data-series',id).attr('cx',p=>x(p.iteration)).attr('cy',p=>y(p.rating)).attr('r',4).attr('fill',color(id));
+      }
+      const overlay=svg.append('rect').attr('data-chart-hit','').attr('data-chart-hover-overlay','cross-series')
+        .attr('x',plot.left).attr('y',plot.top).attr('width',plot.right-plot.left).attr('height',plot.bottom-plot.top)
+        .attr('fill','transparent');
+      function hover(event){
+        clearHover();
+        const [rawX]=d3.pointer(event,svgNode),px=Math.max(plot.left,Math.min(plot.right,rawX));
+        const iteration=single?xExtent[0]:Math.max(xExtent[0],Math.min(xExtent[1],x.invert(px)));
+        if(single&&Math.abs(px-x(xExtent[0]))>24)return;
+        const rows=visible.map(id=>({id,rating:interpolate(game.series[id],iteration)})).filter(p=>p.rating!==null);
+        if(!rows.length)return;
+        svg.append('line').attr('data-chart-hover-guide','').attr('x1',px).attr('x2',px)
+          .attr('y1',plot.top).attr('y2',plot.bottom).attr('stroke','var(--muted-foreground)').attr('stroke-width',1);
+        for(const row of rows)svg.append('circle').attr('data-chart-hover-marker',row.id).attr('cx',px)
+          .attr('cy',y(row.rating)).attr('r',4).attr('fill',color(row.id));
+        const tooltip=get('tooltip');tooltip.replaceChildren();
+        tooltip.append(element('div',{},`${names[gameId]} · iteration ${iteration.toFixed(single?0:2)}`));
+        for(const row of rows)tooltip.append(element('div',{},`${display(row.id)}: ${row.rating.toFixed(1)}`));
+        if(!Number.isInteger(iteration))tooltip.append(element('div',{class:'text-small'},'Interpolated between recorded snapshots'));
+        tooltip.hidden=false;
+        const bounds=root.getBoundingClientRect();
+        tooltip.style.left=Math.max(4,Math.min(event.clientX-bounds.left+12,root.clientWidth-tooltip.offsetWidth-4))+'px';
+        tooltip.style.top=Math.max(4,event.clientY-bounds.top-tooltip.offsetHeight-10)+'px';
+      }
+      overlay.on('pointermove',event=>{if(!pinned)hover(event);})
+        .on('pointerleave',()=>{if(!pinned)clearHover();})
+        .on('click',event=>{pinned=!pinned;if(pinned)hover(event);else clearHover();});
+      // Inspect all visible labels after layout; optional ticks are removed first.
+      const textNodes=[...svgNode.querySelectorAll('text')];
+      for(const node of textNodes){
+        const box=node.getBBox();
+        if(box.x<0||box.x+box.width>width||box.y<0||box.y+box.height>height){
+          if(!node.classList.contains('axis-title'))node.remove();
+        }
+      }
+    }
+    const excluded=Object.values(data.games).reduce((sum,g)=>sum+g.same_policy_matches_excluded,0);
+    const latest=data.observed_iterations.at(-1),coverage=data.stage_coverage?.[latest];
+    get('status').textContent=`Observed through iteration ${latest}${coverage?.partial?' (partial evaluation)':''} · ${excluded} same-policy matches excluded`;
+  }
+  restore(window.openai?.widgetState);
+  get('stage').addEventListener('change',()=>{selected.iteration=Number(get('stage').value);draw();save();});
+  window.addEventListener('openai:set_globals',event=>{if(event.detail?.globals?.widgetState){restore(event.detail.globals.widgetState);draw();}});
+  new ResizeObserver(draw).observe(root);draw();
+})();
+</script>

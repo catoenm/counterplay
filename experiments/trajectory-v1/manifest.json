@@ -1,0 +1,28 @@
+{
+  "model": "mlx-community/Qwen3-4B-4bit",
+  "revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+  "excluded_prior_families": 455,
+  "split_files": {
+    "candidates": {
+      "count": 1536,
+      "sha256": "ee1002956bb24bf24dbcaf258fa02786f0e75be5831cbc32e7149e90fb2f39fe",
+      "seed": 410011
+    },
+    "validation": {
+      "count": 128,
+      "sha256": "00280a310d116d84833614647260dcd77ae355453a69d7a8b4e703ccd5c0d7d3",
+      "seed": 510011
+    },
+    "test": {
+      "count": 128,
+      "sha256": "fda7e7804a7b81a2211c9642c8badc4f53f7c1e5f130503c574053266e2b4d4a",
+      "seed": 610011
+    },
+    "test_ood": {
+      "count": 64,
+      "sha256": "e7859eb9c03fc66100e8fde3e9e86466354cdc2cbc383e7889749fc096913222",
+      "seed": 710011
+    }
+  },
+  "protocol_sha256": "c4b7df076f18daa4b949a5c525c5481b4fe05422b0db04972913ecb4f9612d9c"
+}

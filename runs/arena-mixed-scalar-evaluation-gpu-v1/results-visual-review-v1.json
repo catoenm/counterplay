@@ -1,0 +1,23 @@
+{
+  "at": "2026-10-24T00:28:12.156628+00:00",
+  "reviewer": "root",
+  "passed": true,
+  "audit_sha256": "4507d76fa58205dcc552c5cdbff6f47349f43f45074f6ae08d5dca3c23a07cf0",
+  "outputs_sha256": {
+    "results-v1.png": "06b859be471f8b3c6983824d53153b4ff0a9951cdc74d0099cf7d533361fbcb5",
+    "results-v1.svg": "5ca20231b01f08d45c6dc7c6cbd48fc16153526b5aa3e094d660c8920a4f7aaa",
+    "results-v1.json": "0c3154b9522c42b3d3bc52d6d0d44e45dd8f73be819659189a3f55f2cea18b19"
+  },
+  "actual_png_visually_inspected": true,
+  "checks": [
+    "All five environment panels and weighted comparison are present.",
+    "Titles, uncertainty intervals, axes, native metrics and footnotes are readable without overlap or clipping.",
+    "Shows20actualAdamupdates,0skips,448evaluationepisodes,16pairedfamilies perenvironment andcoding4percentobjective.",
+    "Weighted interval straddleszero; table andannotation values match complete boundreport.",
+    "One-seed andtask-specificlimitations visible."
+  ],
+  "limitations": [
+    "No general continual-improvement or causal claim; complete evidence reports mixed performance.",
+    "No result files or frozen source files changed during QA."
+  ]
+}

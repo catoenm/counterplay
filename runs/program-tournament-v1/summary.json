@@ -1,0 +1,4866 @@
+{
+  "all_replays_verified": true,
+  "caveat": "Six seeds with paired seats and fixed opponents are a small, correlated sample. Elo depends on roster and match order; authoring/feedback differences are not RL checkpoint gains.",
+  "complete": true,
+  "controller_identity": "controller authoring versions, not RL checkpoints",
+  "elo": {
+    "initial": 1500.0,
+    "interpretation": "League-relative Elo for controller authoring versions, not RL checkpoints. Small fixed roster and six paired seeds; order dependent, not population skill or evidence of gradient training.",
+    "k_factor": 24.0,
+    "match_history": [
+      {
+        "after": [
+          1488.0,
+          1512.0
+        ],
+        "before": [
+          1500.0,
+          1500.0
+        ],
+        "episode_id": "tournament-0001",
+        "players": [
+          "controller-python-1",
+          "nearest"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1523.172385326556,
+          1476.827614673444
+        ],
+        "before": [
+          1512.0,
+          1488.0
+        ],
+        "episode_id": "tournament-0002",
+        "players": [
+          "nearest",
+          "controller-python-1"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1489.626775893638,
+          1487.200838779806
+        ],
+        "before": [
+          1476.827614673444,
+          1500.0
+        ],
+        "episode_id": "tournament-0003",
+        "players": [
+          "controller-python-1",
+          "qwen38-27b-1"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1475.2846263176732,
+          1501.5429883557708
+        ],
+        "before": [
+          1487.200838779806,
+          1489.626775893638
+        ],
+        "episode_id": "tournament-0004",
+        "players": [
+          "qwen38-27b-1",
+          "controller-python-1"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1489.4896957763367,
+          1512.0532925794341
+        ],
+        "before": [
+          1501.5429883557708,
+          1500.0
+        ],
+        "episode_id": "tournament-0005",
+        "players": [
+          "controller-python-1",
+          "qwen38-27b-1-r2"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1523.2750673349522,
+          1478.2679210208187
+        ],
+        "before": [
+          1512.0532925794341,
+          1489.4896957763367
+        ],
+        "episode_id": "tournament-0006",
+        "players": [
+          "qwen38-27b-1-r2",
+          "controller-python-1"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1491.0175430609988,
+          1487.2503779598198
+        ],
+        "before": [
+          1478.2679210208187,
+          1500.0
+        ],
+        "episode_id": "tournament-0007",
+        "players": [
+          "controller-python-1",
+          "qwen38-27b-2"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1475.3804861341785,
+          1502.8874348866402
+        ],
+        "before": [
+          1487.2503779598198,
+          1491.0175430609988
+        ],
+        "episode_id": "tournament-0008",
+        "players": [
+          "qwen38-27b-2",
+          "controller-python-1"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1514.787708714682,
+          1488.0997261719583
+        ],
+        "before": [
+          1502.8874348866402,
+          1500.0
+        ],
+        "episode_id": "tournament-0009",
+        "players": [
+          "controller-python-1",
+          "qwen38-27b-2-r2"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1477.019687758333,
+          1525.8677471283072
+        ],
+        "before": [
+          1488.0997261719583,
+          1514.787708714682
+        ],
+        "episode_id": "tournament-0010",
+        "players": [
+          "qwen38-27b-2-r2",
+          "controller-python-1"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1512.9759540122452,
+          1512.891793116062
+        ],
+        "before": [
+          1525.8677471283072,
+          1500.0
+        ],
+        "episode_id": "tournament-0011",
+        "players": [
+          "controller-python-1",
+          "value"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1524.8946999303796,
+          1500.9730471979276
+        ],
+        "before": [
+          1512.891793116062,
+          1512.9759540122452
+        ],
+        "episode_id": "tournament-0012",
+        "players": [
+          "value",
+          "controller-python-1"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1533.5287956945692,
+          1464.92821594966
+        ],
+        "before": [
+          1523.172385326556,
+          1475.2846263176732
+        ],
+        "episode_id": "tournament-0013",
+        "players": [
+          "nearest",
+          "qwen38-27b-1"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1455.2672779732825,
+          1543.1897336709467
+        ],
+        "before": [
+          1464.92821594966,
+          1533.5287956945692
+        ],
+        "episode_id": "tournament-0014",
+        "players": [
+          "qwen38-27b-1",
+          "nearest"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1542.5026577543406,
+          1523.9621432515582
+        ],
+        "before": [
+          1543.1897336709467,
+          1523.2750673349522
+        ],
+        "episode_id": "tournament-0015",
+        "players": [
+          "nearest",
+          "qwen38-27b-1-r2"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1536.601902769393,
+          1529.8628982365058
+        ],
+        "before": [
+          1523.9621432515582,
+          1542.5026577543406
+        ],
+        "episode_id": "tournament-0016",
+        "players": [
+          "qwen38-27b-1-r2",
+          "nearest"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1539.9964164888354,
+          1465.2469678818488
+        ],
+        "before": [
+          1529.8628982365058,
+          1475.3804861341785
+        ],
+        "episode_id": "tournament-0017",
+        "players": [
+          "nearest",
+          "qwen38-27b-2"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1455.7896116973964,
+          1549.4537726732879
+        ],
+        "before": [
+          1465.2469678818488,
+          1539.9964164888354
+        ],
+        "episode_id": "tournament-0018",
+        "players": [
+          "qwen38-27b-2",
+          "nearest"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1558.9876152236816,
+          1467.4858452079393
+        ],
+        "before": [
+          1549.4537726732879,
+          1477.019687758333
+        ],
+        "episode_id": "tournament-0019",
+        "players": [
+          "nearest",
+          "qwen38-27b-2-r2"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1458.5751084985216,
+          1567.8983519330993
+        ],
+        "before": [
+          1467.4858452079393,
+          1558.9876152236816
+        ],
+        "episode_id": "tournament-0020",
+        "players": [
+          "qwen38-27b-2-r2",
+          "nearest"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1566.4205971747128,
+          1526.372454688766
+        ],
+        "before": [
+          1567.8983519330993,
+          1524.8946999303796
+        ],
+        "episode_id": "tournament-0021",
+        "players": [
+          "nearest",
+          "value"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1527.7495748090878,
+          1565.0434770543911
+        ],
+        "before": [
+          1526.372454688766,
+          1566.4205971747128
+        ],
+        "episode_id": "tournament-0022",
+        "players": [
+          "value",
+          "nearest"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1446.0262596473183,
+          1545.8429210953573
+        ],
+        "before": [
+          1455.2672779732825,
+          1536.601902769393
+        ],
+        "episode_id": "tournament-0023",
+        "players": [
+          "qwen38-27b-1",
+          "qwen38-27b-1-r2"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1554.4871973389481,
+          1437.3819834037274
+        ],
+        "before": [
+          1545.8429210953573,
+          1446.0262596473183
+        ],
+        "episode_id": "tournament-0024",
+        "players": [
+          "qwen38-27b-1-r2",
+          "qwen38-27b-1"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1438.0171661468119,
+          1455.154428954312
+        ],
+        "before": [
+          1437.3819834037274,
+          1455.7896116973964
+        ],
+        "episode_id": "tournament-0025",
+        "players": [
+          "qwen38-27b-1",
+          "qwen38-27b-2"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1454.5630084218524,
+          1438.6085866792714
+        ],
+        "before": [
+          1455.154428954312,
+          1438.0171661468119
+        ],
+        "episode_id": "tournament-0026",
+        "players": [
+          "qwen38-27b-2",
+          "qwen38-27b-1"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1439.2974477340565,
+          1457.8862474437365
+        ],
+        "before": [
+          1438.6085866792714,
+          1458.5751084985216
+        ],
+        "episode_id": "tournament-0027",
+        "players": [
+          "qwen38-27b-1",
+          "qwen38-27b-2-r2"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1457.2448249664192,
+          1439.9388702113738
+        ],
+        "before": [
+          1457.8862474437365,
+          1439.2974477340565
+        ],
+        "episode_id": "tournament-0028",
+        "players": [
+          "qwen38-27b-2-r2",
+          "qwen38-27b-1"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1430.9087756845297,
+          1536.7796693359319
+        ],
+        "before": [
+          1439.9388702113738,
+          1527.7495748090878
+        ],
+        "episode_id": "tournament-0029",
+        "players": [
+          "qwen38-27b-1",
+          "value"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1545.2321460351302,
+          1422.4562989853314
+        ],
+        "before": [
+          1536.7796693359319,
+          1430.9087756845297
+        ],
+        "episode_id": "tournament-0030",
+        "players": [
+          "value",
+          "qwen38-27b-1"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1563.1280504382287,
+          1445.9221553225718
+        ],
+        "before": [
+          1554.4871973389481,
+          1454.5630084218524
+        ],
+        "episode_id": "tournament-0031",
+        "players": [
+          "qwen38-27b-1-r2",
+          "qwen38-27b-2"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1437.8234234245285,
+          1571.226782336272
+        ],
+        "before": [
+          1445.9221553225718,
+          1563.1280504382287
+        ],
+        "episode_id": "tournament-0032",
+        "players": [
+          "qwen38-27b-2",
+          "qwen38-27b-1-r2"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1579.4253944596164,
+          1449.0462128430747
+        ],
+        "before": [
+          1571.226782336272,
+          1457.2448249664192
+        ],
+        "episode_id": "tournament-0033",
+        "players": [
+          "qwen38-27b-1-r2",
+          "qwen38-27b-2-r2"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1441.349235862411,
+          1587.1223714402802
+        ],
+        "before": [
+          1449.0462128430747,
+          1579.4253944596164
+        ],
+        "episode_id": "tournament-0034",
+        "players": [
+          "qwen38-27b-2-r2",
+          "qwen38-27b-1-r2"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1597.6825047059008,
+          1534.6720127695096
+        ],
+        "before": [
+          1587.1223714402802,
+          1545.2321460351302
+        ],
+        "episode_id": "tournament-0035",
+        "players": [
+          "qwen38-27b-1-r2",
+          "value"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1536.8247675629782,
+          1595.5297499124322
+        ],
+        "before": [
+          1534.6720127695096,
+          1597.6825047059008
+        ],
+        "episode_id": "tournament-0036",
+        "players": [
+          "value",
+          "qwen38-27b-1-r2"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1437.9451964917332,
+          1441.2274627952063
+        ],
+        "before": [
+          1437.8234234245285,
+          1441.349235862411
+        ],
+        "episode_id": "tournament-0037",
+        "players": [
+          "qwen38-27b-2",
+          "qwen38-27b-2-r2"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1441.1141007057129,
+          1438.0585585812266
+        ],
+        "before": [
+          1441.2274627952063,
+          1437.9451964917332
+        ],
+        "episode_id": "tournament-0038",
+        "players": [
+          "qwen38-27b-2-r2",
+          "qwen38-27b-2"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1429.3808100180154,
+          1545.5025161261894
+        ],
+        "before": [
+          1438.0585585812266,
+          1536.8247675629782
+        ],
+        "episode_id": "tournament-0039",
+        "players": [
+          "qwen38-27b-2",
+          "value"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1553.634770620385,
+          1421.2485555238197
+        ],
+        "before": [
+          1545.5025161261894,
+          1429.3808100180154
+        ],
+        "episode_id": "tournament-0040",
+        "players": [
+          "value",
+          "qwen38-27b-2"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1432.8700220173157,
+          1561.8788493087823
+        ],
+        "before": [
+          1441.1141007057129,
+          1553.634770620385
+        ],
+        "episode_id": "tournament-0041",
+        "players": [
+          "qwen38-27b-2-r2",
+          "value"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1569.6171289545161,
+          1425.1317423715818
+        ],
+        "before": [
+          1561.8788493087823,
+          1432.8700220173157
+        ],
+        "episode_id": "tournament-0042",
+        "players": [
+          "value",
+          "qwen38-27b-2-r2"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1515.1612132735982,
+          1550.8553109787206
+        ],
+        "before": [
+          1500.9730471979276,
+          1565.0434770543911
+        ],
+        "episode_id": "tournament-0043",
+        "players": [
+          "controller-python-1",
+          "nearest"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1537.62679965408,
+          1528.3897245982387
+        ],
+        "before": [
+          1550.8553109787206,
+          1515.1612132735982
+        ],
+        "episode_id": "tournament-0044",
+        "players": [
+          "nearest",
+          "controller-python-1"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1536.8402303792623,
+          1414.0057932043078
+        ],
+        "before": [
+          1528.3897245982387,
+          1422.4562989853314
+        ],
+        "episode_id": "tournament-0045",
+        "players": [
+          "controller-python-1",
+          "qwen38-27b-1"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1406.079991180425,
+          1544.7660324031451
+        ],
+        "before": [
+          1414.0057932043078,
+          1536.8402303792623
+        ],
+        "episode_id": "tournament-0046",
+        "players": [
+          "qwen38-27b-1",
+          "controller-python-1"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1534.5069780875524,
+          1605.788804228025
+        ],
+        "before": [
+          1544.7660324031451,
+          1595.5297499124322
+        ],
+        "episode_id": "tournament-0047",
+        "players": [
+          "controller-python-1",
+          "qwen38-27b-1-r2"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1615.3607893663052,
+          1524.934992949272
+        ],
+        "before": [
+          1605.788804228025,
+          1534.5069780875524
+        ],
+        "episode_id": "tournament-0048",
+        "players": [
+          "qwen38-27b-1-r2",
+          "controller-python-1"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1533.4564515637833,
+          1412.7270969093086
+        ],
+        "before": [
+          1524.934992949272,
+          1421.2485555238197
+        ],
+        "episode_id": "tournament-0049",
+        "players": [
+          "controller-python-1",
+          "qwen38-27b-2"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1404.7368371421446,
+          1541.4467113309472
+        ],
+        "before": [
+          1412.7270969093086,
+          1533.4564515637833
+        ],
+        "episode_id": "tournament-0050",
+        "players": [
+          "qwen38-27b-2",
+          "controller-python-1"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1549.5729852751635,
+          1417.0054684273655
+        ],
+        "before": [
+          1541.4467113309472,
+          1425.1317423715818
+        ],
+        "episode_id": "tournament-0051",
+        "players": [
+          "controller-python-1",
+          "qwen38-27b-2-r2"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1409.3742059353094,
+          1557.2042477672196
+        ],
+        "before": [
+          1417.0054684273655,
+          1549.5729852751635
+        ],
+        "episode_id": "tournament-0052",
+        "players": [
+          "qwen38-27b-2-r2",
+          "controller-python-1"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1545.6327911754263,
+          1581.1885855463095
+        ],
+        "before": [
+          1557.2042477672196,
+          1569.6171289545161
+        ],
+        "episode_id": "tournament-0053",
+        "players": [
+          "controller-python-1",
+          "value"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1591.9648011768516,
+          1534.8565755448842
+        ],
+        "before": [
+          1581.1885855463095,
+          1545.6327911754263
+        ],
+        "episode_id": "tournament-0054",
+        "players": [
+          "value",
+          "controller-python-1"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1545.2886762258413,
+          1398.4181146086637
+        ],
+        "before": [
+          1537.62679965408,
+          1406.079991180425
+        ],
+        "episode_id": "tournament-0055",
+        "players": [
+          "nearest",
+          "qwen38-27b-1"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1391.2088227388795,
+          1552.4979680956255
+        ],
+        "before": [
+          1398.4181146086637,
+          1545.2886762258413
+        ],
+        "episode_id": "tournament-0056",
+        "players": [
+          "qwen38-27b-1",
+          "nearest"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1542.6457862939392,
+          1625.2129711679916
+        ],
+        "before": [
+          1552.4979680956255,
+          1615.3607893663052
+        ],
+        "episode_id": "tournament-0057",
+        "players": [
+          "nearest",
+          "qwen38-27b-1-r2"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1610.4137017571416,
+          1557.4450557047892
+        ],
+        "before": [
+          1625.2129711679916,
+          1542.6457862939392
+        ],
+        "episode_id": "tournament-0058",
+        "players": [
+          "qwen38-27b-1-r2",
+          "nearest"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1564.4860024275233,
+          1397.6958904194105
+        ],
+        "before": [
+          1557.4450557047892,
+          1404.7368371421446
+        ],
+        "episode_id": "tournament-0059",
+        "players": [
+          "nearest",
+          "qwen38-27b-2"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1391.0513954630192,
+          1571.1304973839146
+        ],
+        "before": [
+          1397.6958904194105,
+          1564.4860024275233
+        ],
+        "episode_id": "tournament-0060",
+        "players": [
+          "qwen38-27b-2",
+          "nearest"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1577.9151213795774,
+          1402.5895819396467
+        ],
+        "before": [
+          1571.1304973839146,
+          1409.3742059353094
+        ],
+        "episode_id": "tournament-0061",
+        "players": [
+          "nearest",
+          "qwen38-27b-2-r2"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1396.17856545834,
+          1584.326137860884
+        ],
+        "before": [
+          1402.5895819396467,
+          1577.9151213795774
+        ],
+        "episode_id": "tournament-0062",
+        "players": [
+          "qwen38-27b-2-r2",
+          "nearest"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1572.5899254435142,
+          1603.7010135942214
+        ],
+        "before": [
+          1584.326137860884,
+          1591.9648011768516
+        ],
+        "episode_id": "tournament-0063",
+        "players": [
+          "nearest",
+          "value"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1614.6293374841314,
+          1561.6616015536042
+        ],
+        "before": [
+          1603.7010135942214,
+          1572.5899254435142
+        ],
+        "episode_id": "tournament-0064",
+        "players": [
+          "value",
+          "nearest"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1385.9130667881204,
+          1615.7094577079006
+        ],
+        "before": [
+          1391.2088227388795,
+          1610.4137017571416
+        ],
+        "episode_id": "tournament-0065",
+        "players": [
+          "qwen38-27b-1",
+          "qwen38-27b-1-r2"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1620.7578682277629,
+          1380.8646562682582
+        ],
+        "before": [
+          1615.7094577079006,
+          1385.9130667881204
+        ],
+        "episode_id": "tournament-0066",
+        "players": [
+          "qwen38-27b-1-r2",
+          "qwen38-27b-1"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1381.2163929910914,
+          1390.699658740186
+        ],
+        "before": [
+          1380.8646562682582,
+          1391.0513954630192
+        ],
+        "episode_id": "tournament-0067",
+        "players": [
+          "qwen38-27b-1",
+          "qwen38-27b-2"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1390.3721996620047,
+          1381.5438520692726
+        ],
+        "before": [
+          1390.699658740186,
+          1381.2163929910914
+        ],
+        "episode_id": "tournament-0068",
+        "players": [
+          "qwen38-27b-2",
+          "qwen38-27b-1"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1382.0490184306873,
+          1395.6733990969253
+        ],
+        "before": [
+          1381.5438520692726,
+          1396.17856545834
+        ],
+        "episode_id": "tournament-0069",
+        "players": [
+          "qwen38-27b-1",
+          "qwen38-27b-2-r2"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1395.203070716912,
+          1382.5193468107007
+        ],
+        "before": [
+          1395.6733990969253,
+          1382.0490184306873
+        ],
+        "episode_id": "tournament-0070",
+        "players": [
+          "qwen38-27b-2-r2",
+          "qwen38-27b-1"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1377.5238239668904,
+          1619.6248603279416
+        ],
+        "before": [
+          1382.5193468107007,
+          1614.6293374841314
+        ],
+        "episode_id": "tournament-0071",
+        "players": [
+          "qwen38-27b-1",
+          "value"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1624.3966938406984,
+          1372.7519904541336
+        ],
+        "before": [
+          1619.6248603279416,
+          1377.5238239668904
+        ],
+        "episode_id": "tournament-0072",
+        "players": [
+          "value",
+          "qwen38-27b-1"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1625.7927692932449,
+          1385.3372985965227
+        ],
+        "before": [
+          1620.7578682277629,
+          1390.3721996620047
+        ],
+        "episode_id": "tournament-0073",
+        "players": [
+          "qwen38-27b-1-r2",
+          "qwen38-27b-2"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1380.5291472157742,
+          1630.6009206739934
+        ],
+        "before": [
+          1385.3372985965227,
+          1625.7927692932449
+        ],
+        "episode_id": "tournament-0074",
+        "players": [
+          "qwen38-27b-2",
+          "qwen38-27b-1-r2"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1635.521989295645,
+          1390.2820020952604
+        ],
+        "before": [
+          1630.6009206739934,
+          1395.203070716912
+        ],
+        "episode_id": "tournament-0075",
+        "players": [
+          "qwen38-27b-1-r2",
+          "qwen38-27b-2-r2"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1385.5788727939,
+          1640.2251185970053
+        ],
+        "before": [
+          1390.2820020952604,
+          1635.521989295645
+        ],
+        "episode_id": "tournament-0076",
+        "players": [
+          "qwen38-27b-2-r2",
+          "qwen38-27b-1-r2"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1639.678802084881,
+          1624.9430103528227
+        ],
+        "before": [
+          1640.2251185970053,
+          1624.3966938406984
+        ],
+        "episode_id": "tournament-0077",
+        "players": [
+          "qwen38-27b-1-r2",
+          "value"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1625.4516616068697,
+          1639.170150830834
+        ],
+        "before": [
+          1624.9430103528227,
+          1639.678802084881
+        ],
+        "episode_id": "tournament-0078",
+        "players": [
+          "value",
+          "qwen38-27b-1-r2"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1380.703546278221,
+          1385.4044737314532
+        ],
+        "before": [
+          1380.5291472157742,
+          1385.5788727939
+        ],
+        "episode_id": "tournament-0079",
+        "players": [
+          "qwen38-27b-2",
+          "qwen38-27b-2-r2"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1385.2421193566117,
+          1380.8659006530625
+        ],
+        "before": [
+          1385.4044737314532,
+          1380.703546278221
+        ],
+        "episode_id": "tournament-0080",
+        "players": [
+          "qwen38-27b-2-r2",
+          "qwen38-27b-2"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1376.1485138554217,
+          1630.1690484045105
+        ],
+        "before": [
+          1380.8659006530625,
+          1625.4516616068697
+        ],
+        "episode_id": "tournament-0081",
+        "players": [
+          "qwen38-27b-2",
+          "value"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1634.6839751348239,
+          1371.6335871251083
+        ],
+        "before": [
+          1630.1690484045105,
+          1376.1485138554217
+        ],
+        "episode_id": "tournament-0082",
+        "players": [
+          "value",
+          "qwen38-27b-2"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1380.6297841478608,
+          1639.2963103435748
+        ],
+        "before": [
+          1385.2421193566117,
+          1634.6839751348239
+        ],
+        "episode_id": "tournament-0083",
+        "players": [
+          "qwen38-27b-2-r2",
+          "value"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1643.714020004287,
+          1376.2120744871486
+        ],
+        "before": [
+          1639.2963103435748,
+          1380.6297841478608
+        ],
+        "episode_id": "tournament-0084",
+        "players": [
+          "value",
+          "qwen38-27b-2-r2"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1523.7805558062637,
+          1572.7376212922247
+        ],
+        "before": [
+          1534.8565755448842,
+          1561.6616015536042
+        ],
+        "episode_id": "tournament-0085",
+        "players": [
+          "controller-python-1",
+          "nearest"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1583.0578073481206,
+          1513.4603697503678
+        ],
+        "before": [
+          1572.7376212922247,
+          1523.7805558062637
+        ],
+        "episode_id": "tournament-0086",
+        "players": [
+          "nearest",
+          "controller-python-1"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1520.8498309342935,
+          1365.362529270208
+        ],
+        "before": [
+          1513.4603697503678,
+          1372.7519904541336
+        ],
+        "episode_id": "tournament-0087",
+        "players": [
+          "controller-python-1",
+          "qwen38-27b-1"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1358.4009123187432,
+          1527.8114478857583
+        ],
+        "before": [
+          1365.362529270208,
+          1520.8498309342935
+        ],
+        "episode_id": "tournament-0088",
+        "players": [
+          "qwen38-27b-1",
+          "controller-python-1"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1543.531130097867,
+          1623.4504686187254
+        ],
+        "before": [
+          1527.8114478857583,
+          1639.170150830834
+        ],
+        "episode_id": "tournament-0089",
+        "players": [
+          "controller-python-1",
+          "qwen38-27b-1-r2"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1608.73782838275,
+          1558.2437703338423
+        ],
+        "before": [
+          1623.4504686187254,
+          1543.531130097867
+        ],
+        "episode_id": "tournament-0090",
+        "players": [
+          "qwen38-27b-1-r2",
+          "controller-python-1"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1564.3542283415743,
+          1365.5231291173764
+        ],
+        "before": [
+          1558.2437703338423,
+          1371.6335871251083
+        ],
+        "episode_id": "tournament-0091",
+        "players": [
+          "controller-python-1",
+          "qwen38-27b-2"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1359.7275269132003,
+          1570.1498305457503
+        ],
+        "before": [
+          1365.5231291173764,
+          1564.3542283415743
+        ],
+        "episode_id": "tournament-0092",
+        "players": [
+          "qwen38-27b-2",
+          "controller-python-1"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1576.0701625385518,
+          1370.291742494347
+        ],
+        "before": [
+          1570.1498305457503,
+          1376.2120744871486
+        ],
+        "episode_id": "tournament-0093",
+        "players": [
+          "controller-python-1",
+          "qwen38-27b-2-r2"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1364.6701255549551,
+          1581.6917794779438
+        ],
+        "before": [
+          1370.291742494347,
+          1576.0701625385518
+        ],
+        "episode_id": "tournament-0094",
+        "players": [
+          "qwen38-27b-2-r2",
+          "controller-python-1"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1583.8114830032005,
+          1641.5943164790303
+        ],
+        "before": [
+          1581.6917794779438,
+          1643.714020004287
+        ],
+        "episode_id": "tournament-0095",
+        "players": [
+          "controller-python-1",
+          "value"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1651.6167674530132,
+          1573.7890320292177
+        ],
+        "before": [
+          1641.5943164790303,
+          1583.8114830032005
+        ],
+        "episode_id": "tournament-0096",
+        "players": [
+          "value",
+          "controller-python-1"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1588.2251696634587,
+          1353.233550003405
+        ],
+        "before": [
+          1583.0578073481206,
+          1358.4009123187432
+        ],
+        "episode_id": "tournament-0097",
+        "players": [
+          "nearest",
+          "qwen38-27b-1"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1348.3033269859045,
+          1593.1553926809593
+        ],
+        "before": [
+          1353.233550003405,
+          1588.2251696634587
+        ],
+        "episode_id": "tournament-0098",
+        "players": [
+          "qwen38-27b-1",
+          "nearest"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1605.6932303698263,
+          1596.199990693883
+        ],
+        "before": [
+          1593.1553926809593,
+          1608.73782838275
+        ],
+        "episode_id": "tournament-0099",
+        "players": [
+          "nearest",
+          "qwen38-27b-1-r2"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1584.5277940025017,
+          1617.3654270612076
+        ],
+        "before": [
+          1596.199990693883,
+          1605.6932303698263
+        ],
+        "episode_id": "tournament-0100",
+        "players": [
+          "qwen38-27b-1-r2",
+          "nearest"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1621.804520013088,
+          1355.28843396132
+        ],
+        "before": [
+          1617.3654270612076,
+          1359.7275269132003
+        ],
+        "episode_id": "tournament-0101",
+        "players": [
+          "nearest",
+          "qwen38-27b-2"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1351.0312784939354,
+          1626.0616754804726
+        ],
+        "before": [
+          1355.28843396132,
+          1621.804520013088
+        ],
+        "episode_id": "tournament-0102",
+        "players": [
+          "qwen38-27b-2",
+          "nearest"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1630.4231225706703,
+          1360.3086784647573
+        ],
+        "before": [
+          1626.0616754804726,
+          1364.6701255549551
+        ],
+        "episode_id": "tournament-0103",
+        "players": [
+          "nearest",
+          "qwen38-27b-2-r2"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1356.1235789815755,
+          1634.6082220538522
+        ],
+        "before": [
+          1360.3086784647573,
+          1630.4231225706703
+        ],
+        "episode_id": "tournament-0104",
+        "players": [
+          "qwen38-27b-2-r2",
+          "nearest"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1635.1952075625268,
+          1651.0297819443385
+        ],
+        "before": [
+          1634.6082220538522,
+          1651.6167674530132
+        ],
+        "episode_id": "tournament-0105",
+        "players": [
+          "nearest",
+          "value"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1638.483253472077,
+          1647.7417360347883
+        ],
+        "before": [
+          1651.0297819443385,
+          1635.1952075625268
+        ],
+        "episode_id": "tournament-0106",
+        "players": [
+          "value",
+          "nearest"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1343.4008472071746,
+          1589.4302737812316
+        ],
+        "before": [
+          1348.3033269859045,
+          1584.5277940025017
+        ],
+        "episode_id": "tournament-0107",
+        "players": [
+          "qwen38-27b-1",
+          "qwen38-27b-1-r2"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1594.1162423166963,
+          1338.7148786717098
+        ],
+        "before": [
+          1589.4302737812316,
+          1343.4008472071746
+        ],
+        "episode_id": "tournament-0108",
+        "players": [
+          "qwen38-27b-1-r2",
+          "qwen38-27b-1"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1339.140093948591,
+          1350.6060632170543
+        ],
+        "before": [
+          1338.7148786717098,
+          1351.0312784939354
+        ],
+        "episode_id": "tournament-0109",
+        "players": [
+          "qwen38-27b-1",
+          "qwen38-27b-2"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1350.2101863761134,
+          1339.5359707895318
+        ],
+        "before": [
+          1350.6060632170543,
+          1339.140093948591
+        ],
+        "episode_id": "tournament-0110",
+        "players": [
+          "qwen38-27b-2",
+          "qwen38-27b-1"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1340.1084515765904,
+          1355.551098194517
+        ],
+        "before": [
+          1339.5359707895318,
+          1356.1235789815755
+        ],
+        "episode_id": "tournament-0111",
+        "players": [
+          "qwen38-27b-1",
+          "qwen38-27b-2-r2"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1355.0180790373443,
+          1340.641470733763
+        ],
+        "before": [
+          1355.551098194517,
+          1340.1084515765904
+        ],
+        "episode_id": "tournament-0112",
+        "players": [
+          "qwen38-27b-2-r2",
+          "qwen38-27b-1"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1336.9795747264432,
+          1642.1451494793969
+        ],
+        "before": [
+          1340.641470733763,
+          1638.483253472077
+        ],
+        "episode_id": "tournament-0113",
+        "players": [
+          "qwen38-27b-1",
+          "value"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1645.6781259977745,
+          1333.4465982080656
+        ],
+        "before": [
+          1642.1451494793969,
+          1336.9795747264432
+        ],
+        "episode_id": "tournament-0114",
+        "players": [
+          "value",
+          "qwen38-27b-1"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1598.8484764212246,
+          1345.477952271585
+        ],
+        "before": [
+          1594.1162423166963,
+          1350.2101863761134
+        ],
+        "episode_id": "tournament-0115",
+        "players": [
+          "qwen38-27b-1-r2",
+          "qwen38-27b-2"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1340.949293847516,
+          1603.3771348452938
+        ],
+        "before": [
+          1345.477952271585,
+          1598.8484764212246
+        ],
+        "episode_id": "tournament-0116",
+        "players": [
+          "qwen38-27b-2",
+          "qwen38-27b-1-r2"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1608.012738732301,
+          1350.382475150337
+        ],
+        "before": [
+          1603.3771348452938,
+          1355.0180790373443
+        ],
+        "episode_id": "tournament-0117",
+        "players": [
+          "qwen38-27b-1-r2",
+          "qwen38-27b-2-r2"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1345.943223149139,
+          1612.451990733499
+        ],
+        "before": [
+          1350.382475150337,
+          1608.012738732301
+        ],
+        "episode_id": "tournament-0118",
+        "players": [
+          "qwen38-27b-2-r2",
+          "qwen38-27b-1-r2"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1601.5960950834792,
+          1656.5340216477944
+        ],
+        "before": [
+          1612.451990733499,
+          1645.6781259977745
+        ],
+        "episode_id": "tournament-0119",
+        "players": [
+          "qwen38-27b-1-r2",
+          "value"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1666.6521907490505,
+          1591.477925982223
+        ],
+        "before": [
+          1656.5340216477944,
+          1601.5960950834792
+        ],
+        "episode_id": "tournament-0120",
+        "players": [
+          "value",
+          "qwen38-27b-1-r2"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1341.1217661774053,
+          1345.7707508192495
+        ],
+        "before": [
+          1340.949293847516,
+          1345.943223149139
+        ],
+        "episode_id": "tournament-0121",
+        "players": [
+          "qwen38-27b-2",
+          "qwen38-27b-2-r2"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1345.6101901607747,
+          1341.2823268358802
+        ],
+        "before": [
+          1345.7707508192495,
+          1341.1217661774053
+        ],
+        "episode_id": "tournament-0122",
+        "players": [
+          "qwen38-27b-2-r2",
+          "qwen38-27b-2"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1338.0855905246165,
+          1669.8489270603143
+        ],
+        "before": [
+          1341.2823268358802,
+          1666.6521907490505
+        ],
+        "episode_id": "tournament-0123",
+        "players": [
+          "qwen38-27b-2",
+          "value"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1672.9450518880526,
+          1334.9894656968781
+        ],
+        "before": [
+          1669.8489270603143,
+          1338.0855905246165
+        ],
+        "episode_id": "tournament-0124",
+        "players": [
+          "value",
+          "qwen38-27b-2"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1342.4446673169136,
+          1676.1105747319136
+        ],
+        "before": [
+          1345.6101901607747,
+          1672.9450518880526
+        ],
+        "episode_id": "tournament-0125",
+        "players": [
+          "qwen38-27b-2-r2",
+          "value"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1679.1772848064966,
+          1339.3779572423307
+        ],
+        "before": [
+          1676.1105747319136,
+          1342.4446673169136
+        ],
+        "episode_id": "tournament-0126",
+        "players": [
+          "value",
+          "qwen38-27b-2-r2"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1564.3053800069401,
+          1657.2253880570659
+        ],
+        "before": [
+          1573.7890320292177,
+          1647.7417360347883
+        ],
+        "episode_id": "tournament-0127",
+        "players": [
+          "controller-python-1",
+          "nearest"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1666.09043523809,
+          1555.440332825916
+        ],
+        "before": [
+          1657.2253880570659,
+          1564.3053800069401
+        ],
+        "episode_id": "tournament-0128",
+        "players": [
+          "nearest",
+          "controller-python-1"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1560.6701279554993,
+          1328.2168030784821
+        ],
+        "before": [
+          1555.440332825916,
+          1333.4465982080656
+        ],
+        "episode_id": "tournament-0129",
+        "players": [
+          "controller-python-1",
+          "qwen38-27b-1"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1323.2290937743996,
+          1565.6578372595818
+        ],
+        "before": [
+          1328.2168030784821,
+          1560.6701279554993
+        ],
+        "episode_id": "tournament-0130",
+        "players": [
+          "qwen38-27b-1",
+          "controller-python-1"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1554.547993386961,
+          1602.5877698548438
+        ],
+        "before": [
+          1565.6578372595818,
+          1591.477925982223
+        ],
+        "episode_id": "tournament-0131",
+        "players": [
+          "controller-python-1",
+          "qwen38-27b-1-r2"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1612.9390285322802,
+          1544.1967347095247
+        ],
+        "before": [
+          1602.5877698548438,
+          1554.547993386961
+        ],
+        "episode_id": "tournament-0132",
+        "players": [
+          "qwen38-27b-1-r2",
+          "controller-python-1"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1549.7338286085794,
+          1329.4523717978234
+        ],
+        "before": [
+          1544.1967347095247,
+          1334.9894656968781
+        ],
+        "episode_id": "tournament-0133",
+        "players": [
+          "controller-python-1",
+          "qwen38-27b-2"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1324.1821490572877,
+          1555.0040513491151
+        ],
+        "before": [
+          1329.4523717978234,
+          1549.7338286085794
+        ],
+        "episode_id": "tournament-0134",
+        "players": [
+          "qwen38-27b-2",
+          "controller-python-1"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1560.3853216940288,
+          1333.996686897417
+        ],
+        "before": [
+          1555.0040513491151,
+          1339.3779572423307
+        ],
+        "episode_id": "tournament-0135",
+        "players": [
+          "controller-python-1",
+          "qwen38-27b-2-r2"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1328.8696308672747,
+          1565.512377724171
+        ],
+        "before": [
+          1333.996686897417,
+          1560.3853216940288
+        ],
+        "episode_id": "tournament-0136",
+        "players": [
+          "qwen38-27b-2-r2",
+          "controller-python-1"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1557.3039111228386,
+          1687.385751407829
+        ],
+        "before": [
+          1565.512377724171,
+          1679.1772848064966
+        ],
+        "episode_id": "tournament-0137",
+        "players": [
+          "controller-python-1",
+          "value"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1695.091680412934,
+          1549.5979821177336
+        ],
+        "before": [
+          1687.385751407829,
+          1557.3039111228386
+        ],
+        "episode_id": "tournament-0138",
+        "players": [
+          "value",
+          "controller-python-1"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1669.0183247330806,
+          1320.3012042794091
+        ],
+        "before": [
+          1666.09043523809,
+          1323.2290937743996
+        ],
+        "episode_id": "tournament-0139",
+        "players": [
+          "nearest",
+          "qwen38-27b-1"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1317.458871169597,
+          1671.8606578428928
+        ],
+        "before": [
+          1320.3012042794091,
+          1669.0183247330806
+        ],
+        "episode_id": "tournament-0140",
+        "players": [
+          "qwen38-27b-1",
+          "nearest"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1681.8448651775761,
+          1602.9548211975969
+        ],
+        "before": [
+          1671.8606578428928,
+          1612.9390285322802
+        ],
+        "episode_id": "tournament-0141",
+        "players": [
+          "nearest",
+          "qwen38-27b-1-r2"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1605.6337049903939,
+          1679.1659813847791
+        ],
+        "before": [
+          1602.9548211975969,
+          1681.8448651775761
+        ],
+        "episode_id": "tournament-0142",
+        "players": [
+          "qwen38-27b-1-r2",
+          "nearest"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1681.9191599916994,
+          1321.4289704503674
+        ],
+        "before": [
+          1679.1659813847791,
+          1324.1821490572877
+        ],
+        "episode_id": "tournament-0143",
+        "players": [
+          "nearest",
+          "qwen38-27b-2"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1318.752110306103,
+          1684.5960201359637
+        ],
+        "before": [
+          1321.4289704503674,
+          1681.9191599916994
+        ],
+        "episode_id": "tournament-0144",
+        "players": [
+          "qwen38-27b-2",
+          "nearest"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1687.3387974515565,
+          1326.126853551682
+        ],
+        "before": [
+          1684.5960201359637,
+          1328.8696308672747
+        ],
+        "episode_id": "tournament-0145",
+        "players": [
+          "nearest",
+          "qwen38-27b-2-r2"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1323.4598586940913,
+          1690.0057923091472
+        ],
+        "before": [
+          1326.126853551682,
+          1687.3387974515565
+        ],
+        "episode_id": "tournament-0146",
+        "players": [
+          "qwen38-27b-2-r2",
+          "nearest"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1678.181440115278,
+          1706.9160326068031
+        ],
+        "before": [
+          1690.0057923091472,
+          1695.091680412934
+        ],
+        "episode_id": "tournament-0147",
+        "players": [
+          "nearest",
+          "value"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1717.9258315993907,
+          1667.1716411226905
+        ],
+        "before": [
+          1706.9160326068031,
+          1678.181440115278
+        ],
+        "episode_id": "tournament-0148",
+        "players": [
+          "value",
+          "nearest"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1313.620933862215,
+          1609.4716422977758
+        ],
+        "before": [
+          1317.458871169597,
+          1605.6337049903939
+        ],
+        "episode_id": "tournament-0149",
+        "players": [
+          "qwen38-27b-1",
+          "qwen38-27b-1-r2"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1613.1692472012169,
+          1309.923328958774
+        ],
+        "before": [
+          1609.4716422977758,
+          1313.620933862215
+        ],
+        "episode_id": "tournament-0150",
+        "players": [
+          "qwen38-27b-1-r2",
+          "qwen38-27b-1"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1310.2281986449298,
+          1318.4472406199473
+        ],
+        "before": [
+          1309.923328958774,
+          1318.752110306103
+        ],
+        "episode_id": "tournament-0151",
+        "players": [
+          "qwen38-27b-1",
+          "qwen38-27b-2"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1318.1634179093749,
+          1310.5120213555022
+        ],
+        "before": [
+          1318.4472406199473,
+          1310.2281986449298
+        ],
+        "episode_id": "tournament-0152",
+        "players": [
+          "qwen38-27b-2",
+          "qwen38-27b-1"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1310.9590169012188,
+          1323.0128631483747
+        ],
+        "before": [
+          1310.5120213555022,
+          1323.4598586940913
+        ],
+        "episode_id": "tournament-0153",
+        "players": [
+          "qwen38-27b-1",
+          "qwen38-27b-2-r2"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1322.5967050052845,
+          1311.375175044309
+        ],
+        "before": [
+          1323.0128631483747,
+          1310.9590169012188
+        ],
+        "episode_id": "tournament-0154",
+        "players": [
+          "qwen38-27b-2-r2",
+          "qwen38-27b-1"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1309.2670059443778,
+          1720.0340006993217
+        ],
+        "before": [
+          1311.375175044309,
+          1717.9258315993907
+        ],
+        "episode_id": "tournament-0155",
+        "players": [
+          "qwen38-27b-1",
+          "value"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1722.0959611375422,
+          1307.2050455061574
+        ],
+        "before": [
+          1720.0340006993217,
+          1309.2670059443778
+        ],
+        "episode_id": "tournament-0156",
+        "players": [
+          "value",
+          "qwen38-27b-1"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1616.8820904306933,
+          1314.4505746798984
+        ],
+        "before": [
+          1613.1692472012169,
+          1318.1634179093749
+        ],
+        "episode_id": "tournament-0157",
+        "players": [
+          "qwen38-27b-1-r2",
+          "qwen38-27b-2"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1310.869915897108,
+          1620.4627492134837
+        ],
+        "before": [
+          1314.4505746798984,
+          1616.8820904306933
+        ],
+        "episode_id": "tournament-0158",
+        "players": [
+          "qwen38-27b-2",
+          "qwen38-27b-1-r2"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1624.124211852681,
+          1318.9352423660873
+        ],
+        "before": [
+          1620.4627492134837,
+          1322.5967050052845
+        ],
+        "episode_id": "tournament-0159",
+        "players": [
+          "qwen38-27b-1-r2",
+          "qwen38-27b-2-r2"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1315.402671577938,
+          1627.6567826408302
+        ],
+        "before": [
+          1318.9352423660873,
+          1624.124211852681
+        ],
+        "episode_id": "tournament-0160",
+        "players": [
+          "qwen38-27b-2-r2",
+          "qwen38-27b-1-r2"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1618.8405685832724,
+          1730.9121751951
+        ],
+        "before": [
+          1627.6567826408302,
+          1722.0959611375422
+        ],
+        "episode_id": "tournament-0161",
+        "players": [
+          "qwen38-27b-1-r2",
+          "value"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1739.1702501898383,
+          1610.5824935885341
+        ],
+        "before": [
+          1730.9121751951,
+          1618.8405685832724
+        ],
+        "episode_id": "tournament-0162",
+        "players": [
+          "value",
+          "qwen38-27b-1-r2"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1311.0264628503544,
+          1315.2461246246917
+        ],
+        "before": [
+          1310.869915897108,
+          1315.402671577938
+        ],
+        "episode_id": "tournament-0163",
+        "players": [
+          "qwen38-27b-2",
+          "qwen38-27b-2-r2"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1315.100389835671,
+          1311.172197639375
+        ],
+        "before": [
+          1315.2461246246917,
+          1311.0264628503544
+        ],
+        "episode_id": "tournament-0164",
+        "players": [
+          "qwen38-27b-2-r2",
+          "qwen38-27b-2"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1309.289673992309,
+          1741.0527738369044
+        ],
+        "before": [
+          1311.172197639375,
+          1739.1702501898383
+        ],
+        "episode_id": "tournament-0165",
+        "players": [
+          "qwen38-27b-2",
+          "value"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1742.8980390945676,
+          1307.4444087346458
+        ],
+        "before": [
+          1741.0527738369044,
+          1309.289673992309
+        ],
+        "episode_id": "tournament-0166",
+        "players": [
+          "value",
+          "qwen38-27b-2"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1313.2158638545814,
+          1744.7825650756572
+        ],
+        "before": [
+          1315.100389835671,
+          1742.8980390945676
+        ],
+        "episode_id": "tournament-0167",
+        "players": [
+          "qwen38-27b-2-r2",
+          "value"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1746.6297570417871,
+          1311.3686718884514
+        ],
+        "before": [
+          1744.7825650756572,
+          1313.2158638545814
+        ],
+        "episode_id": "tournament-0168",
+        "players": [
+          "value",
+          "qwen38-27b-2-r2"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1541.5106058888853,
+          1675.259017351539
+        ],
+        "before": [
+          1549.5979821177336,
+          1667.1716411226905
+        ],
+        "episode_id": "tournament-0169",
+        "players": [
+          "controller-python-1",
+          "nearest"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1682.85494294433,
+          1533.914680296094
+        ],
+        "before": [
+          1675.259017351539,
+          1541.5106058888853
+        ],
+        "episode_id": "tournament-0170",
+        "players": [
+          "nearest",
+          "controller-python-1"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1539.0342902527777,
+          1302.0854355494737
+        ],
+        "before": [
+          1533.914680296094,
+          1307.2050455061574
+        ],
+        "episode_id": "tournament-0171",
+        "players": [
+          "controller-python-1",
+          "qwen38-27b-1"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1297.1992027433487,
+          1543.9205230589027
+        ],
+        "before": [
+          1302.0854355494737,
+          1539.0342902527777
+        ],
+        "episode_id": "tournament-0172",
+        "players": [
+          "qwen38-27b-1",
+          "controller-python-1"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1534.1951024354441,
+          1620.3079142119927
+        ],
+        "before": [
+          1543.9205230589027,
+          1610.5824935885341
+        ],
+        "episode_id": "tournament-0173",
+        "players": [
+          "controller-python-1",
+          "qwen38-27b-1-r2"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1629.3931260734519,
+          1525.109890573985
+        ],
+        "before": [
+          1620.3079142119927,
+          1534.1951024354441
+        ],
+        "episode_id": "tournament-0174",
+        "players": [
+          "qwen38-27b-1-r2",
+          "controller-python-1"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1530.4423102677988,
+          1302.111989040832
+        ],
+        "before": [
+          1525.109890573985,
+          1307.4444087346458
+        ],
+        "episode_id": "tournament-0175",
+        "players": [
+          "controller-python-1",
+          "qwen38-27b-2"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1297.0298529192607,
+          1535.52444638937
+        ],
+        "before": [
+          1302.111989040832,
+          1530.4423102677988
+        ],
+        "episode_id": "tournament-0176",
+        "players": [
+          "qwen38-27b-2",
+          "controller-python-1"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1540.7035151010468,
+          1306.1896031767747
+        ],
+        "before": [
+          1535.52444638937,
+          1311.3686718884514
+        ],
+        "episode_id": "tournament-0177",
+        "players": [
+          "controller-python-1",
+          "qwen38-27b-2-r2"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1301.248598872994,
+          1545.6445194048274
+        ],
+        "before": [
+          1306.1896031767747,
+          1540.7035151010468
+        ],
+        "episode_id": "tournament-0178",
+        "players": [
+          "qwen38-27b-2-r2",
+          "controller-python-1"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1539.9032544218799,
+          1752.3710220247347
+        ],
+        "before": [
+          1545.6445194048274,
+          1746.6297570417871
+        ],
+        "episode_id": "tournament-0179",
+        "players": [
+          "controller-python-1",
+          "value"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1757.8285717757608,
+          1534.4457046708537
+        ],
+        "before": [
+          1752.3710220247347,
+          1539.9032544218799
+        ],
+        "episode_id": "tournament-0180",
+        "players": [
+          "value",
+          "controller-python-1"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1685.2061668963845,
+          1294.8479787912943
+        ],
+        "before": [
+          1682.85494294433,
+          1297.1992027433487
+        ],
+        "episode_id": "tournament-0181",
+        "players": [
+          "nearest",
+          "qwen38-27b-1"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1292.5535444318843,
+          1687.5006012557944
+        ],
+        "before": [
+          1294.8479787912943,
+          1685.2061668963845
+        ],
+        "episode_id": "tournament-0182",
+        "players": [
+          "qwen38-27b-1",
+          "nearest"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1685.5121456962859,
+          1631.3815816329604
+        ],
+        "before": [
+          1687.5006012557944,
+          1629.3931260734519
+        ],
+        "episode_id": "tournament-0183",
+        "players": [
+          "nearest",
+          "qwen38-27b-1-r2"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1633.2362031155994,
+          1683.6575242136469
+        ],
+        "before": [
+          1631.3815816329604,
+          1685.5121456962859
+        ],
+        "episode_id": "tournament-0184",
+        "players": [
+          "qwen38-27b-1-r2",
+          "nearest"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1685.9969087471525,
+          1294.6904683857551
+        ],
+        "before": [
+          1683.6575242136469,
+          1297.0298529192607
+        ],
+        "episode_id": "tournament-0185",
+        "players": [
+          "nearest",
+          "qwen38-27b-2"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1292.4073360545538,
+          1688.2800410783539
+        ],
+        "before": [
+          1294.6904683857551,
+          1685.9969087471525
+        ],
+        "episode_id": "tournament-0186",
+        "players": [
+          "qwen38-27b-2",
+          "nearest"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1690.614522796201,
+          1298.9141171551469
+        ],
+        "before": [
+          1688.2800410783539,
+          1301.248598872994
+        ],
+        "episode_id": "tournament-0187",
+        "players": [
+          "nearest",
+          "qwen38-27b-2-r2"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1296.6356657513884,
+          1692.8929741999596
+        ],
+        "before": [
+          1298.9141171551469,
+          1690.614522796201
+        ],
+        "episode_id": "tournament-0188",
+        "players": [
+          "qwen38-27b-2-r2",
+          "nearest"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1683.1100153532946,
+          1767.6115306224258
+        ],
+        "before": [
+          1692.8929741999596,
+          1757.8285717757608
+        ],
+        "episode_id": "tournament-0189",
+        "players": [
+          "nearest",
+          "value"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1776.7491699002212,
+          1673.9723760754991
+        ],
+        "before": [
+          1767.6115306224258,
+          1683.1100153532946
+        ],
+        "episode_id": "tournament-0190",
+        "players": [
+          "value",
+          "nearest"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1289.593261335817,
+          1636.1964862116668
+        ],
+        "before": [
+          1292.5535444318843,
+          1633.2362031155994
+        ],
+        "episode_id": "tournament-0191",
+        "players": [
+          "qwen38-27b-1",
+          "qwen38-27b-1-r2"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1639.069452110675,
+          1286.7202954368088
+        ],
+        "before": [
+          1636.1964862116668,
+          1289.593261335817
+        ],
+        "episode_id": "tournament-0192",
+        "players": [
+          "qwen38-27b-1-r2",
+          "qwen38-27b-1"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1286.916701320248,
+          1292.2109301711146
+        ],
+        "before": [
+          1286.7202954368088,
+          1292.4073360545538
+        ],
+        "episode_id": "tournament-0193",
+        "players": [
+          "qwen38-27b-1",
+          "qwen38-27b-2"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1292.0280881362298,
+          1287.0995433551327
+        ],
+        "before": [
+          1292.2109301711146,
+          1286.916701320248
+        ],
+        "episode_id": "tournament-0194",
+        "players": [
+          "qwen38-27b-2",
+          "qwen38-27b-1"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1287.42882667021,
+          1296.3063824363112
+        ],
+        "before": [
+          1287.0995433551327,
+          1296.6356657513884
+        ],
+        "episode_id": "tournament-0195",
+        "players": [
+          "qwen38-27b-1",
+          "qwen38-27b-2-r2"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1295.9998292347664,
+          1287.7353798717547
+        ],
+        "before": [
+          1296.3063824363112,
+          1287.42882667021
+        ],
+        "episode_id": "tournament-0196",
+        "players": [
+          "qwen38-27b-2-r2",
+          "qwen38-27b-1"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1286.3789114525594,
+          1778.1056383194166
+        ],
+        "before": [
+          1287.7353798717547,
+          1776.7491699002212
+        ],
+        "episode_id": "tournament-0197",
+        "players": [
+          "qwen38-27b-1",
+          "value"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1779.4422580529651,
+          1285.0422917190108
+        ],
+        "before": [
+          1778.1056383194166,
+          1286.3789114525594
+        ],
+        "episode_id": "tournament-0198",
+        "players": [
+          "value",
+          "qwen38-27b-1"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1641.936045523728,
+          1289.161494723177
+        ],
+        "before": [
+          1639.069452110675,
+          1292.0280881362298
+        ],
+        "episode_id": "tournament-0199",
+        "players": [
+          "qwen38-27b-1-r2",
+          "qwen38-27b-2"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1286.3771666060757,
+          1644.7203736408292
+        ],
+        "before": [
+          1289.161494723177,
+          1641.936045523728
+        ],
+        "episode_id": "tournament-0200",
+        "players": [
+          "qwen38-27b-2",
+          "qwen38-27b-1-r2"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1647.562657363754,
+          1293.1575455118416
+        ],
+        "before": [
+          1644.7203736408292,
+          1295.9998292347664
+        ],
+        "episode_id": "tournament-0201",
+        "players": [
+          "qwen38-27b-1-r2",
+          "qwen38-27b-2-r2"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1290.3962367458498,
+          1650.3239661297457
+        ],
+        "before": [
+          1293.1575455118416,
+          1647.562657363754
+        ],
+        "episode_id": "tournament-0202",
+        "players": [
+          "qwen38-27b-2-r2",
+          "qwen38-27b-1-r2"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1642.5889900316852,
+          1787.1772341510257
+        ],
+        "before": [
+          1650.3239661297457,
+          1779.4422580529651
+        ],
+        "episode_id": "tournament-0203",
+        "players": [
+          "qwen38-27b-1-r2",
+          "value"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1794.4529639853997,
+          1635.3132601973111
+        ],
+        "before": [
+          1787.1772341510257,
+          1642.5889900316852
+        ],
+        "episode_id": "tournament-0204",
+        "players": [
+          "value",
+          "qwen38-27b-1-r2"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1286.515974179524,
+          1290.2574291724015
+        ],
+        "before": [
+          1286.3771666060757,
+          1290.3962367458498
+        ],
+        "episode_id": "tournament-0205",
+        "players": [
+          "qwen38-27b-2",
+          "qwen38-27b-2-r2"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1290.128208890046,
+          1286.6451944618796
+        ],
+        "before": [
+          1290.2574291724015,
+          1286.515974179524
+        ],
+        "episode_id": "tournament-0206",
+        "players": [
+          "qwen38-27b-2-r2",
+          "qwen38-27b-2"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1285.4207220028998,
+          1795.6774364443795
+        ],
+        "before": [
+          1286.6451944618796,
+          1794.4529639853997
+        ],
+        "episode_id": "tournament-0207",
+        "players": [
+          "qwen38-27b-2",
+          "value"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1796.8856311810764,
+          1284.2125272662029
+        ],
+        "before": [
+          1795.6774364443795,
+          1285.4207220028998
+        ],
+        "episode_id": "tournament-0208",
+        "players": [
+          "value",
+          "qwen38-27b-2"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1288.8966915436476,
+          1798.1171485274747
+        ],
+        "before": [
+          1290.128208890046,
+          1796.8856311810764
+        ],
+        "episode_id": "tournament-0209",
+        "players": [
+          "qwen38-27b-2-r2",
+          "value"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1799.3322059318466,
+          1287.6816341392757
+        ],
+        "before": [
+          1798.1171485274747,
+          1288.8966915436476
+        ],
+        "episode_id": "tournament-0210",
+        "players": [
+          "value",
+          "qwen38-27b-2-r2"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1539.0214083669523,
+          1669.3966723794006
+        ],
+        "before": [
+          1534.4457046708537,
+          1673.9723760754991
+        ],
+        "episode_id": "tournament-0211",
+        "players": [
+          "controller-python-1",
+          "nearest"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1665.0937672712716,
+          1543.3243134750812
+        ],
+        "before": [
+          1669.3966723794006,
+          1539.0214083669523
+        ],
+        "episode_id": "tournament-0212",
+        "players": [
+          "nearest",
+          "controller-python-1"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1547.7500069438727,
+          1280.6165982502193
+        ],
+        "before": [
+          1543.3243134750812,
+          1285.0422917190108
+        ],
+        "episode_id": "tournament-0213",
+        "players": [
+          "controller-python-1",
+          "qwen38-27b-1"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1276.3718732607786,
+          1551.9947319333135
+        ],
+        "before": [
+          1280.6165982502193,
+          1547.7500069438727
+        ],
+        "episode_id": "tournament-0214",
+        "players": [
+          "qwen38-27b-1",
+          "controller-python-1"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1554.818527292551,
+          1632.4894648380737
+        ],
+        "before": [
+          1551.9947319333135,
+          1635.3132601973111
+        ],
+        "episode_id": "tournament-0215",
+        "players": [
+          "controller-python-1",
+          "qwen38-27b-1-r2"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1629.850620262246,
+          1557.4573718683787
+        ],
+        "before": [
+          1632.4894648380737,
+          1554.818527292551
+        ],
+        "episode_id": "tournament-0216",
+        "players": [
+          "qwen38-27b-1-r2",
+          "controller-python-1"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1561.580571515849,
+          1280.0893276187326
+        ],
+        "before": [
+          1557.4573718683787,
+          1284.2125272662029
+        ],
+        "episode_id": "tournament-0217",
+        "players": [
+          "controller-python-1",
+          "qwen38-27b-2"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1276.1257141803437,
+          1565.5441849542378
+        ],
+        "before": [
+          1280.0893276187326,
+          1561.580571515849
+        ],
+        "episode_id": "tournament-0218",
+        "players": [
+          "qwen38-27b-2",
+          "controller-python-1"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1569.5774029734525,
+          1283.648416120061
+        ],
+        "before": [
+          1565.5441849542378,
+          1287.6816341392757
+        ],
+        "episode_id": "tournament-0219",
+        "players": [
+          "controller-python-1",
+          "qwen38-27b-2-r2"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1279.7686124684774,
+          1573.4572066250362
+        ],
+        "before": [
+          1283.648416120061,
+          1569.5774029734525
+        ],
+        "episode_id": "tournament-0220",
+        "players": [
+          "qwen38-27b-2-r2",
+          "controller-python-1"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1580.318219652175,
+          1792.4711929047078
+        ],
+        "before": [
+          1573.4572066250362,
+          1799.3322059318466
+        ],
+        "episode_id": "tournament-0221",
+        "players": [
+          "controller-python-1",
+          "value"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1785.936387183792,
+          1586.8530253730908
+        ],
+        "before": [
+          1792.4711929047078,
+          1580.318219652175
+        ],
+        "episode_id": "tournament-0222",
+        "players": [
+          "value",
+          "controller-python-1"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1667.4078219823468,
+          1274.0578185497034
+        ],
+        "before": [
+          1665.0937672712716,
+          1276.3718732607786
+        ],
+        "episode_id": "tournament-0223",
+        "players": [
+          "nearest",
+          "qwen38-27b-1"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1271.7988737894134,
+          1669.6667667426368
+        ],
+        "before": [
+          1274.0578185497034,
+          1667.4078219823468
+        ],
+        "episode_id": "tournament-0224",
+        "players": [
+          "qwen38-27b-1",
+          "nearest"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1668.297554557063,
+          1631.2198324478197
+        ],
+        "before": [
+          1669.6667667426368,
+          1629.850620262246
+        ],
+        "episode_id": "tournament-0225",
+        "players": [
+          "nearest",
+          "qwen38-27b-1-r2"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1632.4956120797863,
+          1667.0217749250965
+        ],
+        "before": [
+          1631.2198324478197,
+          1668.297554557063
+        ],
+        "episode_id": "tournament-0226",
+        "players": [
+          "qwen38-27b-1-r2",
+          "nearest"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1669.3097923610212,
+          1273.837696744419
+        ],
+        "before": [
+          1667.0217749250965,
+          1276.1257141803437
+        ],
+        "episode_id": "tournament-0227",
+        "players": [
+          "nearest",
+          "qwen38-27b-2"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1271.6036257536462,
+          1671.543863351794
+        ],
+        "before": [
+          1273.837696744419,
+          1669.3097923610212
+        ],
+        "episode_id": "tournament-0228",
+        "players": [
+          "qwen38-27b-2",
+          "nearest"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1673.8214264478754,
+          1277.491049372396
+        ],
+        "before": [
+          1671.543863351794,
+          1279.7686124684774
+        ],
+        "episode_id": "tournament-0229",
+        "players": [
+          "nearest",
+          "qwen38-27b-2-r2"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1275.2669686060058,
+          1676.0455072142656
+        ],
+        "before": [
+          1277.491049372396,
+          1673.8214264478754
+        ],
+        "episode_id": "tournament-0230",
+        "players": [
+          "qwen38-27b-2-r2",
+          "nearest"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1679.7193039312556,
+          1782.262590466802
+        ],
+        "before": [
+          1676.0455072142656,
+          1785.936387183792
+        ],
+        "episode_id": "tournament-0231",
+        "players": [
+          "nearest",
+          "value"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1778.8202487698402,
+          1683.1616456282175
+        ],
+        "before": [
+          1782.262590466802,
+          1679.7193039312556
+        ],
+        "episode_id": "tournament-0232",
+        "players": [
+          "value",
+          "nearest"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1269.12484010789,
+          1635.1696457613098
+        ],
+        "before": [
+          1271.7988737894134,
+          1632.4956120797863
+        ],
+        "episode_id": "tournament-0233",
+        "players": [
+          "qwen38-27b-1",
+          "qwen38-27b-1-r2"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1637.7713993923066,
+          1266.523086476893
+        ],
+        "before": [
+          1635.1696457613098,
+          1269.12484010789
+        ],
+        "episode_id": "tournament-0234",
+        "players": [
+          "qwen38-27b-1-r2",
+          "qwen38-27b-1"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1266.6985495806225,
+          1271.4281626499167
+        ],
+        "before": [
+          1266.523086476893,
+          1271.6036257536462
+        ],
+        "episode_id": "tournament-0235",
+        "players": [
+          "qwen38-27b-1",
+          "qwen38-27b-2"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1271.264817691463,
+          1266.8618945390763
+        ],
+        "before": [
+          1271.4281626499167,
+          1266.6985495806225
+        ],
+        "episode_id": "tournament-0236",
+        "players": [
+          "qwen38-27b-2",
+          "qwen38-27b-1"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1267.1521388941328,
+          1274.9767242509492
+        ],
+        "before": [
+          1266.8618945390763,
+          1275.2669686060058
+        ],
+        "episode_id": "tournament-0237",
+        "players": [
+          "qwen38-27b-1",
+          "qwen38-27b-2-r2"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1274.706518327653,
+          1267.4223448174291
+        ],
+        "before": [
+          1274.9767242509492,
+          1267.1521388941328
+        ],
+        "episode_id": "tournament-0238",
+        "players": [
+          "qwen38-27b-2-r2",
+          "qwen38-27b-1"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1266.221665191076,
+          1780.0209283961933
+        ],
+        "before": [
+          1267.4223448174291,
+          1778.8202487698402
+        ],
+        "episode_id": "tournament-0239",
+        "players": [
+          "qwen38-27b-1",
+          "value"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1781.2059386801643,
+          1265.036654907105
+        ],
+        "before": [
+          1780.0209283961933,
+          1266.221665191076
+        ],
+        "episode_id": "tournament-0240",
+        "players": [
+          "value",
+          "qwen38-27b-1"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1640.3669932019236,
+          1268.669223881846
+        ],
+        "before": [
+          1637.7713993923066,
+          1271.264817691463
+        ],
+        "episode_id": "tournament-0241",
+        "players": [
+          "qwen38-27b-1-r2",
+          "qwen38-27b-2"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1266.1419997094367,
+          1642.8942173743328
+        ],
+        "before": [
+          1268.669223881846,
+          1640.3669932019236
+        ],
+        "episode_id": "tournament-0242",
+        "players": [
+          "qwen38-27b-2",
+          "qwen38-27b-1-r2"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1645.4674942118202,
+          1272.1332414901656
+        ],
+        "before": [
+          1642.8942173743328,
+          1274.706518327653
+        ],
+        "episode_id": "tournament-0243",
+        "players": [
+          "qwen38-27b-1-r2",
+          "qwen38-27b-2-r2"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1269.6272386681578,
+          1647.973497033828
+        ],
+        "before": [
+          1272.1332414901656,
+          1645.4674942118202
+        ],
+        "episode_id": "tournament-0244",
+        "players": [
+          "qwen38-27b-2-r2",
+          "qwen38-27b-1-r2"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1652.3621424461571,
+          1776.817293267835
+        ],
+        "before": [
+          1647.973497033828,
+          1781.2059386801643
+        ],
+        "episode_id": "tournament-0245",
+        "players": [
+          "qwen38-27b-1-r2",
+          "value"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1772.693649099497,
+          1656.4857866144953
+        ],
+        "before": [
+          1776.817293267835,
+          1652.3621424461571
+        ],
+        "episode_id": "tournament-0246",
+        "players": [
+          "value",
+          "qwen38-27b-1-r2"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1266.2623715609707,
+          1269.5068668166239
+        ],
+        "before": [
+          1266.1419997094367,
+          1269.6272386681578
+        ],
+        "episode_id": "tournament-0247",
+        "players": [
+          "qwen38-27b-2",
+          "qwen38-27b-2-r2"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1269.3948091778166,
+          1266.374429199778
+        ],
+        "before": [
+          1269.5068668166239,
+          1266.2623715609707
+        ],
+        "episode_id": "tournament-0248",
+        "players": [
+          "qwen38-27b-2-r2",
+          "qwen38-27b-2"
+        ],
+        "score_player0": 0.5
+      },
+      {
+        "after": [
+          1265.1399614227478,
+          1773.9281168765272
+        ],
+        "before": [
+          1266.374429199778,
+          1772.693649099497
+        ],
+        "episode_id": "tournament-0249",
+        "players": [
+          "qwen38-27b-2",
+          "value"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1775.1460481148551,
+          1263.9220301844198
+        ],
+        "before": [
+          1773.9281168765272,
+          1265.1399614227478
+        ],
+        "episode_id": "tournament-0250",
+        "players": [
+          "value",
+          "qwen38-27b-2"
+        ],
+        "score_player0": 1.0
+      },
+      {
+        "after": [
+          1268.156507217934,
+          1776.3843500747378
+        ],
+        "before": [
+          1269.3948091778166,
+          1775.1460481148551
+        ],
+        "episode_id": "tournament-0251",
+        "players": [
+          "qwen38-27b-2-r2",
+          "value"
+        ],
+        "score_player0": 0.0
+      },
+      {
+        "after": [
+          1777.6060157072197,
+          1266.934841585452
+        ],
+        "before": [
+          1776.3843500747378,
+          1268.156507217934
+        ],
+        "episode_id": "tournament-0252",
+        "players": [
+          "value",
+          "qwen38-27b-2-r2"
+        ],
+        "score_player0": 1.0
+      }
+    ],
+    "order": "Frozen schedule: ascending seed, lexicographically sorted identity pairs, first orientation then swapped seats.",
+    "ratings": {
+      "controller-python-1": 1586.8530253730908,
+      "nearest": 1683.1616456282175,
+      "qwen38-27b-1": 1265.036654907105,
+      "qwen38-27b-1-r2": 1656.4857866144953,
+      "qwen38-27b-2": 1263.9220301844198,
+      "qwen38-27b-2-r2": 1266.934841585452,
+      "value": 1777.6060157072197
+    },
+    "score": "Actual final banked-point difference: win=1, draw=0.5, loss=0; no shaped adjudication."
+  },
+  "external_spend_usd": 0,
+  "interpretation": "A small frozen controller league. All five retained model-authored programs remain visible, including failures. No policy weights are updated.",
+  "matches": 252,
+  "matches_sha256": "758a2ecc00a4e034aa7e3ef6299a0ae7daec4a90f1c8962ae69af047c90959f0",
+  "new_api_calls": 0,
+  "peer_matches": 120,
+  "plan_sha256": "2f8ac9dd5870ba13500d8eab11768992f86de4dd80f1643765e29fb942ce47ab",
+  "players": {
+    "controller-python-1": {
+      "authoring_model": "deepseek/deepseek-v4-pro-0813",
+      "by_opponent": {
+        "nearest": {
+          "banked_points": 198,
+          "decision_turns": 576,
+          "draws": 2,
+          "failed_game_actions": 0,
+          "fault_types": {},
+          "games": 12,
+          "losses": 8,
+          "mean_banked_points": 16.5,
+          "mean_return": 0.024860787360787368,
+          "opponent_banked_points": 182,
+          "program_faults": 0,
+          "return_sum": 0.2983294483294484,
+          "wins": 2
+        },
+        "qwen38-27b-1": {
+          "banked_points": 208,
+          "decision_turns": 576,
+          "draws": 0,
+          "failed_game_actions": 0,
+          "fault_types": {},
+          "games": 12,
+          "losses": 0,
+          "mean_banked_points": 17.333333333333332,
+          "mean_return": 0.5066498316498317,
+          "opponent_banked_points": 0,
+          "program_faults": 0,
+          "return_sum": 6.079797979797981,
+          "wins": 12
+        },
+        "qwen38-27b-1-r2": {
+          "banked_points": 176,
+          "decision_turns": 576,
+          "draws": 2,
+          "failed_game_actions": 0,
+          "fault_types": {},
+          "games": 12,
+          "losses": 8,
+          "mean_banked_points": 14.666666666666666,
+          "mean_return": -0.05590844340844341,
+          "opponent_banked_points": 202,
+          "program_faults": 0,
+          "return_sum": -0.6709013209013209,
+          "wins": 2
+        },
+        "qwen38-27b-2": {
+          "banked_points": 236,
+          "decision_turns": 576,
+          "draws": 0,
+          "failed_game_actions": 0,
+          "fault_types": {},
+          "games": 12,
+          "losses": 0,
+          "mean_banked_points": 19.666666666666668,
+          "mean_return": 0.576048951048951,
+          "opponent_banked_points": 0,
+          "program_faults": 0,
+          "return_sum": 6.9125874125874125,
+          "wins": 12
+        },
+        "qwen38-27b-2-r2": {
+          "banked_points": 236,
+          "decision_turns": 576,
+          "draws": 0,
+          "failed_game_actions": 0,
+          "fault_types": {},
+          "games": 12,
+          "losses": 0,
+          "mean_banked_points": 19.666666666666668,
+          "mean_return": 0.576048951048951,
+          "opponent_banked_points": 0,
+          "program_faults": 0,
+          "return_sum": 6.9125874125874125,
+          "wins": 12
+        },
+        "value": {
+          "banked_points": 182,
+          "decision_turns": 576,
+          "draws": 3,
+          "failed_game_actions": 0,
+          "fault_types": {},
+          "games": 12,
+          "losses": 9,
+          "mean_banked_points": 15.166666666666666,
+          "mean_return": -0.05261590261590262,
+          "opponent_banked_points": 203,
+          "program_faults": 0,
+          "return_sum": -0.6313908313908314,
+          "wins": 0
+        }
+      },
+      "origin": "model",
+      "overall": {
+        "banked_points": 1236,
+        "decision_turns": 3456,
+        "draws": 7,
+        "failed_game_actions": 0,
+        "fault_types": {},
+        "games": 72,
+        "losses": 25,
+        "mean_banked_points": 17.166666666666668,
+        "mean_return": 0.26251402918069583,
+        "opponent_banked_points": 587,
+        "program_faults": 0,
+        "return_sum": 18.9010101010101,
+        "wins": 40
+      }
+    },
+    "nearest": {
+      "authoring_model": null,
+      "by_opponent": {
+        "controller-python-1": {
+          "banked_points": 182,
+          "decision_turns": 576,
+          "draws": 2,
+          "failed_game_actions": 0,
+          "fault_types": {},
+          "games": 12,
+          "losses": 2,
+          "mean_banked_points": 15.166666666666666,
+          "mean_return": -0.024860787360787368,
+          "opponent_banked_points": 198,
+          "program_faults": 0,
+          "return_sum": -0.2983294483294484,
+          "wins": 8
+        },
+        "qwen38-27b-1": {
+          "banked_points": 226,
+          "decision_turns": 576,
+          "draws": 0,
+          "failed_game_actions": 0,
+          "fault_types": {},
+          "games": 12,
+          "losses": 0,
+          "mean_banked_points": 18.833333333333332,
+          "mean_return": 0.5643777518777516,
+          "opponent_banked_points": 0,
+          "program_faults": 0,
+          "return_sum": 6.77253302253302,
+          "wins": 12
+        },
+        "qwen38-27b-1-r2": {
+          "banked_points": 203,
+          "decision_turns": 576,
+          "draws": 6,
+          "failed_game_actions": 1,
+          "fault_types": {},
+          "games": 12,
+          "losses": 2,
+          "mean_banked_points": 16.916666666666668,
+          "mean_return": 0.028881766381766382,
+          "opponent_banked_points": 195,
+          "program_faults": 0,
+          "return_sum": 0.34658119658119657,
+          "wins": 4
+        },
+        "qwen38-27b-2": {
+          "banked_points": 230,
+          "decision_turns": 576,
+          "draws": 0,
+          "failed_game_actions": 0,
+          "fault_types": {},
+          "games": 12,
+          "losses": 0,
+          "mean_banked_points": 19.166666666666668,
+          "mean_return": 0.5719535094535093,
+          "opponent_banked_points": 0,
+          "program_faults": 0,
+          "return_sum": 6.863442113442112,
+          "wins": 12
+        },
+        "qwen38-27b-2-r2": {
+          "banked_points": 230,
+          "decision_turns": 576,
+          "draws": 0,
+          "failed_game_actions": 0,
+          "fault_types": {},
+          "games": 12,
+          "losses": 0,
+          "mean_banked_points": 19.166666666666668,
+          "mean_return": 0.5719535094535093,
+          "opponent_banked_points": 0,
+          "program_faults": 0,
+          "return_sum": 6.863442113442112,
+          "wins": 12
+        },
+        "value": {
+          "banked_points": 174,
+          "decision_turns": 576,
+          "draws": 5,
+          "failed_game_actions": 1,
+          "fault_types": {},
+          "games": 12,
+          "losses": 6,
+          "mean_banked_points": 14.5,
+          "mean_return": -0.11194638694638694,
+          "opponent_banked_points": 225,
+          "program_faults": 0,
+          "return_sum": -1.3433566433566433,
+          "wins": 1
+        }
+      },
+      "origin": "scripted",
+      "overall": {
+        "banked_points": 1245,
+        "decision_turns": 3456,
+        "draws": 13,
+        "failed_game_actions": 2,
+        "fault_types": {},
+        "games": 72,
+        "losses": 10,
+        "mean_banked_points": 17.291666666666668,
+        "mean_return": 0.26672656047656057,
+        "opponent_banked_points": 618,
+        "program_faults": 0,
+        "return_sum": 19.20431235431236,
+        "wins": 49
+      }
+    },
+    "qwen38-27b-1": {
+      "authoring_model": "qwen/qwen3.8-27b",
+      "by_opponent": {
+        "controller-python-1": {
+          "banked_points": 0,
+          "decision_turns": 576,
+          "draws": 0,
+          "failed_game_actions": 462,
+          "fault_types": {},
+          "games": 12,
+          "losses": 12,
+          "mean_banked_points": 0.0,
+          "mean_return": -0.5066498316498317,
+          "opponent_banked_points": 208,
+          "program_faults": 0,
+          "return_sum": -6.079797979797981,
+          "wins": 0
+        },
+        "nearest": {
+          "banked_points": 0,
+          "decision_turns": 576,
+          "draws": 0,
+          "failed_game_actions": 469,
+          "fault_types": {},
+          "games": 12,
+          "losses": 12,
+          "mean_banked_points": 0.0,
+          "mean_return": -0.5643777518777516,
+          "opponent_banked_points": 226,
+          "program_faults": 0,
+          "return_sum": -6.77253302253302,
+          "wins": 0
+        },
+        "qwen38-27b-1-r2": {
+          "banked_points": 0,
+          "decision_turns": 576,
+          "draws": 0,
+          "failed_game_actions": 468,
+          "fault_types": {},
+          "games": 12,
+          "losses": 12,
+          "mean_banked_points": 0.0,
+          "mean_return": -0.5176006863506863,
+          "opponent_banked_points": 210,
+          "program_faults": 0,
+          "return_sum": -6.211208236208236,
+          "wins": 0
+        },
+        "qwen38-27b-2": {
+          "banked_points": 0,
+          "decision_turns": 576,
+          "draws": 12,
+          "failed_game_actions": 478,
+          "fault_types": {},
+          "games": 12,
+          "losses": 0,
+          "mean_banked_points": 0.0,
+          "mean_return": 0.0,
+          "opponent_banked_points": 0,
+          "program_faults": 0,
+          "return_sum": 0.0,
+          "wins": 0
+        },
+        "qwen38-27b-2-r2": {
+          "banked_points": 0,
+          "decision_turns": 576,
+          "draws": 12,
+          "failed_game_actions": 478,
+          "fault_types": {},
+          "games": 12,
+          "losses": 0,
+          "mean_banked_points": 0.0,
+          "mean_return": 0.0,
+          "opponent_banked_points": 0,
+          "program_faults": 0,
+          "return_sum": 0.0,
+          "wins": 0
+        },
+        "value": {
+          "banked_points": 0,
+          "decision_turns": 576,
+          "draws": 0,
+          "failed_game_actions": 469,
+          "fault_types": {},
+          "games": 12,
+          "losses": 12,
+          "mean_banked_points": 0.0,
+          "mean_return": -0.5515572390572391,
+          "opponent_banked_points": 222,
+          "program_faults": 0,
+          "return_sum": -6.6186868686868685,
+          "wins": 0
+        }
+      },
+      "origin": "model",
+      "overall": {
+        "banked_points": 0,
+        "decision_turns": 3456,
+        "draws": 24,
+        "failed_game_actions": 2824,
+        "fault_types": {},
+        "games": 72,
+        "losses": 48,
+        "mean_banked_points": 0.0,
+        "mean_return": -0.356697584822585,
+        "opponent_banked_points": 866,
+        "program_faults": 0,
+        "return_sum": -25.68222610722612,
+        "wins": 0
+      }
+    },
+    "qwen38-27b-1-r2": {
+      "authoring_model": "qwen/qwen3.8-27b",
+      "by_opponent": {
+        "controller-python-1": {
+          "banked_points": 202,
+          "decision_turns": 576,
+          "draws": 2,
+          "failed_game_actions": 0,
+          "fault_types": {},
+          "games": 12,
+          "losses": 2,
+          "mean_banked_points": 16.833333333333332,
+          "mean_return": 0.05590844340844341,
+          "opponent_banked_points": 176,
+          "program_faults": 0,
+          "return_sum": 0.6709013209013209,
+          "wins": 8
+        },
+        "nearest": {
+          "banked_points": 195,
+          "decision_turns": 576,
+          "draws": 6,
+          "failed_game_actions": 1,
+          "fault_types": {},
+          "games": 12,
+          "losses": 4,
+          "mean_banked_points": 16.25,
+          "mean_return": -0.028881766381766382,
+          "opponent_banked_points": 203,
+          "program_faults": 0,
+          "return_sum": -0.34658119658119657,
+          "wins": 2
+        },
+        "qwen38-27b-1": {
+          "banked_points": 210,
+          "decision_turns": 576,
+          "draws": 0,
+          "failed_game_actions": 0,
+          "fault_types": {},
+          "games": 12,
+          "losses": 0,
+          "mean_banked_points": 17.5,
+          "mean_return": 0.5176006863506863,
+          "opponent_banked_points": 0,
+          "program_faults": 0,
+          "return_sum": 6.211208236208236,
+          "wins": 12
+        },
+        "qwen38-27b-2": {
+          "banked_points": 217,
+          "decision_turns": 576,
+          "draws": 0,
+          "failed_game_actions": 0,
+          "fault_types": {},
+          "games": 12,
+          "losses": 0,
+          "mean_banked_points": 18.083333333333332,
+          "mean_return": 0.5349520849520849,
+          "opponent_banked_points": 0,
+          "program_faults": 0,
+          "return_sum": 6.419425019425019,
+          "wins": 12
+        },
+        "qwen38-27b-2-r2": {
+          "banked_points": 217,
+          "decision_turns": 576,
+          "draws": 0,
+          "failed_game_actions": 0,
+          "fault_types": {},
+          "games": 12,
+          "losses": 0,
+          "mean_banked_points": 18.083333333333332,
+          "mean_return": 0.5349520849520849,
+          "opponent_banked_points": 0,
+          "program_faults": 0,
+          "return_sum": 6.419425019425019,
+          "wins": 12
+        },
+        "value": {
+          "banked_points": 194,
+          "decision_turns": 576,
+          "draws": 5,
+          "failed_game_actions": 0,
+          "fault_types": {},
+          "games": 12,
+          "losses": 6,
+          "mean_banked_points": 16.166666666666668,
+          "mean_return": -0.03537943537943539,
+          "opponent_banked_points": 206,
+          "program_faults": 0,
+          "return_sum": -0.42455322455322464,
+          "wins": 1
+        }
+      },
+      "origin": "model",
+      "overall": {
+        "banked_points": 1235,
+        "decision_turns": 3456,
+        "draws": 13,
+        "failed_game_actions": 1,
+        "fault_types": {},
+        "games": 72,
+        "losses": 12,
+        "mean_banked_points": 17.15277777777778,
+        "mean_return": 0.2631920163170164,
+        "opponent_banked_points": 585,
+        "program_faults": 0,
+        "return_sum": 18.94982517482518,
+        "wins": 47
+      }
+    },
+    "qwen38-27b-2": {
+      "authoring_model": "qwen/qwen3.8-27b",
+      "by_opponent": {
+        "controller-python-1": {
+          "banked_points": 0,
+          "decision_turns": 576,
+          "draws": 0,
+          "failed_game_actions": 0,
+          "fault_types": {},
+          "games": 12,
+          "losses": 12,
+          "mean_banked_points": 0.0,
+          "mean_return": -0.576048951048951,
+          "opponent_banked_points": 236,
+          "program_faults": 0,
+          "return_sum": -6.9125874125874125,
+          "wins": 0
+        },
+        "nearest": {
+          "banked_points": 0,
+          "decision_turns": 576,
+          "draws": 0,
+          "failed_game_actions": 0,
+          "fault_types": {},
+          "games": 12,
+          "losses": 12,
+          "mean_banked_points": 0.0,
+          "mean_return": -0.5719535094535093,
+          "opponent_banked_points": 230,
+          "program_faults": 0,
+          "return_sum": -6.863442113442112,
+          "wins": 0
+        },
+        "qwen38-27b-1": {
+          "banked_points": 0,
+          "decision_turns": 576,
+          "draws": 12,
+          "failed_game_actions": 0,
+          "fault_types": {},
+          "games": 12,
+          "losses": 0,
+          "mean_banked_points": 0.0,
+          "mean_return": 0.0,
+          "opponent_banked_points": 0,
+          "program_faults": 0,
+          "return_sum": 0.0,
+          "wins": 0
+        },
+        "qwen38-27b-1-r2": {
+          "banked_points": 0,
+          "decision_turns": 576,
+          "draws": 0,
+          "failed_game_actions": 0,
+          "fault_types": {},
+          "games": 12,
+          "losses": 12,
+          "mean_banked_points": 0.0,
+          "mean_return": -0.5349520849520849,
+          "opponent_banked_points": 217,
+          "program_faults": 0,
+          "return_sum": -6.419425019425019,
+          "wins": 0
+        },
+        "qwen38-27b-2-r2": {
+          "banked_points": 0,
+          "decision_turns": 576,
+          "draws": 12,
+          "failed_game_actions": 0,
+          "fault_types": {},
+          "games": 12,
+          "losses": 0,
+          "mean_banked_points": 0.0,
+          "mean_return": 0.0,
+          "opponent_banked_points": 0,
+          "program_faults": 0,
+          "return_sum": 0.0,
+          "wins": 0
+        },
+        "value": {
+          "banked_points": 0,
+          "decision_turns": 576,
+          "draws": 0,
+          "failed_game_actions": 0,
+          "fault_types": {},
+          "games": 12,
+          "losses": 12,
+          "mean_banked_points": 0.0,
+          "mean_return": -0.668052318052318,
+          "opponent_banked_points": 274,
+          "program_faults": 0,
+          "return_sum": -8.016627816627816,
+          "wins": 0
+        }
+      },
+      "origin": "model",
+      "overall": {
+        "banked_points": 0,
+        "decision_turns": 3456,
+        "draws": 24,
+        "failed_game_actions": 0,
+        "fault_types": {},
+        "games": 72,
+        "losses": 48,
+        "mean_banked_points": 0.0,
+        "mean_return": -0.39183447725114395,
+        "opponent_banked_points": 957,
+        "program_faults": 0,
+        "return_sum": -28.212082362082363,
+        "wins": 0
+      }
+    },
+    "qwen38-27b-2-r2": {
+      "authoring_model": "qwen/qwen3.8-27b",
+      "by_opponent": {
+        "controller-python-1": {
+          "banked_points": 0,
+          "decision_turns": 576,
+          "draws": 0,
+          "failed_game_actions": 0,
+          "fault_types": {
+            "invalid_move": 560
+          },
+          "games": 12,
+          "losses": 12,
+          "mean_banked_points": 0.0,
+          "mean_return": -0.576048951048951,
+          "opponent_banked_points": 236,
+          "program_faults": 560,
+          "return_sum": -6.9125874125874125,
+          "wins": 0
+        },
+        "nearest": {
+          "banked_points": 0,
+          "decision_turns": 576,
+          "draws": 0,
+          "failed_game_actions": 0,
+          "fault_types": {
+            "invalid_move": 576
+          },
+          "games": 12,
+          "losses": 12,
+          "mean_banked_points": 0.0,
+          "mean_return": -0.5719535094535093,
+          "opponent_banked_points": 230,
+          "program_faults": 576,
+          "return_sum": -6.863442113442112,
+          "wins": 0
+        },
+        "qwen38-27b-1": {
+          "banked_points": 0,
+          "decision_turns": 576,
+          "draws": 12,
+          "failed_game_actions": 0,
+          "fault_types": {
+            "invalid_move": 576
+          },
+          "games": 12,
+          "losses": 0,
+          "mean_banked_points": 0.0,
+          "mean_return": 0.0,
+          "opponent_banked_points": 0,
+          "program_faults": 576,
+          "return_sum": 0.0,
+          "wins": 0
+        },
+        "qwen38-27b-1-r2": {
+          "banked_points": 0,
+          "decision_turns": 576,
+          "draws": 0,
+          "failed_game_actions": 0,
+          "fault_types": {
+            "invalid_move": 576
+          },
+          "games": 12,
+          "losses": 12,
+          "mean_banked_points": 0.0,
+          "mean_return": -0.5349520849520849,
+          "opponent_banked_points": 217,
+          "program_faults": 576,
+          "return_sum": -6.419425019425019,
+          "wins": 0
+        },
+        "qwen38-27b-2": {
+          "banked_points": 0,
+          "decision_turns": 576,
+          "draws": 12,
+          "failed_game_actions": 0,
+          "fault_types": {
+            "invalid_move": 576
+          },
+          "games": 12,
+          "losses": 0,
+          "mean_banked_points": 0.0,
+          "mean_return": 0.0,
+          "opponent_banked_points": 0,
+          "program_faults": 576,
+          "return_sum": 0.0,
+          "wins": 0
+        },
+        "value": {
+          "banked_points": 30,
+          "decision_turns": 576,
+          "draws": 0,
+          "failed_game_actions": 0,
+          "fault_types": {
+            "invalid_move": 450
+          },
+          "games": 12,
+          "losses": 12,
+          "mean_banked_points": 2.5,
+          "mean_return": -0.6087088837088838,
+          "opponent_banked_points": 274,
+          "program_faults": 450,
+          "return_sum": -7.304506604506605,
+          "wins": 0
+        }
+      },
+      "origin": "model",
+      "overall": {
+        "banked_points": 30,
+        "decision_turns": 3456,
+        "draws": 24,
+        "failed_game_actions": 0,
+        "fault_types": {
+          "invalid_move": 3314
+        },
+        "games": 72,
+        "losses": 48,
+        "mean_banked_points": 0.4166666666666667,
+        "mean_return": -0.38194390486057156,
+        "opponent_banked_points": 957,
+        "program_faults": 3314,
+        "return_sum": -27.499961149961152,
+        "wins": 0
+      }
+    },
+    "value": {
+      "authoring_model": null,
+      "by_opponent": {
+        "controller-python-1": {
+          "banked_points": 203,
+          "decision_turns": 576,
+          "draws": 3,
+          "failed_game_actions": 0,
+          "fault_types": {},
+          "games": 12,
+          "losses": 0,
+          "mean_banked_points": 16.916666666666668,
+          "mean_return": 0.05261590261590262,
+          "opponent_banked_points": 182,
+          "program_faults": 0,
+          "return_sum": 0.6313908313908314,
+          "wins": 9
+        },
+        "nearest": {
+          "banked_points": 225,
+          "decision_turns": 576,
+          "draws": 5,
+          "failed_game_actions": 1,
+          "fault_types": {},
+          "games": 12,
+          "losses": 1,
+          "mean_banked_points": 18.75,
+          "mean_return": 0.11194638694638694,
+          "opponent_banked_points": 174,
+          "program_faults": 0,
+          "return_sum": 1.3433566433566433,
+          "wins": 6
+        },
+        "qwen38-27b-1": {
+          "banked_points": 222,
+          "decision_turns": 576,
+          "draws": 0,
+          "failed_game_actions": 0,
+          "fault_types": {},
+          "games": 12,
+          "losses": 0,
+          "mean_banked_points": 18.5,
+          "mean_return": 0.5515572390572391,
+          "opponent_banked_points": 0,
+          "program_faults": 0,
+          "return_sum": 6.6186868686868685,
+          "wins": 12
+        },
+        "qwen38-27b-1-r2": {
+          "banked_points": 206,
+          "decision_turns": 576,
+          "draws": 5,
+          "failed_game_actions": 0,
+          "fault_types": {},
+          "games": 12,
+          "losses": 1,
+          "mean_banked_points": 17.166666666666668,
+          "mean_return": 0.03537943537943539,
+          "opponent_banked_points": 194,
+          "program_faults": 0,
+          "return_sum": 0.42455322455322464,
+          "wins": 6
+        },
+        "qwen38-27b-2": {
+          "banked_points": 274,
+          "decision_turns": 576,
+          "draws": 0,
+          "failed_game_actions": 0,
+          "fault_types": {},
+          "games": 12,
+          "losses": 0,
+          "mean_banked_points": 22.833333333333332,
+          "mean_return": 0.668052318052318,
+          "opponent_banked_points": 0,
+          "program_faults": 0,
+          "return_sum": 8.016627816627816,
+          "wins": 12
+        },
+        "qwen38-27b-2-r2": {
+          "banked_points": 274,
+          "decision_turns": 576,
+          "draws": 0,
+          "failed_game_actions": 0,
+          "fault_types": {},
+          "games": 12,
+          "losses": 0,
+          "mean_banked_points": 22.833333333333332,
+          "mean_return": 0.6087088837088838,
+          "opponent_banked_points": 30,
+          "program_faults": 0,
+          "return_sum": 7.304506604506605,
+          "wins": 12
+        }
+      },
+      "origin": "scripted",
+      "overall": {
+        "banked_points": 1404,
+        "decision_turns": 3456,
+        "draws": 13,
+        "failed_game_actions": 1,
+        "fault_types": {},
+        "games": 72,
+        "losses": 2,
+        "mean_banked_points": 19.5,
+        "mean_return": 0.3380433609600277,
+        "opponent_banked_points": 580,
+        "program_faults": 0,
+        "return_sum": 24.339121989121992,
+        "wins": 57
+      }
+    }
+  },
+  "scoring": "W/D/L is actual final banked-point difference at the fixed horizon. It is the game objective, not heuristic adjudication.",
+  "seeds": [
+    750000,
+    750001,
+    750002,
+    750003,
+    750004,
+    750005
+  ],
+  "training": false
+}

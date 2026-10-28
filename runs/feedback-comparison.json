@@ -1,0 +1,108 @@
+{
+  "feedback": {
+    "proposals": 8,
+    "accepted_tasks": 5,
+    "rejections": {
+      "Unfinished proposal": 2,
+      "Shortest solution is too easy": 1
+    },
+    "solver_successes": 10,
+    "solver_attempts": 10,
+    "solver_statuses": {
+      "solved": 10
+    },
+    "posthoc_label_diagnostics": [],
+    "mixed_outcome_tasks": 0,
+    "all_solved_tasks": 5,
+    "all_failed_tasks": 0,
+    "shortest_depth_counts": {
+      "2": 5
+    },
+    "extra_allowed_steps_above_shortest": {
+      "0": 3,
+      "1": 2
+    },
+    "proposed_witness_length_counts": {
+      "2": 4,
+      "3": 1
+    },
+    "distinct_action_sets": 2,
+    "task_ids": [
+      "e34ea079071ab08439fa876fa4f8d092d19972bf9e8af5e638932e2888b80bfd",
+      "7d52f0ee0910e0452a335fe26b3ffa360a730a86709b8188cea80c9c7594d493",
+      "825dac1131c1d4c893c637bdde4849b1cbbeed9fdb087a3a609332b379a565d5",
+      "121c1f82ee17ec913e39cbf59b63ad65d708247b36b05869de33e530c5647767",
+      "f439017d763edab1218331b962ad5fa0d625cfc4869b8bd8406e3e4494e0d28e"
+    ],
+    "completion_tokens": 42448,
+    "prompt_tokens": 7465,
+    "elapsed_seconds": 476.024575917
+  },
+  "control": {
+    "proposals": 8,
+    "accepted_tasks": 7,
+    "rejections": {
+      "Unfinished proposal": 1
+    },
+    "solver_successes": 13,
+    "solver_attempts": 14,
+    "solver_statuses": {
+      "solved": 13,
+      "illegal_action": 1
+    },
+    "posthoc_label_diagnostics": [
+      {
+        "task_id": "fd77571cbc948c10b59f6bee8cd4e2bb2f74087d3ba041caf6160accd2827be2",
+        "attempt": 1,
+        "original_final": {
+          "plan": [
+            "tool2",
+            "tool0"
+          ]
+        },
+        "underscore_edit": {
+          "plan": [
+            "tool_2",
+            "tool_0"
+          ]
+        },
+        "edited_plan_verifies": true,
+        "note": "Post-hoc diagnostic only; primary grade remains a failure."
+      }
+    ],
+    "mixed_outcome_tasks": 1,
+    "all_solved_tasks": 6,
+    "all_failed_tasks": 0,
+    "shortest_depth_counts": {
+      "2": 6,
+      "3": 1
+    },
+    "extra_allowed_steps_above_shortest": {
+      "0": 3,
+      "1": 4
+    },
+    "proposed_witness_length_counts": {
+      "2": 4,
+      "3": 3
+    },
+    "distinct_action_sets": 5,
+    "task_ids": [
+      "e34ea079071ab08439fa876fa4f8d092d19972bf9e8af5e638932e2888b80bfd",
+      "6c67c91b14a4b91818ca78a8d9eb594e991513100d0cc197572cc7d7ccf7fc30",
+      "75f9e5359cccf9d002c560fa146d5d4b4c5529e849e54498c3cb7376c9730883",
+      "fd77571cbc948c10b59f6bee8cd4e2bb2f74087d3ba041caf6160accd2827be2",
+      "9c96dd27bfea7a7fb4c0f95e0b8f16a28deaea4d3f4db6adf36b14eb577d8dde",
+      "c5e08586b778d8524bf615033e8b19796de8f2cf6a65263a82b396d620637aaa",
+      "6eb5d1c613f85504428dc5d0d3bc00ad28a469b56c43e42b3e7493d9fc2e2d03"
+    ],
+    "completion_tokens": 58185,
+    "prompt_tokens": 6143,
+    "elapsed_seconds": 677.3504439169999
+  },
+  "identical_first_proposal": true,
+  "overlapping_task_ids": [
+    "e34ea079071ab08439fa876fa4f8d092d19972bf9e8af5e638932e2888b80bfd"
+  ],
+  "training": false,
+  "warning": "One adaptive context trajectory per arm; rounds are dependent. Two solver samples per task cannot establish true difficulty or a feedback benefit. Actual token budgets differ."
+}

@@ -1,0 +1,33 @@
+{
+  "config": {
+    "command": "collect",
+    "tasks": "experiments/depth-v1/calibration.jsonl",
+    "out": "runs/depth-format-calibration",
+    "attempts": 4,
+    "formats": "free,strict",
+    "variants": "canonical",
+    "seed": 12011,
+    "max_minutes": 10.0,
+    "adapter": null
+  },
+  "model": {
+    "model": "mlx-community/Qwen3-4B-4bit",
+    "snapshot": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+    "backend": "mlx",
+    "thinking": false,
+    "top_k": 20,
+    "adapter_path": null,
+    "protocol": "direct-plan-v1"
+  },
+  "training": false,
+  "task_manifest_sha256": "a23021e355e510d7bb9b80b0d0d4625a438d579eb99be6fff1a4d8a00d1513db",
+  "source_sha256": {
+    "pilot.py": "e706ee06462725161226a8e8d11704908f64e917bb0d836642820b5624000f38",
+    "feedback.py": "d7ededd188c36c8ecf49f3b026c8fb70f4c11dcd6d9511f995c90b5b3fe86ff1",
+    "strict.py": "e634cecb3efec429d2b8e8ebd0f1bc4888b413c8747b629776d7c8a04e47c108",
+    "__init__.py": "54b3c9dd5c0cc6221ed5af3bcaae9445ced78d30114e5c79b32833ce6d37f495",
+    "dataset.py": "b5a99b1070e4b8aba6cffc771552419f2aff16f67981f8bea219a1b059332b2d",
+    "depth.py": "709b33ac2c53bb719049aec8993f01fcfb0bf3ff267e6e9a0576baa07493ea11",
+    "environment.py": "ec6d2f589bc32acc0c9cd945f68de68a2af40d089d5873a622b8f92d64ca4667"
+  }
+}

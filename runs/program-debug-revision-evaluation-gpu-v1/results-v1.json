@@ -1,0 +1,2342 @@
+{
+  "data": {
+    "kind": "complete_revision_evaluation_closure_report",
+    "model": "Qwen/Qwen3.8-27B",
+    "model_revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+    "labels": [
+      "base",
+      "cycle3"
+    ],
+    "cells": {
+      "base": {
+        "n": 16,
+        "mean": 4.208333333333333,
+        "programs": [
+          {
+            "generation": "eval-base-0",
+            "banked_point_yield": 7.666666666666667,
+            "category": "valid_positive",
+            "games": 48,
+            "candidate_program_faults": 0
+          },
+          {
+            "generation": "eval-base-1",
+            "banked_point_yield": 0.0,
+            "category": "invalid_authorship",
+            "games": 0,
+            "candidate_program_faults": 0
+          },
+          {
+            "generation": "eval-base-2",
+            "banked_point_yield": 9.458333333333334,
+            "category": "valid_positive",
+            "games": 48,
+            "candidate_program_faults": 0
+          },
+          {
+            "generation": "eval-base-3",
+            "banked_point_yield": 0.0,
+            "category": "invalid_authorship",
+            "games": 0,
+            "candidate_program_faults": 0
+          },
+          {
+            "generation": "eval-base-4",
+            "banked_point_yield": 0.0,
+            "category": "invalid_authorship",
+            "games": 0,
+            "candidate_program_faults": 0
+          },
+          {
+            "generation": "eval-base-5",
+            "banked_point_yield": 0.0,
+            "category": "invalid_authorship",
+            "games": 0,
+            "candidate_program_faults": 0
+          },
+          {
+            "generation": "eval-base-6",
+            "banked_point_yield": 3.3333333333333335,
+            "category": "valid_positive",
+            "games": 48,
+            "candidate_program_faults": 0
+          },
+          {
+            "generation": "eval-base-7",
+            "banked_point_yield": 15.895833333333334,
+            "category": "valid_positive",
+            "games": 48,
+            "candidate_program_faults": 0
+          },
+          {
+            "generation": "eval-base-8",
+            "banked_point_yield": 0.0,
+            "category": "invalid_authorship",
+            "games": 0,
+            "candidate_program_faults": 0
+          },
+          {
+            "generation": "eval-base-9",
+            "banked_point_yield": 18.020833333333332,
+            "category": "valid_positive",
+            "games": 48,
+            "candidate_program_faults": 0
+          },
+          {
+            "generation": "eval-base-10",
+            "banked_point_yield": 8.708333333333334,
+            "category": "valid_positive",
+            "games": 48,
+            "candidate_program_faults": 0
+          },
+          {
+            "generation": "eval-base-11",
+            "banked_point_yield": 0.0,
+            "category": "invalid_authorship",
+            "games": 0,
+            "candidate_program_faults": 0
+          },
+          {
+            "generation": "eval-base-12",
+            "banked_point_yield": 2.0,
+            "category": "valid_positive",
+            "games": 48,
+            "candidate_program_faults": 0
+          },
+          {
+            "generation": "eval-base-13",
+            "banked_point_yield": 2.25,
+            "category": "valid_positive",
+            "games": 48,
+            "candidate_program_faults": 0
+          },
+          {
+            "generation": "eval-base-14",
+            "banked_point_yield": 0.0,
+            "category": "invalid_authorship",
+            "games": 0,
+            "candidate_program_faults": 0
+          },
+          {
+            "generation": "eval-base-15",
+            "banked_point_yield": 0.0,
+            "category": "invalid_authorship",
+            "games": 0,
+            "candidate_program_faults": 0
+          }
+        ],
+        "counts": {
+          "invalid_authorship": 8,
+          "runtime_fault": 0,
+          "valid_zero": 0,
+          "valid_positive": 8
+        }
+      },
+      "cycle3": {
+        "n": 16,
+        "mean": 5.489583333333333,
+        "programs": [
+          {
+            "generation": "eval-cycle3-0",
+            "banked_point_yield": 0.0,
+            "category": "invalid_authorship",
+            "games": 0,
+            "candidate_program_faults": 0
+          },
+          {
+            "generation": "eval-cycle3-1",
+            "banked_point_yield": 0.0,
+            "category": "invalid_authorship",
+            "games": 0,
+            "candidate_program_faults": 0
+          },
+          {
+            "generation": "eval-cycle3-2",
+            "banked_point_yield": 2.0,
+            "category": "valid_positive",
+            "games": 48,
+            "candidate_program_faults": 0
+          },
+          {
+            "generation": "eval-cycle3-3",
+            "banked_point_yield": 5.5,
+            "category": "valid_positive",
+            "games": 48,
+            "candidate_program_faults": 0
+          },
+          {
+            "generation": "eval-cycle3-4",
+            "banked_point_yield": 17.041666666666668,
+            "category": "valid_positive",
+            "games": 48,
+            "candidate_program_faults": 0
+          },
+          {
+            "generation": "eval-cycle3-5",
+            "banked_point_yield": 0.0,
+            "category": "invalid_authorship",
+            "games": 0,
+            "candidate_program_faults": 0
+          },
+          {
+            "generation": "eval-cycle3-6",
+            "banked_point_yield": 3.3333333333333335,
+            "category": "valid_positive",
+            "games": 48,
+            "candidate_program_faults": 0
+          },
+          {
+            "generation": "eval-cycle3-7",
+            "banked_point_yield": 15.895833333333334,
+            "category": "valid_positive",
+            "games": 48,
+            "candidate_program_faults": 0
+          },
+          {
+            "generation": "eval-cycle3-8",
+            "banked_point_yield": 0.0,
+            "category": "invalid_authorship",
+            "games": 0,
+            "candidate_program_faults": 0
+          },
+          {
+            "generation": "eval-cycle3-9",
+            "banked_point_yield": 18.020833333333332,
+            "category": "valid_positive",
+            "games": 48,
+            "candidate_program_faults": 0
+          },
+          {
+            "generation": "eval-cycle3-10",
+            "banked_point_yield": 8.708333333333334,
+            "category": "valid_positive",
+            "games": 48,
+            "candidate_program_faults": 0
+          },
+          {
+            "generation": "eval-cycle3-11",
+            "banked_point_yield": 0.0,
+            "category": "invalid_authorship",
+            "games": 0,
+            "candidate_program_faults": 0
+          },
+          {
+            "generation": "eval-cycle3-12",
+            "banked_point_yield": 15.083333333333334,
+            "category": "valid_positive",
+            "games": 48,
+            "candidate_program_faults": 0
+          },
+          {
+            "generation": "eval-cycle3-13",
+            "banked_point_yield": 2.25,
+            "category": "valid_positive",
+            "games": 48,
+            "candidate_program_faults": 0
+          },
+          {
+            "generation": "eval-cycle3-14",
+            "banked_point_yield": 0.0,
+            "category": "invalid_authorship",
+            "games": 0,
+            "candidate_program_faults": 0
+          },
+          {
+            "generation": "eval-cycle3-15",
+            "banked_point_yield": 0.0,
+            "category": "valid_zero",
+            "games": 48,
+            "candidate_program_faults": 0
+          }
+        ],
+        "counts": {
+          "invalid_authorship": 6,
+          "runtime_fault": 0,
+          "valid_zero": 1,
+          "valid_positive": 9
+        }
+      }
+    },
+    "counts": {
+      "base": {
+        "prescribed": 16,
+        "compiled": 8,
+        "fault_free": 8,
+        "productive": 8,
+        "invalid_authorship": 8,
+        "runtime_fault": 0,
+        "played_games": 384
+      },
+      "cycle3": {
+        "prescribed": 16,
+        "compiled": 10,
+        "fault_free": 10,
+        "productive": 9,
+        "invalid_authorship": 6,
+        "runtime_fault": 0,
+        "played_games": 480
+      }
+    },
+    "generation_seeds": [
+      241000000,
+      241000002,
+      241000004,
+      241000006,
+      241000008,
+      241000010,
+      241000012,
+      241000014,
+      241000016,
+      241000018,
+      241000020,
+      241000022,
+      241000024,
+      241000026,
+      241000028,
+      241000030
+    ],
+    "program_cluster_n": 16,
+    "paired_differences": [
+      -7.666666666666667,
+      0.0,
+      -7.458333333333334,
+      5.5,
+      17.041666666666668,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      13.083333333333334,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "mean_difference": 1.28125,
+    "descriptive_bootstrap_95_interval": [
+      -1.4244791666666667,
+      4.4609375
+    ],
+    "bootstrap": {
+      "draws": 10000,
+      "seed": 20261024,
+      "unit": "Paired two-call authoring trajectory"
+    },
+    "inherited_SFT_steps_both_endpoints": 32,
+    "inherited_RL_steps": 3,
+    "new_SFT_steps": 0,
+    "new_RL_steps": 0,
+    "parent_training_complete": false,
+    "scope": "Separate measurement of three existing RL updates; the original longer training run remains incomplete.",
+    "productive_definition": "Fault-free compiled final controller with positive mean banked points across its 48 prescribed heldout games. This is descriptive and is not the earlier capability-admission criterion.",
+    "uncertainty": "Descriptive 95% paired-trajectory bootstrap; 16 clusters and one training seed. The two turns and 48 games per compiled controller are dependent.",
+    "caveats": [
+      "All 16 authoring draws per endpoint remain in the mean. Invalid authorship yields zero with no invented games; missing draws prevent reporting.",
+      "Compiled controllers with runtime faults retain their actual banked yield and are shown separately.",
+      "The same native-low draft, practice feedback and native-nonthinking revision harness is used at both endpoints.",
+      "Two fixed evaluation teacher opponents were prior SFT examples, excluded from the RL roster but not unseen to weights.",
+      "This is not a completed 10/15/25-group study, a causal harness comparison, evidence of general transfer or guaranteed continual improvement."
+    ]
+  },
+  "bound_inputs": {
+    "audit": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/final-audit.json",
+      "sha256": "6d8db8625c5142b6991f68e620e061f563019f23c0e747661c862c2ddfabb0fc"
+    },
+    "reporter": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/scripts/plot_program_debug_revision_evaluation.py",
+      "sha256": "63fc4b6c97f94192766a16a29ea58172e06c571a39303f777d3d44cfa95f41ea"
+    },
+    "helper": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/scripts/plot_cardinal_gpu.py",
+      "sha256": "229936ad54aa8df4c6f81c0c6e330e882e91dc75976f615a6cfef1d86a7d5951"
+    },
+    "manifest.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/manifest.json",
+      "sha256": "b0fcac0d9dc628180b25efc2576a6993c016394a1e57857ae771a3d3a8113b62"
+    },
+    "status.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/status.json",
+      "sha256": "beae9a8d3e5a5b4ca389d6791489c74e44c733c192537c6e4af91f89b69bc582"
+    },
+    "source/scripts/cloud/train_program_rl.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/scripts/cloud/train_program_rl.py",
+      "sha256": "b6e461011f5d0523d651a1d8fefc32d08c91a0c199a33bb1c8392c21e35b13ed"
+    },
+    "source/scripts/program_response_normalization.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/scripts/program_response_normalization.py",
+      "sha256": "4b0095b507dc50b05285b3c10931923543ba2bd976c6f54511d5ab1bc5a85163"
+    },
+    "source/selfplay/program_python.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/selfplay/program_python.py",
+      "sha256": "598d27639d004230976066d18e6fc6ed6bcd8a5f5f1e6c741b634ebad3f8fb56"
+    },
+    "source/selfplay/program_arena/__init__.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/selfplay/program_arena/__init__.py",
+      "sha256": "2c405b142b39f6f350996f812875afbe4ec845005a662eaf43bc28a7e2d4c7d2"
+    },
+    "source/selfplay/program_arena/dsl.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/selfplay/program_arena/dsl.py",
+      "sha256": "91cc93d24e9c61b0cc04b4bf3d34a7e3515bda59fed62eeb766006ec9df74968"
+    },
+    "source/selfplay/program_arena/game.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/selfplay/program_arena/game.py",
+      "sha256": "7986796669d4622d53536b2b9b6984778372e2cf2354b9885a384680e66f0246"
+    },
+    "source/selfplay/program_arena/runner.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/selfplay/program_arena/runner.py",
+      "sha256": "bdc8f5ce3471d4018fe2c893c7d49351c8e23d75f151bc9abcd36e637ef1445e"
+    },
+    "source/selfplay/program_arena/spec.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/selfplay/program_arena/spec.py",
+      "sha256": "bd236885f4864e56a8003abe81ab9726386ed11399648318fe2eff7f87920ff3"
+    },
+    "source/selfplay/program_arena/examples.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/selfplay/program_arena/examples.py",
+      "sha256": "5261337c5ac1415c14da1505e76d2ed99a5916da70a2f02397d5d0242757894a"
+    },
+    "source/selfplay/program_local_rl.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/selfplay/program_local_rl.py",
+      "sha256": "2c2aff76b2bab3f8555a3069a24205b1c19f26b8fb2f7ce256eab1ab8005414a"
+    },
+    "source/selfplay/program_study.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/selfplay/program_study.py",
+      "sha256": "7748096fb62a765f9dd8dd6360a9bc13fe26a99434367f7d624e2e8a3f55168f"
+    },
+    "source/scripts/analyze_program_study.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/scripts/analyze_program_study.py",
+      "sha256": "f5c07a847523fe46e748c2764f0268822ae2609d3734b5ab84bb399f6b556397"
+    },
+    "source/selfplay/program_cardinal.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/selfplay/program_cardinal.py",
+      "sha256": "8bd1e4552efc1addf3a25415cdd27865e013c9c8516bb581ca079fa7f59aa0f6"
+    },
+    "source/selfplay/program_cardinal_cycle.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/selfplay/program_cardinal_cycle.py",
+      "sha256": "c618bf1c8143df245ffec17ed5459384b020cc868af4b322c31e2b7406eaa430"
+    },
+    "source/scripts/analyze_program_cardinal_cycle.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/scripts/analyze_program_cardinal_cycle.py",
+      "sha256": "41a639fbe0aa12f53c55b4bf4b39d5b75ae5b81c39f7275c1b08c37c5a98e4d0"
+    },
+    "source/selfplay/program_cardinal_cuda.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/selfplay/program_cardinal_cuda.py",
+      "sha256": "02072509d227fc26e97a5d0ebb869c76cadd0c2d54199d117048766b684d0e01"
+    },
+    "source/selfplay/program_cardinal_gpu.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/selfplay/program_cardinal_gpu.py",
+      "sha256": "a69c2a97d195dcc269fd0fea5c26b6f526ccf1db0cb856f27dd6328746a36724"
+    },
+    "source/scripts/cloud/cardinal-requirements.txt": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/scripts/cloud/cardinal-requirements.txt",
+      "sha256": "3013c2897d93a58fb950401ccbb442383829c6fb03b8d08e5cc992be1f2f8556"
+    },
+    "source/scripts/cloud/bootstrap_cardinal.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/scripts/cloud/bootstrap_cardinal.py",
+      "sha256": "e3f728bc793c00be0ba361606945a18babf03bcc606e06ad95c4e28770b1469e"
+    },
+    "source/selfplay/program_debug.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/selfplay/program_debug.py",
+      "sha256": "ddc0b78d040e48104b082cde5734a4cf3c3e469a51bf7d682a47f4d85036efc0"
+    },
+    "source/selfplay/program_debug_cuda.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/selfplay/program_debug_cuda.py",
+      "sha256": "ee9b35195ee0b8a69fdf100eefa93f1a4476c46f1af9cbc8b9f4eba3bf6972bc"
+    },
+    "source/selfplay/program_debug_rl.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/selfplay/program_debug_rl.py",
+      "sha256": "fe8a1e6dea519692c482058643c35cdb9eac3dd5ada95dd894d1208d53be099c"
+    },
+    "source/scripts/cloud/run_debug_job.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/scripts/cloud/run_debug_job.py",
+      "sha256": "071f8733e1570a3b600b7094a628f3c3b322dd137445c1655d5436303b7ff1be"
+    },
+    "source/scripts/cloud/bootstrap_debug.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/scripts/cloud/bootstrap_debug.py",
+      "sha256": "8370b3abe4db5c94a437ca57fac6af20329a8790ca131528e798b756fbfe1e9a"
+    },
+    "source/scripts/debug_supervisor.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/scripts/debug_supervisor.py",
+      "sha256": "29808145f145bf2bfbe67ee29a26163dd7d34a5572bb4ddbab8b8519d827d43e"
+    },
+    "source/scripts/runpod_debug.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/scripts/runpod_debug.py",
+      "sha256": "75dfc6d3d7a171471085a5aae961f72c253c03b04e044286b8f42b923e39f370"
+    },
+    "source/scripts/runpod_cardinal.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/scripts/runpod_cardinal.py",
+      "sha256": "90a9154d43796ed5f854c2f2647386d9ccb802c4502750a8c37be8e4b4bd8032"
+    },
+    "source/scripts/runpod_pilot.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/scripts/runpod_pilot.py",
+      "sha256": "0fe4311cc810ae6313f02e707c7eb8fb77a2552a99b6dfdba61d9b79a9f6186e"
+    },
+    "source/scripts/cloud/cardinal_guard.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/scripts/cloud/cardinal_guard.py",
+      "sha256": "2a9d151f67a1440bd19b4e816eba88bc1406889ec277169f8358f3d2988e7dbc"
+    },
+    "source/scripts/cloud/cardinal-warmstart-requirements.txt": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/scripts/cloud/cardinal-warmstart-requirements.txt",
+      "sha256": "8f673354266b6d44a7840e0f6cfcda2e27f0bcc5f3169ba4c8ed4b223cbb02ca"
+    },
+    "source/scripts/analyze_program_cardinal_gpu.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/scripts/analyze_program_cardinal_gpu.py",
+      "sha256": "b25717900ca3e15674e7cd14b8b034edc9047f4cb82661150d741078f46721a9"
+    },
+    "source/selfplay/frontier_api.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/selfplay/frontier_api.py",
+      "sha256": "93b114c9529b4da559f0da62140189d82c28a0b3318d7611c26ff4a6ddb0a096"
+    },
+    "source/selfplay/__init__.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/selfplay/__init__.py",
+      "sha256": "54b3c9dd5c0cc6221ed5af3bcaae9445ced78d30114e5c79b32833ce6d37f495"
+    },
+    "source/scripts/analyze_program_debug_rl.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/scripts/analyze_program_debug_rl.py",
+      "sha256": "e9fc84e68b9e245734b3858ea141274e135e9df2b275c7523a54000eeeffdc01"
+    },
+    "source/selfplay/program_debug_calibration_harness.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/selfplay/program_debug_calibration_harness.py",
+      "sha256": "2afc38162a5f1ad0cd2972d04b34cd774f6d1a54473117fb6662ad3b7950f21f"
+    },
+    "source/selfplay/program_debug_calibration_cuda.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/selfplay/program_debug_calibration_cuda.py",
+      "sha256": "f24d73c39e5bd126f8b927b40ffc077eeea796c12fada1a838d8e485b37f3a96"
+    },
+    "source/selfplay/program_debug_calibration.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/selfplay/program_debug_calibration.py",
+      "sha256": "ffbc6d7c10b37e34ee3be91df3d7636676fc4af4c2e05f6fbdd3fed700c339bf"
+    },
+    "source/scripts/analyze_program_debug_calibration.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/scripts/analyze_program_debug_calibration.py",
+      "sha256": "c1aeebf400416128cafd7f4d4711b2f161fe4a8bb2a8478ad127ebe92e8039a0"
+    },
+    "source/scripts/cloud/run_calibration_job.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/scripts/cloud/run_calibration_job.py",
+      "sha256": "ac7d65f3c8864d934f80b0383230c0c33a6954dcb3abbbcb37800963dcb8edee"
+    },
+    "source/scripts/cloud/bootstrap_calibration.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/scripts/cloud/bootstrap_calibration.py",
+      "sha256": "75fcace2a01f3778521e9eb6448146f1914fb23e9ae5af49810908368cf56822"
+    },
+    "source/scripts/calibration_supervisor.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/scripts/calibration_supervisor.py",
+      "sha256": "9dd6d87cac783cafdfcced0b47c447014d9db75fa677b5e96b3d1062c870c07d"
+    },
+    "source/scripts/runpod_calibration.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/scripts/runpod_calibration.py",
+      "sha256": "1ccd1c7129e27240f8339c93e44b161aa07853319f067f4fac621e8e9c9af2cc"
+    },
+    "source/selfplay/program_debug_revision_harness.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/selfplay/program_debug_revision_harness.py",
+      "sha256": "377b3b4afc42ed20ac8928c35d2a2548cc3a20ef1bef90bbe332c89f4d656050"
+    },
+    "source/selfplay/program_debug_revision_cuda.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/selfplay/program_debug_revision_cuda.py",
+      "sha256": "d0c5ca5b42d8785b9f438f24296c1a98699357ae0aafad6d072ea7c4e8a2dafa"
+    },
+    "source/selfplay/program_debug_revision_calibration.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/selfplay/program_debug_revision_calibration.py",
+      "sha256": "e5b6a5260f188b37cfaa34ce9bd7c55e4fb37e9f4043f6d9c26f6bc4017a94e1"
+    },
+    "source/scripts/analyze_program_debug_revision_calibration.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/scripts/analyze_program_debug_revision_calibration.py",
+      "sha256": "d143476f31babb35b1852afd447956edddaab9a4f592a13aae2d942b810a2946"
+    },
+    "source/scripts/cloud/run_revision_calibration_job.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/scripts/cloud/run_revision_calibration_job.py",
+      "sha256": "a4fe42457ebc23258a5051ee1aaaad5d8a69951f97a9eba61c8a250d0e91ac47"
+    },
+    "source/scripts/cloud/bootstrap_revision_calibration.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/scripts/cloud/bootstrap_revision_calibration.py",
+      "sha256": "7ff52f41b39724a6293ec3e58b272f10f556e2193fbe9380e95dad5546bb90bf"
+    },
+    "source/scripts/revision_calibration_supervisor.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/scripts/revision_calibration_supervisor.py",
+      "sha256": "85b09995113acafa94ddbc8356390c1f10825ed7b58321e8155ac9a98fb04208"
+    },
+    "source/selfplay/program_debug_revision_rl.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/selfplay/program_debug_revision_rl.py",
+      "sha256": "eb25f0b251a122c07d7a38d1d3fd5fe190a80062d13ab106f285fdd69a204e77"
+    },
+    "source/selfplay/program_debug_revision_train.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/selfplay/program_debug_revision_train.py",
+      "sha256": "06704eccc1b904b02c73f4a3380c987efdddda73a773cc5ac924608cae2b3a34"
+    },
+    "source/scripts/analyze_program_debug_revision_rl.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/scripts/analyze_program_debug_revision_rl.py",
+      "sha256": "ebcd79f54ece8fddacaf21c1e26bc2f4d287b0a5d30f0bc01febcb1f487dc214"
+    },
+    "source/scripts/runpod_revision_rl.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/scripts/runpod_revision_rl.py",
+      "sha256": "fa8acf10a840e6f5d5d89fa6764c9276c1c399d6f5f47a0a30b0d0e1f3871f0b"
+    },
+    "source/scripts/cloud/run_revision_rl_job.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/scripts/cloud/run_revision_rl_job.py",
+      "sha256": "1eec1f1c5ad5bd02f363322dba0e2704d8370e7182f4800e18502627d8065715"
+    },
+    "source/scripts/cloud/bootstrap_revision_rl.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/scripts/cloud/bootstrap_revision_rl.py",
+      "sha256": "df8bab53929aa4270e6f121d83921218094667ed3442f824d2a77dcf1fd47b1e"
+    },
+    "source/scripts/revision_rl_supervisor.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/scripts/revision_rl_supervisor.py",
+      "sha256": "bdf95f272c7a5e5080e30d99b6642c073ac2f97e78a5165a424207c8caa51abc"
+    },
+    "source/tests/test_program_debug_revision_rl.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/tests/test_program_debug_revision_rl.py",
+      "sha256": "c0f139d36cdb3a481de5e324ad5a63f43dc1516ecc78ddbbbb413df3edb177ab"
+    },
+    "source/tests/test_program_debug_revision_train.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/tests/test_program_debug_revision_train.py",
+      "sha256": "28e8adc8c0f4bface841da821494ff1d0cf9f39694ff436174d0ea834af07e22"
+    },
+    "source/tests/test_analyze_program_debug_revision_rl.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/tests/test_analyze_program_debug_revision_rl.py",
+      "sha256": "aadf09dba00d7054704c61544a89940bf6bbd08b5bbd07aaef4d6f938af23943"
+    },
+    "source/tests/test_runpod_revision_rl.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/tests/test_runpod_revision_rl.py",
+      "sha256": "e3e7641a879b5c3152008e271baa0d2ca80990c4a51c60c0b295d6447a930862"
+    },
+    "source/tests/test_revision_rl_job_supervisor.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/tests/test_revision_rl_job_supervisor.py",
+      "sha256": "07122742f6655d7e3a1e561d7e94aa5dd8167802bd66ef4b7b91d456ef4adb68"
+    },
+    "source/selfplay/program_debug_revision_evaluation.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/selfplay/program_debug_revision_evaluation.py",
+      "sha256": "51743f232a393096a1822e4013000f9e75b9df9d9017b4a6f7b318120bb5893b"
+    },
+    "source/tests/test_program_debug_revision_evaluation.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/tests/test_program_debug_revision_evaluation.py",
+      "sha256": "54f4f38e1ce7aaf8a3dec65cc011e28a3b7d0e3a9a4a80c53e2ecedc2cd069ce"
+    },
+    "source/scripts/runpod_arena_mixed.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/scripts/runpod_arena_mixed.py",
+      "sha256": "b14bdc34283c6f99b5d25374a43e43a7360c666d2f06ced2e8b490da61af40b1"
+    },
+    "source/scripts/cloud/bootstrap_revision_evaluation.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/scripts/cloud/bootstrap_revision_evaluation.py",
+      "sha256": "e617849ec178b0a610be3688b9404dd996be58b18e98379e5b3da838fe9973ae"
+    },
+    "source/scripts/cloud/run_revision_evaluation_job.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/scripts/cloud/run_revision_evaluation_job.py",
+      "sha256": "b2d4cf60e653ed21d0d4289682b33146ab32f0268a04224678d017a2b49c8b61"
+    },
+    "source/scripts/revision_evaluation_supervisor.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/scripts/revision_evaluation_supervisor.py",
+      "sha256": "ef1dfa2de67a3d4ee1f0a735afb110be231bb910e6ba4e2855a6a0afa2886b99"
+    },
+    "source/tests/test_revision_evaluation_job_supervisor.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/tests/test_revision_evaluation_job_supervisor.py",
+      "sha256": "31e08b0aa1c28e82c22d2bc77b37135252b250adc0e90a20a3022a0c7c840a80"
+    },
+    "source/scripts/analyze_program_debug_revision_evaluation.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/scripts/analyze_program_debug_revision_evaluation.py",
+      "sha256": "064d93bf63a5c69ccaaa8fc49dc87b11db5a7d3dc43b0b8f1af84e5ab7e6fb25"
+    },
+    "source/tests/test_analyze_program_debug_revision_evaluation.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/source/tests/test_analyze_program_debug_revision_evaluation.py",
+      "sha256": "05425b4a9f1ae357232dd37842214a2e2438626d4ed121de04112799b577098c"
+    },
+    "input/parent/batches/train-1-0-draft-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/batches/train-1-0-draft-intent.json",
+      "sha256": "07bae1c15c7928c370c923fecfc36da0697129c8db462f4613bc2bd5e3fabf6f"
+    },
+    "input/parent/batches/train-1-0-draft.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/batches/train-1-0-draft.json",
+      "sha256": "53ad0a160cd59436a52fd17ca44538839561dd54a47ff5013a2da517ec061621"
+    },
+    "input/parent/batches/train-1-0-revision-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/batches/train-1-0-revision-intent.json",
+      "sha256": "bd6e73182a86adbc9641222b689aa220c6b09df663cd0e2fae0cffca6f8ab2ee"
+    },
+    "input/parent/batches/train-1-0-revision.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/batches/train-1-0-revision.json",
+      "sha256": "d87a6367fa4317ad246a65ee1ea758a7d4820feff2e7e104259001e0afc22233"
+    },
+    "input/parent/batches/train-1-1-draft-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/batches/train-1-1-draft-intent.json",
+      "sha256": "a5754c22622b9b4ab58d3bfd188b44c64faaf5bfe2b9e9e02a5a485155f51f28"
+    },
+    "input/parent/batches/train-1-1-draft.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/batches/train-1-1-draft.json",
+      "sha256": "093a42c36d0c067dc67216b59a8ba5b52b3b8674076b49cfc2287eb0a428be07"
+    },
+    "input/parent/batches/train-1-1-revision-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/batches/train-1-1-revision-intent.json",
+      "sha256": "c5ee71c03c02b004c486cfac27ec7651e207ee9fe29a2bfb85fa8b6405b5741d"
+    },
+    "input/parent/batches/train-1-1-revision.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/batches/train-1-1-revision.json",
+      "sha256": "4b45e29e3fcce6d3d4c89114cab25513bfb5d7c0c74866c1b1855a9d11e5d134"
+    },
+    "input/parent/batches/train-1-2-draft-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/batches/train-1-2-draft-intent.json",
+      "sha256": "3b2fc46192b612f63c60080bebb0fc2f325e87562faa2acb66dda7edb9d264aa"
+    },
+    "input/parent/batches/train-1-2-draft.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/batches/train-1-2-draft.json",
+      "sha256": "2968bac0a18da3c25a4b34a072758faca09667794774bdaf4b0d0da94612b4a4"
+    },
+    "input/parent/batches/train-1-2-revision-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/batches/train-1-2-revision-intent.json",
+      "sha256": "12e8354ee3ef6761c5399d767f3a3c647ba15dea48f60ad3876ef055eb5f7aaa"
+    },
+    "input/parent/batches/train-1-2-revision.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/batches/train-1-2-revision.json",
+      "sha256": "0f73e43769c3f7d23f65909a16227e110bdd5f98f0ec1dc983bcc28bb58d4e3d"
+    },
+    "input/parent/batches/train-1-3-draft-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/batches/train-1-3-draft-intent.json",
+      "sha256": "78eeaedb7c62a88b63d40a29fe013e6a552d28b61c1c573329a9edf50d074927"
+    },
+    "input/parent/batches/train-1-3-draft.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/batches/train-1-3-draft.json",
+      "sha256": "05a845bc38d99a6598a039ce6851653079c47e4e695e6845f3450fa7694f096d"
+    },
+    "input/parent/batches/train-1-3-revision-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/batches/train-1-3-revision-intent.json",
+      "sha256": "fc8bd9b3c6975f91789be863288f6b0b6fc5ec5cf78d13d327cb5b5fe5bbd6aa"
+    },
+    "input/parent/batches/train-1-3-revision.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/batches/train-1-3-revision.json",
+      "sha256": "cc0aced1da8d657e13affd8ce653a9ea2e7e22651f190d85c1afd239ff2c4b9a"
+    },
+    "input/parent/batches/train-2-0-draft-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/batches/train-2-0-draft-intent.json",
+      "sha256": "7d35b2beb8ad0f8843d7274dbe0f1eaef5c2d3f650de17d800f192b15e1af9b4"
+    },
+    "input/parent/batches/train-2-0-draft.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/batches/train-2-0-draft.json",
+      "sha256": "af5141b836f6762a0f6ada0a04892272874b3b2ad41128bcc27f3237101c6d18"
+    },
+    "input/parent/batches/train-2-0-revision-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/batches/train-2-0-revision-intent.json",
+      "sha256": "46eacebe8b34c65d2e6437510ad8dff769810685ee96d20f1dc85fed9c152f70"
+    },
+    "input/parent/batches/train-2-0-revision.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/batches/train-2-0-revision.json",
+      "sha256": "8e904641b3abf986411fcfaa21cd75fba7a5ac7a8b8b3a34ef7465c1ad85608e"
+    },
+    "input/parent/batches/train-2-1-draft-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/batches/train-2-1-draft-intent.json",
+      "sha256": "b7b1ca052d39c0ccc9587db62e6465c647cf56669f037d349d30e5cf49b777ec"
+    },
+    "input/parent/batches/train-2-1-draft.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/batches/train-2-1-draft.json",
+      "sha256": "5e18951de9e661a582bae47b3bac90bed4ac349942c892897f6b7aa1902106a3"
+    },
+    "input/parent/batches/train-2-1-revision-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/batches/train-2-1-revision-intent.json",
+      "sha256": "068837b885c25f5aa2d8f117b1cb7dcb5c01bde5dec9895bac9df0ef5979a7fe"
+    },
+    "input/parent/batches/train-2-1-revision.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/batches/train-2-1-revision.json",
+      "sha256": "ca0c61e8c8813ecad4f01e0245b6d9c0af05758e6c49f75cfe2da2611c91171d"
+    },
+    "input/parent/batches/train-2-2-draft-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/batches/train-2-2-draft-intent.json",
+      "sha256": "c5b660088fd3ea3cde7f60367c02247ff723fd7339ca5c1bb1b6b257f03a324d"
+    },
+    "input/parent/batches/train-2-2-draft.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/batches/train-2-2-draft.json",
+      "sha256": "2a43dadb38bf88d85fecbad057dae7e705319aa7bfc3fca5c5e13a9de90cf53e"
+    },
+    "input/parent/batches/train-2-2-revision-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/batches/train-2-2-revision-intent.json",
+      "sha256": "65be2049cce47d8157a33d52e77c78fe2ba7183c935eaddcd28b74a3d954cc24"
+    },
+    "input/parent/batches/train-2-2-revision.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/batches/train-2-2-revision.json",
+      "sha256": "7a576f5f4cd00247a5ae035b80701bf37c650d36f3368d25fbf704cb0b0200ea"
+    },
+    "input/parent/batches/train-2-3-draft-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/batches/train-2-3-draft-intent.json",
+      "sha256": "699ca48d7b60b14b2b4291ef985944fd01dd1deb24b7bdcf5df6a544edfd417a"
+    },
+    "input/parent/batches/train-2-3-draft.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/batches/train-2-3-draft.json",
+      "sha256": "77667a1faaa0576303c8dabb0560abb1105bb8c41449460bbb2de232356689e1"
+    },
+    "input/parent/batches/train-2-3-revision-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/batches/train-2-3-revision-intent.json",
+      "sha256": "4307e7dd25a59999abe342c49169c2570a165ab5bc299bf88a5173210c6811ef"
+    },
+    "input/parent/batches/train-2-3-revision.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/batches/train-2-3-revision.json",
+      "sha256": "d072c0fb48665d5ca8b1e1daa9c395a941591d7fa0460cb088db72b5eb2614b0"
+    },
+    "input/parent/batches/train-3-0-draft-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/batches/train-3-0-draft-intent.json",
+      "sha256": "3453b9cc84cfe76a4bdf5525ad20e24ba43e1920d108cb5362fded4e833c572a"
+    },
+    "input/parent/batches/train-3-0-draft.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/batches/train-3-0-draft.json",
+      "sha256": "ba01b516c6dee8ea0f733c507d052e502ff796ca2218faf30a69e2e0496580ad"
+    },
+    "input/parent/batches/train-3-0-revision-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/batches/train-3-0-revision-intent.json",
+      "sha256": "c2ba5aeb107ce69efe102f8c38a6c9d694f1fdc24949d147adac324ca3c71f9d"
+    },
+    "input/parent/batches/train-3-0-revision.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/batches/train-3-0-revision.json",
+      "sha256": "1f0a43037f3f72c3bf8cb27c368ddb7af7c50c2fec1b4a8ba8c526afd261c967"
+    },
+    "input/parent/batches/train-3-1-draft-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/batches/train-3-1-draft-intent.json",
+      "sha256": "2a36f6277b46683b9ffd3de622b069972333402bbfa716c5d221ef9f90e7e7a5"
+    },
+    "input/parent/batches/train-3-1-draft.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/batches/train-3-1-draft.json",
+      "sha256": "2797afd0e582b5a9d6b7a7f0ab677566f001d555c33349839a45adf576d35e72"
+    },
+    "input/parent/batches/train-3-1-revision-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/batches/train-3-1-revision-intent.json",
+      "sha256": "ede74fdf6617729ae1533c9b2d844706352619f2989a84445bc99247a29cdf92"
+    },
+    "input/parent/batches/train-3-1-revision.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/batches/train-3-1-revision.json",
+      "sha256": "28cec8eeefd040c3eab96b28d466085ba1250d64f24aa00efc23affef8ad5138"
+    },
+    "input/parent/batches/train-3-2-draft-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/batches/train-3-2-draft-intent.json",
+      "sha256": "a546fe74fcf86365604447f541e28d5bf3e15ead5274e31fab09eb2d8b7f40ae"
+    },
+    "input/parent/batches/train-3-2-draft.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/batches/train-3-2-draft.json",
+      "sha256": "a644bbae992240cc60766876a396bbad33667fe93b2ad3b9349571a2a07e67da"
+    },
+    "input/parent/batches/train-3-2-revision-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/batches/train-3-2-revision-intent.json",
+      "sha256": "3d1204dca55409d10f8489edc4723b626ae93f0a348d9c93fe1a1ee49d4e583c"
+    },
+    "input/parent/batches/train-3-2-revision.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/batches/train-3-2-revision.json",
+      "sha256": "fdd1f301329f665f48751f00b711d681f512e03f16c7236f64610ec464842cdc"
+    },
+    "input/parent/batches/train-3-3-draft-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/batches/train-3-3-draft-intent.json",
+      "sha256": "50627d8d26073bf866a6542a221dc120ea9579f27cf0ee0613015734eeb3b551"
+    },
+    "input/parent/batches/train-3-3-draft.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/batches/train-3-3-draft.json",
+      "sha256": "e7fff3269e6b87113718e0fd6e0f814ec0c37c5e9d81b8176fc878933f7df290"
+    },
+    "input/parent/batches/train-3-3-revision-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/batches/train-3-3-revision-intent.json",
+      "sha256": "bfc8ad4a211d6c2482b7b86cae59d4dbb33698159d6c6d9b4024ff79b104f1fe"
+    },
+    "input/parent/batches/train-3-3-revision.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/batches/train-3-3-revision.json",
+      "sha256": "07f8879a0b689bf5806ce4d6366785187e4ca3f6c01adef174f84bec2bb13ad8"
+    },
+    "input/parent/checkpoints/base/adapter.safetensors": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/checkpoints/base/adapter.safetensors",
+      "sha256": "b08eb75f6d38bcb7363bdea9d8b2d640e9963903bccf05b007c2eec2aa8c5fc8"
+    },
+    "input/parent/checkpoints/base/metadata.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/checkpoints/base/metadata.json",
+      "sha256": "2cae28b6aa64b6b38d58ecf4280c5a636c33a686f5a90d0994c7d463c472378b"
+    },
+    "input/parent/checkpoints/base/optimizer.pt": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/checkpoints/base/optimizer.pt",
+      "sha256": "d3e626c4f56067e6734af623e92818113c2b506053cab2f3783302ac9338baf3"
+    },
+    "input/parent/checkpoints/cycle1/adapter.safetensors": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/checkpoints/cycle1/adapter.safetensors",
+      "sha256": "2fe97632abd9c207bd68458d6d0a3d80d511a8f2ad82a7c4937fbc802ca33dca"
+    },
+    "input/parent/checkpoints/cycle1/metadata.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/checkpoints/cycle1/metadata.json",
+      "sha256": "bc5bbf2211d1801d2fff16ae9683f5acddb1c90496b278c3e5c827d486ea0e19"
+    },
+    "input/parent/checkpoints/cycle1/optimizer.pt": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/checkpoints/cycle1/optimizer.pt",
+      "sha256": "a2183b9b1b3adbb9e52d7267ee89dac60e9bc28ea0510a7fb48cde05612c372d"
+    },
+    "input/parent/checkpoints/cycle2/adapter.safetensors": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/checkpoints/cycle2/adapter.safetensors",
+      "sha256": "ffd8c957b1744924be1dbbe1a885f22cd9d8c1a96795aaf79644de4248328291"
+    },
+    "input/parent/checkpoints/cycle2/metadata.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/checkpoints/cycle2/metadata.json",
+      "sha256": "9fab4a75107850b354beb2e1b59478c310a0ab67c104bb7bb39a97f9dd18ae55"
+    },
+    "input/parent/checkpoints/cycle2/optimizer.pt": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/checkpoints/cycle2/optimizer.pt",
+      "sha256": "ba7577783dfe155e0750978978c9897cab061ef62baa7fd5f7312b55f8e2d125"
+    },
+    "input/parent/checkpoints/cycle3/adapter.safetensors": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/checkpoints/cycle3/adapter.safetensors",
+      "sha256": "16d0f512915fb63eca57ecde228d256d43c880f29dc16da587792e372d7da17d"
+    },
+    "input/parent/checkpoints/cycle3/metadata.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/checkpoints/cycle3/metadata.json",
+      "sha256": "9fb2046c32bb61d42633ad088ffe9c5796b3a9b3bf0213a6305bd998842df83a"
+    },
+    "input/parent/checkpoints/cycle3/optimizer.pt": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/checkpoints/cycle3/optimizer.pt",
+      "sha256": "d5c0c81f5d2af1b1f918a8ebf01f48ff73f642cefe03281b08f73614aed18d6c"
+    },
+    "input/parent/deployment.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/deployment.json",
+      "sha256": "e0cfeb2109be55f6925e9327b586639de567ae62b9d4f63296ed119d71f22b9a"
+    },
+    "input/parent/endpoint-selection.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/endpoint-selection.json",
+      "sha256": "51f97638024a6a1fb6aff309d31006a5b37fec808ff17d6c261cae77bc00efbe"
+    },
+    "input/parent/evaluation-opponents.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/evaluation-opponents.json",
+      "sha256": "e14ecbaa52e4ad46dd42cb1788a8836b60c73a743ca2741e3f440e02f6c3af46"
+    },
+    "input/parent/feedback/train-1-0.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/feedback/train-1-0.json",
+      "sha256": "8c2110ce788e13f619b7910ae8e5a30af47877629cbc6811f4e04905ee8ea8f0"
+    },
+    "input/parent/feedback/train-1-1.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/feedback/train-1-1.json",
+      "sha256": "da7112e6123e4eea88ef6ba685a3e15d8d3ade9761f605fd980cf2e2f0385e84"
+    },
+    "input/parent/feedback/train-1-2.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/feedback/train-1-2.json",
+      "sha256": "cae6099e1d7f36a0d4cd24023cff08fdee819c43f29d5dc344b53d770115413d"
+    },
+    "input/parent/feedback/train-1-3.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/feedback/train-1-3.json",
+      "sha256": "515e2982fc1944d77e508770cd6857d75948c7db7084c0c651856d8542df986a"
+    },
+    "input/parent/feedback/train-1-4.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/feedback/train-1-4.json",
+      "sha256": "41a7bc895aca8b4f60b8591d4cff90be36fe219c662c5767bf1ee7b44a1bd795"
+    },
+    "input/parent/feedback/train-1-5.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/feedback/train-1-5.json",
+      "sha256": "5e8473505ac168087fe4ca0cdf157af9b58fc6844ec1f56009f69ce05fa90a66"
+    },
+    "input/parent/feedback/train-1-6.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/feedback/train-1-6.json",
+      "sha256": "485f77f411f39363e9e2f683d1296c9de074c9312152f438c4d7657ff29470b5"
+    },
+    "input/parent/feedback/train-1-7.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/feedback/train-1-7.json",
+      "sha256": "6ba4fd77596c395f0c5304006ee1992667680eadfb424474e7cfc587fd2b97a6"
+    },
+    "input/parent/feedback/train-2-0.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/feedback/train-2-0.json",
+      "sha256": "6f2b053d201e18ba8bb55cf916a0d5ce8d414e1477ed22c7ecc8d32c115111d0"
+    },
+    "input/parent/feedback/train-2-1.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/feedback/train-2-1.json",
+      "sha256": "40206e1b355b7aae281921cadf2a0eae123ff93bff106475174e611babc00bb7"
+    },
+    "input/parent/feedback/train-2-2.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/feedback/train-2-2.json",
+      "sha256": "6fe850700de849983041a527e44be9f0e446b66b08903294320c73527073f358"
+    },
+    "input/parent/feedback/train-2-3.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/feedback/train-2-3.json",
+      "sha256": "b9f486d24ff340a46480a6e909363487784d424a5b488bd6e693fe2deb6dae64"
+    },
+    "input/parent/feedback/train-2-4.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/feedback/train-2-4.json",
+      "sha256": "17544498d4709b69de162bebe58cef904bad6e34b0a6c93df2e14da6091d03f3"
+    },
+    "input/parent/feedback/train-2-5.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/feedback/train-2-5.json",
+      "sha256": "da5ad53ba4c2c5823cdbc0fbfa81617d60e13ceff01ab20d08e996b4beeac060"
+    },
+    "input/parent/feedback/train-2-6.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/feedback/train-2-6.json",
+      "sha256": "f8932f29a210afbd679be5699f538b52437121b830c504ef76669317b2c2f764"
+    },
+    "input/parent/feedback/train-2-7.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/feedback/train-2-7.json",
+      "sha256": "74c30230ca63ed4c40837d6fbbc541c1fd392c12afd8ba652a6af16c80688b9b"
+    },
+    "input/parent/feedback/train-3-0.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/feedback/train-3-0.json",
+      "sha256": "7cba78b8f00a4c9c2c3d9be12ae9fabd6ec653b552f9ae3e61c8fb77e1f567ec"
+    },
+    "input/parent/feedback/train-3-1.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/feedback/train-3-1.json",
+      "sha256": "640f08ffa7c6379ac09162fa89e056d83e86508583fc81fd24a4728479b788ee"
+    },
+    "input/parent/feedback/train-3-2.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/feedback/train-3-2.json",
+      "sha256": "02e94361ac8577e60a9bd47f3e4393ffce772ab2d381d3cfdef20a1894e5f9b9"
+    },
+    "input/parent/feedback/train-3-3.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/feedback/train-3-3.json",
+      "sha256": "b37bdd4fb641f6bb4c4f7b7cd7ca2f11809ec35d88c741d6676c7a23271db808"
+    },
+    "input/parent/feedback/train-3-4.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/feedback/train-3-4.json",
+      "sha256": "d6dc94458e525ccbafeeab07da4304b0d29b12456f05cb61e099093513a4cc27"
+    },
+    "input/parent/feedback/train-3-5.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/feedback/train-3-5.json",
+      "sha256": "d22fd7f84828286d6f4999e24453d5a982671b1fcad670dca8fb0de40f7c5756"
+    },
+    "input/parent/feedback/train-3-6.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/feedback/train-3-6.json",
+      "sha256": "1c4703ed08603755689fe4f5d3d42dc3310b738283e64481af72a8e4b00d1b61"
+    },
+    "input/parent/feedback/train-3-7.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/feedback/train-3-7.json",
+      "sha256": "7fa581178df17ce96869c9a9be39f8043be3e68646e232bf7651a46273062df6"
+    },
+    "input/parent/final-audit.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/final-audit.json",
+      "sha256": "f14b292fc147fc790a92bf2ebab38e888a6a7451387bb1aa177093eda23668c9"
+    },
+    "input/parent/generations/train-1-0.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/generations/train-1-0.json",
+      "sha256": "a596c862c1cb9504aacf6cf16ea820a582f47a3056c59d86f573ed2a9bea1e5d"
+    },
+    "input/parent/generations/train-1-1.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/generations/train-1-1.json",
+      "sha256": "f1b33aeae21ab8c64515d5a52ac1bed6ed7f8138a7e7185869ceb168f08f2bcf"
+    },
+    "input/parent/generations/train-1-2.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/generations/train-1-2.json",
+      "sha256": "5dd01ba7c4b94247d74b0cc9e08e2da535ddf42b08d64d9bcf8277ed39522e04"
+    },
+    "input/parent/generations/train-1-3.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/generations/train-1-3.json",
+      "sha256": "5c77ea296519b2857855db6d05348b47f76cee9702f21ef82bd5ff2f8b862e1a"
+    },
+    "input/parent/generations/train-1-4.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/generations/train-1-4.json",
+      "sha256": "f11463cc3d27fe55de86c40d1560a4eb1214338c8ebc87216a9a37b02bcbf87a"
+    },
+    "input/parent/generations/train-1-5.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/generations/train-1-5.json",
+      "sha256": "1f6e6f068e6744c61a102e5390c6d4dbbce7ec1f1ffdd032ee7e43d3bf187623"
+    },
+    "input/parent/generations/train-1-6.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/generations/train-1-6.json",
+      "sha256": "1a1e7e19b8469086640d8e6386b5345a3029eaec8795d71511526479fa534bdc"
+    },
+    "input/parent/generations/train-1-7.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/generations/train-1-7.json",
+      "sha256": "d4f0d0534a29385d56b897f9f5d79b0da3535f2aca3fd92c89faa466f173f551"
+    },
+    "input/parent/generations/train-2-0.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/generations/train-2-0.json",
+      "sha256": "9c82260940e60d9051d45b845b16163e94ccd06115499d5504552ef71fce4e51"
+    },
+    "input/parent/generations/train-2-1.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/generations/train-2-1.json",
+      "sha256": "2af50e09f3287b532a07bc90e17ceb1af904ad78213a295985d450aa0df8ad99"
+    },
+    "input/parent/generations/train-2-2.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/generations/train-2-2.json",
+      "sha256": "2418a4a0283253335b948794efd1eed3e9705138e6feade2f4db03500f7513e1"
+    },
+    "input/parent/generations/train-2-3.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/generations/train-2-3.json",
+      "sha256": "655922e63785bfecadc9384db1933da83aece178759103168e7d8a1801336c30"
+    },
+    "input/parent/generations/train-2-4.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/generations/train-2-4.json",
+      "sha256": "cc25ea6bd2d95846689d9447f732820984ab16074143f7269ee8d023eecd57c2"
+    },
+    "input/parent/generations/train-2-5.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/generations/train-2-5.json",
+      "sha256": "c4b1320256fd7d21479770fe8fd2de9e033afdd2587b8fc4f7d244f9c4d2ebb2"
+    },
+    "input/parent/generations/train-2-6.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/generations/train-2-6.json",
+      "sha256": "0cca91bb22ed2a4718ec84cb68518a04990f0c10cc3add1b1bd7a49466ac69e9"
+    },
+    "input/parent/generations/train-2-7.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/generations/train-2-7.json",
+      "sha256": "f0d95bcf3186d1ab4791f89a8b6f59ac942c8f3e3a6bd02e66355136bb3fba0b"
+    },
+    "input/parent/generations/train-3-0.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/generations/train-3-0.json",
+      "sha256": "36ea990b155bc97b32e6a4265afa801021be05e9afa36abe370289748f8478af"
+    },
+    "input/parent/generations/train-3-1.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/generations/train-3-1.json",
+      "sha256": "29a5d52bd15f94ba892c5893d9d2488ddeaef15ab1b726fbfc84cea2636d30a0"
+    },
+    "input/parent/generations/train-3-2.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/generations/train-3-2.json",
+      "sha256": "592179cd0b007eec4978b55915ae65e005e32dbae487362566a61dd53c9abde1"
+    },
+    "input/parent/generations/train-3-3.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/generations/train-3-3.json",
+      "sha256": "d2db583a2ec2ed69eabb8d218ce6efc87dc64ae808026188e0a9928541b82693"
+    },
+    "input/parent/generations/train-3-4.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/generations/train-3-4.json",
+      "sha256": "98ccb6dad099ed906449cd348aec8e40b2bf7f559f90787c1a6f249882dea502"
+    },
+    "input/parent/generations/train-3-5.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/generations/train-3-5.json",
+      "sha256": "d125b9f886801af0775c657976854595561909ae459703b304c19f8210b0d128"
+    },
+    "input/parent/generations/train-3-6.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/generations/train-3-6.json",
+      "sha256": "6c741eba0efac4262c13bca42b4a6dd1033b092be90c94a497a032c76f27a8f4"
+    },
+    "input/parent/generations/train-3-7.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/generations/train-3-7.json",
+      "sha256": "589325e733da6446496b6b92ef833ed7610d1cd59c1ce8c0993c28ea2bb18a4e"
+    },
+    "input/parent/groups/1/checkpoint-timing.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/groups/1/checkpoint-timing.json",
+      "sha256": "0167f81053fc883844befe6c033748eb4121b2709e022d5fea5f6353ade32230"
+    },
+    "input/parent/groups/1/gate-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/groups/1/gate-intent.json",
+      "sha256": "9b0bd79cd72e607fc7e50ab55d4e9c965c2ffaf467759e1e778b437e6109f400"
+    },
+    "input/parent/groups/1/gate.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/groups/1/gate.json",
+      "sha256": "2f4cdd9f02245b4774af4ba66231ab18dbdfa5bfee38662919759216fcb9c58b"
+    },
+    "input/parent/groups/1/opponents.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/groups/1/opponents.json",
+      "sha256": "07f7c44427570ca9f18e37048c716cea80ba749c7610109721db0cd1ef2ead6c"
+    },
+    "input/parent/groups/1/optimizer-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/groups/1/optimizer-intent.json",
+      "sha256": "c396c25d405397fa2e11ff9179c68d4c79f3d17b1817a20e2e2c9a96ad54c33e"
+    },
+    "input/parent/groups/1/optimizer-result.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/groups/1/optimizer-result.json",
+      "sha256": "ba5f97dbc1744635119bde09bc434cc9486d12fa228086632ce8c7aa3c76f58b"
+    },
+    "input/parent/groups/1/probe-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/groups/1/probe-intent.json",
+      "sha256": "49785976697b02a51bf01af351791c1bb204ba5bcd82869d7dd9a6a0b89405d5"
+    },
+    "input/parent/groups/1/probe.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/groups/1/probe.json",
+      "sha256": "6962d28fda5cdc235234b2edc84b5ff06985a0e575194f407b973bf62d44743c"
+    },
+    "input/parent/groups/1/scores.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/groups/1/scores.json",
+      "sha256": "6bea20c5a990be4d9dbfddc6a251c8b054266e52d86eb54e10171486d2b5cf1a"
+    },
+    "input/parent/groups/1/seal.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/groups/1/seal.json",
+      "sha256": "68ec6ed225cfff879aa4bba1520e57bbd54ef22db3bdd46113629fa6babbb7f5"
+    },
+    "input/parent/groups/1/timing-start.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/groups/1/timing-start.json",
+      "sha256": "8077c0b924fd9330c871828084038a1d79a828eee9632d87eefd585f9f2a8cfd"
+    },
+    "input/parent/groups/1/timing.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/groups/1/timing.json",
+      "sha256": "8f3c9f94de7d134d9b9e823f6d0de79d6b0d33f481761d0b9ee68fdd17fa5a57"
+    },
+    "input/parent/groups/1/update.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/groups/1/update.json",
+      "sha256": "bb451a027e65c245cc2add39ac6f983b51c45d3b1de859e85be23b85b0e2c52b"
+    },
+    "input/parent/groups/2/checkpoint-timing.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/groups/2/checkpoint-timing.json",
+      "sha256": "d3a7ec7a02c8a13dd5e0dc12c76afb1a08224928724133a51585def643ae5366"
+    },
+    "input/parent/groups/2/gate-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/groups/2/gate-intent.json",
+      "sha256": "f5cd8be60efa3ddb8879ef37bd4dd22c06b93c19b37337dc7e09fc676920c3cd"
+    },
+    "input/parent/groups/2/gate.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/groups/2/gate.json",
+      "sha256": "ae98d339d50621fa7d4653bdba93c6e729a707043ee293de8e3b5c1f8321d5ac"
+    },
+    "input/parent/groups/2/opponents.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/groups/2/opponents.json",
+      "sha256": "87de8f56069d6f07afbc138ffd714fc22ea455881cbd5d511563bf672e3b38f6"
+    },
+    "input/parent/groups/2/optimizer-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/groups/2/optimizer-intent.json",
+      "sha256": "9b5736f577503e48486ba61501d485b1aa76f510d554191925282e76279bb610"
+    },
+    "input/parent/groups/2/optimizer-result.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/groups/2/optimizer-result.json",
+      "sha256": "e7d936bf6c4a864c10c5dc1c30ec73ce59584c2b8f96df89175ce3312dc9519b"
+    },
+    "input/parent/groups/2/scores.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/groups/2/scores.json",
+      "sha256": "3c40569e9cbb52ffaf7e3cf7196a1deaa3afc56f697027455f44851d193dda93"
+    },
+    "input/parent/groups/2/seal.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/groups/2/seal.json",
+      "sha256": "7337a3ac48e2f75b07efad34f6a09bf5fc992e2eb19460861c617aac14c5db25"
+    },
+    "input/parent/groups/2/timing-start.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/groups/2/timing-start.json",
+      "sha256": "c111ddbfb3a40d44cefaa91041792a231003e022e962f425c071c92c8dcb8c46"
+    },
+    "input/parent/groups/2/timing.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/groups/2/timing.json",
+      "sha256": "f7296471c4fd619d6b0003493ae976a3c5ee814798f60fe92eac3b39adea083c"
+    },
+    "input/parent/groups/2/update.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/groups/2/update.json",
+      "sha256": "96e52ab02f7afc62c9882bec1214ece8fb74901d08428dd4d57e06659e351cc3"
+    },
+    "input/parent/groups/3/checkpoint-timing.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/groups/3/checkpoint-timing.json",
+      "sha256": "0796eef22c5dfd8191848b33aff9a1908cc26fef77124474ab9c3b314978a261"
+    },
+    "input/parent/groups/3/gate-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/groups/3/gate-intent.json",
+      "sha256": "a34ef9f8b28038c5df168d4166c651b9f1dabf63c18ebd0ec19503c094e627a2"
+    },
+    "input/parent/groups/3/gate.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/groups/3/gate.json",
+      "sha256": "d487279236e334ffccc9b87d8b13cce0999ebe351ff1b14ecde977cbb9a9d053"
+    },
+    "input/parent/groups/3/opponents.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/groups/3/opponents.json",
+      "sha256": "408366960eef04c9340af44a0a8f6ce51cc8e428fac56f4aa5a8c7a9dde0d938"
+    },
+    "input/parent/groups/3/optimizer-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/groups/3/optimizer-intent.json",
+      "sha256": "3ee8f21279f8e49c45d47be6032289f8a27c7f20a6a34317ecd2da137c90cd49"
+    },
+    "input/parent/groups/3/optimizer-result.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/groups/3/optimizer-result.json",
+      "sha256": "7440deef84d23d3d54ba5ef692845b45c510012ca926a8f4d1ea5357cd59bedb"
+    },
+    "input/parent/groups/3/scores.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/groups/3/scores.json",
+      "sha256": "3bbfac4b5d8d505a8425399f2d8960d656215be67f905e07a8745045d7dcaca1"
+    },
+    "input/parent/groups/3/seal.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/groups/3/seal.json",
+      "sha256": "81a58b4dead38de17f14adf7f600e6a7b14aa611ad07371ca870dfd875781991"
+    },
+    "input/parent/groups/3/timing-start.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/groups/3/timing-start.json",
+      "sha256": "fdc7039dd052e92c2b4236635ae4413dd376d02afb627d2ff330dbc199f4e673"
+    },
+    "input/parent/groups/3/timing.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/groups/3/timing.json",
+      "sha256": "599989e4eab2ad10126468c4a772b83cb1ff367825e9800c2179d2302a19f727"
+    },
+    "input/parent/groups/3/update.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/groups/3/update.json",
+      "sha256": "7931d1f0860d7a853989a425a45da6981f12781bccf41089e83309dda8aabe33"
+    },
+    "input/parent/heldout-opponents.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/heldout-opponents.json",
+      "sha256": "e14ecbaa52e4ad46dd42cb1788a8836b60c73a743ca2741e3f440e02f6c3af46"
+    },
+    "input/parent/initial-opponents.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/initial-opponents.json",
+      "sha256": "a5e702df6fe4f79ad6e7bb1f35677c480fd0004b5e98f06b7e197e7d60a98e08"
+    },
+    "input/parent/inputs/accounting-review.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/inputs/accounting-review.json",
+      "sha256": "1b284bc0c2523a775f85b3715b5c3e19f81d2cd4ab473ea8066ea97e0937f48f"
+    },
+    "input/parent/inputs/calibration-decision.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/inputs/calibration-decision.json",
+      "sha256": "b116ff4eba78c46501d35a32379bac127d65eeb53117045b330ebb4aa7479b62"
+    },
+    "input/parent/inputs/calibration-final-audit.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/inputs/calibration-final-audit.json",
+      "sha256": "4ea5b49bf83d7849db90864b42c7da05337f6b926cec6e8909719fdfa8da930d"
+    },
+    "input/parent/inputs/calibration-full-likelihood-gate.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/inputs/calibration-full-likelihood-gate.json",
+      "sha256": "ab81baf7a29e245a733031f8e851a46fccc18254718c91d456452b72a7a0c875"
+    },
+    "input/parent/inputs/calibration-generations/calibration-1.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/inputs/calibration-generations/calibration-1.json",
+      "sha256": "cdf7aaa8cb443fac07f6efa0d1e28a9bc9d3474502fa782c9ddf6254b856b73a"
+    },
+    "input/parent/inputs/calibration-generations/calibration-2.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/inputs/calibration-generations/calibration-2.json",
+      "sha256": "13cf2b06d3216c269da4ffc429bbce5e564dba36a6b2fc9f9c525a56c952a946"
+    },
+    "input/parent/inputs/calibration-manifest.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/inputs/calibration-manifest.json",
+      "sha256": "f3401a5f6a4b2834d7b40f970c58e18f2044a60c78511438492d8dbc144ce3f5"
+    },
+    "input/parent/inputs/calibration-map-fingerprints.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/inputs/calibration-map-fingerprints.json",
+      "sha256": "e0e59067cda0b32399a739b870e1fbeb1c237ce12417d713f16399ad02ba0671"
+    },
+    "input/parent/inputs/calibration-scores.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/inputs/calibration-scores.json",
+      "sha256": "06d818243b7a19f709ddb7d781e483d65d10b26921e0b085a46aede3a042e120"
+    },
+    "input/parent/inputs/calibration-sealed.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/inputs/calibration-sealed.json",
+      "sha256": "4b3bcd7162f7a5ac869f171d9bd5cc1d64e2f35b1ce4674c9f3d5be352636de4"
+    },
+    "input/parent/inputs/calibration-status.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/inputs/calibration-status.json",
+      "sha256": "ceb9ee2ef75c07456053799c4b2af02a6ffed37e3bde40c466ba317153d8bf7a"
+    },
+    "input/parent/inputs/context-stress-review-v2.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/inputs/context-stress-review-v2.json",
+      "sha256": "a0dbf5644a95343f1750c6739bad96c7b206ff3f955f7d1e99281b550a765e52"
+    },
+    "input/parent/inputs/context-stress-review.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/inputs/context-stress-review.json",
+      "sha256": "30a35e1c3941106e5dca82f1ead21d1b1fe53ce587be53470701d4ae471db8b1"
+    },
+    "input/parent/inputs/design-plan.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/inputs/design-plan.json",
+      "sha256": "cb660f63a0b17450916350f4e65b57c52487924ba828ca93611410b523ba37e7"
+    },
+    "input/parent/inputs/initial-checkpoint/adapter.safetensors": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/inputs/initial-checkpoint/adapter.safetensors",
+      "sha256": "b08eb75f6d38bcb7363bdea9d8b2d640e9963903bccf05b007c2eec2aa8c5fc8"
+    },
+    "input/parent/inputs/initial-checkpoint/metadata.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/inputs/initial-checkpoint/metadata.json",
+      "sha256": "b1c02dc1e9ffbd276153fed32353f5ab4d3c875b1120be8f978cc10e425fd0cc"
+    },
+    "input/parent/inputs/initial-checkpoint/optimizer.pt": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/inputs/initial-checkpoint/optimizer.pt",
+      "sha256": "d3e626c4f56067e6734af623e92818113c2b506053cab2f3783302ac9338baf3"
+    },
+    "input/parent/inputs/initial-final-audit.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/inputs/initial-final-audit.json",
+      "sha256": "7e197fb9ce80be8b639518f0dd383836038673f90ea19db08ffe946aa822236a"
+    },
+    "input/parent/inputs/initial-manifest.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/inputs/initial-manifest.json",
+      "sha256": "9860744b442e8bc0e8bb56ca0b5e0ef5a0db51b78f66d03dfe4bf9b3f20eff8d"
+    },
+    "input/parent/inputs/initial-map-fingerprints.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/inputs/initial-map-fingerprints.json",
+      "sha256": "a55940e244f6bad1a7b48055ccfb7eab8e742f0d9ac83e07b5ae806cef97ca56"
+    },
+    "input/parent/inputs/initial-status.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/inputs/initial-status.json",
+      "sha256": "a326c12e584655c34721c4ca187ea3347ad88241ef9fde478cc3855073647f83"
+    },
+    "input/parent/inputs/map-collision-design-review.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/inputs/map-collision-design-review.json",
+      "sha256": "a908d666407cd8cdadc6e86076b0d70080519b3a95e4a8020ebed7c18fd5af17"
+    },
+    "input/parent/inputs/model-info.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/inputs/model-info.json",
+      "sha256": "3ab656318e351369a602815198518df4423a4422760d53762b6c962f1cc24aa5"
+    },
+    "input/parent/inputs/previous-calibration-final-audit.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/inputs/previous-calibration-final-audit.json",
+      "sha256": "53ba30d5ae5f82156c78bfb6dcacb55f7e6f0010929507f021a8b13c2bc58c3c"
+    },
+    "input/parent/inputs/previous-calibration-manifest.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/inputs/previous-calibration-manifest.json",
+      "sha256": "6d959a926f0a423122df13554f921092d6115498fbad48ce1baf0aa44f606fb7"
+    },
+    "input/parent/inputs/previous-calibration-map-fingerprints.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/inputs/previous-calibration-map-fingerprints.json",
+      "sha256": "16e591ee1e827ff9be6de527a5fe0a43c8ae7fa1c598568288b4a0fa06e77418"
+    },
+    "input/parent/inputs/previous-calibration-status.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/inputs/previous-calibration-status.json",
+      "sha256": "9104217d3b06c38c6fe79a6dce7fe6abec616dc3c3a3e265667b5139eced97f7"
+    },
+    "input/parent/inputs/prior-debug-manifest.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/inputs/prior-debug-manifest.json",
+      "sha256": "6a9466233768860ef25774f7f7d329c42687b8205947021fe63339cb69e43fd6"
+    },
+    "input/parent/inputs/prior-debug-map-fingerprints.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/inputs/prior-debug-map-fingerprints.json",
+      "sha256": "eb828cc68b6e1dfb8ab7dc7c65ac901a1c1647f3fee999f359c59ef0b9b8e9b8"
+    },
+    "input/parent/inputs/revision-context-stress-review.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/inputs/revision-context-stress-review.json",
+      "sha256": "746cf4d39c3e0e93357496ab8ad3138d6d40ed2f76e38bd2c2abaaeabaaf2378"
+    },
+    "input/parent/inputs/root-acceptance.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/inputs/root-acceptance.json",
+      "sha256": "d6f20fa52830fd9b86b777f3e38f3d34b048f97c2a28d8cb6d2c8dfcf3618bdb"
+    },
+    "input/parent/inputs/teacher-corpus.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/inputs/teacher-corpus.json",
+      "sha256": "c3fd43b8d5e1342c6966c27ca008202c66a7b5388d7770b966427bb8ec83be4e"
+    },
+    "input/parent/inputs/tokenizer/chat_template.jinja": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/inputs/tokenizer/chat_template.jinja",
+      "sha256": "c3cf9e34abf4f9e36c2d72165aa9c132d3e2a725b6c2586aaa3a8af9d7a81041"
+    },
+    "input/parent/inputs/tokenizer/config.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/inputs/tokenizer/config.json",
+      "sha256": "191e0af232104ed8b65258cf3fb2b842e288008baca7633c11b82a1ac7203aab"
+    },
+    "input/parent/inputs/tokenizer/generation_config.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/inputs/tokenizer/generation_config.json",
+      "sha256": "e70c136c1b78ddc1fb0905bac8e733a4dc448d4f852a5dd75143fffc70be550e"
+    },
+    "input/parent/inputs/tokenizer/tokenizer.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/inputs/tokenizer/tokenizer.json",
+      "sha256": "0997f410c57a1f4e53b09e4be8f4a172d90edd9564368fb0847030937229b9f3"
+    },
+    "input/parent/inputs/tokenizer/tokenizer_config.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/inputs/tokenizer/tokenizer_config.json",
+      "sha256": "b11349aafa7cdc6a320767cf7ceb29ed82f7eda5d65e8e0819e76f0ce947bf27"
+    },
+    "input/parent/manifest.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/manifest.json",
+      "sha256": "71706b573a817b49cc136586e87c9a66f697101dadf5fa4da35922cce93184c1"
+    },
+    "input/parent/map-fingerprints.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/map-fingerprints.json",
+      "sha256": "b6ab043a203b12b4b69846fff824c14fe4a546db31f657b61ae52da0e7bd001a"
+    },
+    "input/parent/opponents.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/opponents.json",
+      "sha256": "a5e702df6fe4f79ad6e7bb1f35677c480fd0004b5e98f06b7e197e7d60a98e08"
+    },
+    "input/parent/plan.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/plan.json",
+      "sha256": "045924fa505c44ad47e214837e4cc1caa69dd60f7dad3a658cabab5337195ae0"
+    },
+    "input/parent/prompts/debug.txt": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/prompts/debug.txt",
+      "sha256": "e2abc4d3cd0c0e198a13c8ca4c7f5335f7acaebbabc5a3b0c4d41b0768eb06f9"
+    },
+    "input/parent/runtime.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/runtime.json",
+      "sha256": "99af823fdf37a8aa8dace173e4b93f921e521eec6d86c13dfa791ddf50327f73"
+    },
+    "input/parent/schedule.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/schedule.json",
+      "sha256": "0ee48248f57b8708d46d45aff03608b19bdce5e71e9f36c0e90d6c06f7e4414e"
+    },
+    "input/parent/smoke-1792726502602379346.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/smoke-1792726502602379346.json",
+      "sha256": "6229c692993341dea7a707741cd6d0d341864fc964cbc83ef13b746f6cfa30e3"
+    },
+    "input/parent/source/scripts/analyze_program_cardinal_cycle.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/scripts/analyze_program_cardinal_cycle.py",
+      "sha256": "41a639fbe0aa12f53c55b4bf4b39d5b75ae5b81c39f7275c1b08c37c5a98e4d0"
+    },
+    "input/parent/source/scripts/analyze_program_cardinal_gpu.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/scripts/analyze_program_cardinal_gpu.py",
+      "sha256": "b25717900ca3e15674e7cd14b8b034edc9047f4cb82661150d741078f46721a9"
+    },
+    "input/parent/source/scripts/analyze_program_debug_calibration.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/scripts/analyze_program_debug_calibration.py",
+      "sha256": "c1aeebf400416128cafd7f4d4711b2f161fe4a8bb2a8478ad127ebe92e8039a0"
+    },
+    "input/parent/source/scripts/analyze_program_debug_revision_calibration.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/scripts/analyze_program_debug_revision_calibration.py",
+      "sha256": "d143476f31babb35b1852afd447956edddaab9a4f592a13aae2d942b810a2946"
+    },
+    "input/parent/source/scripts/analyze_program_debug_revision_rl.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/scripts/analyze_program_debug_revision_rl.py",
+      "sha256": "ebcd79f54ece8fddacaf21c1e26bc2f4d287b0a5d30f0bc01febcb1f487dc214"
+    },
+    "input/parent/source/scripts/analyze_program_debug_rl.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/scripts/analyze_program_debug_rl.py",
+      "sha256": "e9fc84e68b9e245734b3858ea141274e135e9df2b275c7523a54000eeeffdc01"
+    },
+    "input/parent/source/scripts/analyze_program_study.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/scripts/analyze_program_study.py",
+      "sha256": "f5c07a847523fe46e748c2764f0268822ae2609d3734b5ab84bb399f6b556397"
+    },
+    "input/parent/source/scripts/calibration_supervisor.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/scripts/calibration_supervisor.py",
+      "sha256": "9dd6d87cac783cafdfcced0b47c447014d9db75fa677b5e96b3d1062c870c07d"
+    },
+    "input/parent/source/scripts/cloud/bootstrap_calibration.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/scripts/cloud/bootstrap_calibration.py",
+      "sha256": "75fcace2a01f3778521e9eb6448146f1914fb23e9ae5af49810908368cf56822"
+    },
+    "input/parent/source/scripts/cloud/bootstrap_cardinal.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/scripts/cloud/bootstrap_cardinal.py",
+      "sha256": "e3f728bc793c00be0ba361606945a18babf03bcc606e06ad95c4e28770b1469e"
+    },
+    "input/parent/source/scripts/cloud/bootstrap_debug.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/scripts/cloud/bootstrap_debug.py",
+      "sha256": "8370b3abe4db5c94a437ca57fac6af20329a8790ca131528e798b756fbfe1e9a"
+    },
+    "input/parent/source/scripts/cloud/bootstrap_revision_calibration.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/scripts/cloud/bootstrap_revision_calibration.py",
+      "sha256": "7ff52f41b39724a6293ec3e58b272f10f556e2193fbe9380e95dad5546bb90bf"
+    },
+    "input/parent/source/scripts/cloud/bootstrap_revision_rl.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/scripts/cloud/bootstrap_revision_rl.py",
+      "sha256": "df8bab53929aa4270e6f121d83921218094667ed3442f824d2a77dcf1fd47b1e"
+    },
+    "input/parent/source/scripts/cloud/cardinal-requirements.txt": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/scripts/cloud/cardinal-requirements.txt",
+      "sha256": "3013c2897d93a58fb950401ccbb442383829c6fb03b8d08e5cc992be1f2f8556"
+    },
+    "input/parent/source/scripts/cloud/cardinal-warmstart-requirements.txt": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/scripts/cloud/cardinal-warmstart-requirements.txt",
+      "sha256": "8f673354266b6d44a7840e0f6cfcda2e27f0bcc5f3169ba4c8ed4b223cbb02ca"
+    },
+    "input/parent/source/scripts/cloud/cardinal_guard.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/scripts/cloud/cardinal_guard.py",
+      "sha256": "2a9d151f67a1440bd19b4e816eba88bc1406889ec277169f8358f3d2988e7dbc"
+    },
+    "input/parent/source/scripts/cloud/run_calibration_job.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/scripts/cloud/run_calibration_job.py",
+      "sha256": "ac7d65f3c8864d934f80b0383230c0c33a6954dcb3abbbcb37800963dcb8edee"
+    },
+    "input/parent/source/scripts/cloud/run_debug_job.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/scripts/cloud/run_debug_job.py",
+      "sha256": "071f8733e1570a3b600b7094a628f3c3b322dd137445c1655d5436303b7ff1be"
+    },
+    "input/parent/source/scripts/cloud/run_revision_calibration_job.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/scripts/cloud/run_revision_calibration_job.py",
+      "sha256": "a4fe42457ebc23258a5051ee1aaaad5d8a69951f97a9eba61c8a250d0e91ac47"
+    },
+    "input/parent/source/scripts/cloud/run_revision_rl_job.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/scripts/cloud/run_revision_rl_job.py",
+      "sha256": "1eec1f1c5ad5bd02f363322dba0e2704d8370e7182f4800e18502627d8065715"
+    },
+    "input/parent/source/scripts/cloud/train_program_rl.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/scripts/cloud/train_program_rl.py",
+      "sha256": "b6e461011f5d0523d651a1d8fefc32d08c91a0c199a33bb1c8392c21e35b13ed"
+    },
+    "input/parent/source/scripts/debug_supervisor.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/scripts/debug_supervisor.py",
+      "sha256": "29808145f145bf2bfbe67ee29a26163dd7d34a5572bb4ddbab8b8519d827d43e"
+    },
+    "input/parent/source/scripts/program_response_normalization.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/scripts/program_response_normalization.py",
+      "sha256": "4b0095b507dc50b05285b3c10931923543ba2bd976c6f54511d5ab1bc5a85163"
+    },
+    "input/parent/source/scripts/revision_calibration_supervisor.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/scripts/revision_calibration_supervisor.py",
+      "sha256": "85b09995113acafa94ddbc8356390c1f10825ed7b58321e8155ac9a98fb04208"
+    },
+    "input/parent/source/scripts/revision_rl_supervisor.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/scripts/revision_rl_supervisor.py",
+      "sha256": "bdf95f272c7a5e5080e30d99b6642c073ac2f97e78a5165a424207c8caa51abc"
+    },
+    "input/parent/source/scripts/runpod_calibration.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/scripts/runpod_calibration.py",
+      "sha256": "1ccd1c7129e27240f8339c93e44b161aa07853319f067f4fac621e8e9c9af2cc"
+    },
+    "input/parent/source/scripts/runpod_cardinal.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/scripts/runpod_cardinal.py",
+      "sha256": "90a9154d43796ed5f854c2f2647386d9ccb802c4502750a8c37be8e4b4bd8032"
+    },
+    "input/parent/source/scripts/runpod_debug.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/scripts/runpod_debug.py",
+      "sha256": "75dfc6d3d7a171471085a5aae961f72c253c03b04e044286b8f42b923e39f370"
+    },
+    "input/parent/source/scripts/runpod_pilot.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/scripts/runpod_pilot.py",
+      "sha256": "0fe4311cc810ae6313f02e707c7eb8fb77a2552a99b6dfdba61d9b79a9f6186e"
+    },
+    "input/parent/source/scripts/runpod_revision_rl.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/scripts/runpod_revision_rl.py",
+      "sha256": "fa8acf10a840e6f5d5d89fa6764c9276c1c399d6f5f47a0a30b0d0e1f3871f0b"
+    },
+    "input/parent/source/selfplay/__init__.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/selfplay/__init__.py",
+      "sha256": "54b3c9dd5c0cc6221ed5af3bcaae9445ced78d30114e5c79b32833ce6d37f495"
+    },
+    "input/parent/source/selfplay/frontier_api.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/selfplay/frontier_api.py",
+      "sha256": "93b114c9529b4da559f0da62140189d82c28a0b3318d7611c26ff4a6ddb0a096"
+    },
+    "input/parent/source/selfplay/program_arena/__init__.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/selfplay/program_arena/__init__.py",
+      "sha256": "2c405b142b39f6f350996f812875afbe4ec845005a662eaf43bc28a7e2d4c7d2"
+    },
+    "input/parent/source/selfplay/program_arena/dsl.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/selfplay/program_arena/dsl.py",
+      "sha256": "91cc93d24e9c61b0cc04b4bf3d34a7e3515bda59fed62eeb766006ec9df74968"
+    },
+    "input/parent/source/selfplay/program_arena/examples.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/selfplay/program_arena/examples.py",
+      "sha256": "5261337c5ac1415c14da1505e76d2ed99a5916da70a2f02397d5d0242757894a"
+    },
+    "input/parent/source/selfplay/program_arena/game.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/selfplay/program_arena/game.py",
+      "sha256": "7986796669d4622d53536b2b9b6984778372e2cf2354b9885a384680e66f0246"
+    },
+    "input/parent/source/selfplay/program_arena/runner.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/selfplay/program_arena/runner.py",
+      "sha256": "bdc8f5ce3471d4018fe2c893c7d49351c8e23d75f151bc9abcd36e637ef1445e"
+    },
+    "input/parent/source/selfplay/program_arena/spec.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/selfplay/program_arena/spec.py",
+      "sha256": "bd236885f4864e56a8003abe81ab9726386ed11399648318fe2eff7f87920ff3"
+    },
+    "input/parent/source/selfplay/program_cardinal.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/selfplay/program_cardinal.py",
+      "sha256": "8bd1e4552efc1addf3a25415cdd27865e013c9c8516bb581ca079fa7f59aa0f6"
+    },
+    "input/parent/source/selfplay/program_cardinal_cuda.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/selfplay/program_cardinal_cuda.py",
+      "sha256": "02072509d227fc26e97a5d0ebb869c76cadd0c2d54199d117048766b684d0e01"
+    },
+    "input/parent/source/selfplay/program_cardinal_cycle.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/selfplay/program_cardinal_cycle.py",
+      "sha256": "c618bf1c8143df245ffec17ed5459384b020cc868af4b322c31e2b7406eaa430"
+    },
+    "input/parent/source/selfplay/program_cardinal_gpu.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/selfplay/program_cardinal_gpu.py",
+      "sha256": "a69c2a97d195dcc269fd0fea5c26b6f526ccf1db0cb856f27dd6328746a36724"
+    },
+    "input/parent/source/selfplay/program_debug.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/selfplay/program_debug.py",
+      "sha256": "ddc0b78d040e48104b082cde5734a4cf3c3e469a51bf7d682a47f4d85036efc0"
+    },
+    "input/parent/source/selfplay/program_debug_calibration.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/selfplay/program_debug_calibration.py",
+      "sha256": "ffbc6d7c10b37e34ee3be91df3d7636676fc4af4c2e05f6fbdd3fed700c339bf"
+    },
+    "input/parent/source/selfplay/program_debug_calibration_cuda.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/selfplay/program_debug_calibration_cuda.py",
+      "sha256": "f24d73c39e5bd126f8b927b40ffc077eeea796c12fada1a838d8e485b37f3a96"
+    },
+    "input/parent/source/selfplay/program_debug_calibration_harness.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/selfplay/program_debug_calibration_harness.py",
+      "sha256": "2afc38162a5f1ad0cd2972d04b34cd774f6d1a54473117fb6662ad3b7950f21f"
+    },
+    "input/parent/source/selfplay/program_debug_cuda.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/selfplay/program_debug_cuda.py",
+      "sha256": "ee9b35195ee0b8a69fdf100eefa93f1a4476c46f1af9cbc8b9f4eba3bf6972bc"
+    },
+    "input/parent/source/selfplay/program_debug_revision_calibration.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/selfplay/program_debug_revision_calibration.py",
+      "sha256": "e5b6a5260f188b37cfaa34ce9bd7c55e4fb37e9f4043f6d9c26f6bc4017a94e1"
+    },
+    "input/parent/source/selfplay/program_debug_revision_cuda.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/selfplay/program_debug_revision_cuda.py",
+      "sha256": "d0c5ca5b42d8785b9f438f24296c1a98699357ae0aafad6d072ea7c4e8a2dafa"
+    },
+    "input/parent/source/selfplay/program_debug_revision_harness.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/selfplay/program_debug_revision_harness.py",
+      "sha256": "377b3b4afc42ed20ac8928c35d2a2548cc3a20ef1bef90bbe332c89f4d656050"
+    },
+    "input/parent/source/selfplay/program_debug_revision_rl.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/selfplay/program_debug_revision_rl.py",
+      "sha256": "eb25f0b251a122c07d7a38d1d3fd5fe190a80062d13ab106f285fdd69a204e77"
+    },
+    "input/parent/source/selfplay/program_debug_revision_train.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/selfplay/program_debug_revision_train.py",
+      "sha256": "06704eccc1b904b02c73f4a3380c987efdddda73a773cc5ac924608cae2b3a34"
+    },
+    "input/parent/source/selfplay/program_debug_rl.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/selfplay/program_debug_rl.py",
+      "sha256": "fe8a1e6dea519692c482058643c35cdb9eac3dd5ada95dd894d1208d53be099c"
+    },
+    "input/parent/source/selfplay/program_local_rl.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/selfplay/program_local_rl.py",
+      "sha256": "2c2aff76b2bab3f8555a3069a24205b1c19f26b8fb2f7ce256eab1ab8005414a"
+    },
+    "input/parent/source/selfplay/program_python.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/selfplay/program_python.py",
+      "sha256": "598d27639d004230976066d18e6fc6ed6bcd8a5f5f1e6c741b634ebad3f8fb56"
+    },
+    "input/parent/source/selfplay/program_study.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/selfplay/program_study.py",
+      "sha256": "7748096fb62a765f9dd8dd6360a9bc13fe26a99434367f7d624e2e8a3f55168f"
+    },
+    "input/parent/source/tests/test_analyze_program_debug_revision_rl.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/tests/test_analyze_program_debug_revision_rl.py",
+      "sha256": "aadf09dba00d7054704c61544a89940bf6bbd08b5bbd07aaef4d6f938af23943"
+    },
+    "input/parent/source/tests/test_program_debug_revision_rl.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/tests/test_program_debug_revision_rl.py",
+      "sha256": "c0f139d36cdb3a481de5e324ad5a63f43dc1516ecc78ddbbbb413df3edb177ab"
+    },
+    "input/parent/source/tests/test_program_debug_revision_train.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/tests/test_program_debug_revision_train.py",
+      "sha256": "28e8adc8c0f4bface841da821494ff1d0cf9f39694ff436174d0ea834af07e22"
+    },
+    "input/parent/source/tests/test_revision_rl_job_supervisor.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/tests/test_revision_rl_job_supervisor.py",
+      "sha256": "07122742f6655d7e3a1e561d7e94aa5dd8167802bd66ef4b7b91d456ef4adb68"
+    },
+    "input/parent/source/tests/test_runpod_revision_rl.py": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/source/tests/test_runpod_revision_rl.py",
+      "sha256": "e3e7641a879b5c3152008e271baa0d2ca80990c4a51c60c0b295d6447a930862"
+    },
+    "input/parent/status.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/parent/status.json",
+      "sha256": "151b79ce8c0a3bb0e60924b8427077864bbd9b68a78b2bbbb6eaea093519deaf"
+    },
+    "input/schedule.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/schedule.json",
+      "sha256": "0ee48248f57b8708d46d45aff03608b19bdce5e71e9f36c0e90d6c06f7e4414e"
+    },
+    "input/prompts/debug.txt": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/prompts/debug.txt",
+      "sha256": "e2abc4d3cd0c0e198a13c8ca4c7f5335f7acaebbabc5a3b0c4d41b0768eb06f9"
+    },
+    "input/heldout-opponents.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/heldout-opponents.json",
+      "sha256": "e14ecbaa52e4ad46dd42cb1788a8836b60c73a743ca2741e3f440e02f6c3af46"
+    },
+    "input/inputs/model-info.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/inputs/model-info.json",
+      "sha256": "3ab656318e351369a602815198518df4423a4422760d53762b6c962f1cc24aa5"
+    },
+    "input/inputs/tokenizer/tokenizer.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/inputs/tokenizer/tokenizer.json",
+      "sha256": "0997f410c57a1f4e53b09e4be8f4a172d90edd9564368fb0847030937229b9f3"
+    },
+    "input/inputs/tokenizer/tokenizer_config.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/inputs/tokenizer/tokenizer_config.json",
+      "sha256": "b11349aafa7cdc6a320767cf7ceb29ed82f7eda5d65e8e0819e76f0ce947bf27"
+    },
+    "input/inputs/tokenizer/generation_config.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/inputs/tokenizer/generation_config.json",
+      "sha256": "e70c136c1b78ddc1fb0905bac8e733a4dc448d4f852a5dd75143fffc70be550e"
+    },
+    "input/inputs/tokenizer/config.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/inputs/tokenizer/config.json",
+      "sha256": "191e0af232104ed8b65258cf3fb2b842e288008baca7633c11b82a1ac7203aab"
+    },
+    "input/inputs/tokenizer/chat_template.jinja": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/inputs/tokenizer/chat_template.jinja",
+      "sha256": "c3cf9e34abf4f9e36c2d72165aa9c132d3e2a725b6c2586aaa3a8af9d7a81041"
+    },
+    "input/checkpoints/base/adapter.safetensors": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/checkpoints/base/adapter.safetensors",
+      "sha256": "b08eb75f6d38bcb7363bdea9d8b2d640e9963903bccf05b007c2eec2aa8c5fc8"
+    },
+    "input/checkpoints/base/optimizer.pt": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/checkpoints/base/optimizer.pt",
+      "sha256": "d3e626c4f56067e6734af623e92818113c2b506053cab2f3783302ac9338baf3"
+    },
+    "input/checkpoints/base/metadata.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/checkpoints/base/metadata.json",
+      "sha256": "2cae28b6aa64b6b38d58ecf4280c5a636c33a686f5a90d0994c7d463c472378b"
+    },
+    "input/checkpoints/cycle3/adapter.safetensors": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/checkpoints/cycle3/adapter.safetensors",
+      "sha256": "16d0f512915fb63eca57ecde228d256d43c880f29dc16da587792e372d7da17d"
+    },
+    "input/checkpoints/cycle3/optimizer.pt": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/checkpoints/cycle3/optimizer.pt",
+      "sha256": "d5c0c81f5d2af1b1f918a8ebf01f48ff73f642cefe03281b08f73614aed18d6c"
+    },
+    "input/checkpoints/cycle3/metadata.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/checkpoints/cycle3/metadata.json",
+      "sha256": "9fb2046c32bb61d42633ad088ffe9c5796b3a9b3bf0213a6305bd998842df83a"
+    },
+    "input/deployment.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/deployment.json",
+      "sha256": "a37158111616f2fa18869ed61eb2e2a8b0f0bfe1c4db3bbd72b022a448d234b3"
+    },
+    "input/plan.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/plan.json",
+      "sha256": "c129427a06be066631fd955dde8a135b2a788754411ea0ddce0244d2d8afe5cb"
+    },
+    "artifact/checkpoints/base/adapter.safetensors": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/checkpoints/base/adapter.safetensors",
+      "sha256": "b08eb75f6d38bcb7363bdea9d8b2d640e9963903bccf05b007c2eec2aa8c5fc8"
+    },
+    "artifact/checkpoints/base/optimizer.pt": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/checkpoints/base/optimizer.pt",
+      "sha256": "d3e626c4f56067e6734af623e92818113c2b506053cab2f3783302ac9338baf3"
+    },
+    "artifact/checkpoints/base/metadata.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/checkpoints/base/metadata.json",
+      "sha256": "2cae28b6aa64b6b38d58ecf4280c5a636c33a686f5a90d0994c7d463c472378b"
+    },
+    "artifact/checkpoints/cycle3/adapter.safetensors": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/checkpoints/cycle3/adapter.safetensors",
+      "sha256": "16d0f512915fb63eca57ecde228d256d43c880f29dc16da587792e372d7da17d"
+    },
+    "artifact/checkpoints/cycle3/optimizer.pt": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/checkpoints/cycle3/optimizer.pt",
+      "sha256": "d5c0c81f5d2af1b1f918a8ebf01f48ff73f642cefe03281b08f73614aed18d6c"
+    },
+    "artifact/checkpoints/cycle3/metadata.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/checkpoints/cycle3/metadata.json",
+      "sha256": "9fb2046c32bb61d42633ad088ffe9c5796b3a9b3bf0213a6305bd998842df83a"
+    },
+    "artifact/runtime.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/runtime.json",
+      "sha256": "e28a7b4eddb82c0add9107787b0a2427399b7ab0e305aae09658703921964cb2"
+    },
+    "artifact/smoke/base-1792744490864035987.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/smoke/base-1792744490864035987.json",
+      "sha256": "036636dceaab4736aacafa1747cca1ad36c76c9598d9702c7fc1b1ddda7591c7"
+    },
+    "artifact/admissions/base-1792744490868654415.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/admissions/base-1792744490868654415.json",
+      "sha256": "e56392e0740d5a95d93568f0ec385c30ccef306e3242ff34f3c5933e16f46c07"
+    },
+    "artifact/batches/eval-base-0-draft-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-base-0-draft-intent.json",
+      "sha256": "6cf33e4562cf9c6eb4a146434fc2724b6b05992523fc0cd2e3cc307003613431"
+    },
+    "artifact/batches/eval-base-0-draft.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-base-0-draft.json",
+      "sha256": "05d9cca34eef494a3076afdbe74b3f6d4af8bdf843d778bed46518deb0a4bc9f"
+    },
+    "artifact/feedback/eval-base-0.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/feedback/eval-base-0.json",
+      "sha256": "adbc55972690d14385d7759e90dfabfb19f552d2ff14ac99e462b05d72524a5c"
+    },
+    "artifact/feedback/eval-base-1.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/feedback/eval-base-1.json",
+      "sha256": "df63924bd8ef1ea1133de6778d990dd6c92500b197332fe35f46d8dd91d6f37d"
+    },
+    "artifact/batches/eval-base-0-revision-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-base-0-revision-intent.json",
+      "sha256": "df154597b22a8fb859d6b3ec165a200e307b0abd6b9e9a7507708fb13891cc0a"
+    },
+    "artifact/batches/eval-base-0-revision.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-base-0-revision.json",
+      "sha256": "4e2f4314c7eb6ca4874ffab77385d5410aba9bd1cd20d090600bcf65e7d79614"
+    },
+    "artifact/generations/eval-base-0.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/generations/eval-base-0.json",
+      "sha256": "3c017c1d37c454ff2cde45c56f33e8a842f558176d41fa686e56d93f37e697ca"
+    },
+    "artifact/generations/eval-base-1.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/generations/eval-base-1.json",
+      "sha256": "14222b8ef358f1dedf0c7a586218c95c07aa257149d012db37446d7f717f3847"
+    },
+    "artifact/batches/eval-base-1-draft-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-base-1-draft-intent.json",
+      "sha256": "c754e7051cb84de322510bed7a724f2627c63a7299a13300f51aa94912a71b55"
+    },
+    "artifact/batches/eval-base-1-draft.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-base-1-draft.json",
+      "sha256": "379d8786c6dae7819ff8465e2f5a12e42c8038f35c35c15a52791030ece259a5"
+    },
+    "artifact/feedback/eval-base-2.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/feedback/eval-base-2.json",
+      "sha256": "b7ae7561b5fb9c4ca116ed79fda7b73d5c5f685b7910a4d9910e01281225a815"
+    },
+    "artifact/feedback/eval-base-3.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/feedback/eval-base-3.json",
+      "sha256": "626bbe4e7cc6cf1f07d7a36c40df77995eda69d3e4d5de92df6920884239cca2"
+    },
+    "artifact/batches/eval-base-1-revision-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-base-1-revision-intent.json",
+      "sha256": "7f9dc5ff94af6441b66c418e4203e15fed5448c3c0c335eedac11f65a2aeef8e"
+    },
+    "artifact/batches/eval-base-1-revision.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-base-1-revision.json",
+      "sha256": "61a1a9d32e5e0a93b3af975545e11964afe7635034ff8521c45ce476a369be22"
+    },
+    "artifact/generations/eval-base-2.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/generations/eval-base-2.json",
+      "sha256": "ad00138e8b3b2bde55b3e5ee7084915ee51bee39f7c8545a6ed85385bc5e89d3"
+    },
+    "artifact/generations/eval-base-3.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/generations/eval-base-3.json",
+      "sha256": "323a4f0608a12f20adcfd9a3c4c32bc935a31836962a8aa438e8ad9e9094d7cb"
+    },
+    "artifact/batches/eval-base-2-draft-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-base-2-draft-intent.json",
+      "sha256": "bb4aa8d344747c4434661c8f8f0c10b446b2a68577badc4c92a87574f748fe6b"
+    },
+    "artifact/batches/eval-base-2-draft.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-base-2-draft.json",
+      "sha256": "c4bf482bad9fe0c3ddc95f2f5a27898f06df7dde62f85b9aacb7bfa04ef5534d"
+    },
+    "artifact/feedback/eval-base-4.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/feedback/eval-base-4.json",
+      "sha256": "ef95d2bee47db3fbf8152adb5f2c30749745c9ce89eba57f575c2a2a011c1fc1"
+    },
+    "artifact/feedback/eval-base-5.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/feedback/eval-base-5.json",
+      "sha256": "a072dd1e06df26c77d01df85c77421db2921a39cce27cc29254a9ffe83aaf99c"
+    },
+    "artifact/batches/eval-base-2-revision-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-base-2-revision-intent.json",
+      "sha256": "f1282026526c0d77bc324739d3b9dc6e80507a50883ed54ca7b0ce8b6b6a1a30"
+    },
+    "artifact/batches/eval-base-2-revision.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-base-2-revision.json",
+      "sha256": "4caca4154ed136b724e958c6c6bb5b034270de33b36f00c8dc586c385605afbb"
+    },
+    "artifact/generations/eval-base-4.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/generations/eval-base-4.json",
+      "sha256": "c4d08ea70d8fe584ef4ebae17a6ab7c404a84f3dd08f8fbf4d3b391aff3db11c"
+    },
+    "artifact/generations/eval-base-5.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/generations/eval-base-5.json",
+      "sha256": "a14d9ab23d9e8d2366b956f6b74791c308aa78048ec0539a1e4228f400c325b4"
+    },
+    "artifact/batches/eval-base-3-draft-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-base-3-draft-intent.json",
+      "sha256": "8c40fc337efbc8dc01dd46cc8ac988058ba5c83000dfe02c198a8e3883f6a95b"
+    },
+    "artifact/batches/eval-base-3-draft.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-base-3-draft.json",
+      "sha256": "78951353ed8f113c42a2fa9b0813675f6725d7b2943b8e5c2f591f949347a848"
+    },
+    "artifact/feedback/eval-base-6.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/feedback/eval-base-6.json",
+      "sha256": "d39aa903e8f1bc947f7c8e1fbd34e8c3dc935ba8b5dd4d32a3c311700787ac0c"
+    },
+    "artifact/feedback/eval-base-7.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/feedback/eval-base-7.json",
+      "sha256": "dbcfd023d9f272948580ebc1aa9a58d192b3def0e70eaf2b079964934db7aed3"
+    },
+    "artifact/batches/eval-base-3-revision-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-base-3-revision-intent.json",
+      "sha256": "907017c3d72c6c559cb1984e1e4b68407c860de7a742c8f8a2527e74be680995"
+    },
+    "artifact/batches/eval-base-3-revision.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-base-3-revision.json",
+      "sha256": "4523c72eab4926c66fff6f5c6e8c32eebc7b45af823b359c8ae4635e73848119"
+    },
+    "artifact/generations/eval-base-6.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/generations/eval-base-6.json",
+      "sha256": "7122f432a3b6451191bf6385778b20f2d69d854c8cc3f5087df3746c70248169"
+    },
+    "artifact/generations/eval-base-7.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/generations/eval-base-7.json",
+      "sha256": "02dec7001d6f271feb4dc29e7e770864cd6b1666b0e5b7b4355fa9591f01f2ab"
+    },
+    "artifact/batches/eval-base-4-draft-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-base-4-draft-intent.json",
+      "sha256": "54daaa23488ebb14f130889ccc8f6d4ad107847cbafb6908ca0488a1f8fb3fe0"
+    },
+    "artifact/batches/eval-base-4-draft.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-base-4-draft.json",
+      "sha256": "3174e053b61c72034dd36eb899890ca98d005d177d4434efde78907c6cacb13f"
+    },
+    "artifact/feedback/eval-base-8.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/feedback/eval-base-8.json",
+      "sha256": "9d38366426c666572b431c390d4478afbbaf823e9e771ce9518050815b8a77a4"
+    },
+    "artifact/feedback/eval-base-9.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/feedback/eval-base-9.json",
+      "sha256": "8bf74dbde20877b0f8ba80650298c574d82f5bafd6781ed5e7738962ca8be6c4"
+    },
+    "artifact/batches/eval-base-4-revision-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-base-4-revision-intent.json",
+      "sha256": "8dabc9f9a47132dc1b3ef16f1f77fba8fd706aa6159f0da769987bb075066dee"
+    },
+    "artifact/batches/eval-base-4-revision.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-base-4-revision.json",
+      "sha256": "3bf17197298146de73018bb2aaa1970c53a4694b024ee3db6c7a3dd177bde0c5"
+    },
+    "artifact/generations/eval-base-8.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/generations/eval-base-8.json",
+      "sha256": "1dc99367e68b0907ad00d53bdae19cc2a62d8044ba9cd737f4ac80cfa9c5fc95"
+    },
+    "artifact/generations/eval-base-9.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/generations/eval-base-9.json",
+      "sha256": "d05e4e65e6e5c3587966f6a54f84c49784bbd5c350dc6834536c005e0fad543f"
+    },
+    "artifact/batches/eval-base-5-draft-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-base-5-draft-intent.json",
+      "sha256": "e10ad6d161d1b9b4e8a321af37a1ccfd3527b1205535470deb1a4a08d06e038c"
+    },
+    "artifact/batches/eval-base-5-draft.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-base-5-draft.json",
+      "sha256": "542deae5e23817f9e741f8e386ddb899396fc86f6e7e429a1be472ed68f0a1d9"
+    },
+    "artifact/feedback/eval-base-10.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/feedback/eval-base-10.json",
+      "sha256": "ecb40da64e6e7c0c86b1e5b71349d8e8d3865caaf37bb7226ad0feb424775cf1"
+    },
+    "artifact/feedback/eval-base-11.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/feedback/eval-base-11.json",
+      "sha256": "4870814e42c65b297327ec0bee97fd76ec10ecb318a5ef8aebafcfaf78402190"
+    },
+    "artifact/batches/eval-base-5-revision-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-base-5-revision-intent.json",
+      "sha256": "54d7b528931cd827f3a0391dd2fb319a15dd71a67839e1bdaa49f401890dc010"
+    },
+    "artifact/batches/eval-base-5-revision.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-base-5-revision.json",
+      "sha256": "ee73c58d63d645d993013c7ce9f595cc4f381380eda74ee4d991088d03205726"
+    },
+    "artifact/generations/eval-base-10.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/generations/eval-base-10.json",
+      "sha256": "ba90036ddb89e6a7c287135713942110562417de4c8a89038d9b66be4bf196c1"
+    },
+    "artifact/generations/eval-base-11.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/generations/eval-base-11.json",
+      "sha256": "ad0e6103ca61e3724d9a973507be9dbdb4576ab59e1d61e61c7111447d0fdf9a"
+    },
+    "artifact/batches/eval-base-6-draft-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-base-6-draft-intent.json",
+      "sha256": "4a003040797a19e9be25819eaef7b704935d28f8a208c00bda011f65f5a475d0"
+    },
+    "artifact/batches/eval-base-6-draft.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-base-6-draft.json",
+      "sha256": "7d775528a658c70f03fb4a1f7475da8f4c39e80ffd5d638dd54a64ad739b5108"
+    },
+    "artifact/feedback/eval-base-12.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/feedback/eval-base-12.json",
+      "sha256": "e48d7aef94ac8fb279acf88fd3b93bd40684dac773665b932907bbbc0bd885fa"
+    },
+    "artifact/feedback/eval-base-13.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/feedback/eval-base-13.json",
+      "sha256": "329d89d717d00298f031653d59618bc7baedbf943a3e47b8080bb35aea125744"
+    },
+    "artifact/batches/eval-base-6-revision-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-base-6-revision-intent.json",
+      "sha256": "a191aaaf2280f5a35dfa6b06604e14182d11a399758aef22a44b526784a99fe6"
+    },
+    "artifact/batches/eval-base-6-revision.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-base-6-revision.json",
+      "sha256": "eba011d1c445eb1b5e9a1ddda6cbcadda015b74bb7f323c2f48abd6563b87982"
+    },
+    "artifact/generations/eval-base-12.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/generations/eval-base-12.json",
+      "sha256": "2d5a44bfa6be23472c0d6623be809408c1c094de0701103c9a7612dc2bb77c8b"
+    },
+    "artifact/generations/eval-base-13.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/generations/eval-base-13.json",
+      "sha256": "d00568ce2f26b69aac8a27c8c767cc5e9ec69bcbd07aa207dd1a3cb41448286a"
+    },
+    "artifact/batches/eval-base-7-draft-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-base-7-draft-intent.json",
+      "sha256": "363115ade5665f01d370d6a6101fa74682cce032a3538c90373bb4c05c7b1293"
+    },
+    "artifact/batches/eval-base-7-draft.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-base-7-draft.json",
+      "sha256": "ce23b7ed9d18370c4ce51a7b77ee283f46d2e22feeb82137487a9bf89b6a6065"
+    },
+    "artifact/feedback/eval-base-14.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/feedback/eval-base-14.json",
+      "sha256": "075dc283e43179ffba0b59650540d5322a9ad97fa36becc677a4855133a6c29e"
+    },
+    "artifact/feedback/eval-base-15.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/feedback/eval-base-15.json",
+      "sha256": "7e4df40469cc737b9138f581fca9eabe1022a15e6d569433f8a1fdad508f5c90"
+    },
+    "artifact/batches/eval-base-7-revision-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-base-7-revision-intent.json",
+      "sha256": "4dcc0102b1489c9efe0ee93f928a486a42b4994b4c4121f150e5f70c0620523e"
+    },
+    "artifact/batches/eval-base-7-revision.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-base-7-revision.json",
+      "sha256": "7a284ebfdb5c76cdec395e6ededae0c29d21866990892864e0ef5d9ef6e4d7f8"
+    },
+    "artifact/generations/eval-base-14.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/generations/eval-base-14.json",
+      "sha256": "54e19f7d249385c0d739b694503543617c972ca47a79c09ab84ddd5b126487c8"
+    },
+    "artifact/generations/eval-base-15.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/generations/eval-base-15.json",
+      "sha256": "ce106a7f978acf4173983fbba24229b5ef3689039bd607fa49e66aa704089c8a"
+    },
+    "artifact/endpoint-state/base/snapshot/adapter.safetensors": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/endpoint-state/base/snapshot/adapter.safetensors",
+      "sha256": "b08eb75f6d38bcb7363bdea9d8b2d640e9963903bccf05b007c2eec2aa8c5fc8"
+    },
+    "artifact/endpoint-state/base/snapshot/optimizer.pt": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/endpoint-state/base/snapshot/optimizer.pt",
+      "sha256": "2feb40e8bd43169ca4e6806166c2d2f1f31e8f8c1f66f12d331e3ab1bccc0faa"
+    },
+    "artifact/endpoint-state/base/proof.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/endpoint-state/base/proof.json",
+      "sha256": "731ee907634ee980fb21df989f994de54ca914492c7754ff5e701c496c918734"
+    },
+    "artifact/smoke/cycle3-1792748877845840614.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/smoke/cycle3-1792748877845840614.json",
+      "sha256": "f8e1077fa80127a3ca9897796cb35e78a7bea4c9d22acd9802dbeaa290e9a101"
+    },
+    "artifact/admissions/cycle3-1792748877851036325.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/admissions/cycle3-1792748877851036325.json",
+      "sha256": "3cf8e76069520abfc6b4370b5103df1b7bcca969202ec160be1a9cd21aa55178"
+    },
+    "artifact/batches/eval-cycle3-0-draft-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-cycle3-0-draft-intent.json",
+      "sha256": "f3e89a0dd94f4685a560db138ff829f0fcc4207d22d2f5fe970f4ec1eed7bed4"
+    },
+    "artifact/batches/eval-cycle3-0-draft.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-cycle3-0-draft.json",
+      "sha256": "3aa4463f38ae3e819b4062d73a2ad42f9d251f0b89829ba33701b8d32b9d51e9"
+    },
+    "artifact/feedback/eval-cycle3-0.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/feedback/eval-cycle3-0.json",
+      "sha256": "fbec04efd7f5e45c41af3da738de9d7ee6050f7c6381af2a980aa7a0ac0d825d"
+    },
+    "artifact/feedback/eval-cycle3-1.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/feedback/eval-cycle3-1.json",
+      "sha256": "8018c489a5643c132415f6f6d8191a61ec35e0614bbb6ca2e15b4d745ee94f34"
+    },
+    "artifact/batches/eval-cycle3-0-revision-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-cycle3-0-revision-intent.json",
+      "sha256": "eea7b2cde526ec9b5ba40611f57e71ad11405fe892075f8f8500863feaf5c79d"
+    },
+    "artifact/batches/eval-cycle3-0-revision.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-cycle3-0-revision.json",
+      "sha256": "dd7399e440a12645fe3553ff2126fbbae15da83ca92927233a2938d012bc9c7b"
+    },
+    "artifact/generations/eval-cycle3-0.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/generations/eval-cycle3-0.json",
+      "sha256": "a75a9d4646b2ff6805c0d19e4f95e750fc01f2f89643db6503fb072692753f5d"
+    },
+    "artifact/generations/eval-cycle3-1.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/generations/eval-cycle3-1.json",
+      "sha256": "f12289d4b37a9a2cc6836c7de490afef383edf0ed89c42dbf1827cb04218c321"
+    },
+    "artifact/batches/eval-cycle3-1-draft-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-cycle3-1-draft-intent.json",
+      "sha256": "753fdcf3b3cd9cb926f8cebe8b819f62901edbce284da63e888d69990cc06436"
+    },
+    "artifact/batches/eval-cycle3-1-draft.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-cycle3-1-draft.json",
+      "sha256": "19914773f90d51a8a9469f66d5e858fe6870d982a0177cfc21db9b9dcac242e0"
+    },
+    "artifact/feedback/eval-cycle3-2.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/feedback/eval-cycle3-2.json",
+      "sha256": "837a2a1fa7d303e5176e6215fa55968be51ab87694bc95a4cd55907e8caa24f1"
+    },
+    "artifact/feedback/eval-cycle3-3.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/feedback/eval-cycle3-3.json",
+      "sha256": "aaf5d2bae028a28a72d50ce1717a00f15d918231f6755de6544a406d0b3bb62d"
+    },
+    "artifact/batches/eval-cycle3-1-revision-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-cycle3-1-revision-intent.json",
+      "sha256": "345b39ab725d06d98cf2611753aeae2056c1bd6c2b528dd6d14815584154cf47"
+    },
+    "artifact/batches/eval-cycle3-1-revision.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-cycle3-1-revision.json",
+      "sha256": "a3e001fe5b50dde771d166fcb879cb381d265176c73ca2d4d37aba3547a4644e"
+    },
+    "artifact/generations/eval-cycle3-2.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/generations/eval-cycle3-2.json",
+      "sha256": "428fe5dc64dbad9853880e6e3577cdc5789dabf75beebdb7f335b02389fcb2f6"
+    },
+    "artifact/generations/eval-cycle3-3.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/generations/eval-cycle3-3.json",
+      "sha256": "192b909c79fd6745bb6f2a8947b649c03ac9fc9e6657230ad0cd625d66a4aae6"
+    },
+    "artifact/batches/eval-cycle3-2-draft-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-cycle3-2-draft-intent.json",
+      "sha256": "98433b32f14410d21996975f0cbb94cf725d41db90b8e06cf37236ddfd0dee64"
+    },
+    "artifact/batches/eval-cycle3-2-draft.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-cycle3-2-draft.json",
+      "sha256": "cb23aa318353c0310f84c94d5b12e92192eebc5e665fc1269ecd1632de388bc6"
+    },
+    "artifact/feedback/eval-cycle3-4.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/feedback/eval-cycle3-4.json",
+      "sha256": "d81f8d14b50bfadf3c9852b4cb348c51f34ea28a6aaafe2422f103a7bc56a16f"
+    },
+    "artifact/feedback/eval-cycle3-5.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/feedback/eval-cycle3-5.json",
+      "sha256": "677a4a33a24a8867dde02fa4638a94dbe7a1f335f036e3d2855aa095258d4092"
+    },
+    "artifact/batches/eval-cycle3-2-revision-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-cycle3-2-revision-intent.json",
+      "sha256": "91922d4c1bb6ae287a821b013f90dfb8a9b70ef0f054a71b9434b5859c5c8258"
+    },
+    "artifact/batches/eval-cycle3-2-revision.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-cycle3-2-revision.json",
+      "sha256": "91c08f80dd6720a962761c5453a2e8a85ad367d1bf964ed01b664b56fd3c1e6c"
+    },
+    "artifact/generations/eval-cycle3-4.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/generations/eval-cycle3-4.json",
+      "sha256": "ff6a311a67c30aa1fdc4e2afdd0ae46ba11fff892c3e0ae2730366b1e2d6027b"
+    },
+    "artifact/generations/eval-cycle3-5.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/generations/eval-cycle3-5.json",
+      "sha256": "992c243696e1be5f265a1f7fc6b94484db58602cc3f18a8bb5d1ead413eb851b"
+    },
+    "artifact/batches/eval-cycle3-3-draft-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-cycle3-3-draft-intent.json",
+      "sha256": "7088516612d025cd4043af91b937d353fcdf3fb9d091b440ca7baea97483e4ab"
+    },
+    "artifact/batches/eval-cycle3-3-draft.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-cycle3-3-draft.json",
+      "sha256": "e93423159b6816cf6a3ab94a2a91d0c8011b829f12a7a5baa4496df237f8822f"
+    },
+    "artifact/feedback/eval-cycle3-6.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/feedback/eval-cycle3-6.json",
+      "sha256": "f7d37d34b3e84f6ef62e84cab1cf9cab18ddda50b3de3e6398a68456ed72b2f6"
+    },
+    "artifact/feedback/eval-cycle3-7.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/feedback/eval-cycle3-7.json",
+      "sha256": "4d027b6600740f4b91e11605927cab3994b77560f0a76d654eeee9a72f1674a0"
+    },
+    "artifact/batches/eval-cycle3-3-revision-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-cycle3-3-revision-intent.json",
+      "sha256": "c280f5f0f87b6ae1dc3c7b92e01088ed1b1742b30919d2dafdf571cec0784f74"
+    },
+    "artifact/batches/eval-cycle3-3-revision.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-cycle3-3-revision.json",
+      "sha256": "95555db5cd899c974476a481b12496533c2df581042a6cbe4d4592afc3551bc8"
+    },
+    "artifact/generations/eval-cycle3-6.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/generations/eval-cycle3-6.json",
+      "sha256": "d054c1e21bbee84b97d651a37c7770e8ce3f2c4450225b7dbdebc01ca5301d2e"
+    },
+    "artifact/generations/eval-cycle3-7.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/generations/eval-cycle3-7.json",
+      "sha256": "300e138479c017d968ea176f774494bbb70e8225562ce208fbde60e2395d4d25"
+    },
+    "artifact/batches/eval-cycle3-4-draft-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-cycle3-4-draft-intent.json",
+      "sha256": "dfa20d94a37b8f70e7b7366e5cc6f06539065cd796a1e23624b436fddea94873"
+    },
+    "artifact/batches/eval-cycle3-4-draft.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-cycle3-4-draft.json",
+      "sha256": "ed945eb514eceb748b08c05f53b948e5dfa91356c43d1c25ba3571264a094307"
+    },
+    "artifact/feedback/eval-cycle3-8.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/feedback/eval-cycle3-8.json",
+      "sha256": "6dbb8d22c4294268e07da0fdd91f121f11777fa1aafdd56fa69b13dd3b61cf67"
+    },
+    "artifact/feedback/eval-cycle3-9.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/feedback/eval-cycle3-9.json",
+      "sha256": "c148d45cf33ff371012f981dda07f7388513a79645d9a77c09af84519ac7b3b6"
+    },
+    "artifact/batches/eval-cycle3-4-revision-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-cycle3-4-revision-intent.json",
+      "sha256": "e7fdfc8f5e5d4c3092d53fcc2c75f7660028dd6db47b84ce0f473f57bab48661"
+    },
+    "artifact/batches/eval-cycle3-4-revision.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-cycle3-4-revision.json",
+      "sha256": "9c6cd822479d41dcb7eeaeaf8a79f3c2ece1c71de45bb0ff981def2b309779d3"
+    },
+    "artifact/generations/eval-cycle3-8.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/generations/eval-cycle3-8.json",
+      "sha256": "c772093dda4633f6f2b27ac7ab4139f8f9874d9b034f830c7622b43e2ca27390"
+    },
+    "artifact/generations/eval-cycle3-9.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/generations/eval-cycle3-9.json",
+      "sha256": "83cb04433603a4d8399e5b5cba822e17fdf09ed895126c256c609689aab59d81"
+    },
+    "artifact/batches/eval-cycle3-5-draft-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-cycle3-5-draft-intent.json",
+      "sha256": "896e8f34dc8c0d6aa54a670f84cfd19d26e0c81873411281361730f8d007d1fa"
+    },
+    "artifact/batches/eval-cycle3-5-draft.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-cycle3-5-draft.json",
+      "sha256": "9f5a7d99d1ee38904c5c3121969e244289a9413e4d20182e0ce9eb6a2bdf66db"
+    },
+    "artifact/feedback/eval-cycle3-10.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/feedback/eval-cycle3-10.json",
+      "sha256": "0f8abdfc1d9c017c41a84ebbbd489f2c2d81ea13e051c2a1809cf149530d776b"
+    },
+    "artifact/feedback/eval-cycle3-11.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/feedback/eval-cycle3-11.json",
+      "sha256": "35035641e05663907fd6f4c71b8ef71dc45f6e11a27e986613839ac471500741"
+    },
+    "artifact/batches/eval-cycle3-5-revision-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-cycle3-5-revision-intent.json",
+      "sha256": "b887262edb6026eddbe14968668c6ad51ca1893e67d7947886ec1e537a2ee2b1"
+    },
+    "artifact/batches/eval-cycle3-5-revision.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-cycle3-5-revision.json",
+      "sha256": "edccb291a7f5d45b475c919a0b33b106343f55a50aa0abb8b056e3ec2690e936"
+    },
+    "artifact/generations/eval-cycle3-10.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/generations/eval-cycle3-10.json",
+      "sha256": "4113b692ebd2dcc46796fa4a47c37349c38441c3db178ee41b6eaa16ba726fd2"
+    },
+    "artifact/generations/eval-cycle3-11.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/generations/eval-cycle3-11.json",
+      "sha256": "1dbac645b588a4720cfc9dbdbc0e7d6f3a5a1ef257e52c963993bda1b8f67dc7"
+    },
+    "artifact/batches/eval-cycle3-6-draft-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-cycle3-6-draft-intent.json",
+      "sha256": "4cc3e4b9af5a0e62c70f8cefd6c3729dfedb2a835fa044d9fbe5c730542fe1c1"
+    },
+    "artifact/batches/eval-cycle3-6-draft.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-cycle3-6-draft.json",
+      "sha256": "587ed2117aa2f0667b1e02a1e1b5efe351c6bc0b7faa56b88fa2b8e821d08c04"
+    },
+    "artifact/feedback/eval-cycle3-12.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/feedback/eval-cycle3-12.json",
+      "sha256": "ee920359769389d97413bcbfadefafe2dc9ac6279e06ea76d7a6530ef943e3db"
+    },
+    "artifact/feedback/eval-cycle3-13.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/feedback/eval-cycle3-13.json",
+      "sha256": "a54ee29d49aee0eeda29b73892a24d69d5e2d50e9c37973ef6a4e20e8de6a101"
+    },
+    "artifact/batches/eval-cycle3-6-revision-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-cycle3-6-revision-intent.json",
+      "sha256": "1790ad829646a84f63da1d586093c3dc101b9ca8037c56312580bd277371ae5d"
+    },
+    "artifact/batches/eval-cycle3-6-revision.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-cycle3-6-revision.json",
+      "sha256": "f3ebe1462c444f27cb2054cab730949c07730338e702852a4a37645119f7cddf"
+    },
+    "artifact/generations/eval-cycle3-12.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/generations/eval-cycle3-12.json",
+      "sha256": "4a79a3bdf4fe9c54eb5eaa4e2ffcff2ea64a5d0367c07e7ac88d169c3c7771d2"
+    },
+    "artifact/generations/eval-cycle3-13.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/generations/eval-cycle3-13.json",
+      "sha256": "6e4c52c7222e1f2034d9dd9db99231ca820fe59fb84e6afcc9379aa68c3fef64"
+    },
+    "artifact/batches/eval-cycle3-7-draft-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-cycle3-7-draft-intent.json",
+      "sha256": "457a8675f105ff44de9bbfd2e11deddfec6367e64741aa049cafbc38cf82828b"
+    },
+    "artifact/batches/eval-cycle3-7-draft.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-cycle3-7-draft.json",
+      "sha256": "60dc2c2d9df7ba8c0f2e40aa3ac7048288f9aa83e0311eef8d95efc0a0ff6dc7"
+    },
+    "artifact/feedback/eval-cycle3-14.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/feedback/eval-cycle3-14.json",
+      "sha256": "469353db30bbc23fe8e76eb5df7969efda82d32fd4a982132ce76d0e205543eb"
+    },
+    "artifact/feedback/eval-cycle3-15.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/feedback/eval-cycle3-15.json",
+      "sha256": "e1a866e27389249f35ce3337997a8b296238ebcab7712c737a97c74994b3bea9"
+    },
+    "artifact/batches/eval-cycle3-7-revision-intent.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-cycle3-7-revision-intent.json",
+      "sha256": "f95245104584cf2ba4445a32597e0e0ad72109183d415743b9dc7a84a4ea6580"
+    },
+    "artifact/batches/eval-cycle3-7-revision.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/batches/eval-cycle3-7-revision.json",
+      "sha256": "4632473ecbced02289c8711719eca513d66be3d9a6ec62b3413abf2f5a9900a4"
+    },
+    "artifact/generations/eval-cycle3-14.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/generations/eval-cycle3-14.json",
+      "sha256": "c8a490c96960199c155b1afe096e43f06fbfc18ddd02f5eb502bd9a100556b42"
+    },
+    "artifact/generations/eval-cycle3-15.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/generations/eval-cycle3-15.json",
+      "sha256": "35566431d2c38603722395e67350d47f793c558deb8fdafec8801c8dddc67469"
+    },
+    "artifact/endpoint-state/cycle3/snapshot/adapter.safetensors": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/endpoint-state/cycle3/snapshot/adapter.safetensors",
+      "sha256": "16d0f512915fb63eca57ecde228d256d43c880f29dc16da587792e372d7da17d"
+    },
+    "artifact/endpoint-state/cycle3/snapshot/optimizer.pt": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/endpoint-state/cycle3/snapshot/optimizer.pt",
+      "sha256": "d5c0c81f5d2af1b1f918a8ebf01f48ff73f642cefe03281b08f73614aed18d6c"
+    },
+    "artifact/endpoint-state/cycle3/proof.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/endpoint-state/cycle3/proof.json",
+      "sha256": "8f9beaf5085b50c96863e4d490d514405c3aaf55325ee63688e1d184eb9325ce"
+    },
+    "artifact/evaluation/sealed.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/evaluation/sealed.json",
+      "sha256": "d9863618905a8c24c1400e3a5dbab1b1444fa774bb4350b352a1ad7b5c10f6a0"
+    },
+    "artifact/evaluation/base/holdout.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/evaluation/base/holdout.json",
+      "sha256": "49d5334447acec43a77c76f1f5c0e653f22437bf0c9136f133c831e72d167ad5"
+    },
+    "artifact/evaluation/cycle3/holdout.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/evaluation/cycle3/holdout.json",
+      "sha256": "6fe0c532fb75d20e6bd4cf534fc5ce07be182c25301caa68cf334314dd58597f"
+    },
+    "schedule.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/schedule.json",
+      "sha256": "0ee48248f57b8708d46d45aff03608b19bdce5e71e9f36c0e90d6c06f7e4414e"
+    },
+    "evaluation/sealed.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/evaluation/sealed.json",
+      "sha256": "d9863618905a8c24c1400e3a5dbab1b1444fa774bb4350b352a1ad7b5c10f6a0"
+    }
+  },
+  "matplotlib_version": "3.10.7",
+  "outputs": {
+    "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/results-v1.png": "a3106801b43c30619a92870bbbb45170a5e8d5cfea58d3cea7e2b97403a30636",
+    "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-debug-revision-evaluation-gpu-v1/results-v1.svg": "239ce3b9ed3e1e732d598cd6670d79f635be0c10b3aa74529df989a34fc9a2a0"
+  }
+}

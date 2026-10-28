@@ -1,0 +1,589 @@
+{
+  "kind": "completed_revision_calibration_scientific_summary",
+  "created": "2026-10-23T02:32:31.211047+00:00",
+  "integrity_passed": true,
+  "audit_sha256": "4ea5b49bf83d7849db90864b42c7da05337f6b926cec6e8909719fdfa8da930d",
+  "manifest_sha256": "f3401a5f6a4b2834d7b40f970c58e18f2044a60c78511438492d8dbc144ce3f5",
+  "status_sha256": "ceb9ee2ef75c07456053799c4b2af02a6ffed37e3bde40c466ba317153d8bf7a",
+  "qualification": {
+    "passed": true,
+    "productive_indices": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7
+    ],
+    "distinct_productive_ir": 6,
+    "prescribed_controller_n": 8,
+    "qualification_games_actual": 144,
+    "practice_games_actual": 40,
+    "verified_games_total": 184,
+    "rule": "At least4/8 fault-free programs, each banking on at least12/24 calibration games, with at least2 distinct IRs"
+  },
+  "rows": [
+    {
+      "index": 0,
+      "generation": "calibration-0",
+      "generation_sha256": "26034e09e318d552775ce1b1870cfe2e39ba61e76780330012a9d0bf980b79ef",
+      "authorship_valid": false,
+      "runtime_valid": false,
+      "productive": false,
+      "qualification_games": 0,
+      "banked_points_total": 0,
+      "mean_banked_points": 0.0,
+      "positive_banking_games": 0,
+      "mean_game_return": null,
+      "penalized_reward": -1.0,
+      "candidate_runtime_faults": 0,
+      "opponent_runtime_faults": 0,
+      "wdl": {},
+      "by_opponent": {},
+      "failure_reason": "generation_length",
+      "failure_detail": null,
+      "finish_reason": "length"
+    },
+    {
+      "index": 1,
+      "generation": "calibration-1",
+      "generation_sha256": "cdf7aaa8cb443fac07f6efa0d1e28a9bc9d3474502fa782c9ddf6254b856b73a",
+      "authorship_valid": true,
+      "runtime_valid": true,
+      "productive": true,
+      "qualification_games": 24,
+      "banked_points_total": 396,
+      "mean_banked_points": 16.5,
+      "positive_banking_games": 24,
+      "mean_game_return": -0.06255511463844797,
+      "penalized_reward": -0.06255511463844797,
+      "candidate_runtime_faults": 0,
+      "opponent_runtime_faults": 0,
+      "wdl": {
+        "wins": 6,
+        "losses": 14,
+        "draws": 4
+      },
+      "by_opponent": {
+        "nearest": {
+          "games": 12,
+          "banked_points": 216,
+          "mean_banked_points": 18.0,
+          "mean_return": 0.025242504409171074
+        },
+        "value": {
+          "games": 12,
+          "banked_points": 180,
+          "mean_banked_points": 15.0,
+          "mean_return": -0.15035273368606702
+        }
+      },
+      "failure_reason": null,
+      "failure_detail": null,
+      "finish_reason": "eos"
+    },
+    {
+      "index": 2,
+      "generation": "calibration-2",
+      "generation_sha256": "13cf2b06d3216c269da4ffc429bbce5e564dba36a6b2fc9f9c525a56c952a946",
+      "authorship_valid": true,
+      "runtime_valid": true,
+      "productive": true,
+      "qualification_games": 24,
+      "banked_points_total": 390,
+      "mean_banked_points": 16.25,
+      "positive_banking_games": 24,
+      "mean_game_return": -0.10356040564373897,
+      "penalized_reward": -0.10356040564373897,
+      "candidate_runtime_faults": 0,
+      "opponent_runtime_faults": 0,
+      "wdl": {
+        "losses": 14,
+        "draws": 10
+      },
+      "by_opponent": {
+        "nearest": {
+          "games": 12,
+          "banked_points": 200,
+          "mean_banked_points": 16.666666666666668,
+          "mean_return": -0.08719135802469136
+        },
+        "value": {
+          "games": 12,
+          "banked_points": 190,
+          "mean_banked_points": 15.833333333333334,
+          "mean_return": -0.11992945326278659
+        }
+      },
+      "failure_reason": null,
+      "failure_detail": null,
+      "finish_reason": "eos"
+    },
+    {
+      "index": 3,
+      "generation": "calibration-3",
+      "generation_sha256": "d857f8d0b1858e0547541d8b8221035dd03c3ff5c841ea34f43f81fc56690327",
+      "authorship_valid": true,
+      "runtime_valid": true,
+      "productive": true,
+      "qualification_games": 24,
+      "banked_points_total": 94,
+      "mean_banked_points": 3.9166666666666665,
+      "positive_banking_games": 16,
+      "mean_game_return": -0.4939373897707231,
+      "penalized_reward": -0.4939373897707231,
+      "candidate_runtime_faults": 0,
+      "opponent_runtime_faults": 0,
+      "wdl": {
+        "losses": 24
+      },
+      "by_opponent": {
+        "nearest": {
+          "games": 12,
+          "banked_points": 50,
+          "mean_banked_points": 4.166666666666667,
+          "mean_return": -0.4669312169312169
+        },
+        "value": {
+          "games": 12,
+          "banked_points": 44,
+          "mean_banked_points": 3.6666666666666665,
+          "mean_return": -0.5209435626102293
+        }
+      },
+      "failure_reason": null,
+      "failure_detail": null,
+      "finish_reason": "eos"
+    },
+    {
+      "index": 4,
+      "generation": "calibration-4",
+      "generation_sha256": "e2144660731bdfa230db740059b7a0640536360eee6cfd4150c7e532982de776",
+      "authorship_valid": false,
+      "runtime_valid": false,
+      "productive": false,
+      "qualification_games": 0,
+      "banked_points_total": 0,
+      "mean_banked_points": 0.0,
+      "positive_banking_games": 0,
+      "mean_game_return": null,
+      "penalized_reward": -1.0,
+      "candidate_runtime_faults": 0,
+      "opponent_runtime_faults": 0,
+      "wdl": {},
+      "by_opponent": {},
+      "failure_reason": "invalid_cardinal_python",
+      "failure_detail": "invalid cardinal Python-syntax controller: unterminated string literal (detected at line 1) (<unknown>, line 1)",
+      "finish_reason": "eos"
+    },
+    {
+      "index": 5,
+      "generation": "calibration-5",
+      "generation_sha256": "7887dea6f95fc4fe20567fa3b5b823c0763198f0d8328622b211a2367311d75d",
+      "authorship_valid": true,
+      "runtime_valid": true,
+      "productive": true,
+      "qualification_games": 24,
+      "banked_points_total": 172,
+      "mean_banked_points": 7.166666666666667,
+      "positive_banking_games": 24,
+      "mean_game_return": -0.37894069664903,
+      "penalized_reward": -0.37894069664903,
+      "candidate_runtime_faults": 0,
+      "opponent_runtime_faults": 0,
+      "wdl": {
+        "losses": 24
+      },
+      "by_opponent": {
+        "nearest": {
+          "games": 12,
+          "banked_points": 90,
+          "mean_banked_points": 7.5,
+          "mean_return": -0.3471119929453263
+        },
+        "value": {
+          "games": 12,
+          "banked_points": 82,
+          "mean_banked_points": 6.833333333333333,
+          "mean_return": -0.4107694003527336
+        }
+      },
+      "failure_reason": null,
+      "failure_detail": null,
+      "finish_reason": "eos"
+    },
+    {
+      "index": 6,
+      "generation": "calibration-6",
+      "generation_sha256": "2add76c0833dc3c7d66dfc6f3f3f763abf87d129be89dbd3b112c03bb369e71e",
+      "authorship_valid": true,
+      "runtime_valid": true,
+      "productive": true,
+      "qualification_games": 24,
+      "banked_points_total": 294,
+      "mean_banked_points": 12.25,
+      "positive_banking_games": 24,
+      "mean_game_return": -0.2603064373897707,
+      "penalized_reward": -0.2603064373897707,
+      "candidate_runtime_faults": 0,
+      "opponent_runtime_faults": 0,
+      "wdl": {
+        "losses": 24
+      },
+      "by_opponent": {
+        "nearest": {
+          "games": 12,
+          "banked_points": 153,
+          "mean_banked_points": 12.75,
+          "mean_return": -0.22266313932980597
+        },
+        "value": {
+          "games": 12,
+          "banked_points": 141,
+          "mean_banked_points": 11.75,
+          "mean_return": -0.2979497354497354
+        }
+      },
+      "failure_reason": null,
+      "failure_detail": null,
+      "finish_reason": "eos"
+    },
+    {
+      "index": 7,
+      "generation": "calibration-7",
+      "generation_sha256": "44082b6ae29902bd33cf21ce88fc63221365c9b8f122bd5003f54d4098096456",
+      "authorship_valid": true,
+      "runtime_valid": true,
+      "productive": true,
+      "qualification_games": 24,
+      "banked_points_total": 406,
+      "mean_banked_points": 16.916666666666668,
+      "positive_banking_games": 24,
+      "mean_game_return": -0.06613756613756613,
+      "penalized_reward": -0.06613756613756613,
+      "candidate_runtime_faults": 0,
+      "opponent_runtime_faults": 0,
+      "wdl": {
+        "draws": 16,
+        "losses": 8
+      },
+      "by_opponent": {
+        "nearest": {
+          "games": 12,
+          "banked_points": 212,
+          "mean_banked_points": 17.666666666666668,
+          "mean_return": -0.018518518518518517
+        },
+        "value": {
+          "games": 12,
+          "banked_points": 194,
+          "mean_banked_points": 16.166666666666668,
+          "mean_return": -0.11375661375661376
+        }
+      },
+      "failure_reason": null,
+      "failure_detail": null,
+      "finish_reason": "eos"
+    }
+  ],
+  "delivery": {
+    "draft": [
+      {
+        "index": 0,
+        "seed": 201000000,
+        "finish_reason": "length",
+        "tokens": 4096,
+        "prompt_tokens": 1231,
+        "post_eos_cache_forwards": 0
+      },
+      {
+        "index": 1,
+        "seed": 201000002,
+        "finish_reason": "length",
+        "tokens": 4096,
+        "prompt_tokens": 1231,
+        "post_eos_cache_forwards": 0
+      },
+      {
+        "index": 2,
+        "seed": 201000004,
+        "finish_reason": "eos",
+        "tokens": 3745,
+        "prompt_tokens": 1231,
+        "post_eos_cache_forwards": 0
+      },
+      {
+        "index": 3,
+        "seed": 201000006,
+        "finish_reason": "eos",
+        "tokens": 2486,
+        "prompt_tokens": 1231,
+        "post_eos_cache_forwards": 1259
+      },
+      {
+        "index": 4,
+        "seed": 201000008,
+        "finish_reason": "length",
+        "tokens": 4096,
+        "prompt_tokens": 1231,
+        "post_eos_cache_forwards": 0
+      },
+      {
+        "index": 5,
+        "seed": 201000010,
+        "finish_reason": "eos",
+        "tokens": 2841,
+        "prompt_tokens": 1231,
+        "post_eos_cache_forwards": 1255
+      },
+      {
+        "index": 6,
+        "seed": 201000012,
+        "finish_reason": "eos",
+        "tokens": 2880,
+        "prompt_tokens": 1231,
+        "post_eos_cache_forwards": 0
+      },
+      {
+        "index": 7,
+        "seed": 201000014,
+        "finish_reason": "eos",
+        "tokens": 2732,
+        "prompt_tokens": 1231,
+        "post_eos_cache_forwards": 148
+      }
+    ],
+    "revision": [
+      {
+        "index": 0,
+        "seed": 201000001,
+        "finish_reason": "length",
+        "tokens": 4096,
+        "prompt_tokens": 6126,
+        "post_eos_cache_forwards": 0
+      },
+      {
+        "index": 1,
+        "seed": 201000003,
+        "finish_reason": "eos",
+        "tokens": 513,
+        "prompt_tokens": 6123,
+        "post_eos_cache_forwards": 3583
+      },
+      {
+        "index": 2,
+        "seed": 201000005,
+        "finish_reason": "eos",
+        "tokens": 657,
+        "prompt_tokens": 3668,
+        "post_eos_cache_forwards": 0
+      },
+      {
+        "index": 3,
+        "seed": 201000007,
+        "finish_reason": "eos",
+        "tokens": 592,
+        "prompt_tokens": 3721,
+        "post_eos_cache_forwards": 65
+      },
+      {
+        "index": 4,
+        "seed": 201000009,
+        "finish_reason": "eos",
+        "tokens": 2098,
+        "prompt_tokens": 6122,
+        "post_eos_cache_forwards": 0
+      },
+      {
+        "index": 5,
+        "seed": 201000011,
+        "finish_reason": "eos",
+        "tokens": 359,
+        "prompt_tokens": 3560,
+        "post_eos_cache_forwards": 1739
+      },
+      {
+        "index": 6,
+        "seed": 201000013,
+        "finish_reason": "eos",
+        "tokens": 451,
+        "prompt_tokens": 3696,
+        "post_eos_cache_forwards": 71
+      },
+      {
+        "index": 7,
+        "seed": 201000015,
+        "finish_reason": "eos",
+        "tokens": 522,
+        "prompt_tokens": 3685,
+        "post_eos_cache_forwards": 0
+      }
+    ]
+  },
+  "delivery_counts": {
+    "draft": {
+      "length": 3,
+      "eos": 5
+    },
+    "revision": {
+      "length": 1,
+      "eos": 7
+    }
+  },
+  "summary": {
+    "all_rest_programs": 0,
+    "compiled_programs": 6,
+    "complete": true,
+    "conditional_fault_free_mean_banked": 12.166666666666666,
+    "fault_free_programs": 6,
+    "invalid_no_game_programs": 2,
+    "mean_penalized_task_reward": -0.4206797012786596,
+    "mean_raw_game_return_among_compiled": -0.22757293503821283,
+    "missing_program_clusters": 0,
+    "observed_mean_banked_point_yield": 9.125,
+    "observed_program_clusters": 8,
+    "played_games": 144,
+    "positive_banking_programs": 6,
+    "prescribed_program_clusters": 8,
+    "primary_mean_banked_point_yield": 9.125,
+    "sampling_unit": "generated controller, not individual replay game",
+    "zero_banking_programs": 2
+  },
+  "timing": {
+    "batches": [
+      {
+        "path": "batches/calibration-0-draft.json",
+        "seconds": 312.4259580930229,
+        "output_tokens": 8192
+      },
+      {
+        "path": "batches/calibration-0-revision.json",
+        "seconds": 354.5924135840032,
+        "output_tokens": 4609
+      },
+      {
+        "path": "batches/calibration-1-draft.json",
+        "seconds": 289.25861617014743,
+        "output_tokens": 6231
+      },
+      {
+        "path": "batches/calibration-1-revision.json",
+        "seconds": 58.86423104000278,
+        "output_tokens": 1249
+      },
+      {
+        "path": "batches/calibration-2-draft.json",
+        "seconds": 315.54717289982364,
+        "output_tokens": 6937
+      },
+      {
+        "path": "batches/calibration-2-revision.json",
+        "seconds": 184.79525870108046,
+        "output_tokens": 2457
+      },
+      {
+        "path": "batches/calibration-3-draft.json",
+        "seconds": 217.9763692249544,
+        "output_tokens": 5612
+      },
+      {
+        "path": "batches/calibration-3-revision.json",
+        "seconds": 48.0196702349931,
+        "output_tokens": 973
+      }
+    ],
+    "sampling_seconds": 1781.479689948028,
+    "worker_wall_seconds": 2697.181447,
+    "completion_tokens": 36260
+  },
+  "numerical": {
+    "full_turns": 16,
+    "full_completion_tokens": 36260,
+    "eval_and_grad_enabled_train_forward_passed": true,
+    "max_errors": {
+      "eval": {
+        "max_token_error": 0.0002338886260986328,
+        "sequence_error": 0.0010420549319860584
+      },
+      "train": {
+        "max_token_error": 0.0002338886260986328,
+        "sequence_error": 0.0010420549319860584
+      }
+    },
+    "post_eos_cache_forwards": 8120,
+    "restoration": {
+      "adapter_unchanged": true,
+      "optimizer_unchanged": true,
+      "rng_restored": true,
+      "gradients_restored": true,
+      "config_restored": true,
+      "model_mode_restored": true,
+      "frozen_state_unchanged": true
+    },
+    "checkpoint_tensor_reports": {
+      "base": {
+        "actual_learning_rate": 1e-05,
+        "actual_optimizer_step": 0,
+        "trainable_parameters": 3014656
+      },
+      "unchanged-final": {
+        "actual_learning_rate": 1e-05,
+        "actual_optimizer_step": 0,
+        "unchanged_adapter_adam_rng": true
+      }
+    },
+    "base_files": {
+      "adapter.safetensors": "b08eb75f6d38bcb7363bdea9d8b2d640e9963903bccf05b007c2eec2aa8c5fc8",
+      "optimizer.pt": "d3e626c4f56067e6734af623e92818113c2b506053cab2f3783302ac9338baf3"
+    },
+    "unchanged_final_files": {
+      "adapter.safetensors": "b08eb75f6d38bcb7363bdea9d8b2d640e9963903bccf05b007c2eec2aa8c5fc8",
+      "optimizer.pt": "2feb40e8bd43169ca4e6806166c2d2f1f31e8f8c1f66f12d331e3ab1bccc0faa"
+    },
+    "optimizer_container_note": "optimizer.pt container bytes differ on reserialization; audited tensor/moment/step/RNG state is identical.",
+    "limitation": "Recorded neural vectors and restored identities are verified; CPU audit does not rerun neural forwards. Short derivative smoke plus full forward replay does not establish full-length backward capacity."
+  },
+  "new_SFT_updates": 0,
+  "new_RL_updates": 0,
+  "interpretation": [
+    "Descriptive capability calibration of the inherited SFT32 checkpoint; no new learning occurred.",
+    "All six compiled controllers have negative mean relative return against the fixed scripted anchors despite banking positive value.",
+    "Banked-yield all-eight mean assigns zero to invalid authorships; no games or game returns are invented for those outputs.",
+    "Draft and revision delivery counts describe different turns in the same fixed harness; not a causal effect estimate.",
+    "Prior-condition outcomes use different maps/seeds and are not a paired comparison."
+  ],
+  "input_sha256": {
+    "final-audit.json": "4ea5b49bf83d7849db90864b42c7da05337f6b926cec6e8909719fdfa8da930d",
+    "status.json": "ceb9ee2ef75c07456053799c4b2af02a6ffed37e3bde40c466ba317153d8bf7a",
+    "manifest.json": "f3401a5f6a4b2834d7b40f970c58e18f2044a60c78511438492d8dbc144ce3f5",
+    "calibration/scores.json": "06d818243b7a19f709ddb7d781e483d65d10b26921e0b085a46aede3a042e120",
+    "calibration/full-likelihood-gate.json": "ab81baf7a29e245a733031f8e851a46fccc18254718c91d456452b72a7a0c875",
+    "calibration/decision.json": "b116ff4eba78c46501d35a32379bac127d65eeb53117045b330ebb4aa7479b62",
+    "checkpoints/base/metadata.json": "dc3dda4affdf73c435231e1aa5b83044780f828a732616a3ef556183952fc92a",
+    "checkpoints/unchanged-final/metadata.json": "d3d6500f3c6a7dd3c527f6b28d76079ba15056a7ab049c17d046f5fafc262ce4",
+    "generations/calibration-0.json": "26034e09e318d552775ce1b1870cfe2e39ba61e76780330012a9d0bf980b79ef",
+    "feedback/calibration-0.json": "124e3ffb591ee73c0738b189db002a097c8911be57db1846db0c210b2ddd1087",
+    "generations/calibration-1.json": "cdf7aaa8cb443fac07f6efa0d1e28a9bc9d3474502fa782c9ddf6254b856b73a",
+    "feedback/calibration-1.json": "b9a1bab5cd3682dc96dfafea817ef42f45d397a49025b2e7268946ce3c97f130",
+    "generations/calibration-2.json": "13cf2b06d3216c269da4ffc429bbce5e564dba36a6b2fc9f9c525a56c952a946",
+    "feedback/calibration-2.json": "30753c04b8f8531669cede0e1a9f969df5d7b325012ccd12464c425209ef446a",
+    "generations/calibration-3.json": "d857f8d0b1858e0547541d8b8221035dd03c3ff5c841ea34f43f81fc56690327",
+    "feedback/calibration-3.json": "3d62a2670eff0f9b317bc7d80fd778dae4359e07f2ed3d1ad4ac41916643bb0f",
+    "generations/calibration-4.json": "e2144660731bdfa230db740059b7a0640536360eee6cfd4150c7e532982de776",
+    "feedback/calibration-4.json": "a5a4b151e74022de270bccaa5286b036b02d4387ce122e18825775480e4e4890",
+    "generations/calibration-5.json": "7887dea6f95fc4fe20567fa3b5b823c0763198f0d8328622b211a2367311d75d",
+    "feedback/calibration-5.json": "5c213af144c14cd4ea0d7b641c8d4da81e409341137017aabb86de357bc630ca",
+    "generations/calibration-6.json": "2add76c0833dc3c7d66dfc6f3f3f763abf87d129be89dbd3b112c03bb369e71e",
+    "feedback/calibration-6.json": "458d600b64f926c1c4beb8f8d6b3525a23dde03de8e9e60d2ba1b64e48aefc9c",
+    "generations/calibration-7.json": "44082b6ae29902bd33cf21ce88fc63221365c9b8f122bd5003f54d4098096456",
+    "feedback/calibration-7.json": "5c918bf673acf04616259a41f5c53f1739bb1d5a305bacea16fdb74842e79bd6",
+    "batches/calibration-0-draft.json": "b0b6090d90ce3128bc505b355ade76282d5fb44622e83e6a310362f252d1e961",
+    "batches/calibration-0-revision.json": "0f9375cfd91c46afc13c8b5cb4796b84845e6d72d2ee8450199687b8f9397a34",
+    "batches/calibration-1-draft.json": "5e3d7c022a1c14e0c9a714720c219814e504e9fa6ef44cf80d83b777006fd2eb",
+    "batches/calibration-1-revision.json": "943bd99d71fcdb177fee8c675ad082663f44a5bb610a8aef96abd57f48ac08ae",
+    "batches/calibration-2-draft.json": "ef9d107849df323c51181918dc7d72dfa0c2e6d78e56a0eeed98c2de3a752446",
+    "batches/calibration-2-revision.json": "1f6ccbd632f47ac49a55c135e7fe85aad82aa3dd23f95c9c141c778114c841d6",
+    "batches/calibration-3-draft.json": "6d8b6fc7db4bd409cc74677cb7190a7f2252719ff81b38e7524ac61acbe590f3",
+    "batches/calibration-3-revision.json": "34227e51122f520d0689285dd07dab6bae7367af0cc0b53a06286e400df4422c"
+  }
+}

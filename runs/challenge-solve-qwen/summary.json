@@ -1,0 +1,78 @@
+{
+  "complete": true,
+  "calls": 42,
+  "expected_calls": 42,
+  "successes": 34,
+  "statuses": {
+    "solved": 34,
+    "truncated": 8
+  },
+  "canonical_tasks": 7,
+  "canonical_tasks_solved": 6,
+  "canonical_mixed_tasks": 1,
+  "useful_mixed_task_ids": [],
+  "completion_tokens": 99096,
+  "prompt_tokens": 8560,
+  "by_group": {
+    "('procedural', 'canonical', 4)": {
+      "calls": 8,
+      "successes": 4,
+      "statuses": {
+        "solved": 4,
+        "truncated": 4
+      }
+    },
+    "('procedural', 'renamed_reordered', 4)": {
+      "calls": 4,
+      "successes": 4,
+      "statuses": {
+        "solved": 4
+      }
+    },
+    "('procedural', 'canonical', 6)": {
+      "calls": 8,
+      "successes": 6,
+      "statuses": {
+        "solved": 6,
+        "truncated": 2
+      }
+    },
+    "('qwen', 'canonical', 2)": {
+      "calls": 4,
+      "successes": 4,
+      "statuses": {
+        "solved": 4
+      }
+    },
+    "('procedural', 'canonical', 2)": {
+      "calls": 8,
+      "successes": 8,
+      "statuses": {
+        "solved": 8
+      }
+    },
+    "('procedural', 'renamed_reordered', 6)": {
+      "calls": 4,
+      "successes": 2,
+      "statuses": {
+        "truncated": 2,
+        "solved": 2
+      }
+    },
+    "('procedural', 'renamed_reordered', 2)": {
+      "calls": 4,
+      "successes": 4,
+      "statuses": {
+        "solved": 4
+      }
+    },
+    "('qwen', 'renamed_reordered', 2)": {
+      "calls": 2,
+      "successes": 2,
+      "statuses": {
+        "solved": 2
+      }
+    }
+  },
+  "training": false
+}

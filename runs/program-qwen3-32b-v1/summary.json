@@ -1,0 +1,171 @@
+{
+  "all_replays_verified": true,
+  "attempts": 2,
+  "complete": true,
+  "costs": {
+    "evaluation_api_cost_usd": 0,
+    "new_generation_cost_usd": 0.00242592,
+    "original_response_cost_upper_usd": 0.0024259200000000002,
+    "original_response_cost_usd": 0.00242592,
+    "reused_generation_responses": false,
+    "scope": "This run's generation arm only. Prior JSON screen and other pilot costs are separate; copied responses are not charged again."
+  },
+  "evaluation_api_calls": 0,
+  "evaluation_sha256": "9fcef905ab683026f86b0546b6d4ab0906469b5c7d63ce18158965e80c2b9de1",
+  "failures": {
+    "truncated": 2
+  },
+  "fixed_reference_matches": 0,
+  "format_version": 1,
+  "generation_reuse": null,
+  "generation_sha256": {
+    "generation-1.json": "fd7495e46a6a9ee963eab791f5dc59cb4e5fd68d8cb172bd66dcce84767cb94e",
+    "generation-2.json": "cbded2c9b1cc1ec3e322959c6bc7d27cdabaeacd418d233487d0ae4d823d93be"
+  },
+  "generations": [
+    {
+      "compiled_program": null,
+      "cost_upper_usd": 0.0012129600000000001,
+      "cost_usd": 0.00121296,
+      "failure": "truncated",
+      "finish_reason": "length",
+      "missing_final": true,
+      "normalization": "none",
+      "original_text": "",
+      "reasoning_mode": "off",
+      "response_file": "generation-1.json",
+      "response_sha256": "fd7495e46a6a9ee963eab791f5dc59cb4e5fd68d8cb172bd66dcce84767cb94e",
+      "returned_model": "qwen/qwen3-32b",
+      "returned_provider": "DeepInfra",
+      "sample_id": "qwen3-32b-1",
+      "usage": {
+        "completion_tokens": 4096,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "image_tokens": 0,
+          "reasoning_tokens": 4158
+        },
+        "cost": 0.00121296,
+        "cost_details": {
+          "upstream_inference_completions_cost": 0.00114688,
+          "upstream_inference_cost": 0.00121296,
+          "upstream_inference_prompt_cost": 6.608e-05
+        },
+        "is_byok": false,
+        "prompt_tokens": 826,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "video_tokens": 0
+        },
+        "total_tokens": 4922
+      },
+      "valid": false
+    },
+    {
+      "compiled_program": null,
+      "cost_upper_usd": 0.0012129600000000001,
+      "cost_usd": 0.00121296,
+      "failure": "truncated",
+      "finish_reason": "length",
+      "missing_final": true,
+      "normalization": "none",
+      "original_text": "",
+      "reasoning_mode": "off",
+      "response_file": "generation-2.json",
+      "response_sha256": "cbded2c9b1cc1ec3e322959c6bc7d27cdabaeacd418d233487d0ae4d823d93be",
+      "returned_model": "qwen/qwen3-32b",
+      "returned_provider": "DeepInfra",
+      "sample_id": "qwen3-32b-2",
+      "usage": {
+        "completion_tokens": 4096,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "image_tokens": 0,
+          "reasoning_tokens": 4184
+        },
+        "cost": 0.00121296,
+        "cost_details": {
+          "upstream_inference_completions_cost": 0.00114688,
+          "upstream_inference_cost": 0.00121296,
+          "upstream_inference_prompt_cost": 6.608e-05
+        },
+        "is_byok": false,
+        "prompt_tokens": 826,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "video_tokens": 0
+        },
+        "total_tokens": 4922
+      },
+      "valid": false
+    }
+  ],
+  "interpretation": "Small adaptive authoring-capability screen against two fixed scripted references and any valid peer. No gradient training, continual improvement, or general-strength claim. Invalid programs receive no fabricated games or losses.",
+  "model_matches": 0,
+  "peer_crossplay_matches": 0,
+  "plan_sha256": "53c5d64395c23d97debbe03bcfbf7bb2f238287b130671e3dee27ada4d62f873",
+  "players": {
+    "qwen3-32b-1": {
+      "by_opponent": {},
+      "overall": {
+        "banked_points": 0,
+        "decision_turns": 0,
+        "draws": 0,
+        "failed_game_actions": 0,
+        "fault_types": {},
+        "games": 0,
+        "losses": 0,
+        "mean_banked_points": null,
+        "mean_return": null,
+        "opponent_banked_points": 0,
+        "program_faults": 0,
+        "return_sum": 0.0,
+        "wins": 0
+      }
+    },
+    "qwen3-32b-2": {
+      "by_opponent": {},
+      "overall": {
+        "banked_points": 0,
+        "decision_turns": 0,
+        "draws": 0,
+        "failed_game_actions": 0,
+        "fault_types": {},
+        "games": 0,
+        "losses": 0,
+        "mean_banked_points": null,
+        "mean_return": null,
+        "opponent_banked_points": 0,
+        "program_faults": 0,
+        "return_sum": 0.0,
+        "wins": 0
+      }
+    }
+  },
+  "posthoc_diagnostic": false,
+  "response_normalization": {
+    "mode": "single_python_fence_with_optional_prose",
+    "source_archive": "source/response_normalization.py",
+    "source_sha256": "4b0095b507dc50b05285b3c10931923543ba2bd976c6f54511d5ab1bc5a85163",
+    "version": 2
+  },
+  "scoring": "W/D/L is the sign of final banked-point difference at the game's fixed time limit. This is the game's actual objective, not distance/material adjudication. Return is that difference divided by initial resource value; unbanked cargo scores zero.",
+  "screen": "bounded Python controller authoring",
+  "source_sha256": {
+    "selfplay/program_arena/__init__.py": "2c405b142b39f6f350996f812875afbe4ec845005a662eaf43bc28a7e2d4c7d2",
+    "selfplay/program_arena/demo.py": "f918f494d7ad39b78cda0d1672ef19d9244e3c52ef07739b696725b7b6f9105f",
+    "selfplay/program_arena/dsl.py": "91cc93d24e9c61b0cc04b4bf3d34a7e3515bda59fed62eeb766006ec9df74968",
+    "selfplay/program_arena/examples.py": "5261337c5ac1415c14da1505e76d2ed99a5916da70a2f02397d5d0242757894a",
+    "selfplay/program_arena/game.py": "7986796669d4622d53536b2b9b6984778372e2cf2354b9885a384680e66f0246",
+    "selfplay/program_arena/runner.py": "bdc8f5ce3471d4018fe2c893c7d49351c8e23d75f151bc9abcd36e637ef1445e",
+    "selfplay/program_arena/spec.py": "bd236885f4864e56a8003abe81ab9726386ed11399648318fe2eff7f87920ff3",
+    "selfplay/program_model_screen.py": "00d2df0be0109d775e5e4b6a70e7c3e7b795c81fa80b6ade9b53df0062f8c584",
+    "selfplay/program_python.py": "598d27639d004230976066d18e6fc6ed6bcd8a5f5f1e6c741b634ebad3f8fb56"
+  },
+  "training": false,
+  "valid_programs": 0
+}

@@ -1,0 +1,4793 @@
+{
+  "complete": true,
+  "all_completed_episodes_verified": true,
+  "episodes_verified": 246,
+  "policy_transitions_verified": 2997,
+  "scheduled_episodes": 246,
+  "missing_episode_ids": [],
+  "manifest_sha256": "77e041c4ff6ecf5d6b68afcb5b4cdbcca9d51ccbf73b0fa4028e757d0d602257",
+  "source_verification": {
+    "archives_verified": {
+      "selfplay/arena/chess_game.py": "83d821bf7e84190494df968bcc0827b3108c6a1b0f0ee1cc668f4d777349d9fd",
+      "selfplay/arena/market.py": "29a2e99e3ce06f00d43f2ed962a819981e8d444296aa7dd77c0ae5915461fe6f",
+      "selfplay/arena/policy.py": "339de4d0db9b9d1b8e9880bb06d563908274676da9d0570cde3f5f4ecab2b81e",
+      "selfplay/arena/__init__.py": "10b70b84f92d66332feb0b9dc83ab52660c4497a657a52d6cc5d547d39cd8714",
+      "selfplay/arena/experiment.py": "c18907d4a2b780acac99ab5f2cd63ebc6b8fd09a9f3f5e98b66bce50766a3545",
+      "selfplay/arena/maze.py": "686df22a88f11808000392cb57707e5ff6c06f1bf77d34a83f3f043690dbd1e2",
+      "docs/arena-rl-protocol.md": "12d5a379193f6a5ac915ae538bd38cbcae655485c5921fa5f4460f27ff693885",
+      "selfplay/league.py": "eec314c9951b61d7d1fedf99e817ab6299a7b22678f8a728fc93eddcadd51d0f",
+      "selfplay/arena_v2.py": "2f1ac32be224868c609e00145dbb499d0ef52995ae9f4e1670086a3aa3b774fd"
+    },
+    "live_source_matches": {
+      "selfplay/arena/chess_game.py": true,
+      "selfplay/arena/market.py": true,
+      "selfplay/arena/policy.py": true,
+      "selfplay/arena/__init__.py": true,
+      "selfplay/arena/experiment.py": true,
+      "selfplay/arena/maze.py": true,
+      "docs/arena-rl-protocol.md": true,
+      "selfplay/league.py": true,
+      "selfplay/arena_v2.py": true
+    },
+    "live_source_unchanged": true,
+    "note": "Archived source hashes are mandatory. Live-source drift is reported but does not invalidate archived replay."
+  },
+  "checkpoint_verification": {
+    "base": {
+      "name": "base",
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/arena-v1/checkpoints/base",
+      "adapter_sha256": "5b8474d40ff5c8fc2e4e015a5caaa5ecd03ca23e13afe1cf8974b048bf12b5aa",
+      "metadata_sha256": "b318f2d4a495bed324f144c33248eed60bb4a6f4ea3509502df168e2b5270167",
+      "inherited": true,
+      "finite_float32_tensors": true,
+      "tensor_count": 32,
+      "trainable_parameters": 851968,
+      "policy_arithmetic_sha256": "0dd0cf0c88a5ba9797be2255a52251d0649869f964e7f0369378eaf5a6ee8e81"
+    },
+    "cycle1": {
+      "name": "cycle1",
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/arena-v1/checkpoints/cycle1",
+      "adapter_sha256": "749a609ab5dade35f0ed8bab24e696766442e2d55cafb360df323dd879d4859d",
+      "metadata_sha256": "caf68e7af689249acff4716103953ac4505756bae48c6bfc8b13d3df67a8a113",
+      "training_summary_sha256": "08236f48953af5dad15d30a1d991e7358c85ca34454f0e5bc74e64b8189000d2",
+      "inherited": true,
+      "finite_float32_tensors": true,
+      "tensor_count": 32,
+      "trainable_parameters": 851968,
+      "policy_arithmetic_sha256": "0dd0cf0c88a5ba9797be2255a52251d0649869f964e7f0369378eaf5a6ee8e81",
+      "source_checkpoint": "base",
+      "independently_measured_delta_l2": 0.692007914394411,
+      "training_summary": {
+        "complete": true,
+        "source": "base",
+        "target": "cycle1",
+        "episodes": 24,
+        "transitions": 346,
+        "updates": 87,
+        "epochs": 1,
+        "positive_advantage_actions": 173,
+        "negative_advantage_actions": 173,
+        "parameter_delta_l2": 0.6920079146435645,
+        "peak_memory_gb": 7.797158448,
+        "checkpoint": {
+          "model": "mlx-community/Qwen3-8B-4bit",
+          "revision": "545dc4251c05440727734bcd94334791f6ab0192",
+          "method": "clipped Monte Carlo policy gradient with LoRA",
+          "action_policy": "one-token categorical distribution over legal action labels",
+          "labels": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "I",
+            "J",
+            "K",
+            "L",
+            "M",
+            "N",
+            "O",
+            "P",
+            "Q",
+            "R",
+            "S",
+            "T",
+            "U",
+            "V",
+            "W",
+            "X",
+            "Y",
+            "Z",
+            "a",
+            "b",
+            "c",
+            "d",
+            "e",
+            "f",
+            "g",
+            "h",
+            "i",
+            "j",
+            "k",
+            "l",
+            "m",
+            "n",
+            "o",
+            "p",
+            "q",
+            "r",
+            "s",
+            "t",
+            "u",
+            "v",
+            "w",
+            "x",
+            "y",
+            "z",
+            "AA",
+            "AB",
+            "AC",
+            "AD",
+            "AE",
+            "AF",
+            "AG",
+            "AH",
+            "AI",
+            "AJ",
+            "AK",
+            "AL",
+            "AM",
+            "AN",
+            "AO",
+            "AP",
+            "AQ",
+            "AR",
+            "AS",
+            "AT",
+            "AU",
+            "AV",
+            "AW",
+            "AX",
+            "AY",
+            "AZ",
+            "Ab",
+            "Ac",
+            "Ad",
+            "Af",
+            "Ag",
+            "Ah",
+            "Ai",
+            "Aj",
+            "Ak",
+            "Al",
+            "Am",
+            "An",
+            "Ao",
+            "Ap",
+            "Ar",
+            "As",
+            "At",
+            "Au",
+            "Av",
+            "Aw",
+            "Ax",
+            "Ay",
+            "Az",
+            "BA",
+            "BB",
+            "BC",
+            "BD",
+            "BE",
+            "BF",
+            "BG",
+            "BH",
+            "BI",
+            "BJ",
+            "BK",
+            "BL",
+            "BM",
+            "BN",
+            "BO",
+            "BP",
+            "BR",
+            "BS",
+            "BT",
+            "BU",
+            "BV",
+            "BW",
+            "BX",
+            "BY",
+            "Ba",
+            "Be",
+            "Bg",
+            "Bi",
+            "Bl",
+            "Bo",
+            "Br",
+            "Bs",
+            "Bu",
+            "By",
+            "CA",
+            "CB",
+            "CC",
+            "CD",
+            "CE",
+            "CF",
+            "CG",
+            "CH",
+            "CI",
+            "CK",
+            "CL",
+            "CM",
+            "CN",
+            "CO",
+            "CP",
+            "CR",
+            "CS",
+            "CT",
+            "CU",
+            "CV",
+            "CW",
+            "CX",
+            "CY",
+            "Ca",
+            "Cb",
+            "Cc",
+            "Cd",
+            "Ce",
+            "Ch",
+            "Ci",
+            "Cl",
+            "Co",
+            "Cr",
+            "Cs",
+            "Cu",
+            "Cx",
+            "Cy",
+            "DA",
+            "DB",
+            "DC",
+            "DD",
+            "DE",
+            "DF",
+            "DG",
+            "DH",
+            "DI",
+            "DJ",
+            "DK",
+            "DL",
+            "DM",
+            "DN",
+            "DO",
+            "DP",
+            "DR",
+            "DS",
+            "DT",
+            "DU",
+            "DV",
+            "DW",
+            "DX",
+            "DY",
+            "Da",
+            "Db",
+            "De",
+            "Di",
+            "Do",
+            "Dr",
+            "Ds",
+            "Dt",
+            "Du",
+            "EA",
+            "EB",
+            "EC",
+            "ED",
+            "EE",
+            "EF",
+            "EG",
+            "EH",
+            "EI",
+            "EK",
+            "EL",
+            "EM",
+            "EN",
+            "EO",
+            "EP",
+            "EQ",
+            "ER",
+            "ES",
+            "ET",
+            "EU",
+            "EV",
+            "EW",
+            "EX",
+            "EZ",
+            "Eb",
+            "Ec",
+            "Ed",
+            "Ef",
+            "Ek",
+            "El",
+            "Em",
+            "En",
+            "Ep",
+            "Eq",
+            "Er",
+            "Es",
+            "Et",
+            "Eu",
+            "Ev",
+            "Ex",
+            "Ey",
+            "FA",
+            "FB",
+            "FC",
+            "FD",
+            "FE",
+            "FF",
+            "FG",
+            "FH",
+            "FI",
+            "FK"
+          ],
+          "label_token_ids": [
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            6029,
+            1867,
+            1706,
+            1808,
+            13669,
+            8276,
+            1890,
+            29923,
+            15469,
+            30594,
+            11907,
+            969,
+            1402,
+            1093,
+            18746,
+            2537,
+            92073,
+            934,
+            1911,
+            828,
+            35028,
+            8093,
+            14419,
+            2954,
+            3022,
+            23563,
+            5830,
+            11654,
+            2589,
+            54339,
+            9042,
+            24765,
+            69667,
+            61073,
+            55802,
+            2101,
+            6091,
+            2082,
+            98312,
+            10611,
+            6953,
+            2121,
+            1655,
+            65332,
+            9865,
+            22600,
+            37842,
+            73109,
+            37199,
+            7064,
+            10098,
+            4897,
+            9548,
+            11594,
+            19883,
+            37762,
+            97151,
+            8598,
+            14978,
+            88307,
+            9389,
+            28942,
+            15594,
+            4677,
+            26095,
+            13095,
+            7347,
+            17602,
+            14928,
+            59343,
+            77563,
+            53878,
+            19912,
+            58827,
+            3430,
+            48837,
+            36096,
+            4923,
+            1233,
+            6828,
+            74207,
+            59808,
+            1359,
+            5049,
+            12979,
+            3706,
+            6484,
+            2104,
+            9650,
+            8798,
+            2149,
+            11237,
+            3021,
+            3140,
+            9985,
+            28668,
+            8281,
+            7123,
+            8973,
+            6412,
+            1162,
+            16799,
+            19589,
+            66282,
+            65240,
+            34525,
+            22571,
+            49737,
+            97754,
+            90200,
+            42170,
+            1143,
+            60619,
+            5066,
+            7339,
+            16001,
+            33545,
+            44819,
+            91212,
+            56715,
+            6352,
+            3506,
+            5626,
+            4103,
+            1150,
+            5262,
+            53725,
+            51326,
+            17625,
+            53272,
+            18301,
+            16524,
+            8395,
+            31264,
+            5865,
+            10298,
+            7687,
+            5936,
+            10599,
+            21547,
+            61971,
+            54219,
+            16591,
+            69916,
+            30416,
+            7994,
+            1912,
+            21685,
+            5404,
+            8847,
+            66950,
+            69079,
+            42074,
+            19112,
+            8264,
+            7498,
+            1479,
+            7099,
+            14884,
+            9376,
+            45589,
+            78782,
+            71133,
+            2749,
+            2716,
+            953,
+            6760,
+            9197,
+            54007,
+            640,
+            1570,
+            1348,
+            38807,
+            46010,
+            37779,
+            3257,
+            97278,
+            82414,
+            50730,
+            2715,
+            79686,
+            41917,
+            6582,
+            2269,
+            1702,
+            22373,
+            27312,
+            19462,
+            17360,
+            31860,
+            54118,
+            34112,
+            840,
+            97454,
+            3627,
+            16208,
+            6754,
+            14596,
+            11419,
+            1748,
+            12001,
+            83314,
+            19426,
+            26998
+          ],
+          "thinking": false,
+          "temperature": 1.0,
+          "lora_rank": 8,
+          "lora_scale": 16,
+          "lora_last_layers": 8,
+          "lora_keys": [
+            "q_proj",
+            "v_proj"
+          ],
+          "trainable_parameters": 851968,
+          "checkpoint": "cycle1",
+          "adapter_sha256": "749a609ab5dade35f0ed8bab24e696766442e2d55cafb360df323dd879d4859d"
+        },
+        "learning_rate": 2e-05
+      }
+    },
+    "cycle2": {
+      "name": "cycle2",
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/arena-v2/checkpoints/cycle2",
+      "adapter_sha256": "0c502cd89d8bec3deaef5f361aadc5011b9debb853933e47e404791bc66ef672",
+      "metadata_sha256": "ad8cd12d67b25f85324d91061a80a3fa35b474f4c2ce4befba10355464252ace",
+      "training_summary_sha256": "99836cb69fbcf1b4053b713a3ee54f6e9a1d86ba0862592465be8869422a29e9",
+      "inherited": false,
+      "finite_float32_tensors": true,
+      "tensor_count": 32,
+      "trainable_parameters": 851968,
+      "policy_arithmetic_sha256": "0dd0cf0c88a5ba9797be2255a52251d0649869f964e7f0369378eaf5a6ee8e81",
+      "source_checkpoint": "cycle1",
+      "independently_measured_delta_l2": 0.6073214414253536,
+      "training_summary": {
+        "complete": true,
+        "source": "cycle1",
+        "target": "cycle2",
+        "episodes": 24,
+        "transitions": 352,
+        "updates": 88,
+        "epochs": 1,
+        "positive_advantage_actions": 176,
+        "negative_advantage_actions": 176,
+        "parameter_delta_l2": 0.6073214405365532,
+        "peak_memory_gb": 9.681003312,
+        "checkpoint": {
+          "model": "mlx-community/Qwen3-8B-4bit",
+          "revision": "545dc4251c05440727734bcd94334791f6ab0192",
+          "method": "clipped Monte Carlo policy gradient with LoRA",
+          "action_policy": "one-token categorical distribution over legal action labels",
+          "labels": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "I",
+            "J",
+            "K",
+            "L",
+            "M",
+            "N",
+            "O",
+            "P",
+            "Q",
+            "R",
+            "S",
+            "T",
+            "U",
+            "V",
+            "W",
+            "X",
+            "Y",
+            "Z",
+            "a",
+            "b",
+            "c",
+            "d",
+            "e",
+            "f",
+            "g",
+            "h",
+            "i",
+            "j",
+            "k",
+            "l",
+            "m",
+            "n",
+            "o",
+            "p",
+            "q",
+            "r",
+            "s",
+            "t",
+            "u",
+            "v",
+            "w",
+            "x",
+            "y",
+            "z",
+            "AA",
+            "AB",
+            "AC",
+            "AD",
+            "AE",
+            "AF",
+            "AG",
+            "AH",
+            "AI",
+            "AJ",
+            "AK",
+            "AL",
+            "AM",
+            "AN",
+            "AO",
+            "AP",
+            "AQ",
+            "AR",
+            "AS",
+            "AT",
+            "AU",
+            "AV",
+            "AW",
+            "AX",
+            "AY",
+            "AZ",
+            "Ab",
+            "Ac",
+            "Ad",
+            "Af",
+            "Ag",
+            "Ah",
+            "Ai",
+            "Aj",
+            "Ak",
+            "Al",
+            "Am",
+            "An",
+            "Ao",
+            "Ap",
+            "Ar",
+            "As",
+            "At",
+            "Au",
+            "Av",
+            "Aw",
+            "Ax",
+            "Ay",
+            "Az",
+            "BA",
+            "BB",
+            "BC",
+            "BD",
+            "BE",
+            "BF",
+            "BG",
+            "BH",
+            "BI",
+            "BJ",
+            "BK",
+            "BL",
+            "BM",
+            "BN",
+            "BO",
+            "BP",
+            "BR",
+            "BS",
+            "BT",
+            "BU",
+            "BV",
+            "BW",
+            "BX",
+            "BY",
+            "Ba",
+            "Be",
+            "Bg",
+            "Bi",
+            "Bl",
+            "Bo",
+            "Br",
+            "Bs",
+            "Bu",
+            "By",
+            "CA",
+            "CB",
+            "CC",
+            "CD",
+            "CE",
+            "CF",
+            "CG",
+            "CH",
+            "CI",
+            "CK",
+            "CL",
+            "CM",
+            "CN",
+            "CO",
+            "CP",
+            "CR",
+            "CS",
+            "CT",
+            "CU",
+            "CV",
+            "CW",
+            "CX",
+            "CY",
+            "Ca",
+            "Cb",
+            "Cc",
+            "Cd",
+            "Ce",
+            "Ch",
+            "Ci",
+            "Cl",
+            "Co",
+            "Cr",
+            "Cs",
+            "Cu",
+            "Cx",
+            "Cy",
+            "DA",
+            "DB",
+            "DC",
+            "DD",
+            "DE",
+            "DF",
+            "DG",
+            "DH",
+            "DI",
+            "DJ",
+            "DK",
+            "DL",
+            "DM",
+            "DN",
+            "DO",
+            "DP",
+            "DR",
+            "DS",
+            "DT",
+            "DU",
+            "DV",
+            "DW",
+            "DX",
+            "DY",
+            "Da",
+            "Db",
+            "De",
+            "Di",
+            "Do",
+            "Dr",
+            "Ds",
+            "Dt",
+            "Du",
+            "EA",
+            "EB",
+            "EC",
+            "ED",
+            "EE",
+            "EF",
+            "EG",
+            "EH",
+            "EI",
+            "EK",
+            "EL",
+            "EM",
+            "EN",
+            "EO",
+            "EP",
+            "EQ",
+            "ER",
+            "ES",
+            "ET",
+            "EU",
+            "EV",
+            "EW",
+            "EX",
+            "EZ",
+            "Eb",
+            "Ec",
+            "Ed",
+            "Ef",
+            "Ek",
+            "El",
+            "Em",
+            "En",
+            "Ep",
+            "Eq",
+            "Er",
+            "Es",
+            "Et",
+            "Eu",
+            "Ev",
+            "Ex",
+            "Ey",
+            "FA",
+            "FB",
+            "FC",
+            "FD",
+            "FE",
+            "FF",
+            "FG",
+            "FH",
+            "FI",
+            "FK"
+          ],
+          "label_token_ids": [
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            6029,
+            1867,
+            1706,
+            1808,
+            13669,
+            8276,
+            1890,
+            29923,
+            15469,
+            30594,
+            11907,
+            969,
+            1402,
+            1093,
+            18746,
+            2537,
+            92073,
+            934,
+            1911,
+            828,
+            35028,
+            8093,
+            14419,
+            2954,
+            3022,
+            23563,
+            5830,
+            11654,
+            2589,
+            54339,
+            9042,
+            24765,
+            69667,
+            61073,
+            55802,
+            2101,
+            6091,
+            2082,
+            98312,
+            10611,
+            6953,
+            2121,
+            1655,
+            65332,
+            9865,
+            22600,
+            37842,
+            73109,
+            37199,
+            7064,
+            10098,
+            4897,
+            9548,
+            11594,
+            19883,
+            37762,
+            97151,
+            8598,
+            14978,
+            88307,
+            9389,
+            28942,
+            15594,
+            4677,
+            26095,
+            13095,
+            7347,
+            17602,
+            14928,
+            59343,
+            77563,
+            53878,
+            19912,
+            58827,
+            3430,
+            48837,
+            36096,
+            4923,
+            1233,
+            6828,
+            74207,
+            59808,
+            1359,
+            5049,
+            12979,
+            3706,
+            6484,
+            2104,
+            9650,
+            8798,
+            2149,
+            11237,
+            3021,
+            3140,
+            9985,
+            28668,
+            8281,
+            7123,
+            8973,
+            6412,
+            1162,
+            16799,
+            19589,
+            66282,
+            65240,
+            34525,
+            22571,
+            49737,
+            97754,
+            90200,
+            42170,
+            1143,
+            60619,
+            5066,
+            7339,
+            16001,
+            33545,
+            44819,
+            91212,
+            56715,
+            6352,
+            3506,
+            5626,
+            4103,
+            1150,
+            5262,
+            53725,
+            51326,
+            17625,
+            53272,
+            18301,
+            16524,
+            8395,
+            31264,
+            5865,
+            10298,
+            7687,
+            5936,
+            10599,
+            21547,
+            61971,
+            54219,
+            16591,
+            69916,
+            30416,
+            7994,
+            1912,
+            21685,
+            5404,
+            8847,
+            66950,
+            69079,
+            42074,
+            19112,
+            8264,
+            7498,
+            1479,
+            7099,
+            14884,
+            9376,
+            45589,
+            78782,
+            71133,
+            2749,
+            2716,
+            953,
+            6760,
+            9197,
+            54007,
+            640,
+            1570,
+            1348,
+            38807,
+            46010,
+            37779,
+            3257,
+            97278,
+            82414,
+            50730,
+            2715,
+            79686,
+            41917,
+            6582,
+            2269,
+            1702,
+            22373,
+            27312,
+            19462,
+            17360,
+            31860,
+            54118,
+            34112,
+            840,
+            97454,
+            3627,
+            16208,
+            6754,
+            14596,
+            11419,
+            1748,
+            12001,
+            83314,
+            19426,
+            26998
+          ],
+          "thinking": false,
+          "temperature": 1.0,
+          "lora_rank": 8,
+          "lora_scale": 16,
+          "lora_last_layers": 8,
+          "lora_keys": [
+            "q_proj",
+            "v_proj"
+          ],
+          "trainable_parameters": 851968,
+          "policy_arithmetic": {
+            "floating_model_parameters": "float32",
+            "activation_arithmetic": "float32",
+            "quantized_integer_storage": "unchanged uint32 packed 4-bit weights",
+            "adapter_parameters": "float32",
+            "action_policy": "one-token legal categorical distribution",
+            "temperature": 1.0,
+            "thinking": false
+          },
+          "policy_arithmetic_sha256": "0dd0cf0c88a5ba9797be2255a52251d0649869f964e7f0369378eaf5a6ee8e81",
+          "arithmetic_verification": {
+            "floating_tensor_count": 685,
+            "integer_tensor_count": 254,
+            "integer_tensor_hashes_sha256": "16612cc1dc6681fe70a30e0be96722ca708a2bf19804d5fb54a9d8aeef7fe513",
+            "all_floating_parameters_float32": true,
+            "integer_weights_exactly_unchanged": true
+          },
+          "rating_compatibility": "arena-v2-fp32",
+          "checkpoint": "cycle2",
+          "adapter_sha256": "0c502cd89d8bec3deaef5f361aadc5011b9debb853933e47e404791bc66ef672"
+        },
+        "learning_rate": 2e-05
+      },
+      "likelihood_gate": {
+        "rows": 352,
+        "max_full_vector_error": 3.814697265625e-05,
+        "sha256": "845f3c578008c977f0b29eebdf914102256fe461dcea140b23bfcac8dfc28b6e"
+      },
+      "optimization": {
+        "kl_to_rollout": {
+          "mean": 0.04479798399059056,
+          "max": 0.17645545303821564
+        },
+        "entropy": {
+          "mean": 0.997324887663126,
+          "max": 1.8890799283981323
+        },
+        "clip_fraction": {
+          "mean": 0.3125,
+          "max": 1.0
+        },
+        "gradient_norm": {
+          "mean": 16.33229234814644,
+          "max": 110.0788345336914
+        }
+      }
+    },
+    "cycle3": {
+      "name": "cycle3",
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/arena-v2/checkpoints/cycle3",
+      "adapter_sha256": "f652d9340fb7c8732982eea0ff3658f6aabcf1157e5f6eacb9d0ae8472ca5e9b",
+      "metadata_sha256": "8ed4aad0da8ad18d7b417804f956f92ce21e5bd49aafff8e67ece2fdb0c1c8b3",
+      "training_summary_sha256": "ab83ace5b129190c638b9d37402af8d8518622879c106ad8c140ea3bafdc4e83",
+      "inherited": false,
+      "finite_float32_tensors": true,
+      "tensor_count": 32,
+      "trainable_parameters": 851968,
+      "policy_arithmetic_sha256": "0dd0cf0c88a5ba9797be2255a52251d0649869f964e7f0369378eaf5a6ee8e81",
+      "source_checkpoint": "cycle2",
+      "independently_measured_delta_l2": 0.6542517671990483,
+      "training_summary": {
+        "complete": true,
+        "source": "cycle2",
+        "target": "cycle3",
+        "episodes": 24,
+        "transitions": 352,
+        "updates": 88,
+        "epochs": 1,
+        "positive_advantage_actions": 176,
+        "negative_advantage_actions": 176,
+        "parameter_delta_l2": 0.6542517664291383,
+        "peak_memory_gb": 9.865520392,
+        "checkpoint": {
+          "model": "mlx-community/Qwen3-8B-4bit",
+          "revision": "545dc4251c05440727734bcd94334791f6ab0192",
+          "method": "clipped Monte Carlo policy gradient with LoRA",
+          "action_policy": "one-token categorical distribution over legal action labels",
+          "labels": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "I",
+            "J",
+            "K",
+            "L",
+            "M",
+            "N",
+            "O",
+            "P",
+            "Q",
+            "R",
+            "S",
+            "T",
+            "U",
+            "V",
+            "W",
+            "X",
+            "Y",
+            "Z",
+            "a",
+            "b",
+            "c",
+            "d",
+            "e",
+            "f",
+            "g",
+            "h",
+            "i",
+            "j",
+            "k",
+            "l",
+            "m",
+            "n",
+            "o",
+            "p",
+            "q",
+            "r",
+            "s",
+            "t",
+            "u",
+            "v",
+            "w",
+            "x",
+            "y",
+            "z",
+            "AA",
+            "AB",
+            "AC",
+            "AD",
+            "AE",
+            "AF",
+            "AG",
+            "AH",
+            "AI",
+            "AJ",
+            "AK",
+            "AL",
+            "AM",
+            "AN",
+            "AO",
+            "AP",
+            "AQ",
+            "AR",
+            "AS",
+            "AT",
+            "AU",
+            "AV",
+            "AW",
+            "AX",
+            "AY",
+            "AZ",
+            "Ab",
+            "Ac",
+            "Ad",
+            "Af",
+            "Ag",
+            "Ah",
+            "Ai",
+            "Aj",
+            "Ak",
+            "Al",
+            "Am",
+            "An",
+            "Ao",
+            "Ap",
+            "Ar",
+            "As",
+            "At",
+            "Au",
+            "Av",
+            "Aw",
+            "Ax",
+            "Ay",
+            "Az",
+            "BA",
+            "BB",
+            "BC",
+            "BD",
+            "BE",
+            "BF",
+            "BG",
+            "BH",
+            "BI",
+            "BJ",
+            "BK",
+            "BL",
+            "BM",
+            "BN",
+            "BO",
+            "BP",
+            "BR",
+            "BS",
+            "BT",
+            "BU",
+            "BV",
+            "BW",
+            "BX",
+            "BY",
+            "Ba",
+            "Be",
+            "Bg",
+            "Bi",
+            "Bl",
+            "Bo",
+            "Br",
+            "Bs",
+            "Bu",
+            "By",
+            "CA",
+            "CB",
+            "CC",
+            "CD",
+            "CE",
+            "CF",
+            "CG",
+            "CH",
+            "CI",
+            "CK",
+            "CL",
+            "CM",
+            "CN",
+            "CO",
+            "CP",
+            "CR",
+            "CS",
+            "CT",
+            "CU",
+            "CV",
+            "CW",
+            "CX",
+            "CY",
+            "Ca",
+            "Cb",
+            "Cc",
+            "Cd",
+            "Ce",
+            "Ch",
+            "Ci",
+            "Cl",
+            "Co",
+            "Cr",
+            "Cs",
+            "Cu",
+            "Cx",
+            "Cy",
+            "DA",
+            "DB",
+            "DC",
+            "DD",
+            "DE",
+            "DF",
+            "DG",
+            "DH",
+            "DI",
+            "DJ",
+            "DK",
+            "DL",
+            "DM",
+            "DN",
+            "DO",
+            "DP",
+            "DR",
+            "DS",
+            "DT",
+            "DU",
+            "DV",
+            "DW",
+            "DX",
+            "DY",
+            "Da",
+            "Db",
+            "De",
+            "Di",
+            "Do",
+            "Dr",
+            "Ds",
+            "Dt",
+            "Du",
+            "EA",
+            "EB",
+            "EC",
+            "ED",
+            "EE",
+            "EF",
+            "EG",
+            "EH",
+            "EI",
+            "EK",
+            "EL",
+            "EM",
+            "EN",
+            "EO",
+            "EP",
+            "EQ",
+            "ER",
+            "ES",
+            "ET",
+            "EU",
+            "EV",
+            "EW",
+            "EX",
+            "EZ",
+            "Eb",
+            "Ec",
+            "Ed",
+            "Ef",
+            "Ek",
+            "El",
+            "Em",
+            "En",
+            "Ep",
+            "Eq",
+            "Er",
+            "Es",
+            "Et",
+            "Eu",
+            "Ev",
+            "Ex",
+            "Ey",
+            "FA",
+            "FB",
+            "FC",
+            "FD",
+            "FE",
+            "FF",
+            "FG",
+            "FH",
+            "FI",
+            "FK"
+          ],
+          "label_token_ids": [
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            6029,
+            1867,
+            1706,
+            1808,
+            13669,
+            8276,
+            1890,
+            29923,
+            15469,
+            30594,
+            11907,
+            969,
+            1402,
+            1093,
+            18746,
+            2537,
+            92073,
+            934,
+            1911,
+            828,
+            35028,
+            8093,
+            14419,
+            2954,
+            3022,
+            23563,
+            5830,
+            11654,
+            2589,
+            54339,
+            9042,
+            24765,
+            69667,
+            61073,
+            55802,
+            2101,
+            6091,
+            2082,
+            98312,
+            10611,
+            6953,
+            2121,
+            1655,
+            65332,
+            9865,
+            22600,
+            37842,
+            73109,
+            37199,
+            7064,
+            10098,
+            4897,
+            9548,
+            11594,
+            19883,
+            37762,
+            97151,
+            8598,
+            14978,
+            88307,
+            9389,
+            28942,
+            15594,
+            4677,
+            26095,
+            13095,
+            7347,
+            17602,
+            14928,
+            59343,
+            77563,
+            53878,
+            19912,
+            58827,
+            3430,
+            48837,
+            36096,
+            4923,
+            1233,
+            6828,
+            74207,
+            59808,
+            1359,
+            5049,
+            12979,
+            3706,
+            6484,
+            2104,
+            9650,
+            8798,
+            2149,
+            11237,
+            3021,
+            3140,
+            9985,
+            28668,
+            8281,
+            7123,
+            8973,
+            6412,
+            1162,
+            16799,
+            19589,
+            66282,
+            65240,
+            34525,
+            22571,
+            49737,
+            97754,
+            90200,
+            42170,
+            1143,
+            60619,
+            5066,
+            7339,
+            16001,
+            33545,
+            44819,
+            91212,
+            56715,
+            6352,
+            3506,
+            5626,
+            4103,
+            1150,
+            5262,
+            53725,
+            51326,
+            17625,
+            53272,
+            18301,
+            16524,
+            8395,
+            31264,
+            5865,
+            10298,
+            7687,
+            5936,
+            10599,
+            21547,
+            61971,
+            54219,
+            16591,
+            69916,
+            30416,
+            7994,
+            1912,
+            21685,
+            5404,
+            8847,
+            66950,
+            69079,
+            42074,
+            19112,
+            8264,
+            7498,
+            1479,
+            7099,
+            14884,
+            9376,
+            45589,
+            78782,
+            71133,
+            2749,
+            2716,
+            953,
+            6760,
+            9197,
+            54007,
+            640,
+            1570,
+            1348,
+            38807,
+            46010,
+            37779,
+            3257,
+            97278,
+            82414,
+            50730,
+            2715,
+            79686,
+            41917,
+            6582,
+            2269,
+            1702,
+            22373,
+            27312,
+            19462,
+            17360,
+            31860,
+            54118,
+            34112,
+            840,
+            97454,
+            3627,
+            16208,
+            6754,
+            14596,
+            11419,
+            1748,
+            12001,
+            83314,
+            19426,
+            26998
+          ],
+          "thinking": false,
+          "temperature": 1.0,
+          "lora_rank": 8,
+          "lora_scale": 16,
+          "lora_last_layers": 8,
+          "lora_keys": [
+            "q_proj",
+            "v_proj"
+          ],
+          "trainable_parameters": 851968,
+          "policy_arithmetic": {
+            "floating_model_parameters": "float32",
+            "activation_arithmetic": "float32",
+            "quantized_integer_storage": "unchanged uint32 packed 4-bit weights",
+            "adapter_parameters": "float32",
+            "action_policy": "one-token legal categorical distribution",
+            "temperature": 1.0,
+            "thinking": false
+          },
+          "policy_arithmetic_sha256": "0dd0cf0c88a5ba9797be2255a52251d0649869f964e7f0369378eaf5a6ee8e81",
+          "arithmetic_verification": {
+            "floating_tensor_count": 685,
+            "integer_tensor_count": 254,
+            "integer_tensor_hashes_sha256": "16612cc1dc6681fe70a30e0be96722ca708a2bf19804d5fb54a9d8aeef7fe513",
+            "all_floating_parameters_float32": true,
+            "integer_weights_exactly_unchanged": true
+          },
+          "rating_compatibility": "arena-v2-fp32",
+          "checkpoint": "cycle3",
+          "adapter_sha256": "f652d9340fb7c8732982eea0ff3658f6aabcf1157e5f6eacb9d0ae8472ca5e9b"
+        },
+        "learning_rate": 2e-05
+      },
+      "likelihood_gate": {
+        "rows": 352,
+        "max_full_vector_error": 3.62396240234375e-05,
+        "sha256": "28ba022534f4c2c5b7f6d5776bce5a156ff8a67869547f579eb524999b998ccc"
+      },
+      "optimization": {
+        "kl_to_rollout": {
+          "mean": 0.06241003744839737,
+          "max": 0.16700094938278198
+        },
+        "entropy": {
+          "mean": 1.2453233355825597,
+          "max": 1.9195973873138428
+        },
+        "clip_fraction": {
+          "mean": 0.4147727272727273,
+          "max": 1.0
+        },
+        "gradient_norm": {
+          "mean": 15.94928135790608,
+          "max": 64.9863052368164
+        }
+      }
+    }
+  },
+  "rollout_files": {
+    "eval-base-heuristic.jsonl": {
+      "sha256": "f56edbbb144e314fceef0acf5e8d635fc7812bced0f5ead90c7fba4bcb6f3465",
+      "episodes": 18
+    },
+    "eval-base-base.jsonl": {
+      "sha256": "cb5acefa03604223507d9fb2f750e2cd8e58d5cd152f10568c98a39383eee3c2",
+      "episodes": 18
+    },
+    "eval-cycle1-heuristic.jsonl": {
+      "sha256": "d51007e387541baf964454665405f378e1a144d6d23e9c1f777af65190d17338",
+      "episodes": 18
+    },
+    "eval-cycle1-base.jsonl": {
+      "sha256": "394189a731f67cac7a1ad90f9ef69b86b3eff0cc4a7a26c45034559c84ae6aeb",
+      "episodes": 18
+    },
+    "train-rollouts-2.jsonl": {
+      "sha256": "5baf8cd65a23f28d63833b3d676e506f68dea5282e28602b0f14bd570e08b297",
+      "episodes": 24
+    },
+    "eval-cycle2-heuristic.jsonl": {
+      "sha256": "c4f1947d91669e85505195911aea9a42b2ff47196c65fe47646dcbb66045e7bc",
+      "episodes": 18
+    },
+    "eval-cycle2-base.jsonl": {
+      "sha256": "ded1dcd908e130e101d58eed142d450271bee5c7e57b1511f9bc3da0f5bed8a3",
+      "episodes": 18
+    },
+    "eval-cycle2-cycle1.jsonl": {
+      "sha256": "725ec563a62233acc1b36165adbe9d0b9c5893e345382bfbacff64cdb412e27e",
+      "episodes": 18
+    },
+    "train-rollouts-3.jsonl": {
+      "sha256": "687519ed1604d722748138616be5c9ce4bf6a205f780c65d0a97acc7f3000f45",
+      "episodes": 24
+    },
+    "eval-cycle3-heuristic.jsonl": {
+      "sha256": "068a760ed2c8a74c51541adedd247514106e46fad78695660ececf07966debbc",
+      "episodes": 18
+    },
+    "eval-cycle3-base.jsonl": {
+      "sha256": "45c014dda83e697876fbfc168e9fbc08deefa73098fac76558999ba34bd74ee4",
+      "episodes": 18
+    },
+    "eval-cycle3-cycle2.jsonl": {
+      "sha256": "e83635e01e9ea7b5baa6974866278b592aed6085ce568dcc71dcaa9ff2eb26b4",
+      "episodes": 18
+    },
+    "eval-cycle3-cycle1.jsonl": {
+      "sha256": "45a2ef5c5cc4bad02720d99f1957971d24dc466415345d72a683f41d3d76e3ea",
+      "episodes": 18
+    }
+  },
+  "train_eval_families_disjoint": true,
+  "policy_arithmetic_sha256": "0dd0cf0c88a5ba9797be2255a52251d0649869f964e7f0369378eaf5a6ee8e81",
+  "rating_compatibility": "arena-v2-fp32",
+  "evaluation": {
+    "base / base / chess": {
+      "games": 6,
+      "mean_return": 0.0,
+      "positive_outcomes": 2,
+      "zero_outcomes": 2,
+      "negative_outcomes": 2,
+      "termination_reasons": {
+        "material_adjudication_at_cap": 6
+      },
+      "paired_scenario_scores": [
+        {
+          "seed": 2902000,
+          "games": 2,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 2902002,
+          "games": 2,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 2902004,
+          "games": 2,
+          "mean_return": 0.0
+        }
+      ],
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        0.0,
+        0.0
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement.",
+      "chess": {
+        "checkmate_wins": 0,
+        "checkmate_losses": 0,
+        "material_adjudications": 6,
+        "mean_candidate_material_advantage": 0.0
+      }
+    },
+    "base / base / market": {
+      "games": 6,
+      "mean_return": 0.0,
+      "positive_outcomes": 3,
+      "zero_outcomes": 0,
+      "negative_outcomes": 3,
+      "termination_reasons": {
+        "settlement": 6
+      },
+      "paired_scenario_scores": [
+        {
+          "seed": 2900000,
+          "games": 2,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 2900002,
+          "games": 2,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 2900004,
+          "games": 2,
+          "mean_return": 0.0
+        }
+      ],
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        0.0,
+        0.0
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement.",
+      "market": {
+        "mean_absolute_pnl": -3.1666666666666665,
+        "positive_pnl_games": 3,
+        "negative_pnl_games": 3,
+        "absolute_pnl_by_game": [
+          -2,
+          -21,
+          9,
+          5,
+          16,
+          -26
+        ],
+        "mean_filled_units": 4.5,
+        "mean_trade_count": 6.333333333333333,
+        "mean_final_cash": 681.0,
+        "mean_final_inventory": 3.1666666666666665
+      }
+    },
+    "base / base / maze": {
+      "games": 6,
+      "mean_return": 0.0,
+      "positive_outcomes": 3,
+      "zero_outcomes": 0,
+      "negative_outcomes": 3,
+      "termination_reasons": {
+        "distance_adjudication_at_cap": 4,
+        "goal": 2
+      },
+      "paired_scenario_scores": [
+        {
+          "seed": 2901000,
+          "games": 2,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 2901002,
+          "games": 2,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 2901004,
+          "games": 2,
+          "mean_return": 0.0
+        }
+      ],
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        0.0,
+        0.0
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement.",
+      "maze": {
+        "candidate_goal_completions": 1,
+        "actual_goal_wins": 1,
+        "distance_adjudications": 4,
+        "mean_blocks_placed": 2.0
+      }
+    },
+    "base / heuristic / chess": {
+      "games": 6,
+      "mean_return": -0.46666666666666673,
+      "positive_outcomes": 0,
+      "zero_outcomes": 1,
+      "negative_outcomes": 5,
+      "termination_reasons": {
+        "material_adjudication_at_cap": 5,
+        "checkmate": 1
+      },
+      "paired_scenario_scores": [
+        {
+          "seed": 2902000,
+          "games": 2,
+          "mean_return": -0.5
+        },
+        {
+          "seed": 2902002,
+          "games": 2,
+          "mean_return": -0.35
+        },
+        {
+          "seed": 2902004,
+          "games": 2,
+          "mean_return": -0.55
+        }
+      ],
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        -0.5391666666666667,
+        -0.38250000000000006
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement.",
+      "chess": {
+        "checkmate_wins": 0,
+        "checkmate_losses": 1,
+        "material_adjudications": 5,
+        "mean_candidate_material_advantage": -5.166666666666667
+      }
+    },
+    "base / heuristic / market": {
+      "games": 6,
+      "mean_return": -0.39636024453207547,
+      "positive_outcomes": 1,
+      "zero_outcomes": 0,
+      "negative_outcomes": 5,
+      "termination_reasons": {
+        "settlement": 6
+      },
+      "paired_scenario_scores": [
+        {
+          "seed": 2900000,
+          "games": 2,
+          "mean_return": -0.46443286236155046
+        },
+        {
+          "seed": 2900002,
+          "games": 2,
+          "mean_return": -0.12101275971598807
+        },
+        {
+          "seed": 2900004,
+          "games": 2,
+          "mean_return": -0.6036351115186878
+        }
+      ],
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        -0.573474624201308,
+        -0.19542044862252683
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement.",
+      "market": {
+        "mean_absolute_pnl": -2.1666666666666665,
+        "positive_pnl_games": 2,
+        "negative_pnl_games": 4,
+        "absolute_pnl_by_game": [
+          -16,
+          18,
+          9,
+          -2,
+          -2,
+          -20
+        ],
+        "mean_filled_units": 4.666666666666667,
+        "mean_trade_count": 6.333333333333333,
+        "mean_final_cash": 595.1666666666666,
+        "mean_final_inventory": 4.0
+      }
+    },
+    "base / heuristic / maze": {
+      "games": 6,
+      "mean_return": -0.65,
+      "positive_outcomes": 1,
+      "zero_outcomes": 0,
+      "negative_outcomes": 5,
+      "termination_reasons": {
+        "goal": 4,
+        "distance_adjudication_at_cap": 2
+      },
+      "paired_scenario_scores": [
+        {
+          "seed": 2901000,
+          "games": 2,
+          "mean_return": -1.0
+        },
+        {
+          "seed": 2901002,
+          "games": 2,
+          "mean_return": -0.65
+        },
+        {
+          "seed": 2901004,
+          "games": 2,
+          "mean_return": -0.3
+        }
+      ],
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        -0.9241666666666667,
+        -0.3758333333333336
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement.",
+      "maze": {
+        "candidate_goal_completions": 0,
+        "actual_goal_wins": 0,
+        "distance_adjudications": 2,
+        "mean_blocks_placed": 2.0
+      }
+    },
+    "cycle1 / base / chess": {
+      "games": 6,
+      "mean_return": -0.11666666666666665,
+      "positive_outcomes": 1,
+      "zero_outcomes": 3,
+      "negative_outcomes": 2,
+      "termination_reasons": {
+        "material_adjudication_at_cap": 6
+      },
+      "paired_scenario_scores": [
+        {
+          "seed": 2902000,
+          "games": 2,
+          "mean_return": -0.45
+        },
+        {
+          "seed": 2902002,
+          "games": 2,
+          "mean_return": 0.1
+        },
+        {
+          "seed": 2902004,
+          "games": 2,
+          "mean_return": 0.0
+        }
+      ],
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        -0.3525,
+        0.07833333333333327
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement.",
+      "chess": {
+        "checkmate_wins": 0,
+        "checkmate_losses": 0,
+        "material_adjudications": 6,
+        "mean_candidate_material_advantage": -1.1666666666666667
+      }
+    },
+    "cycle1 / base / market": {
+      "games": 6,
+      "mean_return": -0.1954390755187312,
+      "positive_outcomes": 2,
+      "zero_outcomes": 0,
+      "negative_outcomes": 4,
+      "termination_reasons": {
+        "settlement": 6
+      },
+      "paired_scenario_scores": [
+        {
+          "seed": 2900000,
+          "games": 2,
+          "mean_return": -0.46624020424509216
+        },
+        {
+          "seed": 2900002,
+          "games": 2,
+          "mean_return": -0.10026356187193117
+        },
+        {
+          "seed": 2900004,
+          "games": 2,
+          "mean_return": -0.019813460439170205
+        }
+      ],
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        -0.3869452650642406,
+        -0.037244315749601804
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement.",
+      "market": {
+        "mean_absolute_pnl": -7.5,
+        "positive_pnl_games": 3,
+        "negative_pnl_games": 3,
+        "absolute_pnl_by_game": [
+          -40,
+          -5,
+          9,
+          1,
+          16,
+          -26
+        ],
+        "mean_filled_units": 5.166666666666667,
+        "mean_trade_count": 6.5,
+        "mean_final_cash": 712.3333333333334,
+        "mean_final_inventory": 2.8333333333333335
+      }
+    },
+    "cycle1 / base / maze": {
+      "games": 6,
+      "mean_return": 0.033333333333333326,
+      "positive_outcomes": 3,
+      "zero_outcomes": 0,
+      "negative_outcomes": 3,
+      "termination_reasons": {
+        "distance_adjudication_at_cap": 4,
+        "goal": 2
+      },
+      "paired_scenario_scores": [
+        {
+          "seed": 2901000,
+          "games": 2,
+          "mean_return": 0.1
+        },
+        {
+          "seed": 2901002,
+          "games": 2,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 2901004,
+          "games": 2,
+          "mean_return": 0.0
+        }
+      ],
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        0.0,
+        0.07833333333333327
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement.",
+      "maze": {
+        "candidate_goal_completions": 1,
+        "actual_goal_wins": 1,
+        "distance_adjudications": 4,
+        "mean_blocks_placed": 2.0
+      }
+    },
+    "cycle1 / heuristic / chess": {
+      "games": 6,
+      "mean_return": -0.3333333333333333,
+      "positive_outcomes": 0,
+      "zero_outcomes": 2,
+      "negative_outcomes": 4,
+      "termination_reasons": {
+        "material_adjudication_at_cap": 5,
+        "claimed_threefold_repetition": 1
+      },
+      "paired_scenario_scores": [
+        {
+          "seed": 2902000,
+          "games": 2,
+          "mean_return": -0.4
+        },
+        {
+          "seed": 2902002,
+          "games": 2,
+          "mean_return": -0.05
+        },
+        {
+          "seed": 2902004,
+          "games": 2,
+          "mean_return": -0.55
+        }
+      ],
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        -0.5175000000000001,
+        -0.12583333333333357
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement.",
+      "chess": {
+        "checkmate_wins": 0,
+        "checkmate_losses": 0,
+        "material_adjudications": 5,
+        "mean_candidate_material_advantage": -4.333333333333333
+      }
+    },
+    "cycle1 / heuristic / market": {
+      "games": 6,
+      "mean_return": -0.42610175571250003,
+      "positive_outcomes": 1,
+      "zero_outcomes": 0,
+      "negative_outcomes": 5,
+      "termination_reasons": {
+        "settlement": 6
+      },
+      "paired_scenario_scores": [
+        {
+          "seed": 2900000,
+          "games": 2,
+          "mean_return": -0.46443286236155046
+        },
+        {
+          "seed": 2900002,
+          "games": 2,
+          "mean_return": -0.2102372932572619
+        },
+        {
+          "seed": 2900004,
+          "games": 2,
+          "mean_return": -0.6036351115186878
+        }
+      ],
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        -0.573474624201308,
+        -0.26531299989652457
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement.",
+      "market": {
+        "mean_absolute_pnl": -3.8333333333333335,
+        "positive_pnl_games": 2,
+        "negative_pnl_games": 4,
+        "absolute_pnl_by_game": [
+          -16,
+          18,
+          9,
+          -12,
+          -2,
+          -20
+        ],
+        "mean_filled_units": 4.833333333333333,
+        "mean_trade_count": 6.333333333333333,
+        "mean_final_cash": 578.0,
+        "mean_final_inventory": 4.166666666666667
+      }
+    },
+    "cycle1 / heuristic / maze": {
+      "games": 6,
+      "mean_return": -0.7833333333333333,
+      "positive_outcomes": 0,
+      "zero_outcomes": 0,
+      "negative_outcomes": 6,
+      "termination_reasons": {
+        "goal": 4,
+        "distance_adjudication_at_cap": 2
+      },
+      "paired_scenario_scores": [
+        {
+          "seed": 2901000,
+          "games": 2,
+          "mean_return": -1.0
+        },
+        {
+          "seed": 2901002,
+          "games": 2,
+          "mean_return": -0.75
+        },
+        {
+          "seed": 2901004,
+          "games": 2,
+          "mean_return": -0.6
+        }
+      ],
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        -0.9458333333333333,
+        -0.6325000000000001
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement.",
+      "maze": {
+        "candidate_goal_completions": 0,
+        "actual_goal_wins": 0,
+        "distance_adjudications": 2,
+        "mean_blocks_placed": 2.0
+      }
+    },
+    "cycle2 / base / chess": {
+      "games": 6,
+      "mean_return": -0.13333333333333333,
+      "positive_outcomes": 2,
+      "zero_outcomes": 0,
+      "negative_outcomes": 4,
+      "termination_reasons": {
+        "material_adjudication_at_cap": 6
+      },
+      "paired_scenario_scores": [
+        {
+          "seed": 2902000,
+          "games": 2,
+          "mean_return": -0.15000000000000002
+        },
+        {
+          "seed": 2902002,
+          "games": 2,
+          "mean_return": -0.2
+        },
+        {
+          "seed": 2902004,
+          "games": 2,
+          "mean_return": -0.04999999999999999
+        }
+      ],
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        -0.18916666666666668,
+        -0.07166666666666673
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement.",
+      "chess": {
+        "checkmate_wins": 0,
+        "checkmate_losses": 0,
+        "material_adjudications": 6,
+        "mean_candidate_material_advantage": -1.3333333333333333
+      }
+    },
+    "cycle2 / base / market": {
+      "games": 6,
+      "mean_return": -0.10596332852744632,
+      "positive_outcomes": 3,
+      "zero_outcomes": 0,
+      "negative_outcomes": 3,
+      "termination_reasons": {
+        "settlement": 6
+      },
+      "paired_scenario_scores": [
+        {
+          "seed": 2900000,
+          "games": 2,
+          "mean_return": -0.2468417467147727
+        },
+        {
+          "seed": 2900002,
+          "games": 2,
+          "mean_return": -0.07104823886756625
+        },
+        {
+          "seed": 2900004,
+          "games": 2,
+          "mean_return": 0.0
+        }
+      ],
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        -0.20875315334787797,
+        -0.015393785087972739
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement.",
+      "market": {
+        "mean_absolute_pnl": -5.0,
+        "positive_pnl_games": 3,
+        "negative_pnl_games": 3,
+        "absolute_pnl_by_game": [
+          -40,
+          9,
+          9,
+          -2,
+          20,
+          -26
+        ],
+        "mean_filled_units": 4.833333333333333,
+        "mean_trade_count": 6.333333333333333,
+        "mean_final_cash": 679.5,
+        "mean_final_inventory": 3.1666666666666665
+      }
+    },
+    "cycle2 / base / maze": {
+      "games": 6,
+      "mean_return": 0.0666666666666667,
+      "positive_outcomes": 3,
+      "zero_outcomes": 1,
+      "negative_outcomes": 2,
+      "termination_reasons": {
+        "distance_adjudication_at_cap": 4,
+        "goal": 2
+      },
+      "paired_scenario_scores": [
+        {
+          "seed": 2901000,
+          "games": 2,
+          "mean_return": 0.2
+        },
+        {
+          "seed": 2901002,
+          "games": 2,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 2901004,
+          "games": 2,
+          "mean_return": 0.0
+        }
+      ],
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        0.0,
+        0.15666666666666654
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement.",
+      "maze": {
+        "candidate_goal_completions": 1,
+        "actual_goal_wins": 1,
+        "distance_adjudications": 4,
+        "mean_blocks_placed": 2.0
+      }
+    },
+    "cycle2 / cycle1 / chess": {
+      "games": 6,
+      "mean_return": -0.11666666666666665,
+      "positive_outcomes": 1,
+      "zero_outcomes": 1,
+      "negative_outcomes": 4,
+      "termination_reasons": {
+        "material_adjudication_at_cap": 6
+      },
+      "paired_scenario_scores": [
+        {
+          "seed": 2902000,
+          "games": 2,
+          "mean_return": 0.1
+        },
+        {
+          "seed": 2902002,
+          "games": 2,
+          "mean_return": -0.15000000000000002
+        },
+        {
+          "seed": 2902004,
+          "games": 2,
+          "mean_return": -0.3
+        }
+      ],
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        -0.2675,
+        0.04583333333333316
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement.",
+      "chess": {
+        "checkmate_wins": 0,
+        "checkmate_losses": 0,
+        "material_adjudications": 6,
+        "mean_candidate_material_advantage": -1.1666666666666667
+      }
+    },
+    "cycle2 / cycle1 / market": {
+      "games": 6,
+      "mean_return": 0.016342927814511705,
+      "positive_outcomes": 3,
+      "zero_outcomes": 0,
+      "negative_outcomes": 3,
+      "termination_reasons": {
+        "settlement": 6
+      },
+      "paired_scenario_scores": [
+        {
+          "seed": 2900000,
+          "games": 2,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 2900002,
+          "games": 2,
+          "mean_return": 0.029215323004364913
+        },
+        {
+          "seed": 2900004,
+          "games": 2,
+          "mean_return": 0.019813460439170205
+        }
+      ],
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        0.004292916428486879,
+        0.027178252781906054
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement.",
+      "market": {
+        "mean_absolute_pnl": -1.5,
+        "positive_pnl_games": 3,
+        "negative_pnl_games": 3,
+        "absolute_pnl_by_game": [
+          -40,
+          24,
+          15,
+          -2,
+          20,
+          -26
+        ],
+        "mean_filled_units": 5.333333333333333,
+        "mean_trade_count": 7.0,
+        "mean_final_cash": 662.8333333333334,
+        "mean_final_inventory": 3.3333333333333335
+      }
+    },
+    "cycle2 / cycle1 / maze": {
+      "games": 6,
+      "mean_return": 0.033333333333333326,
+      "positive_outcomes": 3,
+      "zero_outcomes": 1,
+      "negative_outcomes": 2,
+      "termination_reasons": {
+        "distance_adjudication_at_cap": 4,
+        "goal": 2
+      },
+      "paired_scenario_scores": [
+        {
+          "seed": 2901000,
+          "games": 2,
+          "mean_return": 0.1
+        },
+        {
+          "seed": 2901002,
+          "games": 2,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 2901004,
+          "games": 2,
+          "mean_return": 0.0
+        }
+      ],
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        0.0,
+        0.07833333333333327
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement.",
+      "maze": {
+        "candidate_goal_completions": 1,
+        "actual_goal_wins": 1,
+        "distance_adjudications": 4,
+        "mean_blocks_placed": 2.0
+      }
+    },
+    "cycle2 / heuristic / chess": {
+      "games": 6,
+      "mean_return": -0.5333333333333333,
+      "positive_outcomes": 0,
+      "zero_outcomes": 0,
+      "negative_outcomes": 6,
+      "termination_reasons": {
+        "material_adjudication_at_cap": 6
+      },
+      "paired_scenario_scores": [
+        {
+          "seed": 2902000,
+          "games": 2,
+          "mean_return": -0.7
+        },
+        {
+          "seed": 2902002,
+          "games": 2,
+          "mean_return": -0.35
+        },
+        {
+          "seed": 2902004,
+          "games": 2,
+          "mean_return": -0.55
+        }
+      ],
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        -0.6675,
+        -0.3933333333333335
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement.",
+      "chess": {
+        "checkmate_wins": 0,
+        "checkmate_losses": 0,
+        "material_adjudications": 6,
+        "mean_candidate_material_advantage": -5.333333333333333
+      }
+    },
+    "cycle2 / heuristic / market": {
+      "games": 6,
+      "mean_return": -0.35885726253216793,
+      "positive_outcomes": 1,
+      "zero_outcomes": 0,
+      "negative_outcomes": 5,
+      "termination_reasons": {
+        "settlement": 6
+      },
+      "paired_scenario_scores": [
+        {
+          "seed": 2900000,
+          "games": 2,
+          "mean_return": -0.3237251785840746
+        },
+        {
+          "seed": 2900002,
+          "games": 2,
+          "mean_return": -0.14921149749374135
+        },
+        {
+          "seed": 2900004,
+          "games": 2,
+          "mean_return": -0.6036351115186878
+        }
+      ],
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        -0.5429879593828549,
+        -0.18702279506331368
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement.",
+      "market": {
+        "mean_absolute_pnl": 0.6666666666666666,
+        "positive_pnl_games": 3,
+        "negative_pnl_games": 3,
+        "absolute_pnl_by_game": [
+          4,
+          18,
+          9,
+          -5,
+          -2,
+          -20
+        ],
+        "mean_filled_units": 4.833333333333333,
+        "mean_trade_count": 6.666666666666667,
+        "mean_final_cash": 577.8333333333334,
+        "mean_final_inventory": 4.166666666666667
+      }
+    },
+    "cycle2 / heuristic / maze": {
+      "games": 6,
+      "mean_return": -0.7166666666666667,
+      "positive_outcomes": 0,
+      "zero_outcomes": 1,
+      "negative_outcomes": 5,
+      "termination_reasons": {
+        "goal": 4,
+        "distance_adjudication_at_cap": 2
+      },
+      "paired_scenario_scores": [
+        {
+          "seed": 2901000,
+          "games": 2,
+          "mean_return": -1.0
+        },
+        {
+          "seed": 2901002,
+          "games": 2,
+          "mean_return": -0.65
+        },
+        {
+          "seed": 2901004,
+          "games": 2,
+          "mean_return": -0.5
+        }
+      ],
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        -0.9241666666666667,
+        -0.5325000000000001
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement.",
+      "maze": {
+        "candidate_goal_completions": 0,
+        "actual_goal_wins": 0,
+        "distance_adjudications": 2,
+        "mean_blocks_placed": 2.0
+      }
+    },
+    "cycle3 / base / chess": {
+      "games": 6,
+      "mean_return": -0.016666666666666663,
+      "positive_outcomes": 3,
+      "zero_outcomes": 0,
+      "negative_outcomes": 3,
+      "termination_reasons": {
+        "material_adjudication_at_cap": 6
+      },
+      "paired_scenario_scores": [
+        {
+          "seed": 2902000,
+          "games": 2,
+          "mean_return": -0.25
+        },
+        {
+          "seed": 2902002,
+          "games": 2,
+          "mean_return": 0.25
+        },
+        {
+          "seed": 2902004,
+          "games": 2,
+          "mean_return": -0.04999999999999999
+        }
+      ],
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        -0.20666666666666667,
+        0.18499999999999978
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement.",
+      "chess": {
+        "checkmate_wins": 0,
+        "checkmate_losses": 0,
+        "material_adjudications": 6,
+        "mean_candidate_material_advantage": -0.16666666666666666
+      }
+    },
+    "cycle3 / base / market": {
+      "games": 6,
+      "mean_return": -0.06309228904581206,
+      "positive_outcomes": 3,
+      "zero_outcomes": 0,
+      "negative_outcomes": 3,
+      "termination_reasons": {
+        "settlement": 6
+      },
+      "paired_scenario_scores": [
+        {
+          "seed": 2900000,
+          "games": 2,
+          "mean_return": -0.09983521211473068
+        },
+        {
+          "seed": 2900002,
+          "games": 2,
+          "mean_return": -0.10026356187193117
+        },
+        {
+          "seed": 2900004,
+          "games": 2,
+          "mean_return": 0.010821906849225682
+        }
+      ],
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        -0.10017075275787106,
+        -0.013153802259631609
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement.",
+      "market": {
+        "mean_absolute_pnl": 0.0,
+        "positive_pnl_games": 4,
+        "negative_pnl_games": 2,
+        "absolute_pnl_by_game": [
+          -30,
+          24,
+          9,
+          1,
+          16,
+          -20
+        ],
+        "mean_filled_units": 5.833333333333333,
+        "mean_trade_count": 6.833333333333333,
+        "mean_final_cash": 677.8333333333334,
+        "mean_final_inventory": 3.1666666666666665
+      }
+    },
+    "cycle3 / base / maze": {
+      "games": 6,
+      "mean_return": 0.19999999999999998,
+      "positive_outcomes": 3,
+      "zero_outcomes": 1,
+      "negative_outcomes": 2,
+      "termination_reasons": {
+        "distance_adjudication_at_cap": 4,
+        "simultaneous_finish": 1,
+        "goal": 1
+      },
+      "paired_scenario_scores": [
+        {
+          "seed": 2901000,
+          "games": 2,
+          "mean_return": 0.1
+        },
+        {
+          "seed": 2901002,
+          "games": 2,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 2901004,
+          "games": 2,
+          "mean_return": 0.5
+        }
+      ],
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        0.021666666666666667,
+        0.41333333333333305
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement.",
+      "maze": {
+        "candidate_goal_completions": 2,
+        "actual_goal_wins": 1,
+        "distance_adjudications": 4,
+        "mean_blocks_placed": 2.0
+      }
+    },
+    "cycle3 / cycle1 / chess": {
+      "games": 6,
+      "mean_return": -0.06666666666666667,
+      "positive_outcomes": 1,
+      "zero_outcomes": 1,
+      "negative_outcomes": 4,
+      "termination_reasons": {
+        "material_adjudication_at_cap": 6
+      },
+      "paired_scenario_scores": [
+        {
+          "seed": 2902000,
+          "games": 2,
+          "mean_return": -0.1
+        },
+        {
+          "seed": 2902002,
+          "games": 2,
+          "mean_return": -0.15000000000000002
+        },
+        {
+          "seed": 2902004,
+          "games": 2,
+          "mean_return": 0.04999999999999999
+        }
+      ],
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        -0.13916666666666666,
+        0.01749999999999988
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement.",
+      "chess": {
+        "checkmate_wins": 0,
+        "checkmate_losses": 0,
+        "material_adjudications": 6,
+        "mean_candidate_material_advantage": -0.6666666666666666
+      }
+    },
+    "cycle3 / cycle1 / market": {
+      "games": 6,
+      "mean_return": -0.023066614942111596,
+      "positive_outcomes": 3,
+      "zero_outcomes": 0,
+      "negative_outcomes": 3,
+      "termination_reasons": {
+        "settlement": 6
+      },
+      "paired_scenario_scores": [
+        {
+          "seed": 2900000,
+          "games": 2,
+          "mean_return": -0.09983521211473068
+        },
+        {
+          "seed": 2900002,
+          "games": 2,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 2900004,
+          "games": 2,
+          "mean_return": 0.030635367288395887
+        }
+      ],
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        -0.07820424948987237,
+        0.02399770437591009
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement.",
+      "market": {
+        "mean_absolute_pnl": 1.6666666666666667,
+        "positive_pnl_games": 4,
+        "negative_pnl_games": 2,
+        "absolute_pnl_by_game": [
+          -30,
+          24,
+          15,
+          1,
+          20,
+          -20
+        ],
+        "mean_filled_units": 5.833333333333333,
+        "mean_trade_count": 6.666666666666667,
+        "mean_final_cash": 710.8333333333334,
+        "mean_final_inventory": 2.8333333333333335
+      }
+    },
+    "cycle3 / cycle1 / maze": {
+      "games": 6,
+      "mean_return": 0.16666666666666666,
+      "positive_outcomes": 3,
+      "zero_outcomes": 1,
+      "negative_outcomes": 2,
+      "termination_reasons": {
+        "distance_adjudication_at_cap": 4,
+        "simultaneous_finish": 1,
+        "goal": 1
+      },
+      "paired_scenario_scores": [
+        {
+          "seed": 2901000,
+          "games": 2,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 2901002,
+          "games": 2,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 2901004,
+          "games": 2,
+          "mean_return": 0.5
+        }
+      ],
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        0.0,
+        0.3916666666666663
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement.",
+      "maze": {
+        "candidate_goal_completions": 2,
+        "actual_goal_wins": 1,
+        "distance_adjudications": 4,
+        "mean_blocks_placed": 2.0
+      }
+    },
+    "cycle3 / cycle2 / chess": {
+      "games": 6,
+      "mean_return": 0.06666666666666667,
+      "positive_outcomes": 3,
+      "zero_outcomes": 3,
+      "negative_outcomes": 0,
+      "termination_reasons": {
+        "material_adjudication_at_cap": 6
+      },
+      "paired_scenario_scores": [
+        {
+          "seed": 2902000,
+          "games": 2,
+          "mean_return": 0.15000000000000002
+        },
+        {
+          "seed": 2902002,
+          "games": 2,
+          "mean_return": 0.05
+        },
+        {
+          "seed": 2902004,
+          "games": 2,
+          "mean_return": 0.0
+        }
+      ],
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        0.010833333333333334,
+        0.12833333333333327
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement.",
+      "chess": {
+        "checkmate_wins": 0,
+        "checkmate_losses": 0,
+        "material_adjudications": 6,
+        "mean_candidate_material_advantage": 0.6666666666666666
+      }
+    },
+    "cycle3 / cycle2 / market": {
+      "games": 6,
+      "mean_return": -0.039409542756623304,
+      "positive_outcomes": 3,
+      "zero_outcomes": 0,
+      "negative_outcomes": 3,
+      "termination_reasons": {
+        "settlement": 6
+      },
+      "paired_scenario_scores": [
+        {
+          "seed": 2900000,
+          "games": 2,
+          "mean_return": -0.09983521211473068
+        },
+        {
+          "seed": 2900002,
+          "games": 2,
+          "mean_return": -0.029215323004364913
+        },
+        {
+          "seed": 2900004,
+          "games": 2,
+          "mean_return": 0.010821906849225682
+        }
+      ],
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        -0.08453423614081809,
+        0.0021471737142810246
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement.",
+      "market": {
+        "mean_absolute_pnl": 0.0,
+        "positive_pnl_games": 4,
+        "negative_pnl_games": 2,
+        "absolute_pnl_by_game": [
+          -30,
+          24,
+          9,
+          1,
+          16,
+          -20
+        ],
+        "mean_filled_units": 5.833333333333333,
+        "mean_trade_count": 7.0,
+        "mean_final_cash": 677.8333333333334,
+        "mean_final_inventory": 3.1666666666666665
+      }
+    },
+    "cycle3 / cycle2 / maze": {
+      "games": 6,
+      "mean_return": 0.16666666666666666,
+      "positive_outcomes": 3,
+      "zero_outcomes": 1,
+      "negative_outcomes": 2,
+      "termination_reasons": {
+        "distance_adjudication_at_cap": 4,
+        "simultaneous_finish": 1,
+        "goal": 1
+      },
+      "paired_scenario_scores": [
+        {
+          "seed": 2901000,
+          "games": 2,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 2901002,
+          "games": 2,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 2901004,
+          "games": 2,
+          "mean_return": 0.5
+        }
+      ],
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        0.0,
+        0.3916666666666663
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement.",
+      "maze": {
+        "candidate_goal_completions": 2,
+        "actual_goal_wins": 1,
+        "distance_adjudications": 4,
+        "mean_blocks_placed": 2.0
+      }
+    },
+    "cycle3 / heuristic / chess": {
+      "games": 6,
+      "mean_return": -0.5333333333333333,
+      "positive_outcomes": 0,
+      "zero_outcomes": 0,
+      "negative_outcomes": 6,
+      "termination_reasons": {
+        "material_adjudication_at_cap": 6
+      },
+      "paired_scenario_scores": [
+        {
+          "seed": 2902000,
+          "games": 2,
+          "mean_return": -0.7
+        },
+        {
+          "seed": 2902002,
+          "games": 2,
+          "mean_return": -0.35
+        },
+        {
+          "seed": 2902004,
+          "games": 2,
+          "mean_return": -0.55
+        }
+      ],
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        -0.6675,
+        -0.3933333333333335
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement.",
+      "chess": {
+        "checkmate_wins": 0,
+        "checkmate_losses": 0,
+        "material_adjudications": 6,
+        "mean_candidate_material_advantage": -5.333333333333333
+      }
+    },
+    "cycle3 / heuristic / market": {
+      "games": 6,
+      "mean_return": -0.37969021747365134,
+      "positive_outcomes": 1,
+      "zero_outcomes": 0,
+      "negative_outcomes": 5,
+      "termination_reasons": {
+        "settlement": 6
+      },
+      "paired_scenario_scores": [
+        {
+          "seed": 2900000,
+          "games": 2,
+          "mean_return": -0.43379749507315457
+        },
+        {
+          "seed": 2900002,
+          "games": 2,
+          "mean_return": -0.1016380458291116
+        },
+        {
+          "seed": 2900004,
+          "games": 2,
+          "mean_return": -0.6036351115186878
+        }
+      ],
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        -0.5668369612888222,
+        -0.17360592649865447
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement.",
+      "market": {
+        "mean_absolute_pnl": -2.1666666666666665,
+        "positive_pnl_games": 2,
+        "negative_pnl_games": 4,
+        "absolute_pnl_by_game": [
+          -12,
+          18,
+          9,
+          -6,
+          -2,
+          -20
+        ],
+        "mean_filled_units": 4.5,
+        "mean_trade_count": 6.166666666666667,
+        "mean_final_cash": 610.6666666666666,
+        "mean_final_inventory": 3.8333333333333335
+      }
+    },
+    "cycle3 / heuristic / maze": {
+      "games": 6,
+      "mean_return": -0.75,
+      "positive_outcomes": 0,
+      "zero_outcomes": 0,
+      "negative_outcomes": 6,
+      "termination_reasons": {
+        "goal": 4,
+        "distance_adjudication_at_cap": 2
+      },
+      "paired_scenario_scores": [
+        {
+          "seed": 2901000,
+          "games": 2,
+          "mean_return": -1.0
+        },
+        {
+          "seed": 2901002,
+          "games": 2,
+          "mean_return": -0.65
+        },
+        {
+          "seed": 2901004,
+          "games": 2,
+          "mean_return": -0.6
+        }
+      ],
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        -0.9241666666666667,
+        -0.6108333333333333
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement.",
+      "maze": {
+        "candidate_goal_completions": 0,
+        "actual_goal_wins": 0,
+        "distance_adjudications": 2,
+        "mean_blocks_placed": 2.0
+      }
+    }
+  },
+  "paired_checkpoint_changes": [
+    {
+      "before": "base",
+      "after": "cycle1",
+      "opponent": "base",
+      "environment": "chess",
+      "mean_return_change": -0.11666666666666665,
+      "paired_scenario_changes": [
+        {
+          "seed": 2902000,
+          "mean_return_change": -0.45
+        },
+        {
+          "seed": 2902002,
+          "mean_return_change": 0.10000000000000003
+        },
+        {
+          "seed": 2902004,
+          "mean_return_change": 0.0
+        }
+      ],
+      "positive_scenario_changes": 1,
+      "negative_scenario_changes": 1,
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        -0.3525,
+        0.0783333333333333
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement."
+    },
+    {
+      "before": "base",
+      "after": "cycle1",
+      "opponent": "base",
+      "environment": "market",
+      "mean_return_change": -0.1954390755187312,
+      "paired_scenario_changes": [
+        {
+          "seed": 2900000,
+          "mean_return_change": -0.4662402042450922
+        },
+        {
+          "seed": 2900002,
+          "mean_return_change": -0.10026356187193117
+        },
+        {
+          "seed": 2900004,
+          "mean_return_change": -0.019813460439170205
+        }
+      ],
+      "positive_scenario_changes": 0,
+      "negative_scenario_changes": 3,
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        -0.38694526506424065,
+        -0.037244315749601804
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement."
+    },
+    {
+      "before": "base",
+      "after": "cycle1",
+      "opponent": "base",
+      "environment": "maze",
+      "mean_return_change": 0.03333333333333333,
+      "paired_scenario_changes": [
+        {
+          "seed": 2901000,
+          "mean_return_change": 0.1
+        },
+        {
+          "seed": 2901002,
+          "mean_return_change": 0.0
+        },
+        {
+          "seed": 2901004,
+          "mean_return_change": 0.0
+        }
+      ],
+      "positive_scenario_changes": 1,
+      "negative_scenario_changes": 0,
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        0.0,
+        0.07833333333333327
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement."
+    },
+    {
+      "before": "base",
+      "after": "cycle1",
+      "opponent": "heuristic",
+      "environment": "chess",
+      "mean_return_change": 0.13333333333333333,
+      "paired_scenario_changes": [
+        {
+          "seed": 2902000,
+          "mean_return_change": 0.09999999999999998
+        },
+        {
+          "seed": 2902002,
+          "mean_return_change": 0.3
+        },
+        {
+          "seed": 2902004,
+          "mean_return_change": 0.0
+        }
+      ],
+      "positive_scenario_changes": 2,
+      "negative_scenario_changes": 0,
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        0.02166666666666666,
+        0.2566666666666665
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement."
+    },
+    {
+      "before": "base",
+      "after": "cycle1",
+      "opponent": "heuristic",
+      "environment": "market",
+      "mean_return_change": -0.029741511180424608,
+      "paired_scenario_changes": [
+        {
+          "seed": 2900000,
+          "mean_return_change": 0.0
+        },
+        {
+          "seed": 2900002,
+          "mean_return_change": -0.08922453354127383
+        },
+        {
+          "seed": 2900004,
+          "mean_return_change": 0.0
+        }
+      ],
+      "positive_scenario_changes": 0,
+      "negative_scenario_changes": 1,
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        -0.06989255127399784,
+        0.0
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement."
+    },
+    {
+      "before": "base",
+      "after": "cycle1",
+      "opponent": "heuristic",
+      "environment": "maze",
+      "mean_return_change": -0.13333333333333333,
+      "paired_scenario_changes": [
+        {
+          "seed": 2901000,
+          "mean_return_change": 0.0
+        },
+        {
+          "seed": 2901002,
+          "mean_return_change": -0.1
+        },
+        {
+          "seed": 2901004,
+          "mean_return_change": -0.30000000000000004
+        }
+      ],
+      "positive_scenario_changes": 0,
+      "negative_scenario_changes": 2,
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        -0.2566666666666667,
+        -0.021666666666666737
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement."
+    },
+    {
+      "before": "base",
+      "after": "cycle2",
+      "opponent": "base",
+      "environment": "chess",
+      "mean_return_change": -0.13333333333333333,
+      "paired_scenario_changes": [
+        {
+          "seed": 2902000,
+          "mean_return_change": -0.15000000000000002
+        },
+        {
+          "seed": 2902002,
+          "mean_return_change": -0.19999999999999996
+        },
+        {
+          "seed": 2902004,
+          "mean_return_change": -0.04999999999999999
+        }
+      ],
+      "positive_scenario_changes": 0,
+      "negative_scenario_changes": 3,
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        -0.18916666666666665,
+        -0.07166666666666673
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement."
+    },
+    {
+      "before": "base",
+      "after": "cycle2",
+      "opponent": "base",
+      "environment": "market",
+      "mean_return_change": -0.10596332852744632,
+      "paired_scenario_changes": [
+        {
+          "seed": 2900000,
+          "mean_return_change": -0.24684174671477271
+        },
+        {
+          "seed": 2900002,
+          "mean_return_change": -0.07104823886756625
+        },
+        {
+          "seed": 2900004,
+          "mean_return_change": 0.0
+        }
+      ],
+      "positive_scenario_changes": 0,
+      "negative_scenario_changes": 2,
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        -0.20875315334787797,
+        -0.015393785087972739
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement."
+    },
+    {
+      "before": "base",
+      "after": "cycle2",
+      "opponent": "base",
+      "environment": "maze",
+      "mean_return_change": 0.06666666666666667,
+      "paired_scenario_changes": [
+        {
+          "seed": 2901000,
+          "mean_return_change": 0.2
+        },
+        {
+          "seed": 2901002,
+          "mean_return_change": 0.0
+        },
+        {
+          "seed": 2901004,
+          "mean_return_change": 0.0
+        }
+      ],
+      "positive_scenario_changes": 1,
+      "negative_scenario_changes": 0,
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        0.0,
+        0.15666666666666654
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement."
+    },
+    {
+      "before": "base",
+      "after": "cycle2",
+      "opponent": "heuristic",
+      "environment": "chess",
+      "mean_return_change": -0.06666666666666667,
+      "paired_scenario_changes": [
+        {
+          "seed": 2902000,
+          "mean_return_change": -0.2
+        },
+        {
+          "seed": 2902002,
+          "mean_return_change": 0.0
+        },
+        {
+          "seed": 2902004,
+          "mean_return_change": 0.0
+        }
+      ],
+      "positive_scenario_changes": 0,
+      "negative_scenario_changes": 1,
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        -0.15666666666666668,
+        0.0
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement."
+    },
+    {
+      "before": "base",
+      "after": "cycle2",
+      "opponent": "heuristic",
+      "environment": "market",
+      "mean_return_change": 0.03750298199990753,
+      "paired_scenario_changes": [
+        {
+          "seed": 2900000,
+          "mean_return_change": 0.14070768377747586
+        },
+        {
+          "seed": 2900002,
+          "mean_return_change": -0.02819873777775328
+        },
+        {
+          "seed": 2900004,
+          "mean_return_change": 0.0
+        }
+      ],
+      "positive_scenario_changes": 1,
+      "negative_scenario_changes": 1,
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        -0.02208901125924007,
+        0.11022101895902266
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement."
+    },
+    {
+      "before": "base",
+      "after": "cycle2",
+      "opponent": "heuristic",
+      "environment": "maze",
+      "mean_return_change": -0.06666666666666667,
+      "paired_scenario_changes": [
+        {
+          "seed": 2901000,
+          "mean_return_change": 0.0
+        },
+        {
+          "seed": 2901002,
+          "mean_return_change": 0.0
+        },
+        {
+          "seed": 2901004,
+          "mean_return_change": -0.2
+        }
+      ],
+      "positive_scenario_changes": 0,
+      "negative_scenario_changes": 1,
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        -0.15666666666666668,
+        0.0
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement."
+    },
+    {
+      "before": "base",
+      "after": "cycle3",
+      "opponent": "base",
+      "environment": "chess",
+      "mean_return_change": -0.016666666666666663,
+      "paired_scenario_changes": [
+        {
+          "seed": 2902000,
+          "mean_return_change": -0.25
+        },
+        {
+          "seed": 2902002,
+          "mean_return_change": 0.25
+        },
+        {
+          "seed": 2902004,
+          "mean_return_change": -0.04999999999999999
+        }
+      ],
+      "positive_scenario_changes": 1,
+      "negative_scenario_changes": 2,
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        -0.20666666666666667,
+        0.18499999999999978
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement."
+    },
+    {
+      "before": "base",
+      "after": "cycle3",
+      "opponent": "base",
+      "environment": "market",
+      "mean_return_change": -0.06309228904581206,
+      "paired_scenario_changes": [
+        {
+          "seed": 2900000,
+          "mean_return_change": -0.09983521211473068
+        },
+        {
+          "seed": 2900002,
+          "mean_return_change": -0.10026356187193117
+        },
+        {
+          "seed": 2900004,
+          "mean_return_change": 0.010821906849225682
+        }
+      ],
+      "positive_scenario_changes": 1,
+      "negative_scenario_changes": 2,
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        -0.10017075275787106,
+        -0.013153802259631609
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement."
+    },
+    {
+      "before": "base",
+      "after": "cycle3",
+      "opponent": "base",
+      "environment": "maze",
+      "mean_return_change": 0.19999999999999998,
+      "paired_scenario_changes": [
+        {
+          "seed": 2901000,
+          "mean_return_change": 0.1
+        },
+        {
+          "seed": 2901002,
+          "mean_return_change": 0.0
+        },
+        {
+          "seed": 2901004,
+          "mean_return_change": 0.5
+        }
+      ],
+      "positive_scenario_changes": 2,
+      "negative_scenario_changes": 0,
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        0.021666666666666667,
+        0.41333333333333305
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement."
+    },
+    {
+      "before": "base",
+      "after": "cycle3",
+      "opponent": "heuristic",
+      "environment": "chess",
+      "mean_return_change": -0.06666666666666667,
+      "paired_scenario_changes": [
+        {
+          "seed": 2902000,
+          "mean_return_change": -0.2
+        },
+        {
+          "seed": 2902002,
+          "mean_return_change": 0.0
+        },
+        {
+          "seed": 2902004,
+          "mean_return_change": 0.0
+        }
+      ],
+      "positive_scenario_changes": 0,
+      "negative_scenario_changes": 1,
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        -0.15666666666666668,
+        0.0
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement."
+    },
+    {
+      "before": "base",
+      "after": "cycle3",
+      "opponent": "heuristic",
+      "environment": "market",
+      "mean_return_change": 0.01667002705842412,
+      "paired_scenario_changes": [
+        {
+          "seed": 2900000,
+          "mean_return_change": 0.030635367288395887
+        },
+        {
+          "seed": 2900002,
+          "mean_return_change": 0.019374713886876477
+        },
+        {
+          "seed": 2900004,
+          "mean_return_change": 0.0
+        }
+      ],
+      "positive_scenario_changes": 2,
+      "negative_scenario_changes": 0,
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        0.004197854675489903,
+        0.028195559051400008
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement."
+    },
+    {
+      "before": "base",
+      "after": "cycle3",
+      "opponent": "heuristic",
+      "environment": "maze",
+      "mean_return_change": -0.10000000000000002,
+      "paired_scenario_changes": [
+        {
+          "seed": 2901000,
+          "mean_return_change": 0.0
+        },
+        {
+          "seed": 2901002,
+          "mean_return_change": 0.0
+        },
+        {
+          "seed": 2901004,
+          "mean_return_change": -0.30000000000000004
+        }
+      ],
+      "positive_scenario_changes": 0,
+      "negative_scenario_changes": 1,
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        -0.23500000000000004,
+        0.0
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement."
+    },
+    {
+      "before": "cycle1",
+      "after": "cycle2",
+      "opponent": "base",
+      "environment": "chess",
+      "mean_return_change": -0.01666666666666668,
+      "paired_scenario_changes": [
+        {
+          "seed": 2902000,
+          "mean_return_change": 0.3
+        },
+        {
+          "seed": 2902002,
+          "mean_return_change": -0.30000000000000004
+        },
+        {
+          "seed": 2902004,
+          "mean_return_change": -0.04999999999999999
+        }
+      ],
+      "positive_scenario_changes": 1,
+      "negative_scenario_changes": 2,
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        -0.24583333333333338,
+        0.22416666666666643
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement."
+    },
+    {
+      "before": "cycle1",
+      "after": "cycle2",
+      "opponent": "base",
+      "environment": "market",
+      "mean_return_change": 0.08947574699128487,
+      "paired_scenario_changes": [
+        {
+          "seed": 2900000,
+          "mean_return_change": 0.2193984575303195
+        },
+        {
+          "seed": 2900002,
+          "mean_return_change": 0.029215323004364913
+        },
+        {
+          "seed": 2900004,
+          "mean_return_change": 0.019813460439170205
+        }
+      ],
+      "positive_scenario_changes": 3,
+      "negative_scenario_changes": 0,
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        0.021850530661629057,
+        0.17819211171636254
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement."
+    },
+    {
+      "before": "cycle1",
+      "after": "cycle2",
+      "opponent": "base",
+      "environment": "maze",
+      "mean_return_change": 0.03333333333333333,
+      "paired_scenario_changes": [
+        {
+          "seed": 2901000,
+          "mean_return_change": 0.1
+        },
+        {
+          "seed": 2901002,
+          "mean_return_change": 0.0
+        },
+        {
+          "seed": 2901004,
+          "mean_return_change": 0.0
+        }
+      ],
+      "positive_scenario_changes": 1,
+      "negative_scenario_changes": 0,
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        0.0,
+        0.07833333333333327
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement."
+    },
+    {
+      "before": "cycle1",
+      "after": "cycle2",
+      "opponent": "heuristic",
+      "environment": "chess",
+      "mean_return_change": -0.19999999999999998,
+      "paired_scenario_changes": [
+        {
+          "seed": 2902000,
+          "mean_return_change": -0.3
+        },
+        {
+          "seed": 2902002,
+          "mean_return_change": -0.3
+        },
+        {
+          "seed": 2902004,
+          "mean_return_change": 0.0
+        }
+      ],
+      "positive_scenario_changes": 0,
+      "negative_scenario_changes": 2,
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        -0.3,
+        -0.06500000000000021
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement."
+    },
+    {
+      "before": "cycle1",
+      "after": "cycle2",
+      "opponent": "heuristic",
+      "environment": "market",
+      "mean_return_change": 0.06724449318033214,
+      "paired_scenario_changes": [
+        {
+          "seed": 2900000,
+          "mean_return_change": 0.14070768377747586
+        },
+        {
+          "seed": 2900002,
+          "mean_return_change": 0.061025795763520546
+        },
+        {
+          "seed": 2900004,
+          "mean_return_change": 0.0
+        }
+      ],
+      "positive_scenario_changes": 2,
+      "negative_scenario_changes": 0,
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        0.013222255748762787,
+        0.12344327470778549
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement."
+    },
+    {
+      "before": "cycle1",
+      "after": "cycle2",
+      "opponent": "heuristic",
+      "environment": "maze",
+      "mean_return_change": 0.06666666666666667,
+      "paired_scenario_changes": [
+        {
+          "seed": 2901000,
+          "mean_return_change": 0.0
+        },
+        {
+          "seed": 2901002,
+          "mean_return_change": 0.1
+        },
+        {
+          "seed": 2901004,
+          "mean_return_change": 0.1
+        }
+      ],
+      "positive_scenario_changes": 2,
+      "negative_scenario_changes": 0,
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        0.021666666666666667,
+        0.10000000000000002
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement."
+    },
+    {
+      "before": "cycle1",
+      "after": "cycle3",
+      "opponent": "base",
+      "environment": "chess",
+      "mean_return_change": 0.09999999999999999,
+      "paired_scenario_changes": [
+        {
+          "seed": 2902000,
+          "mean_return_change": 0.2
+        },
+        {
+          "seed": 2902002,
+          "mean_return_change": 0.14999999999999997
+        },
+        {
+          "seed": 2902004,
+          "mean_return_change": -0.04999999999999999
+        }
+      ],
+      "positive_scenario_changes": 2,
+      "negative_scenario_changes": 1,
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        -0.0066666666666666645,
+        0.18916666666666665
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement."
+    },
+    {
+      "before": "cycle1",
+      "after": "cycle3",
+      "opponent": "base",
+      "environment": "market",
+      "mean_return_change": 0.13234678647291911,
+      "paired_scenario_changes": [
+        {
+          "seed": 2900000,
+          "mean_return_change": 0.3664049921303615
+        },
+        {
+          "seed": 2900002,
+          "mean_return_change": 0.0
+        },
+        {
+          "seed": 2900004,
+          "mean_return_change": 0.030635367288395887
+        }
+      ],
+      "positive_scenario_changes": 2,
+      "negative_scenario_changes": 0,
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        0.006637662912485775,
+        0.2936549067479353
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement."
+    },
+    {
+      "before": "cycle1",
+      "after": "cycle3",
+      "opponent": "base",
+      "environment": "maze",
+      "mean_return_change": 0.16666666666666666,
+      "paired_scenario_changes": [
+        {
+          "seed": 2901000,
+          "mean_return_change": 0.0
+        },
+        {
+          "seed": 2901002,
+          "mean_return_change": 0.0
+        },
+        {
+          "seed": 2901004,
+          "mean_return_change": 0.5
+        }
+      ],
+      "positive_scenario_changes": 1,
+      "negative_scenario_changes": 0,
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        0.0,
+        0.3916666666666663
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement."
+    },
+    {
+      "before": "cycle1",
+      "after": "cycle3",
+      "opponent": "heuristic",
+      "environment": "chess",
+      "mean_return_change": -0.19999999999999998,
+      "paired_scenario_changes": [
+        {
+          "seed": 2902000,
+          "mean_return_change": -0.3
+        },
+        {
+          "seed": 2902002,
+          "mean_return_change": -0.3
+        },
+        {
+          "seed": 2902004,
+          "mean_return_change": 0.0
+        }
+      ],
+      "positive_scenario_changes": 0,
+      "negative_scenario_changes": 2,
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        -0.3,
+        -0.06500000000000021
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement."
+    },
+    {
+      "before": "cycle1",
+      "after": "cycle3",
+      "opponent": "heuristic",
+      "environment": "market",
+      "mean_return_change": 0.04641153823884873,
+      "paired_scenario_changes": [
+        {
+          "seed": 2900000,
+          "mean_return_change": 0.030635367288395887
+        },
+        {
+          "seed": 2900002,
+          "mean_return_change": 0.1085992474281503
+        },
+        {
+          "seed": 2900004,
+          "mean_return_change": 0.0
+        }
+      ],
+      "positive_scenario_changes": 2,
+      "negative_scenario_changes": 0,
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        0.006637662912485775,
+        0.09170707339787013
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement."
+    },
+    {
+      "before": "cycle1",
+      "after": "cycle3",
+      "opponent": "heuristic",
+      "environment": "maze",
+      "mean_return_change": 0.03333333333333333,
+      "paired_scenario_changes": [
+        {
+          "seed": 2901000,
+          "mean_return_change": 0.0
+        },
+        {
+          "seed": 2901002,
+          "mean_return_change": 0.1
+        },
+        {
+          "seed": 2901004,
+          "mean_return_change": 0.0
+        }
+      ],
+      "positive_scenario_changes": 1,
+      "negative_scenario_changes": 0,
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        0.0,
+        0.07833333333333327
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement."
+    },
+    {
+      "before": "cycle2",
+      "after": "cycle3",
+      "opponent": "base",
+      "environment": "chess",
+      "mean_return_change": 0.11666666666666665,
+      "paired_scenario_changes": [
+        {
+          "seed": 2902000,
+          "mean_return_change": -0.1
+        },
+        {
+          "seed": 2902002,
+          "mean_return_change": 0.44999999999999996
+        },
+        {
+          "seed": 2902004,
+          "mean_return_change": 0.0
+        }
+      ],
+      "positive_scenario_changes": 1,
+      "negative_scenario_changes": 1,
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        -0.07833333333333334,
+        0.35249999999999965
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement."
+    },
+    {
+      "before": "cycle2",
+      "after": "cycle3",
+      "opponent": "base",
+      "environment": "market",
+      "mean_return_change": 0.04287103948163426,
+      "paired_scenario_changes": [
+        {
+          "seed": 2900000,
+          "mean_return_change": 0.147006534600042
+        },
+        {
+          "seed": 2900002,
+          "mean_return_change": -0.029215323004364913
+        },
+        {
+          "seed": 2900004,
+          "mean_return_change": 0.010821906849225682
+        }
+      ],
+      "positive_scenario_changes": 2,
+      "negative_scenario_changes": 1,
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        -0.020540589869420284,
+        0.11749986525403171
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement."
+    },
+    {
+      "before": "cycle2",
+      "after": "cycle3",
+      "opponent": "base",
+      "environment": "maze",
+      "mean_return_change": 0.13333333333333333,
+      "paired_scenario_changes": [
+        {
+          "seed": 2901000,
+          "mean_return_change": -0.1
+        },
+        {
+          "seed": 2901002,
+          "mean_return_change": 0.0
+        },
+        {
+          "seed": 2901004,
+          "mean_return_change": 0.5
+        }
+      ],
+      "positive_scenario_changes": 1,
+      "negative_scenario_changes": 1,
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        -0.07833333333333334,
+        0.3916666666666663
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement."
+    },
+    {
+      "before": "cycle2",
+      "after": "cycle3",
+      "opponent": "heuristic",
+      "environment": "chess",
+      "mean_return_change": 0.0,
+      "paired_scenario_changes": [
+        {
+          "seed": 2902000,
+          "mean_return_change": 0.0
+        },
+        {
+          "seed": 2902002,
+          "mean_return_change": 0.0
+        },
+        {
+          "seed": 2902004,
+          "mean_return_change": 0.0
+        }
+      ],
+      "positive_scenario_changes": 0,
+      "negative_scenario_changes": 0,
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        0.0,
+        0.0
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement."
+    },
+    {
+      "before": "cycle2",
+      "after": "cycle3",
+      "opponent": "heuristic",
+      "environment": "market",
+      "mean_return_change": -0.020832954941483406,
+      "paired_scenario_changes": [
+        {
+          "seed": 2900000,
+          "mean_return_change": -0.11007231648907997
+        },
+        {
+          "seed": 2900002,
+          "mean_return_change": 0.04757345166462976
+        },
+        {
+          "seed": 2900004,
+          "mean_return_change": 0.0
+        }
+      ],
+      "positive_scenario_changes": 1,
+      "negative_scenario_changes": 1,
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        -0.08622331458311264,
+        0.03726587047062661
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement."
+    },
+    {
+      "before": "cycle2",
+      "after": "cycle3",
+      "opponent": "heuristic",
+      "environment": "maze",
+      "mean_return_change": -0.03333333333333333,
+      "paired_scenario_changes": [
+        {
+          "seed": 2901000,
+          "mean_return_change": 0.0
+        },
+        {
+          "seed": 2901002,
+          "mean_return_change": 0.0
+        },
+        {
+          "seed": 2901004,
+          "mean_return_change": -0.1
+        }
+      ],
+      "positive_scenario_changes": 0,
+      "negative_scenario_changes": 1,
+      "scenario_clusters": 3,
+      "descriptive_bootstrap_95_interval": [
+        -0.07833333333333334,
+        0.0
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement."
+    }
+  ],
+  "macro_fixed_opponent_return": {
+    "base": {
+      "mean_return": -0.25217115186645706,
+      "available_environment_opponent_cells": 6,
+      "note": "Equal weight for each environment and fixed opponent; compare only complete six-cell checkpoints."
+    },
+    "cycle1": {
+      "mean_return": -0.3035901385385385,
+      "available_environment_opponent_cells": 6,
+      "note": "Equal weight for each environment and fixed opponent; compare only complete six-cell checkpoints."
+    },
+    "cycle2": {
+      "mean_return": -0.2969145429543802,
+      "available_environment_opponent_cells": 6,
+      "note": "Equal weight for each environment and fixed opponent; compare only complete six-cell checkpoints."
+    },
+    "cycle3": {
+      "mean_return": -0.2571304177532439,
+      "available_environment_opponent_cells": 6,
+      "note": "Equal weight for each environment and fixed opponent; compare only complete six-cell checkpoints."
+    }
+  },
+  "training_signal": {
+    "cycle1 / chess": {
+      "episodes": 8,
+      "transitions": 128,
+      "roles": {
+        "0": {
+          "episode_returns": [
+            -0.5,
+            0.0,
+            -0.5,
+            0.0,
+            0.5,
+            0.0,
+            0.0,
+            -0.5
+          ],
+          "mean_return": -0.125,
+          "return_std": 0.33071891388307384,
+          "loo_advantages": [
+            -0.4285714285714286,
+            0.14285714285714285,
+            -0.4285714285714286,
+            0.14285714285714285,
+            0.7142857142857143,
+            0.14285714285714285,
+            0.14285714285714285,
+            -0.4285714285714286
+          ],
+          "positive_advantage_episodes": 5,
+          "negative_advantage_episodes": 3,
+          "nonzero_advantage_actions": 64
+        },
+        "1": {
+          "episode_returns": [
+            0.5,
+            -0.0,
+            0.5,
+            -0.0,
+            -0.5,
+            0.0,
+            -0.0,
+            0.5
+          ],
+          "mean_return": 0.125,
+          "return_std": 0.33071891388307384,
+          "loo_advantages": [
+            0.4285714285714286,
+            -0.14285714285714285,
+            0.4285714285714286,
+            -0.14285714285714285,
+            -0.7142857142857143,
+            -0.14285714285714285,
+            -0.14285714285714285,
+            0.4285714285714286
+          ],
+          "positive_advantage_episodes": 3,
+          "negative_advantage_episodes": 5,
+          "nonzero_advantage_actions": 64
+        }
+      },
+      "mean_action_entropy": 1.1629020339682812,
+      "mean_prompt_tokens": 643.359375,
+      "action_types": {
+        "chess_move": 127,
+        "claim_draw": 1
+      },
+      "termination_reasons": {
+        "material_adjudication_at_cap": 7,
+        "claimed_threefold_repetition": 1
+      }
+    },
+    "cycle1 / market": {
+      "episodes": 8,
+      "transitions": 96,
+      "roles": {
+        "0": {
+          "episode_returns": [
+            -0.35835739835078595,
+            0.2053706759569834,
+            0.020830319774729385,
+            0.020830319774729385,
+            0.16514041292462933,
+            0.34006556573296864,
+            0.3763781683131265,
+            -0.062418746747512514
+          ],
+          "mean_return": 0.08847991467235852,
+          "return_std": 0.22285307717268,
+          "loo_advantages": [
+            -0.5106712148835937,
+            0.13358944146814272,
+            -0.07731382274014759,
+            -0.07731382274014759,
+            0.08761199800259521,
+            0.287526458354983,
+            0.3290265755894491,
+            -0.17245561305128118
+          ],
+          "positive_advantage_episodes": 4,
+          "negative_advantage_episodes": 4,
+          "nonzero_advantage_actions": 48
+        },
+        "1": {
+          "episode_returns": [
+            0.35835739835078595,
+            -0.2053706759569834,
+            -0.020830319774729385,
+            -0.020830319774729385,
+            -0.16514041292462933,
+            -0.34006556573296864,
+            -0.3763781683131265,
+            0.062418746747512514
+          ],
+          "mean_return": -0.08847991467235852,
+          "return_std": 0.22285307717268,
+          "loo_advantages": [
+            0.5106712148835937,
+            -0.13358944146814272,
+            0.07731382274014759,
+            0.07731382274014759,
+            -0.08761199800259521,
+            -0.287526458354983,
+            -0.3290265755894491,
+            0.17245561305128118
+          ],
+          "positive_advantage_episodes": 4,
+          "negative_advantage_episodes": 4,
+          "nonzero_advantage_actions": 48
+        }
+      },
+      "mean_action_entropy": 0.9674656987438529,
+      "mean_prompt_tokens": 517.1458333333334,
+      "action_types": {
+        "limit": 92,
+        "hold": 3,
+        "cancel": 1
+      },
+      "termination_reasons": {
+        "settlement": 8
+      }
+    },
+    "cycle1 / maze": {
+      "episodes": 8,
+      "transitions": 128,
+      "roles": {
+        "0": {
+          "episode_returns": [
+            -0.2,
+            0.2,
+            0.0,
+            -0.1,
+            0.0,
+            -0.5,
+            0.2,
+            -0.2
+          ],
+          "mean_return": -0.075,
+          "return_std": 0.21650635094610965,
+          "loo_advantages": [
+            -0.14285714285714285,
+            0.3142857142857143,
+            0.08571428571428572,
+            -0.02857142857142858,
+            0.08571428571428572,
+            -0.4857142857142857,
+            0.3142857142857143,
+            -0.14285714285714288
+          ],
+          "positive_advantage_episodes": 4,
+          "negative_advantage_episodes": 4,
+          "nonzero_advantage_actions": 64
+        },
+        "1": {
+          "episode_returns": [
+            0.2,
+            -0.2,
+            -0.0,
+            0.1,
+            -0.0,
+            0.5,
+            -0.2,
+            0.2
+          ],
+          "mean_return": 0.075,
+          "return_std": 0.21650635094610965,
+          "loo_advantages": [
+            0.14285714285714285,
+            -0.3142857142857143,
+            -0.08571428571428572,
+            0.02857142857142858,
+            -0.08571428571428572,
+            0.4857142857142857,
+            -0.3142857142857143,
+            0.14285714285714288
+          ],
+          "positive_advantage_episodes": 4,
+          "negative_advantage_episodes": 4,
+          "nonzero_advantage_actions": 64
+        }
+      },
+      "mean_action_entropy": 0.6142903977067877,
+      "mean_prompt_tokens": 441.8125,
+      "action_types": {
+        "block": 33,
+        "move": 95
+      },
+      "termination_reasons": {
+        "distance_adjudication_at_cap": 8
+      }
+    },
+    "cycle2 / chess": {
+      "episodes": 8,
+      "transitions": 128,
+      "roles": {
+        "0": {
+          "episode_returns": [
+            0.5,
+            0.0,
+            0.1,
+            0.1,
+            0.0,
+            0.5,
+            0.1,
+            0.4
+          ],
+          "mean_return": 0.2125,
+          "return_std": 0.20271593425283568,
+          "loo_advantages": [
+            0.32857142857142857,
+            -0.24285714285714288,
+            -0.1285714285714286,
+            -0.1285714285714286,
+            -0.24285714285714288,
+            0.32857142857142857,
+            -0.1285714285714286,
+            0.2142857142857143
+          ],
+          "positive_advantage_episodes": 3,
+          "negative_advantage_episodes": 5,
+          "nonzero_advantage_actions": 64
+        },
+        "1": {
+          "episode_returns": [
+            -0.5,
+            -0.0,
+            -0.1,
+            -0.1,
+            -0.0,
+            -0.5,
+            -0.1,
+            -0.4
+          ],
+          "mean_return": -0.2125,
+          "return_std": 0.20271593425283568,
+          "loo_advantages": [
+            -0.32857142857142857,
+            0.24285714285714288,
+            0.1285714285714286,
+            0.1285714285714286,
+            0.24285714285714288,
+            -0.32857142857142857,
+            0.1285714285714286,
+            -0.2142857142857143
+          ],
+          "positive_advantage_episodes": 5,
+          "negative_advantage_episodes": 3,
+          "nonzero_advantage_actions": 64
+        }
+      },
+      "mean_action_entropy": 1.3983527703686334,
+      "mean_prompt_tokens": 673.2890625,
+      "action_types": {
+        "chess_move": 128
+      },
+      "termination_reasons": {
+        "material_adjudication_at_cap": 8
+      }
+    },
+    "cycle2 / market": {
+      "episodes": 8,
+      "transitions": 96,
+      "roles": {
+        "0": {
+          "episode_returns": [
+            0.04164257074548595,
+            -0.540007837481372,
+            0.39411856793081457,
+            -0.6225552601994576,
+            -0.35835739835078595,
+            -0.2836680901774621,
+            0.2644000832690389,
+            0.12435300177159621
+          ],
+          "mean_return": -0.12250929531151776,
+          "return_std": 0.3553937129697865,
+          "loo_advantages": [
+            0.18760213263657563,
+            -0.47714119105126207,
+            0.5904318437055227,
+            -0.5714811027290742,
+            -0.2695406891877351,
+            -0.18418147984679353,
+            0.44218214694920766,
+            0.2821283395235588
+          ],
+          "positive_advantage_episodes": 4,
+          "negative_advantage_episodes": 4,
+          "nonzero_advantage_actions": 48
+        },
+        "1": {
+          "episode_returns": [
+            -0.04164257074548595,
+            0.540007837481372,
+            -0.39411856793081457,
+            0.6225552601994576,
+            0.35835739835078595,
+            0.2836680901774621,
+            -0.2644000832690389,
+            -0.12435300177159621
+          ],
+          "mean_return": 0.12250929531151776,
+          "return_std": 0.3553937129697865,
+          "loo_advantages": [
+            -0.18760213263657563,
+            0.47714119105126207,
+            -0.5904318437055227,
+            0.5714811027290742,
+            0.2695406891877351,
+            0.18418147984679353,
+            -0.44218214694920766,
+            -0.2821283395235588
+          ],
+          "positive_advantage_episodes": 4,
+          "negative_advantage_episodes": 4,
+          "nonzero_advantage_actions": 48
+        }
+      },
+      "mean_action_entropy": 1.05061216589005,
+      "mean_prompt_tokens": 518.3645833333334,
+      "action_types": {
+        "limit": 90,
+        "hold": 6
+      },
+      "termination_reasons": {
+        "settlement": 8
+      }
+    },
+    "cycle2 / maze": {
+      "episodes": 8,
+      "transitions": 128,
+      "roles": {
+        "0": {
+          "episode_returns": [
+            0.4,
+            -0.2,
+            -0.4,
+            0.0,
+            -0.2,
+            -0.4,
+            0.4,
+            0.5
+          ],
+          "mean_return": 0.01249999999999999,
+          "return_std": 0.34798527267687634,
+          "loo_advantages": [
+            0.4428571428571429,
+            -0.24285714285714285,
+            -0.4714285714285714,
+            -0.014285714285714282,
+            -0.24285714285714285,
+            -0.4714285714285714,
+            0.4428571428571429,
+            0.5571428571428572
+          ],
+          "positive_advantage_episodes": 3,
+          "negative_advantage_episodes": 5,
+          "nonzero_advantage_actions": 64
+        },
+        "1": {
+          "episode_returns": [
+            -0.4,
+            0.2,
+            0.4,
+            -0.0,
+            0.2,
+            0.4,
+            -0.4,
+            -0.5
+          ],
+          "mean_return": -0.01249999999999999,
+          "return_std": 0.34798527267687634,
+          "loo_advantages": [
+            -0.4428571428571429,
+            0.24285714285714285,
+            0.4714285714285714,
+            0.014285714285714282,
+            0.24285714285714285,
+            0.4714285714285714,
+            -0.4428571428571429,
+            -0.5571428571428572
+          ],
+          "positive_advantage_episodes": 5,
+          "negative_advantage_episodes": 3,
+          "nonzero_advantage_actions": 64
+        }
+      },
+      "mean_action_entropy": 0.8024761877167285,
+      "mean_prompt_tokens": 461.25,
+      "action_types": {
+        "block": 32,
+        "move": 96
+      },
+      "termination_reasons": {
+        "distance_adjudication_at_cap": 8
+      }
+    }
+  },
+  "warnings": [
+    "Fresh FP32 condition inherits base/cycle1 adapter bytes from an incomplete BF16 pilot; compare within V2.",
+    "Three independent scenario clusters per opponent/game; descriptive estimates have very low power.",
+    "Capped distance/material rewards are adjudications, not necessarily goal completions/checkmates.",
+    "CPU audit replays saved probabilities; independently hashed live all-row likelihood gates precede training.",
+    "Two cycles of action-policy RL do not establish unlimited continual improvement or general reasoning transfer."
+  ],
+  "analysis_source_sha256": "1547b15ffc7e57491f718699af80d950cea691b4f9b881e183b21b3d88657d91",
+  "shared_analysis_source_sha256": "98cff35a9d20b5497a6a280229f1f92bbcfe3a1fdb7bda200363b24cefb81b61"
+}

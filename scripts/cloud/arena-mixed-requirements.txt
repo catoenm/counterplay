@@ -1,0 +1,10 @@
+# Reviewed torch2.8.0/CUDA12.8 system image is reused through a virtual environment.
+transformers==5.20.2
+peft==0.21.2
+bitsandbytes==0.50.2
+accelerate==1.15.0
+safetensors==0.8.0
+tokenizers==0.23.3
+python-chess==1.999
+chess==1.11.2
+numpy==2.5.4

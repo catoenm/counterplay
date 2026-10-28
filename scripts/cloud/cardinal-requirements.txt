@@ -1,0 +1,6 @@
+# Python3.11/3.12, CUDA12.8; install torch2.8.0 from the official cu128 index first.
+transformers==5.20.2
+peft==0.21.2
+bitsandbytes==0.50.2
+accelerate==1.15.0
+safetensors==0.8.0

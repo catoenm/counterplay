@@ -1,0 +1,28 @@
+{
+  "config": {
+    "stage": "solve",
+    "backend": "qwen",
+    "max_tokens": 4096,
+    "tasks_sha256": {
+      "experiments/challenge-v1/procedural.jsonl": "cf54a52d1d2d957577c5bbaca80546c04b293c55421b66392cf8dfe1779a0603",
+      "runs/challenge-proposals-qwen/tasks.jsonl": "244561ec4473af93cf5fc7a23c41509595c1e811b8b90285c32f56ec4035ae29"
+    },
+    "batch_size": 4,
+    "root_sha256": "772e0ca223a1cf8f016b480a5bc4ba187c606e1a2dd3fa843b213929adcd7e5e"
+  },
+  "source_sha256": {
+    "pilot.py": "e706ee06462725161226a8e8d11704908f64e917bb0d836642820b5624000f38",
+    "curriculum.py": "f456f4463a8c6023bdd9400b9e6dd35294569288f4fc6c6cf935014100267d2c",
+    "feedback.py": "d7ededd188c36c8ecf49f3b026c8fb70f4c11dcd6d9511f995c90b5b3fe86ff1",
+    "strict.py": "99ee927d8114dd8ed2f5bfb74c7733e8a626654a8e324266b6808202df2f1181",
+    "__init__.py": "54b3c9dd5c0cc6221ed5af3bcaae9445ced78d30114e5c79b32833ce6d37f495",
+    "dataset.py": "b5a99b1070e4b8aba6cffc771552419f2aff16f67981f8bea219a1b059332b2d",
+    "depth.py": "161630d07990ba415fde870e799389a11c92eaa326390dd5eae37f719182f790",
+    "train.py": "f7533b5c20bdf04d20e4c260205daafa0b3df93fb5c7febd14109a1e24bd736f",
+    "environment.py": "ec6d2f589bc32acc0c9cd945f68de68a2af40d089d5873a622b8f92d64ca4667",
+    "frontier_api.py": "da7b91a29b27837601d3cacdd59c1e2008658a2a9b29e09d0a471be6f5003193",
+    "challenges.py": "31261f496aa790fb363e054680c07ca7370502e21b3c0cfbe271a76f43f979e8",
+    "trajectories.py": "94e137f1908e19e3195f79a12e01d6f2632f1e8975ac5e77d30fd25b1010fd03"
+  },
+  "training": false
+}

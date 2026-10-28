@@ -1,0 +1,54 @@
+{
+  "model": "deepseek/deepseek-v4-pro-0813",
+  "provider": "deepinfra/fp8",
+  "reasoning": "off",
+  "samples": 2,
+  "max_output_tokens": 16384,
+  "shared_screen_api_cap_usd": 2,
+  "shared_screen_max_calls": 6,
+  "cumulative_pilot_cap_usd": 100,
+  "prompt_sha256": "5e46c914cd85a88622c65695452505b0e7b124a41beb9a4506395517fa2c4505",
+  "validation_seeds": [
+    720000,
+    720001,
+    720002,
+    720003,
+    720004,
+    720005
+  ],
+  "fixed_opponents": [
+    "nearest",
+    "value"
+  ],
+  "paired_seats": true,
+  "peer_crossplay": true,
+  "max_rounds": 48,
+  "training": false,
+  "interface": "bounded Python syntax compiled to unchanged JSON IR interpreter",
+  "source_sha256": {
+    "selfplay/program_arena/__init__.py": "2c405b142b39f6f350996f812875afbe4ec845005a662eaf43bc28a7e2d4c7d2",
+    "selfplay/program_arena/demo.py": "f918f494d7ad39b78cda0d1672ef19d9244e3c52ef07739b696725b7b6f9105f",
+    "selfplay/program_arena/dsl.py": "91cc93d24e9c61b0cc04b4bf3d34a7e3515bda59fed62eeb766006ec9df74968",
+    "selfplay/program_arena/examples.py": "5261337c5ac1415c14da1505e76d2ed99a5916da70a2f02397d5d0242757894a",
+    "selfplay/program_arena/game.py": "7986796669d4622d53536b2b9b6984778372e2cf2354b9885a384680e66f0246",
+    "selfplay/program_arena/runner.py": "bdc8f5ce3471d4018fe2c893c7d49351c8e23d75f151bc9abcd36e637ef1445e",
+    "selfplay/program_arena/spec.py": "bd236885f4864e56a8003abe81ab9726386ed11399648318fe2eff7f87920ff3",
+    "selfplay/program_python.py": "598d27639d004230976066d18e6fc6ed6bcd8a5f5f1e6c741b634ebad3f8fb56",
+    "selfplay/program_api.py": "d0dbc828da02823978c1dda9eec72347cadc8ef93f6d82fa1c2fd161d7f92272"
+  },
+  "predecessor_screen": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-screen-v2",
+  "amendment_reason": "Strict v2 rejected 0/2 valid: sample1 had543 Python AST nodes, while sample2 contained prose. Revalidate exact outputs under parser-only cap2048; do not extract or repair code.",
+  "interpretation": "Post-hoc capability revalidation of identical prior outputs, not a new generation arm, independent confirmation, RL improvement, or causal interface comparison. Original v2 remains0/2. Python parser cap changes512 to2048; lowered IR cap512 and runtime operation cap2048 are unchanged.",
+  "revalidation_only": true,
+  "original_authoring_python_ast_cap": 512,
+  "evaluation_python_ast_cap": 2048,
+  "original_plan_sha256": "d80544e4ebe365316a2f3ef72edac4236088a59cbe25d798baa22e2d4a777334",
+  "generation_reuse": {
+    "source_run": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-screen-v2",
+    "source_generation_sha256": {
+      "generation-1.json": "564b2a2626e782ee7c6159e027ad673d9aa81b95669e1efa69346936be17c5c5",
+      "generation-2.json": "ced4f697c179bee064510f4beb44b4ded14faa03c0982431956d5761922cdfa1"
+    },
+    "reason": "Parser AST cap amended from512 to2048; unchanged generated outputs and unchanged IR/runtime limits"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "seed_protocol": [
+    [
+      "calibration",
+      16,
+      7,
+      [
+        2,
+        3,
+        4,
+        5
+      ],
+      6121
+    ],
+    [
+      "candidates",
+      256,
+      7,
+      [
+        2,
+        3,
+        4,
+        5
+      ],
+      7319
+    ],
+    [
+      "validation",
+      32,
+      7,
+      [
+        2,
+        3,
+        4,
+        5
+      ],
+      8111
+    ],
+    [
+      "test",
+      64,
+      7,
+      [
+        2,
+        3,
+        4,
+        5
+      ],
+      9199
+    ],
+    [
+      "test_ood",
+      32,
+      11,
+      [
+        2,
+        3,
+        4,
+        5
+      ],
+      10111
+    ]
+  ],
+  "model": "mlx-community/Qwen3-4B-4bit",
+  "revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+  "excluded_prior_families": 55,
+  "split_files": {
+    "calibration": {
+      "count": 16,
+      "sha256": "a23021e355e510d7bb9b80b0d0d4625a438d579eb99be6fff1a4d8a00d1513db"
+    },
+    "candidates": {
+      "count": 256,
+      "sha256": "c22fd2dfd84d3764bce19d9fbb3659b02740754d70556dbaa217c088c0ad0382"
+    },
+    "validation": {
+      "count": 32,
+      "sha256": "bcb31c6d872d4548bca023f6a65f331262d7b25db5f5050b77020bb219d38b7f"
+    },
+    "test": {
+      "count": 64,
+      "sha256": "371a09194fefddc6d1cc957e0a768495b6626cb638c6913ef5a69ee0bda39631"
+    },
+    "test_ood": {
+      "count": 32,
+      "sha256": "d50417a19af1d86bbe2c82b5c7ed013c81ac6f301075d8f73d1c883a64c618d7"
+    }
+  },
+  "family_rule": "Ignore step budget and witness; collapse exact x/y swap symmetry. Other semantic similarities remain."
+}

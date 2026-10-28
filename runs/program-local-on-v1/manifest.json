@@ -1,0 +1,38 @@
+{
+  "purpose": "local generated-controller usability diagnostic",
+  "training": false,
+  "adapter_path": null,
+  "model": {
+    "model": "mlx-community/Qwen3-8B-4bit",
+    "revision": "545dc4251c05440727734bcd94334791f6ab0192"
+  },
+  "model_config_sha256": "f1d4bf39c651b88d69b00e5eb2570415d2716485415f7a20daa7c76034bbbbb9",
+  "prompt": "Write a complete controller using the restricted Python syntax below. Output only Python source, no markdown.\nExactly one function: def act(): . This function is parsed, checked and interpreted; Python itself is never executed.\n\nGAME: Two robots compete on a 7x7 grid, for 48 rounds. Homes are (0,3) and (6,3). Six initially\nmirror-symmetric resource sites are shared: either robot can harvest any site's finite units.\nEach unit has a point value. Move one cardinal cell or harvest one unit at your current cell, each\ncosting one energy. Rest restores three energy up to ten. Cargo holds three units. Deposit at your\nown home banks all carried points. ONLY BANKED POINTS count when time expires. Maximize your points\nrelative to the rival. Robots can share cells; random priority settles contested last units.\nEach round both controllers see the same pre-round state. Failed intents consume the round.\n\nREAD-ONLY INTEGER SENSORS, used directly as bare variable names:\nplayer, turn, horizon, grid_size, self_x, self_y, home_x, home_y, energy, max_energy,\ncarrying, capacity, score, opponent_x, opponent_y, opponent_energy, opponent_carrying,\nopponent_score, site_count. carrying is a unit count. site_count is always six here.\nRead a site using site(i, 'x'), site(i, 'y'), site(i, 'units'), site(i, 'value'). Indices are 0..5.\n\nLANGUAGE: scalar integer assignments; += -= *= //= %=; if/elif/else (else optional);\nfor i in range(6): or another literal count 0..16; pass; return action dictionaries.\nArithmetic + - * // %; comparisons < <= > >= == !=; and/or/not; abs(x), min(x,y), max(x,y).\nConditional expressions (a if condition else b) and chained comparisons are supported.\nand/or and chained comparisons short-circuit. Loops cannot use break, continue or else.\nNo while, imports, helpers, recursion, attributes, subscripts, lists, comprehensions, lambdas, strings\nas code, exponentiation, true division (/), keyword arguments, or other function calls.\nStrings are permitted only for action dictionary keys/names, site field names, and a function docstring.\nUse integer flags 0/1 instead of True/False. Local names start with a letter, contain only ASCII\nletters/digits/underscores, and contain no double underscore. Sensors and function names are reserved.\nLocals start at zero every turn. The special variables m0..m15 are persistent integer memory, initially\nzero once per game. Read and assign them directly without global/nonlocal declarations.\n\nReturn exactly one of:\n{'action':'move', 'dx':DX, 'dy':DY} with abs(DX)+abs(DY)==1;\n{'action':'harvest'}; {'action':'deposit'}; {'action':'rest'}.\nThe first return ends the turn. Out-of-grid moves, empty harvests, and away-from-home deposits fail.\n\nBOUNDS: <=16384 UTF-8 source bytes, <=2048 Python AST nodes and <=512 lowered IR nodes,\n<=32 lowered local names including compiler temporaries, nesting <=20 in lowered IR,\n<=2048 interpreter operations per turn, and sixteen memory slots. Arithmetic saturates at +/-1000000.\nDivision by zero, operation exhaustion, invalid movement vectors or no return produce rest and discard\nthat turn's memory writes. Faults are recorded. Keep code compact and avoid deeply nested conditions.\nEach variable, expression, statement and loop iteration costs interpreter operations.\n\nMinimal syntax-only example (not a useful strategy):\ndef act():\n    return {'action': 'rest'}\n\nWrite a strong, compact autonomous controller. Return only the complete act function. It will face unseen rival programs and maps.\n",
+  "prompt_sha256": "e33a89de839fb4a21032289d9e2af22875673a243301381e4e9a6ee775424672",
+  "prompt_path": "/Users/mitchellcatoen/Documents/workspace/selfplay/experiments/program-local-v1/prompt.txt",
+  "thinking": true,
+  "samples": 2,
+  "max_tokens": 4096,
+  "max_seconds": 600.0,
+  "seeds": [
+    202610220,
+    202610221
+  ],
+  "sampling": {
+    "temperature": 0.6,
+    "top_p": 0.95,
+    "top_k": 20
+  },
+  "source_sha256": "b41292a211d8cee351433f990a7df71859b09c26ea2872d5ac0cda63d592b9af",
+  "versions": {
+    "mlx": "0.32.4",
+    "mlx-lm": "0.32.2",
+    "transformers": "5.20.2",
+    "huggingface-hub": "2.2.0"
+  },
+  "timing": "Hard subprocess wall limit per sample, including model load and prompt prefill.",
+  "token_usage": "Output token cap includes reasoning and final answer together.",
+  "gpu_concurrency": "Shared local-neural.lock serializes this screen with arena-v2; older runners must be idle.",
+  "external_spend_usd": 0,
+  "created_at": "2026-10-22T07:25:28.761306+00:00"
+}

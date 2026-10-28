@@ -1,0 +1,50 @@
+{
+  "validation_seeds": [
+    720000,
+    720001,
+    720002,
+    720003,
+    720004,
+    720005
+  ],
+  "fixed_opponents": [
+    "nearest",
+    "value"
+  ],
+  "paired_seats": true,
+  "peer_crossplay": true,
+  "max_rounds": 48,
+  "training": false,
+  "response_normalization": {
+    "version": 2,
+    "mode": "single_python_fence_with_optional_prose",
+    "source_archive": "source/response_normalization.py",
+    "source_sha256": "4b0095b507dc50b05285b3c10931923543ba2bd976c6f54511d5ab1bc5a85163"
+  },
+  "generation_backend": "local_mlx",
+  "model": "mlx-community/Qwen3-8B-4bit",
+  "revision": "545dc4251c05440727734bcd94334791f6ab0192",
+  "reasoning": "on",
+  "samples": 2,
+  "sampling": {
+    "temperature": 0.6,
+    "top_p": 0.95,
+    "top_k": 20
+  },
+  "max_output_tokens": 16384,
+  "max_seconds_per_sample": 600.0,
+  "prompt_sha256": "e33a89de839fb4a21032289d9e2af22875673a243301381e4e9a6ee775424672",
+  "source_sha256": {
+    "selfplay/program_arena/__init__.py": "2c405b142b39f6f350996f812875afbe4ec845005a662eaf43bc28a7e2d4c7d2",
+    "selfplay/program_arena/demo.py": "f918f494d7ad39b78cda0d1672ef19d9244e3c52ef07739b696725b7b6f9105f",
+    "selfplay/program_arena/dsl.py": "91cc93d24e9c61b0cc04b4bf3d34a7e3515bda59fed62eeb766006ec9df74968",
+    "selfplay/program_arena/examples.py": "5261337c5ac1415c14da1505e76d2ed99a5916da70a2f02397d5d0242757894a",
+    "selfplay/program_arena/game.py": "7986796669d4622d53536b2b9b6984778372e2cf2354b9885a384680e66f0246",
+    "selfplay/program_arena/runner.py": "bdc8f5ce3471d4018fe2c893c7d49351c8e23d75f151bc9abcd36e637ef1445e",
+    "selfplay/program_arena/spec.py": "bd236885f4864e56a8003abe81ab9726386ed11399648318fe2eff7f87920ff3",
+    "selfplay/program_python.py": "598d27639d004230976066d18e6fc6ed6bcd8a5f5f1e6c741b634ebad3f8fb56",
+    "selfplay/program_local.py": "9d5cd2e25c0875d82ed6d88ea1a762412a832ad003996e8f196c9e3270612f7f"
+  },
+  "generation_manifest_sha256": "2a4d79779e18d439e242bd66249cdbcd5046e3b906f568604f7b796c63fe4794",
+  "interpretation": "Two deterministic base-model seeds. Same prompt and seeds as the 4096-token arm; extended output-budget arm is a compute-budget diagnosis, not an independent sample. No training or semantic repairs."
+}

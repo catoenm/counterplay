@@ -1,0 +1,89 @@
+{
+  "at": "2026-10-24T00:39:50.960361+00:00",
+  "audit_sha256": "4507d76fa58205dcc552c5cdbff6f47349f43f45074f6ae08d5dca3c23a07cf0",
+  "checked_key_inputs": {
+    "audit": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/arena-mixed-scalar-evaluation-gpu-v1/final-audit.json",
+      "sha256": "4507d76fa58205dcc552c5cdbff6f47349f43f45074f6ae08d5dca3c23a07cf0"
+    },
+    "evaluation-seal.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/arena-mixed-scalar-evaluation-gpu-v1/evaluation-seal.json",
+      "sha256": "5af80fc4fc288ec9fc48543a070a4c195e033ecb00bab8d24e9581161fbba2b3"
+    },
+    "inputs/checkpoints/base/policy.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/arena-mixed-scalar-evaluation-gpu-v1/inputs/checkpoints/base/policy.json",
+      "sha256": "54b4c480809b019bbcfae880d58624624578e6655d65f0cd48b0f41fe5a4d595"
+    },
+    "inputs/checkpoints/final/policy.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/arena-mixed-scalar-evaluation-gpu-v1/inputs/checkpoints/final/policy.json",
+      "sha256": "e7ea534a817aaddb61071c723e3969f4d041983c43f0fd55678e65c3ca720252"
+    },
+    "inputs/parent/final-audit.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/arena-mixed-scalar-evaluation-gpu-v1/inputs/parent/final-audit.json",
+      "sha256": "eec91e8ea85c47e05278f755a1192bc59284b76255b12a6d42009bdc9f5e36bf"
+    },
+    "inputs/parent/manifest.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/arena-mixed-scalar-evaluation-gpu-v1/inputs/parent/manifest.json",
+      "sha256": "aad493a27e256857237b405c390fdc71a9be3ce623cf21152a74493cd1a91e6e"
+    },
+    "inputs/parent/status.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/arena-mixed-scalar-evaluation-gpu-v1/inputs/parent/status.json",
+      "sha256": "d6a7c9c9fa210b818b15426441ebc97a2727345c33f3cdc5d6e4fe0f11276322"
+    },
+    "inputs/parent/training-complete.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/arena-mixed-scalar-evaluation-gpu-v1/inputs/parent/training-complete.json",
+      "sha256": "9dec4657627d52328573105205d069307b0c7c0d4ab951ca44a176dce1e75127"
+    },
+    "inputs/schedule.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/arena-mixed-scalar-evaluation-gpu-v1/inputs/schedule.json",
+      "sha256": "8de361b7d0ea9c49cbbe0c653eab44749901f6d41cd4c3e0c8ac43f5731327b4"
+    },
+    "manifest.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/arena-mixed-scalar-evaluation-gpu-v1/manifest.json",
+      "sha256": "f39489303dd761a6bff6365ee90c4f877e8505cdf19b120cff8b2914c297c2f9"
+    },
+    "reporter": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/scripts/plot_arena_mixed_scalar.py",
+      "sha256": "66cd9a1b8e7baa76a53e57147aa0103dec6519bf6f8552dc745958a5481dfa75"
+    },
+    "status.json": {
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/arena-mixed-scalar-evaluation-gpu-v1/status.json",
+      "sha256": "f610d28f2343e00c0c2e5f7bd447e2de1bef3889851c31c921faeadf48e3ea90"
+    }
+  },
+  "checks": {
+    "all_base_final_delta_intervals_recomputed": true,
+    "all_five16_family_clusters_independently_rebuilt": true,
+    "all_native_metric_means_and_intervals_recomputed": true,
+    "complete448_prescribed_metrics_and_unique_episode_ids": true,
+    "complete_audit_has_no_unknown_operations": true,
+    "exact_baseline_cycle20_identity": true,
+    "inherited20_and_new0_update_scope": true,
+    "seat_and_opponent_repeats_clustered_together": true,
+    "weighted_stratified_interval_recomputed": true
+  },
+  "comparisons_available": true,
+  "interpretation": "The training mechanism completed, but this evaluation does not establish overall improvement. Gains were sparse and mixed: maze and partial coding rose, planning was unchanged, and market/chess fell. The weighted interval includes zero.",
+  "kind": "independent_complete_scalar_evaluation_reporting_review_v1",
+  "limitations": [
+    "One shared-model training seed and20 retained updates; this is one before/after evaluation, not evidence of indefinite or monotonic continual improvement.",
+    "Descriptive percentile bootstraps resample16 paired scenario families per task; repeated seats and opponents stay together. They do not cover training-seed variability or multiple-comparison adjustment.",
+    "Market/maze/chess returns combine fixed-base and heuristic opponents with both seats. Planning and coding are single-player tasks; the weighted mix is not a common physical unit or Elo.",
+    "Market uses rational relative-PnL scoring; absolute learner PnL also deteriorated from\u22128.40625 to\u22129.875. It is a simulated exchange, not real trading performance.",
+    "Maze positive change is concentrated in one of16 families; only7\u21928 of64 candidate runs reached the goal. Most goal-terminated matches were won by the other player.",
+    "Chess uses tactical endgames and capped material scores; no learner checkmate wins were observed. Draw and cap returns are not checkmates or full-game strength.",
+    "Planning solved2/16 at both endpoints; coding is bounded AST repair with0/16 fully solved at both endpoints despite higher partial test pass rates.",
+    "Legal-action masking guarantees executable choices; no learned formatting/validity gain follows. Objective weights .24/.24/.24/.24/.04 are not measured gradient contribution shares.",
+    "No pooling with failed padded-batch runs, older27B controller authoring, or teacher cohorts; bounded-lag-one PPO is not exact on-policy RL."
+  ],
+  "manifest_sha256": "f39489303dd761a6bff6365ee90c4f877e8505cdf19b120cff8b2914c297c2f9",
+  "passed": true,
+  "plot_output_sha256": {
+    "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/arena-mixed-scalar-evaluation-gpu-v1/results-v1.png": "06b859be471f8b3c6983824d53153b4ff0a9951cdc74d0099cf7d533361fbcb5",
+    "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/arena-mixed-scalar-evaluation-gpu-v1/results-v1.svg": "5ca20231b01f08d45c6dc7c6cbd48fc16153526b5aa3e094d660c8920a4f7aaa"
+  },
+  "results_report_sha256": "0c3154b9522c42b3d3bc52d6d0d44e45dd8f73be819659189a3f55f2cea18b19",
+  "scientific_summary_sha256": "3db68832c92ea9050abe010be9f1e0558abff607982ff80b4e269bc0c2a23ec7",
+  "scope": "Read-only complete audit/report interpretation and independent arithmetic/bootstrap reconciliation; no new model calls, game simulation, terminal re-audit, or source edits.",
+  "status_sha256": "f610d28f2343e00c0c2e5f7bd447e2de1bef3889851c31c921faeadf48e3ea90"
+}

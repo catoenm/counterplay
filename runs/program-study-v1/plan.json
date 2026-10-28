@@ -1,0 +1,413 @@
+{
+  "format_version": 1,
+  "kind": "proposed_local_coding_RL_controlled_study",
+  "status": "IMPLEMENTATION_AUTHORIZED_NOT_PREPARED_NOT_LAUNCHED",
+  "created_at": "2026-10-22T09:41:33.006287+00:00",
+  "recommendation": {
+    "decision": "Implement a separate local best-effort controlled study. Root explicitly accepts incomplete execution under the07:30 hard stop; no neural launch is authorized by this plan artifact.",
+    "reason": "The 27B mechanism fits and produces some useful controllers, but one update left its sole evaluation completion byte-identical. Test weight learning against a matched validity-only RL control before increasing model size or spending on cloud.",
+    "overnight_admission": "After CPU tests and independent review, root may launch when the global neural lock is free. Use the full fixed schedule and300s sample cap. The actual limits are13,500 wall seconds and a parent-enforced07:30 stop. Do not require a guaranteed worst-case completion reserve; preserve an incomplete study if time expires.",
+    "latest_neural_start": null,
+    "hard_stop": "2026-10-22T07:30:00-07:00",
+    "additional_external_spend_usd": 0,
+    "overall_authorized_external_cap_usd": 100,
+    "scope_limit": "This is a small causal diagnostic of additional training against a frozen self-generated league, not evidence of open-ended improvement or a continually adapting league.",
+    "morning_audit_deadline": "2026-10-22T08:00:00-07:00",
+    "separately_preregistered_future_option": "No counts, timeout, endpoint, prompt or source changes are permitted to manufacture completion; a partial run remains partial."
+  },
+  "observed_evidence": {
+    "source_run": "runs/program-local-27b-compact-v1",
+    "manifest": {
+      "path": "runs/program-local-27b-compact-v1/manifest.json",
+      "sha256": "9ce23cfe639419caf82027fb71e0359b2e3620cf2dc391bfd6723e2532b3d861"
+    },
+    "complete": true,
+    "actual_updates": 1,
+    "training_completion_tokens": 3191,
+    "adapter_l2_delta": 0.0010273173177840805,
+    "peak_mlx_bytes": 26328880180,
+    "generation_seconds": {
+      "n": 8,
+      "min": 44.11433399999805,
+      "median": 59.50671427099587,
+      "max": 79.17183237500285
+    },
+    "four_candidate_likelihood_and_update_seconds_approx": 211,
+    "evaluation_before_after": {
+      "program_draws_per_checkpoint": 1,
+      "map_seeds": 1,
+      "paired_seats": true,
+      "opponents": 3,
+      "matches_per_checkpoint": 6,
+      "mean_return_both": -0.5196078431372549,
+      "banked_points_each_match_both": 0,
+      "completion_token_ids_identical": true
+    },
+    "runtime_validity_warning": "candidate-1-0 compiled but had 10 program faults in each of its two training games, banked zero and tied a zero-scoring opponent. Its reward0 still yielded positive RLOO advantage0.6. This new plan declares a runtime-fault penalty and a validity-only control rather than silently changing the old study.",
+    "previous_metadata_limitations": [
+      "The shared evaluation caveat overstated the actual number of programs/maps.",
+      "Shared audit/status labels mentioning CUDA refer to an MLX run; runtime metadata records the actual backend."
+    ]
+  },
+  "model_and_mechanism": {
+    "repo": "mlx-community/Qwen3.8-27B-4bit",
+    "revision": "10c35caafbb80f7dc6a7a432cdd11af10a6d4818",
+    "model_directory": "models/qwen38-27b-4bit",
+    "backend_reuse": {
+      "path": "selfplay/program_local_rl.py",
+      "sha256": "2c2aff76b2bab3f8555a3069a24205b1c19f26b8fb2f7ce256eab1ab8005414a"
+    },
+    "class": "MlxFinalBlockPolicy",
+    "arithmetic": "Packed 4bit integer tensors unchanged; floating base tensors and LoRA FP32. Frozen blocks0-62 evaluated and detached; final full-attention block63 q/v LoRA only.",
+    "trainable_tensors": 4,
+    "trainable_parameters": 188416,
+    "lora_rank": 8,
+    "lora_scale": 16.0,
+    "dropout": 0.0,
+    "optimizer": "Existing MLX Adam, exact saved step/moments reset identically for both arms from the verified zero-update checkpoint.",
+    "learning_rate": 1e-06,
+    "gradient_clip": 0.5,
+    "sampling": {
+      "temperature": 1.0,
+      "top_p": 1.0,
+      "top_k": 0,
+      "thinking": false,
+      "max_completion_tokens": 1024,
+      "sample_wall_seconds": 300
+    },
+    "loss": "One accumulated RLOO REINFORCE step per nonzero-signal group; sum the log probabilities of every sampled completion token including actual EOS, excluding prompt tokens. Divide by the complete group size; do not normalize by sequence length or advantage standard deviation.",
+    "likelihood_gates": {
+      "max_token_error": 0.002,
+      "max_sequence_error": 0.02,
+      "coverage": "Every token of every scored completion in cached-versus-teacher-forced and actual gradient-forward passes before the update."
+    },
+    "memory_limit_bytes": 30064771072,
+    "cache_limit_bytes": 268435456,
+    "max_total_context_tokens": 8192,
+    "measured_compact_prompt_tokens": 3255,
+    "measured_compact_prompt_plus_reserved_completion": 4279,
+    "memory_caveat": "Group size8 means sequential microbatch1 accumulation, not eight simultaneous prefixes. Existing memory evidence is for one group4 update; enforce the same memory cap across repeated updates and abort on breach."
+  },
+  "controlled_comparison": {
+    "initial_checkpoint": {
+      "path": "runs/program-local-27b-compact-v1/checkpoints/base/metadata.json",
+      "sha256": "82fd60ea7727d9187fc24d4ca91c7d0e6d1eb54c1fa497ff04442db383db35be"
+    },
+    "initial_adapter_sha256": "02cd0d058ffc3354deb5b9da9b7aca20f2c5445f8dde27232f0c298ad0c84598",
+    "initial_optimizer_sha256": "7f7bd0b7e3febbfd4b5222a0df698a563f1b3f722dbbf15c841b62e581e4e81a",
+    "initialization": "Start both new arms from the same verified zero-update base adapter and optimizer. Preserve the previous step1 as an independent completed experiment, not the initial state of this study.",
+    "training_prompt": {
+      "path": "runs/program-local-27b-compact-v1/prompt.txt",
+      "sha256": "005ad185e812617a300097d3967883f20297f467af776568c38cafdf2bb07dc3"
+    },
+    "prompt_rule": "Fixed compact factual feedback bytes, unchanged across all training rounds and the primary evaluation. No newly observed gameplay feedback, successful controller or compiler repair is appended. Prompt/context tokens never receive gradients.",
+    "arms": [
+      {
+        "id": "game_rl",
+        "training_groups": 3,
+        "samples_per_group": 8,
+        "maximum_optimizer_updates": 3,
+        "reward": "\u22121 for truncated/unparseable output or any interpreter program fault by the candidate-controlled seat on its prescribed training matches; otherwise equal-weight mean paired-seat relative game return. Opponent-seat faults never trigger this override."
+      },
+      {
+        "id": "validity_rl",
+        "training_groups": 3,
+        "samples_per_group": 8,
+        "maximum_optimizer_updates": 3,
+        "reward": "\u22121 for the same authorship failure or candidate-controlled-seat runtime-fault criterion; otherwise0. Opponent-seat faults never trigger this override. Use the same games and record their returns, but never use the returns in this arm\u2019s gradient."
+      }
+    ],
+    "frozen_control": "The common initial checkpoint is retained without updates and evaluated with the same final sampling seeds and prompts. It controls for the prompt and inference distribution. validity_rl tests whether any improvement beyond that control is explained by authoring reliability.",
+    "round_order": [
+      "game_rl/1",
+      "validity_rl/1",
+      "validity_rl/2",
+      "game_rl/2",
+      "game_rl/3",
+      "validity_rl/3"
+    ],
+    "fairness": "Both arms get exactly24 prescribed fresh learner samples, the same maps, fixed opponents and generation-seed schedule. Once their policies differ, the sampled text may differ. Preserve skipped zero-variance groups and compare sampling budget as well as actual update count.",
+    "no_hyperparameter_selection": "No learning-rate search, prompt edits, compiler relaxation, output repair, best-of-N selection, restart based on score, or validation-based checkpoint selection within this study."
+  },
+  "opponent_pool": {
+    "maximum_size": 6,
+    "frozen_before_first_training_draw": true,
+    "scripted_anchors": [
+      "nearest",
+      "value"
+    ],
+    "historical_model_candidates": [
+      {
+        "path": "runs/program-local-27b-compact-v1/generations/opponent-1-1.json",
+        "sha256": "058614838dc44b7ecace57395dffed60c72e9ee6eb156d5ad590bd7855151ca3"
+      },
+      {
+        "path": "runs/program-local-27b-compact-v1/generations/candidate-1-1.json",
+        "sha256": "49b18a787c75710d7b56fcf74f71a461a57de7eeda40470663332f568aedfbf8"
+      }
+    ],
+    "fresh_model_opponents": {
+      "source": "Common zero-update source checkpoint and the exact training prompt.",
+      "maximum_attempts": 8,
+      "maximum_admitted": 2,
+      "selection": "First two distinct compiled-IR hashes that pass the predefined calibration gate, in sample order. Every failed attempt is retained; no ranking by reward."
+    },
+    "calibration": {
+      "seeds": [
+        6200000,
+        6200001,
+        6200002
+      ],
+      "reference": "nearest",
+      "paired_seats": true,
+      "matches_per_candidate": 6,
+      "admission": "Compile, terminate generation by actual EOS, have zero interpreter faults attributable to the candidate-controlled seat in all six matches and bank positive points in at least three matches. Opponent-seat faults never determine candidate admission. Apply to historical and fresh candidates. No requirement to beat the reference."
+    },
+    "minimum_model_opponents": 2,
+    "fallback": "If fewer than two distinct historical/fresh model controllers pass after the fixed eight fresh attempts, stop at capability failure. Do not silently substitute an all-scripted training condition.",
+    "training_matchup": "Each of the eight candidate completions is evaluated against every admitted pool member on both prescribed fresh maps and both seats. Average seats, maps and opponents equally. Freeze this exact roster for both arms and all three groups.",
+    "why_frozen": "Keeps the two reward objectives comparable and avoids opponent drift being mistaken for learning. This is historical self-play plus fixed references; refresh from final checkpoint samples only in a separately preregistered later study.",
+    "provenance": "Bind every opponent to original generation SHA, source checkpoint and prompt hashes, normalized source and compiled-IR hash; bind scripted programs to archived game/compiler source. Opponent code is environment behavior, never a gradient target.",
+    "shared_across_arms": "Identical exact admitted IR hashes and weights for both arms, frozen once before either arm samples training candidates. No arm-specific or between-round opponent refresh.",
+    "heldout_isolation": "Reject any historical/fresh training opponent whose compiled-IR hash equals either held-out model-controller IR. Scripted nearest/value overlap is intentional. This check occurs before pool commitment and any training draw."
+  },
+  "seed_schedule": {
+    "fresh_training_maps": {
+      "1": [
+        6100100,
+        6100101
+      ],
+      "2": [
+        6100200,
+        6100201
+      ],
+      "3": [
+        6100300,
+        6100301
+      ]
+    },
+    "calibration_maps": [
+      6200000,
+      6200001,
+      6200002
+    ],
+    "validation_maps": [
+      6300000,
+      6300001,
+      6300002,
+      6300003
+    ],
+    "primary_holdout_maps": [
+      6400000,
+      6400001,
+      6400002,
+      6400003,
+      6400004,
+      6400005
+    ],
+    "training_generation_seed_rule": "8100000 + 100*round + candidate_index, round1..3, candidate_index0..7; same schedule separately reseeded for each arm.",
+    "opponent_generation_seeds": [
+      8200000,
+      8200001,
+      8200002,
+      8200003,
+      8200004,
+      8200005,
+      8200006,
+      8200007
+    ],
+    "primary_evaluation_generation_seeds": [
+      8300000,
+      8300001,
+      8300002,
+      8300003,
+      8300004,
+      8300005,
+      8300006,
+      8300007
+    ],
+    "plain_probe_generation_seeds": [
+      8400000,
+      8400001,
+      8400002,
+      8400003
+    ],
+    "isolation": "Reject overlap with any map family in prior local smoke, API feedback/tournament, arena or holdout manifests during preparation. Generation seeds are a separate RNG namespace; explicitly reseed every draw. Validation/test maps are never used for gradient rewards, calibration or opponent admission.",
+    "map_identity": "Before any neural draw, instantiate each prescribed game on CPU and freeze canonical initial observable-layout fingerprints (terrain, sites/initial resources/values, homes and game rules; exclude seed labels and transient bookkeeping). Reject train/calibration/validation/test fingerprint overlap and overlap with prior relevant practice/holdout maps. A collision requires a newly versioned pre-draw seed plan; never resample according to performance."
+  },
+  "evaluation": {
+    "checkpoints": [
+      "base",
+      "game_rl_round3",
+      "validity_rl_round3"
+    ],
+    "maximum_checkpoints": 3,
+    "checkpoint_rule": "The state after exactly three prescribed training groups in each arm is the endpoint, including recorded skipped groups. Do not pick the best intermediate checkpoint. Incomplete or technically failed arms remain explicitly incomplete.",
+    "primary_prompt": "Exact compact training prompt; eight fresh generation seeds per checkpoint, paired across checkpoints.",
+    "plain_transfer_prompt": {
+      "path": "runs/program-feedback-v1/original-prompt.txt",
+      "sha256": "e33a89de839fb4a21032289d9e2af22875673a243301381e4e9a6ee775424672"
+    },
+    "plain_probe": "Four fresh paired generation seeds per checkpoint under the unchanged original plain specification. Secondary only: this tests transfer beyond the fixed assisted context and is not a training fallback.",
+    "frozen_opponents": [
+      {
+        "id": "nearest",
+        "role": "seen scripted anchor on fresh maps"
+      },
+      {
+        "id": "value",
+        "role": "seen scripted anchor on fresh maps"
+      },
+      {
+        "id": "controller-python-1",
+        "role": "held-out model-controller family",
+        "source": {
+          "path": "runs/program-tournament-v1/inputs/controller-python-1/generation.json",
+          "sha256": "564b2a2626e782ee7c6159e027ad673d9aa81b95669e1efa69346936be17c5c5"
+        },
+        "ir_sha256": "9a23f52ffc4d42af2c8a78154e8e44ec5bdf408cc306741c45ca9d0933489a49",
+        "caveat": "Historical DeepSeek controller has a documented post-hoc parser amendment; use its existing verified IR without a new parser change and report this provenance."
+      },
+      {
+        "id": "qwen38-27b-1-r2",
+        "role": "held-out successful API-controller version",
+        "source": {
+          "path": "runs/program-tournament-v1/inputs/qwen38-27b-1-r2/generation.json",
+          "sha256": "ac5a6fe37cdafba1f9a762a06f536909a0d7e0fd3741faedf36f26c1bc999c18"
+        },
+        "caveat": "Its successful source code is not added to prompts or gradient targets."
+      }
+    ],
+    "maximum_generated_programs": 36,
+    "primary_matches_per_valid_program": 48,
+    "maximum_validation_matches": 1152,
+    "scoring_order": "Generate/commit all36 evaluation programs and seal all training checkpoints before computing/reporting validation or primary-holdout scores. Score the same frozen programs on the separate validation and holdout map families; no adaptation between them.",
+    "invalid_outputs": "Count every prescribed draw, including syntax failures, runtime faults and truncation. Uncompilable output has no fabricated game. Report failure count and end-to-end task reward\u22121; for compiled programs preserve every actual replay even if faults occur.",
+    "report": [
+      "Primary unpenalized absolute banked-point yield over every prescribed generated controller; distinguish a zero yield caused by authorship failure from a played game scoring zero.",
+      "End-to-end mean task reward per generated program, with program sampling seeds paired across checkpoints.",
+      "Compile rate, actual-EOS rate, fault-free rate, and positive-banking rate separately.",
+      "Game return and absolute banked points among valid/fault-free programs, clearly labeled as a selected subset rather than an unbiased standalone learning effect.",
+      "Raw game returns and program faults for all compiled programs, including runtime-invalid ones.",
+      "Per-opponent and per-map paired results, win/draw/loss, failed-action rate and exact completion/compiled-IR duplicate rate.",
+      "Adapter L2 and number of changed parameters, actual optimizer steps, gradient norms, full-token likelihood gates and training reward decomposition.",
+      "All-rest controller frequency (every chosen action in every played game is rest), per-program rest-action fraction, zero-banking rate, and 0\u20130 draw rate. A no-fault/all-rest validity-only controller is not strategic progress."
+    ],
+    "primary_estimands": [
+      "game_rl minus common frozen base in end-to-end mean unpenalized banked-point yield per prescribed generated controller under the compact prompt. For uncompilable/truncated authorship the yield is0 with no fabricated game; for compiled controllers use actual replay banked points, including those with runtime faults.",
+      "game_rl minus validity_rl on the same unpenalized banked-point yield, paired by the eight generation seeds, to test benefit beyond authoring reliability."
+    ],
+    "secondary_estimands": [
+      "Actual unpenalized relative game return for every compiled program, with missing-game authorship failures reported separately; valid/fault-free subset results are explicitly conditional.",
+      "Weight-training effects under the plain prompt, analyzed separately from the compact condition.",
+      "End-to-end penalized training/task reward, compile rate, runtime fault rate, and failure counts, all separate from the primary gameplay utility."
+    ],
+    "uncertainty": "Use the paired generation seed as the primary independent sampling unit: n8 for compact, n4 for plain, not the thousands of correlated games. Report raw paired differences and optional paired cluster bootstrap intervals over programs; maps/opponents are crossed fixed factors. This is one training seed per arm, so even positive results require a fresh-seed replication.",
+    "interpretation_gate": "Do not judge improvement using the mixed penalty reward alone. A rise solely in validity, a game_rl/validity_rl tie, or lower runtime faults with unchanged unpenalized banked points does not show strategic improvement. Positive primary gameplay yield versus both controls, supported by relative returns and more than one opponent family, justifies a new training-seed replication; this study cannot establish perpetual self-play progress.",
+    "maximum_all_holdout_matches": 1728,
+    "maximum_primary_compact_holdout_matches": 1152,
+    "maximum_secondary_plain_holdout_matches": 576,
+    "maximum_primary_compact_validation_matches": 768,
+    "maximum_secondary_plain_validation_matches": 384,
+    "holdout_count_definition": "Three checkpoints \u00d7eight compact programs \u00d7six maps \u00d7four opponents \u00d7two seats =1,152 maximum PRIMARY compact matches. Three checkpoints \u00d7four plain programs \u00d7six maps \u00d7four opponents \u00d7two seats =576 maximum SECONDARY plain matches. The1,728 total includes both prompt conditions; invalid authorship reduces actual played-match counts, never prescribed program-draw denominators."
+  },
+  "signal_and_failure_handling": {
+    "runtime_penalty_is_new_objective": true,
+    "failed_actions_are_not_program_faults": "Only interpreter-reported program faults trigger the declared runtime penalty. Legal outcomes such as blocked movement, no_resource after a competing simultaneous harvest, insufficient energy, a full cargo action or an unsuccessful deposit remain game outcomes. Track their frequencies; do not conflate them with interpreter errors or change the frozen compiler.",
+    "rloo": "For every group compute reward_i minus the mean reward of the other seven independent candidate completions. All eight candidates share the same frozen maps/opponents; no candidate contributes to its own baseline.",
+    "all_equal_group": "Commit the entire group and skip the optimizer exactly when all advantages are zero. Consume this prescribed group; never redraw until variance appears or inject artificial rewards.",
+    "all_invalid_group": "All eight candidates fail authorship or have candidate-seat interpreter faults on the prescribed matches: keep the entire zero-signal group and skip the update. Two consecutive such all-runtime-invalid groups terminate that arm as capability failure, preserve its last checkpoint and mark the intended endpoint incomplete. Do not convert to SFT or silently repair code.",
+    "zero_game_signal": "If valid/fault-free candidates have identical game returns, label any nonzero gradient as authorship-validity signal. Track this for every game_rl group, rather than claiming it trains strategy.",
+    "numerical_failure": "Any likelihood-gate failure, nonfinite tensor, unexpected parameter identity, memory breach or missing source hash stops the affected run before committing an update. Preserve its artifacts for diagnosis; do not loosen tolerances or retry with a different sampler.",
+    "partial_signal": "Continue only the fixed planned groups; no reward-dependent extra attempts, opponent search or new prompt. Report actual optimizer-step counts if zero-signal groups differ across arms.",
+    "reward_bounds": {
+      "valid_game_reward": [
+        -1,
+        1
+      ],
+      "invalid_or_runtime_fault_reward": -1,
+      "validity_only_valid_reward": 0,
+      "rule": "No additive fault penalty on top of game return: use the explicit \u22121 override. An invalid output can never earn more than the worst possible valid game return. Report raw actual game metrics separately."
+    },
+    "runtime_fault_attribution": "For each replay inspect program_faults[candidate_seat] only. Penalize a candidate if this count is positive in any prescribed training match. Never aggregate both seats or penalize it for opponent program faults: an admitted opponent can fault on an unseen map despite calibration. Record opponent faults separately as an environment-quality diagnostic."
+  },
+  "resource_and_time_plan": {
+    "planning_envelope_minutes": 240,
+    "implementation_and_independent_CPU_review_minutes": 45,
+    "expected_neural_and_CPU_execution_minutes": [
+      130,
+      180
+    ],
+    "audit_and_margin_minutes": 15,
+    "estimate_basis": "Observed compact generations44\u201379s and approximately211s for full likelihood/gated optimizer on four completions. Forty-eight training draws, up to eight opponent attempts, thirty-six evaluation draws and six groups of eight imply about90\u2013110min sampling plus about42min likelihood/backprop before CPU scoring/load/audit. Forecast is uncertain, not a guarantee.",
+    "maximum_new_generations": 92,
+    "maximum_new_completion_tokens": 94208,
+    "maximum_training_completion_tokens": 49152,
+    "maximum_training_matches": 1152,
+    "maximum_calibration_matches": 60,
+    "maximum_all_scored_or_calibration_matches": 4092,
+    "execution_time_limit_seconds": 13500,
+    "stage_admission": "Check remaining absolute/whole-run time before every new stage. There is deliberately no180-minute reservation: parent authorization accepts the risk of incomplete final evaluation. The parent watchdog stops the process group at the earlier of13,500 seconds or07:30. Preserve every committed artifact if stopped.",
+    "neural_exclusivity": "Acquire runs/local-neural.lock and a dedicated study lock. Do not compete with the active arena holdout. No RunPod, API calls, weight downloads or other model workers.",
+    "watchdog": "The07:30 deadline is an actual parent-enforced process-group stop, not only stage admission. Reuse the parent deadline/RSS watchdog and worker allocator/time guards, then reserve07:30\u201308:00 for CPU audit. Preserve the known limitation that parent death does not independently guarantee hard child termination.",
+    "no_automatic_scaleup": "Do not increase output length, trainable layers, group count, learning rate or memory ceiling if no improvement appears.",
+    "hard_generation_bound_minutes": 460,
+    "final_evaluation_generation_bound_minutes": 180,
+    "training_generation_bound_minutes": 240,
+    "opponent_generation_bound_minutes": 40,
+    "neural_update_smoke_bound_minutes": null,
+    "bound_caveat": "The existing backend has no per-update hard timeout independent of the parent watchdog. The old211-second four-completion measurement cannot certify a bound for repeated group8 updates. A successful complete study is therefore not guaranteed even with460 generation minutes plus an empirical optimizer allowance.",
+    "absolute_process_stop": "2026-10-22T07:30:00-07:00",
+    "unscored_mechanics_smoke": "One32-token numerical/derivative diagnostic per worker process, no optimizer update or gameplay reward; these diagnostic tokens are additional to the92 scored/opponent authoring draws and count against the same durable wall deadline.",
+    "resume_wall_budget": "Persist the first launch time once. The earlier of first launch+13,500 seconds and07:30 is the effective hard stop across all resumptions; downtime counts conservatively, so restarting never replenishes the allowance."
+  },
+  "implementation_required_before_launch": {
+    "new_files_only": [
+      "selfplay/program_study.py",
+      "tests/test_program_study.py",
+      "scripts/analyze_program_study.py"
+    ],
+    "reuse_unchanged": [
+      "selfplay/program_local_rl.py:MlxFinalBlockPolicy",
+      "scripts/cloud/train_program_rl.py:classify/score_program/likelihood and replay helpers",
+      "selfplay/program_python.py",
+      "selfplay/program_arena/*"
+    ],
+    "necessary_new_orchestration": [
+      "Separate two-arm source/checkpoint/optimizer state and safe switching; verify saved tensor names/shapes/values each time.",
+      "Independent training/validation/test schedules, shared frozen useful-opponent pool, group size8 and exactly three rounds per arm.",
+      "Explicit runtime-fault authorship reward for both arms and validity-only control reward; preserve original game returns and matches.",
+      "Thirty-six terminal evaluation draws with exact actual-count labels, independently recorded prompt and sampling seeds.",
+      "Independent audit validates reward components, eight-way leave-one-out advantages, checkpoint/source/gate/sample identities, skipped updates and all saved deterministic replays."
+    ],
+    "tests_before_freeze": [
+      "CPU fixtures for runtime-fault penalty versus legal failed actions.",
+      "RLOO self-independence and zero-variance skip; no resampling after invalid draws.",
+      "Two-arm adapter/optimizer switching and crash resume without applying an update twice, using fake policy fixtures.",
+      "Frozen roster/hash/seed-family enforcement and no holdout feedback into training.",
+      "Actual evaluation counts and invalid draws retained in denominators.",
+      "Process lock, deadline admission and incomplete status preserve all prior committed artifacts.",
+      "A healthy candidate facing an opponent that faults must not receive the runtime-fault override; the same replay with candidate-seat faults must receive it. Report primary compact and secondary plain evaluation counts separately.",
+      "Best-effort admission retains300s samples and every prescribed draw; parent watchdog stops at07:30 or13,500s and no final claims are allowed unless both round3 endpoints and all36 evaluation draws/scores complete."
+    ],
+    "freeze": "Archive both the new orchestration/auditor and all imported existing code, model index, library-source hashes, opponent IR/provenance, exact prompts, arm configs, seed schedule and this plan before any new model draw. Verify on resume.",
+    "preservation": "Do not edit or overwrite prior arena, plain, compact, feedback, tournament source archives, manifests, prompts, generations, checkpoints or audits. Use a new uniquely named run directory; resume only with exact compatible identities."
+  },
+  "independent_review": {
+    "reviewer": "games_env",
+    "status": "Two clarifications incorporated; no other material design blocker identified. DEFER conclusion unchanged.",
+    "clarifications": [
+      "Candidate-seat-only runtime-fault attribution in reward and opponent admission.",
+      "Separate1,152 primary compact and576 secondary plain maximum holdout games;1,728 is their combined total."
+    ]
+  },
+  "authorization_amendment": {
+    "source": "Root instruction2026-10-22",
+    "original_proposal": "runs/program-next-study-proposal-v1.json",
+    "original_proposal_sha256": "d3983df438a23e6bb86522fecc79c3537ecac9ecf9669d1af19b8f0189048692",
+    "accepted_risk": "Study may finish incomplete under the hard deadline; guaranteed completion is not required.",
+    "no_reduced_counts": true,
+    "no_intermediate_endpoint_selection": true,
+    "claims_require_both_round3_and_all_evaluations": true
+  }
+}

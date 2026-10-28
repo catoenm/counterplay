@@ -1,0 +1,173 @@
+{
+  "training": false,
+  "runs": {
+    "runs/challenge-solve-qwen": {
+      "backend": "qwen",
+      "complete": true,
+      "task_count": 7,
+      "calls": 42,
+      "reverified": true
+    },
+    "runs/challenge-solve-qwen-off": {
+      "backend": "qwen-off",
+      "complete": true,
+      "task_count": 6,
+      "calls": 36,
+      "reverified": true
+    }
+  },
+  "models": {
+    "qwen": {
+      "('procedural', 'canonical')": {
+        "tasks": 6,
+        "attempts": 24,
+        "successes": 18,
+        "success_rate": 0.75,
+        "tasks_solved": 5,
+        "mixed_tasks": 1,
+        "useful_mixed_tasks": 0,
+        "statuses": {
+          "solved": 18,
+          "truncated": 6
+        },
+        "completion_tokens": 56009,
+        "prompt_tokens": 4936,
+        "seconds": 350.4147866347448
+      },
+      "('procedural', 'renamed_reordered')": {
+        "tasks": 6,
+        "attempts": 12,
+        "successes": 10,
+        "success_rate": 0.8333333333333334,
+        "tasks_solved": 5,
+        "mixed_tasks": 0,
+        "useful_mixed_tasks": null,
+        "statuses": {
+          "solved": 10,
+          "truncated": 2
+        },
+        "completion_tokens": 28749,
+        "prompt_tokens": 2420,
+        "seconds": 158.03428346849796
+      },
+      "('qwen', 'canonical')": {
+        "tasks": 1,
+        "attempts": 4,
+        "successes": 4,
+        "success_rate": 1.0,
+        "tasks_solved": 1,
+        "mixed_tasks": 0,
+        "useful_mixed_tasks": 0,
+        "statuses": {
+          "solved": 4
+        },
+        "completion_tokens": 10265,
+        "prompt_tokens": 808,
+        "seconds": 53.600552874750974
+      },
+      "('qwen', 'renamed_reordered')": {
+        "tasks": 1,
+        "attempts": 2,
+        "successes": 2,
+        "success_rate": 1.0,
+        "tasks_solved": 1,
+        "mixed_tasks": 0,
+        "useful_mixed_tasks": null,
+        "statuses": {
+          "solved": 2
+        },
+        "completion_tokens": 4073,
+        "prompt_tokens": 396,
+        "seconds": 25.85180410399971
+      }
+    },
+    "qwen-off": {
+      "('procedural', 'canonical')": {
+        "tasks": 6,
+        "attempts": 24,
+        "successes": 0,
+        "success_rate": 0.0,
+        "tasks_solved": 0,
+        "mixed_tasks": 0,
+        "useful_mixed_tasks": 0,
+        "statuses": {
+          "wrong_goal": 24
+        },
+        "completion_tokens": 480,
+        "prompt_tokens": 5032,
+        "seconds": 6.099102052749004
+      },
+      "('procedural', 'renamed_reordered')": {
+        "tasks": 6,
+        "attempts": 12,
+        "successes": 2,
+        "success_rate": 0.16666666666666666,
+        "tasks_solved": 1,
+        "mixed_tasks": 0,
+        "useful_mixed_tasks": null,
+        "statuses": {
+          "wrong_goal": 10,
+          "solved": 2
+        },
+        "completion_tokens": 192,
+        "prompt_tokens": 2468,
+        "seconds": 3.017512198252007
+      }
+    }
+  },
+  "comparisons": {
+    "thinking_minus_disabled": {
+      "paired_tasks": 6,
+      "a_minus_b": 0.75,
+      "task_bootstrap_95_interval": [
+        0.4166666666666667,
+        1.0
+      ],
+      "note": "Exploratory task-cluster bootstrap; six tasks cannot establish generalization."
+    }
+  },
+  "uniform_random_legal_plan_reference": {
+    "5de81d9f551132be4e2d5f486c2795e19be3f06d3c51413fc1f900d10629e41f": {
+      "depth": 2,
+      "solving_sequences": 1,
+      "legal_sequences": 16,
+      "success_rate": 0.0625
+    },
+    "524f41ad8214d5dc44d94f67bcc476483a4f47920005da7986a7e4f9e1dcd86d": {
+      "depth": 4,
+      "solving_sequences": 6,
+      "legal_sequences": 256,
+      "success_rate": 0.0234375
+    },
+    "df5c26652d6f5ba3ab4c71a10063382cb279c844ad23ce2b4f28a6eca7f0f806": {
+      "depth": 6,
+      "solving_sequences": 90,
+      "legal_sequences": 4096,
+      "success_rate": 0.02197265625
+    },
+    "b489a5b5b9acca6e35370b84bf1ce77679540aa327dc2395dcf4840ebb49f8b7": {
+      "depth": 2,
+      "solving_sequences": 1,
+      "legal_sequences": 16,
+      "success_rate": 0.0625
+    },
+    "f107ad6a692f72cb9a4e0966bcf7942e6cbf84db18091087600067692ce7bf84": {
+      "depth": 4,
+      "solving_sequences": 1,
+      "legal_sequences": 256,
+      "success_rate": 0.00390625
+    },
+    "714865bdfbd244594e2a1b61d6a5b2e52c9a131efecfbfba4c14c0e57ad28d75": {
+      "depth": 6,
+      "solving_sequences": 36,
+      "legal_sequences": 4096,
+      "success_rate": 0.0087890625
+    },
+    "be802d316b1de173024e86c9fcc2ed26e0d7e870388b7bbd6b29f3aa278b3cc0": {
+      "depth": 2,
+      "solving_sequences": 3,
+      "legal_sequences": 16,
+      "success_rate": 0.1875
+    }
+  }
+}

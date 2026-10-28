@@ -1,0 +1,53 @@
+{
+  "model": {
+    "model": "mlx-community/Qwen3-8B-4bit",
+    "revision": "545dc4251c05440727734bcd94334791f6ab0192"
+  },
+  "cycles": 2,
+  "environments": [
+    "market",
+    "maze",
+    "chess"
+  ],
+  "selfplay_episodes_per_game_per_cycle": 8,
+  "evaluation_scenario_seeds_per_game_opponent": 3,
+  "evaluation_seat_swaps": true,
+  "evaluation_opponents": [
+    "base",
+    "heuristic"
+  ],
+  "horizons": {
+    "market": 6,
+    "maze": 8,
+    "chess": 16
+  },
+  "optimizer": "Adam",
+  "learning_rate": 2e-05,
+  "epochs_per_cycle": 1,
+  "minibatch_size": 4,
+  "inference_batch_size": 8,
+  "clip_ratio": 0.2,
+  "entropy_coefficient": 0.01,
+  "kl_to_rollout_coefficient": 0.02,
+  "gradient_clip": 1.0,
+  "baseline": "leave-one-episode-out, environment and player conditioned",
+  "discount": 1.0,
+  "objective": "equal environment/episode/seat weight; sum action score gradients",
+  "training": "same current checkpoint in both seats, fresh episodes each cycle",
+  "external_spend_usd": 0,
+  "source_sha256": {
+    "selfplay/arena/chess_game.py": "83d821bf7e84190494df968bcc0827b3108c6a1b0f0ee1cc668f4d777349d9fd",
+    "selfplay/arena/market.py": "29a2e99e3ce06f00d43f2ed962a819981e8d444296aa7dd77c0ae5915461fe6f",
+    "selfplay/arena/policy.py": "339de4d0db9b9d1b8e9880bb06d563908274676da9d0570cde3f5f4ecab2b81e",
+    "selfplay/arena/__init__.py": "10b70b84f92d66332feb0b9dc83ab52660c4497a657a52d6cc5d547d39cd8714",
+    "selfplay/arena/experiment.py": "c18907d4a2b780acac99ab5f2cd63ebc6b8fd09a9f3f5e98b66bce50766a3545",
+    "selfplay/arena/maze.py": "686df22a88f11808000392cb57707e5ff6c06f1bf77d34a83f3f043690dbd1e2",
+    "docs/arena-rl-protocol.md": "12d5a379193f6a5ac915ae538bd38cbcae655485c5921fa5f4460f27ff693885"
+  },
+  "versions": {
+    "mlx": "0.32.4",
+    "mlx-lm": "0.32.2",
+    "chess": "1.11.2",
+    "python-chess": "1.999"
+  }
+}

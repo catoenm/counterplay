@@ -1,0 +1,37 @@
+{
+  "config": {
+    "command": "collect",
+    "tasks": "experiments/depth-v1/test.jsonl",
+    "out": "runs/depth-eval-base",
+    "attempts": 4,
+    "formats": "strict",
+    "variants": "canonical,renamed_reordered",
+    "seed": 15013,
+    "max_minutes": 15.0,
+    "adapter": null,
+    "batch_size": 16,
+    "resume": false
+  },
+  "model": {
+    "model": "mlx-community/Qwen3-4B-4bit",
+    "snapshot": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+    "backend": "mlx",
+    "thinking": false,
+    "top_k": 20,
+    "adapter_path": null,
+    "protocol": "fixed-horizon-plan-v1"
+  },
+  "training": false,
+  "task_manifest_sha256": "371a09194fefddc6d1cc957e0a768495b6626cb638c6913ef5a69ee0bda39631",
+  "source_sha256": {
+    "pilot.py": "e706ee06462725161226a8e8d11704908f64e917bb0d836642820b5624000f38",
+    "curriculum.py": "f456f4463a8c6023bdd9400b9e6dd35294569288f4fc6c6cf935014100267d2c",
+    "feedback.py": "d7ededd188c36c8ecf49f3b026c8fb70f4c11dcd6d9511f995c90b5b3fe86ff1",
+    "strict.py": "99ee927d8114dd8ed2f5bfb74c7733e8a626654a8e324266b6808202df2f1181",
+    "__init__.py": "54b3c9dd5c0cc6221ed5af3bcaae9445ced78d30114e5c79b32833ce6d37f495",
+    "dataset.py": "b5a99b1070e4b8aba6cffc771552419f2aff16f67981f8bea219a1b059332b2d",
+    "depth.py": "161630d07990ba415fde870e799389a11c92eaa326390dd5eae37f719182f790",
+    "train.py": "dc16fb52a3c0210d63e5c6898888a21e64834a1960c2817c96f934bd851141fa",
+    "environment.py": "ec6d2f589bc32acc0c9cd945f68de68a2af40d089d5873a622b8f92d64ca4667"
+  }
+}

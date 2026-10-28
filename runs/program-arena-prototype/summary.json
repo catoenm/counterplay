@@ -1,0 +1,54 @@
+{
+  "kind": "scripted prototype validation",
+  "model_generated": false,
+  "gradient_training": false,
+  "external_spend_usd": 0,
+  "games": 72,
+  "seeds_per_pair": 12,
+  "seat_swaps": true,
+  "source_sha256": {
+    "/Users/mitchellcatoen/Documents/workspace/selfplay/selfplay/program_arena/__init__.py": "2c405b142b39f6f350996f812875afbe4ec845005a662eaf43bc28a7e2d4c7d2",
+    "/Users/mitchellcatoen/Documents/workspace/selfplay/selfplay/program_arena/demo.py": "f918f494d7ad39b78cda0d1672ef19d9244e3c52ef07739b696725b7b6f9105f",
+    "/Users/mitchellcatoen/Documents/workspace/selfplay/selfplay/program_arena/dsl.py": "91cc93d24e9c61b0cc04b4bf3d34a7e3515bda59fed62eeb766006ec9df74968",
+    "/Users/mitchellcatoen/Documents/workspace/selfplay/selfplay/program_arena/examples.py": "5261337c5ac1415c14da1505e76d2ed99a5916da70a2f02397d5d0242757894a",
+    "/Users/mitchellcatoen/Documents/workspace/selfplay/selfplay/program_arena/game.py": "7986796669d4622d53536b2b9b6984778372e2cf2354b9885a384680e66f0246",
+    "/Users/mitchellcatoen/Documents/workspace/selfplay/selfplay/program_arena/runner.py": "bdc8f5ce3471d4018fe2c893c7d49351c8e23d75f151bc9abcd36e637ef1445e",
+    "/Users/mitchellcatoen/Documents/workspace/selfplay/selfplay/program_arena/spec.py": "bd236885f4864e56a8003abe81ab9726386ed11399648318fe2eff7f87920ff3"
+  },
+  "all_replays_verified": true,
+  "program_digests": {
+    "idle": "99e22677f17b1693f7282d237e082eaf34c119244ea2266861e256a8da7143d9",
+    "nearest": "371ffe71a452c3bc992199eedca657d7ff85bf9ddaa7b891a8f706dfabf792fb",
+    "value": "2d399cccd763cd3fc4d486410f3ec04e397829cd2e58fde7e5b89d5c5da60cec",
+    "avoid_rival": "f8b03f746eff290c57d7c1ac39e4447da7d420b07ccf2f44c5a1c5f69190b92a"
+  },
+  "pairs": {
+    "nearest vs idle": {
+      "games": 24,
+      "a_wins": 24,
+      "ties": 0,
+      "a_mean_return": 0.6157031938649585,
+      "a_mean_score": 23.583333333333332,
+      "b_mean_score": 0.0,
+      "program_faults": 0
+    },
+    "nearest vs value": {
+      "games": 24,
+      "a_wins": 2,
+      "ties": 14,
+      "a_mean_return": -0.08217517776341306,
+      "a_mean_score": 17.75,
+      "b_mean_score": 20.583333333333332,
+      "program_faults": 0
+    },
+    "value vs avoid_rival": {
+      "games": 24,
+      "a_wins": 8,
+      "ties": 14,
+      "a_mean_return": 0.0621543489190548,
+      "a_mean_score": 20.0,
+      "b_mean_score": 18.333333333333332,
+      "program_faults": 0
+    }
+  }
+}

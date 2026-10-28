@@ -1,0 +1,157 @@
+{
+  "all_replays_verified": true,
+  "attempts": 2,
+  "complete": true,
+  "costs": {
+    "evaluation_api_cost_usd": 0,
+    "new_generation_cost_usd": 0,
+    "original_response_cost_upper_usd": 0,
+    "original_response_cost_usd": 0,
+    "reused_generation_responses": false,
+    "scope": "This run's generation arm only. Prior JSON screen and other pilot costs are separate; copied responses are not charged again."
+  },
+  "evaluation_api_calls": 0,
+  "evaluation_sha256": "33a3423f69e9b9aaaa88587f7e32f4d8345d18283703dd0001a100dc550d0be3",
+  "failures": {
+    "invalidsyntax": 2
+  },
+  "fixed_reference_matches": 0,
+  "format_version": 1,
+  "generation_reuse": null,
+  "generation_sha256": {
+    "generation-1.json": "99904c49352775a2917fa93b49a62d6c47c08dde8590101326cc034cd8a33580",
+    "generation-2.json": "a63c0fcb6723b5af4e1dd85b26e13939c789c1e9dd9271a755d64966b829c705"
+  },
+  "generations": [
+    {
+      "compiled_program": null,
+      "cost_upper_usd": 0,
+      "cost_usd": 0,
+      "error": "line 13: unsupported statement (no imports, helpers, while, break, continue or side effects)",
+      "extraction_status": "complete",
+      "failure": "invalidsyntax",
+      "finish_reason": "stop",
+      "missing_final": false,
+      "normalization": "none",
+      "normalization_source_sha256": "4b0095b507dc50b05285b3c10931923543ba2bd976c6f54511d5ab1bc5a85163",
+      "normalization_version": 2,
+      "normalized_source": "def act():\n    for i in range(6):\n        if self_x == site(i, 'x') and self_y == site(i, 'y') and site(i, 'units') > 0:\n            return {'action': 'harvest'}\n    if self_x == home_x and self_y == home_y and carrying > 0:\n        return {'action': 'deposit'}\n    if energy < 5:\n        return {'action': 'rest'}\n    min_dist = 1000\n    best_i = -1\n    for i in range(6):\n        if site(i, 'units') <= 0:\n            continue\n        dx = self_x - site(i, 'x')\n        dy = self_y - site(i, 'y')\n        dist = dx*dx + dy*dy\n        if dist < min_dist:\n            min_dist = dist\n            best_i = i\n    if best_i == -1:\n        return {'action': 'rest'}\n    target_x = site(best_i, 'x')\n    target_y = site(best_i, 'y')\n    move_x = 0\n    move_y = 0\n    if self_x < target_x:\n        move_x = 1\n    elif self_x > target_x:\n        move_x = -1\n    if self_y < target_y:\n        move_y = 1\n    elif self_y > target_y:\n        move_y = -1\n    dx = 0\n    dy = 0\n    if move_x != 0:\n        dx = move_x\n    else:\n        dy = move_y\n    return {'action': 'move', 'dx': dx, 'dy': dy}",
+      "normalized_source_sha256": "09f84b72416b66caa000bd37f095dc37369191c5dbb9fbe44a1d6035b6c303c6",
+      "original_text": "def act():\n    for i in range(6):\n        if self_x == site(i, 'x') and self_y == site(i, 'y') and site(i, 'units') > 0:\n            return {'action': 'harvest'}\n    if self_x == home_x and self_y == home_y and carrying > 0:\n        return {'action': 'deposit'}\n    if energy < 5:\n        return {'action': 'rest'}\n    min_dist = 1000\n    best_i = -1\n    for i in range(6):\n        if site(i, 'units') <= 0:\n            continue\n        dx = self_x - site(i, 'x')\n        dy = self_y - site(i, 'y')\n        dist = dx*dx + dy*dy\n        if dist < min_dist:\n            min_dist = dist\n            best_i = i\n    if best_i == -1:\n        return {'action': 'rest'}\n    target_x = site(best_i, 'x')\n    target_y = site(best_i, 'y')\n    move_x = 0\n    move_y = 0\n    if self_x < target_x:\n        move_x = 1\n    elif self_x > target_x:\n        move_x = -1\n    if self_y < target_y:\n        move_y = 1\n    elif self_y > target_y:\n        move_y = -1\n    dx = 0\n    dy = 0\n    if move_x != 0:\n        dx = move_x\n    else:\n        dy = move_y\n    return {'action': 'move', 'dx': dx, 'dy': dy}",
+      "original_text_sha256": "09f84b72416b66caa000bd37f095dc37369191c5dbb9fbe44a1d6035b6c303c6",
+      "python_ast_nodes": 288,
+      "reasoning_mode": "on",
+      "rejection_kind": "language_contract",
+      "response_file": "generation-1.json",
+      "response_sha256": "99904c49352775a2917fa93b49a62d6c47c08dde8590101326cc034cd8a33580",
+      "returned_model": "mlx-community/Qwen3-8B-4bit",
+      "returned_provider": "local_mlx",
+      "revision": "545dc4251c05440727734bcd94334791f6ab0192",
+      "sample_id": "generation-1",
+      "source_bytes": 1085,
+      "usage": {
+        "completion_tokens": 7151,
+        "prompt_tokens": 825,
+        "total_tokens": 7976
+      },
+      "valid": false
+    },
+    {
+      "compiled_program": null,
+      "cost_upper_usd": 0,
+      "cost_usd": 0,
+      "error": "line 15: unsupported statement (no imports, helpers, while, break, continue or side effects)",
+      "extraction_status": "complete",
+      "failure": "invalidsyntax",
+      "finish_reason": "stop",
+      "missing_final": false,
+      "normalization": "none",
+      "normalization_source_sha256": "4b0095b507dc50b05285b3c10931923543ba2bd976c6f54511d5ab1bc5a85163",
+      "normalization_version": 2,
+      "normalized_source": "def act():\n    if self_x == home_x and self_y == home_y and carrying > 0:\n        return {'action': 'deposit'}\n    for i in range(6):\n        if site(i, 'x') == self_x and site(i, 'y') == self_y:\n            if site(i, 'units') > 0:\n                return {'action': 'harvest'}\n    if energy < 3:\n        return {'action': 'rest'}\n    best_i = -1\n    best_dist = 10000\n    best_val = -1\n    for i in range(6):\n        if site(i, 'units') <= 0:\n            continue\n        dist = abs(self_x - site(i, 'x')) + abs(self_y - site(i, 'y'))\n        if dist < best_dist or (dist == best_dist and site(i, 'value') > best_val):\n            best_dist = dist\n            best_val = site(i, 'value')\n            best_i = i\n    if best_i != -1:\n        dx = site(best_i, 'x') - self_x\n        dy = site(best_i, 'y') - self_y\n        if abs(dx) + abs(dy) == 1:\n            return {'action': 'move', 'dx': dx, 'dy': dy}\n    return {'action': 'rest'}",
+      "normalized_source_sha256": "b2302f30d8ffe5dc967881e89b65ba88e2120421599901b4d178cce33a05213f",
+      "original_text": "def act():\n    if self_x == home_x and self_y == home_y and carrying > 0:\n        return {'action': 'deposit'}\n    for i in range(6):\n        if site(i, 'x') == self_x and site(i, 'y') == self_y:\n            if site(i, 'units') > 0:\n                return {'action': 'harvest'}\n    if energy < 3:\n        return {'action': 'rest'}\n    best_i = -1\n    best_dist = 10000\n    best_val = -1\n    for i in range(6):\n        if site(i, 'units') <= 0:\n            continue\n        dist = abs(self_x - site(i, 'x')) + abs(self_y - site(i, 'y'))\n        if dist < best_dist or (dist == best_dist and site(i, 'value') > best_val):\n            best_dist = dist\n            best_val = site(i, 'value')\n            best_i = i\n    if best_i != -1:\n        dx = site(best_i, 'x') - self_x\n        dy = site(best_i, 'y') - self_y\n        if abs(dx) + abs(dy) == 1:\n            return {'action': 'move', 'dx': dx, 'dy': dy}\n    return {'action': 'rest'}",
+      "original_text_sha256": "b2302f30d8ffe5dc967881e89b65ba88e2120421599901b4d178cce33a05213f",
+      "python_ast_nodes": 256,
+      "reasoning_mode": "on",
+      "rejection_kind": "language_contract",
+      "response_file": "generation-2.json",
+      "response_sha256": "a63c0fcb6723b5af4e1dd85b26e13939c789c1e9dd9271a755d64966b829c705",
+      "returned_model": "mlx-community/Qwen3-8B-4bit",
+      "returned_provider": "local_mlx",
+      "revision": "545dc4251c05440727734bcd94334791f6ab0192",
+      "sample_id": "generation-2",
+      "source_bytes": 935,
+      "usage": {
+        "completion_tokens": 6516,
+        "prompt_tokens": 825,
+        "total_tokens": 7341
+      },
+      "valid": false
+    }
+  ],
+  "interpretation": "Small adaptive authoring-capability screen against two fixed scripted references and any valid peer. No gradient training, continual improvement, or general-strength claim. Invalid programs receive no fabricated games or losses.",
+  "model_matches": 0,
+  "peer_crossplay_matches": 0,
+  "plan_sha256": "d7e9bc2ebac0d0fe7c933379c9d056c8ed9c4cb7deb8ba42df0a0004e5e101c0",
+  "players": {
+    "generation-1": {
+      "by_opponent": {},
+      "overall": {
+        "banked_points": 0,
+        "decision_turns": 0,
+        "draws": 0,
+        "failed_game_actions": 0,
+        "fault_types": {},
+        "games": 0,
+        "losses": 0,
+        "mean_banked_points": null,
+        "mean_return": null,
+        "opponent_banked_points": 0,
+        "program_faults": 0,
+        "return_sum": 0.0,
+        "wins": 0
+      }
+    },
+    "generation-2": {
+      "by_opponent": {},
+      "overall": {
+        "banked_points": 0,
+        "decision_turns": 0,
+        "draws": 0,
+        "failed_game_actions": 0,
+        "fault_types": {},
+        "games": 0,
+        "losses": 0,
+        "mean_banked_points": null,
+        "mean_return": null,
+        "opponent_banked_points": 0,
+        "program_faults": 0,
+        "return_sum": 0.0,
+        "wins": 0
+      }
+    }
+  },
+  "posthoc_diagnostic": false,
+  "response_normalization": {
+    "mode": "single_python_fence_with_optional_prose",
+    "source_archive": "source/response_normalization.py",
+    "source_sha256": "4b0095b507dc50b05285b3c10931923543ba2bd976c6f54511d5ab1bc5a85163",
+    "version": 2
+  },
+  "scoring": "W/D/L is the sign of final banked-point difference at the game's fixed time limit. This is the game's actual objective, not distance/material adjudication. Return is that difference divided by initial resource value; unbanked cargo scores zero.",
+  "screen": "bounded Python controller authoring",
+  "source_sha256": {
+    "selfplay/program_arena/__init__.py": "2c405b142b39f6f350996f812875afbe4ec845005a662eaf43bc28a7e2d4c7d2",
+    "selfplay/program_arena/demo.py": "f918f494d7ad39b78cda0d1672ef19d9244e3c52ef07739b696725b7b6f9105f",
+    "selfplay/program_arena/dsl.py": "91cc93d24e9c61b0cc04b4bf3d34a7e3515bda59fed62eeb766006ec9df74968",
+    "selfplay/program_arena/examples.py": "5261337c5ac1415c14da1505e76d2ed99a5916da70a2f02397d5d0242757894a",
+    "selfplay/program_arena/game.py": "7986796669d4622d53536b2b9b6984778372e2cf2354b9885a384680e66f0246",
+    "selfplay/program_arena/runner.py": "bdc8f5ce3471d4018fe2c893c7d49351c8e23d75f151bc9abcd36e637ef1445e",
+    "selfplay/program_arena/spec.py": "bd236885f4864e56a8003abe81ab9726386ed11399648318fe2eff7f87920ff3",
+    "selfplay/program_local.py": "9d5cd2e25c0875d82ed6d88ea1a762412a832ad003996e8f196c9e3270612f7f",
+    "selfplay/program_python.py": "598d27639d004230976066d18e6fc6ed6bcd8a5f5f1e6c741b634ebad3f8fb56"
+  },
+  "training": false,
+  "valid_programs": 0
+}

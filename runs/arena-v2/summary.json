@@ -1,0 +1,2138 @@
+{
+  "complete": true,
+  "experiment": "arena-v2",
+  "training_cycles": [
+    2,
+    3
+  ],
+  "parent_run": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/arena-v1",
+  "parent_remains_incomplete": true,
+  "rating_compatibility": "arena-v2-fp32",
+  "policy_arithmetic": {
+    "floating_model_parameters": "float32",
+    "activation_arithmetic": "float32",
+    "quantized_integer_storage": "unchanged uint32 packed 4-bit weights",
+    "adapter_parameters": "float32",
+    "action_policy": "one-token legal categorical distribution",
+    "temperature": 1.0,
+    "thinking": false
+  },
+  "policy_arithmetic_sha256": "0dd0cf0c88a5ba9797be2255a52251d0649869f964e7f0369378eaf5a6ee8e81",
+  "evaluation": {
+    "base / heuristic / market": {
+      "games": 6,
+      "mean_return": -0.39636024453207547,
+      "positive_outcomes": 1,
+      "zero_outcomes": 0,
+      "negative_outcomes": 5,
+      "termination_reasons": {
+        "settlement": 6
+      },
+      "scenario_seeds": 3,
+      "raw_paired_scores": [
+        {
+          "seed": 2900000,
+          "mean_return": -0.46443286236155046
+        },
+        {
+          "seed": 2900002,
+          "mean_return": -0.12101275971598807
+        },
+        {
+          "seed": 2900004,
+          "mean_return": -0.6036351115186878
+        }
+      ]
+    },
+    "base / heuristic / maze": {
+      "games": 6,
+      "mean_return": -0.65,
+      "positive_outcomes": 1,
+      "zero_outcomes": 0,
+      "negative_outcomes": 5,
+      "termination_reasons": {
+        "goal": 4,
+        "distance_adjudication_at_cap": 2
+      },
+      "scenario_seeds": 3,
+      "raw_paired_scores": [
+        {
+          "seed": 2901000,
+          "mean_return": -1.0
+        },
+        {
+          "seed": 2901002,
+          "mean_return": -0.65
+        },
+        {
+          "seed": 2901004,
+          "mean_return": -0.3
+        }
+      ]
+    },
+    "base / heuristic / chess": {
+      "games": 6,
+      "mean_return": -0.4666666666666666,
+      "positive_outcomes": 0,
+      "zero_outcomes": 1,
+      "negative_outcomes": 5,
+      "termination_reasons": {
+        "material_adjudication_at_cap": 5,
+        "checkmate": 1
+      },
+      "scenario_seeds": 3,
+      "raw_paired_scores": [
+        {
+          "seed": 2902000,
+          "mean_return": -0.5
+        },
+        {
+          "seed": 2902002,
+          "mean_return": -0.35
+        },
+        {
+          "seed": 2902004,
+          "mean_return": -0.55
+        }
+      ]
+    },
+    "base / base / market": {
+      "games": 6,
+      "mean_return": 0.0,
+      "positive_outcomes": 3,
+      "zero_outcomes": 0,
+      "negative_outcomes": 3,
+      "termination_reasons": {
+        "settlement": 6
+      },
+      "scenario_seeds": 3,
+      "raw_paired_scores": [
+        {
+          "seed": 2900000,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 2900002,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 2900004,
+          "mean_return": 0.0
+        }
+      ]
+    },
+    "base / base / maze": {
+      "games": 6,
+      "mean_return": 0.0,
+      "positive_outcomes": 3,
+      "zero_outcomes": 0,
+      "negative_outcomes": 3,
+      "termination_reasons": {
+        "distance_adjudication_at_cap": 4,
+        "goal": 2
+      },
+      "scenario_seeds": 3,
+      "raw_paired_scores": [
+        {
+          "seed": 2901000,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 2901002,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 2901004,
+          "mean_return": 0.0
+        }
+      ]
+    },
+    "base / base / chess": {
+      "games": 6,
+      "mean_return": 0.0,
+      "positive_outcomes": 2,
+      "zero_outcomes": 2,
+      "negative_outcomes": 2,
+      "termination_reasons": {
+        "material_adjudication_at_cap": 6
+      },
+      "scenario_seeds": 3,
+      "raw_paired_scores": [
+        {
+          "seed": 2902000,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 2902002,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 2902004,
+          "mean_return": 0.0
+        }
+      ]
+    },
+    "cycle1 / heuristic / market": {
+      "games": 6,
+      "mean_return": -0.42610175571250003,
+      "positive_outcomes": 1,
+      "zero_outcomes": 0,
+      "negative_outcomes": 5,
+      "termination_reasons": {
+        "settlement": 6
+      },
+      "scenario_seeds": 3,
+      "raw_paired_scores": [
+        {
+          "seed": 2900000,
+          "mean_return": -0.46443286236155046
+        },
+        {
+          "seed": 2900002,
+          "mean_return": -0.2102372932572619
+        },
+        {
+          "seed": 2900004,
+          "mean_return": -0.6036351115186878
+        }
+      ]
+    },
+    "cycle1 / heuristic / maze": {
+      "games": 6,
+      "mean_return": -0.7833333333333333,
+      "positive_outcomes": 0,
+      "zero_outcomes": 0,
+      "negative_outcomes": 6,
+      "termination_reasons": {
+        "goal": 4,
+        "distance_adjudication_at_cap": 2
+      },
+      "scenario_seeds": 3,
+      "raw_paired_scores": [
+        {
+          "seed": 2901000,
+          "mean_return": -1.0
+        },
+        {
+          "seed": 2901002,
+          "mean_return": -0.75
+        },
+        {
+          "seed": 2901004,
+          "mean_return": -0.6
+        }
+      ]
+    },
+    "cycle1 / heuristic / chess": {
+      "games": 6,
+      "mean_return": -0.3333333333333333,
+      "positive_outcomes": 0,
+      "zero_outcomes": 2,
+      "negative_outcomes": 4,
+      "termination_reasons": {
+        "material_adjudication_at_cap": 5,
+        "claimed_threefold_repetition": 1
+      },
+      "scenario_seeds": 3,
+      "raw_paired_scores": [
+        {
+          "seed": 2902000,
+          "mean_return": -0.4
+        },
+        {
+          "seed": 2902002,
+          "mean_return": -0.05
+        },
+        {
+          "seed": 2902004,
+          "mean_return": -0.55
+        }
+      ]
+    },
+    "cycle1 / base / market": {
+      "games": 6,
+      "mean_return": -0.1954390755187312,
+      "positive_outcomes": 2,
+      "zero_outcomes": 0,
+      "negative_outcomes": 4,
+      "termination_reasons": {
+        "settlement": 6
+      },
+      "scenario_seeds": 3,
+      "raw_paired_scores": [
+        {
+          "seed": 2900000,
+          "mean_return": -0.46624020424509216
+        },
+        {
+          "seed": 2900002,
+          "mean_return": -0.10026356187193117
+        },
+        {
+          "seed": 2900004,
+          "mean_return": -0.019813460439170205
+        }
+      ]
+    },
+    "cycle1 / base / maze": {
+      "games": 6,
+      "mean_return": 0.03333333333333333,
+      "positive_outcomes": 3,
+      "zero_outcomes": 0,
+      "negative_outcomes": 3,
+      "termination_reasons": {
+        "distance_adjudication_at_cap": 4,
+        "goal": 2
+      },
+      "scenario_seeds": 3,
+      "raw_paired_scores": [
+        {
+          "seed": 2901000,
+          "mean_return": 0.1
+        },
+        {
+          "seed": 2901002,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 2901004,
+          "mean_return": 0.0
+        }
+      ]
+    },
+    "cycle1 / base / chess": {
+      "games": 6,
+      "mean_return": -0.11666666666666668,
+      "positive_outcomes": 1,
+      "zero_outcomes": 3,
+      "negative_outcomes": 2,
+      "termination_reasons": {
+        "material_adjudication_at_cap": 6
+      },
+      "scenario_seeds": 3,
+      "raw_paired_scores": [
+        {
+          "seed": 2902000,
+          "mean_return": -0.45
+        },
+        {
+          "seed": 2902002,
+          "mean_return": 0.1
+        },
+        {
+          "seed": 2902004,
+          "mean_return": 0.0
+        }
+      ]
+    },
+    "cycle2 / heuristic / market": {
+      "games": 6,
+      "mean_return": -0.35885726253216793,
+      "positive_outcomes": 1,
+      "zero_outcomes": 0,
+      "negative_outcomes": 5,
+      "termination_reasons": {
+        "settlement": 6
+      },
+      "scenario_seeds": 3,
+      "raw_paired_scores": [
+        {
+          "seed": 2900000,
+          "mean_return": -0.3237251785840746
+        },
+        {
+          "seed": 2900002,
+          "mean_return": -0.14921149749374135
+        },
+        {
+          "seed": 2900004,
+          "mean_return": -0.6036351115186878
+        }
+      ]
+    },
+    "cycle2 / heuristic / maze": {
+      "games": 6,
+      "mean_return": -0.7166666666666667,
+      "positive_outcomes": 0,
+      "zero_outcomes": 1,
+      "negative_outcomes": 5,
+      "termination_reasons": {
+        "goal": 4,
+        "distance_adjudication_at_cap": 2
+      },
+      "scenario_seeds": 3,
+      "raw_paired_scores": [
+        {
+          "seed": 2901000,
+          "mean_return": -1.0
+        },
+        {
+          "seed": 2901002,
+          "mean_return": -0.65
+        },
+        {
+          "seed": 2901004,
+          "mean_return": -0.5
+        }
+      ]
+    },
+    "cycle2 / heuristic / chess": {
+      "games": 6,
+      "mean_return": -0.5333333333333333,
+      "positive_outcomes": 0,
+      "zero_outcomes": 0,
+      "negative_outcomes": 6,
+      "termination_reasons": {
+        "material_adjudication_at_cap": 6
+      },
+      "scenario_seeds": 3,
+      "raw_paired_scores": [
+        {
+          "seed": 2902000,
+          "mean_return": -0.7
+        },
+        {
+          "seed": 2902002,
+          "mean_return": -0.35
+        },
+        {
+          "seed": 2902004,
+          "mean_return": -0.55
+        }
+      ]
+    },
+    "cycle2 / base / market": {
+      "games": 6,
+      "mean_return": -0.10596332852744632,
+      "positive_outcomes": 3,
+      "zero_outcomes": 0,
+      "negative_outcomes": 3,
+      "termination_reasons": {
+        "settlement": 6
+      },
+      "scenario_seeds": 3,
+      "raw_paired_scores": [
+        {
+          "seed": 2900000,
+          "mean_return": -0.2468417467147727
+        },
+        {
+          "seed": 2900002,
+          "mean_return": -0.07104823886756625
+        },
+        {
+          "seed": 2900004,
+          "mean_return": 0.0
+        }
+      ]
+    },
+    "cycle2 / base / maze": {
+      "games": 6,
+      "mean_return": 0.06666666666666667,
+      "positive_outcomes": 3,
+      "zero_outcomes": 1,
+      "negative_outcomes": 2,
+      "termination_reasons": {
+        "distance_adjudication_at_cap": 4,
+        "goal": 2
+      },
+      "scenario_seeds": 3,
+      "raw_paired_scores": [
+        {
+          "seed": 2901000,
+          "mean_return": 0.2
+        },
+        {
+          "seed": 2901002,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 2901004,
+          "mean_return": 0.0
+        }
+      ]
+    },
+    "cycle2 / base / chess": {
+      "games": 6,
+      "mean_return": -0.13333333333333333,
+      "positive_outcomes": 2,
+      "zero_outcomes": 0,
+      "negative_outcomes": 4,
+      "termination_reasons": {
+        "material_adjudication_at_cap": 6
+      },
+      "scenario_seeds": 3,
+      "raw_paired_scores": [
+        {
+          "seed": 2902000,
+          "mean_return": -0.15000000000000002
+        },
+        {
+          "seed": 2902002,
+          "mean_return": -0.2
+        },
+        {
+          "seed": 2902004,
+          "mean_return": -0.04999999999999999
+        }
+      ]
+    },
+    "cycle2 / cycle1 / market": {
+      "games": 6,
+      "mean_return": 0.016342927814511705,
+      "positive_outcomes": 3,
+      "zero_outcomes": 0,
+      "negative_outcomes": 3,
+      "termination_reasons": {
+        "settlement": 6
+      },
+      "scenario_seeds": 3,
+      "raw_paired_scores": [
+        {
+          "seed": 2900000,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 2900002,
+          "mean_return": 0.029215323004364913
+        },
+        {
+          "seed": 2900004,
+          "mean_return": 0.019813460439170205
+        }
+      ]
+    },
+    "cycle2 / cycle1 / maze": {
+      "games": 6,
+      "mean_return": 0.03333333333333333,
+      "positive_outcomes": 3,
+      "zero_outcomes": 1,
+      "negative_outcomes": 2,
+      "termination_reasons": {
+        "distance_adjudication_at_cap": 4,
+        "goal": 2
+      },
+      "scenario_seeds": 3,
+      "raw_paired_scores": [
+        {
+          "seed": 2901000,
+          "mean_return": 0.1
+        },
+        {
+          "seed": 2901002,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 2901004,
+          "mean_return": 0.0
+        }
+      ]
+    },
+    "cycle2 / cycle1 / chess": {
+      "games": 6,
+      "mean_return": -0.11666666666666665,
+      "positive_outcomes": 1,
+      "zero_outcomes": 1,
+      "negative_outcomes": 4,
+      "termination_reasons": {
+        "material_adjudication_at_cap": 6
+      },
+      "scenario_seeds": 3,
+      "raw_paired_scores": [
+        {
+          "seed": 2902000,
+          "mean_return": 0.1
+        },
+        {
+          "seed": 2902002,
+          "mean_return": -0.15000000000000002
+        },
+        {
+          "seed": 2902004,
+          "mean_return": -0.3
+        }
+      ]
+    },
+    "cycle3 / heuristic / market": {
+      "games": 6,
+      "mean_return": -0.37969021747365134,
+      "positive_outcomes": 1,
+      "zero_outcomes": 0,
+      "negative_outcomes": 5,
+      "termination_reasons": {
+        "settlement": 6
+      },
+      "scenario_seeds": 3,
+      "raw_paired_scores": [
+        {
+          "seed": 2900000,
+          "mean_return": -0.43379749507315457
+        },
+        {
+          "seed": 2900002,
+          "mean_return": -0.1016380458291116
+        },
+        {
+          "seed": 2900004,
+          "mean_return": -0.6036351115186878
+        }
+      ]
+    },
+    "cycle3 / heuristic / maze": {
+      "games": 6,
+      "mean_return": -0.75,
+      "positive_outcomes": 0,
+      "zero_outcomes": 0,
+      "negative_outcomes": 6,
+      "termination_reasons": {
+        "goal": 4,
+        "distance_adjudication_at_cap": 2
+      },
+      "scenario_seeds": 3,
+      "raw_paired_scores": [
+        {
+          "seed": 2901000,
+          "mean_return": -1.0
+        },
+        {
+          "seed": 2901002,
+          "mean_return": -0.65
+        },
+        {
+          "seed": 2901004,
+          "mean_return": -0.6
+        }
+      ]
+    },
+    "cycle3 / heuristic / chess": {
+      "games": 6,
+      "mean_return": -0.5333333333333333,
+      "positive_outcomes": 0,
+      "zero_outcomes": 0,
+      "negative_outcomes": 6,
+      "termination_reasons": {
+        "material_adjudication_at_cap": 6
+      },
+      "scenario_seeds": 3,
+      "raw_paired_scores": [
+        {
+          "seed": 2902000,
+          "mean_return": -0.7
+        },
+        {
+          "seed": 2902002,
+          "mean_return": -0.35
+        },
+        {
+          "seed": 2902004,
+          "mean_return": -0.55
+        }
+      ]
+    },
+    "cycle3 / base / market": {
+      "games": 6,
+      "mean_return": -0.06309228904581206,
+      "positive_outcomes": 3,
+      "zero_outcomes": 0,
+      "negative_outcomes": 3,
+      "termination_reasons": {
+        "settlement": 6
+      },
+      "scenario_seeds": 3,
+      "raw_paired_scores": [
+        {
+          "seed": 2900000,
+          "mean_return": -0.09983521211473068
+        },
+        {
+          "seed": 2900002,
+          "mean_return": -0.10026356187193117
+        },
+        {
+          "seed": 2900004,
+          "mean_return": 0.010821906849225682
+        }
+      ]
+    },
+    "cycle3 / base / maze": {
+      "games": 6,
+      "mean_return": 0.19999999999999998,
+      "positive_outcomes": 3,
+      "zero_outcomes": 1,
+      "negative_outcomes": 2,
+      "termination_reasons": {
+        "distance_adjudication_at_cap": 4,
+        "simultaneous_finish": 1,
+        "goal": 1
+      },
+      "scenario_seeds": 3,
+      "raw_paired_scores": [
+        {
+          "seed": 2901000,
+          "mean_return": 0.1
+        },
+        {
+          "seed": 2901002,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 2901004,
+          "mean_return": 0.5
+        }
+      ]
+    },
+    "cycle3 / base / chess": {
+      "games": 6,
+      "mean_return": -0.016666666666666677,
+      "positive_outcomes": 3,
+      "zero_outcomes": 0,
+      "negative_outcomes": 3,
+      "termination_reasons": {
+        "material_adjudication_at_cap": 6
+      },
+      "scenario_seeds": 3,
+      "raw_paired_scores": [
+        {
+          "seed": 2902000,
+          "mean_return": -0.25
+        },
+        {
+          "seed": 2902002,
+          "mean_return": 0.25
+        },
+        {
+          "seed": 2902004,
+          "mean_return": -0.04999999999999999
+        }
+      ]
+    },
+    "cycle3 / cycle2 / market": {
+      "games": 6,
+      "mean_return": -0.039409542756623304,
+      "positive_outcomes": 3,
+      "zero_outcomes": 0,
+      "negative_outcomes": 3,
+      "termination_reasons": {
+        "settlement": 6
+      },
+      "scenario_seeds": 3,
+      "raw_paired_scores": [
+        {
+          "seed": 2900000,
+          "mean_return": -0.09983521211473068
+        },
+        {
+          "seed": 2900002,
+          "mean_return": -0.029215323004364913
+        },
+        {
+          "seed": 2900004,
+          "mean_return": 0.010821906849225682
+        }
+      ]
+    },
+    "cycle3 / cycle2 / maze": {
+      "games": 6,
+      "mean_return": 0.16666666666666666,
+      "positive_outcomes": 3,
+      "zero_outcomes": 1,
+      "negative_outcomes": 2,
+      "termination_reasons": {
+        "distance_adjudication_at_cap": 4,
+        "simultaneous_finish": 1,
+        "goal": 1
+      },
+      "scenario_seeds": 3,
+      "raw_paired_scores": [
+        {
+          "seed": 2901000,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 2901002,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 2901004,
+          "mean_return": 0.5
+        }
+      ]
+    },
+    "cycle3 / cycle2 / chess": {
+      "games": 6,
+      "mean_return": 0.06666666666666667,
+      "positive_outcomes": 3,
+      "zero_outcomes": 3,
+      "negative_outcomes": 0,
+      "termination_reasons": {
+        "material_adjudication_at_cap": 6
+      },
+      "scenario_seeds": 3,
+      "raw_paired_scores": [
+        {
+          "seed": 2902000,
+          "mean_return": 0.15000000000000002
+        },
+        {
+          "seed": 2902002,
+          "mean_return": 0.05
+        },
+        {
+          "seed": 2902004,
+          "mean_return": 0.0
+        }
+      ]
+    },
+    "cycle3 / cycle1 / market": {
+      "games": 6,
+      "mean_return": -0.023066614942111596,
+      "positive_outcomes": 3,
+      "zero_outcomes": 0,
+      "negative_outcomes": 3,
+      "termination_reasons": {
+        "settlement": 6
+      },
+      "scenario_seeds": 3,
+      "raw_paired_scores": [
+        {
+          "seed": 2900000,
+          "mean_return": -0.09983521211473068
+        },
+        {
+          "seed": 2900002,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 2900004,
+          "mean_return": 0.030635367288395887
+        }
+      ]
+    },
+    "cycle3 / cycle1 / maze": {
+      "games": 6,
+      "mean_return": 0.16666666666666666,
+      "positive_outcomes": 3,
+      "zero_outcomes": 1,
+      "negative_outcomes": 2,
+      "termination_reasons": {
+        "distance_adjudication_at_cap": 4,
+        "simultaneous_finish": 1,
+        "goal": 1
+      },
+      "scenario_seeds": 3,
+      "raw_paired_scores": [
+        {
+          "seed": 2901000,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 2901002,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 2901004,
+          "mean_return": 0.5
+        }
+      ]
+    },
+    "cycle3 / cycle1 / chess": {
+      "games": 6,
+      "mean_return": -0.06666666666666667,
+      "positive_outcomes": 1,
+      "zero_outcomes": 1,
+      "negative_outcomes": 4,
+      "termination_reasons": {
+        "material_adjudication_at_cap": 6
+      },
+      "scenario_seeds": 3,
+      "raw_paired_scores": [
+        {
+          "seed": 2902000,
+          "mean_return": -0.1
+        },
+        {
+          "seed": 2902002,
+          "mean_return": -0.15000000000000002
+        },
+        {
+          "seed": 2902004,
+          "mean_return": 0.04999999999999999
+        }
+      ]
+    }
+  },
+  "training": [
+    {
+      "complete": true,
+      "source": "cycle1",
+      "target": "cycle2",
+      "episodes": 24,
+      "transitions": 352,
+      "updates": 88,
+      "epochs": 1,
+      "positive_advantage_actions": 176,
+      "negative_advantage_actions": 176,
+      "parameter_delta_l2": 0.6073214405365532,
+      "peak_memory_gb": 9.681003312,
+      "checkpoint": {
+        "model": "mlx-community/Qwen3-8B-4bit",
+        "revision": "545dc4251c05440727734bcd94334791f6ab0192",
+        "method": "clipped Monte Carlo policy gradient with LoRA",
+        "action_policy": "one-token categorical distribution over legal action labels",
+        "labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F",
+          "G",
+          "H",
+          "I",
+          "J",
+          "K",
+          "L",
+          "M",
+          "N",
+          "O",
+          "P",
+          "Q",
+          "R",
+          "S",
+          "T",
+          "U",
+          "V",
+          "W",
+          "X",
+          "Y",
+          "Z",
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f",
+          "g",
+          "h",
+          "i",
+          "j",
+          "k",
+          "l",
+          "m",
+          "n",
+          "o",
+          "p",
+          "q",
+          "r",
+          "s",
+          "t",
+          "u",
+          "v",
+          "w",
+          "x",
+          "y",
+          "z",
+          "AA",
+          "AB",
+          "AC",
+          "AD",
+          "AE",
+          "AF",
+          "AG",
+          "AH",
+          "AI",
+          "AJ",
+          "AK",
+          "AL",
+          "AM",
+          "AN",
+          "AO",
+          "AP",
+          "AQ",
+          "AR",
+          "AS",
+          "AT",
+          "AU",
+          "AV",
+          "AW",
+          "AX",
+          "AY",
+          "AZ",
+          "Ab",
+          "Ac",
+          "Ad",
+          "Af",
+          "Ag",
+          "Ah",
+          "Ai",
+          "Aj",
+          "Ak",
+          "Al",
+          "Am",
+          "An",
+          "Ao",
+          "Ap",
+          "Ar",
+          "As",
+          "At",
+          "Au",
+          "Av",
+          "Aw",
+          "Ax",
+          "Ay",
+          "Az",
+          "BA",
+          "BB",
+          "BC",
+          "BD",
+          "BE",
+          "BF",
+          "BG",
+          "BH",
+          "BI",
+          "BJ",
+          "BK",
+          "BL",
+          "BM",
+          "BN",
+          "BO",
+          "BP",
+          "BR",
+          "BS",
+          "BT",
+          "BU",
+          "BV",
+          "BW",
+          "BX",
+          "BY",
+          "Ba",
+          "Be",
+          "Bg",
+          "Bi",
+          "Bl",
+          "Bo",
+          "Br",
+          "Bs",
+          "Bu",
+          "By",
+          "CA",
+          "CB",
+          "CC",
+          "CD",
+          "CE",
+          "CF",
+          "CG",
+          "CH",
+          "CI",
+          "CK",
+          "CL",
+          "CM",
+          "CN",
+          "CO",
+          "CP",
+          "CR",
+          "CS",
+          "CT",
+          "CU",
+          "CV",
+          "CW",
+          "CX",
+          "CY",
+          "Ca",
+          "Cb",
+          "Cc",
+          "Cd",
+          "Ce",
+          "Ch",
+          "Ci",
+          "Cl",
+          "Co",
+          "Cr",
+          "Cs",
+          "Cu",
+          "Cx",
+          "Cy",
+          "DA",
+          "DB",
+          "DC",
+          "DD",
+          "DE",
+          "DF",
+          "DG",
+          "DH",
+          "DI",
+          "DJ",
+          "DK",
+          "DL",
+          "DM",
+          "DN",
+          "DO",
+          "DP",
+          "DR",
+          "DS",
+          "DT",
+          "DU",
+          "DV",
+          "DW",
+          "DX",
+          "DY",
+          "Da",
+          "Db",
+          "De",
+          "Di",
+          "Do",
+          "Dr",
+          "Ds",
+          "Dt",
+          "Du",
+          "EA",
+          "EB",
+          "EC",
+          "ED",
+          "EE",
+          "EF",
+          "EG",
+          "EH",
+          "EI",
+          "EK",
+          "EL",
+          "EM",
+          "EN",
+          "EO",
+          "EP",
+          "EQ",
+          "ER",
+          "ES",
+          "ET",
+          "EU",
+          "EV",
+          "EW",
+          "EX",
+          "EZ",
+          "Eb",
+          "Ec",
+          "Ed",
+          "Ef",
+          "Ek",
+          "El",
+          "Em",
+          "En",
+          "Ep",
+          "Eq",
+          "Er",
+          "Es",
+          "Et",
+          "Eu",
+          "Ev",
+          "Ex",
+          "Ey",
+          "FA",
+          "FB",
+          "FC",
+          "FD",
+          "FE",
+          "FF",
+          "FG",
+          "FH",
+          "FI",
+          "FK"
+        ],
+        "label_token_ids": [
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          6029,
+          1867,
+          1706,
+          1808,
+          13669,
+          8276,
+          1890,
+          29923,
+          15469,
+          30594,
+          11907,
+          969,
+          1402,
+          1093,
+          18746,
+          2537,
+          92073,
+          934,
+          1911,
+          828,
+          35028,
+          8093,
+          14419,
+          2954,
+          3022,
+          23563,
+          5830,
+          11654,
+          2589,
+          54339,
+          9042,
+          24765,
+          69667,
+          61073,
+          55802,
+          2101,
+          6091,
+          2082,
+          98312,
+          10611,
+          6953,
+          2121,
+          1655,
+          65332,
+          9865,
+          22600,
+          37842,
+          73109,
+          37199,
+          7064,
+          10098,
+          4897,
+          9548,
+          11594,
+          19883,
+          37762,
+          97151,
+          8598,
+          14978,
+          88307,
+          9389,
+          28942,
+          15594,
+          4677,
+          26095,
+          13095,
+          7347,
+          17602,
+          14928,
+          59343,
+          77563,
+          53878,
+          19912,
+          58827,
+          3430,
+          48837,
+          36096,
+          4923,
+          1233,
+          6828,
+          74207,
+          59808,
+          1359,
+          5049,
+          12979,
+          3706,
+          6484,
+          2104,
+          9650,
+          8798,
+          2149,
+          11237,
+          3021,
+          3140,
+          9985,
+          28668,
+          8281,
+          7123,
+          8973,
+          6412,
+          1162,
+          16799,
+          19589,
+          66282,
+          65240,
+          34525,
+          22571,
+          49737,
+          97754,
+          90200,
+          42170,
+          1143,
+          60619,
+          5066,
+          7339,
+          16001,
+          33545,
+          44819,
+          91212,
+          56715,
+          6352,
+          3506,
+          5626,
+          4103,
+          1150,
+          5262,
+          53725,
+          51326,
+          17625,
+          53272,
+          18301,
+          16524,
+          8395,
+          31264,
+          5865,
+          10298,
+          7687,
+          5936,
+          10599,
+          21547,
+          61971,
+          54219,
+          16591,
+          69916,
+          30416,
+          7994,
+          1912,
+          21685,
+          5404,
+          8847,
+          66950,
+          69079,
+          42074,
+          19112,
+          8264,
+          7498,
+          1479,
+          7099,
+          14884,
+          9376,
+          45589,
+          78782,
+          71133,
+          2749,
+          2716,
+          953,
+          6760,
+          9197,
+          54007,
+          640,
+          1570,
+          1348,
+          38807,
+          46010,
+          37779,
+          3257,
+          97278,
+          82414,
+          50730,
+          2715,
+          79686,
+          41917,
+          6582,
+          2269,
+          1702,
+          22373,
+          27312,
+          19462,
+          17360,
+          31860,
+          54118,
+          34112,
+          840,
+          97454,
+          3627,
+          16208,
+          6754,
+          14596,
+          11419,
+          1748,
+          12001,
+          83314,
+          19426,
+          26998
+        ],
+        "thinking": false,
+        "temperature": 1.0,
+        "lora_rank": 8,
+        "lora_scale": 16,
+        "lora_last_layers": 8,
+        "lora_keys": [
+          "q_proj",
+          "v_proj"
+        ],
+        "trainable_parameters": 851968,
+        "policy_arithmetic": {
+          "floating_model_parameters": "float32",
+          "activation_arithmetic": "float32",
+          "quantized_integer_storage": "unchanged uint32 packed 4-bit weights",
+          "adapter_parameters": "float32",
+          "action_policy": "one-token legal categorical distribution",
+          "temperature": 1.0,
+          "thinking": false
+        },
+        "policy_arithmetic_sha256": "0dd0cf0c88a5ba9797be2255a52251d0649869f964e7f0369378eaf5a6ee8e81",
+        "arithmetic_verification": {
+          "floating_tensor_count": 685,
+          "integer_tensor_count": 254,
+          "integer_tensor_hashes_sha256": "16612cc1dc6681fe70a30e0be96722ca708a2bf19804d5fb54a9d8aeef7fe513",
+          "all_floating_parameters_float32": true,
+          "integer_weights_exactly_unchanged": true
+        },
+        "rating_compatibility": "arena-v2-fp32",
+        "checkpoint": "cycle2",
+        "adapter_sha256": "0c502cd89d8bec3deaef5f361aadc5011b9debb853933e47e404791bc66ef672"
+      },
+      "learning_rate": 2e-05
+    },
+    {
+      "complete": true,
+      "source": "cycle2",
+      "target": "cycle3",
+      "episodes": 24,
+      "transitions": 352,
+      "updates": 88,
+      "epochs": 1,
+      "positive_advantage_actions": 176,
+      "negative_advantage_actions": 176,
+      "parameter_delta_l2": 0.6542517664291383,
+      "peak_memory_gb": 9.865520392,
+      "checkpoint": {
+        "model": "mlx-community/Qwen3-8B-4bit",
+        "revision": "545dc4251c05440727734bcd94334791f6ab0192",
+        "method": "clipped Monte Carlo policy gradient with LoRA",
+        "action_policy": "one-token categorical distribution over legal action labels",
+        "labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F",
+          "G",
+          "H",
+          "I",
+          "J",
+          "K",
+          "L",
+          "M",
+          "N",
+          "O",
+          "P",
+          "Q",
+          "R",
+          "S",
+          "T",
+          "U",
+          "V",
+          "W",
+          "X",
+          "Y",
+          "Z",
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f",
+          "g",
+          "h",
+          "i",
+          "j",
+          "k",
+          "l",
+          "m",
+          "n",
+          "o",
+          "p",
+          "q",
+          "r",
+          "s",
+          "t",
+          "u",
+          "v",
+          "w",
+          "x",
+          "y",
+          "z",
+          "AA",
+          "AB",
+          "AC",
+          "AD",
+          "AE",
+          "AF",
+          "AG",
+          "AH",
+          "AI",
+          "AJ",
+          "AK",
+          "AL",
+          "AM",
+          "AN",
+          "AO",
+          "AP",
+          "AQ",
+          "AR",
+          "AS",
+          "AT",
+          "AU",
+          "AV",
+          "AW",
+          "AX",
+          "AY",
+          "AZ",
+          "Ab",
+          "Ac",
+          "Ad",
+          "Af",
+          "Ag",
+          "Ah",
+          "Ai",
+          "Aj",
+          "Ak",
+          "Al",
+          "Am",
+          "An",
+          "Ao",
+          "Ap",
+          "Ar",
+          "As",
+          "At",
+          "Au",
+          "Av",
+          "Aw",
+          "Ax",
+          "Ay",
+          "Az",
+          "BA",
+          "BB",
+          "BC",
+          "BD",
+          "BE",
+          "BF",
+          "BG",
+          "BH",
+          "BI",
+          "BJ",
+          "BK",
+          "BL",
+          "BM",
+          "BN",
+          "BO",
+          "BP",
+          "BR",
+          "BS",
+          "BT",
+          "BU",
+          "BV",
+          "BW",
+          "BX",
+          "BY",
+          "Ba",
+          "Be",
+          "Bg",
+          "Bi",
+          "Bl",
+          "Bo",
+          "Br",
+          "Bs",
+          "Bu",
+          "By",
+          "CA",
+          "CB",
+          "CC",
+          "CD",
+          "CE",
+          "CF",
+          "CG",
+          "CH",
+          "CI",
+          "CK",
+          "CL",
+          "CM",
+          "CN",
+          "CO",
+          "CP",
+          "CR",
+          "CS",
+          "CT",
+          "CU",
+          "CV",
+          "CW",
+          "CX",
+          "CY",
+          "Ca",
+          "Cb",
+          "Cc",
+          "Cd",
+          "Ce",
+          "Ch",
+          "Ci",
+          "Cl",
+          "Co",
+          "Cr",
+          "Cs",
+          "Cu",
+          "Cx",
+          "Cy",
+          "DA",
+          "DB",
+          "DC",
+          "DD",
+          "DE",
+          "DF",
+          "DG",
+          "DH",
+          "DI",
+          "DJ",
+          "DK",
+          "DL",
+          "DM",
+          "DN",
+          "DO",
+          "DP",
+          "DR",
+          "DS",
+          "DT",
+          "DU",
+          "DV",
+          "DW",
+          "DX",
+          "DY",
+          "Da",
+          "Db",
+          "De",
+          "Di",
+          "Do",
+          "Dr",
+          "Ds",
+          "Dt",
+          "Du",
+          "EA",
+          "EB",
+          "EC",
+          "ED",
+          "EE",
+          "EF",
+          "EG",
+          "EH",
+          "EI",
+          "EK",
+          "EL",
+          "EM",
+          "EN",
+          "EO",
+          "EP",
+          "EQ",
+          "ER",
+          "ES",
+          "ET",
+          "EU",
+          "EV",
+          "EW",
+          "EX",
+          "EZ",
+          "Eb",
+          "Ec",
+          "Ed",
+          "Ef",
+          "Ek",
+          "El",
+          "Em",
+          "En",
+          "Ep",
+          "Eq",
+          "Er",
+          "Es",
+          "Et",
+          "Eu",
+          "Ev",
+          "Ex",
+          "Ey",
+          "FA",
+          "FB",
+          "FC",
+          "FD",
+          "FE",
+          "FF",
+          "FG",
+          "FH",
+          "FI",
+          "FK"
+        ],
+        "label_token_ids": [
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          6029,
+          1867,
+          1706,
+          1808,
+          13669,
+          8276,
+          1890,
+          29923,
+          15469,
+          30594,
+          11907,
+          969,
+          1402,
+          1093,
+          18746,
+          2537,
+          92073,
+          934,
+          1911,
+          828,
+          35028,
+          8093,
+          14419,
+          2954,
+          3022,
+          23563,
+          5830,
+          11654,
+          2589,
+          54339,
+          9042,
+          24765,
+          69667,
+          61073,
+          55802,
+          2101,
+          6091,
+          2082,
+          98312,
+          10611,
+          6953,
+          2121,
+          1655,
+          65332,
+          9865,
+          22600,
+          37842,
+          73109,
+          37199,
+          7064,
+          10098,
+          4897,
+          9548,
+          11594,
+          19883,
+          37762,
+          97151,
+          8598,
+          14978,
+          88307,
+          9389,
+          28942,
+          15594,
+          4677,
+          26095,
+          13095,
+          7347,
+          17602,
+          14928,
+          59343,
+          77563,
+          53878,
+          19912,
+          58827,
+          3430,
+          48837,
+          36096,
+          4923,
+          1233,
+          6828,
+          74207,
+          59808,
+          1359,
+          5049,
+          12979,
+          3706,
+          6484,
+          2104,
+          9650,
+          8798,
+          2149,
+          11237,
+          3021,
+          3140,
+          9985,
+          28668,
+          8281,
+          7123,
+          8973,
+          6412,
+          1162,
+          16799,
+          19589,
+          66282,
+          65240,
+          34525,
+          22571,
+          49737,
+          97754,
+          90200,
+          42170,
+          1143,
+          60619,
+          5066,
+          7339,
+          16001,
+          33545,
+          44819,
+          91212,
+          56715,
+          6352,
+          3506,
+          5626,
+          4103,
+          1150,
+          5262,
+          53725,
+          51326,
+          17625,
+          53272,
+          18301,
+          16524,
+          8395,
+          31264,
+          5865,
+          10298,
+          7687,
+          5936,
+          10599,
+          21547,
+          61971,
+          54219,
+          16591,
+          69916,
+          30416,
+          7994,
+          1912,
+          21685,
+          5404,
+          8847,
+          66950,
+          69079,
+          42074,
+          19112,
+          8264,
+          7498,
+          1479,
+          7099,
+          14884,
+          9376,
+          45589,
+          78782,
+          71133,
+          2749,
+          2716,
+          953,
+          6760,
+          9197,
+          54007,
+          640,
+          1570,
+          1348,
+          38807,
+          46010,
+          37779,
+          3257,
+          97278,
+          82414,
+          50730,
+          2715,
+          79686,
+          41917,
+          6582,
+          2269,
+          1702,
+          22373,
+          27312,
+          19462,
+          17360,
+          31860,
+          54118,
+          34112,
+          840,
+          97454,
+          3627,
+          16208,
+          6754,
+          14596,
+          11419,
+          1748,
+          12001,
+          83314,
+          19426,
+          26998
+        ],
+        "thinking": false,
+        "temperature": 1.0,
+        "lora_rank": 8,
+        "lora_scale": 16,
+        "lora_last_layers": 8,
+        "lora_keys": [
+          "q_proj",
+          "v_proj"
+        ],
+        "trainable_parameters": 851968,
+        "policy_arithmetic": {
+          "floating_model_parameters": "float32",
+          "activation_arithmetic": "float32",
+          "quantized_integer_storage": "unchanged uint32 packed 4-bit weights",
+          "adapter_parameters": "float32",
+          "action_policy": "one-token legal categorical distribution",
+          "temperature": 1.0,
+          "thinking": false
+        },
+        "policy_arithmetic_sha256": "0dd0cf0c88a5ba9797be2255a52251d0649869f964e7f0369378eaf5a6ee8e81",
+        "arithmetic_verification": {
+          "floating_tensor_count": 685,
+          "integer_tensor_count": 254,
+          "integer_tensor_hashes_sha256": "16612cc1dc6681fe70a30e0be96722ca708a2bf19804d5fb54a9d8aeef7fe513",
+          "all_floating_parameters_float32": true,
+          "integer_weights_exactly_unchanged": true
+        },
+        "rating_compatibility": "arena-v2-fp32",
+        "checkpoint": "cycle3",
+        "adapter_sha256": "f652d9340fb7c8732982eea0ff3658f6aabcf1157e5f6eacb9d0ae8472ca5e9b"
+      },
+      "learning_rate": 2e-05
+    }
+  ],
+  "stage_records": {
+    "eval-base-heuristic": {
+      "status": "complete",
+      "completed_episodes": 18,
+      "expected_episodes": 18,
+      "part": "runs/arena-v2/rollout-parts/eval-base-heuristic/attempt-2afe200da6fe4a418b18f31699f6b447.jsonl",
+      "sha256": "f56edbbb144e314fceef0acf5e8d635fc7812bced0f5ead90c7fba4bcb6f3465"
+    },
+    "eval-base-base": {
+      "status": "complete",
+      "completed_episodes": 18,
+      "expected_episodes": 18,
+      "part": "runs/arena-v2/rollout-parts/eval-base-base/attempt-0f95a2239c5b4d358430e630bc55ee74.jsonl",
+      "sha256": "cb5acefa03604223507d9fb2f750e2cd8e58d5cd152f10568c98a39383eee3c2"
+    },
+    "eval-cycle1-heuristic": {
+      "status": "complete",
+      "completed_episodes": 18,
+      "expected_episodes": 18,
+      "part": "runs/arena-v2/rollout-parts/eval-cycle1-heuristic/attempt-0b923a4831374c719c1f5ed80366fe29.jsonl",
+      "sha256": "d51007e387541baf964454665405f378e1a144d6d23e9c1f777af65190d17338"
+    },
+    "eval-cycle1-base": {
+      "status": "complete",
+      "completed_episodes": 18,
+      "expected_episodes": 18,
+      "part": "runs/arena-v2/rollout-parts/eval-cycle1-base/attempt-124123733f3c490aa87cd57d3b2c5a9c.jsonl",
+      "sha256": "394189a731f67cac7a1ad90f9ef69b86b3eff0cc4a7a26c45034559c84ae6aeb"
+    },
+    "train-rollouts-2": {
+      "status": "complete",
+      "completed_episodes": 24,
+      "expected_episodes": 24,
+      "part": "runs/arena-v2/rollout-parts/train-rollouts-2/attempt-032af2b5ca6249279513fab197cadb24.jsonl",
+      "sha256": "5baf8cd65a23f28d63833b3d676e506f68dea5282e28602b0f14bd570e08b297"
+    },
+    "likelihood-cycle2": {
+      "status": "complete",
+      "expected_rows": 352,
+      "sha256": "845f3c578008c977f0b29eebdf914102256fe461dcea140b23bfcac8dfc28b6e",
+      "checked_rows": 352,
+      "max_full_vector_error": 3.814697265625e-05
+    },
+    "train-cycle2": {
+      "status": "complete",
+      "source": "cycle1",
+      "target": "cycle2",
+      "rollout_sha256": "5baf8cd65a23f28d63833b3d676e506f68dea5282e28602b0f14bd570e08b297",
+      "seed": 72022,
+      "checkpoint": {
+        "name": "cycle2",
+        "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/arena-v2/checkpoints/cycle2",
+        "adapter_sha256": "0c502cd89d8bec3deaef5f361aadc5011b9debb853933e47e404791bc66ef672",
+        "metadata_sha256": "ad8cd12d67b25f85324d91061a80a3fa35b474f4c2ce4befba10355464252ace",
+        "training_summary_sha256": "99836cb69fbcf1b4053b713a3ee54f6e9a1d86ba0862592465be8869422a29e9"
+      },
+      "reused": false
+    },
+    "eval-cycle2-heuristic": {
+      "status": "complete",
+      "completed_episodes": 18,
+      "expected_episodes": 18,
+      "part": "runs/arena-v2/rollout-parts/eval-cycle2-heuristic/attempt-8c786151aae640ca862e2481703bab34.jsonl",
+      "sha256": "c4f1947d91669e85505195911aea9a42b2ff47196c65fe47646dcbb66045e7bc"
+    },
+    "eval-cycle2-base": {
+      "status": "complete",
+      "completed_episodes": 18,
+      "expected_episodes": 18,
+      "part": "runs/arena-v2/rollout-parts/eval-cycle2-base/attempt-ca7be99bfabb45cba4d2620a640e41cb.jsonl",
+      "sha256": "ded1dcd908e130e101d58eed142d450271bee5c7e57b1511f9bc3da0f5bed8a3"
+    },
+    "eval-cycle2-cycle1": {
+      "status": "complete",
+      "completed_episodes": 18,
+      "expected_episodes": 18,
+      "part": "runs/arena-v2/rollout-parts/eval-cycle2-cycle1/attempt-756e21fc037e448fb697ae513d399f15.jsonl",
+      "sha256": "725ec563a62233acc1b36165adbe9d0b9c5893e345382bfbacff64cdb412e27e"
+    },
+    "train-rollouts-3": {
+      "status": "complete",
+      "completed_episodes": 24,
+      "expected_episodes": 24,
+      "part": "runs/arena-v2/rollout-parts/train-rollouts-3/attempt-649db9ed79f0439eaccdbb1b5279a0ba.jsonl",
+      "sha256": "687519ed1604d722748138616be5c9ce4bf6a205f780c65d0a97acc7f3000f45"
+    },
+    "likelihood-cycle3": {
+      "status": "complete",
+      "expected_rows": 352,
+      "sha256": "28ba022534f4c2c5b7f6d5776bce5a156ff8a67869547f579eb524999b998ccc",
+      "checked_rows": 352,
+      "max_full_vector_error": 3.62396240234375e-05
+    },
+    "train-cycle3": {
+      "status": "complete",
+      "source": "cycle2",
+      "target": "cycle3",
+      "rollout_sha256": "687519ed1604d722748138616be5c9ce4bf6a205f780c65d0a97acc7f3000f45",
+      "seed": 72023,
+      "checkpoint": {
+        "name": "cycle3",
+        "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/arena-v2/checkpoints/cycle3",
+        "adapter_sha256": "f652d9340fb7c8732982eea0ff3658f6aabcf1157e5f6eacb9d0ae8472ca5e9b",
+        "metadata_sha256": "8ed4aad0da8ad18d7b417804f956f92ce21e5bd49aafff8e67ece2fdb0c1c8b3",
+        "training_summary_sha256": "ab83ace5b129190c638b9d37402af8d8518622879c106ad8c140ea3bafdc4e83"
+      },
+      "reused": false
+    },
+    "eval-cycle3-heuristic": {
+      "status": "complete",
+      "completed_episodes": 18,
+      "expected_episodes": 18,
+      "part": "runs/arena-v2/rollout-parts/eval-cycle3-heuristic/attempt-fe88c79cdfa445e19f74443ef982294f.jsonl",
+      "sha256": "068a760ed2c8a74c51541adedd247514106e46fad78695660ececf07966debbc"
+    },
+    "eval-cycle3-base": {
+      "status": "complete",
+      "completed_episodes": 18,
+      "expected_episodes": 18,
+      "part": "runs/arena-v2/rollout-parts/eval-cycle3-base/attempt-8bf86fe6247c42079e169fd106f10de1.jsonl",
+      "sha256": "45c014dda83e697876fbfc168e9fbc08deefa73098fac76558999ba34bd74ee4"
+    },
+    "eval-cycle3-cycle2": {
+      "status": "complete",
+      "completed_episodes": 18,
+      "expected_episodes": 18,
+      "part": "runs/arena-v2/rollout-parts/eval-cycle3-cycle2/attempt-b43a8759fbc442daad9983c4bad756d1.jsonl",
+      "sha256": "e83635e01e9ea7b5baa6974866278b592aed6085ce568dcc71dcaa9ff2eb26b4"
+    },
+    "eval-cycle3-cycle1": {
+      "status": "complete",
+      "completed_episodes": 18,
+      "expected_episodes": 18,
+      "part": "runs/arena-v2/rollout-parts/eval-cycle3-cycle1/attempt-15fef991e4a74e4eb416df03173bd647.jsonl",
+      "sha256": "45a2ef5c5cc4bad02720d99f1957971d24dc466415345d72a683f41d3d76e3ea"
+    }
+  },
+  "external_spend_usd": 0,
+  "finished_at": "2026-10-22T01:59:46.021443-07:00",
+  "limitation": "Small action-policy mechanism pilot; fresh FP32 condition, not a completed original BF16 experiment."
+}

@@ -1,0 +1,2243 @@
+{
+  "all_replays_verified": true,
+  "attempts": 2,
+  "complete": true,
+  "costs": {
+    "evaluation_api_cost_usd": 0,
+    "new_generation_cost_usd": 0.00178583,
+    "original_response_cost_upper_usd": 0.0017858300000000002,
+    "original_response_cost_usd": 0.00178583,
+    "reused_generation_responses": false,
+    "scope": "This run's generation arm only. Prior JSON screen and other pilot costs are separate; copied responses are not charged again."
+  },
+  "evaluation_api_calls": 0,
+  "evaluation_sha256": "654af37b991f4b1c874f9e950ed6029e9af95829a7453120dc243569f89820f2",
+  "failures": {},
+  "fixed_reference_matches": 48,
+  "format_version": 1,
+  "generation_reuse": null,
+  "generation_sha256": {
+    "generation-1.json": "685d0e5718c18f0fdd1ad1ef00435d0a547a6cdfa9215887c9ebb9626b18f583",
+    "generation-2.json": "7330c75c42884f6d044d4a35b806d920cb2fc0ee5424e46490aac5102c18a98a"
+  },
+  "generations": [
+    {
+      "compiled_program": {
+        "compiled_ir": {
+          "body": [
+            {
+              "set": "m0",
+              "value": {
+                "var": "m0"
+              }
+            },
+            {
+              "set": "m1",
+              "value": {
+                "var": "m1"
+              }
+            },
+            {
+              "set": "m2",
+              "value": {
+                "var": "m2"
+              }
+            },
+            {
+              "set": "m3",
+              "value": {
+                "var": "m3"
+              }
+            },
+            {
+              "set": "m4",
+              "value": {
+                "var": "m4"
+              }
+            },
+            {
+              "set": "m5",
+              "value": {
+                "var": "m5"
+              }
+            },
+            {
+              "set": "m6",
+              "value": {
+                "var": "m6"
+              }
+            },
+            {
+              "set": "m7",
+              "value": {
+                "var": "m7"
+              }
+            },
+            {
+              "set": "m8",
+              "value": {
+                "var": "m8"
+              }
+            },
+            {
+              "set": "m9",
+              "value": {
+                "var": "m9"
+              }
+            },
+            {
+              "set": "m10",
+              "value": {
+                "var": "m10"
+              }
+            },
+            {
+              "set": "m11",
+              "value": {
+                "var": "m11"
+              }
+            },
+            {
+              "set": "m12",
+              "value": {
+                "var": "m12"
+              }
+            },
+            {
+              "set": "m13",
+              "value": {
+                "var": "m13"
+              }
+            },
+            {
+              "set": "m14",
+              "value": {
+                "var": "m14"
+              }
+            },
+            {
+              "set": "m15",
+              "value": {
+                "var": "m15"
+              }
+            },
+            {
+              "else": [
+                {
+                  "set": "v_noop",
+                  "value": 0
+                }
+              ],
+              "if": {
+                "args": [
+                  {
+                    "var": "m0"
+                  },
+                  0
+                ],
+                "op": "=="
+              },
+              "then": [
+                {
+                  "set": "m0",
+                  "value": 1
+                },
+                {
+                  "set": "m1",
+                  "value": {
+                    "var": "self_x"
+                  }
+                },
+                {
+                  "set": "m2",
+                  "value": {
+                    "var": "self_y"
+                  }
+                },
+                {
+                  "set": "m3",
+                  "value": 0
+                },
+                {
+                  "set": "m4",
+                  "value": 0
+                },
+                {
+                  "set": "m5",
+                  "value": 0
+                },
+                {
+                  "set": "m6",
+                  "value": 0
+                },
+                {
+                  "set": "m7",
+                  "value": 0
+                },
+                {
+                  "set": "m8",
+                  "value": 0
+                },
+                {
+                  "set": "m9",
+                  "value": 0
+                },
+                {
+                  "set": "m10",
+                  "value": 0
+                },
+                {
+                  "set": "m11",
+                  "value": 0
+                },
+                {
+                  "set": "m12",
+                  "value": 0
+                },
+                {
+                  "set": "m13",
+                  "value": 0
+                },
+                {
+                  "set": "m14",
+                  "value": 0
+                },
+                {
+                  "set": "m15",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "set": "v_t0",
+              "value": {
+                "args": [
+                  {
+                    "var": "self_x"
+                  },
+                  {
+                    "var": "home_x"
+                  }
+                ],
+                "op": "=="
+              }
+            },
+            {
+              "else": [
+                {
+                  "set": "v_noop",
+                  "value": 0
+                }
+              ],
+              "if": {
+                "var": "v_t0"
+              },
+              "then": [
+                {
+                  "set": "v_t0",
+                  "value": {
+                    "args": [
+                      {
+                        "var": "self_y"
+                      },
+                      {
+                        "var": "home_y"
+                      }
+                    ],
+                    "op": "=="
+                  }
+                }
+              ]
+            },
+            {
+              "else": [
+                {
+                  "set": "v_noop",
+                  "value": 0
+                }
+              ],
+              "if": {
+                "var": "v_t0"
+              },
+              "then": [
+                {
+                  "else": [
+                    {
+                      "set": "v_noop",
+                      "value": 0
+                    }
+                  ],
+                  "if": {
+                    "args": [
+                      {
+                        "var": "carrying"
+                      },
+                      0
+                    ],
+                    "op": ">"
+                  },
+                  "then": [
+                    {
+                      "emit": {
+                        "action": "deposit"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "else": [
+                    {
+                      "set": "v_noop",
+                      "value": 0
+                    }
+                  ],
+                  "if": {
+                    "args": [
+                      {
+                        "var": "energy"
+                      },
+                      10
+                    ],
+                    "op": "<"
+                  },
+                  "then": [
+                    {
+                      "emit": {
+                        "action": "rest"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "set": "v_l0",
+              "value": {
+                "args": [
+                  1
+                ],
+                "op": "neg"
+              }
+            },
+            {
+              "set": "v_l1",
+              "value": {
+                "args": [
+                  1
+                ],
+                "op": "neg"
+              }
+            },
+            {
+              "body": [
+                {
+                  "else": [
+                    {
+                      "set": "v_noop",
+                      "value": 0
+                    }
+                  ],
+                  "if": {
+                    "args": [
+                      {
+                        "site": {
+                          "field": "units",
+                          "index": {
+                            "var": "v_l2"
+                          }
+                        }
+                      },
+                      0
+                    ],
+                    "op": ">"
+                  },
+                  "then": [
+                    {
+                      "set": "v_l3",
+                      "value": {
+                        "site": {
+                          "field": "x",
+                          "index": {
+                            "var": "v_l2"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "set": "v_l4",
+                      "value": {
+                        "site": {
+                          "field": "y",
+                          "index": {
+                            "var": "v_l2"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "set": "v_l5",
+                      "value": {
+                        "args": [
+                          {
+                            "args": [
+                              {
+                                "args": [
+                                  {
+                                    "var": "self_x"
+                                  },
+                                  {
+                                    "var": "v_l3"
+                                  }
+                                ],
+                                "op": "-"
+                              }
+                            ],
+                            "op": "abs"
+                          },
+                          {
+                            "args": [
+                              {
+                                "args": [
+                                  {
+                                    "var": "self_y"
+                                  },
+                                  {
+                                    "var": "v_l4"
+                                  }
+                                ],
+                                "op": "-"
+                              }
+                            ],
+                            "op": "abs"
+                          }
+                        ],
+                        "op": "+"
+                      }
+                    },
+                    {
+                      "set": "v_l6",
+                      "value": {
+                        "args": [
+                          {
+                            "args": [
+                              {
+                                "args": [
+                                  {
+                                    "var": "v_l3"
+                                  },
+                                  {
+                                    "var": "home_x"
+                                  }
+                                ],
+                                "op": "-"
+                              }
+                            ],
+                            "op": "abs"
+                          },
+                          {
+                            "args": [
+                              {
+                                "args": [
+                                  {
+                                    "var": "v_l4"
+                                  },
+                                  {
+                                    "var": "home_y"
+                                  }
+                                ],
+                                "op": "-"
+                              }
+                            ],
+                            "op": "abs"
+                          }
+                        ],
+                        "op": "+"
+                      }
+                    },
+                    {
+                      "set": "v_l7",
+                      "value": {
+                        "args": [
+                          {
+                            "args": [
+                              {
+                                "args": [
+                                  {
+                                    "var": "opponent_x"
+                                  },
+                                  {
+                                    "var": "v_l3"
+                                  }
+                                ],
+                                "op": "-"
+                              }
+                            ],
+                            "op": "abs"
+                          },
+                          {
+                            "args": [
+                              {
+                                "args": [
+                                  {
+                                    "var": "opponent_y"
+                                  },
+                                  {
+                                    "var": "v_l4"
+                                  }
+                                ],
+                                "op": "-"
+                              }
+                            ],
+                            "op": "abs"
+                          }
+                        ],
+                        "op": "+"
+                      }
+                    },
+                    {
+                      "set": "v_l8",
+                      "value": {
+                        "site": {
+                          "field": "value",
+                          "index": {
+                            "var": "v_l2"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "else": [
+                        {
+                          "set": "v_l9",
+                          "value": 0
+                        }
+                      ],
+                      "if": {
+                        "args": [
+                          {
+                            "args": [
+                              {
+                                "var": "v_l5"
+                              },
+                              {
+                                "var": "v_l6"
+                              }
+                            ],
+                            "op": "+"
+                          },
+                          {
+                            "var": "energy"
+                          }
+                        ],
+                        "op": "<="
+                      },
+                      "then": [
+                        {
+                          "else": [
+                            {
+                              "set": "v_l9",
+                              "value": {
+                                "var": "v_l8"
+                              }
+                            }
+                          ],
+                          "if": {
+                            "args": [
+                              {
+                                "var": "v_l7"
+                              },
+                              {
+                                "var": "v_l5"
+                              }
+                            ],
+                            "op": ">"
+                          },
+                          "then": [
+                            {
+                              "set": "v_l9",
+                              "value": {
+                                "args": [
+                                  {
+                                    "var": "v_l8"
+                                  },
+                                  2
+                                ],
+                                "op": "*"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "else": [
+                        {
+                          "set": "v_noop",
+                          "value": 0
+                        }
+                      ],
+                      "if": {
+                        "args": [
+                          {
+                            "var": "v_l9"
+                          },
+                          {
+                            "var": "v_l1"
+                          }
+                        ],
+                        "op": ">"
+                      },
+                      "then": [
+                        {
+                          "set": "v_l1",
+                          "value": {
+                            "var": "v_l9"
+                          }
+                        },
+                        {
+                          "set": "v_l0",
+                          "value": {
+                            "var": "v_l2"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "index": "v_l2",
+              "repeat": 6
+            },
+            {
+              "else": [
+                {
+                  "set": "v_noop",
+                  "value": 0
+                }
+              ],
+              "if": {
+                "args": [
+                  {
+                    "var": "v_l0"
+                  },
+                  0
+                ],
+                "op": ">="
+              },
+              "then": [
+                {
+                  "set": "v_l10",
+                  "value": {
+                    "site": {
+                      "field": "x",
+                      "index": {
+                        "var": "v_l0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "set": "v_l11",
+                  "value": {
+                    "site": {
+                      "field": "y",
+                      "index": {
+                        "var": "v_l0"
+                      }
+                    }
+                  }
+                },
+                {
+                  "set": "v_t1",
+                  "value": {
+                    "args": [
+                      {
+                        "var": "self_x"
+                      },
+                      {
+                        "var": "v_l10"
+                      }
+                    ],
+                    "op": "=="
+                  }
+                },
+                {
+                  "else": [
+                    {
+                      "set": "v_noop",
+                      "value": 0
+                    }
+                  ],
+                  "if": {
+                    "var": "v_t1"
+                  },
+                  "then": [
+                    {
+                      "set": "v_t1",
+                      "value": {
+                        "args": [
+                          {
+                            "var": "self_y"
+                          },
+                          {
+                            "var": "v_l11"
+                          }
+                        ],
+                        "op": "=="
+                      }
+                    }
+                  ]
+                },
+                {
+                  "else": [
+                    {
+                      "set": "v_noop",
+                      "value": 0
+                    }
+                  ],
+                  "if": {
+                    "var": "v_t1"
+                  },
+                  "then": [
+                    {
+                      "emit": {
+                        "action": "harvest"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "set": "v_l12",
+                  "value": 0
+                },
+                {
+                  "set": "v_l13",
+                  "value": 0
+                },
+                {
+                  "else": [
+                    {
+                      "else": [
+                        {
+                          "else": [
+                            {
+                              "else": [
+                                {
+                                  "set": "v_noop",
+                                  "value": 0
+                                }
+                              ],
+                              "if": {
+                                "args": [
+                                  {
+                                    "var": "self_y"
+                                  },
+                                  {
+                                    "var": "v_l11"
+                                  }
+                                ],
+                                "op": ">"
+                              },
+                              "then": [
+                                {
+                                  "set": "v_l13",
+                                  "value": {
+                                    "args": [
+                                      1
+                                    ],
+                                    "op": "neg"
+                                  }
+                                }
+                              ]
+                            }
+                          ],
+                          "if": {
+                            "args": [
+                              {
+                                "var": "self_y"
+                              },
+                              {
+                                "var": "v_l11"
+                              }
+                            ],
+                            "op": "<"
+                          },
+                          "then": [
+                            {
+                              "set": "v_l13",
+                              "value": 1
+                            }
+                          ]
+                        }
+                      ],
+                      "if": {
+                        "args": [
+                          {
+                            "var": "self_x"
+                          },
+                          {
+                            "var": "v_l10"
+                          }
+                        ],
+                        "op": ">"
+                      },
+                      "then": [
+                        {
+                          "set": "v_l12",
+                          "value": {
+                            "args": [
+                              1
+                            ],
+                            "op": "neg"
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "if": {
+                    "args": [
+                      {
+                        "var": "self_x"
+                      },
+                      {
+                        "var": "v_l10"
+                      }
+                    ],
+                    "op": "<"
+                  },
+                  "then": [
+                    {
+                      "set": "v_l12",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "emit": {
+                    "action": "move",
+                    "dx": {
+                      "var": "v_l12"
+                    },
+                    "dy": {
+                      "var": "v_l13"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "set": "v_l10",
+              "value": {
+                "var": "home_x"
+              }
+            },
+            {
+              "set": "v_l11",
+              "value": {
+                "var": "home_y"
+              }
+            },
+            {
+              "set": "v_t2",
+              "value": {
+                "args": [
+                  {
+                    "var": "self_x"
+                  },
+                  {
+                    "var": "v_l10"
+                  }
+                ],
+                "op": "=="
+              }
+            },
+            {
+              "else": [
+                {
+                  "set": "v_noop",
+                  "value": 0
+                }
+              ],
+              "if": {
+                "var": "v_t2"
+              },
+              "then": [
+                {
+                  "set": "v_t2",
+                  "value": {
+                    "args": [
+                      {
+                        "var": "self_y"
+                      },
+                      {
+                        "var": "v_l11"
+                      }
+                    ],
+                    "op": "=="
+                  }
+                }
+              ]
+            },
+            {
+              "else": [
+                {
+                  "set": "v_noop",
+                  "value": 0
+                }
+              ],
+              "if": {
+                "var": "v_t2"
+              },
+              "then": [
+                {
+                  "emit": {
+                    "action": "rest"
+                  }
+                }
+              ]
+            },
+            {
+              "set": "v_l12",
+              "value": 0
+            },
+            {
+              "set": "v_l13",
+              "value": 0
+            },
+            {
+              "else": [
+                {
+                  "else": [
+                    {
+                      "else": [
+                        {
+                          "else": [
+                            {
+                              "set": "v_noop",
+                              "value": 0
+                            }
+                          ],
+                          "if": {
+                            "args": [
+                              {
+                                "var": "self_y"
+                              },
+                              {
+                                "var": "v_l11"
+                              }
+                            ],
+                            "op": ">"
+                          },
+                          "then": [
+                            {
+                              "set": "v_l13",
+                              "value": {
+                                "args": [
+                                  1
+                                ],
+                                "op": "neg"
+                              }
+                            }
+                          ]
+                        }
+                      ],
+                      "if": {
+                        "args": [
+                          {
+                            "var": "self_y"
+                          },
+                          {
+                            "var": "v_l11"
+                          }
+                        ],
+                        "op": "<"
+                      },
+                      "then": [
+                        {
+                          "set": "v_l13",
+                          "value": 1
+                        }
+                      ]
+                    }
+                  ],
+                  "if": {
+                    "args": [
+                      {
+                        "var": "self_x"
+                      },
+                      {
+                        "var": "v_l10"
+                      }
+                    ],
+                    "op": ">"
+                  },
+                  "then": [
+                    {
+                      "set": "v_l12",
+                      "value": {
+                        "args": [
+                          1
+                        ],
+                        "op": "neg"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "if": {
+                "args": [
+                  {
+                    "var": "self_x"
+                  },
+                  {
+                    "var": "v_l10"
+                  }
+                ],
+                "op": "<"
+              },
+              "then": [
+                {
+                  "set": "v_l12",
+                  "value": 1
+                }
+              ]
+            },
+            {
+              "emit": {
+                "action": "move",
+                "dx": {
+                  "var": "v_l12"
+                },
+                "dy": {
+                  "var": "v_l13"
+                }
+              }
+            }
+          ],
+          "version": 1
+        },
+        "frontend_version": 2,
+        "ir_sha256": "c38052186043fba91358f71d6a10a148a5a724b80bb52a9e748f71c642d4f539",
+        "python_sha256": "29d6c9435bfa075a121c7cbf65a4dbb391b1d4a267bc2025c8c0c3fde96c23a1",
+        "python_source": "def act():\n    m0 = m0\n    m1 = m1\n    m2 = m2\n    m3 = m3\n    m4 = m4\n    m5 = m5\n    m6 = m6\n    m7 = m7\n    m8 = m8\n    m9 = m9\n    m10 = m10\n    m11 = m11\n    m12 = m12\n    m13 = m13\n    m14 = m14\n    m15 = m15\n    if m0 == 0:\n        m0 = 1\n        m1 = self_x\n        m2 = self_y\n        m3 = 0\n        m4 = 0\n        m5 = 0\n        m6 = 0\n        m7 = 0\n        m8 = 0\n        m9 = 0\n        m10 = 0\n        m11 = 0\n        m12 = 0\n        m13 = 0\n        m14 = 0\n        m15 = 0\n    if self_x == home_x and self_y == home_y:\n        if carrying > 0:\n            return {'action': 'deposit'}\n        if energy < 10:\n            return {'action': 'rest'}\n    best_site = -1\n    best_score = -1\n    for i in range(6):\n        if site(i, 'units') > 0:\n            sx = site(i, 'x')\n            sy = site(i, 'y')\n            dist_self = abs(self_x - sx) + abs(self_y - sy)\n            dist_home = abs(sx - home_x) + abs(sy - home_y)\n            dist_opp = abs(opponent_x - sx) + abs(opponent_y - sy)\n            val = site(i, 'value')\n            if dist_self + dist_home <= energy:\n                if dist_opp > dist_self:\n                    sc = val * 2\n                else:\n                    sc = val\n            else:\n                sc = 0\n            if sc > best_score:\n                best_score = sc\n                best_site = i\n    if best_site >= 0:\n        tx = site(best_site, 'x')\n        ty = site(best_site, 'y')\n        if self_x == tx and self_y == ty:\n            return {'action': 'harvest'}\n        dx = 0\n        dy = 0\n        if self_x < tx:\n            dx = 1\n        elif self_x > tx:\n            dx = -1\n        elif self_y < ty:\n            dy = 1\n        elif self_y > ty:\n            dy = -1\n        return {'action': 'move', 'dx': dx, 'dy': dy}\n    tx = home_x\n    ty = home_y\n    if self_x == tx and self_y == ty:\n        return {'action': 'rest'}\n    dx = 0\n    dy = 0\n    if self_x < tx:\n        dx = 1\n    elif self_x > tx:\n        dx = -1\n    elif self_y < ty:\n        dy = 1\n    elif self_y > ty:\n        dy = -1\n    return {'action': 'move', 'dx': dx, 'dy': dy}",
+        "source_language": "bounded_python_syntax"
+      },
+      "cost_upper_usd": 0.0009835400000000002,
+      "cost_usd": 0.00098354,
+      "failure": null,
+      "finish_reason": "stop",
+      "missing_final": false,
+      "normalization": "none",
+      "normalization_source_sha256": "4b0095b507dc50b05285b3c10931923543ba2bd976c6f54511d5ab1bc5a85163",
+      "normalization_version": 2,
+      "normalized_source": "def act():\n    m0 = m0\n    m1 = m1\n    m2 = m2\n    m3 = m3\n    m4 = m4\n    m5 = m5\n    m6 = m6\n    m7 = m7\n    m8 = m8\n    m9 = m9\n    m10 = m10\n    m11 = m11\n    m12 = m12\n    m13 = m13\n    m14 = m14\n    m15 = m15\n    if m0 == 0:\n        m0 = 1\n        m1 = self_x\n        m2 = self_y\n        m3 = 0\n        m4 = 0\n        m5 = 0\n        m6 = 0\n        m7 = 0\n        m8 = 0\n        m9 = 0\n        m10 = 0\n        m11 = 0\n        m12 = 0\n        m13 = 0\n        m14 = 0\n        m15 = 0\n    if self_x == home_x and self_y == home_y:\n        if carrying > 0:\n            return {'action': 'deposit'}\n        if energy < 10:\n            return {'action': 'rest'}\n    best_site = -1\n    best_score = -1\n    for i in range(6):\n        if site(i, 'units') > 0:\n            sx = site(i, 'x')\n            sy = site(i, 'y')\n            dist_self = abs(self_x - sx) + abs(self_y - sy)\n            dist_home = abs(sx - home_x) + abs(sy - home_y)\n            dist_opp = abs(opponent_x - sx) + abs(opponent_y - sy)\n            val = site(i, 'value')\n            if dist_self + dist_home <= energy:\n                if dist_opp > dist_self:\n                    sc = val * 2\n                else:\n                    sc = val\n            else:\n                sc = 0\n            if sc > best_score:\n                best_score = sc\n                best_site = i\n    if best_site >= 0:\n        tx = site(best_site, 'x')\n        ty = site(best_site, 'y')\n        if self_x == tx and self_y == ty:\n            return {'action': 'harvest'}\n        dx = 0\n        dy = 0\n        if self_x < tx:\n            dx = 1\n        elif self_x > tx:\n            dx = -1\n        elif self_y < ty:\n            dy = 1\n        elif self_y > ty:\n            dy = -1\n        return {'action': 'move', 'dx': dx, 'dy': dy}\n    tx = home_x\n    ty = home_y\n    if self_x == tx and self_y == ty:\n        return {'action': 'rest'}\n    dx = 0\n    dy = 0\n    if self_x < tx:\n        dx = 1\n    elif self_x > tx:\n        dx = -1\n    elif self_y < ty:\n        dy = 1\n    elif self_y > ty:\n        dy = -1\n    return {'action': 'move', 'dx': dx, 'dy': dy}",
+      "normalized_source_sha256": "29d6c9435bfa075a121c7cbf65a4dbb391b1d4a267bc2025c8c0c3fde96c23a1",
+      "original_text": "def act():\n    m0 = m0\n    m1 = m1\n    m2 = m2\n    m3 = m3\n    m4 = m4\n    m5 = m5\n    m6 = m6\n    m7 = m7\n    m8 = m8\n    m9 = m9\n    m10 = m10\n    m11 = m11\n    m12 = m12\n    m13 = m13\n    m14 = m14\n    m15 = m15\n    if m0 == 0:\n        m0 = 1\n        m1 = self_x\n        m2 = self_y\n        m3 = 0\n        m4 = 0\n        m5 = 0\n        m6 = 0\n        m7 = 0\n        m8 = 0\n        m9 = 0\n        m10 = 0\n        m11 = 0\n        m12 = 0\n        m13 = 0\n        m14 = 0\n        m15 = 0\n    if self_x == home_x and self_y == home_y:\n        if carrying > 0:\n            return {'action': 'deposit'}\n        if energy < 10:\n            return {'action': 'rest'}\n    best_site = -1\n    best_score = -1\n    for i in range(6):\n        if site(i, 'units') > 0:\n            sx = site(i, 'x')\n            sy = site(i, 'y')\n            dist_self = abs(self_x - sx) + abs(self_y - sy)\n            dist_home = abs(sx - home_x) + abs(sy - home_y)\n            dist_opp = abs(opponent_x - sx) + abs(opponent_y - sy)\n            val = site(i, 'value')\n            if dist_self + dist_home <= energy:\n                if dist_opp > dist_self:\n                    sc = val * 2\n                else:\n                    sc = val\n            else:\n                sc = 0\n            if sc > best_score:\n                best_score = sc\n                best_site = i\n    if best_site >= 0:\n        tx = site(best_site, 'x')\n        ty = site(best_site, 'y')\n        if self_x == tx and self_y == ty:\n            return {'action': 'harvest'}\n        dx = 0\n        dy = 0\n        if self_x < tx:\n            dx = 1\n        elif self_x > tx:\n            dx = -1\n        elif self_y < ty:\n            dy = 1\n        elif self_y > ty:\n            dy = -1\n        return {'action': 'move', 'dx': dx, 'dy': dy}\n    tx = home_x\n    ty = home_y\n    if self_x == tx and self_y == ty:\n        return {'action': 'rest'}\n    dx = 0\n    dy = 0\n    if self_x < tx:\n        dx = 1\n    elif self_x > tx:\n        dx = -1\n    elif self_y < ty:\n        dy = 1\n    elif self_y > ty:\n        dy = -1\n    return {'action': 'move', 'dx': dx, 'dy': dy}",
+      "original_text_sha256": "29d6c9435bfa075a121c7cbf65a4dbb391b1d4a267bc2025c8c0c3fde96c23a1",
+      "python_ast_nodes": 571,
+      "reasoning_mode": "off",
+      "response_file": "generation-1.json",
+      "response_sha256": "685d0e5718c18f0fdd1ad1ef00435d0a547a6cdfa9215887c9ebb9626b18f583",
+      "returned_model": "qwen/qwen3.8-27b",
+      "returned_provider": "Chutes",
+      "sample_id": "qwen38-27b-1",
+      "source_bytes": 2107,
+      "usage": {
+        "completion_tokens": 760,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "image_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "cost": 0.00098354,
+        "cost_details": {
+          "upstream_inference_completions_cost": 0.00095,
+          "upstream_inference_cost": 0.00098354,
+          "upstream_inference_prompt_cost": 3.354e-05
+        },
+        "is_byok": false,
+        "prompt_tokens": 860,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "video_tokens": 0
+        },
+        "total_tokens": 1620
+      },
+      "valid": true
+    },
+    {
+      "compiled_program": {
+        "compiled_ir": {
+          "body": [
+            {
+              "else": [
+                {
+                  "set": "v_noop",
+                  "value": 0
+                }
+              ],
+              "if": {
+                "args": [
+                  {
+                    "var": "energy"
+                  },
+                  0
+                ],
+                "op": "<="
+              },
+              "then": [
+                {
+                  "emit": {
+                    "action": "rest"
+                  }
+                }
+              ]
+            },
+            {
+              "set": "v_t0",
+              "value": {
+                "args": [
+                  {
+                    "var": "self_x"
+                  },
+                  {
+                    "var": "home_x"
+                  }
+                ],
+                "op": "=="
+              }
+            },
+            {
+              "else": [
+                {
+                  "set": "v_noop",
+                  "value": 0
+                }
+              ],
+              "if": {
+                "var": "v_t0"
+              },
+              "then": [
+                {
+                  "set": "v_t0",
+                  "value": {
+                    "args": [
+                      {
+                        "var": "self_y"
+                      },
+                      {
+                        "var": "home_y"
+                      }
+                    ],
+                    "op": "=="
+                  }
+                }
+              ]
+            },
+            {
+              "else": [
+                {
+                  "set": "v_noop",
+                  "value": 0
+                }
+              ],
+              "if": {
+                "var": "v_t0"
+              },
+              "then": [
+                {
+                  "else": [
+                    {
+                      "set": "v_noop",
+                      "value": 0
+                    }
+                  ],
+                  "if": {
+                    "args": [
+                      {
+                        "var": "carrying"
+                      },
+                      0
+                    ],
+                    "op": ">"
+                  },
+                  "then": [
+                    {
+                      "emit": {
+                        "action": "deposit"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "else": [
+                    {
+                      "set": "v_noop",
+                      "value": 0
+                    }
+                  ],
+                  "if": {
+                    "args": [
+                      {
+                        "var": "energy"
+                      },
+                      {
+                        "var": "max_energy"
+                      }
+                    ],
+                    "op": ">="
+                  },
+                  "then": [
+                    {
+                      "emit": {
+                        "action": "rest"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "set": "v_l0",
+              "value": 0
+            },
+            {
+              "set": "v_l1",
+              "value": 0
+            },
+            {
+              "set": "v_l2",
+              "value": 0
+            },
+            {
+              "set": "v_l3",
+              "value": 0
+            },
+            {
+              "else": [
+                {
+                  "set": "v_noop",
+                  "value": 0
+                }
+              ],
+              "if": {
+                "args": [
+                  {
+                    "var": "carrying"
+                  },
+                  {
+                    "var": "capacity"
+                  }
+                ],
+                "op": "<"
+              },
+              "then": [
+                {
+                  "body": [
+                    {
+                      "set": "v_l5",
+                      "value": {
+                        "site": {
+                          "field": "x",
+                          "index": {
+                            "var": "v_l4"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "set": "v_l6",
+                      "value": {
+                        "site": {
+                          "field": "y",
+                          "index": {
+                            "var": "v_l4"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "set": "v_l7",
+                      "value": {
+                        "site": {
+                          "field": "units",
+                          "index": {
+                            "var": "v_l4"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "else": [
+                        {
+                          "set": "v_noop",
+                          "value": 0
+                        }
+                      ],
+                      "if": {
+                        "args": [
+                          {
+                            "var": "v_l7"
+                          },
+                          0
+                        ],
+                        "op": ">"
+                      },
+                      "then": [
+                        {
+                          "set": "v_l8",
+                          "value": {
+                            "args": [
+                              {
+                                "args": [
+                                  {
+                                    "args": [
+                                      {
+                                        "var": "self_x"
+                                      },
+                                      {
+                                        "var": "v_l5"
+                                      }
+                                    ],
+                                    "op": "-"
+                                  }
+                                ],
+                                "op": "abs"
+                              },
+                              {
+                                "args": [
+                                  {
+                                    "args": [
+                                      {
+                                        "var": "self_y"
+                                      },
+                                      {
+                                        "var": "v_l6"
+                                      }
+                                    ],
+                                    "op": "-"
+                                  }
+                                ],
+                                "op": "abs"
+                              }
+                            ],
+                            "op": "+"
+                          }
+                        },
+                        {
+                          "set": "v_t1",
+                          "value": {
+                            "args": [
+                              {
+                                "var": "v_l8"
+                              },
+                              {
+                                "var": "v_l0"
+                              }
+                            ],
+                            "op": "<"
+                          }
+                        },
+                        {
+                          "else": [
+                            {
+                              "set": "v_noop",
+                              "value": 0
+                            }
+                          ],
+                          "if": {
+                            "args": [
+                              {
+                                "var": "v_t1"
+                              }
+                            ],
+                            "op": "not"
+                          },
+                          "then": [
+                            {
+                              "set": "v_t2",
+                              "value": {
+                                "args": [
+                                  {
+                                    "var": "v_l8"
+                                  },
+                                  {
+                                    "var": "v_l0"
+                                  }
+                                ],
+                                "op": "=="
+                              }
+                            },
+                            {
+                              "else": [
+                                {
+                                  "set": "v_noop",
+                                  "value": 0
+                                }
+                              ],
+                              "if": {
+                                "var": "v_t2"
+                              },
+                              "then": [
+                                {
+                                  "set": "v_t2",
+                                  "value": {
+                                    "args": [
+                                      {
+                                        "var": "v_l3"
+                                      },
+                                      0
+                                    ],
+                                    "op": "=="
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "set": "v_t1",
+                              "value": {
+                                "var": "v_t2"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "else": [
+                            {
+                              "set": "v_noop",
+                              "value": 0
+                            }
+                          ],
+                          "if": {
+                            "var": "v_t1"
+                          },
+                          "then": [
+                            {
+                              "set": "v_l0",
+                              "value": {
+                                "var": "v_l8"
+                              }
+                            },
+                            {
+                              "set": "v_l1",
+                              "value": {
+                                "var": "v_l5"
+                              }
+                            },
+                            {
+                              "set": "v_l2",
+                              "value": {
+                                "var": "v_l6"
+                              }
+                            },
+                            {
+                              "set": "v_l3",
+                              "value": 1
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "index": "v_l4",
+                  "repeat": 6
+                }
+              ]
+            },
+            {
+              "else": [
+                {
+                  "set": "v_noop",
+                  "value": 0
+                }
+              ],
+              "if": {
+                "args": [
+                  {
+                    "var": "v_l3"
+                  },
+                  1
+                ],
+                "op": "=="
+              },
+              "then": [
+                {
+                  "else": [
+                    {
+                      "set": "v_noop",
+                      "value": 0
+                    }
+                  ],
+                  "if": {
+                    "args": [
+                      {
+                        "var": "v_l0"
+                      },
+                      0
+                    ],
+                    "op": "=="
+                  },
+                  "then": [
+                    {
+                      "emit": {
+                        "action": "harvest"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "else": [
+                    {
+                      "else": [
+                        {
+                          "set": "v_l9",
+                          "value": 0
+                        }
+                      ],
+                      "if": {
+                        "args": [
+                          {
+                            "var": "v_l1"
+                          },
+                          {
+                            "var": "self_x"
+                          }
+                        ],
+                        "op": "<"
+                      },
+                      "then": [
+                        {
+                          "set": "v_l9",
+                          "value": {
+                            "args": [
+                              1
+                            ],
+                            "op": "neg"
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "if": {
+                    "args": [
+                      {
+                        "var": "v_l1"
+                      },
+                      {
+                        "var": "self_x"
+                      }
+                    ],
+                    "op": ">"
+                  },
+                  "then": [
+                    {
+                      "set": "v_l9",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "else": [
+                    {
+                      "else": [
+                        {
+                          "set": "v_l10",
+                          "value": 0
+                        }
+                      ],
+                      "if": {
+                        "args": [
+                          {
+                            "var": "v_l2"
+                          },
+                          {
+                            "var": "self_y"
+                          }
+                        ],
+                        "op": "<"
+                      },
+                      "then": [
+                        {
+                          "set": "v_l10",
+                          "value": {
+                            "args": [
+                              1
+                            ],
+                            "op": "neg"
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "if": {
+                    "args": [
+                      {
+                        "var": "v_l2"
+                      },
+                      {
+                        "var": "self_y"
+                      }
+                    ],
+                    "op": ">"
+                  },
+                  "then": [
+                    {
+                      "set": "v_l10",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "emit": {
+                    "action": "move",
+                    "dx": {
+                      "var": "v_l9"
+                    },
+                    "dy": {
+                      "var": "v_l10"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "else": [
+                {
+                  "set": "v_noop",
+                  "value": 0
+                }
+              ],
+              "if": {
+                "args": [
+                  {
+                    "var": "carrying"
+                  },
+                  0
+                ],
+                "op": ">"
+              },
+              "then": [
+                {
+                  "set": "v_t3",
+                  "value": {
+                    "args": [
+                      {
+                        "var": "self_x"
+                      },
+                      {
+                        "var": "home_x"
+                      }
+                    ],
+                    "op": "=="
+                  }
+                },
+                {
+                  "else": [
+                    {
+                      "set": "v_noop",
+                      "value": 0
+                    }
+                  ],
+                  "if": {
+                    "var": "v_t3"
+                  },
+                  "then": [
+                    {
+                      "set": "v_t3",
+                      "value": {
+                        "args": [
+                          {
+                            "var": "self_y"
+                          },
+                          {
+                            "var": "home_y"
+                          }
+                        ],
+                        "op": "=="
+                      }
+                    }
+                  ]
+                },
+                {
+                  "else": [
+                    {
+                      "set": "v_noop",
+                      "value": 0
+                    }
+                  ],
+                  "if": {
+                    "var": "v_t3"
+                  },
+                  "then": [
+                    {
+                      "emit": {
+                        "action": "deposit"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "else": [
+                    {
+                      "else": [
+                        {
+                          "set": "v_l9",
+                          "value": 0
+                        }
+                      ],
+                      "if": {
+                        "args": [
+                          {
+                            "var": "home_x"
+                          },
+                          {
+                            "var": "self_x"
+                          }
+                        ],
+                        "op": "<"
+                      },
+                      "then": [
+                        {
+                          "set": "v_l9",
+                          "value": {
+                            "args": [
+                              1
+                            ],
+                            "op": "neg"
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "if": {
+                    "args": [
+                      {
+                        "var": "home_x"
+                      },
+                      {
+                        "var": "self_x"
+                      }
+                    ],
+                    "op": ">"
+                  },
+                  "then": [
+                    {
+                      "set": "v_l9",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "else": [
+                    {
+                      "else": [
+                        {
+                          "set": "v_l10",
+                          "value": 0
+                        }
+                      ],
+                      "if": {
+                        "args": [
+                          {
+                            "var": "home_y"
+                          },
+                          {
+                            "var": "self_y"
+                          }
+                        ],
+                        "op": "<"
+                      },
+                      "then": [
+                        {
+                          "set": "v_l10",
+                          "value": {
+                            "args": [
+                              1
+                            ],
+                            "op": "neg"
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "if": {
+                    "args": [
+                      {
+                        "var": "home_y"
+                      },
+                      {
+                        "var": "self_y"
+                      }
+                    ],
+                    "op": ">"
+                  },
+                  "then": [
+                    {
+                      "set": "v_l10",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "emit": {
+                    "action": "move",
+                    "dx": {
+                      "var": "v_l9"
+                    },
+                    "dy": {
+                      "var": "v_l10"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "else": [
+                {
+                  "set": "v_noop",
+                  "value": 0
+                }
+              ],
+              "if": {
+                "args": [
+                  {
+                    "var": "energy"
+                  },
+                  {
+                    "var": "max_energy"
+                  }
+                ],
+                "op": "<"
+              },
+              "then": [
+                {
+                  "emit": {
+                    "action": "rest"
+                  }
+                }
+              ]
+            },
+            {
+              "else": [
+                {
+                  "set": "v_noop",
+                  "value": 0
+                }
+              ],
+              "if": {
+                "args": [
+                  {
+                    "var": "opponent_carrying"
+                  },
+                  0
+                ],
+                "op": ">"
+              },
+              "then": [
+                {
+                  "set": "v_t4",
+                  "value": {
+                    "args": [
+                      {
+                        "var": "opponent_x"
+                      },
+                      {
+                        "var": "home_x"
+                      }
+                    ],
+                    "op": "=="
+                  }
+                },
+                {
+                  "else": [
+                    {
+                      "set": "v_noop",
+                      "value": 0
+                    }
+                  ],
+                  "if": {
+                    "var": "v_t4"
+                  },
+                  "then": [
+                    {
+                      "set": "v_t4",
+                      "value": {
+                        "args": [
+                          {
+                            "var": "opponent_y"
+                          },
+                          {
+                            "var": "home_y"
+                          }
+                        ],
+                        "op": "=="
+                      }
+                    }
+                  ]
+                },
+                {
+                  "else": [
+                    {
+                      "set": "v_noop",
+                      "value": 0
+                    }
+                  ],
+                  "if": {
+                    "var": "v_t4"
+                  },
+                  "then": [
+                    {
+                      "else": [
+                        {
+                          "set": "v_noop",
+                          "value": 0
+                        }
+                      ],
+                      "if": {
+                        "args": [
+                          {
+                            "var": "opponent_energy"
+                          },
+                          0
+                        ],
+                        "op": ">"
+                      },
+                      "then": [
+                        {
+                          "else": [
+                            {
+                              "else": [
+                                {
+                                  "set": "v_l9",
+                                  "value": 0
+                                }
+                              ],
+                              "if": {
+                                "args": [
+                                  {
+                                    "var": "opponent_x"
+                                  },
+                                  {
+                                    "var": "self_x"
+                                  }
+                                ],
+                                "op": "<"
+                              },
+                              "then": [
+                                {
+                                  "set": "v_l9",
+                                  "value": {
+                                    "args": [
+                                      1
+                                    ],
+                                    "op": "neg"
+                                  }
+                                }
+                              ]
+                            }
+                          ],
+                          "if": {
+                            "args": [
+                              {
+                                "var": "opponent_x"
+                              },
+                              {
+                                "var": "self_x"
+                              }
+                            ],
+                            "op": ">"
+                          },
+                          "then": [
+                            {
+                              "set": "v_l9",
+                              "value": 1
+                            }
+                          ]
+                        },
+                        {
+                          "else": [
+                            {
+                              "else": [
+                                {
+                                  "set": "v_l10",
+                                  "value": 0
+                                }
+                              ],
+                              "if": {
+                                "args": [
+                                  {
+                                    "var": "opponent_y"
+                                  },
+                                  {
+                                    "var": "self_y"
+                                  }
+                                ],
+                                "op": "<"
+                              },
+                              "then": [
+                                {
+                                  "set": "v_l10",
+                                  "value": {
+                                    "args": [
+                                      1
+                                    ],
+                                    "op": "neg"
+                                  }
+                                }
+                              ]
+                            }
+                          ],
+                          "if": {
+                            "args": [
+                              {
+                                "var": "opponent_y"
+                              },
+                              {
+                                "var": "self_y"
+                              }
+                            ],
+                            "op": ">"
+                          },
+                          "then": [
+                            {
+                              "set": "v_l10",
+                              "value": 1
+                            }
+                          ]
+                        },
+                        {
+                          "emit": {
+                            "action": "move",
+                            "dx": {
+                              "var": "v_l9"
+                            },
+                            "dy": {
+                              "var": "v_l10"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "emit": {
+                "action": "rest"
+              }
+            }
+          ],
+          "version": 1
+        },
+        "frontend_version": 2,
+        "ir_sha256": "0c91379b11f2e7d9ecf057996b72ec32cc9c5aabed8e20b88cb0ea2ade7dc0d4",
+        "python_sha256": "b051e66d578802d1b265b579e7b88b79232c6d49218da7054a9014647ec76a13",
+        "python_source": "def act():\n    if energy <= 0:\n        return {'action': 'rest'}\n    if self_x == home_x and self_y == home_y:\n        if carrying > 0:\n            return {'action': 'deposit'}\n        if energy >= max_energy:\n            return {'action': 'rest'}\n    best = 0\n    bx = 0\n    by = 0\n    found = 0\n    if carrying < capacity:\n        for i in range(6):\n            sx = site(i, 'x')\n            sy = site(i, 'y')\n            u = site(i, 'units')\n            if u > 0:\n                d = abs(self_x - sx) + abs(self_y - sy)\n                if d < best or (d == best and found == 0):\n                    best = d\n                    bx = sx\n                    by = sy\n                    found = 1\n    if found == 1:\n        if best == 0:\n            return {'action': 'harvest'}\n        if bx > self_x:\n            dx = 1\n        elif bx < self_x:\n            dx = -1\n        else:\n            dx = 0\n        if by > self_y:\n            dy = 1\n        elif by < self_y:\n            dy = -1\n        else:\n            dy = 0\n        return {'action': 'move', 'dx': dx, 'dy': dy}\n    if carrying > 0:\n        if self_x == home_x and self_y == home_y:\n            return {'action': 'deposit'}\n        if home_x > self_x:\n            dx = 1\n        elif home_x < self_x:\n            dx = -1\n        else:\n            dx = 0\n        if home_y > self_y:\n            dy = 1\n        elif home_y < self_y:\n            dy = -1\n        else:\n            dy = 0\n        return {'action': 'move', 'dx': dx, 'dy': dy}\n    if energy < max_energy:\n        return {'action': 'rest'}\n    if opponent_carrying > 0:\n        if opponent_x == home_x and opponent_y == home_y:\n            if opponent_energy > 0:\n                if opponent_x > self_x:\n                    dx = 1\n                elif opponent_x < self_x:\n                    dx = -1\n                else:\n                    dx = 0\n                if opponent_y > self_y:\n                    dy = 1\n                elif opponent_y < self_y:\n                    dy = -1\n                else:\n                    dy = 0\n                return {'action': 'move', 'dx': dx, 'dy': dy}\n    return {'action': 'rest'}",
+        "source_language": "bounded_python_syntax"
+      },
+      "cost_upper_usd": 0.00080229,
+      "cost_usd": 0.00080229,
+      "failure": null,
+      "finish_reason": "stop",
+      "missing_final": false,
+      "normalization": "none",
+      "normalization_source_sha256": "4b0095b507dc50b05285b3c10931923543ba2bd976c6f54511d5ab1bc5a85163",
+      "normalization_version": 2,
+      "normalized_source": "def act():\n    if energy <= 0:\n        return {'action': 'rest'}\n    if self_x == home_x and self_y == home_y:\n        if carrying > 0:\n            return {'action': 'deposit'}\n        if energy >= max_energy:\n            return {'action': 'rest'}\n    best = 0\n    bx = 0\n    by = 0\n    found = 0\n    if carrying < capacity:\n        for i in range(6):\n            sx = site(i, 'x')\n            sy = site(i, 'y')\n            u = site(i, 'units')\n            if u > 0:\n                d = abs(self_x - sx) + abs(self_y - sy)\n                if d < best or (d == best and found == 0):\n                    best = d\n                    bx = sx\n                    by = sy\n                    found = 1\n    if found == 1:\n        if best == 0:\n            return {'action': 'harvest'}\n        if bx > self_x:\n            dx = 1\n        elif bx < self_x:\n            dx = -1\n        else:\n            dx = 0\n        if by > self_y:\n            dy = 1\n        elif by < self_y:\n            dy = -1\n        else:\n            dy = 0\n        return {'action': 'move', 'dx': dx, 'dy': dy}\n    if carrying > 0:\n        if self_x == home_x and self_y == home_y:\n            return {'action': 'deposit'}\n        if home_x > self_x:\n            dx = 1\n        elif home_x < self_x:\n            dx = -1\n        else:\n            dx = 0\n        if home_y > self_y:\n            dy = 1\n        elif home_y < self_y:\n            dy = -1\n        else:\n            dy = 0\n        return {'action': 'move', 'dx': dx, 'dy': dy}\n    if energy < max_energy:\n        return {'action': 'rest'}\n    if opponent_carrying > 0:\n        if opponent_x == home_x and opponent_y == home_y:\n            if opponent_energy > 0:\n                if opponent_x > self_x:\n                    dx = 1\n                elif opponent_x < self_x:\n                    dx = -1\n                else:\n                    dx = 0\n                if opponent_y > self_y:\n                    dy = 1\n                elif opponent_y < self_y:\n                    dy = -1\n                else:\n                    dy = 0\n                return {'action': 'move', 'dx': dx, 'dy': dy}\n    return {'action': 'rest'}",
+      "normalized_source_sha256": "b051e66d578802d1b265b579e7b88b79232c6d49218da7054a9014647ec76a13",
+      "original_text": "def act():\n    if energy <= 0:\n        return {'action': 'rest'}\n    if self_x == home_x and self_y == home_y:\n        if carrying > 0:\n            return {'action': 'deposit'}\n        if energy >= max_energy:\n            return {'action': 'rest'}\n    best = 0\n    bx = 0\n    by = 0\n    found = 0\n    if carrying < capacity:\n        for i in range(6):\n            sx = site(i, 'x')\n            sy = site(i, 'y')\n            u = site(i, 'units')\n            if u > 0:\n                d = abs(self_x - sx) + abs(self_y - sy)\n                if d < best or (d == best and found == 0):\n                    best = d\n                    bx = sx\n                    by = sy\n                    found = 1\n    if found == 1:\n        if best == 0:\n            return {'action': 'harvest'}\n        if bx > self_x:\n            dx = 1\n        elif bx < self_x:\n            dx = -1\n        else:\n            dx = 0\n        if by > self_y:\n            dy = 1\n        elif by < self_y:\n            dy = -1\n        else:\n            dy = 0\n        return {'action': 'move', 'dx': dx, 'dy': dy}\n    if carrying > 0:\n        if self_x == home_x and self_y == home_y:\n            return {'action': 'deposit'}\n        if home_x > self_x:\n            dx = 1\n        elif home_x < self_x:\n            dx = -1\n        else:\n            dx = 0\n        if home_y > self_y:\n            dy = 1\n        elif home_y < self_y:\n            dy = -1\n        else:\n            dy = 0\n        return {'action': 'move', 'dx': dx, 'dy': dy}\n    if energy < max_energy:\n        return {'action': 'rest'}\n    if opponent_carrying > 0:\n        if opponent_x == home_x and opponent_y == home_y:\n            if opponent_energy > 0:\n                if opponent_x > self_x:\n                    dx = 1\n                elif opponent_x < self_x:\n                    dx = -1\n                else:\n                    dx = 0\n                if opponent_y > self_y:\n                    dy = 1\n                elif opponent_y < self_y:\n                    dy = -1\n                else:\n                    dy = 0\n                return {'action': 'move', 'dx': dx, 'dy': dy}\n    return {'action': 'rest'}",
+      "original_text_sha256": "b051e66d578802d1b265b579e7b88b79232c6d49218da7054a9014647ec76a13",
+      "python_ast_nodes": 457,
+      "reasoning_mode": "off",
+      "response_file": "generation-2.json",
+      "response_sha256": "7330c75c42884f6d044d4a35b806d920cb2fc0ee5424e46490aac5102c18a98a",
+      "returned_model": "qwen/qwen3.8-27b",
+      "returned_provider": "Chutes",
+      "sample_id": "qwen38-27b-2",
+      "source_bytes": 2152,
+      "usage": {
+        "completion_tokens": 615,
+        "completion_tokens_details": {
+          "audio_tokens": 0,
+          "image_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "cost": 0.00080229,
+        "cost_details": {
+          "upstream_inference_completions_cost": 0.00076875,
+          "upstream_inference_cost": 0.00080229,
+          "upstream_inference_prompt_cost": 3.354e-05
+        },
+        "is_byok": false,
+        "prompt_tokens": 860,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cache_write_tokens": 0,
+          "cached_tokens": 0,
+          "video_tokens": 0
+        },
+        "total_tokens": 1475
+      },
+      "valid": true
+    }
+  ],
+  "interpretation": "Small adaptive authoring-capability screen against two fixed scripted references and any valid peer. No gradient training, continual improvement, or general-strength claim. Invalid programs receive no fabricated games or losses.",
+  "model_matches": 60,
+  "peer_crossplay_matches": 12,
+  "plan_sha256": "7717ed2e3f5b2ada7c1758a1c150ab9d032918f5b950606cb7d54e8d0ca4ae25",
+  "players": {
+    "qwen38-27b-1": {
+      "by_opponent": {
+        "nearest": {
+          "banked_points": 0,
+          "decision_turns": 576,
+          "draws": 0,
+          "failed_game_actions": 471,
+          "fault_types": {},
+          "games": 12,
+          "losses": 12,
+          "mean_banked_points": 0.0,
+          "mean_return": -0.5661565186021708,
+          "opponent_banked_points": 282,
+          "program_faults": 0,
+          "return_sum": -6.7938782232260495,
+          "wins": 0
+        },
+        "qwen38-27b-2": {
+          "banked_points": 0,
+          "decision_turns": 576,
+          "draws": 12,
+          "failed_game_actions": 474,
+          "fault_types": {},
+          "games": 12,
+          "losses": 0,
+          "mean_banked_points": 0.0,
+          "mean_return": 0.0,
+          "opponent_banked_points": 0,
+          "program_faults": 0,
+          "return_sum": 0.0,
+          "wins": 0
+        },
+        "value": {
+          "banked_points": 0,
+          "decision_turns": 576,
+          "draws": 0,
+          "failed_game_actions": 471,
+          "fault_types": {},
+          "games": 12,
+          "losses": 12,
+          "mean_banked_points": 0.0,
+          "mean_return": -0.5667878317334839,
+          "opponent_banked_points": 282,
+          "program_faults": 0,
+          "return_sum": -6.801453980801806,
+          "wins": 0
+        }
+      },
+      "overall": {
+        "banked_points": 0,
+        "decision_turns": 1728,
+        "draws": 12,
+        "failed_game_actions": 1416,
+        "fault_types": {},
+        "games": 36,
+        "losses": 24,
+        "mean_banked_points": 0.0,
+        "mean_return": -0.37764811677855153,
+        "opponent_banked_points": 564,
+        "program_faults": 0,
+        "return_sum": -13.595332204027855,
+        "wins": 0
+      }
+    },
+    "qwen38-27b-2": {
+      "by_opponent": {
+        "nearest": {
+          "banked_points": 0,
+          "decision_turns": 576,
+          "draws": 0,
+          "failed_game_actions": 0,
+          "fault_types": {},
+          "games": 12,
+          "losses": 12,
+          "mean_banked_points": 0.0,
+          "mean_return": -0.5731009630466152,
+          "opponent_banked_points": 286,
+          "program_faults": 0,
+          "return_sum": -6.877211556559382,
+          "wins": 0
+        },
+        "qwen38-27b-1": {
+          "banked_points": 0,
+          "decision_turns": 576,
+          "draws": 12,
+          "failed_game_actions": 0,
+          "fault_types": {},
+          "games": 12,
+          "losses": 0,
+          "mean_banked_points": 0.0,
+          "mean_return": 0.0,
+          "opponent_banked_points": 0,
+          "program_faults": 0,
+          "return_sum": 0.0,
+          "wins": 0
+        },
+        "value": {
+          "banked_points": 0,
+          "decision_turns": 576,
+          "draws": 0,
+          "failed_game_actions": 0,
+          "fault_types": {},
+          "games": 12,
+          "losses": 12,
+          "mean_banked_points": 0.0,
+          "mean_return": -0.582747113997114,
+          "opponent_banked_points": 290,
+          "program_faults": 0,
+          "return_sum": -6.992965367965368,
+          "wins": 0
+        }
+      },
+      "overall": {
+        "banked_points": 0,
+        "decision_turns": 1728,
+        "draws": 12,
+        "failed_game_actions": 0,
+        "fault_types": {},
+        "games": 36,
+        "losses": 24,
+        "mean_banked_points": 0.0,
+        "mean_return": -0.38528269234790974,
+        "opponent_banked_points": 576,
+        "program_faults": 0,
+        "return_sum": -13.87017692452475,
+        "wins": 0
+      }
+    }
+  },
+  "posthoc_diagnostic": false,
+  "response_normalization": {
+    "mode": "single_python_fence_with_optional_prose",
+    "source_archive": "source/response_normalization.py",
+    "source_sha256": "4b0095b507dc50b05285b3c10931923543ba2bd976c6f54511d5ab1bc5a85163",
+    "version": 2
+  },
+  "scoring": "W/D/L is the sign of final banked-point difference at the game's fixed time limit. This is the game's actual objective, not distance/material adjudication. Return is that difference divided by initial resource value; unbanked cargo scores zero.",
+  "screen": "bounded Python controller authoring",
+  "source_sha256": {
+    "selfplay/program_arena/__init__.py": "2c405b142b39f6f350996f812875afbe4ec845005a662eaf43bc28a7e2d4c7d2",
+    "selfplay/program_arena/demo.py": "f918f494d7ad39b78cda0d1672ef19d9244e3c52ef07739b696725b7b6f9105f",
+    "selfplay/program_arena/dsl.py": "91cc93d24e9c61b0cc04b4bf3d34a7e3515bda59fed62eeb766006ec9df74968",
+    "selfplay/program_arena/examples.py": "5261337c5ac1415c14da1505e76d2ed99a5916da70a2f02397d5d0242757894a",
+    "selfplay/program_arena/game.py": "7986796669d4622d53536b2b9b6984778372e2cf2354b9885a384680e66f0246",
+    "selfplay/program_arena/runner.py": "bdc8f5ce3471d4018fe2c893c7d49351c8e23d75f151bc9abcd36e637ef1445e",
+    "selfplay/program_arena/spec.py": "bd236885f4864e56a8003abe81ab9726386ed11399648318fe2eff7f87920ff3",
+    "selfplay/program_model_screen.py": "00d2df0be0109d775e5e4b6a70e7c3e7b795c81fa80b6ade9b53df0062f8c584",
+    "selfplay/program_python.py": "598d27639d004230976066d18e6fc6ed6bcd8a5f5f1e6c741b634ebad3f8fb56"
+  },
+  "training": false,
+  "valid_programs": 2
+}

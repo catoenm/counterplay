@@ -1,0 +1,67 @@
+{
+  "complete": true,
+  "calls": 128,
+  "successes": 1,
+  "by_group": {
+    "('strict', 'canonical', 4)": {
+      "calls": 16,
+      "successes": 0,
+      "statuses": {
+        "wrong_goal": 16
+      }
+    },
+    "('free', 'canonical', 4)": {
+      "calls": 16,
+      "successes": 0,
+      "statuses": {
+        "wrong_goal": 16
+      }
+    },
+    "('strict', 'canonical', 3)": {
+      "calls": 16,
+      "successes": 0,
+      "statuses": {
+        "wrong_goal": 16
+      }
+    },
+    "('free', 'canonical', 2)": {
+      "calls": 16,
+      "successes": 0,
+      "statuses": {
+        "wrong_goal": 16
+      }
+    },
+    "('strict', 'canonical', 2)": {
+      "calls": 16,
+      "successes": 0,
+      "statuses": {
+        "wrong_goal": 16
+      }
+    },
+    "('strict', 'canonical', 5)": {
+      "calls": 16,
+      "successes": 0,
+      "statuses": {
+        "wrong_goal": 16
+      }
+    },
+    "('free', 'canonical', 5)": {
+      "calls": 16,
+      "successes": 1,
+      "statuses": {
+        "wrong_goal": 15,
+        "solved": 1
+      }
+    },
+    "('free', 'canonical', 3)": {
+      "calls": 16,
+      "successes": 0,
+      "statuses": {
+        "wrong_goal": 16
+      }
+    }
+  },
+  "completion_tokens": 1920,
+  "elapsed_seconds": 36.67874783299976,
+  "training": false
+}

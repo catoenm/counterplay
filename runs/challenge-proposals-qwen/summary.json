@@ -1,0 +1,16 @@
+{
+  "complete": true,
+  "proposals": 6,
+  "accepted": 1,
+  "valid": 1,
+  "depth_compliant": 1,
+  "accepted_depths": {
+    "2": 1
+  },
+  "unique_action_sets": 1,
+  "rejections": {
+    "truncated": 5
+  },
+  "completion_tokens": 24043,
+  "training": false
+}

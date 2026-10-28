@@ -1,0 +1,42 @@
+{
+  "complete": true,
+  "calls": 4096,
+  "successes": 425,
+  "by_group": {
+    "('strict', 'canonical', 3)": {
+      "calls": 1024,
+      "successes": 40,
+      "statuses": {
+        "wrong_goal": 984,
+        "solved": 40
+      }
+    },
+    "('strict', 'canonical', 4)": {
+      "calls": 1024,
+      "successes": 92,
+      "statuses": {
+        "wrong_goal": 932,
+        "solved": 92
+      }
+    },
+    "('strict', 'canonical', 2)": {
+      "calls": 1024,
+      "successes": 256,
+      "statuses": {
+        "solved": 256,
+        "wrong_goal": 768
+      }
+    },
+    "('strict', 'canonical', 5)": {
+      "calls": 1024,
+      "successes": 37,
+      "statuses": {
+        "wrong_goal": 987,
+        "solved": 37
+      }
+    }
+  },
+  "completion_tokens": 73728,
+  "elapsed_seconds": 917.5202349589999,
+  "training": false
+}

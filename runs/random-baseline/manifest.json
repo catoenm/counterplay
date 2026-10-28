@@ -1,0 +1,30 @@
+{
+  "config": {
+    "backend": "random",
+    "model": "mlx-community/Qwen3-0.6B-4bit",
+    "revision": null,
+    "tasks": 24,
+    "depths": "1,2,3",
+    "attempts": 2,
+    "proposals": 0,
+    "seed": 17,
+    "max_tokens": 256,
+    "temperature": 0.7,
+    "max_calls": 400,
+    "max_minutes": 20,
+    "variants": "canonical,reordered,renamed,renamed_reordered",
+    "out": "runs/random-baseline"
+  },
+  "model": {
+    "backend": "random"
+  },
+  "started_utc": "2026-10-20T22:00:07.699123+00:00",
+  "python": "3.12.14",
+  "source_sha256": {
+    "pilot.py": "5542b0f3dd709708552550982ca25ddcf369d2fe8235efbed7b14d97c408b2d0",
+    "__init__.py": "54b3c9dd5c0cc6221ed5af3bcaae9445ced78d30114e5c79b32833ce6d37f495",
+    "environment.py": "0469488abd004885ede84de653eeb235f77c5d5bab9d299fe01492ead9ba4cfb"
+  },
+  "training": false,
+  "max_planned_calls": 192
+}

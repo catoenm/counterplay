@@ -1,0 +1,76 @@
+{
+  "complete": false,
+  "calls": 18,
+  "expected_calls": 54,
+  "successes": 17,
+  "statuses": {
+    "truncated": 1,
+    "solved": 17
+  },
+  "canonical_tasks": 5,
+  "canonical_tasks_solved": 5,
+  "canonical_mixed_tasks": 1,
+  "useful_mixed_task_ids": [],
+  "completion_tokens": 25409,
+  "prompt_tokens": 4991,
+  "by_group": {
+    "('procedural', 'canonical', 6)": {
+      "calls": 3,
+      "successes": 2,
+      "statuses": {
+        "truncated": 1,
+        "solved": 2
+      }
+    },
+    "('procedural', 'canonical', 2)": {
+      "calls": 3,
+      "successes": 3,
+      "statuses": {
+        "solved": 3
+      }
+    },
+    "('openrouter', 'renamed_reordered', 2)": {
+      "calls": 3,
+      "successes": 3,
+      "statuses": {
+        "solved": 3
+      }
+    },
+    "('procedural', 'renamed_reordered', 2)": {
+      "calls": 2,
+      "successes": 2,
+      "statuses": {
+        "solved": 2
+      }
+    },
+    "('qwen', 'renamed_reordered', 2)": {
+      "calls": 2,
+      "successes": 2,
+      "statuses": {
+        "solved": 2
+      }
+    },
+    "('procedural', 'renamed_reordered', 6)": {
+      "calls": 2,
+      "successes": 2,
+      "statuses": {
+        "solved": 2
+      }
+    },
+    "('qwen', 'canonical', 2)": {
+      "calls": 1,
+      "successes": 1,
+      "statuses": {
+        "solved": 1
+      }
+    },
+    "('procedural', 'renamed_reordered', 4)": {
+      "calls": 2,
+      "successes": 2,
+      "statuses": {
+        "solved": 2
+      }
+    }
+  },
+  "training": false
+}

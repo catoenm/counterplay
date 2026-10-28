@@ -1,0 +1,63 @@
+{
+  "actor_and_learner_diagnostic_reports_verified": [
+    "actor",
+    "learner"
+  ],
+  "all_sealed_actions": 6664,
+  "all_sealed_episodes": 220,
+  "all_sealed_rollout_sets_checked": 22,
+  "audit_sha256": "eec91e8ea85c47e05278f755a1192bc59284b76255b12a6d42009bdc9f5e36bf",
+  "calibration_actions": 686,
+  "calibration_cohorts": 2,
+  "calibration_episodes": 20,
+  "created_at": "2026-10-23T22:36:35.920117+00:00",
+  "heldout_comparisons_available": false,
+  "integrity_passed": true,
+  "interpretation": "The prescribed all-five training cycle completed and its stored evidence passes the independent CPU audit. This does not establish learning improvement; the separately registered448-episode heldout comparison has not run in this training phase.",
+  "kind": "completed_scalar_training_audit_summary",
+  "manifest_sha256": "aad493a27e256857237b405c390fdc71a9be3ce623cf21152a74493cd1a91e6e",
+  "new_evaluation_preparation": false,
+  "new_neural_calls": 0,
+  "new_provider_calls": 0,
+  "numerical_smoke_derivative_cross_process_proofs_verified_by_complete_audit": true,
+  "optimizer_outcome_unknown": false,
+  "parent_limits": [
+    "One training seed; finite task families and bounded horizons.",
+    "Chess uses tactical endgames; capped material is not full-game Elo.",
+    "Coding is bounded AST repair, not freeform code authoring.",
+    "Environment objective coefficients are not measured gradient-contribution percentages.",
+    "Bounded lag one PPO is not exact on-policy RL."
+  ],
+  "production_actions_per_environment": {
+    "chess": 1973,
+    "coding": 438,
+    "market": 1280,
+    "maze": 1814,
+    "planning": 473
+  },
+  "production_cohorts": 20,
+  "production_episodes": 200,
+  "production_episodes_per_environment": {
+    "chess": 40,
+    "coding": 40,
+    "market": 40,
+    "maze": 40,
+    "planning": 40
+  },
+  "production_learner_actions": 5978,
+  "production_zero_step_skips": 0,
+  "receipt_sha256": {
+    "runs/cardinal-arena-mixed-scalar-training-deployment-v1/final-audit-completion-v1.json": "92d1153bc1fbec20a3687552331d9779f657777b55657346dae4d2ad7e63927d",
+    "runs/cardinal-arena-mixed-scalar-training-deployment-v1/final-audit-invocation-v1.json": "c2a0d8927c8d2ad04b380474a021d3c69c497e73c9a3f7b51ccfee28bd747102",
+    "runs/cardinal-arena-mixed-scalar-training-deployment-v1/final-audit-stderr-v1.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runs/cardinal-arena-mixed-scalar-training-deployment-v1/final-audit-stdout-v1.log": "b831cccb6f159a9a97379cfbcad947a6857f925e0d338e94f51af44c6d636637"
+  },
+  "retained_production_optimizer_steps": 20,
+  "reward_signal_cohorts": 20,
+  "selected_fixed_endpoint": 20,
+  "status_sha256": "d6a7c9c9fa210b818b15426441ebc97a2727345c33f3cdc5d6e4fe0f11276322",
+  "temporary_calibration_profile_optimizer_steps": 1,
+  "temporary_profile_restored_and_excluded_from_retained_step_count": true,
+  "training_phase_complete": true,
+  "uncommitted_operations": []
+}

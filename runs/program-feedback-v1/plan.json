@@ -1,0 +1,90 @@
+{
+  "client_configuration": {
+    "cumulative_pilot_cap_usd": 100,
+    "format_version": 1,
+    "generation_client": "program_feedback",
+    "interpretation": "Bounded practice-feedback authoring diagnostic, no gradient training or best-of outcome selection.",
+    "lineages": [
+      "qwen38-27b-1",
+      "qwen38-27b-2"
+    ],
+    "live_endpoint_check_required": true,
+    "max_calls": 4,
+    "max_output_tokens": 4096,
+    "pricing_checked": "2026-10-22",
+    "profiles": {
+      "qwen38-27b": {
+        "hugging_face_model": "Qwen/Qwen3.8-27B",
+        "hugging_face_revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+        "input_usd_per_million_upper": 0.039,
+        "model": "qwen/qwen3.8-27b",
+        "output_usd_per_million_upper": 1.25,
+        "provider": "chutes/fp8",
+        "quantization": "fp8",
+        "returned_provider": "Chutes"
+      }
+    },
+    "reasoning": "off",
+    "rounds_per_lineage": 2,
+    "screen_cap_usd": 0.1,
+    "temperature": 0.6,
+    "top_k": 20,
+    "top_p": 0.95
+  },
+  "diagnostic": "two_round_practice_feedback",
+  "diagnostic_source_sha256": {
+    "program_feedback.py": "4a7063c523330f92bf128c4b826a95b2e042f457697d7df48ecebf0a101f6578",
+    "runner.py": "ac026097ee800df81c2065eaaca0670240aec3c8ffbbd2593b5bcdda7e896bb0",
+    "screen_evaluator.py": "54145fa5afd7c5c002fd2da5994228cf75d333e55fa349bb0a901887f6e38d49"
+  },
+  "feedback_trace_rule": "first_practice_seed_nearest_both_seats_all_turns",
+  "fixed_opponents": [
+    "nearest",
+    "value"
+  ],
+  "format_version": 1,
+  "holdout_rule": "Only originals and final round-2 versions; unlock after all four generations and practice evaluations",
+  "holdout_seeds": [
+    740000,
+    740001,
+    740002,
+    740003,
+    740004,
+    740005
+  ],
+  "input_sha256": {
+    "original-plan.json": "7717ed2e3f5b2ada7c1758a1c150ab9d032918f5b950606cb7d54e8d0ca4ae25",
+    "original-prompt.txt": "e33a89de839fb4a21032289d9e2af22875673a243301381e4e9a6ee775424672",
+    "originals/generation-1.json": "685d0e5718c18f0fdd1ad1ef00435d0a547a6cdfa9215887c9ebb9626b18f583",
+    "originals/generation-2.json": "7330c75c42884f6d044d4a35b806d920cb2fc0ee5424e46490aac5102c18a98a"
+  },
+  "interpretation": "Adaptive authoring diagnostic, not gradient RL. Two lineages and a reused practice set; no outcome-based version selection. Holdout is not sent to the model. No hand repairs or reference code in prompts.",
+  "lineages": [
+    "qwen38-27b-1",
+    "qwen38-27b-2"
+  ],
+  "max_paid_calls": 4,
+  "max_rounds": 48,
+  "original_run": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-qwen38-27b-v1",
+  "original_validation_seeds": [
+    720000,
+    720001,
+    720002,
+    720003,
+    720004,
+    720005
+  ],
+  "paired_seats": true,
+  "practice_seeds": [
+    730000,
+    730001,
+    730002,
+    730003,
+    730004,
+    730005
+  ],
+  "revisions_per_lineage": 2,
+  "selection_rule": "round_2_even_if_invalid",
+  "subcap_usd": 0.1,
+  "training": false
+}

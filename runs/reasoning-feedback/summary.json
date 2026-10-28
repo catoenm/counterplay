@@ -1,0 +1,15 @@
+{
+  "complete": true,
+  "proposals_attempted": 8,
+  "accepted_tasks": 5,
+  "solver_attempts": 10,
+  "solver_successes": 10,
+  "statuses": {
+    "solved": 10
+  },
+  "mixed_outcome_tasks": 0,
+  "model_calls": 18,
+  "elapsed_seconds": 476.024575917,
+  "training": false,
+  "adaptation": "proposer context only"
+}

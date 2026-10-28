@@ -1,0 +1,4790 @@
+{
+  "format_version": 1,
+  "kind": "independent_cpu_matched_program_study_audit",
+  "run": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-study-v1",
+  "manifest_sha256": "18a864e0903bfcd68cade9db252ba743ec33213c4e3139d7d76cc484bbef2efe",
+  "status_sha256": "8b48b91be88ba3b058358f0d4c3149cb565b8836482b53c2c880964b864e3260",
+  "integrity_passed": true,
+  "planned_study_complete": true,
+  "planned_comparisons_available": true,
+  "recorded_state": "complete",
+  "committed_fresh_authoring_draws": 92,
+  "evaluation_draws": 36,
+  "required_evaluation_draws": 36,
+  "verified_distinct_replays": 426,
+  "actual_primary_compact_holdout_games": 144,
+  "actual_secondary_plain_holdout_games": 288,
+  "checkpoint_tensors": {
+    "base": {
+      "optimizer_steps": 0,
+      "trainable_parameters": 188416,
+      "adapter_l2_delta": null
+    },
+    "game_rl-round1": {
+      "optimizer_steps": 1,
+      "trainable_parameters": 188416,
+      "adapter_l2_delta": 0.0010266465192781177,
+      "changed_parameters": 106496
+    },
+    "validity_rl-round1": {
+      "optimizer_steps": 1,
+      "trainable_parameters": 188416,
+      "adapter_l2_delta": 0.001026635294078233,
+      "changed_parameters": 106496
+    },
+    "validity_rl-round2": {
+      "optimizer_steps": 2,
+      "trainable_parameters": 188416,
+      "adapter_l2_delta": 0.0011880396052129532,
+      "changed_parameters": 188416
+    },
+    "game_rl-round2": {
+      "optimizer_steps": 2,
+      "trainable_parameters": 188416,
+      "adapter_l2_delta": 0.0011886870826481315,
+      "changed_parameters": 188412
+    },
+    "game_rl-round3": {
+      "optimizer_steps": 3,
+      "trainable_parameters": 188416,
+      "adapter_l2_delta": 0.0012607060168528545,
+      "changed_parameters": 188414
+    },
+    "validity_rl-round3": {
+      "optimizer_steps": 3,
+      "trainable_parameters": 188416,
+      "adapter_l2_delta": 0.0012608716769082122,
+      "changed_parameters": 188414
+    }
+  },
+  "training_groups": [
+    {
+      "arm": "game_rl",
+      "round": 1,
+      "rewards": [
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -0.39308449074074076,
+        -0.36009837962962965
+      ],
+      "advantages": [
+        -0.1781167328042328,
+        -0.1781167328042328,
+        -0.1781167328042328,
+        -0.1781167328042328,
+        -0.1781167328042328,
+        -0.1781167328042328,
+        0.5155009920634921,
+        0.5531994047619047
+      ],
+      "gradient_signal": "gameplay_and_validity_signal",
+      "checkpoint_committed": true,
+      "collected_completion_tokens": 6317,
+      "committed_gradient_tokens": 6317,
+      "prescribed_program_clusters": 8,
+      "observed_program_clusters": 8,
+      "missing_program_clusters": 0,
+      "complete": true,
+      "primary_mean_banked_point_yield": 1.59375,
+      "observed_mean_banked_point_yield": 1.59375,
+      "compiled_programs": 2,
+      "invalid_no_game_programs": 6,
+      "fault_free_programs": 2,
+      "played_games": 32,
+      "positive_banking_programs": 2,
+      "zero_banking_programs": 6,
+      "all_rest_programs": 0,
+      "mean_raw_game_return_among_compiled": -0.37659143518518523,
+      "conditional_fault_free_mean_banked": 6.375,
+      "mean_penalized_task_reward": -0.8441478587962963,
+      "programs": [
+        {
+          "generation": "game_rl-round1-0",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "game_rl-round1-1",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "game_rl-round1-2",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "game_rl-round1-3",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "game_rl-round1-4",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "game_rl-round1-5",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "game_rl-round1-6",
+          "banked_point_yield": 6.0,
+          "authorship_valid": true,
+          "runtime_valid": true,
+          "game_return": -0.39308449074074076,
+          "reward": -0.39308449074074076,
+          "games": 16,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 1,
+          "draws": 0,
+          "losses": 15,
+          "zero_zero_draws": 0,
+          "turns": 768,
+          "rest_actions": 0,
+          "failed_actions": 645,
+          "by_opponent": {
+            "nearest": {
+              "games": 4,
+              "banked_points": 24,
+              "return_sum": -1.8055555555555556
+            },
+            "value": {
+              "games": 4,
+              "banked_points": 24,
+              "return_sum": -2.1087962962962963
+            },
+            "historical/opponent-1-1": {
+              "games": 4,
+              "banked_points": 24,
+              "return_sum": -0.9722222222222222
+            },
+            "pool-7": {
+              "games": 4,
+              "banked_points": 24,
+              "return_sum": -1.4027777777777777
+            }
+          },
+          "by_map": {
+            "6100100": {
+              "games": 8,
+              "banked_points": 48,
+              "return_sum": -3.518518518518518
+            },
+            "6100101": {
+              "games": 8,
+              "banked_points": 48,
+              "return_sum": -2.770833333333333
+            }
+          },
+          "all_rest": false,
+          "rest_action_fraction": 0.0
+        },
+        {
+          "generation": "game_rl-round1-7",
+          "banked_point_yield": 6.75,
+          "authorship_valid": true,
+          "runtime_valid": true,
+          "game_return": -0.36009837962962965,
+          "reward": -0.36009837962962965,
+          "games": 16,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 1,
+          "draws": 0,
+          "losses": 15,
+          "zero_zero_draws": 0,
+          "turns": 768,
+          "rest_actions": 105,
+          "failed_actions": 321,
+          "by_opponent": {
+            "nearest": {
+              "games": 4,
+              "banked_points": 36,
+              "return_sum": -1.4375
+            },
+            "value": {
+              "games": 4,
+              "banked_points": 36,
+              "return_sum": -1.803240740740741
+            },
+            "historical/opponent-1-1": {
+              "games": 4,
+              "banked_points": 12,
+              "return_sum": -1.1180555555555554
+            },
+            "pool-7": {
+              "games": 4,
+              "banked_points": 24,
+              "return_sum": -1.4027777777777777
+            }
+          },
+          "by_map": {
+            "6100100": {
+              "games": 8,
+              "banked_points": 60,
+              "return_sum": -3.4074074074074074
+            },
+            "6100101": {
+              "games": 8,
+              "banked_points": 48,
+              "return_sum": -2.354166666666667
+            }
+          },
+          "all_rest": false,
+          "rest_action_fraction": 0.13671875
+        }
+      ],
+      "sampling_unit": "generated controller, not individual replay game"
+    },
+    {
+      "arm": "validity_rl",
+      "round": 1,
+      "rewards": [
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "advantages": [
+        -0.2857142857142857,
+        -0.2857142857142857,
+        -0.2857142857142857,
+        -0.2857142857142857,
+        -0.2857142857142857,
+        -0.2857142857142857,
+        0.8571428571428571,
+        0.8571428571428571
+      ],
+      "gradient_signal": "validity_only_signal",
+      "checkpoint_committed": true,
+      "collected_completion_tokens": 6317,
+      "committed_gradient_tokens": 6317,
+      "prescribed_program_clusters": 8,
+      "observed_program_clusters": 8,
+      "missing_program_clusters": 0,
+      "complete": true,
+      "primary_mean_banked_point_yield": 1.59375,
+      "observed_mean_banked_point_yield": 1.59375,
+      "compiled_programs": 2,
+      "invalid_no_game_programs": 6,
+      "fault_free_programs": 2,
+      "played_games": 32,
+      "positive_banking_programs": 2,
+      "zero_banking_programs": 6,
+      "all_rest_programs": 0,
+      "mean_raw_game_return_among_compiled": -0.37659143518518523,
+      "conditional_fault_free_mean_banked": 6.375,
+      "mean_penalized_task_reward": -0.75,
+      "programs": [
+        {
+          "generation": "validity_rl-round1-0",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "validity_rl-round1-1",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "validity_rl-round1-2",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "validity_rl-round1-3",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "validity_rl-round1-4",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "validity_rl-round1-5",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "validity_rl-round1-6",
+          "banked_point_yield": 6.0,
+          "authorship_valid": true,
+          "runtime_valid": true,
+          "game_return": -0.39308449074074076,
+          "reward": 0.0,
+          "games": 16,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 1,
+          "draws": 0,
+          "losses": 15,
+          "zero_zero_draws": 0,
+          "turns": 768,
+          "rest_actions": 0,
+          "failed_actions": 645,
+          "by_opponent": {
+            "nearest": {
+              "games": 4,
+              "banked_points": 24,
+              "return_sum": -1.8055555555555556
+            },
+            "value": {
+              "games": 4,
+              "banked_points": 24,
+              "return_sum": -2.1087962962962963
+            },
+            "historical/opponent-1-1": {
+              "games": 4,
+              "banked_points": 24,
+              "return_sum": -0.9722222222222222
+            },
+            "pool-7": {
+              "games": 4,
+              "banked_points": 24,
+              "return_sum": -1.4027777777777777
+            }
+          },
+          "by_map": {
+            "6100100": {
+              "games": 8,
+              "banked_points": 48,
+              "return_sum": -3.518518518518518
+            },
+            "6100101": {
+              "games": 8,
+              "banked_points": 48,
+              "return_sum": -2.770833333333333
+            }
+          },
+          "all_rest": false,
+          "rest_action_fraction": 0.0
+        },
+        {
+          "generation": "validity_rl-round1-7",
+          "banked_point_yield": 6.75,
+          "authorship_valid": true,
+          "runtime_valid": true,
+          "game_return": -0.36009837962962965,
+          "reward": 0.0,
+          "games": 16,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 1,
+          "draws": 0,
+          "losses": 15,
+          "zero_zero_draws": 0,
+          "turns": 768,
+          "rest_actions": 105,
+          "failed_actions": 321,
+          "by_opponent": {
+            "nearest": {
+              "games": 4,
+              "banked_points": 36,
+              "return_sum": -1.4375
+            },
+            "value": {
+              "games": 4,
+              "banked_points": 36,
+              "return_sum": -1.803240740740741
+            },
+            "historical/opponent-1-1": {
+              "games": 4,
+              "banked_points": 12,
+              "return_sum": -1.1180555555555554
+            },
+            "pool-7": {
+              "games": 4,
+              "banked_points": 24,
+              "return_sum": -1.4027777777777777
+            }
+          },
+          "by_map": {
+            "6100100": {
+              "games": 8,
+              "banked_points": 60,
+              "return_sum": -3.4074074074074074
+            },
+            "6100101": {
+              "games": 8,
+              "banked_points": 48,
+              "return_sum": -2.354166666666667
+            }
+          },
+          "all_rest": false,
+          "rest_action_fraction": 0.13671875
+        }
+      ],
+      "sampling_unit": "generated controller, not individual replay game"
+    },
+    {
+      "arm": "validity_rl",
+      "round": 2,
+      "rewards": [
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        0.0
+      ],
+      "advantages": [
+        -0.1428571428571429,
+        -0.1428571428571429,
+        -0.1428571428571429,
+        -0.1428571428571429,
+        -0.1428571428571429,
+        -0.1428571428571429,
+        -0.1428571428571429,
+        1.0
+      ],
+      "gradient_signal": "validity_only_signal",
+      "checkpoint_committed": true,
+      "collected_completion_tokens": 7268,
+      "committed_gradient_tokens": 7268,
+      "prescribed_program_clusters": 8,
+      "observed_program_clusters": 8,
+      "missing_program_clusters": 0,
+      "complete": true,
+      "primary_mean_banked_point_yield": 0.0,
+      "observed_mean_banked_point_yield": 0.0,
+      "compiled_programs": 2,
+      "invalid_no_game_programs": 6,
+      "fault_free_programs": 1,
+      "played_games": 32,
+      "positive_banking_programs": 0,
+      "zero_banking_programs": 8,
+      "all_rest_programs": 1,
+      "mean_raw_game_return_among_compiled": -0.4464285714285714,
+      "conditional_fault_free_mean_banked": 0.0,
+      "mean_penalized_task_reward": -0.875,
+      "programs": [
+        {
+          "generation": "validity_rl-round2-0",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "validity_rl-round2-1",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "validity_rl-round2-2",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "validity_rl-round2-3",
+          "banked_point_yield": 0.0,
+          "authorship_valid": true,
+          "runtime_valid": false,
+          "game_return": -0.4901785714285714,
+          "reward": -1.0,
+          "games": 16,
+          "candidate_program_faults": 326,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 3,
+          "losses": 13,
+          "zero_zero_draws": 3,
+          "turns": 768,
+          "rest_actions": 548,
+          "failed_actions": 0,
+          "by_opponent": {
+            "nearest": {
+              "games": 4,
+              "banked_points": 0,
+              "return_sum": -2.6285714285714286
+            },
+            "value": {
+              "games": 4,
+              "banked_points": 0,
+              "return_sum": -2.8142857142857145
+            },
+            "historical/opponent-1-1": {
+              "games": 4,
+              "banked_points": 0,
+              "return_sum": -1.4
+            },
+            "pool-7": {
+              "games": 4,
+              "banked_points": 0,
+              "return_sum": -1.0
+            }
+          },
+          "by_map": {
+            "6100200": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -2.6999999999999997
+            },
+            "6100201": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -5.142857142857142
+            }
+          },
+          "all_rest": false,
+          "rest_action_fraction": 0.7135416666666666
+        },
+        {
+          "generation": "validity_rl-round2-4",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "validity_rl-round2-5",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "validity_rl-round2-6",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "validity_rl-round2-7",
+          "banked_point_yield": 0.0,
+          "authorship_valid": true,
+          "runtime_valid": true,
+          "game_return": -0.40267857142857144,
+          "reward": 0.0,
+          "games": 16,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 6,
+          "losses": 10,
+          "zero_zero_draws": 6,
+          "turns": 768,
+          "rest_actions": 768,
+          "failed_actions": 0,
+          "by_opponent": {
+            "nearest": {
+              "games": 4,
+              "banked_points": 0,
+              "return_sum": -2.6285714285714286
+            },
+            "value": {
+              "games": 4,
+              "banked_points": 0,
+              "return_sum": -2.8142857142857145
+            },
+            "historical/opponent-1-1": {
+              "games": 4,
+              "banked_points": 0,
+              "return_sum": 0.0
+            },
+            "pool-7": {
+              "games": 4,
+              "banked_points": 0,
+              "return_sum": -1.0
+            }
+          },
+          "by_map": {
+            "6100200": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -2.3
+            },
+            "6100201": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.142857142857142
+            }
+          },
+          "all_rest": true,
+          "rest_action_fraction": 1.0
+        }
+      ],
+      "sampling_unit": "generated controller, not individual replay game"
+    },
+    {
+      "arm": "game_rl",
+      "round": 2,
+      "rewards": [
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -0.40267857142857144
+      ],
+      "advantages": [
+        -0.0853316326530612,
+        -0.0853316326530612,
+        -0.0853316326530612,
+        -0.0853316326530612,
+        -0.0853316326530612,
+        -0.0853316326530612,
+        -0.0853316326530612,
+        0.5973214285714286
+      ],
+      "gradient_signal": "validity_only_signal",
+      "checkpoint_committed": true,
+      "collected_completion_tokens": 7268,
+      "committed_gradient_tokens": 7268,
+      "prescribed_program_clusters": 8,
+      "observed_program_clusters": 8,
+      "missing_program_clusters": 0,
+      "complete": true,
+      "primary_mean_banked_point_yield": 0.0,
+      "observed_mean_banked_point_yield": 0.0,
+      "compiled_programs": 2,
+      "invalid_no_game_programs": 6,
+      "fault_free_programs": 1,
+      "played_games": 32,
+      "positive_banking_programs": 0,
+      "zero_banking_programs": 8,
+      "all_rest_programs": 1,
+      "mean_raw_game_return_among_compiled": -0.4464285714285714,
+      "conditional_fault_free_mean_banked": 0.0,
+      "mean_penalized_task_reward": -0.9253348214285715,
+      "programs": [
+        {
+          "generation": "game_rl-round2-0",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "game_rl-round2-1",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "game_rl-round2-2",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "game_rl-round2-3",
+          "banked_point_yield": 0.0,
+          "authorship_valid": true,
+          "runtime_valid": false,
+          "game_return": -0.4901785714285714,
+          "reward": -1.0,
+          "games": 16,
+          "candidate_program_faults": 326,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 3,
+          "losses": 13,
+          "zero_zero_draws": 3,
+          "turns": 768,
+          "rest_actions": 548,
+          "failed_actions": 0,
+          "by_opponent": {
+            "nearest": {
+              "games": 4,
+              "banked_points": 0,
+              "return_sum": -2.6285714285714286
+            },
+            "value": {
+              "games": 4,
+              "banked_points": 0,
+              "return_sum": -2.8142857142857145
+            },
+            "historical/opponent-1-1": {
+              "games": 4,
+              "banked_points": 0,
+              "return_sum": -1.4
+            },
+            "pool-7": {
+              "games": 4,
+              "banked_points": 0,
+              "return_sum": -1.0
+            }
+          },
+          "by_map": {
+            "6100200": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -2.6999999999999997
+            },
+            "6100201": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -5.142857142857142
+            }
+          },
+          "all_rest": false,
+          "rest_action_fraction": 0.7135416666666666
+        },
+        {
+          "generation": "game_rl-round2-4",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "game_rl-round2-5",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "game_rl-round2-6",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "game_rl-round2-7",
+          "banked_point_yield": 0.0,
+          "authorship_valid": true,
+          "runtime_valid": true,
+          "game_return": -0.40267857142857144,
+          "reward": -0.40267857142857144,
+          "games": 16,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 6,
+          "losses": 10,
+          "zero_zero_draws": 6,
+          "turns": 768,
+          "rest_actions": 768,
+          "failed_actions": 0,
+          "by_opponent": {
+            "nearest": {
+              "games": 4,
+              "banked_points": 0,
+              "return_sum": -2.6285714285714286
+            },
+            "value": {
+              "games": 4,
+              "banked_points": 0,
+              "return_sum": -2.8142857142857145
+            },
+            "historical/opponent-1-1": {
+              "games": 4,
+              "banked_points": 0,
+              "return_sum": 0.0
+            },
+            "pool-7": {
+              "games": 4,
+              "banked_points": 0,
+              "return_sum": -1.0
+            }
+          },
+          "by_map": {
+            "6100200": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -2.3
+            },
+            "6100201": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.142857142857142
+            }
+          },
+          "all_rest": true,
+          "rest_action_fraction": 1.0
+        }
+      ],
+      "sampling_unit": "generated controller, not individual replay game"
+    },
+    {
+      "arm": "game_rl",
+      "round": 3,
+      "rewards": [
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -0.44112723214285715,
+        -1.0,
+        -0.44112723214285715,
+        -0.3970424107142857
+      ],
+      "advantages": [
+        -0.2458147321428571,
+        -0.2458147321428571,
+        -0.2458147321428571,
+        -0.2458147321428571,
+        0.3928970025510205,
+        -0.2458147321428571,
+        0.3928970025510205,
+        0.4432796556122449
+      ],
+      "gradient_signal": "gameplay_and_validity_signal",
+      "checkpoint_committed": true,
+      "collected_completion_tokens": 6155,
+      "committed_gradient_tokens": 6155,
+      "prescribed_program_clusters": 8,
+      "observed_program_clusters": 8,
+      "missing_program_clusters": 0,
+      "complete": true,
+      "primary_mean_banked_point_yield": 0.0,
+      "observed_mean_banked_point_yield": 0.0,
+      "compiled_programs": 5,
+      "invalid_no_game_programs": 3,
+      "fault_free_programs": 3,
+      "played_games": 80,
+      "positive_banking_programs": 0,
+      "zero_banking_programs": 8,
+      "all_rest_programs": 3,
+      "mean_raw_game_return_among_compiled": -0.42098214285714286,
+      "conditional_fault_free_mean_banked": 0.0,
+      "mean_penalized_task_reward": -0.784912109375,
+      "programs": [
+        {
+          "generation": "game_rl-round3-0",
+          "banked_point_yield": 0.0,
+          "authorship_valid": true,
+          "runtime_valid": false,
+          "game_return": -0.44112723214285715,
+          "reward": -1.0,
+          "games": 16,
+          "candidate_program_faults": 768,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 4,
+          "losses": 12,
+          "zero_zero_draws": 4,
+          "turns": 768,
+          "rest_actions": 768,
+          "failed_actions": 0,
+          "by_opponent": {
+            "nearest": {
+              "games": 4,
+              "banked_points": 0,
+              "return_sum": -2.803571428571429
+            },
+            "value": {
+              "games": 4,
+              "banked_points": 0,
+              "return_sum": -2.4107142857142856
+            },
+            "historical/opponent-1-1": {
+              "games": 4,
+              "banked_points": 0,
+              "return_sum": -0.90625
+            },
+            "pool-7": {
+              "games": 4,
+              "banked_points": 0,
+              "return_sum": -0.9375
+            }
+          },
+          "by_map": {
+            "6100300": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.34375
+            },
+            "6100301": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -2.7142857142857144
+            }
+          },
+          "all_rest": true,
+          "rest_action_fraction": 1.0
+        },
+        {
+          "generation": "game_rl-round3-1",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "game_rl-round3-2",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "game_rl-round3-3",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "game_rl-round3-4",
+          "banked_point_yield": 0.0,
+          "authorship_valid": true,
+          "runtime_valid": true,
+          "game_return": -0.44112723214285715,
+          "reward": -0.44112723214285715,
+          "games": 16,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 4,
+          "losses": 12,
+          "zero_zero_draws": 4,
+          "turns": 768,
+          "rest_actions": 768,
+          "failed_actions": 0,
+          "by_opponent": {
+            "nearest": {
+              "games": 4,
+              "banked_points": 0,
+              "return_sum": -2.803571428571429
+            },
+            "value": {
+              "games": 4,
+              "banked_points": 0,
+              "return_sum": -2.4107142857142856
+            },
+            "historical/opponent-1-1": {
+              "games": 4,
+              "banked_points": 0,
+              "return_sum": -0.90625
+            },
+            "pool-7": {
+              "games": 4,
+              "banked_points": 0,
+              "return_sum": -0.9375
+            }
+          },
+          "by_map": {
+            "6100300": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.34375
+            },
+            "6100301": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -2.7142857142857144
+            }
+          },
+          "all_rest": true,
+          "rest_action_fraction": 1.0
+        },
+        {
+          "generation": "game_rl-round3-5",
+          "banked_point_yield": 0.0,
+          "authorship_valid": true,
+          "runtime_valid": false,
+          "game_return": -0.38448660714285715,
+          "reward": -1.0,
+          "games": 16,
+          "candidate_program_faults": 90,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 6,
+          "losses": 10,
+          "zero_zero_draws": 6,
+          "turns": 768,
+          "rest_actions": 90,
+          "failed_actions": 464,
+          "by_opponent": {
+            "nearest": {
+              "games": 4,
+              "banked_points": 0,
+              "return_sum": -2.803571428571429
+            },
+            "value": {
+              "games": 4,
+              "banked_points": 0,
+              "return_sum": -2.4107142857142856
+            },
+            "historical/opponent-1-1": {
+              "games": 4,
+              "banked_points": 0,
+              "return_sum": 0.0
+            },
+            "pool-7": {
+              "games": 4,
+              "banked_points": 0,
+              "return_sum": -0.9375
+            }
+          },
+          "by_map": {
+            "6100300": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -3.4375
+            },
+            "6100301": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -2.7142857142857144
+            }
+          },
+          "all_rest": false,
+          "rest_action_fraction": 0.1171875
+        },
+        {
+          "generation": "game_rl-round3-6",
+          "banked_point_yield": 0.0,
+          "authorship_valid": true,
+          "runtime_valid": true,
+          "game_return": -0.44112723214285715,
+          "reward": -0.44112723214285715,
+          "games": 16,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 4,
+          "losses": 12,
+          "zero_zero_draws": 4,
+          "turns": 768,
+          "rest_actions": 768,
+          "failed_actions": 0,
+          "by_opponent": {
+            "nearest": {
+              "games": 4,
+              "banked_points": 0,
+              "return_sum": -2.803571428571429
+            },
+            "value": {
+              "games": 4,
+              "banked_points": 0,
+              "return_sum": -2.4107142857142856
+            },
+            "historical/opponent-1-1": {
+              "games": 4,
+              "banked_points": 0,
+              "return_sum": -0.90625
+            },
+            "pool-7": {
+              "games": 4,
+              "banked_points": 0,
+              "return_sum": -0.9375
+            }
+          },
+          "by_map": {
+            "6100300": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.34375
+            },
+            "6100301": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -2.7142857142857144
+            }
+          },
+          "all_rest": true,
+          "rest_action_fraction": 1.0
+        },
+        {
+          "generation": "game_rl-round3-7",
+          "banked_point_yield": 0.0,
+          "authorship_valid": true,
+          "runtime_valid": true,
+          "game_return": -0.3970424107142857,
+          "reward": -0.3970424107142857,
+          "games": 16,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 4,
+          "losses": 12,
+          "zero_zero_draws": 4,
+          "turns": 768,
+          "rest_actions": 106,
+          "failed_actions": 267,
+          "by_opponent": {
+            "nearest": {
+              "games": 4,
+              "banked_points": 0,
+              "return_sum": -2.2857142857142856
+            },
+            "value": {
+              "games": 4,
+              "banked_points": 0,
+              "return_sum": -2.4419642857142856
+            },
+            "historical/opponent-1-1": {
+              "games": 4,
+              "banked_points": 0,
+              "return_sum": -0.6875
+            },
+            "pool-7": {
+              "games": 4,
+              "banked_points": 0,
+              "return_sum": -0.9375
+            }
+          },
+          "by_map": {
+            "6100300": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -3.53125
+            },
+            "6100301": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -2.821428571428571
+            }
+          },
+          "all_rest": false,
+          "rest_action_fraction": 0.13802083333333334
+        }
+      ],
+      "sampling_unit": "generated controller, not individual replay game"
+    },
+    {
+      "arm": "validity_rl",
+      "round": 3,
+      "rewards": [
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        0.0,
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "advantages": [
+        -0.4285714285714286,
+        -0.4285714285714286,
+        -0.4285714285714286,
+        -0.4285714285714286,
+        0.7142857142857143,
+        -0.4285714285714286,
+        0.7142857142857143,
+        0.7142857142857143
+      ],
+      "gradient_signal": "validity_only_signal",
+      "checkpoint_committed": true,
+      "collected_completion_tokens": 6155,
+      "committed_gradient_tokens": 6155,
+      "prescribed_program_clusters": 8,
+      "observed_program_clusters": 8,
+      "missing_program_clusters": 0,
+      "complete": true,
+      "primary_mean_banked_point_yield": 0.0,
+      "observed_mean_banked_point_yield": 0.0,
+      "compiled_programs": 5,
+      "invalid_no_game_programs": 3,
+      "fault_free_programs": 3,
+      "played_games": 80,
+      "positive_banking_programs": 0,
+      "zero_banking_programs": 8,
+      "all_rest_programs": 3,
+      "mean_raw_game_return_among_compiled": -0.42098214285714286,
+      "conditional_fault_free_mean_banked": 0.0,
+      "mean_penalized_task_reward": -0.625,
+      "programs": [
+        {
+          "generation": "validity_rl-round3-0",
+          "banked_point_yield": 0.0,
+          "authorship_valid": true,
+          "runtime_valid": false,
+          "game_return": -0.44112723214285715,
+          "reward": -1.0,
+          "games": 16,
+          "candidate_program_faults": 768,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 4,
+          "losses": 12,
+          "zero_zero_draws": 4,
+          "turns": 768,
+          "rest_actions": 768,
+          "failed_actions": 0,
+          "by_opponent": {
+            "nearest": {
+              "games": 4,
+              "banked_points": 0,
+              "return_sum": -2.803571428571429
+            },
+            "value": {
+              "games": 4,
+              "banked_points": 0,
+              "return_sum": -2.4107142857142856
+            },
+            "historical/opponent-1-1": {
+              "games": 4,
+              "banked_points": 0,
+              "return_sum": -0.90625
+            },
+            "pool-7": {
+              "games": 4,
+              "banked_points": 0,
+              "return_sum": -0.9375
+            }
+          },
+          "by_map": {
+            "6100300": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.34375
+            },
+            "6100301": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -2.7142857142857144
+            }
+          },
+          "all_rest": true,
+          "rest_action_fraction": 1.0
+        },
+        {
+          "generation": "validity_rl-round3-1",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "validity_rl-round3-2",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "validity_rl-round3-3",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "validity_rl-round3-4",
+          "banked_point_yield": 0.0,
+          "authorship_valid": true,
+          "runtime_valid": true,
+          "game_return": -0.44112723214285715,
+          "reward": 0.0,
+          "games": 16,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 4,
+          "losses": 12,
+          "zero_zero_draws": 4,
+          "turns": 768,
+          "rest_actions": 768,
+          "failed_actions": 0,
+          "by_opponent": {
+            "nearest": {
+              "games": 4,
+              "banked_points": 0,
+              "return_sum": -2.803571428571429
+            },
+            "value": {
+              "games": 4,
+              "banked_points": 0,
+              "return_sum": -2.4107142857142856
+            },
+            "historical/opponent-1-1": {
+              "games": 4,
+              "banked_points": 0,
+              "return_sum": -0.90625
+            },
+            "pool-7": {
+              "games": 4,
+              "banked_points": 0,
+              "return_sum": -0.9375
+            }
+          },
+          "by_map": {
+            "6100300": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.34375
+            },
+            "6100301": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -2.7142857142857144
+            }
+          },
+          "all_rest": true,
+          "rest_action_fraction": 1.0
+        },
+        {
+          "generation": "validity_rl-round3-5",
+          "banked_point_yield": 0.0,
+          "authorship_valid": true,
+          "runtime_valid": false,
+          "game_return": -0.38448660714285715,
+          "reward": -1.0,
+          "games": 16,
+          "candidate_program_faults": 90,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 6,
+          "losses": 10,
+          "zero_zero_draws": 6,
+          "turns": 768,
+          "rest_actions": 90,
+          "failed_actions": 464,
+          "by_opponent": {
+            "nearest": {
+              "games": 4,
+              "banked_points": 0,
+              "return_sum": -2.803571428571429
+            },
+            "value": {
+              "games": 4,
+              "banked_points": 0,
+              "return_sum": -2.4107142857142856
+            },
+            "historical/opponent-1-1": {
+              "games": 4,
+              "banked_points": 0,
+              "return_sum": 0.0
+            },
+            "pool-7": {
+              "games": 4,
+              "banked_points": 0,
+              "return_sum": -0.9375
+            }
+          },
+          "by_map": {
+            "6100300": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -3.4375
+            },
+            "6100301": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -2.7142857142857144
+            }
+          },
+          "all_rest": false,
+          "rest_action_fraction": 0.1171875
+        },
+        {
+          "generation": "validity_rl-round3-6",
+          "banked_point_yield": 0.0,
+          "authorship_valid": true,
+          "runtime_valid": true,
+          "game_return": -0.44112723214285715,
+          "reward": 0.0,
+          "games": 16,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 4,
+          "losses": 12,
+          "zero_zero_draws": 4,
+          "turns": 768,
+          "rest_actions": 768,
+          "failed_actions": 0,
+          "by_opponent": {
+            "nearest": {
+              "games": 4,
+              "banked_points": 0,
+              "return_sum": -2.803571428571429
+            },
+            "value": {
+              "games": 4,
+              "banked_points": 0,
+              "return_sum": -2.4107142857142856
+            },
+            "historical/opponent-1-1": {
+              "games": 4,
+              "banked_points": 0,
+              "return_sum": -0.90625
+            },
+            "pool-7": {
+              "games": 4,
+              "banked_points": 0,
+              "return_sum": -0.9375
+            }
+          },
+          "by_map": {
+            "6100300": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.34375
+            },
+            "6100301": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -2.7142857142857144
+            }
+          },
+          "all_rest": true,
+          "rest_action_fraction": 1.0
+        },
+        {
+          "generation": "validity_rl-round3-7",
+          "banked_point_yield": 0.0,
+          "authorship_valid": true,
+          "runtime_valid": true,
+          "game_return": -0.3970424107142857,
+          "reward": 0.0,
+          "games": 16,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 4,
+          "losses": 12,
+          "zero_zero_draws": 4,
+          "turns": 768,
+          "rest_actions": 106,
+          "failed_actions": 267,
+          "by_opponent": {
+            "nearest": {
+              "games": 4,
+              "banked_points": 0,
+              "return_sum": -2.2857142857142856
+            },
+            "value": {
+              "games": 4,
+              "banked_points": 0,
+              "return_sum": -2.4419642857142856
+            },
+            "historical/opponent-1-1": {
+              "games": 4,
+              "banked_points": 0,
+              "return_sum": -0.6875
+            },
+            "pool-7": {
+              "games": 4,
+              "banked_points": 0,
+              "return_sum": -0.9375
+            }
+          },
+          "by_map": {
+            "6100300": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -3.53125
+            },
+            "6100301": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -2.821428571428571
+            }
+          },
+          "all_rest": false,
+          "rest_action_fraction": 0.13802083333333334
+        }
+      ],
+      "sampling_unit": "generated controller, not individual replay game"
+    }
+  ],
+  "evaluation": {
+    "base/compact/validation": {
+      "prescribed_program_clusters": 8,
+      "observed_program_clusters": 8,
+      "missing_program_clusters": 0,
+      "complete": true,
+      "primary_mean_banked_point_yield": 0.0,
+      "observed_mean_banked_point_yield": 0.0,
+      "compiled_programs": 1,
+      "invalid_no_game_programs": 7,
+      "fault_free_programs": 1,
+      "played_games": 32,
+      "positive_banking_programs": 0,
+      "zero_banking_programs": 8,
+      "all_rest_programs": 1,
+      "mean_raw_game_return_among_compiled": -0.6124007936507937,
+      "conditional_fault_free_mean_banked": 0.0,
+      "mean_penalized_task_reward": -0.9515500992063493,
+      "programs": [
+        {
+          "generation": "eval-base-compact-0",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "eval-base-compact-1",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "eval-base-compact-2",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "eval-base-compact-3",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "eval-base-compact-4",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "eval-base-compact-5",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "eval-base-compact-6",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "eval-base-compact-7",
+          "banked_point_yield": 0.0,
+          "authorship_valid": true,
+          "runtime_valid": true,
+          "game_return": -0.6124007936507937,
+          "reward": -0.6124007936507937,
+          "games": 32,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 32,
+          "zero_zero_draws": 0,
+          "turns": 1536,
+          "rest_actions": 1536,
+          "failed_actions": 0,
+          "by_opponent": {
+            "nearest": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.676190476190476
+            },
+            "value": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -5.32063492063492
+            },
+            "controller-python-1": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -5.088888888888889
+            },
+            "qwen38-27b-1-r2": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.511111111111111
+            }
+          },
+          "by_map": {
+            "6300000": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.7
+            },
+            "6300001": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.285714285714286
+            },
+            "6300002": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -6.277777777777778
+            },
+            "6300003": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.333333333333334
+            }
+          },
+          "all_rest": true,
+          "rest_action_fraction": 1.0
+        }
+      ],
+      "sampling_unit": "generated controller, not individual replay game",
+      "duplicate_compiled_outputs": 0,
+      "duplicate_token_completions": 0,
+      "actual_eos_programs": 3
+    },
+    "base/compact/holdout": {
+      "prescribed_program_clusters": 8,
+      "observed_program_clusters": 8,
+      "missing_program_clusters": 0,
+      "complete": true,
+      "primary_mean_banked_point_yield": 0.0,
+      "observed_mean_banked_point_yield": 0.0,
+      "compiled_programs": 1,
+      "invalid_no_game_programs": 7,
+      "fault_free_programs": 1,
+      "played_games": 48,
+      "positive_banking_programs": 0,
+      "zero_banking_programs": 8,
+      "all_rest_programs": 1,
+      "mean_raw_game_return_among_compiled": -0.6498628723832528,
+      "conditional_fault_free_mean_banked": 0.0,
+      "mean_penalized_task_reward": -0.9562328590479066,
+      "programs": [
+        {
+          "generation": "eval-base-compact-0",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "eval-base-compact-1",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "eval-base-compact-2",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "eval-base-compact-3",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "eval-base-compact-4",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "eval-base-compact-5",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "eval-base-compact-6",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "eval-base-compact-7",
+          "banked_point_yield": 0.0,
+          "authorship_valid": true,
+          "runtime_valid": true,
+          "game_return": -0.6498628723832528,
+          "reward": -0.6498628723832528,
+          "games": 48,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 48,
+          "zero_zero_draws": 0,
+          "turns": 2304,
+          "rest_actions": 2304,
+          "failed_actions": 0,
+          "by_opponent": {
+            "nearest": {
+              "games": 12,
+              "banked_points": 0,
+              "return_sum": -7.125422705314009
+            },
+            "value": {
+              "games": 12,
+              "banked_points": 0,
+              "return_sum": -8.359661835748792
+            },
+            "controller-python-1": {
+              "games": 12,
+              "banked_points": 0,
+              "return_sum": -7.983272946859905
+            },
+            "qwen38-27b-1-r2": {
+              "games": 12,
+              "banked_points": 0,
+              "return_sum": -7.725060386473428
+            }
+          },
+          "by_map": {
+            "6400000": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -6.8125
+            },
+            "6400001": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.722222222222222
+            },
+            "6400002": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -5.608695652173913
+            },
+            "6400003": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.55
+            },
+            "6400004": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.333333333333334
+            },
+            "6400005": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -5.166666666666666
+            }
+          },
+          "all_rest": true,
+          "rest_action_fraction": 1.0
+        }
+      ],
+      "sampling_unit": "generated controller, not individual replay game",
+      "duplicate_compiled_outputs": 0,
+      "duplicate_token_completions": 0,
+      "actual_eos_programs": 3
+    },
+    "base/plain/validation": {
+      "prescribed_program_clusters": 4,
+      "observed_program_clusters": 4,
+      "missing_program_clusters": 0,
+      "complete": true,
+      "primary_mean_banked_point_yield": 0.0,
+      "observed_mean_banked_point_yield": 0.0,
+      "compiled_programs": 2,
+      "invalid_no_game_programs": 2,
+      "fault_free_programs": 2,
+      "played_games": 64,
+      "positive_banking_programs": 0,
+      "zero_banking_programs": 4,
+      "all_rest_programs": 0,
+      "mean_raw_game_return_among_compiled": -0.6149181547619047,
+      "conditional_fault_free_mean_banked": 0.0,
+      "mean_penalized_task_reward": -0.8074590773809524,
+      "programs": [
+        {
+          "generation": "eval-base-plain-0",
+          "banked_point_yield": 0.0,
+          "authorship_valid": true,
+          "runtime_valid": true,
+          "game_return": -0.6170882936507937,
+          "reward": -0.6170882936507937,
+          "games": 32,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 32,
+          "zero_zero_draws": 0,
+          "turns": 1536,
+          "rest_actions": 360,
+          "failed_actions": 1080,
+          "by_opponent": {
+            "nearest": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.676190476190476
+            },
+            "value": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -5.32063492063492
+            },
+            "controller-python-1": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -5.088888888888889
+            },
+            "qwen38-27b-1-r2": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.6611111111111105
+            }
+          },
+          "by_map": {
+            "6300000": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.85
+            },
+            "6300001": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.285714285714286
+            },
+            "6300002": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -6.277777777777778
+            },
+            "6300003": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.333333333333334
+            }
+          },
+          "all_rest": false,
+          "rest_action_fraction": 0.234375
+        },
+        {
+          "generation": "eval-base-plain-1",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "eval-base-plain-2",
+          "banked_point_yield": 0.0,
+          "authorship_valid": true,
+          "runtime_valid": true,
+          "game_return": -0.6127480158730159,
+          "reward": -0.6127480158730159,
+          "games": 32,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 32,
+          "zero_zero_draws": 0,
+          "turns": 1536,
+          "rest_actions": 1417,
+          "failed_actions": 0,
+          "by_opponent": {
+            "nearest": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.676190476190476
+            },
+            "value": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -5.32063492063492
+            },
+            "controller-python-1": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -5.088888888888889
+            },
+            "qwen38-27b-1-r2": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.522222222222222
+            }
+          },
+          "by_map": {
+            "6300000": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.85
+            },
+            "6300001": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.285714285714286
+            },
+            "6300002": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -6.138888888888889
+            },
+            "6300003": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.333333333333334
+            }
+          },
+          "all_rest": false,
+          "rest_action_fraction": 0.9225260416666666
+        },
+        {
+          "generation": "eval-base-plain-3",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        }
+      ],
+      "sampling_unit": "generated controller, not individual replay game",
+      "duplicate_compiled_outputs": 0,
+      "duplicate_token_completions": 0,
+      "actual_eos_programs": 4
+    },
+    "base/plain/holdout": {
+      "prescribed_program_clusters": 4,
+      "observed_program_clusters": 4,
+      "missing_program_clusters": 0,
+      "complete": true,
+      "primary_mean_banked_point_yield": 0.0,
+      "observed_mean_banked_point_yield": 0.0,
+      "compiled_programs": 2,
+      "invalid_no_game_programs": 2,
+      "fault_free_programs": 2,
+      "played_games": 96,
+      "positive_banking_programs": 0,
+      "zero_banking_programs": 4,
+      "all_rest_programs": 0,
+      "mean_raw_game_return_among_compiled": -0.6380476717659689,
+      "conditional_fault_free_mean_banked": 0.0,
+      "mean_penalized_task_reward": -0.8190238358829844,
+      "programs": [
+        {
+          "generation": "eval-base-plain-0",
+          "banked_point_yield": 0.0,
+          "authorship_valid": true,
+          "runtime_valid": true,
+          "game_return": -0.6233389526301664,
+          "reward": -0.6233389526301664,
+          "games": 48,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 48,
+          "zero_zero_draws": 0,
+          "turns": 2304,
+          "rest_actions": 688,
+          "failed_actions": 1427,
+          "by_opponent": {
+            "nearest": {
+              "games": 12,
+              "banked_points": 0,
+              "return_sum": -7.187922705314009
+            },
+            "value": {
+              "games": 12,
+              "banked_points": 0,
+              "return_sum": -7.968458132045089
+            },
+            "controller-python-1": {
+              "games": 12,
+              "banked_points": 0,
+              "return_sum": -7.483272946859905
+            },
+            "qwen38-27b-1-r2": {
+              "games": 12,
+              "banked_points": 0,
+              "return_sum": -7.280615942028985
+            }
+          },
+          "by_map": {
+            "6400000": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -5.6875
+            },
+            "6400001": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.722222222222222
+            },
+            "6400002": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -5.608695652173913
+            },
+            "6400003": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.55
+            },
+            "6400004": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.185185185185185
+            },
+            "6400005": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -5.166666666666666
+            }
+          },
+          "all_rest": false,
+          "rest_action_fraction": 0.2986111111111111
+        },
+        {
+          "generation": "eval-base-plain-1",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "eval-base-plain-2",
+          "banked_point_yield": 0.0,
+          "authorship_valid": true,
+          "runtime_valid": true,
+          "game_return": -0.6527563909017714,
+          "reward": -0.6527563909017714,
+          "games": 48,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 48,
+          "zero_zero_draws": 0,
+          "turns": 2304,
+          "rest_actions": 2139,
+          "failed_actions": 0,
+          "by_opponent": {
+            "nearest": {
+              "games": 12,
+              "banked_points": 0,
+              "return_sum": -7.125422705314009
+            },
+            "value": {
+              "games": 12,
+              "banked_points": 0,
+              "return_sum": -8.359661835748792
+            },
+            "controller-python-1": {
+              "games": 12,
+              "banked_points": 0,
+              "return_sum": -7.983272946859905
+            },
+            "qwen38-27b-1-r2": {
+              "games": 12,
+              "banked_points": 0,
+              "return_sum": -7.863949275362318
+            }
+          },
+          "by_map": {
+            "6400000": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -6.8125
+            },
+            "6400001": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.777777777777779
+            },
+            "6400002": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -5.608695652173913
+            },
+            "6400003": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.55
+            },
+            "6400004": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.333333333333334
+            },
+            "6400005": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -5.249999999999999
+            }
+          },
+          "all_rest": false,
+          "rest_action_fraction": 0.9283854166666666
+        },
+        {
+          "generation": "eval-base-plain-3",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        }
+      ],
+      "sampling_unit": "generated controller, not individual replay game",
+      "duplicate_compiled_outputs": 0,
+      "duplicate_token_completions": 0,
+      "actual_eos_programs": 4
+    },
+    "game_rl-round3/compact/validation": {
+      "prescribed_program_clusters": 8,
+      "observed_program_clusters": 8,
+      "missing_program_clusters": 0,
+      "complete": true,
+      "primary_mean_banked_point_yield": 0.0,
+      "observed_mean_banked_point_yield": 0.0,
+      "compiled_programs": 1,
+      "invalid_no_game_programs": 7,
+      "fault_free_programs": 1,
+      "played_games": 32,
+      "positive_banking_programs": 0,
+      "zero_banking_programs": 8,
+      "all_rest_programs": 1,
+      "mean_raw_game_return_among_compiled": -0.6124007936507937,
+      "conditional_fault_free_mean_banked": 0.0,
+      "mean_penalized_task_reward": -0.9515500992063493,
+      "programs": [
+        {
+          "generation": "eval-game_rl-round3-compact-0",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "eval-game_rl-round3-compact-1",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "eval-game_rl-round3-compact-2",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "eval-game_rl-round3-compact-3",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "eval-game_rl-round3-compact-4",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "eval-game_rl-round3-compact-5",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "eval-game_rl-round3-compact-6",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "eval-game_rl-round3-compact-7",
+          "banked_point_yield": 0.0,
+          "authorship_valid": true,
+          "runtime_valid": true,
+          "game_return": -0.6124007936507937,
+          "reward": -0.6124007936507937,
+          "games": 32,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 32,
+          "zero_zero_draws": 0,
+          "turns": 1536,
+          "rest_actions": 1536,
+          "failed_actions": 0,
+          "by_opponent": {
+            "nearest": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.676190476190476
+            },
+            "value": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -5.32063492063492
+            },
+            "controller-python-1": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -5.088888888888889
+            },
+            "qwen38-27b-1-r2": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.511111111111111
+            }
+          },
+          "by_map": {
+            "6300000": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.7
+            },
+            "6300001": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.285714285714286
+            },
+            "6300002": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -6.277777777777778
+            },
+            "6300003": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.333333333333334
+            }
+          },
+          "all_rest": true,
+          "rest_action_fraction": 1.0
+        }
+      ],
+      "sampling_unit": "generated controller, not individual replay game",
+      "duplicate_compiled_outputs": 0,
+      "duplicate_token_completions": 0,
+      "actual_eos_programs": 3
+    },
+    "game_rl-round3/compact/holdout": {
+      "prescribed_program_clusters": 8,
+      "observed_program_clusters": 8,
+      "missing_program_clusters": 0,
+      "complete": true,
+      "primary_mean_banked_point_yield": 0.0,
+      "observed_mean_banked_point_yield": 0.0,
+      "compiled_programs": 1,
+      "invalid_no_game_programs": 7,
+      "fault_free_programs": 1,
+      "played_games": 48,
+      "positive_banking_programs": 0,
+      "zero_banking_programs": 8,
+      "all_rest_programs": 1,
+      "mean_raw_game_return_among_compiled": -0.6498628723832528,
+      "conditional_fault_free_mean_banked": 0.0,
+      "mean_penalized_task_reward": -0.9562328590479066,
+      "programs": [
+        {
+          "generation": "eval-game_rl-round3-compact-0",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "eval-game_rl-round3-compact-1",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "eval-game_rl-round3-compact-2",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "eval-game_rl-round3-compact-3",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "eval-game_rl-round3-compact-4",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "eval-game_rl-round3-compact-5",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "eval-game_rl-round3-compact-6",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "eval-game_rl-round3-compact-7",
+          "banked_point_yield": 0.0,
+          "authorship_valid": true,
+          "runtime_valid": true,
+          "game_return": -0.6498628723832528,
+          "reward": -0.6498628723832528,
+          "games": 48,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 48,
+          "zero_zero_draws": 0,
+          "turns": 2304,
+          "rest_actions": 2304,
+          "failed_actions": 0,
+          "by_opponent": {
+            "nearest": {
+              "games": 12,
+              "banked_points": 0,
+              "return_sum": -7.125422705314009
+            },
+            "value": {
+              "games": 12,
+              "banked_points": 0,
+              "return_sum": -8.359661835748792
+            },
+            "controller-python-1": {
+              "games": 12,
+              "banked_points": 0,
+              "return_sum": -7.983272946859905
+            },
+            "qwen38-27b-1-r2": {
+              "games": 12,
+              "banked_points": 0,
+              "return_sum": -7.725060386473428
+            }
+          },
+          "by_map": {
+            "6400000": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -6.8125
+            },
+            "6400001": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.722222222222222
+            },
+            "6400002": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -5.608695652173913
+            },
+            "6400003": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.55
+            },
+            "6400004": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.333333333333334
+            },
+            "6400005": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -5.166666666666666
+            }
+          },
+          "all_rest": true,
+          "rest_action_fraction": 1.0
+        }
+      ],
+      "sampling_unit": "generated controller, not individual replay game",
+      "duplicate_compiled_outputs": 0,
+      "duplicate_token_completions": 0,
+      "actual_eos_programs": 3
+    },
+    "game_rl-round3/plain/validation": {
+      "prescribed_program_clusters": 4,
+      "observed_program_clusters": 4,
+      "missing_program_clusters": 0,
+      "complete": true,
+      "primary_mean_banked_point_yield": 0.0,
+      "observed_mean_banked_point_yield": 0.0,
+      "compiled_programs": 2,
+      "invalid_no_game_programs": 2,
+      "fault_free_programs": 2,
+      "played_games": 64,
+      "positive_banking_programs": 0,
+      "zero_banking_programs": 4,
+      "all_rest_programs": 0,
+      "mean_raw_game_return_among_compiled": -0.6149181547619047,
+      "conditional_fault_free_mean_banked": 0.0,
+      "mean_penalized_task_reward": -0.8074590773809524,
+      "programs": [
+        {
+          "generation": "eval-game_rl-round3-plain-0",
+          "banked_point_yield": 0.0,
+          "authorship_valid": true,
+          "runtime_valid": true,
+          "game_return": -0.6170882936507937,
+          "reward": -0.6170882936507937,
+          "games": 32,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 32,
+          "zero_zero_draws": 0,
+          "turns": 1536,
+          "rest_actions": 360,
+          "failed_actions": 1080,
+          "by_opponent": {
+            "nearest": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.676190476190476
+            },
+            "value": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -5.32063492063492
+            },
+            "controller-python-1": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -5.088888888888889
+            },
+            "qwen38-27b-1-r2": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.6611111111111105
+            }
+          },
+          "by_map": {
+            "6300000": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.85
+            },
+            "6300001": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.285714285714286
+            },
+            "6300002": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -6.277777777777778
+            },
+            "6300003": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.333333333333334
+            }
+          },
+          "all_rest": false,
+          "rest_action_fraction": 0.234375
+        },
+        {
+          "generation": "eval-game_rl-round3-plain-1",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "eval-game_rl-round3-plain-2",
+          "banked_point_yield": 0.0,
+          "authorship_valid": true,
+          "runtime_valid": true,
+          "game_return": -0.6127480158730159,
+          "reward": -0.6127480158730159,
+          "games": 32,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 32,
+          "zero_zero_draws": 0,
+          "turns": 1536,
+          "rest_actions": 1417,
+          "failed_actions": 0,
+          "by_opponent": {
+            "nearest": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.676190476190476
+            },
+            "value": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -5.32063492063492
+            },
+            "controller-python-1": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -5.088888888888889
+            },
+            "qwen38-27b-1-r2": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.522222222222222
+            }
+          },
+          "by_map": {
+            "6300000": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.85
+            },
+            "6300001": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.285714285714286
+            },
+            "6300002": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -6.138888888888889
+            },
+            "6300003": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.333333333333334
+            }
+          },
+          "all_rest": false,
+          "rest_action_fraction": 0.9225260416666666
+        },
+        {
+          "generation": "eval-game_rl-round3-plain-3",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        }
+      ],
+      "sampling_unit": "generated controller, not individual replay game",
+      "duplicate_compiled_outputs": 0,
+      "duplicate_token_completions": 0,
+      "actual_eos_programs": 4
+    },
+    "game_rl-round3/plain/holdout": {
+      "prescribed_program_clusters": 4,
+      "observed_program_clusters": 4,
+      "missing_program_clusters": 0,
+      "complete": true,
+      "primary_mean_banked_point_yield": 0.0,
+      "observed_mean_banked_point_yield": 0.0,
+      "compiled_programs": 2,
+      "invalid_no_game_programs": 2,
+      "fault_free_programs": 2,
+      "played_games": 96,
+      "positive_banking_programs": 0,
+      "zero_banking_programs": 4,
+      "all_rest_programs": 0,
+      "mean_raw_game_return_among_compiled": -0.6380476717659689,
+      "conditional_fault_free_mean_banked": 0.0,
+      "mean_penalized_task_reward": -0.8190238358829844,
+      "programs": [
+        {
+          "generation": "eval-game_rl-round3-plain-0",
+          "banked_point_yield": 0.0,
+          "authorship_valid": true,
+          "runtime_valid": true,
+          "game_return": -0.6233389526301664,
+          "reward": -0.6233389526301664,
+          "games": 48,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 48,
+          "zero_zero_draws": 0,
+          "turns": 2304,
+          "rest_actions": 688,
+          "failed_actions": 1427,
+          "by_opponent": {
+            "nearest": {
+              "games": 12,
+              "banked_points": 0,
+              "return_sum": -7.187922705314009
+            },
+            "value": {
+              "games": 12,
+              "banked_points": 0,
+              "return_sum": -7.968458132045089
+            },
+            "controller-python-1": {
+              "games": 12,
+              "banked_points": 0,
+              "return_sum": -7.483272946859905
+            },
+            "qwen38-27b-1-r2": {
+              "games": 12,
+              "banked_points": 0,
+              "return_sum": -7.280615942028985
+            }
+          },
+          "by_map": {
+            "6400000": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -5.6875
+            },
+            "6400001": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.722222222222222
+            },
+            "6400002": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -5.608695652173913
+            },
+            "6400003": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.55
+            },
+            "6400004": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.185185185185185
+            },
+            "6400005": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -5.166666666666666
+            }
+          },
+          "all_rest": false,
+          "rest_action_fraction": 0.2986111111111111
+        },
+        {
+          "generation": "eval-game_rl-round3-plain-1",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "eval-game_rl-round3-plain-2",
+          "banked_point_yield": 0.0,
+          "authorship_valid": true,
+          "runtime_valid": true,
+          "game_return": -0.6527563909017714,
+          "reward": -0.6527563909017714,
+          "games": 48,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 48,
+          "zero_zero_draws": 0,
+          "turns": 2304,
+          "rest_actions": 2139,
+          "failed_actions": 0,
+          "by_opponent": {
+            "nearest": {
+              "games": 12,
+              "banked_points": 0,
+              "return_sum": -7.125422705314009
+            },
+            "value": {
+              "games": 12,
+              "banked_points": 0,
+              "return_sum": -8.359661835748792
+            },
+            "controller-python-1": {
+              "games": 12,
+              "banked_points": 0,
+              "return_sum": -7.983272946859905
+            },
+            "qwen38-27b-1-r2": {
+              "games": 12,
+              "banked_points": 0,
+              "return_sum": -7.863949275362318
+            }
+          },
+          "by_map": {
+            "6400000": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -6.8125
+            },
+            "6400001": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.777777777777779
+            },
+            "6400002": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -5.608695652173913
+            },
+            "6400003": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.55
+            },
+            "6400004": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.333333333333334
+            },
+            "6400005": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -5.249999999999999
+            }
+          },
+          "all_rest": false,
+          "rest_action_fraction": 0.9283854166666666
+        },
+        {
+          "generation": "eval-game_rl-round3-plain-3",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        }
+      ],
+      "sampling_unit": "generated controller, not individual replay game",
+      "duplicate_compiled_outputs": 0,
+      "duplicate_token_completions": 0,
+      "actual_eos_programs": 4
+    },
+    "validity_rl-round3/compact/validation": {
+      "prescribed_program_clusters": 8,
+      "observed_program_clusters": 8,
+      "missing_program_clusters": 0,
+      "complete": true,
+      "primary_mean_banked_point_yield": 0.0,
+      "observed_mean_banked_point_yield": 0.0,
+      "compiled_programs": 1,
+      "invalid_no_game_programs": 7,
+      "fault_free_programs": 1,
+      "played_games": 32,
+      "positive_banking_programs": 0,
+      "zero_banking_programs": 8,
+      "all_rest_programs": 1,
+      "mean_raw_game_return_among_compiled": -0.6124007936507937,
+      "conditional_fault_free_mean_banked": 0.0,
+      "mean_penalized_task_reward": -0.9515500992063493,
+      "programs": [
+        {
+          "generation": "eval-validity_rl-round3-compact-0",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "eval-validity_rl-round3-compact-1",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "eval-validity_rl-round3-compact-2",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "eval-validity_rl-round3-compact-3",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "eval-validity_rl-round3-compact-4",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "eval-validity_rl-round3-compact-5",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "eval-validity_rl-round3-compact-6",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "eval-validity_rl-round3-compact-7",
+          "banked_point_yield": 0.0,
+          "authorship_valid": true,
+          "runtime_valid": true,
+          "game_return": -0.6124007936507937,
+          "reward": -0.6124007936507937,
+          "games": 32,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 32,
+          "zero_zero_draws": 0,
+          "turns": 1536,
+          "rest_actions": 1536,
+          "failed_actions": 0,
+          "by_opponent": {
+            "nearest": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.676190476190476
+            },
+            "value": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -5.32063492063492
+            },
+            "controller-python-1": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -5.088888888888889
+            },
+            "qwen38-27b-1-r2": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.511111111111111
+            }
+          },
+          "by_map": {
+            "6300000": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.7
+            },
+            "6300001": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.285714285714286
+            },
+            "6300002": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -6.277777777777778
+            },
+            "6300003": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.333333333333334
+            }
+          },
+          "all_rest": true,
+          "rest_action_fraction": 1.0
+        }
+      ],
+      "sampling_unit": "generated controller, not individual replay game",
+      "duplicate_compiled_outputs": 0,
+      "duplicate_token_completions": 0,
+      "actual_eos_programs": 3
+    },
+    "validity_rl-round3/compact/holdout": {
+      "prescribed_program_clusters": 8,
+      "observed_program_clusters": 8,
+      "missing_program_clusters": 0,
+      "complete": true,
+      "primary_mean_banked_point_yield": 0.0,
+      "observed_mean_banked_point_yield": 0.0,
+      "compiled_programs": 1,
+      "invalid_no_game_programs": 7,
+      "fault_free_programs": 1,
+      "played_games": 48,
+      "positive_banking_programs": 0,
+      "zero_banking_programs": 8,
+      "all_rest_programs": 1,
+      "mean_raw_game_return_among_compiled": -0.6498628723832528,
+      "conditional_fault_free_mean_banked": 0.0,
+      "mean_penalized_task_reward": -0.9562328590479066,
+      "programs": [
+        {
+          "generation": "eval-validity_rl-round3-compact-0",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "eval-validity_rl-round3-compact-1",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "eval-validity_rl-round3-compact-2",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "eval-validity_rl-round3-compact-3",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "eval-validity_rl-round3-compact-4",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "eval-validity_rl-round3-compact-5",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "eval-validity_rl-round3-compact-6",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "eval-validity_rl-round3-compact-7",
+          "banked_point_yield": 0.0,
+          "authorship_valid": true,
+          "runtime_valid": true,
+          "game_return": -0.6498628723832528,
+          "reward": -0.6498628723832528,
+          "games": 48,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 48,
+          "zero_zero_draws": 0,
+          "turns": 2304,
+          "rest_actions": 2304,
+          "failed_actions": 0,
+          "by_opponent": {
+            "nearest": {
+              "games": 12,
+              "banked_points": 0,
+              "return_sum": -7.125422705314009
+            },
+            "value": {
+              "games": 12,
+              "banked_points": 0,
+              "return_sum": -8.359661835748792
+            },
+            "controller-python-1": {
+              "games": 12,
+              "banked_points": 0,
+              "return_sum": -7.983272946859905
+            },
+            "qwen38-27b-1-r2": {
+              "games": 12,
+              "banked_points": 0,
+              "return_sum": -7.725060386473428
+            }
+          },
+          "by_map": {
+            "6400000": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -6.8125
+            },
+            "6400001": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.722222222222222
+            },
+            "6400002": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -5.608695652173913
+            },
+            "6400003": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.55
+            },
+            "6400004": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.333333333333334
+            },
+            "6400005": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -5.166666666666666
+            }
+          },
+          "all_rest": true,
+          "rest_action_fraction": 1.0
+        }
+      ],
+      "sampling_unit": "generated controller, not individual replay game",
+      "duplicate_compiled_outputs": 0,
+      "duplicate_token_completions": 0,
+      "actual_eos_programs": 3
+    },
+    "validity_rl-round3/plain/validation": {
+      "prescribed_program_clusters": 4,
+      "observed_program_clusters": 4,
+      "missing_program_clusters": 0,
+      "complete": true,
+      "primary_mean_banked_point_yield": 0.0,
+      "observed_mean_banked_point_yield": 0.0,
+      "compiled_programs": 2,
+      "invalid_no_game_programs": 2,
+      "fault_free_programs": 2,
+      "played_games": 64,
+      "positive_banking_programs": 0,
+      "zero_banking_programs": 4,
+      "all_rest_programs": 0,
+      "mean_raw_game_return_among_compiled": -0.6149181547619047,
+      "conditional_fault_free_mean_banked": 0.0,
+      "mean_penalized_task_reward": -0.8074590773809524,
+      "programs": [
+        {
+          "generation": "eval-validity_rl-round3-plain-0",
+          "banked_point_yield": 0.0,
+          "authorship_valid": true,
+          "runtime_valid": true,
+          "game_return": -0.6170882936507937,
+          "reward": -0.6170882936507937,
+          "games": 32,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 32,
+          "zero_zero_draws": 0,
+          "turns": 1536,
+          "rest_actions": 360,
+          "failed_actions": 1080,
+          "by_opponent": {
+            "nearest": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.676190476190476
+            },
+            "value": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -5.32063492063492
+            },
+            "controller-python-1": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -5.088888888888889
+            },
+            "qwen38-27b-1-r2": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.6611111111111105
+            }
+          },
+          "by_map": {
+            "6300000": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.85
+            },
+            "6300001": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.285714285714286
+            },
+            "6300002": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -6.277777777777778
+            },
+            "6300003": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.333333333333334
+            }
+          },
+          "all_rest": false,
+          "rest_action_fraction": 0.234375
+        },
+        {
+          "generation": "eval-validity_rl-round3-plain-1",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "eval-validity_rl-round3-plain-2",
+          "banked_point_yield": 0.0,
+          "authorship_valid": true,
+          "runtime_valid": true,
+          "game_return": -0.6127480158730159,
+          "reward": -0.6127480158730159,
+          "games": 32,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 32,
+          "zero_zero_draws": 0,
+          "turns": 1536,
+          "rest_actions": 1417,
+          "failed_actions": 0,
+          "by_opponent": {
+            "nearest": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.676190476190476
+            },
+            "value": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -5.32063492063492
+            },
+            "controller-python-1": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -5.088888888888889
+            },
+            "qwen38-27b-1-r2": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.522222222222222
+            }
+          },
+          "by_map": {
+            "6300000": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.85
+            },
+            "6300001": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.285714285714286
+            },
+            "6300002": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -6.138888888888889
+            },
+            "6300003": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.333333333333334
+            }
+          },
+          "all_rest": false,
+          "rest_action_fraction": 0.9225260416666666
+        },
+        {
+          "generation": "eval-validity_rl-round3-plain-3",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        }
+      ],
+      "sampling_unit": "generated controller, not individual replay game",
+      "duplicate_compiled_outputs": 0,
+      "duplicate_token_completions": 0,
+      "actual_eos_programs": 4
+    },
+    "validity_rl-round3/plain/holdout": {
+      "prescribed_program_clusters": 4,
+      "observed_program_clusters": 4,
+      "missing_program_clusters": 0,
+      "complete": true,
+      "primary_mean_banked_point_yield": 0.0,
+      "observed_mean_banked_point_yield": 0.0,
+      "compiled_programs": 2,
+      "invalid_no_game_programs": 2,
+      "fault_free_programs": 2,
+      "played_games": 96,
+      "positive_banking_programs": 0,
+      "zero_banking_programs": 4,
+      "all_rest_programs": 0,
+      "mean_raw_game_return_among_compiled": -0.6380476717659689,
+      "conditional_fault_free_mean_banked": 0.0,
+      "mean_penalized_task_reward": -0.8190238358829844,
+      "programs": [
+        {
+          "generation": "eval-validity_rl-round3-plain-0",
+          "banked_point_yield": 0.0,
+          "authorship_valid": true,
+          "runtime_valid": true,
+          "game_return": -0.6233389526301664,
+          "reward": -0.6233389526301664,
+          "games": 48,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 48,
+          "zero_zero_draws": 0,
+          "turns": 2304,
+          "rest_actions": 688,
+          "failed_actions": 1427,
+          "by_opponent": {
+            "nearest": {
+              "games": 12,
+              "banked_points": 0,
+              "return_sum": -7.187922705314009
+            },
+            "value": {
+              "games": 12,
+              "banked_points": 0,
+              "return_sum": -7.968458132045089
+            },
+            "controller-python-1": {
+              "games": 12,
+              "banked_points": 0,
+              "return_sum": -7.483272946859905
+            },
+            "qwen38-27b-1-r2": {
+              "games": 12,
+              "banked_points": 0,
+              "return_sum": -7.280615942028985
+            }
+          },
+          "by_map": {
+            "6400000": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -5.6875
+            },
+            "6400001": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.722222222222222
+            },
+            "6400002": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -5.608695652173913
+            },
+            "6400003": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.55
+            },
+            "6400004": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.185185185185185
+            },
+            "6400005": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -5.166666666666666
+            }
+          },
+          "all_rest": false,
+          "rest_action_fraction": 0.2986111111111111
+        },
+        {
+          "generation": "eval-validity_rl-round3-plain-1",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        },
+        {
+          "generation": "eval-validity_rl-round3-plain-2",
+          "banked_point_yield": 0.0,
+          "authorship_valid": true,
+          "runtime_valid": true,
+          "game_return": -0.6527563909017714,
+          "reward": -0.6527563909017714,
+          "games": 48,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 48,
+          "zero_zero_draws": 0,
+          "turns": 2304,
+          "rest_actions": 2139,
+          "failed_actions": 0,
+          "by_opponent": {
+            "nearest": {
+              "games": 12,
+              "banked_points": 0,
+              "return_sum": -7.125422705314009
+            },
+            "value": {
+              "games": 12,
+              "banked_points": 0,
+              "return_sum": -8.359661835748792
+            },
+            "controller-python-1": {
+              "games": 12,
+              "banked_points": 0,
+              "return_sum": -7.983272946859905
+            },
+            "qwen38-27b-1-r2": {
+              "games": 12,
+              "banked_points": 0,
+              "return_sum": -7.863949275362318
+            }
+          },
+          "by_map": {
+            "6400000": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -6.8125
+            },
+            "6400001": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.777777777777779
+            },
+            "6400002": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -5.608695652173913
+            },
+            "6400003": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.55
+            },
+            "6400004": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -4.333333333333334
+            },
+            "6400005": {
+              "games": 8,
+              "banked_points": 0,
+              "return_sum": -5.249999999999999
+            }
+          },
+          "all_rest": false,
+          "rest_action_fraction": 0.9283854166666666
+        },
+        {
+          "generation": "eval-validity_rl-round3-plain-3",
+          "banked_point_yield": 0.0,
+          "authorship_valid": false,
+          "runtime_valid": false,
+          "game_return": null,
+          "reward": -1.0,
+          "games": 0,
+          "candidate_program_faults": 0,
+          "opponent_program_faults": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "zero_zero_draws": 0,
+          "turns": 0,
+          "rest_actions": 0,
+          "failed_actions": 0,
+          "by_opponent": {},
+          "by_map": {},
+          "all_rest": false,
+          "rest_action_fraction": null
+        }
+      ],
+      "sampling_unit": "generated controller, not individual replay game",
+      "duplicate_compiled_outputs": 0,
+      "duplicate_token_completions": 0,
+      "actual_eos_programs": 4
+    }
+  },
+  "contrasts": {
+    "game_rl-minus-base/compact": {
+      "program_cluster_n": 8,
+      "paired_generation_seeds": [
+        8300000,
+        8300001,
+        8300002,
+        8300003,
+        8300004,
+        8300005,
+        8300006,
+        8300007
+      ],
+      "raw_paired_banked_yield_differences": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_difference": 0.0,
+      "training_seeds_per_arm": 1
+    },
+    "game_rl-minus-validity_rl-round3/compact": {
+      "program_cluster_n": 8,
+      "paired_generation_seeds": [
+        8300000,
+        8300001,
+        8300002,
+        8300003,
+        8300004,
+        8300005,
+        8300006,
+        8300007
+      ],
+      "raw_paired_banked_yield_differences": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_difference": 0.0,
+      "training_seeds_per_arm": 1
+    },
+    "game_rl-minus-base/plain": {
+      "program_cluster_n": 4,
+      "paired_generation_seeds": [
+        8400000,
+        8400001,
+        8400002,
+        8400003
+      ],
+      "raw_paired_banked_yield_differences": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_difference": 0.0,
+      "training_seeds_per_arm": 1
+    },
+    "game_rl-minus-validity_rl-round3/plain": {
+      "program_cluster_n": 4,
+      "paired_generation_seeds": [
+        8400000,
+        8400001,
+        8400002,
+        8400003
+      ],
+      "raw_paired_banked_yield_differences": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_difference": 0.0,
+      "training_seeds_per_arm": 1
+    }
+  },
+  "retained_uncommitted_artifacts": [],
+  "limits": [
+    "CPU audit verifies recorded numerical gate summaries; it does not independently rerun neural likelihoods.",
+    "Adapter, optimizer, all committed artifacts and archived sources are hash checked; model identity is bound to the frozen model-file index.",
+    "Eight compact and four plain generated controllers are the sampling units, not individual games. Only one training seed per arm.",
+    "Missing authoring draws are not zero-score games. Invalid completed authoring draws have zero banked yield and no fabricated replay.",
+    "The frozen opponent pool is not refreshed. Even a complete positive comparison does not establish continual self-play progress."
+  ]
+}

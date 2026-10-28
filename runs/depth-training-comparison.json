@@ -1,0 +1,468 @@
+{
+  "models": {
+    "base": {
+      "canonical": {
+        "attempts": 256,
+        "successes": 25,
+        "pass_at_1": 0.09765625,
+        "task_pass_at_4": 0.125,
+        "unique_tasks": 64,
+        "statuses": {
+          "wrong_goal": 231,
+          "solved": 25
+        },
+        "completion_tokens": 4608,
+        "mean_distinct_final_plans_per_task": 1.890625,
+        "by_depth": {
+          "2": {
+            "attempts": 64,
+            "successes": 12,
+            "pass_at_1": 0.1875,
+            "task_pass_at_4": 0.1875,
+            "unique_tasks": 16,
+            "statuses": {
+              "wrong_goal": 52,
+              "solved": 12
+            },
+            "completion_tokens": 768,
+            "mean_distinct_final_plans_per_task": 1.1875
+          },
+          "3": {
+            "attempts": 64,
+            "successes": 4,
+            "pass_at_1": 0.0625,
+            "task_pass_at_4": 0.0625,
+            "unique_tasks": 16,
+            "statuses": {
+              "wrong_goal": 60,
+              "solved": 4
+            },
+            "completion_tokens": 1024,
+            "mean_distinct_final_plans_per_task": 1.5625
+          },
+          "4": {
+            "attempts": 64,
+            "successes": 6,
+            "pass_at_1": 0.09375,
+            "task_pass_at_4": 0.1875,
+            "unique_tasks": 16,
+            "statuses": {
+              "wrong_goal": 58,
+              "solved": 6
+            },
+            "completion_tokens": 1280,
+            "mean_distinct_final_plans_per_task": 2.5625
+          },
+          "5": {
+            "attempts": 64,
+            "successes": 3,
+            "pass_at_1": 0.046875,
+            "task_pass_at_4": 0.0625,
+            "unique_tasks": 16,
+            "statuses": {
+              "wrong_goal": 61,
+              "solved": 3
+            },
+            "completion_tokens": 1536,
+            "mean_distinct_final_plans_per_task": 2.25
+          }
+        }
+      },
+      "renamed_reordered": {
+        "attempts": 256,
+        "successes": 14,
+        "pass_at_1": 0.0546875,
+        "task_pass_at_4": 0.0625,
+        "unique_tasks": 64,
+        "statuses": {
+          "wrong_goal": 242,
+          "solved": 14
+        },
+        "completion_tokens": 3712,
+        "mean_distinct_final_plans_per_task": 1.90625,
+        "by_depth": {
+          "2": {
+            "attempts": 64,
+            "successes": 6,
+            "pass_at_1": 0.09375,
+            "task_pass_at_4": 0.125,
+            "unique_tasks": 16,
+            "statuses": {
+              "wrong_goal": 58,
+              "solved": 6
+            },
+            "completion_tokens": 640,
+            "mean_distinct_final_plans_per_task": 1.625
+          },
+          "3": {
+            "attempts": 64,
+            "successes": 8,
+            "pass_at_1": 0.125,
+            "task_pass_at_4": 0.125,
+            "unique_tasks": 16,
+            "statuses": {
+              "wrong_goal": 56,
+              "solved": 8
+            },
+            "completion_tokens": 832,
+            "mean_distinct_final_plans_per_task": 1.75
+          },
+          "4": {
+            "attempts": 64,
+            "successes": 0,
+            "pass_at_1": 0.0,
+            "task_pass_at_4": 0.0,
+            "unique_tasks": 16,
+            "statuses": {
+              "wrong_goal": 64
+            },
+            "completion_tokens": 1024,
+            "mean_distinct_final_plans_per_task": 2.0
+          },
+          "5": {
+            "attempts": 64,
+            "successes": 0,
+            "pass_at_1": 0.0,
+            "task_pass_at_4": 0.0,
+            "unique_tasks": 16,
+            "statuses": {
+              "wrong_goal": 64
+            },
+            "completion_tokens": 1216,
+            "mean_distinct_final_plans_per_task": 2.25
+          }
+        }
+      }
+    },
+    "uniform": {
+      "canonical": {
+        "attempts": 256,
+        "successes": 24,
+        "pass_at_1": 0.09375,
+        "task_pass_at_4": 0.09375,
+        "unique_tasks": 64,
+        "statuses": {
+          "wrong_goal": 232,
+          "solved": 24
+        },
+        "completion_tokens": 4608,
+        "mean_distinct_final_plans_per_task": 1.40625,
+        "by_depth": {
+          "2": {
+            "attempts": 64,
+            "successes": 16,
+            "pass_at_1": 0.25,
+            "task_pass_at_4": 0.25,
+            "unique_tasks": 16,
+            "statuses": {
+              "wrong_goal": 48,
+              "solved": 16
+            },
+            "completion_tokens": 768,
+            "mean_distinct_final_plans_per_task": 1.125
+          },
+          "3": {
+            "attempts": 64,
+            "successes": 4,
+            "pass_at_1": 0.0625,
+            "task_pass_at_4": 0.0625,
+            "unique_tasks": 16,
+            "statuses": {
+              "wrong_goal": 60,
+              "solved": 4
+            },
+            "completion_tokens": 1024,
+            "mean_distinct_final_plans_per_task": 1.5
+          },
+          "4": {
+            "attempts": 64,
+            "successes": 0,
+            "pass_at_1": 0.0,
+            "task_pass_at_4": 0.0,
+            "unique_tasks": 16,
+            "statuses": {
+              "wrong_goal": 64
+            },
+            "completion_tokens": 1280,
+            "mean_distinct_final_plans_per_task": 1.4375
+          },
+          "5": {
+            "attempts": 64,
+            "successes": 4,
+            "pass_at_1": 0.0625,
+            "task_pass_at_4": 0.0625,
+            "unique_tasks": 16,
+            "statuses": {
+              "wrong_goal": 60,
+              "solved": 4
+            },
+            "completion_tokens": 1536,
+            "mean_distinct_final_plans_per_task": 1.5625
+          }
+        }
+      },
+      "renamed_reordered": {
+        "attempts": 256,
+        "successes": 12,
+        "pass_at_1": 0.046875,
+        "task_pass_at_4": 0.078125,
+        "unique_tasks": 64,
+        "statuses": {
+          "wrong_goal": 244,
+          "solved": 12
+        },
+        "completion_tokens": 3712,
+        "mean_distinct_final_plans_per_task": 2.34375,
+        "by_depth": {
+          "2": {
+            "attempts": 64,
+            "successes": 6,
+            "pass_at_1": 0.09375,
+            "task_pass_at_4": 0.1875,
+            "unique_tasks": 16,
+            "statuses": {
+              "wrong_goal": 58,
+              "solved": 6
+            },
+            "completion_tokens": 640,
+            "mean_distinct_final_plans_per_task": 2.0
+          },
+          "3": {
+            "attempts": 64,
+            "successes": 6,
+            "pass_at_1": 0.09375,
+            "task_pass_at_4": 0.125,
+            "unique_tasks": 16,
+            "statuses": {
+              "wrong_goal": 58,
+              "solved": 6
+            },
+            "completion_tokens": 832,
+            "mean_distinct_final_plans_per_task": 2.375
+          },
+          "4": {
+            "attempts": 64,
+            "successes": 0,
+            "pass_at_1": 0.0,
+            "task_pass_at_4": 0.0,
+            "unique_tasks": 16,
+            "statuses": {
+              "wrong_goal": 64
+            },
+            "completion_tokens": 1024,
+            "mean_distinct_final_plans_per_task": 2.4375
+          },
+          "5": {
+            "attempts": 64,
+            "successes": 0,
+            "pass_at_1": 0.0,
+            "task_pass_at_4": 0.0,
+            "unique_tasks": 16,
+            "statuses": {
+              "wrong_goal": 64
+            },
+            "completion_tokens": 1216,
+            "mean_distinct_final_plans_per_task": 2.5625
+          }
+        }
+      }
+    },
+    "frontier": {
+      "canonical": {
+        "attempts": 256,
+        "successes": 21,
+        "pass_at_1": 0.08203125,
+        "task_pass_at_4": 0.125,
+        "unique_tasks": 64,
+        "statuses": {
+          "wrong_goal": 235,
+          "solved": 21
+        },
+        "completion_tokens": 4608,
+        "mean_distinct_final_plans_per_task": 1.8125,
+        "by_depth": {
+          "2": {
+            "attempts": 64,
+            "successes": 14,
+            "pass_at_1": 0.21875,
+            "task_pass_at_4": 0.25,
+            "unique_tasks": 16,
+            "statuses": {
+              "wrong_goal": 50,
+              "solved": 14
+            },
+            "completion_tokens": 768,
+            "mean_distinct_final_plans_per_task": 1.4375
+          },
+          "3": {
+            "attempts": 64,
+            "successes": 2,
+            "pass_at_1": 0.03125,
+            "task_pass_at_4": 0.125,
+            "unique_tasks": 16,
+            "statuses": {
+              "wrong_goal": 62,
+              "solved": 2
+            },
+            "completion_tokens": 1024,
+            "mean_distinct_final_plans_per_task": 1.875
+          },
+          "4": {
+            "attempts": 64,
+            "successes": 2,
+            "pass_at_1": 0.03125,
+            "task_pass_at_4": 0.0625,
+            "unique_tasks": 16,
+            "statuses": {
+              "wrong_goal": 62,
+              "solved": 2
+            },
+            "completion_tokens": 1280,
+            "mean_distinct_final_plans_per_task": 1.8125
+          },
+          "5": {
+            "attempts": 64,
+            "successes": 3,
+            "pass_at_1": 0.046875,
+            "task_pass_at_4": 0.0625,
+            "unique_tasks": 16,
+            "statuses": {
+              "wrong_goal": 61,
+              "solved": 3
+            },
+            "completion_tokens": 1536,
+            "mean_distinct_final_plans_per_task": 2.125
+          }
+        }
+      },
+      "renamed_reordered": {
+        "attempts": 256,
+        "successes": 15,
+        "pass_at_1": 0.05859375,
+        "task_pass_at_4": 0.125,
+        "unique_tasks": 64,
+        "statuses": {
+          "wrong_goal": 241,
+          "solved": 15
+        },
+        "completion_tokens": 3712,
+        "mean_distinct_final_plans_per_task": 2.734375,
+        "by_depth": {
+          "2": {
+            "attempts": 64,
+            "successes": 6,
+            "pass_at_1": 0.09375,
+            "task_pass_at_4": 0.1875,
+            "unique_tasks": 16,
+            "statuses": {
+              "wrong_goal": 58,
+              "solved": 6
+            },
+            "completion_tokens": 640,
+            "mean_distinct_final_plans_per_task": 2.4375
+          },
+          "3": {
+            "attempts": 64,
+            "successes": 6,
+            "pass_at_1": 0.09375,
+            "task_pass_at_4": 0.1875,
+            "unique_tasks": 16,
+            "statuses": {
+              "wrong_goal": 58,
+              "solved": 6
+            },
+            "completion_tokens": 832,
+            "mean_distinct_final_plans_per_task": 2.875
+          },
+          "4": {
+            "attempts": 64,
+            "successes": 0,
+            "pass_at_1": 0.0,
+            "task_pass_at_4": 0.0,
+            "unique_tasks": 16,
+            "statuses": {
+              "wrong_goal": 64
+            },
+            "completion_tokens": 1024,
+            "mean_distinct_final_plans_per_task": 2.6875
+          },
+          "5": {
+            "attempts": 64,
+            "successes": 3,
+            "pass_at_1": 0.046875,
+            "task_pass_at_4": 0.125,
+            "unique_tasks": 16,
+            "statuses": {
+              "wrong_goal": 61,
+              "solved": 3
+            },
+            "completion_tokens": 1216,
+            "mean_distinct_final_plans_per_task": 2.9375
+          }
+        }
+      }
+    }
+  },
+  "paired_differences": {
+    "canonical:uniform-base": {
+      "mean": -0.00390625,
+      "task_bootstrap_95_interval": [
+        -0.04296875,
+        0.0390625
+      ]
+    },
+    "canonical:frontier-base": {
+      "mean": -0.015625,
+      "task_bootstrap_95_interval": [
+        -0.0625,
+        0.03125
+      ]
+    },
+    "canonical:frontier-uniform": {
+      "mean": -0.01171875,
+      "task_bootstrap_95_interval": [
+        -0.046875,
+        0.015625
+      ]
+    },
+    "renamed_reordered:uniform-base": {
+      "mean": -0.0078125,
+      "task_bootstrap_95_interval": [
+        -0.03515625,
+        0.015625
+      ]
+    },
+    "renamed_reordered:frontier-base": {
+      "mean": 0.00390625,
+      "task_bootstrap_95_interval": [
+        -0.03125,
+        0.03515625
+      ]
+    },
+    "renamed_reordered:frontier-uniform": {
+      "mean": 0.01171875,
+      "task_bootstrap_95_interval": [
+        -0.01171875,
+        0.03515625
+      ]
+    }
+  },
+  "exact_uniform_random_plan": {
+    "2": 0.10546875,
+    "3": 0.0576171875,
+    "4": 0.0263671875,
+    "5": 0.0185546875,
+    "overall": 0.052001953125
+  },
+  "source_runs": {
+    "base": "runs/depth-eval-base",
+    "uniform": "runs/depth-eval-uniform",
+    "frontier": "runs/depth-eval-frontier"
+  },
+  "checkpoint_sha256": {
+    "base": null,
+    "uniform": "aba59f01ad92f88c73c60b6cb5830f90d2da4f24d890322ece1d3a74d230fe70",
+    "frontier": "cc961c1ab4328337f7890a6f57c21529337ca566869cbe7e3c9b5d0cf6731e30"
+  },
+  "limitations": "Single training seed, small selected dataset, toy planning domain. Task-cluster intervals reflect sampled tasks, not training-seed uncertainty. Test results are not checkpoint selection criteria."
+}

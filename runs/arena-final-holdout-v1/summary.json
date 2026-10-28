@@ -1,0 +1,67 @@
+{
+  "complete": true,
+  "training": false,
+  "protocol": {
+    "version": 1,
+    "candidates": [
+      "base",
+      "cycle3"
+    ],
+    "opponents": [
+      "heuristic",
+      "base"
+    ],
+    "scenarios_per_cell": 12,
+    "seed_start": 3900000,
+    "paired_seats": true,
+    "selection": "Fixed final cycle3, regardless of preliminary evaluation outcomes",
+    "purpose": "Fresh final validation; no training or model selection on these games"
+  },
+  "finished_at": "2026-10-22T03:24:20.475793-07:00",
+  "episodes": 288,
+  "external_spend_usd": 0,
+  "stage_records": {
+    "eval-market-heuristic": {
+      "status": "complete",
+      "completed_episodes": 48,
+      "expected_episodes": 48,
+      "part": "runs/arena-final-holdout-v1/rollout-parts/eval-market-heuristic/attempt-c9b66550c48a4186ac8cfc0959e5eb68.jsonl",
+      "sha256": "630cf1a45306813e739252fcd593b51c73dc157fbf48a02c23544522355a5662"
+    },
+    "eval-market-base": {
+      "status": "complete",
+      "completed_episodes": 48,
+      "expected_episodes": 48,
+      "part": "runs/arena-final-holdout-v1/rollout-parts/eval-market-base/attempt-be9c3e5aaa47425b99ea8a09195f6697.jsonl",
+      "sha256": "e8299a187046886e321c7b53d2343a20bd3bced7f309a467eb9d03dae46f21cd"
+    },
+    "eval-maze-heuristic": {
+      "status": "complete",
+      "completed_episodes": 48,
+      "expected_episodes": 48,
+      "part": "runs/arena-final-holdout-v1/rollout-parts/eval-maze-heuristic/attempt-8b03e20340804c3c9303f1fbfbd68fda.jsonl",
+      "sha256": "776e897234b56cb2eddbd1ca017abdce50f5876829c7c8958b7bfe94e7fa86d6"
+    },
+    "eval-maze-base": {
+      "status": "complete",
+      "completed_episodes": 48,
+      "expected_episodes": 48,
+      "part": "runs/arena-final-holdout-v1/rollout-parts/eval-maze-base/attempt-8fd7d858e17f4cf69ef21bfaf693b11b.jsonl",
+      "sha256": "0f4ce1e6d237b2169e3f0dd2beda78babf07ab7ca89e32e245f287399bb1cf9f"
+    },
+    "eval-chess-heuristic": {
+      "status": "complete",
+      "completed_episodes": 48,
+      "expected_episodes": 48,
+      "part": "runs/arena-final-holdout-v1/rollout-parts/eval-chess-heuristic/attempt-922ad2b378a94e91bc22c23d4400bdf3.jsonl",
+      "sha256": "b1c507d9485bf55b7ee45f03c239ac20c83a0efe78a1579d586c8c358dbfe79d"
+    },
+    "eval-chess-base": {
+      "status": "complete",
+      "completed_episodes": 48,
+      "expected_episodes": 48,
+      "part": "runs/arena-final-holdout-v1/rollout-parts/eval-chess-base/attempt-3f280ced20914e1c913eff86186becf4.jsonl",
+      "sha256": "98e8cf42e009b2d91baa6c3a1bc7a1b3b415de1213075e09d2d20d6425a0f653"
+    }
+  }
+}

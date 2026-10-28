@@ -1,0 +1,1282 @@
+{
+  "5851cc91b98901b61f6aec4652c7673b2849714401214ad1ac97eeb988d2d482": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "df4d91012a930f904d734e65d10b1ecf53e23318e47c194fd569d8789088d80e": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "03ddfea514c002455708b67df5c69cb917fe6e0dc399187eb17a40874d4d4b6b": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.125
+  },
+  "023e0df676ddb72dab5ce8e3eeaaaa244e24d7698209b67dbb322d547125c6db": {
+    "score_rate": 1.0,
+    "frontier": 0.0,
+    "independent_rate": 1.0
+  },
+  "ae561c314a78ef49c6a61a9490a107208e48169c59bbab4c971174b473017ff0": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "b7a518e2605c7c466805bcf2a1c7f852afeb3c42fe2fd6d78108af827f3c312e": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "6424dd31a065f04535091f91b6ccd6a0b96b0cd3e0293336ee4e0a0113c6f8d1": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "f22f72aed8b76fed70b22e896f0d996e4c048233d24f36c9d85b0d4254b929d0": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "8003ca3ff39257b807aa6bc677d5896a50c420658be4f4ec9c7199478bf4b8e9": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "8f3dfd3be740cb3616b806608688d8ba5657a4f468dd247d86fe25f9bf4300b4": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "99fec95f7a19a8ed634afb424ea03330e8b1248fbffa86653d7b4088d32f6143": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "fc2e9d503e41ae89a181b21c0cbf16748e881d4e86658cdf5350489cd6b0f123": {
+    "score_rate": 1.0,
+    "frontier": 0.0,
+    "independent_rate": 1.0
+  },
+  "c1bcedb1c7255e37ebb7a8503ef48f6998bd5742e63c0f1de982f278b18cbe96": {
+    "score_rate": 0.75,
+    "frontier": 0.75,
+    "independent_rate": 1.0
+  },
+  "2574f8efc67f5444e8c38263e713712e8867569f5e527f411e81ae849af35ce3": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "3d19b07b95bc37ba0b708c6d7d5d0fbdc4fa7e3d491a5f720ca03487abcd51a4": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "9d4cb84652e82bd4d3771e119aaeba779aee08532ea86cba682e276382728738": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "04c07f4b1fea9c3c9717590c600aa67d597089acbc6f3d38d8d59f830da91754": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "8db35b0012dacf96766878700d636374f18e482ffe45d94317ca5648a48d4718": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "2ee6486bd92022158d519c2f83415e06bc862ba29e790eaa7a9470f98b6ae9d8": {
+    "score_rate": 0.25,
+    "frontier": 0.75,
+    "independent_rate": 0.625
+  },
+  "37fccd5b66f334f09e9b7d1e519b0dcc147edb4c987384e3131a44ad3ae6fd04": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "96af05662a625121a3afa4551be3d3379e433717c98fd97e9984323d19e46148": {
+    "score_rate": 1.0,
+    "frontier": 0.0,
+    "independent_rate": 1.0
+  },
+  "d1bc7fd59b07de3fec87f182af045ce10b2c08587796035929227bfa3bb4a985": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "3b58a4ae4917fe07a0a8085e69fe19201d068f344da0fa0ff0c188ebaf5c212e": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "e47a02bdb7c5ecc90a41a03739015c24a9c83e15de3314a77814fe13faf85012": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "d9351b43fdd9d43c93f851b3a70e58a0a5291ac1f35b97bb05716a6c68eb0a7b": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "410f7e82597aad4b6a001d18937d909e0d51c21988b9e38dce699a2273aaf380": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "2c58286cc1eb7967e2242d90f76f28c2f23a27bfe0e06aa73d53ed2561ee603a": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "f698615c4eff1037c0ae0d8ea540e01b0a1352cecd03b738865bd0a382fb2b31": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "dc8e1c39ff37a9a3d7b80ff5bd89ad08afc5d45f2956d6be6a1c6979e913d54a": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "4819b3f977b4ffc384a6964d1a53bbba2c21d1833e535b3bd0421db8720fa680": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "24f54bee4117d96e331f55320e934a323a4ed606a404ea8094b39aa4eaf8cc0f": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.25
+  },
+  "6da350da6d1d1b5138591363258ba18ee26927984850d7a4177e080b5053c32c": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.25
+  },
+  "b8d479b364afd248ced699d36e5a2c4311323be69aba727294a11e8a9b1e5fbe": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "ea6cbc6c4e299087442ebad6cf9135d1c018dc22f47c797613b4ed916cff6366": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "628070b13801dbb2f8e12e4dfc15e1b44c2fbf3fa9d99a4aeb2cd045ea6a6096": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "9af1857d687f25086411f053588768b1c7681dba9a9684c342f72dcadc6836a9": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "cc3f4bd485fc3832835a1d2b9ad30b91a21c966d330060fc751ef9c83500d58b": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "6e15d70a43c88a54bbf65e69338cbf5b7c366cb5cb9c6e803e426e3e2b5ec32a": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "13a1dfe8aca73c3b2d9e13637b1d7c48f939cc83ce7f68c2faaacc4c639a984c": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "e8f6427538621c12051753c0237c092799fee04cb6907d285bd0c67a834e2de8": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "ca3e6b809174662446b7c0352af4c5401656803a68e58a9d4521e5d7daac1099": {
+    "score_rate": 0.125,
+    "frontier": 0.4375,
+    "independent_rate": 0.0
+  },
+  "84f207f48932324106b67ffc637c5ac3ba3e15eb07c47f046c35c383446b8349": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "a50b74212b1e539bdeb5047878a21cc02844995fb42372ed9c6e326d8ed4596f": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "07a344e2b74ce3e8ad5bf03e8639d4c59bb7d9489f8b32c97c9ae1fbbb945159": {
+    "score_rate": 0.625,
+    "frontier": 0.9375,
+    "independent_rate": 0.0
+  },
+  "ba824f7513dbe4efae6c4153caf8587fe4425c7665a2f59a79a9e23247bfb4e5": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "ac70fd3edb8a811adad39a2f9904f5322ab1f1b3184ed6f2ba914e23ee816b41": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "2d24f09c1ef8de570a1d15250a36b962535f87cd24b93b3d560edc8ecfb55265": {
+    "score_rate": 0.375,
+    "frontier": 0.9375,
+    "independent_rate": 0.875
+  },
+  "b2e29f3d74eba54ef697a4364fa9978db97da65f2ae7ef5eeb0b826e27da4de2": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "78b21d15de655b4e3c2cb26e36738ed8ce9483db4a0685302a32610ad2a9bd42": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "34a4f3a3344518ac39385f919359215b04fd31ccf5a45b4550391e3ee5b699de": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "ffd0d5695837b46db58b74fc1bc322660be51f8c6fa7c5c36e4b5a632de969c3": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "51402587ff462eecde47367c640188f5b67802fd5e8e5b798540096101d7ea19": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "983ff0454d841ca4e0fd4fdedae9ee4142cffe534943e57578b228fb9d6df466": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "a7afd394c08b966d82918894089e91b0c1fb005442b3f77ade66e38a15746104": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "05173a28f1bd9687b58b2f72802a8e3e67385f3f3a3780e546c6ba07964eb977": {
+    "score_rate": 0.75,
+    "frontier": 0.75,
+    "independent_rate": 0.625
+  },
+  "e46a7e1214b73bf3e0a81efb6495e7e94aa05f0c564df44ce494ee0d149db1e1": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "3def4a4d2adae09627c06d4a2dbd07dee2b17302c3d456663e7934117e1b213a": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "90cbbb6d514603ace91943a37ea0caa27968631fe7f1eaab46596e6327cd6e13": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "98ea4a91684cccbc08bab2b53ea10a3bacf59f802b668cc11c028e2ff1de2a5f": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "69c8539809d12edbccc760bcbbc55aa34ed72a7856e829bb0080957a7f099de5": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "58eff255574e711e46f3ee37ddd9400ccc23c05f7c74ba9738b21695f6cd63be": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "19c7cb23d0af43d8056e9c711b5b54003e795cdbb124546ba61d223d8555428e": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "394ebfc8cfc09aeaf7593d48838684d1b1a8cd411ebe67ed4663d67215d8a195": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "4c14ec606e92c40fd4ddc91151282af482dd6b954697cb12110b0b455c539874": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "221ad7e13f35f2149fcd43075ed01441f973df9ee8547d8dd11eb09d54b515dd": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "4404bef98b7e63f999b4798370f5a38f9837a6c3538c01db07b3603ce5618b10": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "a4ef24bac04d317f1f177982059e08a5ba9b4e604fd12acbede1c96a0285fe2b": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "ee1cd627a1bb9caca8f3628b36a11518fc7b142c9697d6bed21e0337a867efa7": {
+    "score_rate": 0.875,
+    "frontier": 0.4375,
+    "independent_rate": 1.0
+  },
+  "58f1e465a5e2b2f3cfa815639301f793255f4025d61bfbd58be87d6947fa307b": {
+    "score_rate": 0.25,
+    "frontier": 0.75,
+    "independent_rate": 0.375
+  },
+  "96c0aac7241461b6d2113bc359323f3c9378ed249134f4bc59b2cf355728548c": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "b6fd84f0425ab95639abde9be5caf4f8ce9fde44bf8f13fb6e8bd9ec8a0778ce": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "db4da3c65b1decc7afb3fe4e9dbd9a52b46c6fd6d70fe9c0f47f5717a34675ff": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "4830844671f8e721fea166a533282ef319f3e0f653f38484bef40f780e577c42": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "15c0adbeec4830c5ba8c83878386f2a66aa9566f0eba28c467c26f53d13595ec": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "cf6a94ee5992042179c54f00059ee470433738e75d36c19c7d36db736e5619b6": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "df07b9a3954508fc50eaa94ea0cd3f656f42116b5a0eddc484fdf081a57bebfd": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "dc2ca40d67ba931464612a273f621dc0a3de6de0b3305223701d2d8e14f15fe5": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "a3c4a0fb6e12a48bcad3c5bd379bacfbc102731f5d85f1982ef162175a2defe4": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "641c9d22c24a510c7d87780bbb7f06b5de83435f25d2d7afb4d6c87806b7edc1": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "b7e8725d3beb521847867352f0d00a0162e0ce8fcaf23b246a678d1b6620520b": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "8176530c69a9aee3774ecfd239fa6f1aa55dd58d35b0e59c7b29f2c561caaa30": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "66627eb6a5c9ebf58dcfb1c69dc9c965ccfd424e15c57dd50e5ca9652820b504": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "89c11469ea1ec2450c5acfdef7c3361e5e7e070cf34f66694e5867ab9c0516a1": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "b8afdc98590918a0f41077fc73890e1e050b242ade3c65e65b6d67dd006b6ae6": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "cf063d3bda29fe11d721378ba1bb7481b1d3de7491550b65eafe5ed2922d1398": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "646757bf14608e645d93dc5d8f5319b44ec59e6dfdd10e9dca0850ea879a3a56": {
+    "score_rate": 0.75,
+    "frontier": 0.75,
+    "independent_rate": 1.0
+  },
+  "57150a28e354ffb483a9df14cf8422952204b41206709db31fcb4fa34b71eb39": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "89a764fdca5e682265c337810a59c5f39db7db73235047be9622d6b1997c77a9": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "8f44c15a8e334e9efb4e8b35a4bf361735ea5c5ad521836ed4c5e242f7a2fba0": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "483a6e7a3500269c95631f1d8ad3405a9c65f1029cc9b3520a1a8a47521d59e5": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "33b0d11548364d33953285b9492270d122bdf637a43ed521357097f7c06dee4f": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "62be6667d4960d6efcf22eea5bde17095d524251327b0c708c2217652cc16649": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "db658dab91693f79812d45a4a2067af5e3f11cccd4a1f05386d4159f04c6bd63": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "8a67663ee156f7c3473d7b4d787a2470d05a739ecd93464251749c6c13eff22d": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "3b19614fe2ca3022c1193afa05d448d4b6b26375cf6bd4f6f5e36de2d5638a04": {
+    "score_rate": 0.375,
+    "frontier": 0.9375,
+    "independent_rate": 0.25
+  },
+  "4363a88243efce0c252c8df72a1aa6f2f14862a8c60b3641ee54604635f41507": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "a480547efaccc6ae5eae5e111c993e3a7e0a9b2f8fdd576dc3f0a43bb66bb1cc": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "0334e48cab4e43fb0117840140ff8a1373b496da3b75d3ea6fe4d9431735f0b9": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "b06292a86a84bc9762b3e2f5c2a7ef6ef32e54c7cc3264c7fd0792a94e8f7295": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "f20669c02973b9cf441f257cbfe34cbaab8b3e39bbaa7397888e23ff662e71dd": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "4d59795a21fb3ed1e24aecb820140f007b4c155be509b25041a65ab3b744e217": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "5dd0e352942fcd6e95324b135481ed0d3c4c4bc25e52b7b98ad053c04c3cd4e7": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "adde7c528aec047ba70015e42dae88cbc30970665283b00b07cbbd5ffdadecd6": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "848ab8401a9a01e69731b0d96dbc702308c34183843323f53b711e4ad49c2f4f": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "3dc0ff1d550bc06c5a3d92a76bf2c2b5ec87466bb6340cfd69034d75e3e3cf91": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "2493145c255fddf71500305306faecbc91ec39d399f43b72641a570409403d6c": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "ae5bbe6bb49aae7084e01199691823082bdde0353f275427093ef9e40f289957": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "798a086f8d5d12923486901529d0aef543f019cd4cfdade3c360e39ed409718b": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "80f17baae4b09849d5b4f33c3785362a2aa058849ea1362aea6c5468e3f61b2b": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "de5eee2cbe3ef81288a83e7ab1cbf77edb41bbf52f0c3bc9a7af7bc8b1f2533b": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "7aacdd1dce71cd190c24a34058d9eb69cb934ff2bb50a97af060a004496857fb": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "932fc7d09d9d5350125b04527849476f6c32d7c1dd268b6af36345bb64867bc4": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "2385b3e09da352008513068a3d8eba6c64417303dc5f08e47d37e79b40efe176": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "909a407d7e726934ffedf3681821a62805b627c71876e8ccd17f553aa3487593": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "0c7956d9d17287c55dd9b4faa19c2ad634c687e3025041fcfe124e63e7e0479a": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "8c1a1e153c75317e3452c815dbf9482edad8c30e4f1976df3acce262a791f7a9": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "b4503be7927de5a4d4ea2a5b6dbdfc88d29d9ce9aedb467f218b193543b5278c": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "e8d300d9547c9382e7f53b215fe9c8133424db1c64d86d5f5e2d9386c72e3217": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "28f526ef7f8befa7c572a09f8fc66c96b399fe8e6ebfaabaf1ef54e9a77f4339": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "9d07c63515f67f211d0c02dc0a17f081451857f736feb60ae5bd34c21b0f1b6c": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "27b1b70f30fa7d6293e5cfabe4b1c0c6a54859ae885d4eab1ea9a16eb8f25292": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "c47981dd6f7b03b77bc9d2102677de29550b7a1a90965adeaa288f31199a78ee": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "b15d1ba0461c1d9b2f2358daeebfe4ce5e0e2b896c856f69e21e752a675b5a1a": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.125
+  },
+  "5f8250df2f64e9d85bf0b45f1d38798207103413185a2936ae7801666cebce3c": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "d4626ff1110c35a0c40d912aa24b1306937efbff84e605a6d8860c3e41a67fac": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "9ea0715b8607fd504fec21968e34d0671f987fd6873898b07a25077a8ea788ed": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "6c9b7b4a8ef8ce78a0c7b2572147cc20b509c4af809d95baf80afa50030802f3": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "6ad84d62e7a5e06299c2335b0bbd83195dc96e14232f5870fe5296412848d702": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "41f1e838ee4efc448316c4151d3e852644270a578498adeb9c73847d9f58ad75": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "6466fffd273285c77b19dfab916a4cb6e5f9ab1511d1d58b3b0ae0c50841d488": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "28b979abda145269d9dec5d7f64918301918b50de15ada59cc01799456d82626": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "795d711c22e610eaf817c37cbe727e93e575768a93c819ed5c85e96e67e6c19a": {
+    "score_rate": 0.75,
+    "frontier": 0.75,
+    "independent_rate": 0.875
+  },
+  "cdafb2c2604237081553fb2e117ebeee1717d851c5798b2a26053109be0ba356": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "116fa35f4271800198380cd1d31ce5b497f91c213a311f7ef0170e7ff07122e0": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "f80e95db31446269b176e5d1fc988862dcde68f2f452df86538e8e79c7a3d3c6": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "ed6fba4f7ef2ade247853a291b2810aa7a0d2a0ab396cf1cfca604be1b353a61": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "9da7d756719f62015cb130ad3f5af22338d3701c5a57cd93eeec2c60996b6105": {
+    "score_rate": 0.875,
+    "frontier": 0.4375,
+    "independent_rate": 0.875
+  },
+  "05e014728c04704a55a4d316e0171d65e0b2b14a2c04edea1eea9e15871fe3d0": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "2f43c14278180a762c8dd8abaeaa4123331b68b9df6d140b998abb73c6e3bedf": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "976f8aa6585111ab1ca92cf8a2eb58c8ca4bc644e9b0ee1d6e590249c98e24bd": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "775dc877cddfab2c90926b7287b5a626b56856526d6d80e4de0f21664cd949be": {
+    "score_rate": 1.0,
+    "frontier": 0.0,
+    "independent_rate": 1.0
+  },
+  "f99034620345e173002ca20404889c73550ae95f9bfa2d378ef187ca40db1561": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "63e61ec1ac9fa84c965de04bd4482440b92f26b08eef5bd41c26700b26249dd7": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "7b15add0b5694585d05c18ce7c919d44663747debc875bdfcdba85889b9aaa88": {
+    "score_rate": 0.375,
+    "frontier": 0.9375,
+    "independent_rate": 0.25
+  },
+  "10f7356196e62aa73c615191642f7c6ea73e072d9ff1c767d4fa5006a59838e0": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "ca91a262d754d68cf72445226716f592457ab14c1c90fa123f5639c553d3a4cf": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "2dc902f219f87fd32f32ce2407c95f85c6d444bad5d550bc35aa995d6e0f79c4": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "646216a4f4d955b8bdbb4772e0f1da1c9c7043f20b42f48567cb3fc54d0d7204": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "cdb403d38c60ba038abf65dbb0c2faa57754d44f737d8bc39cbc93996d6789c9": {
+    "score_rate": 0.125,
+    "frontier": 0.4375,
+    "independent_rate": 0.125
+  },
+  "95cd20b85e435acc56e393fb123cdfdd105c4b14312062b7f120f7676a86a918": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "44844edd8e92a33d03c2a7e4ffe2cdc44d228e4c81d0b699cd96566afb5dec64": {
+    "score_rate": 0.125,
+    "frontier": 0.4375,
+    "independent_rate": 0.0
+  },
+  "bb889df9db26485f05df4370049b1843a6e80475d95a741f6db549c525e6e7d8": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "6ca4b7d156aca09a70ecfcf8e17e45f1c57fb0b8e0cd83edd34d3bb9a491c714": {
+    "score_rate": 1.0,
+    "frontier": 0.0,
+    "independent_rate": 1.0
+  },
+  "7cbf9f989de514db760299cbf051c161d94ffd07fbf465e7b798066bf944b857": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "87efd81228ac2eb5b108ea82dec7f98b9b1aad8d9633a9b0adf72c57b745e40d": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "ebd1eb5933e032410cc96708cf5db53341fc6d381cebfa012a1ecf52bf8b6b49": {
+    "score_rate": 0.25,
+    "frontier": 0.75,
+    "independent_rate": 0.125
+  },
+  "1bdc48e64e007d7057e1abdb4669c4ff972e8376acce3b0952434d86ac021687": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "b0a13fbd0d01a9a8ef81f1e2f663b350616fe630bc9c8e8ccd341a783d1f8cf5": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "47b369e9636fab157d6ed6be5cd2662b42a54a636b9afc0d36550f8cbffe761b": {
+    "score_rate": 0.75,
+    "frontier": 0.75,
+    "independent_rate": 0.875
+  },
+  "df00b1fafd3d4fb262c089e90ac46ec8148a452010673af975d2898be3fd445d": {
+    "score_rate": 0.625,
+    "frontier": 0.9375,
+    "independent_rate": 0.875
+  },
+  "0b398b99d6e59f1034bf047a407a9d1b62bda0559a7c7400abf31d7168e15bb8": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "abcbd15f983d406ea3d60e4d01ee15b1980ba83f961c20cc5aafc4a23ea79e23": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "531cddf96852d8a677b42b6e53562383e60350a29fada85321747eca6bf5a3c9": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "75e0150273cc83aa2786fe55bc3a96176fbfec8b49f3c9183d2ee8f08c6b6782": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "25185d4096fcf0e06e75edd3607b76a02e6398e485dc0f2611c0e561535c718f": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "16dab1376eb5d874f5e2b81bc6491614404f49815c7086377147e1e78ea0e26a": {
+    "score_rate": 0.75,
+    "frontier": 0.75,
+    "independent_rate": 1.0
+  },
+  "1e03d547ea70f65702e845c9d936bfebb42d5b373997e890e20b150bb115f4ff": {
+    "score_rate": 1.0,
+    "frontier": 0.0,
+    "independent_rate": 1.0
+  },
+  "cf2897301c1a141eaf1b3a9718c2308c700a90eafe9bb861a87fa76cf212e2f7": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "d737289185e86f94a2c4bbaa98b80830c1b4b30665e752113b0d570d8a3ce8a8": {
+    "score_rate": 1.0,
+    "frontier": 0.0,
+    "independent_rate": 1.0
+  },
+  "ae4f392a5f6b9b78a3031f3a0497369d45a21f08e0294206b56ab23990ba7b4e": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "3f8d5173ab9d684503d7ca8819db3b0586ec114b16b6281576130a0a769743bc": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "9d0856683ad69ca2187e82f745f808a83a2bf2a248bcb5f2d565c7d4b48b0f33": {
+    "score_rate": 1.0,
+    "frontier": 0.0,
+    "independent_rate": 1.0
+  },
+  "1efba36f9f96c29318c89bf961f2793bac9610bacf7b3c54a810de21e9ba2f6f": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "db7574f3b03bc7398933b39e8328ef5ecddf6a1f37ea5e56dfb7d56827f81c6d": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "9f3ca24436721cce01c08388de7c796bb9cd26ac30d7c7d3fca18a32d048d1b3": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "b0bf524e951a326a9048f96415f2205cf750b11f56973f42120df12426ef27be": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "5f29fa3245e9c5f294b3caf2bd18ecac8c18a3e45fd082c7fca12cd9b3ba6038": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.25
+  },
+  "e6f70a8745532fcc35227704a79049748d2743ff6c83b97d36bccb4961b213c1": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "6b21a0accf72709c482b3fe092abdd587c025b79bb556875227f1fa2ae554b17": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "1b90803228f57e8bd94c646786632bcfcce8f27ad7cf8d65110833909d73977a": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "d77aa8e6919d4086445df43b1ba41706b870b305621e0cd00174db8a3ff5e0fc": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "d97b86d91b0ea74e81638e63de9c62307139f4f99ca652cce3baea88109a786b": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "ee2ea34fa0c0c93e5126ccca1fbbe4790f5162a3b88852aa971d23c53d68ec8d": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "9279fd6c4da29596decbb1cb0ae0c4c0e3ce11f97d722ad61441dc22bb883859": {
+    "score_rate": 1.0,
+    "frontier": 0.0,
+    "independent_rate": 1.0
+  },
+  "7e610d3b9453e34630d7e2ba8e511c2cc25cc169dabe8aa2825bc5b7c29fe8e9": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "d228fc74c842002df346ed22e1b0e9e1e29b62752cd97d5680bac8da7e68b09c": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "50de5d36e2d06e9384a8e9de12ad2445831d94d72fcb0a97289b668eea9ef768": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "53a44bee68bef92b26a90863fcef820df1d37307b8a85ae0a04324d2ceae844e": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "818184c016def9a174c9692f1d1cd9a03e4ae51fec08b75e50330670a5769fca": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "36f0746724e1e01f1b83c282139b060ebee2921848d9fd4d8d467d4249f57603": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "39c3922b1bb61ff1345b25310741579a0af24d283e1db97b67146bffca460db0": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "65bca94e5444fe94d46ab8971cca3f5f20658ae14ff93ebd69190f570160a8fc": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "7455bb7991697ac4236ddb08091d9d66bf198c998764e4972af95a073eecadad": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "3a5674a546e46a038ff403da99e5ef7fb66e8b71c0aace008371a3dee2ed3d72": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "fd5a68090520cfe67714c976c694af0cdc8f4953a4b4a03414911780a008512a": {
+    "score_rate": 0.875,
+    "frontier": 0.4375,
+    "independent_rate": 0.875
+  },
+  "829449ae87b20404f4dbbea526874a94a7a0f4ff496184980faea251e84325d0": {
+    "score_rate": 1.0,
+    "frontier": 0.0,
+    "independent_rate": 1.0
+  },
+  "265008a50ce3b6ec8d9a80946799303e28f98f6fca8facf485c7fccbe9d238fa": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "509304581001f65e2080a6dba1c0c21f5ccac34a49a4dfbddca496fa86950b82": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "24335d7771dda3fbff320de7f22d5e926fbdc803cc6833a41bf75c792ae96d0f": {
+    "score_rate": 0.125,
+    "frontier": 0.4375,
+    "independent_rate": 0.0
+  },
+  "c7fc0ae7ae73da72e1c6ec598f77c66103a54c2d558d17a8bbda6601c4abc8e5": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "7f27c0db367db3218da65545a8892da38f2d8852f76fa9a7fd73ade91f1ea66d": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "c36be5b4ff052c0a32555786857d9f39f9deed00eeb68b15210d6d18244312a2": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "544a4f09f82f0fbd3d4e9d8e9adfd0e425bfee35a25d2565a3613f8e9654aca5": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "91bd5390e273e0175927fa528f93f961ef8b2ec6a535fefd628c10602289ac90": {
+    "score_rate": 0.125,
+    "frontier": 0.4375,
+    "independent_rate": 0.125
+  },
+  "2943c9349ddca32eb7cae3562046356b171482b0cecbe899354e05b0d46243be": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "824dded2c79345cf501468ab6630b4eb0ea3a64bfe979d2b64611a62873aed01": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "362201534e9ff82d3f898a9f58abe4485d528c72d15f612514eb39f40efd2405": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "65e08e4461d2f0755a1036f2df7141622e70fe1802d71eac57a09c1977be6219": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "4cc2a394980f767ff781d1d05669233f6a36c2347c244801dea90357ae595cc4": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "50495e55f22ee8ec454c59110963c2db00aa465d8436077224d2d70a63c3e86a": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "907904faab538a5475559a923850002d3f2cdd3efe77d1b9b30f94bfc0d7a600": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "71b9cffc9ccc2d19aae55f58fa76cc9e4ce6d6b6de8449829ede6a474b16d2fd": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "7ef6bfc43649cb951331250da939a43a3a0aee7c9f6189240d09ef2cdf57e987": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "34d2e0ae774ebdba287ad426d6b2e3c75762cca2294b2e661dfc64cb5477dcb1": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "1fa10468a6aff5c3b373e33b43fbf0b4b2b6bf63d8a71e1d822e4b3a1fb34e62": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "826b6d590a42a80c8f6bfbf0eebbbb96aa3846b3687291de5ecc17b23736fb01": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "4ce2431efc468e98bce2516b0c47e16683cf4ddc3d5e35c4291660d2925d6a5e": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "36d601b109f1bfa7856b622a0774de7d12adee7ec90700b4ac13c8bd76224cda": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "b489419e55c3eae24fb91a4430bc4c53c83103c2b69cb8a6b3ed3414b97685cd": {
+    "score_rate": 1.0,
+    "frontier": 0.0,
+    "independent_rate": 1.0
+  },
+  "d6325df0913eb95f035df8baf9a521bed7f114003bcef6ab9a4cb95540e7d437": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "ed7943dc9ab1fde653e33f9e2509f329cfff5791aef24fe8a5cda5ec1b97b884": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "657edfad66e98d64e5f8ed9ba97e7c21eb993a0e0283f0f9cca4fdb3bc0a38a2": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "12561a666ab5178d2a0dea6c2993b4e1fd56932d2e2157f68a1bd05f8643c435": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "72ed6c4b5288df23378ccb16edc9e968a3b0636453a4fdefb8999fb3ba20a3d9": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "efdb06f81c0d589d4f32ca9aeff9491c70526de927b07d2b3523f2fbd098f56e": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "71b7bbcc871d10dd4c3e80253cf4aea9e99ce717681b589cec28de7a00ce14d6": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "7c2efcbac77ff42efe93121a2862a890e15b18afd30c043b7e3db0c540aa6307": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "def8fe0d7542b0c17209f2c59629c797bcb349e0612349cc60ffb57b0b4f511a": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "183b9f10a8f92a1c22efe661256ffd340c35e6ff36b7231ad8d975cf2a1d4860": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.125
+  },
+  "66280ef1b76396aadbbb985f166ec7b28689eb12de21630b4d4f8338e46eb98d": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "cf20cfb87610620826c26ca62071a98adf636360086353660adad3ff1ab5b954": {
+    "score_rate": 0.625,
+    "frontier": 0.9375,
+    "independent_rate": 0.75
+  },
+  "8c826ded66209aabf24f5398cd8c61cda217a358e62a66471b7edec6b1fae28e": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.125
+  },
+  "a9486008523aacf564dc813f507f6c30f1f306be0c13e3925c1eafb922102cc1": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "39e74db3a2e8797a1f2f14fd8ddf598a85e6aebcb0ae39e8a9dc125b8e9c564c": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "6545147f88e4eeab3451934dc9e9ec0e7d7435d3978a4875540faf48c8fe121f": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "d4af7501c73fb991f2b13fd8a8a752a1bc3a463c77ba656890e7c4730f56ebf0": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "454e1f5118cdcfcf26d08a685c57d3f09f1d4b383063341c15bce70c3a9938bf": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "b6dd079ada6ca2d615253849eee7741bf242cf70a04c8774c9a4ae06c96e80ac": {
+    "score_rate": 0.125,
+    "frontier": 0.4375,
+    "independent_rate": 0.125
+  },
+  "dbc9f12108a1ebf34e358ac111c53c9b5c66cee3d20f0e6da16bf674c6486236": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "25fb989cccd3cce69aefe4c7a0d306712df841c470c9593a4b4c13c95f842c50": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "b5f523b5f62f18d319368c44dd03f516fcae51cbf76bdb0172b80aeb176f24ac": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "c2daaeae778343de83a38a5a69cbf1f14a4e9a047d3984f066b6fed2c3542bfe": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "2fb4f5b91bccee72474bcdc9f8680f9cf42298a2844c1cef02e46d12066d2578": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.125
+  },
+  "4e4501bec16c6d0f69768d6bbdb020cb9187852436843501ff7f43b4cf03e286": {
+    "score_rate": 0.625,
+    "frontier": 0.9375,
+    "independent_rate": 0.75
+  },
+  "4cab8be5ca7e652bf93daf8d1c3db6c247a285452064d27132f5a4ca3839f24c": {
+    "score_rate": 1.0,
+    "frontier": 0.0,
+    "independent_rate": 1.0
+  },
+  "f5d09b7528b3416810a3da530adbb4db9c194c77c276f14dece86c384cd0a755": {
+    "score_rate": 0.25,
+    "frontier": 0.75,
+    "independent_rate": 0.25
+  },
+  "d4599f67a959a7cca6118f996dbbbb654e2b4a8a7c2bfeb173e1255b6f8db974": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "1aa29698e06968981e0cfcc9a719d8c9fff6f44be82ac1334dd2e1542d0144f1": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "42136f23b22fb537cc2d221ada5c79099bba6532db3865196a16134dc5f7dc41": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "6743588fa97443b2c51e5019c2c5b7822678734bda4f1d5bba780696c23b3953": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "dede42b3991a4644528ae5aae56d0e9bd4c7ae4bd88aba927f63563e37bd5998": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "9839ce9e958c7f5d67c46f0e508561286b57854101c301b4f225f07fc96b1cba": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "239a9b24c11b4c16e4566ca0f5f9f86a51bb267b6057c1cf2cfbdc9a117427d2": {
+    "score_rate": 1.0,
+    "frontier": 0.0,
+    "independent_rate": 0.625
+  },
+  "b1727289a975f09e0941c33f02111c05b7bf848ccc162ed1afc4b0aed8823fdc": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "76f9575e6696d77a638bf6f69629e500213c878831540160c5c778ca7425ffb2": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  },
+  "feaf12bf922148bbc1e48aa2ad3138ef0a6041c666609af085df8b33b1701a87": {
+    "score_rate": 0.0,
+    "frontier": 0.0,
+    "independent_rate": 0.0
+  }
+}

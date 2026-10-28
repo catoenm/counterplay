@@ -1,0 +1,32 @@
+{
+  "complete": true,
+  "calls": 12,
+  "expected_calls": 12,
+  "successes": 12,
+  "statuses": {
+    "solved": 12
+  },
+  "canonical_tasks": 2,
+  "canonical_tasks_solved": 2,
+  "canonical_mixed_tasks": 0,
+  "useful_mixed_task_ids": [],
+  "completion_tokens": 20263,
+  "prompt_tokens": 2408,
+  "by_group": {
+    "('openrouter', 'renamed_reordered', 2)": {
+      "calls": 4,
+      "successes": 4,
+      "statuses": {
+        "solved": 4
+      }
+    },
+    "('openrouter', 'canonical', 2)": {
+      "calls": 8,
+      "successes": 8,
+      "statuses": {
+        "solved": 8
+      }
+    }
+  },
+  "training": false
+}

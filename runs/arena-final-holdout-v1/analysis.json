@@ -1,0 +1,1650 @@
+{
+  "complete": true,
+  "all_completed_episodes_verified": true,
+  "episodes_verified": 288,
+  "policy_transitions_verified": 3079,
+  "scheduled_episodes": 288,
+  "missing_episode_ids": [],
+  "manifest_sha256": "c7273175d589e91d63a0138f5e90a549c8ed4ed25693654916f224a0cf4344d4",
+  "checkpoint_verification": {
+    "base": {
+      "name": "base",
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/arena-v1/checkpoints/base",
+      "adapter_sha256": "5b8474d40ff5c8fc2e4e015a5caaa5ecd03ca23e13afe1cf8974b048bf12b5aa",
+      "metadata_sha256": "b318f2d4a495bed324f144c33248eed60bb4a6f4ea3509502df168e2b5270167"
+    },
+    "cycle3": {
+      "name": "cycle3",
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/arena-v2/checkpoints/cycle3",
+      "adapter_sha256": "f652d9340fb7c8732982eea0ff3658f6aabcf1157e5f6eacb9d0ae8472ca5e9b",
+      "metadata_sha256": "8ed4aad0da8ad18d7b417804f956f92ce21e5bd49aafff8e67ece2fdb0c1c8b3",
+      "training_summary_sha256": "ab83ace5b129190c638b9d37402af8d8518622879c106ad8c140ea3bafdc4e83"
+    }
+  },
+  "source_verification": {
+    "archives_verified": {
+      "selfplay/arena/chess_game.py": "83d821bf7e84190494df968bcc0827b3108c6a1b0f0ee1cc668f4d777349d9fd",
+      "selfplay/arena/market.py": "29a2e99e3ce06f00d43f2ed962a819981e8d444296aa7dd77c0ae5915461fe6f",
+      "selfplay/arena/policy.py": "339de4d0db9b9d1b8e9880bb06d563908274676da9d0570cde3f5f4ecab2b81e",
+      "selfplay/arena/__init__.py": "10b70b84f92d66332feb0b9dc83ab52660c4497a657a52d6cc5d547d39cd8714",
+      "selfplay/arena/experiment.py": "c18907d4a2b780acac99ab5f2cd63ebc6b8fd09a9f3f5e98b66bce50766a3545",
+      "selfplay/arena/maze.py": "686df22a88f11808000392cb57707e5ff6c06f1bf77d34a83f3f043690dbd1e2",
+      "docs/arena-rl-protocol.md": "12d5a379193f6a5ac915ae538bd38cbcae655485c5921fa5f4460f27ff693885",
+      "selfplay/league.py": "eec314c9951b61d7d1fedf99e817ab6299a7b22678f8a728fc93eddcadd51d0f",
+      "selfplay/arena_v2.py": "2f1ac32be224868c609e00145dbb499d0ef52995ae9f4e1670086a3aa3b774fd",
+      "selfplay/arena_holdout.py": "d9440cb8701db4d0f703e8b2ab6382eca4bc57fe7853f79d9603748deba5fad6",
+      "scripts/analyze_arena_holdout.py": "df592030ac2c68ecd1d1a6f04400dd4fd8141a5b0942169fe34e88d75042e0d7",
+      "scripts/analyze_arena.py": "98cff35a9d20b5497a6a280229f1f92bbcfe3a1fdb7bda200363b24cefb81b61"
+    },
+    "live_source_matches": {
+      "selfplay/arena/chess_game.py": true,
+      "selfplay/arena/market.py": true,
+      "selfplay/arena/policy.py": true,
+      "selfplay/arena/__init__.py": true,
+      "selfplay/arena/experiment.py": true,
+      "selfplay/arena/maze.py": true,
+      "docs/arena-rl-protocol.md": true,
+      "selfplay/league.py": true,
+      "selfplay/arena_v2.py": true,
+      "selfplay/arena_holdout.py": true,
+      "scripts/analyze_arena_holdout.py": true,
+      "scripts/analyze_arena.py": true
+    },
+    "live_source_unchanged": true,
+    "note": "Archived source hashes are mandatory. Live-source drift is reported but does not invalidate archived replay."
+  },
+  "rollout_files": {
+    "eval-market-heuristic.jsonl": {
+      "sha256": "630cf1a45306813e739252fcd593b51c73dc157fbf48a02c23544522355a5662",
+      "episodes": 48
+    },
+    "eval-market-base.jsonl": {
+      "sha256": "e8299a187046886e321c7b53d2343a20bd3bced7f309a467eb9d03dae46f21cd",
+      "episodes": 48
+    },
+    "eval-maze-heuristic.jsonl": {
+      "sha256": "776e897234b56cb2eddbd1ca017abdce50f5876829c7c8958b7bfe94e7fa86d6",
+      "episodes": 48
+    },
+    "eval-maze-base.jsonl": {
+      "sha256": "0f4ce1e6d237b2169e3f0dd2beda78babf07ab7ca89e32e245f287399bb1cf9f",
+      "episodes": 48
+    },
+    "eval-chess-heuristic.jsonl": {
+      "sha256": "b1c507d9485bf55b7ee45f03c239ac20c83a0efe78a1579d586c8c358dbfe79d",
+      "episodes": 48
+    },
+    "eval-chess-base.jsonl": {
+      "sha256": "98e8cf42e009b2d91baa6c3a1bc7a1b3b415de1213075e09d2d20d6425a0f653",
+      "episodes": 48
+    }
+  },
+  "evaluation": {
+    "base / base / chess": {
+      "games": 24,
+      "mean_return": 0.0,
+      "positive_outcomes": 7,
+      "zero_outcomes": 10,
+      "negative_outcomes": 7,
+      "termination_reasons": {
+        "material_adjudication_at_cap": 22,
+        "insufficient_material": 2
+      },
+      "paired_scenario_scores": [
+        {
+          "seed": 3902000,
+          "games": 2,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 3902002,
+          "games": 2,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 3902004,
+          "games": 2,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 3902006,
+          "games": 2,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 3902008,
+          "games": 2,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 3902010,
+          "games": 2,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 3902012,
+          "games": 2,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 3902014,
+          "games": 2,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 3902016,
+          "games": 2,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 3902018,
+          "games": 2,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 3902020,
+          "games": 2,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 3902022,
+          "games": 2,
+          "mean_return": 0.0
+        }
+      ],
+      "scenario_clusters": 12,
+      "descriptive_bootstrap_95_interval": [
+        0.0,
+        0.0
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement.",
+      "chess": {
+        "checkmate_wins": 0,
+        "checkmate_losses": 0,
+        "material_adjudications": 22,
+        "mean_candidate_material_advantage": 0.0
+      }
+    },
+    "base / base / market": {
+      "games": 24,
+      "mean_return": 0.0,
+      "positive_outcomes": 12,
+      "zero_outcomes": 0,
+      "negative_outcomes": 12,
+      "termination_reasons": {
+        "settlement": 24
+      },
+      "paired_scenario_scores": [
+        {
+          "seed": 3900000,
+          "games": 2,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 3900002,
+          "games": 2,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 3900004,
+          "games": 2,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 3900006,
+          "games": 2,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 3900008,
+          "games": 2,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 3900010,
+          "games": 2,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 3900012,
+          "games": 2,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 3900014,
+          "games": 2,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 3900016,
+          "games": 2,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 3900018,
+          "games": 2,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 3900020,
+          "games": 2,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 3900022,
+          "games": 2,
+          "mean_return": 0.0
+        }
+      ],
+      "scenario_clusters": 12,
+      "descriptive_bootstrap_95_interval": [
+        0.0,
+        0.0
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement.",
+      "market": {
+        "mean_absolute_pnl": -6.875,
+        "positive_pnl_games": 8,
+        "negative_pnl_games": 14,
+        "absolute_pnl_by_game": [
+          7,
+          -26,
+          8,
+          -13,
+          -4,
+          10,
+          -21,
+          -2,
+          -35,
+          -21,
+          6,
+          0,
+          -17,
+          -39,
+          -1,
+          0,
+          10,
+          -22,
+          -1,
+          2,
+          -4,
+          6,
+          3,
+          -11
+        ],
+        "mean_filled_units": 3.4583333333333335,
+        "mean_trade_count": 6.333333333333333,
+        "mean_final_cash": 678.9166666666666,
+        "mean_final_inventory": 3.2083333333333335
+      }
+    },
+    "base / base / maze": {
+      "games": 24,
+      "mean_return": 0.0,
+      "positive_outcomes": 9,
+      "zero_outcomes": 6,
+      "negative_outcomes": 9,
+      "termination_reasons": {
+        "distance_adjudication_at_cap": 22,
+        "goal": 2
+      },
+      "paired_scenario_scores": [
+        {
+          "seed": 3901000,
+          "games": 2,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 3901002,
+          "games": 2,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 3901004,
+          "games": 2,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 3901006,
+          "games": 2,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 3901008,
+          "games": 2,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 3901010,
+          "games": 2,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 3901012,
+          "games": 2,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 3901014,
+          "games": 2,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 3901016,
+          "games": 2,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 3901018,
+          "games": 2,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 3901020,
+          "games": 2,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 3901022,
+          "games": 2,
+          "mean_return": 0.0
+        }
+      ],
+      "scenario_clusters": 12,
+      "descriptive_bootstrap_95_interval": [
+        0.0,
+        0.0
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement.",
+      "maze": {
+        "candidate_goal_completions": 1,
+        "actual_goal_wins": 1,
+        "distance_adjudications": 22,
+        "mean_blocks_placed": 2.0
+      }
+    },
+    "base / heuristic / chess": {
+      "games": 24,
+      "mean_return": -0.4833333333333334,
+      "positive_outcomes": 1,
+      "zero_outcomes": 4,
+      "negative_outcomes": 19,
+      "termination_reasons": {
+        "material_adjudication_at_cap": 22,
+        "checkmate": 1,
+        "claimed_threefold_repetition": 1
+      },
+      "paired_scenario_scores": [
+        {
+          "seed": 3902000,
+          "games": 2,
+          "mean_return": -0.45
+        },
+        {
+          "seed": 3902002,
+          "games": 2,
+          "mean_return": -0.55
+        },
+        {
+          "seed": 3902004,
+          "games": 2,
+          "mean_return": -0.55
+        },
+        {
+          "seed": 3902006,
+          "games": 2,
+          "mean_return": -0.8
+        },
+        {
+          "seed": 3902008,
+          "games": 2,
+          "mean_return": -0.3
+        },
+        {
+          "seed": 3902010,
+          "games": 2,
+          "mean_return": -0.75
+        },
+        {
+          "seed": 3902012,
+          "games": 2,
+          "mean_return": -0.5
+        },
+        {
+          "seed": 3902014,
+          "games": 2,
+          "mean_return": -0.25
+        },
+        {
+          "seed": 3902016,
+          "games": 2,
+          "mean_return": -0.25
+        },
+        {
+          "seed": 3902018,
+          "games": 2,
+          "mean_return": -0.6
+        },
+        {
+          "seed": 3902020,
+          "games": 2,
+          "mean_return": -0.25
+        },
+        {
+          "seed": 3902022,
+          "games": 2,
+          "mean_return": -0.55
+        }
+      ],
+      "scenario_clusters": 12,
+      "descriptive_bootstrap_95_interval": [
+        -0.5875,
+        -0.3833333333333333
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement.",
+      "chess": {
+        "checkmate_wins": 0,
+        "checkmate_losses": 1,
+        "material_adjudications": 22,
+        "mean_candidate_material_advantage": -5.583333333333333
+      }
+    },
+    "base / heuristic / market": {
+      "games": 24,
+      "mean_return": -0.4473986634588367,
+      "positive_outcomes": 3,
+      "zero_outcomes": 0,
+      "negative_outcomes": 21,
+      "termination_reasons": {
+        "settlement": 24
+      },
+      "paired_scenario_scores": [
+        {
+          "seed": 3900000,
+          "games": 2,
+          "mean_return": -0.615148706810082
+        },
+        {
+          "seed": 3900002,
+          "games": 2,
+          "mean_return": -0.3873855294484745
+        },
+        {
+          "seed": 3900004,
+          "games": 2,
+          "mean_return": -0.34511217811841216
+        },
+        {
+          "seed": 3900006,
+          "games": 2,
+          "mean_return": -0.8163690406192704
+        },
+        {
+          "seed": 3900008,
+          "games": 2,
+          "mean_return": -0.9376017908599396
+        },
+        {
+          "seed": 3900010,
+          "games": 2,
+          "mean_return": -0.2662581967592871
+        },
+        {
+          "seed": 3900012,
+          "games": 2,
+          "mean_return": -0.8625628071852717
+        },
+        {
+          "seed": 3900014,
+          "games": 2,
+          "mean_return": -0.1951889285466808
+        },
+        {
+          "seed": 3900016,
+          "games": 2,
+          "mean_return": -0.5055163199699211
+        },
+        {
+          "seed": 3900018,
+          "games": 2,
+          "mean_return": 0.09338587425955436
+        },
+        {
+          "seed": 3900020,
+          "games": 2,
+          "mean_return": -0.061748921089571696
+        },
+        {
+          "seed": 3900022,
+          "games": 2,
+          "mean_return": -0.46927741635868425
+        }
+      ],
+      "scenario_clusters": 12,
+      "descriptive_bootstrap_95_interval": [
+        -0.6199731810835428,
+        -0.27541872251306715
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement.",
+      "market": {
+        "mean_absolute_pnl": -7.0,
+        "positive_pnl_games": 10,
+        "negative_pnl_games": 14,
+        "absolute_pnl_by_game": [
+          16,
+          -22,
+          12,
+          -9,
+          -6,
+          6,
+          -22,
+          -24,
+          -36,
+          -43,
+          2,
+          7,
+          -32,
+          -12,
+          -1,
+          2,
+          9,
+          -13,
+          2,
+          1,
+          -4,
+          -2,
+          -4,
+          5
+        ],
+        "mean_filled_units": 3.5833333333333335,
+        "mean_trade_count": 6.083333333333333,
+        "mean_final_cash": 706.9583333333334,
+        "mean_final_inventory": 2.9166666666666665
+      }
+    },
+    "base / heuristic / maze": {
+      "games": 24,
+      "mean_return": -0.8583333333333334,
+      "positive_outcomes": 1,
+      "zero_outcomes": 0,
+      "negative_outcomes": 23,
+      "termination_reasons": {
+        "goal": 19,
+        "distance_adjudication_at_cap": 5
+      },
+      "paired_scenario_scores": [
+        {
+          "seed": 3901000,
+          "games": 2,
+          "mean_return": -1.0
+        },
+        {
+          "seed": 3901002,
+          "games": 2,
+          "mean_return": -0.5
+        },
+        {
+          "seed": 3901004,
+          "games": 2,
+          "mean_return": -1.0
+        },
+        {
+          "seed": 3901006,
+          "games": 2,
+          "mean_return": -1.0
+        },
+        {
+          "seed": 3901008,
+          "games": 2,
+          "mean_return": -0.6
+        },
+        {
+          "seed": 3901010,
+          "games": 2,
+          "mean_return": -0.75
+        },
+        {
+          "seed": 3901012,
+          "games": 2,
+          "mean_return": -1.0
+        },
+        {
+          "seed": 3901014,
+          "games": 2,
+          "mean_return": -1.0
+        },
+        {
+          "seed": 3901016,
+          "games": 2,
+          "mean_return": -1.0
+        },
+        {
+          "seed": 3901018,
+          "games": 2,
+          "mean_return": -1.0
+        },
+        {
+          "seed": 3901020,
+          "games": 2,
+          "mean_return": -0.45
+        },
+        {
+          "seed": 3901022,
+          "games": 2,
+          "mean_return": -1.0
+        }
+      ],
+      "scenario_clusters": 12,
+      "descriptive_bootstrap_95_interval": [
+        -0.9666666666666667,
+        -0.7291666666666666
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement.",
+      "maze": {
+        "candidate_goal_completions": 0,
+        "actual_goal_wins": 0,
+        "distance_adjudications": 5,
+        "mean_blocks_placed": 2.0
+      }
+    },
+    "cycle3 / base / chess": {
+      "games": 24,
+      "mean_return": 0.09583333333333333,
+      "positive_outcomes": 12,
+      "zero_outcomes": 5,
+      "negative_outcomes": 7,
+      "termination_reasons": {
+        "material_adjudication_at_cap": 23,
+        "insufficient_material": 1
+      },
+      "paired_scenario_scores": [
+        {
+          "seed": 3902000,
+          "games": 2,
+          "mean_return": -0.25
+        },
+        {
+          "seed": 3902002,
+          "games": 2,
+          "mean_return": -0.35
+        },
+        {
+          "seed": 3902004,
+          "games": 2,
+          "mean_return": 0.25
+        },
+        {
+          "seed": 3902006,
+          "games": 2,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 3902008,
+          "games": 2,
+          "mean_return": 0.1
+        },
+        {
+          "seed": 3902010,
+          "games": 2,
+          "mean_return": 0.04999999999999999
+        },
+        {
+          "seed": 3902012,
+          "games": 2,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 3902014,
+          "games": 2,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 3902016,
+          "games": 2,
+          "mean_return": 0.45
+        },
+        {
+          "seed": 3902018,
+          "games": 2,
+          "mean_return": 0.5
+        },
+        {
+          "seed": 3902020,
+          "games": 2,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 3902022,
+          "games": 2,
+          "mean_return": 0.4
+        }
+      ],
+      "scenario_clusters": 12,
+      "descriptive_bootstrap_95_interval": [
+        -0.04583333333333333,
+        0.2376041666666652
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement.",
+      "chess": {
+        "checkmate_wins": 0,
+        "checkmate_losses": 0,
+        "material_adjudications": 23,
+        "mean_candidate_material_advantage": 0.8333333333333334
+      }
+    },
+    "cycle3 / base / market": {
+      "games": 24,
+      "mean_return": -0.012253401188809077,
+      "positive_outcomes": 9,
+      "zero_outcomes": 0,
+      "negative_outcomes": 15,
+      "termination_reasons": {
+        "settlement": 24
+      },
+      "paired_scenario_scores": [
+        {
+          "seed": 3900000,
+          "games": 2,
+          "mean_return": -0.08310514064198743
+        },
+        {
+          "seed": 3900002,
+          "games": 2,
+          "mean_return": 0.007129295028765248
+        },
+        {
+          "seed": 3900004,
+          "games": 2,
+          "mean_return": 0.16486183886428982
+        },
+        {
+          "seed": 3900006,
+          "games": 2,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 3900008,
+          "games": 2,
+          "mean_return": 0.009145916308908653
+        },
+        {
+          "seed": 3900010,
+          "games": 2,
+          "mean_return": -0.04962983517220479
+        },
+        {
+          "seed": 3900012,
+          "games": 2,
+          "mean_return": -0.2247775893784206
+        },
+        {
+          "seed": 3900014,
+          "games": 2,
+          "mean_return": 0.09062955841771958
+        },
+        {
+          "seed": 3900016,
+          "games": 2,
+          "mean_return": 0.20627939103635357
+        },
+        {
+          "seed": 3900018,
+          "games": 2,
+          "mean_return": 0.020794213486391565
+        },
+        {
+          "seed": 3900020,
+          "games": 2,
+          "mean_return": -0.12350662335123468
+        },
+        {
+          "seed": 3900022,
+          "games": 2,
+          "mean_return": -0.16486183886428982
+        }
+      ],
+      "scenario_clusters": 12,
+      "descriptive_bootstrap_95_interval": [
+        -0.080831555400869,
+        0.057649334955020476
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement.",
+      "market": {
+        "mean_absolute_pnl": -9.125,
+        "positive_pnl_games": 6,
+        "negative_pnl_games": 17,
+        "absolute_pnl_by_game": [
+          -19,
+          -24,
+          16,
+          -16,
+          2,
+          6,
+          -21,
+          -2,
+          -45,
+          -20,
+          6,
+          -7,
+          -37,
+          -39,
+          -8,
+          -1,
+          17,
+          -7,
+          0,
+          2,
+          -4,
+          -3,
+          -14,
+          -1
+        ],
+        "mean_filled_units": 4.25,
+        "mean_trade_count": 7.041666666666667,
+        "mean_final_cash": 725.1666666666666,
+        "mean_final_inventory": 2.75
+      }
+    },
+    "cycle3 / base / maze": {
+      "games": 24,
+      "mean_return": -0.03750000000000001,
+      "positive_outcomes": 7,
+      "zero_outcomes": 9,
+      "negative_outcomes": 8,
+      "termination_reasons": {
+        "distance_adjudication_at_cap": 21,
+        "goal": 3
+      },
+      "paired_scenario_scores": [
+        {
+          "seed": 3901000,
+          "games": 2,
+          "mean_return": 0.2
+        },
+        {
+          "seed": 3901002,
+          "games": 2,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 3901004,
+          "games": 2,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 3901006,
+          "games": 2,
+          "mean_return": -0.05
+        },
+        {
+          "seed": 3901008,
+          "games": 2,
+          "mean_return": -0.7
+        },
+        {
+          "seed": 3901010,
+          "games": 2,
+          "mean_return": 0.1
+        },
+        {
+          "seed": 3901012,
+          "games": 2,
+          "mean_return": -0.2
+        },
+        {
+          "seed": 3901014,
+          "games": 2,
+          "mean_return": 0.1
+        },
+        {
+          "seed": 3901016,
+          "games": 2,
+          "mean_return": -0.1
+        },
+        {
+          "seed": 3901018,
+          "games": 2,
+          "mean_return": 0.0
+        },
+        {
+          "seed": 3901020,
+          "games": 2,
+          "mean_return": 0.2
+        },
+        {
+          "seed": 3901022,
+          "games": 2,
+          "mean_return": 0.0
+        }
+      ],
+      "scenario_clusters": 12,
+      "descriptive_bootstrap_95_interval": [
+        -0.17916666666666667,
+        0.07083333333333333
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement.",
+      "maze": {
+        "candidate_goal_completions": 1,
+        "actual_goal_wins": 1,
+        "distance_adjudications": 21,
+        "mean_blocks_placed": 2.0
+      }
+    },
+    "cycle3 / heuristic / chess": {
+      "games": 24,
+      "mean_return": -0.47500000000000003,
+      "positive_outcomes": 0,
+      "zero_outcomes": 7,
+      "negative_outcomes": 17,
+      "termination_reasons": {
+        "material_adjudication_at_cap": 18,
+        "claimed_threefold_repetition": 4,
+        "checkmate": 2
+      },
+      "paired_scenario_scores": [
+        {
+          "seed": 3902000,
+          "games": 2,
+          "mean_return": -0.45
+        },
+        {
+          "seed": 3902002,
+          "games": 2,
+          "mean_return": -0.3
+        },
+        {
+          "seed": 3902004,
+          "games": 2,
+          "mean_return": -0.55
+        },
+        {
+          "seed": 3902006,
+          "games": 2,
+          "mean_return": -0.5
+        },
+        {
+          "seed": 3902008,
+          "games": 2,
+          "mean_return": -0.3
+        },
+        {
+          "seed": 3902010,
+          "games": 2,
+          "mean_return": -0.75
+        },
+        {
+          "seed": 3902012,
+          "games": 2,
+          "mean_return": -0.55
+        },
+        {
+          "seed": 3902014,
+          "games": 2,
+          "mean_return": -0.25
+        },
+        {
+          "seed": 3902016,
+          "games": 2,
+          "mean_return": -0.5
+        },
+        {
+          "seed": 3902018,
+          "games": 2,
+          "mean_return": -0.75
+        },
+        {
+          "seed": 3902020,
+          "games": 2,
+          "mean_return": -0.25
+        },
+        {
+          "seed": 3902022,
+          "games": 2,
+          "mean_return": -0.55
+        }
+      ],
+      "scenario_clusters": 12,
+      "descriptive_bootstrap_95_interval": [
+        -0.5708333333333333,
+        -0.3833333333333333
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement.",
+      "chess": {
+        "checkmate_wins": 0,
+        "checkmate_losses": 2,
+        "material_adjudications": 18,
+        "mean_candidate_material_advantage": -5.916666666666667
+      }
+    },
+    "cycle3 / heuristic / market": {
+      "games": 24,
+      "mean_return": -0.4651581615343228,
+      "positive_outcomes": 2,
+      "zero_outcomes": 1,
+      "negative_outcomes": 21,
+      "termination_reasons": {
+        "settlement": 24
+      },
+      "paired_scenario_scores": [
+        {
+          "seed": 3900000,
+          "games": 2,
+          "mean_return": -0.8451010980910115
+        },
+        {
+          "seed": 3900002,
+          "games": 2,
+          "mean_return": -0.3873855294484745
+        },
+        {
+          "seed": 3900004,
+          "games": 2,
+          "mean_return": -0.1951889285466808
+        },
+        {
+          "seed": 3900006,
+          "games": 2,
+          "mean_return": -0.8406378291700061
+        },
+        {
+          "seed": 3900008,
+          "games": 2,
+          "mean_return": -0.9068273714372883
+        },
+        {
+          "seed": 3900010,
+          "games": 2,
+          "mean_return": -0.27729986117469113
+        },
+        {
+          "seed": 3900012,
+          "games": 2,
+          "mean_return": -0.8843640896683806
+        },
+        {
+          "seed": 3900014,
+          "games": 2,
+          "mean_return": -0.25404020264454596
+        },
+        {
+          "seed": 3900016,
+          "games": 2,
+          "mean_return": -0.4682195606061055
+        },
+        {
+          "seed": 3900018,
+          "games": 2,
+          "mean_return": 0.0725916607731628
+        },
+        {
+          "seed": 3900020,
+          "games": 2,
+          "mean_return": -0.09338587425955436
+        },
+        {
+          "seed": 3900022,
+          "games": 2,
+          "mean_return": -0.5020392541382979
+        }
+      ],
+      "scenario_clusters": 12,
+      "descriptive_bootstrap_95_interval": [
+        -0.6471975342652829,
+        -0.28392220437428584
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement.",
+      "market": {
+        "mean_absolute_pnl": -8.333333333333334,
+        "positive_pnl_games": 8,
+        "negative_pnl_games": 16,
+        "absolute_pnl_by_game": [
+          -22,
+          -28,
+          12,
+          -9,
+          12,
+          3,
+          -22,
+          -32,
+          -39,
+          -25,
+          -6,
+          12,
+          -21,
+          -24,
+          -5,
+          2,
+          9,
+          -7,
+          1,
+          1,
+          -2,
+          -5,
+          -4,
+          -1
+        ],
+        "mean_filled_units": 4.125,
+        "mean_trade_count": 6.625,
+        "mean_final_cash": 719.625,
+        "mean_final_inventory": 2.7916666666666665
+      }
+    },
+    "cycle3 / heuristic / maze": {
+      "games": 24,
+      "mean_return": -0.8916666666666666,
+      "positive_outcomes": 1,
+      "zero_outcomes": 0,
+      "negative_outcomes": 23,
+      "termination_reasons": {
+        "goal": 20,
+        "distance_adjudication_at_cap": 4
+      },
+      "paired_scenario_scores": [
+        {
+          "seed": 3901000,
+          "games": 2,
+          "mean_return": -1.0
+        },
+        {
+          "seed": 3901002,
+          "games": 2,
+          "mean_return": -0.5
+        },
+        {
+          "seed": 3901004,
+          "games": 2,
+          "mean_return": -1.0
+        },
+        {
+          "seed": 3901006,
+          "games": 2,
+          "mean_return": -1.0
+        },
+        {
+          "seed": 3901008,
+          "games": 2,
+          "mean_return": -1.0
+        },
+        {
+          "seed": 3901010,
+          "games": 2,
+          "mean_return": -0.75
+        },
+        {
+          "seed": 3901012,
+          "games": 2,
+          "mean_return": -1.0
+        },
+        {
+          "seed": 3901014,
+          "games": 2,
+          "mean_return": -1.0
+        },
+        {
+          "seed": 3901016,
+          "games": 2,
+          "mean_return": -1.0
+        },
+        {
+          "seed": 3901018,
+          "games": 2,
+          "mean_return": -1.0
+        },
+        {
+          "seed": 3901020,
+          "games": 2,
+          "mean_return": -0.45
+        },
+        {
+          "seed": 3901022,
+          "games": 2,
+          "mean_return": -1.0
+        }
+      ],
+      "scenario_clusters": 12,
+      "descriptive_bootstrap_95_interval": [
+        -1.0,
+        -0.7666666666666666
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement.",
+      "maze": {
+        "candidate_goal_completions": 0,
+        "actual_goal_wins": 0,
+        "distance_adjudications": 4,
+        "mean_blocks_placed": 2.0
+      }
+    }
+  },
+  "paired_checkpoint_changes": [
+    {
+      "before": "base",
+      "after": "cycle3",
+      "opponent": "base",
+      "environment": "chess",
+      "mean_return_change": 0.09583333333333333,
+      "paired_scenario_changes": [
+        {
+          "seed": 3902000,
+          "mean_return_change": -0.25
+        },
+        {
+          "seed": 3902002,
+          "mean_return_change": -0.35
+        },
+        {
+          "seed": 3902004,
+          "mean_return_change": 0.25
+        },
+        {
+          "seed": 3902006,
+          "mean_return_change": 0.0
+        },
+        {
+          "seed": 3902008,
+          "mean_return_change": 0.1
+        },
+        {
+          "seed": 3902010,
+          "mean_return_change": 0.04999999999999999
+        },
+        {
+          "seed": 3902012,
+          "mean_return_change": 0.0
+        },
+        {
+          "seed": 3902014,
+          "mean_return_change": 0.0
+        },
+        {
+          "seed": 3902016,
+          "mean_return_change": 0.45
+        },
+        {
+          "seed": 3902018,
+          "mean_return_change": 0.5
+        },
+        {
+          "seed": 3902020,
+          "mean_return_change": 0.0
+        },
+        {
+          "seed": 3902022,
+          "mean_return_change": 0.4
+        }
+      ],
+      "positive_scenario_changes": 6,
+      "negative_scenario_changes": 2,
+      "scenario_clusters": 12,
+      "descriptive_bootstrap_95_interval": [
+        -0.04583333333333333,
+        0.2376041666666652
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement."
+    },
+    {
+      "before": "base",
+      "after": "cycle3",
+      "opponent": "base",
+      "environment": "market",
+      "mean_return_change": -0.012253401188809071,
+      "paired_scenario_changes": [
+        {
+          "seed": 3900000,
+          "mean_return_change": -0.0831051406419874
+        },
+        {
+          "seed": 3900002,
+          "mean_return_change": 0.007129295028765248
+        },
+        {
+          "seed": 3900004,
+          "mean_return_change": 0.1648618388642898
+        },
+        {
+          "seed": 3900006,
+          "mean_return_change": 0.0
+        },
+        {
+          "seed": 3900008,
+          "mean_return_change": 0.009145916308908653
+        },
+        {
+          "seed": 3900010,
+          "mean_return_change": -0.049629835172204796
+        },
+        {
+          "seed": 3900012,
+          "mean_return_change": -0.2247775893784206
+        },
+        {
+          "seed": 3900014,
+          "mean_return_change": 0.09062955841771958
+        },
+        {
+          "seed": 3900016,
+          "mean_return_change": 0.20627939103635357
+        },
+        {
+          "seed": 3900018,
+          "mean_return_change": 0.020794213486391565
+        },
+        {
+          "seed": 3900020,
+          "mean_return_change": -0.12350662335123468
+        },
+        {
+          "seed": 3900022,
+          "mean_return_change": -0.16486183886428982
+        }
+      ],
+      "positive_scenario_changes": 6,
+      "negative_scenario_changes": 5,
+      "scenario_clusters": 12,
+      "descriptive_bootstrap_95_interval": [
+        -0.08083155540086898,
+        0.05764933495502047
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement."
+    },
+    {
+      "before": "base",
+      "after": "cycle3",
+      "opponent": "base",
+      "environment": "maze",
+      "mean_return_change": -0.03749999999999999,
+      "paired_scenario_changes": [
+        {
+          "seed": 3901000,
+          "mean_return_change": 0.2
+        },
+        {
+          "seed": 3901002,
+          "mean_return_change": 0.0
+        },
+        {
+          "seed": 3901004,
+          "mean_return_change": 0.0
+        },
+        {
+          "seed": 3901006,
+          "mean_return_change": -0.05
+        },
+        {
+          "seed": 3901008,
+          "mean_return_change": -0.7
+        },
+        {
+          "seed": 3901010,
+          "mean_return_change": 0.1
+        },
+        {
+          "seed": 3901012,
+          "mean_return_change": -0.2
+        },
+        {
+          "seed": 3901014,
+          "mean_return_change": 0.1
+        },
+        {
+          "seed": 3901016,
+          "mean_return_change": -0.1
+        },
+        {
+          "seed": 3901018,
+          "mean_return_change": 0.0
+        },
+        {
+          "seed": 3901020,
+          "mean_return_change": 0.2
+        },
+        {
+          "seed": 3901022,
+          "mean_return_change": 0.0
+        }
+      ],
+      "positive_scenario_changes": 4,
+      "negative_scenario_changes": 4,
+      "scenario_clusters": 12,
+      "descriptive_bootstrap_95_interval": [
+        -0.17916666666666667,
+        0.07083333333333333
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement."
+    },
+    {
+      "before": "base",
+      "after": "cycle3",
+      "opponent": "heuristic",
+      "environment": "chess",
+      "mean_return_change": 0.008333333333333331,
+      "paired_scenario_changes": [
+        {
+          "seed": 3902000,
+          "mean_return_change": 0.0
+        },
+        {
+          "seed": 3902002,
+          "mean_return_change": 0.25
+        },
+        {
+          "seed": 3902004,
+          "mean_return_change": 0.0
+        },
+        {
+          "seed": 3902006,
+          "mean_return_change": 0.3
+        },
+        {
+          "seed": 3902008,
+          "mean_return_change": 0.0
+        },
+        {
+          "seed": 3902010,
+          "mean_return_change": 0.0
+        },
+        {
+          "seed": 3902012,
+          "mean_return_change": -0.04999999999999999
+        },
+        {
+          "seed": 3902014,
+          "mean_return_change": 0.0
+        },
+        {
+          "seed": 3902016,
+          "mean_return_change": -0.25
+        },
+        {
+          "seed": 3902018,
+          "mean_return_change": -0.15000000000000002
+        },
+        {
+          "seed": 3902020,
+          "mean_return_change": 0.0
+        },
+        {
+          "seed": 3902022,
+          "mean_return_change": 0.0
+        }
+      ],
+      "positive_scenario_changes": 2,
+      "negative_scenario_changes": 3,
+      "scenario_clusters": 12,
+      "descriptive_bootstrap_95_interval": [
+        -0.06666666666666667,
+        0.09166666666666667
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement."
+    },
+    {
+      "before": "base",
+      "after": "cycle3",
+      "opponent": "heuristic",
+      "environment": "market",
+      "mean_return_change": -0.01775949807548607,
+      "paired_scenario_changes": [
+        {
+          "seed": 3900000,
+          "mean_return_change": -0.22995239128092942
+        },
+        {
+          "seed": 3900002,
+          "mean_return_change": 0.0
+        },
+        {
+          "seed": 3900004,
+          "mean_return_change": 0.14992324957173137
+        },
+        {
+          "seed": 3900006,
+          "mean_return_change": -0.02426878855073572
+        },
+        {
+          "seed": 3900008,
+          "mean_return_change": 0.0307744194226513
+        },
+        {
+          "seed": 3900010,
+          "mean_return_change": -0.011041664415404044
+        },
+        {
+          "seed": 3900012,
+          "mean_return_change": -0.021801282483108975
+        },
+        {
+          "seed": 3900014,
+          "mean_return_change": -0.058851274097865156
+        },
+        {
+          "seed": 3900016,
+          "mean_return_change": 0.03729675936381566
+        },
+        {
+          "seed": 3900018,
+          "mean_return_change": -0.020794213486391565
+        },
+        {
+          "seed": 3900020,
+          "mean_return_change": -0.03163695316998267
+        },
+        {
+          "seed": 3900022,
+          "mean_return_change": -0.03276183777961361
+        }
+      ],
+      "positive_scenario_changes": 3,
+      "negative_scenario_changes": 8,
+      "scenario_clusters": 12,
+      "descriptive_bootstrap_95_interval": [
+        -0.06720020116992724,
+        0.02607662249557742
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement."
+    },
+    {
+      "before": "base",
+      "after": "cycle3",
+      "opponent": "heuristic",
+      "environment": "maze",
+      "mean_return_change": -0.03333333333333333,
+      "paired_scenario_changes": [
+        {
+          "seed": 3901000,
+          "mean_return_change": 0.0
+        },
+        {
+          "seed": 3901002,
+          "mean_return_change": 0.0
+        },
+        {
+          "seed": 3901004,
+          "mean_return_change": 0.0
+        },
+        {
+          "seed": 3901006,
+          "mean_return_change": 0.0
+        },
+        {
+          "seed": 3901008,
+          "mean_return_change": -0.4
+        },
+        {
+          "seed": 3901010,
+          "mean_return_change": 0.0
+        },
+        {
+          "seed": 3901012,
+          "mean_return_change": 0.0
+        },
+        {
+          "seed": 3901014,
+          "mean_return_change": 0.0
+        },
+        {
+          "seed": 3901016,
+          "mean_return_change": 0.0
+        },
+        {
+          "seed": 3901018,
+          "mean_return_change": 0.0
+        },
+        {
+          "seed": 3901020,
+          "mean_return_change": 0.0
+        },
+        {
+          "seed": 3901022,
+          "mean_return_change": 0.0
+        }
+      ],
+      "positive_scenario_changes": 0,
+      "negative_scenario_changes": 1,
+      "scenario_clusters": 12,
+      "descriptive_bootstrap_95_interval": [
+        -0.10000000000000002,
+        0.0
+      ],
+      "caution": "Very small scenario sample; a descriptive bootstrap interval does not establish reliable improvement."
+    }
+  ],
+  "macro_fixed_opponent_return": {
+    "base": {
+      "mean_return": -0.29817755502091725,
+      "available_environment_opponent_cells": 6,
+      "note": "Equal weight for each environment and fixed opponent; compare only complete six-cell checkpoints."
+    },
+    "cycle3": {
+      "mean_return": -0.2976241493427442,
+      "available_environment_opponent_cells": 6,
+      "note": "Equal weight for each environment and fixed opponent; compare only complete six-cell checkpoints."
+    }
+  },
+  "policy_arithmetic_sha256": "0dd0cf0c88a5ba9797be2255a52251d0649869f964e7f0369378eaf5a6ee8e81",
+  "preregistration_sha256": "d62ec134933408d5c2cea7fdd415fa0cd5fa4ef3ff29880b1494846d0b99b0cb",
+  "training": false,
+  "holdout_protocol": {
+    "version": 1,
+    "candidates": [
+      "base",
+      "cycle3"
+    ],
+    "opponents": [
+      "heuristic",
+      "base"
+    ],
+    "scenarios_per_cell": 12,
+    "seed_start": 3900000,
+    "paired_seats": true,
+    "selection": "Fixed final cycle3, regardless of preliminary evaluation outcomes",
+    "purpose": "Fresh final validation; no training or model selection on these games"
+  },
+  "warnings": [
+    "Twelve independent paired scenario clusters per environment/opponent, one training seed.",
+    "Final checkpoint fixed before results; no outcome-based checkpoint selection.",
+    "Distance/material capped rewards are adjudications, not goal completion or checkmate.",
+    "General reasoning transfer and indefinite continual improvement remain untested.",
+    "Partial evaluations are descriptive only; compare completed paired scenarios."
+  ],
+  "analysis_source_sha256": "df592030ac2c68ecd1d1a6f04400dd4fd8141a5b0942169fe34e88d75042e0d7",
+  "shared_analysis_source_sha256": "98cff35a9d20b5497a6a280229f1f92bbcfe3a1fdb7bda200363b24cefb81b61"
+}

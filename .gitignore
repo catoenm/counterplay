@@ -1,0 +1,35 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+models/
+.env
+adapters/
+
+# Local credentials and authentication material.
+.secrets/
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Operational accounting and generated research evidence stay local.
+# Selected immutable reports are explicitly tracked in the initial snapshot.
+/budget.json
+/runs/
+
+# Large weights, checkpoints, build products, and caches.
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+*.tar.gz
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+node_modules/

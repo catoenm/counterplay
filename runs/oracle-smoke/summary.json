@@ -1,0 +1,363 @@
+{
+  "unique_tasks": 24,
+  "calls": 192,
+  "by_variant": {
+    "canonical": {
+      "attempts": 48,
+      "success_rate": 1.0,
+      "statuses": {
+        "solved": 48
+      }
+    },
+    "renamed_reordered": {
+      "attempts": 48,
+      "success_rate": 1.0,
+      "statuses": {
+        "solved": 48
+      }
+    },
+    "reordered": {
+      "attempts": 48,
+      "success_rate": 1.0,
+      "statuses": {
+        "solved": 48
+      }
+    },
+    "renamed": {
+      "attempts": 48,
+      "success_rate": 1.0,
+      "statuses": {
+        "solved": 48
+      }
+    }
+  },
+  "paired_renamed_reordered_minus_canonical": {
+    "paired_tasks": 24,
+    "mean": 0.0,
+    "task_bootstrap_95_interval": [
+      0.0,
+      0.0
+    ],
+    "note": "Exploratory task-cluster bootstrap; a tiny pilot cannot establish a general effect."
+  },
+  "task_scores": [
+    {
+      "task_id": "fe8dbe51e6bdc04bca243f841ac96d46bf11a9c368b167cfcc5df288dbeabe7a",
+      "rates": {
+        "canonical": 1.0,
+        "reordered": 1.0,
+        "renamed_reordered": 1.0,
+        "renamed": 1.0
+      },
+      "failure_reward": 0.0,
+      "frontier_reward": 0.0,
+      "robust_frontier_reward": 0.0,
+      "presentation_range": 0.0
+    },
+    {
+      "task_id": "88e0191df139e4813f35300dba2cceb2a8f6672747a8fe8c99a4a60046716007",
+      "rates": {
+        "renamed_reordered": 1.0,
+        "renamed": 1.0,
+        "canonical": 1.0,
+        "reordered": 1.0
+      },
+      "failure_reward": 0.0,
+      "frontier_reward": 0.0,
+      "robust_frontier_reward": 0.0,
+      "presentation_range": 0.0
+    },
+    {
+      "task_id": "e0c8bada7b241a832617990231098231c4610d62faf7811b3e7636af4d675ae0",
+      "rates": {
+        "canonical": 1.0,
+        "renamed_reordered": 1.0,
+        "reordered": 1.0,
+        "renamed": 1.0
+      },
+      "failure_reward": 0.0,
+      "frontier_reward": 0.0,
+      "robust_frontier_reward": 0.0,
+      "presentation_range": 0.0
+    },
+    {
+      "task_id": "ba36e17f9481768e109ceb52f67165841aa3d97887f2948cda2b2d2847aa12f0",
+      "rates": {
+        "renamed_reordered": 1.0,
+        "reordered": 1.0,
+        "canonical": 1.0,
+        "renamed": 1.0
+      },
+      "failure_reward": 0.0,
+      "frontier_reward": 0.0,
+      "robust_frontier_reward": 0.0,
+      "presentation_range": 0.0
+    },
+    {
+      "task_id": "f2dcd8c70b0e67a128e1b9f75ad7de9d9dbd29cb9fb5177b70aa04a6bae6a18e",
+      "rates": {
+        "renamed_reordered": 1.0,
+        "reordered": 1.0,
+        "renamed": 1.0,
+        "canonical": 1.0
+      },
+      "failure_reward": 0.0,
+      "frontier_reward": 0.0,
+      "robust_frontier_reward": 0.0,
+      "presentation_range": 0.0
+    },
+    {
+      "task_id": "6845fc405b8e1c9a0be75cbf05d7a2c7f5e4496eafef240f917dcc1e2a9e0eb5",
+      "rates": {
+        "renamed_reordered": 1.0,
+        "reordered": 1.0,
+        "canonical": 1.0,
+        "renamed": 1.0
+      },
+      "failure_reward": 0.0,
+      "frontier_reward": 0.0,
+      "robust_frontier_reward": 0.0,
+      "presentation_range": 0.0
+    },
+    {
+      "task_id": "643f94585e6ff771de08ca6744fd40225c27fe1cc06e9c1f7f8d2dfe66e3d221",
+      "rates": {
+        "canonical": 1.0,
+        "reordered": 1.0,
+        "renamed_reordered": 1.0,
+        "renamed": 1.0
+      },
+      "failure_reward": 0.0,
+      "frontier_reward": 0.0,
+      "robust_frontier_reward": 0.0,
+      "presentation_range": 0.0
+    },
+    {
+      "task_id": "37d697d14da00942a52bf252cb13257495248de7b140ecd73ea997c0014c8fa2",
+      "rates": {
+        "canonical": 1.0,
+        "renamed_reordered": 1.0,
+        "reordered": 1.0,
+        "renamed": 1.0
+      },
+      "failure_reward": 0.0,
+      "frontier_reward": 0.0,
+      "robust_frontier_reward": 0.0,
+      "presentation_range": 0.0
+    },
+    {
+      "task_id": "48141edc449f945bff4a09f589be79fea9fe3f59c795b08940c1c47d0f724385",
+      "rates": {
+        "canonical": 1.0,
+        "renamed": 1.0,
+        "reordered": 1.0,
+        "renamed_reordered": 1.0
+      },
+      "failure_reward": 0.0,
+      "frontier_reward": 0.0,
+      "robust_frontier_reward": 0.0,
+      "presentation_range": 0.0
+    },
+    {
+      "task_id": "f4ceb722f41dc329105a72b673a60191aa0dac2b6ca7050ba8d7b04524097e46",
+      "rates": {
+        "renamed": 1.0,
+        "canonical": 1.0,
+        "renamed_reordered": 1.0,
+        "reordered": 1.0
+      },
+      "failure_reward": 0.0,
+      "frontier_reward": 0.0,
+      "robust_frontier_reward": 0.0,
+      "presentation_range": 0.0
+    },
+    {
+      "task_id": "3f82589069653cb8f5d75c09acb4ec10fbbc14ac2474f386c02f3822e3efaba5",
+      "rates": {
+        "renamed": 1.0,
+        "renamed_reordered": 1.0,
+        "canonical": 1.0,
+        "reordered": 1.0
+      },
+      "failure_reward": 0.0,
+      "frontier_reward": 0.0,
+      "robust_frontier_reward": 0.0,
+      "presentation_range": 0.0
+    },
+    {
+      "task_id": "8d690d1fc3f36b575060ea6076c3dea4837057d62c6ccf278cdaa1c8b8c8ab59",
+      "rates": {
+        "reordered": 1.0,
+        "renamed": 1.0,
+        "canonical": 1.0,
+        "renamed_reordered": 1.0
+      },
+      "failure_reward": 0.0,
+      "frontier_reward": 0.0,
+      "robust_frontier_reward": 0.0,
+      "presentation_range": 0.0
+    },
+    {
+      "task_id": "c4507e09b89b9b868cc3f738fb4260203ac27f7012ab7f7d67f4f59f9a074752",
+      "rates": {
+        "reordered": 1.0,
+        "renamed": 1.0,
+        "canonical": 1.0,
+        "renamed_reordered": 1.0
+      },
+      "failure_reward": 0.0,
+      "frontier_reward": 0.0,
+      "robust_frontier_reward": 0.0,
+      "presentation_range": 0.0
+    },
+    {
+      "task_id": "ad828066ce326a1b7d620f9a7c3d2d649a3ba96bc93d8e5d42c98c6ec646118c",
+      "rates": {
+        "renamed_reordered": 1.0,
+        "reordered": 1.0,
+        "renamed": 1.0,
+        "canonical": 1.0
+      },
+      "failure_reward": 0.0,
+      "frontier_reward": 0.0,
+      "robust_frontier_reward": 0.0,
+      "presentation_range": 0.0
+    },
+    {
+      "task_id": "f5519cc00fe09f5179b0718df0ae4e3d246e0605eeadff70d81646cf86de47d0",
+      "rates": {
+        "renamed_reordered": 1.0,
+        "canonical": 1.0,
+        "reordered": 1.0,
+        "renamed": 1.0
+      },
+      "failure_reward": 0.0,
+      "frontier_reward": 0.0,
+      "robust_frontier_reward": 0.0,
+      "presentation_range": 0.0
+    },
+    {
+      "task_id": "8bb5580d259a91c7e1b09a9142f7dd1238bbc3ca59a91da11331c4817a1d5109",
+      "rates": {
+        "canonical": 1.0,
+        "renamed_reordered": 1.0,
+        "reordered": 1.0,
+        "renamed": 1.0
+      },
+      "failure_reward": 0.0,
+      "frontier_reward": 0.0,
+      "robust_frontier_reward": 0.0,
+      "presentation_range": 0.0
+    },
+    {
+      "task_id": "4fd8c5e750f0dfdfb02d9d92abc97b31b96a4024bc2735dc54c280fc61e571da",
+      "rates": {
+        "renamed_reordered": 1.0,
+        "renamed": 1.0,
+        "canonical": 1.0,
+        "reordered": 1.0
+      },
+      "failure_reward": 0.0,
+      "frontier_reward": 0.0,
+      "robust_frontier_reward": 0.0,
+      "presentation_range": 0.0
+    },
+    {
+      "task_id": "4783106805932f6b3643cbb0ca26f5bb99daec8f1c658b7288335ea1db1414ce",
+      "rates": {
+        "renamed_reordered": 1.0,
+        "renamed": 1.0,
+        "canonical": 1.0,
+        "reordered": 1.0
+      },
+      "failure_reward": 0.0,
+      "frontier_reward": 0.0,
+      "robust_frontier_reward": 0.0,
+      "presentation_range": 0.0
+    },
+    {
+      "task_id": "1f975e6c5b0ba25d4ce30ee19c0c44c5712a3b786daeb974474f3462b3a59394",
+      "rates": {
+        "renamed_reordered": 1.0,
+        "canonical": 1.0,
+        "renamed": 1.0,
+        "reordered": 1.0
+      },
+      "failure_reward": 0.0,
+      "frontier_reward": 0.0,
+      "robust_frontier_reward": 0.0,
+      "presentation_range": 0.0
+    },
+    {
+      "task_id": "aa98a85015930f763d3cef1fa173e52311baa096eab988f8924a4d3f7ecb2347",
+      "rates": {
+        "canonical": 1.0,
+        "reordered": 1.0,
+        "renamed_reordered": 1.0,
+        "renamed": 1.0
+      },
+      "failure_reward": 0.0,
+      "frontier_reward": 0.0,
+      "robust_frontier_reward": 0.0,
+      "presentation_range": 0.0
+    },
+    {
+      "task_id": "5a9954f67841967c2e984f31013a1b1fed8ff6fb7c8964bc5cdef7d9b93847d5",
+      "rates": {
+        "canonical": 1.0,
+        "renamed": 1.0,
+        "reordered": 1.0,
+        "renamed_reordered": 1.0
+      },
+      "failure_reward": 0.0,
+      "frontier_reward": 0.0,
+      "robust_frontier_reward": 0.0,
+      "presentation_range": 0.0
+    },
+    {
+      "task_id": "579d6422ed8a06da00a9e4b1c9c3edfc5c1716011823640033503e655f39f0fc",
+      "rates": {
+        "renamed": 1.0,
+        "reordered": 1.0,
+        "renamed_reordered": 1.0,
+        "canonical": 1.0
+      },
+      "failure_reward": 0.0,
+      "frontier_reward": 0.0,
+      "robust_frontier_reward": 0.0,
+      "presentation_range": 0.0
+    },
+    {
+      "task_id": "98532056c4ca1ea28a5dd4c911a73cc1cdab262170e1078989b8a88a6e1f33fe",
+      "rates": {
+        "renamed_reordered": 1.0,
+        "canonical": 1.0,
+        "reordered": 1.0,
+        "renamed": 1.0
+      },
+      "failure_reward": 0.0,
+      "frontier_reward": 0.0,
+      "robust_frontier_reward": 0.0,
+      "presentation_range": 0.0
+    },
+    {
+      "task_id": "2a31fa0913c530d5ce93429c5ec026d2894fc611242031c8e673d310d5fe994c",
+      "rates": {
+        "renamed_reordered": 1.0,
+        "renamed": 1.0,
+        "reordered": 1.0,
+        "canonical": 1.0
+      },
+      "failure_reward": 0.0,
+      "frontier_reward": 0.0,
+      "robust_frontier_reward": 0.0,
+      "presentation_range": 0.0
+    }
+  ],
+  "proposals_attempted": 0,
+  "proposals_accepted": 0,
+  "elapsed_seconds": 0.013843625027220696,
+  "training": false,
+  "complete": true,
+  "model_calls": 0
+}

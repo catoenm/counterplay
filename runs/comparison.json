@@ -1,0 +1,563 @@
+{
+  "oracle-smoke": {
+    "complete": true,
+    "procedural_tasks": 24,
+    "procedural_attempts": 192,
+    "procedural_solved": 192,
+    "by_variant": {
+      "canonical": {
+        "attempts": 48,
+        "success_rate": 1.0,
+        "statuses": {
+          "solved": 48
+        }
+      },
+      "renamed_reordered": {
+        "attempts": 48,
+        "success_rate": 1.0,
+        "statuses": {
+          "solved": 48
+        }
+      },
+      "reordered": {
+        "attempts": 48,
+        "success_rate": 1.0,
+        "statuses": {
+          "solved": 48
+        }
+      },
+      "renamed": {
+        "attempts": 48,
+        "success_rate": 1.0,
+        "statuses": {
+          "solved": 48
+        }
+      }
+    },
+    "paired_gap": {
+      "paired_tasks": 24,
+      "mean": 0.0,
+      "task_bootstrap_95_interval": [
+        0.0,
+        0.0
+      ],
+      "note": "Exploratory task-cluster bootstrap; a tiny pilot cannot establish a general effect."
+    },
+    "by_depth": {
+      "1": {
+        "successes": 64,
+        "attempts": 64
+      },
+      "2": {
+        "successes": 64,
+        "attempts": 64
+      },
+      "3": {
+        "successes": 64,
+        "attempts": 64
+      }
+    },
+    "exact_uniform_legal_random_expectation": 0.10394965277777778,
+    "tasks_with_positive_frontier_score": 0,
+    "tasks_with_positive_robust_frontier_score": 0,
+    "proposals_attempted": 0,
+    "proposals_accepted": 0,
+    "llm_task_attempts": 0,
+    "llm_task_solved": 0,
+    "prompt_tokens": 0,
+    "completion_tokens": 0
+  },
+  "qwen06b-audit": {
+    "complete": true,
+    "procedural_tasks": 24,
+    "procedural_attempts": 192,
+    "procedural_solved": 8,
+    "by_variant": {
+      "canonical": {
+        "attempts": 48,
+        "success_rate": 0.041666666666666664,
+        "statuses": {
+          "wrong_goal": 29,
+          "over_budget": 17,
+          "solved": 2
+        }
+      },
+      "renamed_reordered": {
+        "attempts": 48,
+        "success_rate": 0.020833333333333332,
+        "statuses": {
+          "wrong_goal": 24,
+          "over_budget": 23,
+          "solved": 1
+        }
+      },
+      "reordered": {
+        "attempts": 48,
+        "success_rate": 0.10416666666666667,
+        "statuses": {
+          "wrong_goal": 26,
+          "solved": 5,
+          "over_budget": 17
+        }
+      },
+      "renamed": {
+        "attempts": 48,
+        "success_rate": 0.0,
+        "statuses": {
+          "wrong_goal": 24,
+          "over_budget": 24
+        }
+      }
+    },
+    "paired_gap": {
+      "paired_tasks": 24,
+      "mean": -0.020833333333333332,
+      "task_bootstrap_95_interval": [
+        -0.08333333333333333,
+        0.041666666666666664
+      ],
+      "note": "Exploratory task-cluster bootstrap; a tiny pilot cannot establish a general effect."
+    },
+    "by_depth": {
+      "1": {
+        "successes": 5,
+        "attempts": 64
+      },
+      "2": {
+        "successes": 0,
+        "attempts": 64
+      },
+      "3": {
+        "successes": 3,
+        "attempts": 64
+      }
+    },
+    "exact_uniform_legal_random_expectation": 0.10394965277777778,
+    "tasks_with_positive_frontier_score": 2,
+    "tasks_with_positive_robust_frontier_score": 0,
+    "proposals_attempted": 8,
+    "proposals_accepted": 0,
+    "llm_task_attempts": 0,
+    "llm_task_solved": 0,
+    "prompt_tokens": 36544,
+    "completion_tokens": 4330
+  },
+  "qwen4b-audit": {
+    "complete": true,
+    "procedural_tasks": 24,
+    "procedural_attempts": 192,
+    "procedural_solved": 21,
+    "by_variant": {
+      "canonical": {
+        "attempts": 48,
+        "success_rate": 0.14583333333333334,
+        "statuses": {
+          "wrong_goal": 41,
+          "solved": 7
+        }
+      },
+      "renamed_reordered": {
+        "attempts": 48,
+        "success_rate": 0.08333333333333333,
+        "statuses": {
+          "wrong_goal": 42,
+          "over_budget": 2,
+          "solved": 4
+        }
+      },
+      "reordered": {
+        "attempts": 48,
+        "success_rate": 0.16666666666666666,
+        "statuses": {
+          "wrong_goal": 37,
+          "solved": 8,
+          "format_error": 1,
+          "over_budget": 2
+        }
+      },
+      "renamed": {
+        "attempts": 48,
+        "success_rate": 0.041666666666666664,
+        "statuses": {
+          "wrong_goal": 44,
+          "over_budget": 2,
+          "solved": 2
+        }
+      }
+    },
+    "paired_gap": {
+      "paired_tasks": 24,
+      "mean": -0.0625,
+      "task_bootstrap_95_interval": [
+        -0.1875,
+        0.041666666666666664
+      ],
+      "note": "Exploratory task-cluster bootstrap; a tiny pilot cannot establish a general effect."
+    },
+    "by_depth": {
+      "1": {
+        "successes": 11,
+        "attempts": 64
+      },
+      "2": {
+        "successes": 2,
+        "attempts": 64
+      },
+      "3": {
+        "successes": 8,
+        "attempts": 64
+      }
+    },
+    "exact_uniform_legal_random_expectation": 0.10394965277777778,
+    "tasks_with_positive_frontier_score": 3,
+    "tasks_with_positive_robust_frontier_score": 0,
+    "proposals_attempted": 8,
+    "proposals_accepted": 0,
+    "llm_task_attempts": 0,
+    "llm_task_solved": 0,
+    "prompt_tokens": 36544,
+    "completion_tokens": 3001
+  },
+  "qwen4b-constructive": {
+    "complete": true,
+    "procedural_tasks": 6,
+    "procedural_attempts": 24,
+    "procedural_solved": 1,
+    "by_variant": {
+      "renamed_reordered": {
+        "attempts": 12,
+        "success_rate": 0.0,
+        "statuses": {
+          "wrong_goal": 12
+        }
+      },
+      "canonical": {
+        "attempts": 12,
+        "success_rate": 0.08333333333333333,
+        "statuses": {
+          "wrong_goal": 11,
+          "solved": 1
+        }
+      }
+    },
+    "paired_gap": {
+      "paired_tasks": 6,
+      "mean": -0.08333333333333333,
+      "task_bootstrap_95_interval": [
+        -0.25,
+        0.0
+      ],
+      "note": "Exploratory task-cluster bootstrap; a tiny pilot cannot establish a general effect."
+    },
+    "by_depth": {
+      "1": {
+        "successes": 1,
+        "attempts": 8
+      },
+      "2": {
+        "successes": 0,
+        "attempts": 8
+      },
+      "3": {
+        "successes": 0,
+        "attempts": 8
+      }
+    },
+    "exact_uniform_legal_random_expectation": 0.10503472222222222,
+    "tasks_with_positive_frontier_score": 1,
+    "tasks_with_positive_robust_frontier_score": 0,
+    "proposals_attempted": 8,
+    "proposals_accepted": 3,
+    "llm_task_attempts": 12,
+    "llm_task_solved": 0,
+    "prompt_tokens": 9607,
+    "completion_tokens": 950
+  },
+  "random-baseline": {
+    "complete": true,
+    "procedural_tasks": 24,
+    "procedural_attempts": 192,
+    "procedural_solved": 16,
+    "by_variant": {
+      "canonical": {
+        "attempts": 48,
+        "success_rate": 0.08333333333333333,
+        "statuses": {
+          "wrong_goal": 44,
+          "solved": 4
+        }
+      },
+      "renamed_reordered": {
+        "attempts": 48,
+        "success_rate": 0.08333333333333333,
+        "statuses": {
+          "wrong_goal": 44,
+          "solved": 4
+        }
+      },
+      "reordered": {
+        "attempts": 48,
+        "success_rate": 0.08333333333333333,
+        "statuses": {
+          "wrong_goal": 44,
+          "solved": 4
+        }
+      },
+      "renamed": {
+        "attempts": 48,
+        "success_rate": 0.08333333333333333,
+        "statuses": {
+          "wrong_goal": 44,
+          "solved": 4
+        }
+      }
+    },
+    "paired_gap": {
+      "paired_tasks": 24,
+      "mean": 0.0,
+      "task_bootstrap_95_interval": [
+        0.0,
+        0.0
+      ],
+      "note": "Exploratory task-cluster bootstrap; a tiny pilot cannot establish a general effect."
+    },
+    "by_depth": {
+      "1": {
+        "successes": 8,
+        "attempts": 64
+      },
+      "2": {
+        "successes": 4,
+        "attempts": 64
+      },
+      "3": {
+        "successes": 4,
+        "attempts": 64
+      }
+    },
+    "exact_uniform_legal_random_expectation": 0.10394965277777778,
+    "tasks_with_positive_frontier_score": 4,
+    "tasks_with_positive_robust_frontier_score": 4,
+    "proposals_attempted": 0,
+    "proposals_accepted": 0,
+    "llm_task_attempts": 0,
+    "llm_task_solved": 0,
+    "prompt_tokens": 0,
+    "completion_tokens": 0
+  },
+  "reasoning-feedback": {
+    "complete": true,
+    "procedural_tasks": 0,
+    "procedural_attempts": 0,
+    "procedural_solved": 0,
+    "by_variant": {},
+    "paired_gap": {
+      "paired_tasks": 0,
+      "mean": null,
+      "task_bootstrap_95_interval": null,
+      "note": "Exploratory task-cluster bootstrap; a tiny pilot cannot establish a general effect."
+    },
+    "by_depth": {},
+    "exact_uniform_legal_random_expectation": null,
+    "tasks_with_positive_frontier_score": 0,
+    "tasks_with_positive_robust_frontier_score": 0,
+    "proposals_attempted": 8,
+    "proposals_accepted": 5,
+    "llm_task_attempts": 10,
+    "llm_task_solved": 10,
+    "prompt_tokens": 7465,
+    "completion_tokens": 42448
+  },
+  "reasoning-no-feedback": {
+    "complete": true,
+    "procedural_tasks": 0,
+    "procedural_attempts": 0,
+    "procedural_solved": 0,
+    "by_variant": {},
+    "paired_gap": {
+      "paired_tasks": 0,
+      "mean": null,
+      "task_bootstrap_95_interval": null,
+      "note": "Exploratory task-cluster bootstrap; a tiny pilot cannot establish a general effect."
+    },
+    "by_depth": {},
+    "exact_uniform_legal_random_expectation": null,
+    "tasks_with_positive_frontier_score": 0,
+    "tasks_with_positive_robust_frontier_score": 0,
+    "proposals_attempted": 8,
+    "proposals_accepted": 7,
+    "llm_task_attempts": 14,
+    "llm_task_solved": 13,
+    "prompt_tokens": 6143,
+    "completion_tokens": 58185
+  },
+  "reasoning-off-4096-dev": {
+    "complete": true,
+    "procedural_tasks": 6,
+    "procedural_attempts": 24,
+    "procedural_solved": 3,
+    "by_variant": {
+      "renamed_reordered": {
+        "attempts": 12,
+        "success_rate": 0.08333333333333333,
+        "statuses": {
+          "wrong_goal": 10,
+          "solved": 1,
+          "over_budget": 1
+        }
+      },
+      "canonical": {
+        "attempts": 12,
+        "success_rate": 0.16666666666666666,
+        "statuses": {
+          "wrong_goal": 10,
+          "solved": 2
+        }
+      }
+    },
+    "paired_gap": {
+      "paired_tasks": 6,
+      "mean": -0.08333333333333333,
+      "task_bootstrap_95_interval": [
+        -0.25,
+        0.0
+      ],
+      "note": "Exploratory task-cluster bootstrap; a tiny pilot cannot establish a general effect."
+    },
+    "by_depth": {
+      "1": {
+        "successes": 3,
+        "attempts": 8
+      },
+      "2": {
+        "successes": 0,
+        "attempts": 8
+      },
+      "3": {
+        "successes": 0,
+        "attempts": 8
+      }
+    },
+    "exact_uniform_legal_random_expectation": 0.09722222222222222,
+    "tasks_with_positive_frontier_score": 0,
+    "tasks_with_positive_robust_frontier_score": 0,
+    "proposals_attempted": 0,
+    "proposals_accepted": 0,
+    "llm_task_attempts": 0,
+    "llm_task_solved": 0,
+    "prompt_tokens": 4204,
+    "completion_tokens": 444
+  },
+  "reasoning-on-4096-dev": {
+    "complete": true,
+    "procedural_tasks": 6,
+    "procedural_attempts": 24,
+    "procedural_solved": 22,
+    "by_variant": {
+      "renamed_reordered": {
+        "attempts": 12,
+        "success_rate": 0.9166666666666666,
+        "statuses": {
+          "solved": 11,
+          "truncated": 1
+        }
+      },
+      "canonical": {
+        "attempts": 12,
+        "success_rate": 0.9166666666666666,
+        "statuses": {
+          "solved": 11,
+          "illegal_action": 1
+        }
+      }
+    },
+    "paired_gap": {
+      "paired_tasks": 6,
+      "mean": 0.0,
+      "task_bootstrap_95_interval": [
+        0.0,
+        0.0
+      ],
+      "note": "Exploratory task-cluster bootstrap; a tiny pilot cannot establish a general effect."
+    },
+    "by_depth": {
+      "1": {
+        "successes": 8,
+        "attempts": 8
+      },
+      "2": {
+        "successes": 8,
+        "attempts": 8
+      },
+      "3": {
+        "successes": 6,
+        "attempts": 8
+      }
+    },
+    "exact_uniform_legal_random_expectation": 0.09722222222222222,
+    "tasks_with_positive_frontier_score": 1,
+    "tasks_with_positive_robust_frontier_score": 1,
+    "proposals_attempted": 0,
+    "proposals_accepted": 0,
+    "llm_task_attempts": 0,
+    "llm_task_solved": 0,
+    "prompt_tokens": 4108,
+    "completion_tokens": 42933
+  },
+  "reasoning-on-dev": {
+    "complete": false,
+    "procedural_tasks": 7,
+    "procedural_attempts": 9,
+    "procedural_solved": 3,
+    "by_variant": {
+      "renamed_reordered": {
+        "attempts": 4,
+        "success_rate": 0.25,
+        "statuses": {
+          "truncated": 3,
+          "solved": 1
+        }
+      },
+      "canonical": {
+        "attempts": 5,
+        "success_rate": 0.4,
+        "statuses": {
+          "solved": 2,
+          "truncated": 3
+        }
+      }
+    },
+    "paired_gap": {
+      "paired_tasks": 2,
+      "mean": 0.0,
+      "task_bootstrap_95_interval": [
+        0.0,
+        0.0
+      ],
+      "note": "Exploratory task-cluster bootstrap; a tiny pilot cannot establish a general effect."
+    },
+    "by_depth": {
+      "1": {
+        "successes": 3,
+        "attempts": 3
+      },
+      "2": {
+        "successes": 0,
+        "attempts": 4
+      },
+      "3": {
+        "successes": 0,
+        "attempts": 2
+      }
+    },
+    "exact_uniform_legal_random_expectation": 0.1072048611111111,
+    "tasks_with_positive_frontier_score": 0,
+    "tasks_with_positive_robust_frontier_score": 0,
+    "proposals_attempted": 0,
+    "proposals_accepted": 0,
+    "llm_task_attempts": 0,
+    "llm_task_solved": 0,
+    "prompt_tokens": 1515,
+    "completion_tokens": 10646
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "complete": true,
+  "proposals_attempted": 8,
+  "accepted_tasks": 7,
+  "solver_attempts": 14,
+  "solver_successes": 13,
+  "statuses": {
+    "solved": 13,
+    "illegal_action": 1
+  },
+  "mixed_outcome_tasks": 1,
+  "model_calls": 22,
+  "elapsed_seconds": 677.3504439169999,
+  "training": false,
+  "adaptation": "proposer context only",
+  "feedback_mode": "none"
+}

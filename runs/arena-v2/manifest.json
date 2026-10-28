@@ -1,0 +1,123 @@
+{
+  "model": {
+    "model": "mlx-community/Qwen3-8B-4bit",
+    "revision": "545dc4251c05440727734bcd94334791f6ab0192"
+  },
+  "cycles": 2,
+  "environments": [
+    "market",
+    "maze",
+    "chess"
+  ],
+  "selfplay_episodes_per_game_per_cycle": 8,
+  "evaluation_scenario_seeds_per_game_opponent": 3,
+  "evaluation_seat_swaps": true,
+  "evaluation_opponents": [
+    "base",
+    "heuristic"
+  ],
+  "horizons": {
+    "market": 6,
+    "maze": 8,
+    "chess": 16
+  },
+  "optimizer": "Adam",
+  "learning_rate": 2e-05,
+  "epochs_per_cycle": 1,
+  "minibatch_size": 4,
+  "inference_batch_size": 8,
+  "clip_ratio": 0.2,
+  "entropy_coefficient": 0.01,
+  "kl_to_rollout_coefficient": 0.02,
+  "gradient_clip": 1.0,
+  "baseline": "leave-one-episode-out, environment and player conditioned",
+  "discount": 1.0,
+  "objective": "equal environment/episode/seat weight; sum action score gradients",
+  "training": "Fresh FP32 current-self rollouts; historical snapshots are evaluation only",
+  "external_spend_usd": 0,
+  "source_sha256": {
+    "selfplay/arena/chess_game.py": "83d821bf7e84190494df968bcc0827b3108c6a1b0f0ee1cc668f4d777349d9fd",
+    "selfplay/arena/market.py": "29a2e99e3ce06f00d43f2ed962a819981e8d444296aa7dd77c0ae5915461fe6f",
+    "selfplay/arena/policy.py": "339de4d0db9b9d1b8e9880bb06d563908274676da9d0570cde3f5f4ecab2b81e",
+    "selfplay/arena/__init__.py": "10b70b84f92d66332feb0b9dc83ab52660c4497a657a52d6cc5d547d39cd8714",
+    "selfplay/arena/experiment.py": "c18907d4a2b780acac99ab5f2cd63ebc6b8fd09a9f3f5e98b66bce50766a3545",
+    "selfplay/arena/maze.py": "686df22a88f11808000392cb57707e5ff6c06f1bf77d34a83f3f043690dbd1e2",
+    "docs/arena-rl-protocol.md": "12d5a379193f6a5ac915ae538bd38cbcae655485c5921fa5f4460f27ff693885",
+    "selfplay/league.py": "eec314c9951b61d7d1fedf99e817ab6299a7b22678f8a728fc93eddcadd51d0f",
+    "selfplay/arena_v2.py": "2f1ac32be224868c609e00145dbb499d0ef52995ae9f4e1670086a3aa3b774fd"
+  },
+  "versions": {
+    "mlx": "0.32.4",
+    "mlx-lm": "0.32.2",
+    "chess": "1.11.2",
+    "python-chess": "1.999",
+    "numpy": "2.5.4"
+  },
+  "experiment": "arena-v2",
+  "rating_compatibility": "arena-v2-fp32",
+  "policy_arithmetic": {
+    "floating_model_parameters": "float32",
+    "activation_arithmetic": "float32",
+    "quantized_integer_storage": "unchanged uint32 packed 4-bit weights",
+    "adapter_parameters": "float32",
+    "action_policy": "one-token legal categorical distribution",
+    "temperature": 1.0,
+    "thinking": false
+  },
+  "policy_arithmetic_sha256": "0dd0cf0c88a5ba9797be2255a52251d0649869f964e7f0369378eaf5a6ee8e81",
+  "parent_run": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/arena-v1",
+  "parent_manifest_sha256": "1b80549eeba970656f0c1c2e8b71b11fd227ee5b74f869559894c3250d57a1ff",
+  "parent_analysis_sha256": "855b13613c8716f70c356875a1d22c7c6fa4d6b848416ee7955ba0db0e9befe5",
+  "parent_complete": false,
+  "inherited_checkpoints": {
+    "base": {
+      "name": "base",
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/arena-v1/checkpoints/base",
+      "adapter_sha256": "5b8474d40ff5c8fc2e4e015a5caaa5ecd03ca23e13afe1cf8974b048bf12b5aa",
+      "metadata_sha256": "b318f2d4a495bed324f144c33248eed60bb4a6f4ea3509502df168e2b5270167"
+    },
+    "cycle1": {
+      "name": "cycle1",
+      "path": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/arena-v1/checkpoints/cycle1",
+      "adapter_sha256": "749a609ab5dade35f0ed8bab24e696766442e2d55cafb360df323dd879d4859d",
+      "metadata_sha256": "caf68e7af689249acff4716103953ac4505756bae48c6bfc8b13d3df67a8a113",
+      "training_summary_sha256": "08236f48953af5dad15d30a1d991e7358c85ca34454f0e5bc74e64b8189000d2"
+    }
+  },
+  "continuation_cycles": [
+    2,
+    3
+  ],
+  "initial_evaluation_stages": [
+    "eval-base-heuristic",
+    "eval-base-base",
+    "eval-cycle1-heuristic",
+    "eval-cycle1-base"
+  ],
+  "evaluation_rosters": {
+    "cycle2": [
+      "heuristic",
+      "base",
+      "cycle1"
+    ],
+    "cycle3": [
+      "heuristic",
+      "base",
+      "cycle2",
+      "cycle1"
+    ]
+  },
+  "maximum_roster": 8,
+  "deadline": "2026-10-22T08:00:00-07:00",
+  "rollout_chunk_episodes": 6,
+  "likelihood_tolerance": 0.002,
+  "likelihood_check": "Every legal-action probability in every training row before each update",
+  "precision_diagnostic_sha256": "b5993de1fc10ff5b8b16a286bbcf5120771e94fa0fa9dcdd9505272742fde725",
+  "precision_diagnostic": {
+    "conditions": 4,
+    "rows_per_condition": 32,
+    "max_full_vector_error": 3.814697265625e-05
+  },
+  "created_at": "2026-10-22T00:32:31.074806-07:00",
+  "deviation": "V1 stopped before its second update because BF16 likelihoods depended on batch geometry. V1 remains incomplete. V2 converts floating model tensors to FP32, reevaluates inherited base/cycle1, and starts two fresh training cycles. No V1 rollout trains a V2 update."
+}

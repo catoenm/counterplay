@@ -1,0 +1,145 @@
+Write a complete controller using the restricted Python syntax below. Output only Python source, no markdown.
+Exactly one function: def act(): . This function is parsed, checked and interpreted; Python itself is never executed.
+
+GAME: Two robots compete on a 7x7 grid, for 48 rounds. Homes are (0,3) and (6,3). Six initially
+mirror-symmetric resource sites are shared: either robot can harvest any site's finite units.
+Each unit has a point value. Move one cardinal cell or harvest one unit at your current cell, each
+costing one energy. Rest restores three energy up to ten. Cargo holds three units. Deposit at your
+own home banks all carried points. ONLY BANKED POINTS count when time expires. Maximize your points
+relative to the rival. Robots can share cells; random priority settles contested last units.
+Each round both controllers see the same pre-round state. Failed intents consume the round.
+
+READ-ONLY INTEGER SENSORS, used directly as bare variable names:
+player, turn, horizon, grid_size, self_x, self_y, home_x, home_y, energy, max_energy,
+carrying, capacity, score, opponent_x, opponent_y, opponent_energy, opponent_carrying,
+opponent_score, site_count. carrying is a unit count. site_count is always six here.
+Read a site using site(i, 'x'), site(i, 'y'), site(i, 'units'), site(i, 'value'). Indices are 0..5.
+
+LANGUAGE: scalar integer assignments; += -= *= //= %=; if/elif/else (else optional);
+for i in range(6): or another literal count 0..16; pass; return action dictionaries.
+Arithmetic + - * // %; comparisons < <= > >= == !=; and/or/not; abs(x), min(x,y), max(x,y).
+Conditional expressions (a if condition else b) and chained comparisons are supported.
+and/or and chained comparisons short-circuit. Loops cannot use break, continue or else.
+No while, imports, helpers, recursion, attributes, subscripts, lists, comprehensions, lambdas, strings
+as code, exponentiation, true division (/), keyword arguments, or other function calls.
+Strings are permitted only for action dictionary keys/names, site field names, and a function docstring.
+Use integer flags 0/1 instead of True/False. Local names start with a letter, contain only ASCII
+letters/digits/underscores, and contain no double underscore. Sensors and function names are reserved.
+Locals start at zero every turn. The special variables m0..m15 are persistent integer memory, initially
+zero once per game. Read and assign them directly without global/nonlocal declarations.
+
+Return exactly one of:
+{'action':'move', 'dx':DX, 'dy':DY} with abs(DX)+abs(DY)==1;
+{'action':'harvest'}; {'action':'deposit'}; {'action':'rest'}.
+The first return ends the turn. Out-of-grid moves, empty harvests, and away-from-home deposits fail.
+
+BOUNDS: <=16384 UTF-8 source bytes, <=2048 Python AST nodes and <=512 lowered IR nodes,
+<=32 lowered local names including compiler temporaries, nesting <=20 in lowered IR,
+<=2048 interpreter operations per turn, and sixteen memory slots. Arithmetic saturates at +/-1000000.
+Division by zero, operation exhaustion, invalid movement vectors or no return produce rest and discard
+that turn's memory writes. Faults are recorded. Keep code compact and avoid deeply nested conditions.
+Each variable, expression, statement and loop iteration costs interpreter operations.
+
+Minimal syntax-only example (not a useful strategy):
+def act():
+    return {'action': 'rest'}
+
+Write a strong, compact autonomous controller. Return only the complete act function. It will face unseen rival programs and maps.
+
+
+Previous controller from a separate model call:
+def act():
+    m0 = m0
+    m1 = m1
+    m2 = m2
+    m3 = m3
+    m4 = m4
+    m5 = m5
+    m6 = m6
+    m7 = m7
+    m8 = m8
+    m9 = m9
+    m10 = m10
+    m11 = m11
+    m12 = m12
+    m13 = m13
+    m14 = m14
+    m15 = m15
+    if m0 == 0:
+        m0 = 1
+        m1 = self_x
+        m2 = self_y
+        m3 = 0
+        m4 = 0
+        m5 = 0
+        m6 = 0
+        m7 = 0
+        m8 = 0
+        m9 = 0
+        m10 = 0
+        m11 = 0
+        m12 = 0
+        m13 = 0
+        m14 = 0
+        m15 = 0
+    if self_x == home_x and self_y == home_y:
+        if carrying > 0:
+            return {'action': 'deposit'}
+        if energy < 10:
+            return {'action': 'rest'}
+    best_site = -1
+    best_score = -1
+    for i in range(6):
+        if site(i, 'units') > 0:
+            sx = site(i, 'x')
+            sy = site(i, 'y')
+            dist_self = abs(self_x - sx) + abs(self_y - sy)
+            dist_home = abs(sx - home_x) + abs(sy - home_y)
+            dist_opp = abs(opponent_x - sx) + abs(opponent_y - sy)
+            val = site(i, 'value')
+            if dist_self + dist_home <= energy:
+                if dist_opp > dist_self:
+                    sc = val * 2
+                else:
+                    sc = val
+            else:
+                sc = 0
+            if sc > best_score:
+                best_score = sc
+                best_site = i
+    if best_site >= 0:
+        tx = site(best_site, 'x')
+        ty = site(best_site, 'y')
+        if self_x == tx and self_y == ty:
+            return {'action': 'harvest'}
+        dx = 0
+        dy = 0
+        if self_x < tx:
+            dx = 1
+        elif self_x > tx:
+            dx = -1
+        elif self_y < ty:
+            dy = 1
+        elif self_y > ty:
+            dy = -1
+        return {'action': 'move', 'dx': dx, 'dy': dy}
+    tx = home_x
+    ty = home_y
+    if self_x == tx and self_y == ty:
+        return {'action': 'rest'}
+    dx = 0
+    dy = 0
+    if self_x < tx:
+        dx = 1
+    elif self_x > tx:
+        dx = -1
+    elif self_y < ty:
+        dy = 1
+    elif self_y > ty:
+        dy = -1
+    return {'action': 'move', 'dx': dx, 'dy': dy}
+
+Factual practice results for that controller:
+{"practice_columns":["opponent","seed","seat","banked_points","opponent_banked_points","program_faults","failed_actions"],"practice_games":[["nearest",730000,0,0,21,0,40],["nearest",730000,1,0,21,0,38],["nearest",730001,0,0,18,0,40],["nearest",730001,1,0,18,0,38],["nearest",730002,0,0,26,0,38],["nearest",730002,1,0,26,0,38],["nearest",730003,0,0,8,0,41],["nearest",730003,1,0,8,0,41],["nearest",730004,0,0,22,0,38],["nearest",730004,1,0,22,0,38],["nearest",730005,0,0,19,0,39],["nearest",730005,1,0,19,0,38],["value",730000,0,0,20,0,40],["value",730000,1,0,20,0,38],["value",730001,0,0,21,0,39],["value",730001,1,0,21,0,38],["value",730002,0,0,24,0,38],["value",730002,1,0,24,0,38],["value",730003,0,0,8,0,41],["value",730003,1,0,8,0,41],["value",730004,0,0,24,0,39],["value",730004,1,0,24,0,38],["value",730005,0,0,23,0,39],["value",730005,1,0,23,0,38]],"trace_columns":["turn","x","y","energy","cargo_units","action","outcome","program_fault","banked_points","opponent_banked_points"],"trace_selection":"First8 and last8 turns from nearest/seed730000, both seats; fixed before local sampling","traces":[{"opponent":"nearest","rows":[[0,0,3,10,0,{"action":"move","dx":1,"dy":0},"moved",null,0,0],[1,1,3,9,0,{"action":"move","dx":0,"dy":1},"moved",null,0,0],[2,1,4,8,0,{"action":"move","dx":0,"dy":1},"moved",null,0,0],[3,1,5,7,0,{"action":"harvest"},"harvested",null,0,0],[4,1,5,6,1,{"action":"harvest"},"harvested",null,0,0],[5,1,5,5,2,{"action":"move","dx":1,"dy":0},"moved",null,0,0],[6,2,5,4,2,{"action":"harvest"},"harvested",null,0,0],[7,2,5,3,3,{"action":"move","dx":0,"dy":-1},"moved",null,0,0],[40,2,4,2,3,{"action":"harvest"},"cargo_full",null,0,14],[41,2,4,2,3,{"action":"harvest"},"cargo_full",null,0,14],[42,2,4,2,3,{"action":"harvest"},"cargo_full",null,0,14],[43,2,4,2,3,{"action":"harvest"},"cargo_full",null,0,14],[44,2,4,2,3,{"action":"harvest"},"cargo_full",null,0,14],[45,2,4,2,3,{"action":"harvest"},"cargo_full",null,0,14],[46,2,4,2,3,{"action":"harvest"},"cargo_full",null,0,21],[47,2,4,2,3,{"action":"harvest"},"cargo_full",null,0,21]],"seat":0,"seed":730000},{"opponent":"nearest","rows":[[0,6,3,10,0,{"action":"move","dx":-1,"dy":0},"moved",null,0,0],[1,5,3,9,0,{"action":"move","dx":0,"dy":1},"moved",null,0,0],[2,5,4,8,0,{"action":"move","dx":0,"dy":1},"moved",null,0,0],[3,5,5,7,0,{"action":"harvest"},"harvested",null,0,0],[4,5,5,6,1,{"action":"harvest"},"harvested",null,0,0],[5,5,5,5,2,{"action":"move","dx":-1,"dy":0},"moved",null,0,0],[6,4,5,4,2,{"action":"harvest"},"harvested",null,0,0],[7,4,5,3,3,{"action":"move","dx":-1,"dy":0},"moved",null,0,0],[40,2,4,0,3,{"action":"move","dx":1,"dy":0},"no_energy",null,0,14],[41,2,4,0,3,{"action":"move","dx":1,"dy":0},"no_energy",null,0,14],[42,2,4,0,3,{"action":"move","dx":1,"dy":0},"no_energy",null,0,14],[43,2,4,0,3,{"action":"move","dx":1,"dy":0},"no_energy",null,0,14],[44,2,4,0,3,{"action":"move","dx":1,"dy":0},"no_energy",null,0,14],[45,2,4,0,3,{"action":"move","dx":1,"dy":0},"no_energy",null,0,14],[46,2,4,0,3,{"action":"move","dx":1,"dy":0},"no_energy",null,0,21],[47,2,4,0,3,{"action":"move","dx":1,"dy":0},"no_energy",null,0,21]],"seat":1,"seed":730000}]}
+
+Write a revised complete controller using the same restricted syntax. Return only the complete act function. It will be evaluated on unseen maps and opponents.

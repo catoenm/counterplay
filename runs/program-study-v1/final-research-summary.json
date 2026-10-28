@@ -1,0 +1,325 @@
+{
+  "kind": "completed_matched_program_study_research_summary",
+  "created_at": "2026-10-22T12:51:18.907269+00:00",
+  "run": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/program-study-v1",
+  "source_audit_sha256": "a1bdd43bbd52fd06e8110dbc84fcd8572301e211bc220b2fe0399ef9dcdde15d",
+  "source_status_sha256": "8b48b91be88ba3b058358f0d4c3149cb565b8836482b53c2c880964b864e3260",
+  "manifest_sha256": "18a864e0903bfcd68cade9db252ba743ec33213c4e3139d7d76cc484bbef2efe",
+  "planned_study_complete": true,
+  "method": "Aggregate audited per-controller holdout rows with all prescribed authoring draws retained. Invalid authorship has zero end-to-end yield and no fabricated replay. Classifications and paired token identities are read from hash-bound committed evaluation/generation artifacts. No new neural calls or gameplay.",
+  "counts": {
+    "authoring_draws": 92,
+    "evaluation_draws": 36,
+    "optimizer_updates": 6,
+    "gradient_completion_tokens": 39480,
+    "verified_distinct_replays": 426,
+    "holdout_games": 432,
+    "all_scored_evaluation_games": 720,
+    "training_games": 288
+  },
+  "holdout_cells": {
+    "base/compact/holdout": {
+      "n": 8,
+      "mean_banked_point_yield": 0.0,
+      "per_program_yields": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "classifications": {
+        "generation_length": 5,
+        "invalid_bounded_python": 2,
+        "authorship_valid": 1
+      },
+      "invalid_no_game_programs": 7,
+      "compiled_programs": 1,
+      "runtime_fault_programs": 0,
+      "fault_free_programs": 1,
+      "candidate_runtime_faults": 0,
+      "opponent_runtime_faults": 0,
+      "all_rest_programs": 1,
+      "played_games": 48,
+      "source_scored_artifact_sha256": "a8d78a7ca1600a46ea65cc0d620461d42030ea999e76ecb39bd6211b95d67148"
+    },
+    "base/plain/holdout": {
+      "n": 4,
+      "mean_banked_point_yield": 0.0,
+      "per_program_yields": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "classifications": {
+        "authorship_valid": 2,
+        "invalid_bounded_python": 2
+      },
+      "invalid_no_game_programs": 2,
+      "compiled_programs": 2,
+      "runtime_fault_programs": 0,
+      "fault_free_programs": 2,
+      "candidate_runtime_faults": 0,
+      "opponent_runtime_faults": 0,
+      "all_rest_programs": 0,
+      "played_games": 96,
+      "source_scored_artifact_sha256": "c967f8b786b47babd11e10456e278233084ac99b0fb0a27313bb390318b545e2"
+    },
+    "game_rl-round3/compact/holdout": {
+      "n": 8,
+      "mean_banked_point_yield": 0.0,
+      "per_program_yields": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "classifications": {
+        "generation_length": 5,
+        "invalid_bounded_python": 2,
+        "authorship_valid": 1
+      },
+      "invalid_no_game_programs": 7,
+      "compiled_programs": 1,
+      "runtime_fault_programs": 0,
+      "fault_free_programs": 1,
+      "candidate_runtime_faults": 0,
+      "opponent_runtime_faults": 0,
+      "all_rest_programs": 1,
+      "played_games": 48,
+      "source_scored_artifact_sha256": "c0aa62a40d4462e712478281209b8fb49474b85a35948853c98c44825246f6f9"
+    },
+    "game_rl-round3/plain/holdout": {
+      "n": 4,
+      "mean_banked_point_yield": 0.0,
+      "per_program_yields": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "classifications": {
+        "authorship_valid": 2,
+        "invalid_bounded_python": 2
+      },
+      "invalid_no_game_programs": 2,
+      "compiled_programs": 2,
+      "runtime_fault_programs": 0,
+      "fault_free_programs": 2,
+      "candidate_runtime_faults": 0,
+      "opponent_runtime_faults": 0,
+      "all_rest_programs": 0,
+      "played_games": 96,
+      "source_scored_artifact_sha256": "2b0b98f9a26c31bcf50adb9588309a2fab49cca8404878c53374ec47ab277463"
+    },
+    "validity_rl-round3/compact/holdout": {
+      "n": 8,
+      "mean_banked_point_yield": 0.0,
+      "per_program_yields": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "classifications": {
+        "generation_length": 5,
+        "invalid_bounded_python": 2,
+        "authorship_valid": 1
+      },
+      "invalid_no_game_programs": 7,
+      "compiled_programs": 1,
+      "runtime_fault_programs": 0,
+      "fault_free_programs": 1,
+      "candidate_runtime_faults": 0,
+      "opponent_runtime_faults": 0,
+      "all_rest_programs": 1,
+      "played_games": 48,
+      "source_scored_artifact_sha256": "85743c2abdff8a79f225d2246cc1ea55fcb97a941d9b873a694cc7ac219f3291"
+    },
+    "validity_rl-round3/plain/holdout": {
+      "n": 4,
+      "mean_banked_point_yield": 0.0,
+      "per_program_yields": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "classifications": {
+        "authorship_valid": 2,
+        "invalid_bounded_python": 2
+      },
+      "invalid_no_game_programs": 2,
+      "compiled_programs": 2,
+      "runtime_fault_programs": 0,
+      "fault_free_programs": 2,
+      "candidate_runtime_faults": 0,
+      "opponent_runtime_faults": 0,
+      "all_rest_programs": 0,
+      "played_games": 96,
+      "source_scored_artifact_sha256": "2f3ec79d5005178fe86b1cafc676eb5019ff306f56430e9ad6979f959d0b7294"
+    }
+  },
+  "contrasts": {
+    "game_rl-minus-base/compact": {
+      "program_cluster_n": 8,
+      "paired_generation_seeds": [
+        8300000,
+        8300001,
+        8300002,
+        8300003,
+        8300004,
+        8300005,
+        8300006,
+        8300007
+      ],
+      "raw_paired_banked_yield_differences": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_difference": 0.0,
+      "training_seeds_per_arm": 1
+    },
+    "game_rl-minus-validity_rl-round3/compact": {
+      "program_cluster_n": 8,
+      "paired_generation_seeds": [
+        8300000,
+        8300001,
+        8300002,
+        8300003,
+        8300004,
+        8300005,
+        8300006,
+        8300007
+      ],
+      "raw_paired_banked_yield_differences": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_difference": 0.0,
+      "training_seeds_per_arm": 1
+    },
+    "game_rl-minus-base/plain": {
+      "program_cluster_n": 4,
+      "paired_generation_seeds": [
+        8400000,
+        8400001,
+        8400002,
+        8400003
+      ],
+      "raw_paired_banked_yield_differences": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_difference": 0.0,
+      "training_seeds_per_arm": 1
+    },
+    "game_rl-minus-validity_rl-round3/plain": {
+      "program_cluster_n": 4,
+      "paired_generation_seeds": [
+        8400000,
+        8400001,
+        8400002,
+        8400003
+      ],
+      "raw_paired_banked_yield_differences": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_difference": 0.0,
+      "training_seeds_per_arm": 1
+    }
+  },
+  "checkpoint_provenance": {
+    "base": {
+      "metadata_sha256": "ff908d9afa5fb1ee0a3c80207dfd710228001b84ac341a2927f0422477987ffa",
+      "parent": null,
+      "files": {
+        "adapter.safetensors": "02cd0d058ffc3354deb5b9da9b7aca20f2c5445f8dde27232f0c298ad0c84598",
+        "optimizer.safetensors": "7f7bd0b7e3febbfd4b5222a0df698a563f1b3f722dbbf15c841b62e581e4e81a"
+      },
+      "model_repo": "mlx-community/Qwen3.8-27B-4bit",
+      "model_revision": "10c35caafbb80f7dc6a7a432cdd11af10a6d4818",
+      "optimizer_steps": 0
+    },
+    "game_rl-round3": {
+      "metadata_sha256": "d08ad9b15fbe68ff4aac8cafd985657c5ccb98e58be6deec97819046f6c601ea",
+      "parent": "game_rl-round2",
+      "files": {
+        "adapter.safetensors": "ca78b8b7480339295d8caa5877bcce9fe30a417c531bdf7f0da119513e8eac78",
+        "optimizer.safetensors": "9af7245e50a635a2359d3670d2d94324531fce97c2c279c6d25491bf1069cd54"
+      },
+      "model_repo": "mlx-community/Qwen3.8-27B-4bit",
+      "model_revision": "10c35caafbb80f7dc6a7a432cdd11af10a6d4818",
+      "optimizer_steps": 3
+    },
+    "validity_rl-round3": {
+      "metadata_sha256": "84fc2de330d7f07ef002a180cd7d642d0c1e939416d1ed8325d5c7b38a165e72",
+      "parent": "validity_rl-round2",
+      "files": {
+        "adapter.safetensors": "60adf5e90be991f10594a8b65959a5d7ce2fc26f9cedc3caba7a54cbbcba47a4",
+        "optimizer.safetensors": "3b9815bb6bc3330d0e2c7598965a7f02bc614e7f357639ad355074d8893085ef"
+      },
+      "model_repo": "mlx-community/Qwen3.8-27B-4bit",
+      "model_revision": "10c35caafbb80f7dc6a7a432cdd11af10a6d4818",
+      "optimizer_steps": 3
+    }
+  },
+  "paired_completion_identity": {
+    "game_rl-round3-versus-base/compact": {
+      "paired_draws": 8,
+      "exact_completion_token_matches": 8,
+      "max_recorded_token_logprob_difference_for_exact_token_pairs": 0.00321197509765625
+    },
+    "validity_rl-round3-versus-base/compact": {
+      "paired_draws": 8,
+      "exact_completion_token_matches": 8,
+      "max_recorded_token_logprob_difference_for_exact_token_pairs": 0.00323486328125
+    },
+    "game_rl-round3-versus-base/plain": {
+      "paired_draws": 4,
+      "exact_completion_token_matches": 4,
+      "max_recorded_token_logprob_difference_for_exact_token_pairs": 0.0022125244140625
+    },
+    "validity_rl-round3-versus-base/plain": {
+      "paired_draws": 4,
+      "exact_completion_token_matches": 4,
+      "max_recorded_token_logprob_difference_for_exact_token_pairs": 0.002231597900390625
+    }
+  },
+  "limits": [
+    "All observed yield contrasts are zero; this floor result does not establish model equivalence or rule out a useful future training intervention.",
+    "Compact n=8 and plain n=4 generated-controller draws per endpoint are sampling units. Replayed games are repeated correlated measurements, not independent model samples.",
+    "Only one training seed per arm, three updates per arm and a fixed opponent pool; no continual population learning claim.",
+    "The primary condition has five length-limited outputs per endpoint at the unchanged 1024-token cap. This is an authoring/interface limitation in this evaluated configuration.",
+    "CPU audit checks archived game replay, provenance, real adapter/optimizer values and saved numerical gate summaries; it does not rerun neural likelihoods."
+  ]
+}

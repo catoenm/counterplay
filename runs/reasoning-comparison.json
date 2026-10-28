@@ -1,0 +1,58 @@
+{
+  "unique_tasks": 6,
+  "paired_responses": 24,
+  "success_difference": 0.7916666666666666,
+  "exploratory_task_bootstrap_95_interval": [
+    0.5416666666666666,
+    1.0
+  ],
+  "warning": "Very small adaptive development study; inference improvement is not weight learning or generalization.",
+  "thinking_on": {
+    "successes": 22,
+    "attempts": 24,
+    "success_rate": 0.9166666666666666,
+    "successful_tasks": 6,
+    "statuses": {
+      "solved": 22,
+      "truncated": 1,
+      "illegal_action": 1
+    },
+    "completion_tokens": 42933,
+    "prompt_tokens": 4108,
+    "successes_per_1000_completion_tokens": 0.5124263387138099,
+    "by_variant": {
+      "renamed_reordered": {
+        "successes": 11,
+        "attempts": 12
+      },
+      "canonical": {
+        "successes": 11,
+        "attempts": 12
+      }
+    }
+  },
+  "thinking_off": {
+    "successes": 3,
+    "attempts": 24,
+    "success_rate": 0.125,
+    "successful_tasks": 1,
+    "statuses": {
+      "wrong_goal": 20,
+      "solved": 3,
+      "over_budget": 1
+    },
+    "completion_tokens": 444,
+    "prompt_tokens": 4204,
+    "successes_per_1000_completion_tokens": 6.756756756756757,
+    "by_variant": {
+      "renamed_reordered": {
+        "successes": 1,
+        "attempts": 12
+      },
+      "canonical": {
+        "successes": 2,
+        "attempts": 12
+      }
+    }
+  }
+}

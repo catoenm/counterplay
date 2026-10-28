@@ -1,0 +1,474 @@
+{
+  "arena_analysis_sha256": "2fa787fa87b56a8b6505127d9a4832b325a2a4fc68ce37aa8c60b3fd222c7cee",
+  "arena_manifest_sha256": "77e041c4ff6ecf5d6b68afcb5b4cdbcca9d51ccbf73b0fa4028e757d0d602257",
+  "controller_tournament": {
+    "identity": "controller authoring versions, not RL checkpoints",
+    "matches_sha256": "758a2ecc00a4e034aa7e3ef6299a0ae7daec4a90f1c8962ae69af047c90959f0",
+    "peer_pairs": {
+      "controller-python-1 vs qwen38-27b-1": {
+        "games": 12,
+        "games_both_bank_positive": 0,
+        "games_both_bank_zero": 0,
+        "games_both_successfully_harvest_same_site": 4,
+        "games_with_last_unit_contest": 8,
+        "last_unit_contests": 9,
+        "simultaneous_same_cell_harvest_rounds": 20
+      },
+      "controller-python-1 vs qwen38-27b-1-r2": {
+        "games": 12,
+        "games_both_bank_positive": 12,
+        "games_both_bank_zero": 0,
+        "games_both_successfully_harvest_same_site": 4,
+        "games_with_last_unit_contest": 0,
+        "last_unit_contests": 0,
+        "simultaneous_same_cell_harvest_rounds": 0
+      },
+      "controller-python-1 vs qwen38-27b-2": {
+        "games": 12,
+        "games_both_bank_positive": 0,
+        "games_both_bank_zero": 0,
+        "games_both_successfully_harvest_same_site": 0,
+        "games_with_last_unit_contest": 0,
+        "last_unit_contests": 0,
+        "simultaneous_same_cell_harvest_rounds": 0
+      },
+      "controller-python-1 vs qwen38-27b-2-r2": {
+        "games": 12,
+        "games_both_bank_positive": 0,
+        "games_both_bank_zero": 0,
+        "games_both_successfully_harvest_same_site": 0,
+        "games_with_last_unit_contest": 0,
+        "last_unit_contests": 0,
+        "simultaneous_same_cell_harvest_rounds": 0
+      },
+      "qwen38-27b-1 vs qwen38-27b-1-r2": {
+        "games": 12,
+        "games_both_bank_positive": 0,
+        "games_both_bank_zero": 0,
+        "games_both_successfully_harvest_same_site": 2,
+        "games_with_last_unit_contest": 4,
+        "last_unit_contests": 4,
+        "simultaneous_same_cell_harvest_rounds": 12
+      },
+      "qwen38-27b-1 vs qwen38-27b-2": {
+        "games": 12,
+        "games_both_bank_positive": 0,
+        "games_both_bank_zero": 12,
+        "games_both_successfully_harvest_same_site": 0,
+        "games_with_last_unit_contest": 0,
+        "last_unit_contests": 0,
+        "simultaneous_same_cell_harvest_rounds": 0
+      },
+      "qwen38-27b-1 vs qwen38-27b-2-r2": {
+        "games": 12,
+        "games_both_bank_positive": 0,
+        "games_both_bank_zero": 12,
+        "games_both_successfully_harvest_same_site": 0,
+        "games_with_last_unit_contest": 0,
+        "last_unit_contests": 0,
+        "simultaneous_same_cell_harvest_rounds": 0
+      },
+      "qwen38-27b-1-r2 vs qwen38-27b-2": {
+        "games": 12,
+        "games_both_bank_positive": 0,
+        "games_both_bank_zero": 0,
+        "games_both_successfully_harvest_same_site": 0,
+        "games_with_last_unit_contest": 0,
+        "last_unit_contests": 0,
+        "simultaneous_same_cell_harvest_rounds": 0
+      },
+      "qwen38-27b-1-r2 vs qwen38-27b-2-r2": {
+        "games": 12,
+        "games_both_bank_positive": 0,
+        "games_both_bank_zero": 0,
+        "games_both_successfully_harvest_same_site": 0,
+        "games_with_last_unit_contest": 0,
+        "last_unit_contests": 0,
+        "simultaneous_same_cell_harvest_rounds": 0
+      },
+      "qwen38-27b-2 vs qwen38-27b-2-r2": {
+        "games": 12,
+        "games_both_bank_positive": 0,
+        "games_both_bank_zero": 12,
+        "games_both_successfully_harvest_same_site": 0,
+        "games_with_last_unit_contest": 0,
+        "last_unit_contests": 0,
+        "simultaneous_same_cell_harvest_rounds": 0
+      }
+    },
+    "resource_interactions": {
+      "all": {
+        "games": 252,
+        "games_both_bank_positive": 76,
+        "games_both_bank_zero": 36,
+        "games_both_successfully_harvest_same_site": 54,
+        "games_with_last_unit_contest": 24,
+        "last_unit_contests": 25,
+        "simultaneous_same_cell_harvest_rounds": 65
+      },
+      "fixed_reference": {
+        "games": 120,
+        "games_both_bank_positive": 52,
+        "games_both_bank_zero": 0,
+        "games_both_successfully_harvest_same_site": 38,
+        "games_with_last_unit_contest": 10,
+        "last_unit_contests": 10,
+        "simultaneous_same_cell_harvest_rounds": 27
+      },
+      "peer_crossplay": {
+        "games": 120,
+        "games_both_bank_positive": 12,
+        "games_both_bank_zero": 36,
+        "games_both_successfully_harvest_same_site": 10,
+        "games_with_last_unit_contest": 12,
+        "last_unit_contests": 13,
+        "simultaneous_same_cell_harvest_rounds": 32
+      },
+      "scripted_anchor": {
+        "games": 12,
+        "games_both_bank_positive": 12,
+        "games_both_bank_zero": 0,
+        "games_both_successfully_harvest_same_site": 6,
+        "games_with_last_unit_contest": 2,
+        "last_unit_contests": 2,
+        "simultaneous_same_cell_harvest_rounds": 6
+      }
+    },
+    "summary_sha256": "8f86a6afbcb0cea6bcd5d638f236e2f85a53b36a37252a1c7efc520355f285dc",
+    "weight_training": false
+  },
+  "end_conditions": {
+    "chess": {
+      "eval": {
+        "endings": {
+          "checkmate": 1,
+          "claimed_threefold_repetition": 1,
+          "material_adjudication_at_cap": 64
+        },
+        "episodes": 66,
+        "regimes": {
+          "eval": 66
+        }
+      },
+      "train": {
+        "endings": {
+          "claimed_threefold_repetition": 1,
+          "material_adjudication_at_cap": 15
+        },
+        "episodes": 16,
+        "regimes": {
+          "train": 16
+        }
+      }
+    },
+    "market": {
+      "eval": {
+        "endings": {
+          "settlement": 66
+        },
+        "episodes": 66,
+        "regimes": {
+          "eval": 66
+        }
+      },
+      "train": {
+        "endings": {
+          "settlement": 16
+        },
+        "episodes": 16,
+        "regimes": {
+          "train": 16
+        }
+      }
+    },
+    "maze": {
+      "eval": {
+        "endings": {
+          "distance_adjudication_at_cap": 36,
+          "goal": 27,
+          "simultaneous_finish": 3
+        },
+        "episodes": 66,
+        "regimes": {
+          "eval": 66
+        }
+      },
+      "train": {
+        "endings": {
+          "distance_adjudication_at_cap": 16
+        },
+        "episodes": 16,
+        "regimes": {
+          "train": 16
+        }
+      }
+    }
+  },
+  "episode_files_verified_against_analysis": {
+    "eval-base-base.jsonl": {
+      "episodes": 18,
+      "sha256": "cb5acefa03604223507d9fb2f750e2cd8e58d5cd152f10568c98a39383eee3c2"
+    },
+    "eval-base-heuristic.jsonl": {
+      "episodes": 18,
+      "sha256": "f56edbbb144e314fceef0acf5e8d635fc7812bced0f5ead90c7fba4bcb6f3465"
+    },
+    "eval-cycle1-base.jsonl": {
+      "episodes": 18,
+      "sha256": "394189a731f67cac7a1ad90f9ef69b86b3eff0cc4a7a26c45034559c84ae6aeb"
+    },
+    "eval-cycle1-heuristic.jsonl": {
+      "episodes": 18,
+      "sha256": "d51007e387541baf964454665405f378e1a144d6d23e9c1f777af65190d17338"
+    },
+    "eval-cycle2-base.jsonl": {
+      "episodes": 18,
+      "sha256": "ded1dcd908e130e101d58eed142d450271bee5c7e57b1511f9bc3da0f5bed8a3"
+    },
+    "eval-cycle2-cycle1.jsonl": {
+      "episodes": 18,
+      "sha256": "725ec563a62233acc1b36165adbe9d0b9c5893e345382bfbacff64cdb412e27e"
+    },
+    "eval-cycle2-heuristic.jsonl": {
+      "episodes": 18,
+      "sha256": "c4f1947d91669e85505195911aea9a42b2ff47196c65fe47646dcbb66045e7bc"
+    },
+    "eval-cycle3-base.jsonl": {
+      "episodes": 18,
+      "sha256": "45c014dda83e697876fbfc168e9fbc08deefa73098fac76558999ba34bd74ee4"
+    },
+    "eval-cycle3-cycle1.jsonl": {
+      "episodes": 18,
+      "sha256": "45a2ef5c5cc4bad02720d99f1957971d24dc466415345d72a683f41d3d76e3ea"
+    },
+    "eval-cycle3-cycle2.jsonl": {
+      "episodes": 18,
+      "sha256": "e83635e01e9ea7b5baa6974866278b592aed6085ce568dcc71dcaa9ff2eb26b4"
+    },
+    "eval-cycle3-heuristic.jsonl": {
+      "episodes": 18,
+      "sha256": "068a760ed2c8a74c51541adedd247514106e46fad78695660ececf07966debbc"
+    },
+    "train-rollouts-2.jsonl": {
+      "episodes": 24,
+      "sha256": "5baf8cd65a23f28d63833b3d676e506f68dea5282e28602b0f14bd570e08b297"
+    },
+    "train-rollouts-3.jsonl": {
+      "episodes": 24,
+      "sha256": "687519ed1604d722748138616be5c9ce4bf6a205f780c65d0a97acc7f3000f45"
+    }
+  },
+  "feedback": {
+    "four_revision_calls_cost_usd": 0.004523628,
+    "holdout": {
+      "qwen38-27b-1": {
+        "banked_points": 0,
+        "decision_turns": 1152,
+        "draws": 0,
+        "failed_game_actions": 929,
+        "fault_types": {},
+        "games": 24,
+        "losses": 24,
+        "mean_banked_points": 0.0,
+        "mean_return": -0.5615421455938698,
+        "opponent_banked_points": 618,
+        "program_faults": 0,
+        "return_sum": -13.477011494252876,
+        "wins": 0
+      },
+      "qwen38-27b-1-r2": {
+        "banked_points": 542,
+        "decision_turns": 1152,
+        "draws": 16,
+        "failed_game_actions": 1,
+        "fault_types": {},
+        "games": 24,
+        "losses": 5,
+        "mean_banked_points": 22.583333333333332,
+        "mean_return": -0.015102171136653894,
+        "opponent_banked_points": 557,
+        "program_faults": 0,
+        "return_sum": -0.36245210727969346,
+        "wins": 3
+      },
+      "qwen38-27b-2": {
+        "banked_points": 0,
+        "decision_turns": 1152,
+        "draws": 0,
+        "failed_game_actions": 0,
+        "fault_types": {},
+        "games": 24,
+        "losses": 24,
+        "mean_banked_points": 0.0,
+        "mean_return": -0.5670019157088123,
+        "opponent_banked_points": 620,
+        "program_faults": 0,
+        "return_sum": -13.608045977011495,
+        "wins": 0
+      },
+      "qwen38-27b-2-r2": {
+        "banked_points": 12,
+        "decision_turns": 1152,
+        "draws": 0,
+        "failed_game_actions": 0,
+        "fault_types": {
+          "invalid_move": 1126
+        },
+        "games": 24,
+        "losses": 24,
+        "mean_banked_points": 0.5,
+        "mean_return": -0.5545019157088122,
+        "opponent_banked_points": 620,
+        "program_faults": 1126,
+        "return_sum": -13.308045977011494,
+        "wins": 0
+      }
+    },
+    "summary_sha256": "55d0fdc8118f68d997805f5e2036680927f45b036701808e8fc15c89cafde268",
+    "weight_training": false
+  },
+  "fixed_opponent_macro_returns": {
+    "base": {
+      "available_environment_opponent_cells": 6,
+      "mean_return": -0.25217115186645706,
+      "note": "Equal weight for each environment and fixed opponent; compare only complete six-cell checkpoints."
+    },
+    "cycle1": {
+      "available_environment_opponent_cells": 6,
+      "mean_return": -0.3035901385385385,
+      "note": "Equal weight for each environment and fixed opponent; compare only complete six-cell checkpoints."
+    },
+    "cycle2": {
+      "available_environment_opponent_cells": 6,
+      "mean_return": -0.2969145429543802,
+      "note": "Equal weight for each environment and fixed opponent; compare only complete six-cell checkpoints."
+    },
+    "cycle3": {
+      "available_environment_opponent_cells": 6,
+      "mean_return": -0.2571304177532439,
+      "note": "Equal weight for each environment and fixed opponent; compare only complete six-cell checkpoints."
+    }
+  },
+  "format_version": 1,
+  "interpretation": [
+    "The record demonstrates two completed fresh FP32 play/update/evaluate cycles with changing LoRA parameters and replayable environments; it does not demonstrate monotonic or unlimited improvement.",
+    "All maze training episodes and 15/16 chess training episodes ended under proxy cap rewards; there were no training maze goal finishes or chess checkmates.",
+    "Market settlement and controller banked points are actual defined finite-horizon objectives, not substitute end-condition adjudications. Positive relative market reward can coexist with negative absolute PnL.",
+    "Historical policies were evaluated, not sampled as training opponents. This is current-self training with historical evaluation, not population-based league training.",
+    "Cycle3 fixed-opponent macro return improves over inherited cycle1 but remains slightly below base; three scenario clusters, reused opponents and proxy rewards preclude a robust broad-improvement claim.",
+    "Controller feedback improved one of two lineages on untouched seeds; the other remains faulty. Thirty-six of 120 model-peer tournament games are zero-score draws, showing that weak opponents can provide no outcome learning signal.",
+    "The controller tournament demonstrates real deterministic execution and some shared-resource competition, not learned weight changes or an automatically growing curriculum."
+  ],
+  "limits": {
+    "evaluation_episodes": 198,
+    "historical_opponents_used_in_training": false,
+    "independent_evaluation_scenarios_per_game_opponent": 3,
+    "new_fp32_training_cycles": 2,
+    "ood_evaluation_episodes": 0,
+    "policy_arithmetic_pool": "arena-v2-fp32",
+    "standard_start_chess_episodes": 0,
+    "training_episodes": 48,
+    "training_episodes_per_environment": 16
+  },
+  "opponent_interactions": {
+    "chess": {
+      "eval": {
+        "captures": 72,
+        "noncap_episodes": [
+          {
+            "episode_id": "arena-v2-eval-base-heuristic-chess-0-1",
+            "finish_reason": "checkmate",
+            "policies": [
+              "heuristic",
+              "base"
+            ],
+            "returns": [
+              1.0,
+              -1.0
+            ]
+          },
+          {
+            "episode_id": "arena-v2-eval-cycle1-heuristic-chess-1-1",
+            "finish_reason": "claimed_threefold_repetition",
+            "policies": [
+              "heuristic",
+              "cycle1"
+            ],
+            "returns": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "promotions": 22
+      },
+      "train": {
+        "captures": 9,
+        "noncap_episodes": [
+          {
+            "episode_id": "arena-v2-train-2-chess-5",
+            "finish_reason": "claimed_threefold_repetition",
+            "policies": [
+              "cycle1",
+              "cycle1"
+            ],
+            "returns": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "promotions": 6
+      }
+    },
+    "market": {
+      "eval": {
+        "both_learners_negative_pnl": 3,
+        "both_learners_positive_pnl": 20,
+        "direct_learner_fills": 72,
+        "direct_learner_units": 72,
+        "episodes_with_direct_learner_trade": 38,
+        "fills_involving_either_learner": 377,
+        "positive_reward_winner_with_negative_absolute_pnl": 3,
+        "total_trade_fills": 433
+      },
+      "train": {
+        "both_learners_negative_pnl": 4,
+        "both_learners_positive_pnl": 3,
+        "direct_learner_fills": 19,
+        "direct_learner_units": 22,
+        "episodes_with_direct_learner_trade": 13,
+        "fills_involving_either_learner": 102,
+        "positive_reward_winner_with_negative_absolute_pnl": 4,
+        "total_trade_fills": 119
+      }
+    },
+    "maze": {
+      "eval": {
+        "blocks_placed": 255,
+        "cancelled_blocks": 10,
+        "goal_finishes_by_policy": {
+          "base": 5,
+          "cycle1": 3,
+          "cycle2": 3,
+          "cycle3": 6,
+          "heuristic": 16
+        },
+        "initial_shortest_distances": {
+          "4": 66
+        }
+      },
+      "train": {
+        "blocks_placed": 64,
+        "cancelled_blocks": 1,
+        "goal_finishes_by_policy": {},
+        "initial_shortest_distances": {
+          "4": 9,
+          "6": 6,
+          "8": 1
+        }
+      }
+    }
+  },
+  "scope": "Read-only research-quality audit of saved verified results; no new neural/API calls and no frozen-source edits."
+}

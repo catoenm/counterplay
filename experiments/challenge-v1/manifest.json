@@ -1,0 +1,12 @@
+{
+  "training": false,
+  "model": "mlx-community/Qwen3-4B-4bit",
+  "revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+  "protocol_sha256": "f4efe60d3a2e43c530909b518bd317cdcedd280b068ec9befbb92fa9c49bae62",
+  "excluded_families": 2311,
+  "files": {
+    "procedural.jsonl": "cf54a52d1d2d957577c5bbaca80546c04b293c55421b66392cf8dfe1779a0603",
+    "excluded.json": "30092483cd303ef2a7d19afe8497c55fb006fdd81cde97ea4643db59a95a41a5",
+    "protocol.md": "f4efe60d3a2e43c530909b518bd317cdcedd280b068ec9befbb92fa9c49bae62"
+  }
+}

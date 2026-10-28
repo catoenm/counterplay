@@ -1,0 +1,101 @@
+<div id="agent-challenge">
+  <h2>An agent-generated challenge</h2>
+  <div class="viz-row text-small"><span>Qwen proposer → executable arbiter → Qwen solver</span></div>
+  <div class="viz-row text-small"><span id="ac-valid"></span><span>Witness hidden from solver</span></div>
+  <div class="viz-controls">
+    <label class="form-label">Recorded trajectory<select class="form-select" id="ac-trace"></select></label>
+  </div>
+  <svg class="ac-map" role="img" aria-labelledby="ac-title ac-description">
+    <title id="ac-title">Verified state transitions in an agent-generated puzzle</title>
+    <desc id="ac-description">A square marks the start, a diamond marks the target, and a circle marks the current state. The view is cropped around the recorded trajectories. Select a recorded witness or solver attempt and step through its actions.</desc>
+    <g id="ac-grid"></g><path id="ac-path" fill="none"></path>
+    <rect id="ac-start" width="8" height="8"></rect><path id="ac-target"></path><circle id="ac-current" r="7"></circle>
+  </svg>
+  <div class="viz-row text-small"><span>■ Start</span><span>● Current state</span><span>◇ Target</span><span id="ac-puzzle"></span></div>
+  <div class="viz-controls">
+    <button type="button" class="btn" id="ac-prev">Previous</button><span id="ac-step" class="tabular-nums"></span><button type="button" class="btn btn-primary" id="ac-next">Next action</button>
+  </div>
+  <div id="ac-detail" aria-live="polite"></div>
+  <div id="ac-plan" class="text-small"></div>
+  <div id="ac-result" class="text-small"></div>
+  <script id="ac-data" type="application/json">{"proposal_number":4,"task":{"modulus":11,"start":[1,0],"goal":[2,1],"actions":["double_x","inc_y","swap","sum_x"],"max_steps":2,"witness":["double_x","inc_y"],"task_id":"be802d316b1de173024e86c9fcc2ed26e0d7e870388b7bbd6b29f3aa278b3cc0","family_id":"6de2da8eab01cc822d129affa59b1965fbbafed13a7d4769ef00ce7d5b9fed2f","origin":"qwen","depth":2,"render_seed":223004},"traces":[{"actions":["double_x","inc_y"],"states":[[1,0],[2,0],[2,1]],"label":"Proposer witness","status":"target reached","tokens":3563},{"actions":["double_x","inc_y"],"states":[[1,0],[2,0],[2,1]],"label":"Solver \u00b7 canonical \u00b7 1","status":"target reached","tokens":1559},{"actions":["inc_y","sum_x"],"states":[[1,0],[1,1],[2,1]],"label":"Solver \u00b7 canonical \u00b7 2","status":"target reached","tokens":2441},{"actions":["inc_y","double_x"],"states":[[1,0],[1,1],[2,1]],"label":"Solver \u00b7 canonical \u00b7 3","status":"target reached","tokens":3721},{"actions":["double_x","inc_y"],"states":[[1,0],[2,0],[2,1]],"label":"Solver \u00b7 canonical \u00b7 4","status":"target reached","tokens":2544},{"actions":["double_x","inc_y"],"states":[[1,0],[2,0],[2,1]],"label":"Solver \u00b7 renamed \u00b7 1","status":"target reached","tokens":2285},{"actions":["double_x","inc_y"],"states":[[1,0],[2,0],[2,1]],"label":"Solver \u00b7 renamed \u00b7 2","status":"target reached","tokens":1788}],"source":"runs/challenge-proposals-qwen and runs/challenge-solve-qwen","training":false}</script>
+</div>
+<style>
+#agent-challenge .ac-map { display:block; width:100%; }
+#agent-challenge .ac-map text { fill:var(--foreground); font-size:12px; }
+#agent-challenge #ac-path { stroke:var(--viz-series-1); stroke-width:2; }
+#agent-challenge #ac-current { fill:var(--viz-series-1); transition:cx .2s ease,cy .2s ease; }
+#agent-challenge #ac-start { fill:var(--foreground); }
+#agent-challenge #ac-target { fill:color-mix(in srgb,var(--viz-series-2) 15%,transparent); stroke:var(--viz-series-2); stroke-width:2; }
+#agent-challenge #ac-plan { overflow-wrap:anywhere; margin-top:8px; }
+@media (prefers-reduced-motion:reduce) { #agent-challenge #ac-current { transition:none; } }
+</style>
+<script>
+(() => {
+  const root=document.getElementById('agent-challenge');
+  const data=JSON.parse(root.querySelector('#ac-data').textContent);
+  if(!data.task)return;
+  const get=id=>root.querySelector('#ac-'+id), svg=root.querySelector('.ac-map');
+  const ns='http://www.w3.org/2000/svg';
+  let state={trace:0,step:0,revision:0};
+  function restore(saved){
+    const s=saved?.privateContent;
+    if(!s||s.task_id!==data.task.task_id||(s.revision||0)<state.revision)return;
+    if(Number.isInteger(s.trace)&&s.trace>=0&&s.trace<data.traces.length)state.trace=s.trace;
+    if(Number.isInteger(s.step))state.step=Math.max(0,Math.min(s.step,data.traces[state.trace].actions.length));
+    state.revision=s.revision||0;
+  }
+  restore(window.openai?.widgetState);
+  function save(){
+    state.revision=Math.max(Date.now(),state.revision+1);
+    window.openai?.setWidgetState?.({modelContent:{environment:'Agent-generated modular planning',task_id:data.task.task_id,trajectory:data.traces[state.trace].label,step:state.step,origin:'Qwen3-4B proposer'},privateContent:{...state,task_id:data.task.task_id}})?.catch(()=>{});
+  }
+  function element(tag,attrs,text){
+    const el=document.createElementNS(ns,tag);
+    for(const [k,v] of Object.entries(attrs))el.setAttribute(k,v);
+    if(text!==undefined)el.textContent=text;
+    return el;
+  }
+  data.traces.forEach((trace,i)=>{const option=document.createElement('option');option.value=i;option.textContent=trace.label;get('trace').append(option);});
+  function draw(){
+    const task=data.task, trace=data.traces[state.trace];
+    state.step=Math.min(state.step,trace.actions.length);
+    get('trace').value=state.trace;
+    const width=Math.max(280,root.clientWidth),height=Math.min(350,width+10);
+    svg.setAttribute('viewBox',`0 0 ${width} ${height}`);svg.setAttribute('height',height);
+    const points=data.traces.flatMap(t=>t.states).concat([task.start,task.goal]);
+    const xmin=Math.max(0,Math.min(...points.map(p=>p[0]))-1),xmax=Math.min(task.modulus-1,Math.max(...points.map(p=>p[0]))+1);
+    const ymin=Math.max(0,Math.min(...points.map(p=>p[1]))-1),ymax=Math.min(task.modulus-1,Math.max(...points.map(p=>p[1]))+1);
+    const left=42,right=24,top=22,bottom=42;
+    const unit=Math.min((width-left-right)/(xmax-xmin),(height-top-bottom)/(ymax-ymin));
+    const plotWidth=unit*(xmax-xmin),plotHeight=unit*(ymax-ymin);
+    svg.setAttribute('viewBox',`0 0 ${width} ${plotHeight+top+bottom}`);svg.setAttribute('height',plotHeight+top+bottom);
+    const x0=left+(width-left-right-plotWidth)/2;
+    const x=v=>x0+(v-xmin)*unit,y=v=>top+plotHeight-(v-ymin)*unit;
+    const grid=get('grid');grid.replaceChildren();
+    for(let a=xmin;a<=xmax;a++){
+      for(let b=ymin;b<=ymax;b++)grid.append(element('circle',{cx:x(a),cy:y(b),r:2,fill:'var(--border)'}));
+      grid.append(element('text',{x:x(a),y:top+plotHeight+21,'text-anchor':'middle'},a));
+    }
+    for(let b=ymin;b<=ymax;b++)grid.append(element('text',{x:x0-15,y:y(b)+4,'text-anchor':'end'},b));
+    grid.append(element('text',{x:x0+plotWidth/2,y:top+plotHeight+39,'text-anchor':'middle'},'x state'));
+    grid.append(element('text',{x:x0-33,y:top+plotHeight/2,transform:`rotate(-90 ${x0-33} ${top+plotHeight/2})`,'text-anchor':'middle'},'y state'));
+    get('path').setAttribute('d',trace.states.slice(0,state.step+1).map((p,i)=>`${i?'L':'M'}${x(p[0])},${y(p[1])}`).join(' '));
+    get('start').setAttribute('x',x(task.start[0])-4);get('start').setAttribute('y',y(task.start[1])-4);
+    const gx=x(task.goal[0]),gy=y(task.goal[1]);get('target').setAttribute('d',`M${gx},${gy-11} L${gx+11},${gy} L${gx},${gy+11} L${gx-11},${gy} Z`);
+    const current=trace.states[state.step];get('current').setAttribute('cx',x(current[0]));get('current').setAttribute('cy',y(current[1]));
+    get('valid').textContent=`Proposal ${data.proposal_number} · witness verified · shortest depth ${task.depth}`;
+    get('puzzle').textContent=`mod ${task.modulus} · (${task.start}) → (${task.goal})`;
+    get('step').textContent=`Step ${state.step} / ${trace.actions.length}`;
+    get('prev').disabled=state.step===0;get('next').disabled=state.step===trace.actions.length;
+    get('detail').textContent=state.step?`${trace.actions[state.step-1]} → (${current})`:`Starting state (${current})`;
+    get('plan').textContent=trace.actions.length?'Plan: '+trace.actions.join(' → '):'No completed final plan';
+    get('result').textContent=state.step===trace.actions.length?`Arbiter: ${trace.status} · ${trace.tokens} generated tokens`:'Arbiter: replay in progress';
+  }
+  get('trace').addEventListener('change',()=>{state.trace=Number(get('trace').value);state.step=0;draw();save();});
+  get('prev').addEventListener('click',()=>{state.step--;draw();save();});
+  get('next').addEventListener('click',()=>{state.step++;draw();save();});
+  window.addEventListener('openai:set_globals',event=>{if(event.detail?.globals?.widgetState){restore(event.detail.globals.widgetState);draw();}});
+  new ResizeObserver(draw).observe(root);draw();
+})();
+</script>

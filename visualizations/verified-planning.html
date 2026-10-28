@@ -1,0 +1,112 @@
+<div id="verified-planning">
+  <h2>Verified planning environment</h2>
+  <div class="viz-controls">
+    <label class="form-label">Recorded task<select class="form-select" id="vp-task"><option value="0">Depth 2</option><option value="1">Depth 3</option><option value="2" selected>Depth 4</option><option value="3">Depth 5</option></select></label>
+    <label class="form-label">Recorded rollout<select class="form-select" id="vp-rollout"><option>Successful rollout</option><option>Failed rollout</option></select></label>
+    <label class="form-label">Display labels<select class="form-select" id="vp-presentation"><option value="canonical">Canonical</option><option value="renamed_reordered">Renamed (same actions)</option></select></label>
+  </div>
+  <div class="viz-row text-small"><span>Qwen3 4B · development rollouts</span><span id="vp-puzzle" class="tabular-nums"></span></div>
+  <svg class="vp-map" role="img" aria-labelledby="vp-title vp-description">
+    <title id="vp-title">A tool plan moving through modular states</title>
+    <desc id="vp-description">Each point is an x,y state. A square marks the start, a diamond marks the target, and a filled circle marks the current state.</desc>
+    <g id="vp-grid"></g><path id="vp-path" fill="none"></path>
+    <g id="vp-past"></g><rect id="vp-start" width="8" height="8"></rect>
+    <path id="vp-target"></path><circle id="vp-current" r="7"></circle>
+  </svg>
+  <div class="viz-row text-small"><span>■ Start</span><span><span class="vp-current-key">●</span> Current state</span><span><span class="vp-target-key">◇</span> Target</span></div>
+  <div class="viz-controls">
+    <button type="button" class="btn" id="vp-back">Previous</button>
+    <span id="vp-step" class="tabular-nums"></span>
+    <button type="button" class="btn btn-primary" id="vp-next">Next action</button>
+  </div>
+  <div id="vp-detail" aria-live="polite" class="tabular-nums"></div>
+  <div id="vp-plan" class="text-small"></div>
+  <hr>
+  <div class="viz-row text-small tabular-nums"><span id="vp-reward"></span><span id="vp-rate"></span><span id="vp-frontier"></span></div>
+  <script type="application/json" id="vp-data">{"samples":[{"title":"Depth 2","task_id":"c1bcedb1c7255e37ebb7a8503ef48f6998bd5742e63c0f1de982f278b18cbe96","m":7,"start":[3,1],"goal":[2,3],"depth":2,"actions":["double_x","double_y","inc_x","swap"],"presentations":{"canonical":{"double_x":"tool_0","double_y":"tool_1","inc_x":"tool_2","swap":"tool_3"},"renamed_reordered":{"double_x":"lom","double_y":"bex","inc_x":"fep","swap":"dax"}},"attempts":16,"successes":14,"traces":{"Successful rollout":{"actions":["double_y","swap"],"states":[[3,1],[3,2],[2,3]],"attempt":0,"success":true},"Failed rollout":{"actions":["swap","double_y"],"states":[[3,1],[1,3],[1,6]],"attempt":5,"success":false}}},{"title":"Depth 3","task_id":"6da350da6d1d1b5138591363258ba18ee26927984850d7a4177e080b5053c32c","m":7,"start":[0,0],"goal":[2,1],"depth":3,"actions":["double_x","inc_x","inc_y","sum_y"],"presentations":{"canonical":{"double_x":"tool_0","inc_x":"tool_1","inc_y":"tool_2","sum_y":"tool_3"},"renamed_reordered":{"double_x":"dax","inc_x":"bex","inc_y":"kiv","sum_y":"wug"}},"attempts":16,"successes":2,"traces":{"Successful rollout":{"actions":["inc_x","sum_y","inc_x"],"states":[[0,0],[1,0],[1,1],[2,1]],"attempt":14,"success":true},"Failed rollout":{"actions":["inc_x","inc_x","sum_y"],"states":[[0,0],[1,0],[2,0],[2,2]],"attempt":5,"success":false}}},{"title":"Depth 4","task_id":"03ddfea514c002455708b67df5c69cb917fe6e0dc399187eb17a40874d4d4b6b","m":7,"start":[3,2],"goal":[6,6],"depth":4,"actions":["double_x","double_y","sum_x","sum_y"],"presentations":{"canonical":{"double_x":"tool_0","double_y":"tool_1","sum_x":"tool_2","sum_y":"tool_3"},"renamed_reordered":{"double_x":"zup","double_y":"bex","sum_x":"fep","sum_y":"kiv"}},"attempts":16,"successes":1,"traces":{"Successful rollout":{"actions":["double_y","double_x","sum_y","double_y"],"states":[[3,2],[3,4],[6,4],[6,3],[6,6]],"attempt":14,"success":true},"Failed rollout":{"actions":["double_y","double_x","sum_y","sum_x"],"states":[[3,2],[3,4],[6,4],[6,3],[2,3]],"attempt":0,"success":false}}},{"title":"Depth 5","task_id":"7b15add0b5694585d05c18ce7c919d44663747debc875bdfcdba85889b9aaa88","m":7,"start":[1,4],"goal":[6,3],"depth":5,"actions":["double_x","inc_x","inc_y","swap"],"presentations":{"canonical":{"double_x":"tool_0","inc_x":"tool_1","inc_y":"tool_2","swap":"tool_3"},"renamed_reordered":{"double_x":"wug","inc_x":"fep","inc_y":"lom","swap":"bex"}},"attempts":16,"successes":5,"traces":{"Successful rollout":{"actions":["inc_x","inc_x","swap","inc_x","inc_x"],"states":[[1,4],[2,4],[3,4],[4,3],[5,3],[6,3]],"attempt":8,"success":true},"Failed rollout":{"actions":["inc_x","inc_x","swap","inc_x","inc_y"],"states":[[1,4],[2,4],[3,4],[4,3],[5,3],[5,4]],"attempt":5,"success":false}}}],"rules":{"inc_x":"x = (x + 1) mod m; y is unchanged","inc_y":"y = (y + 1) mod m; x is unchanged","swap":"swap x and y","sum_x":"x = (x + y) mod m; y is unchanged","sum_y":"y = (x + y) mod m; x is unchanged","double_x":"x = (2 * x) mod m; y is unchanged","double_y":"y = (2 * y) mod m; x is unchanged"},"source":"runs/depth-candidates","model":"Qwen3 4B","note":"Recorded base-model development rollouts, not new held-out test tasks."}</script>
+</div>
+<style>
+#verified-planning .vp-map { width:100%; display:block; }
+#verified-planning .vp-map text { fill:var(--foreground); font-size:12px; }
+#verified-planning #vp-path { stroke:var(--viz-series-1); stroke-width:2; }
+#verified-planning #vp-current { fill:var(--viz-series-1); transition:cx .2s ease,cy .2s ease; }
+#verified-planning #vp-start { fill:var(--foreground); }
+#verified-planning #vp-target { fill:color-mix(in srgb,var(--viz-series-2) 18%,transparent); stroke:var(--viz-series-2); stroke-width:2; }
+#verified-planning #vp-plan { overflow-wrap:anywhere; margin-top:8px; }
+#verified-planning .vp-current-key { color:var(--viz-series-1); }
+#verified-planning .vp-target-key { color:var(--viz-series-2); }
+#verified-planning #vp-detail { min-height:2.5em; }
+@media (prefers-reduced-motion:reduce) { #verified-planning #vp-current { transition:none; } }
+</style>
+<script>
+(() => {
+  const root=document.getElementById('verified-planning');
+  const data=JSON.parse(root.querySelector('#vp-data').textContent);
+  const get=id=>root.querySelector('#vp-'+id);
+  const svg=root.querySelector('.vp-map');
+  const ns='http://www.w3.org/2000/svg';
+  const actionNames={inc_x:'Increment x',inc_y:'Increment y',double_x:'Double x',double_y:'Double y',sum_x:'Add y to x',sum_y:'Add x to y',swap:'Swap x and y'};
+  let state={task:2,rollout:'Successful rollout',presentation:'canonical',step:0,revision:0};
+  function restore(saved){
+    const s=saved?.privateContent;
+    if(!s || (s.revision||0)<state.revision)return;
+    state.revision=s.revision||0;
+    if(Number.isInteger(s.task)&&s.task>=0&&s.task<data.samples.length)state.task=s.task;
+    if(['Successful rollout','Failed rollout'].includes(s.rollout))state.rollout=s.rollout;
+    if(['canonical','renamed_reordered'].includes(s.presentation))state.presentation=s.presentation;
+    if(Number.isInteger(s.step))state.step=Math.max(0,Math.min(s.step,data.samples[state.task].depth));
+  }
+  restore(window.openai?.widgetState);
+  function save(){
+    state.revision=Math.max(Date.now(),state.revision+1);
+    const sample=data.samples[state.task];
+    window.openai?.setWidgetState?.({modelContent:{environment:'Verified modular planning',task_id:sample.task_id,rollout:state.rollout,step:state.step,presentation:state.presentation},privateContent:{...state}})?.catch(()=>{});
+  }
+  function element(tag,attrs,text){
+    const e=document.createElementNS(ns,tag);
+    Object.entries(attrs).forEach(([k,v])=>e.setAttribute(k,v));
+    if(text!==undefined)e.textContent=text;
+    return e;
+  }
+  function draw(){
+    const s=data.samples[state.task], trace=s.traces[state.rollout], labels=s.presentations[state.presentation];
+    state.step=Math.min(state.step,trace.actions.length);
+    const width=Math.max(280,root.clientWidth),height=Math.min(370,width+15);
+    svg.setAttribute('viewBox',`0 0 ${width} ${height}`);svg.setAttribute('height',height);
+    const left=48,right=26,top=24,bottom=42,side=Math.min(width-left-right,height-top-bottom);
+    const x0=left+(width-left-right-side)/2;
+    const x=v=>x0+v*side/(s.m-1),y=v=>top+side-v*side/(s.m-1);
+    const grid=get('grid');grid.replaceChildren();
+    for(let a=0;a<s.m;a++){
+      for(let b=0;b<s.m;b++)grid.append(element('circle',{cx:x(a),cy:y(b),r:2,fill:'var(--border)','data-tooltip':`State (${a}, ${b})`}));
+      grid.append(element('text',{x:x(a),y:top+side+22,'text-anchor':'middle'},a));
+      grid.append(element('text',{x:x0-16,y:y(a)+4,'text-anchor':'end'},a));
+    }
+    grid.append(element('text',{x:x0+side/2,y:height-4,'text-anchor':'middle'},'x state'));
+    grid.append(element('text',{x:x0-38,y:top+side/2,transform:`rotate(-90 ${x0-38} ${top+side/2})`,'text-anchor':'middle'},'y state'));
+    const path=trace.states.slice(0,state.step+1).map((p,i)=>`${i?'L':'M'}${x(p[0])},${y(p[1])}`).join(' ');
+    get('path').setAttribute('d',path);
+    get('past').replaceChildren(...trace.states.slice(0,state.step).map(p=>element('circle',{cx:x(p[0]),cy:y(p[1]),r:4,fill:'var(--viz-series-1)',opacity:.5})));
+    get('start').setAttribute('x',x(s.start[0])-4);get('start').setAttribute('y',y(s.start[1])-4);
+    const gx=x(s.goal[0]),gy=y(s.goal[1]);get('target').setAttribute('d',`M${gx},${gy-12} L${gx+12},${gy} L${gx},${gy+12} L${gx-12},${gy} Z`);
+    const current=trace.states[state.step];get('current').setAttribute('cx',x(current[0]));get('current').setAttribute('cy',y(current[1]));
+    get('puzzle').textContent=`mod ${s.m} · start (${s.start}) → target (${s.goal})`;
+    get('step').textContent=`Step ${state.step} / ${s.depth}`;
+    get('back').disabled=state.step===0;get('next').disabled=state.step===s.depth;
+    get('detail').textContent=state.step?`${labels[trace.actions[state.step-1]]} · ${actionNames[trace.actions[state.step-1]]} → (${current})`:`Starting state (${current})`;
+    get('plan').textContent='Plan: '+trace.actions.map((a,i)=>(i===state.step-1?'['+labels[a]+']':labels[a])).join(' → ');
+    get('reward').textContent=state.step===s.depth?`Verified reward: ${trace.success?1:0} · ${trace.success?'target reached':'wrong goal'}`:'Verified reward: pending';
+    get('rate').textContent=`Task solved ${s.successes}/${s.attempts} attempts`;
+    const p=s.successes/s.attempts;get('frontier').textContent=`Empirical frontier score: ${(4*p*(1-p)).toFixed(2)}`;
+    get('task').value=state.task;get('rollout').value=state.rollout;get('presentation').value=state.presentation;
+  }
+  get('task').addEventListener('change',e=>{state.task=Number(e.target.value);state.step=0;draw();save();});
+  get('rollout').addEventListener('change',e=>{state.rollout=e.target.value;state.step=0;draw();save();});
+  get('presentation').addEventListener('change',e=>{state.presentation=e.target.value;draw();save();});
+  get('back').addEventListener('click',()=>{state.step=Math.max(0,state.step-1);draw();save();});
+  get('next').addEventListener('click',()=>{state.step=Math.min(data.samples[state.task].depth,state.step+1);draw();save();});
+  window.addEventListener('openai:set_globals',event=>{if(event.detail?.globals?.widgetState){restore(event.detail.globals.widgetState);draw();}});
+  new ResizeObserver(draw).observe(root);
+  draw();
+})();
+</script>

@@ -1,0 +1,105 @@
+{
+  "unique_tasks": 6,
+  "calls": 24,
+  "by_variant": {
+    "renamed_reordered": {
+      "attempts": 12,
+      "success_rate": 0.9166666666666666,
+      "statuses": {
+        "solved": 11,
+        "truncated": 1
+      }
+    },
+    "canonical": {
+      "attempts": 12,
+      "success_rate": 0.9166666666666666,
+      "statuses": {
+        "solved": 11,
+        "illegal_action": 1
+      }
+    }
+  },
+  "paired_renamed_reordered_minus_canonical": {
+    "paired_tasks": 6,
+    "mean": 0.0,
+    "task_bootstrap_95_interval": [
+      0.0,
+      0.0
+    ],
+    "note": "Exploratory task-cluster bootstrap; a tiny pilot cannot establish a general effect."
+  },
+  "task_scores": [
+    {
+      "task_id": "e571740a4777bf388a048d5f6148cf40e7c2940e27bb79be8f639a6b899c687a",
+      "rates": {
+        "renamed_reordered": 0.5,
+        "canonical": 0.5
+      },
+      "failure_reward": 0.5,
+      "frontier_reward": 1.0,
+      "robust_frontier_reward": 1.0,
+      "presentation_range": 0.0
+    },
+    {
+      "task_id": "83e5536809dea752330ca6d953765880171c0336ed6548908f78724be6d789d8",
+      "rates": {
+        "canonical": 1.0,
+        "renamed_reordered": 1.0
+      },
+      "failure_reward": 0.0,
+      "frontier_reward": 0.0,
+      "robust_frontier_reward": 0.0,
+      "presentation_range": 0.0
+    },
+    {
+      "task_id": "5f861fe764fa1304b5b96b8ea24a6c8e5da0df64a111c770a4b88e1e88c160e7",
+      "rates": {
+        "canonical": 1.0,
+        "renamed_reordered": 1.0
+      },
+      "failure_reward": 0.0,
+      "frontier_reward": 0.0,
+      "robust_frontier_reward": 0.0,
+      "presentation_range": 0.0
+    },
+    {
+      "task_id": "ebbb4d951100737f47aa4a4392ed5b4f60e660ff4feeeb77e523c07233a12c6f",
+      "rates": {
+        "canonical": 1.0,
+        "renamed_reordered": 1.0
+      },
+      "failure_reward": 0.0,
+      "frontier_reward": 0.0,
+      "robust_frontier_reward": 0.0,
+      "presentation_range": 0.0
+    },
+    {
+      "task_id": "3a7398f384143c2bb322ba7281731632419bcfc464d0595a9515e95d199149dc",
+      "rates": {
+        "canonical": 1.0,
+        "renamed_reordered": 1.0
+      },
+      "failure_reward": 0.0,
+      "frontier_reward": 0.0,
+      "robust_frontier_reward": 0.0,
+      "presentation_range": 0.0
+    },
+    {
+      "task_id": "fd2cf7193abd6c8d504085e64c14b77fe381c4506677878ba6f2a74eabd58b41",
+      "rates": {
+        "canonical": 1.0,
+        "renamed_reordered": 1.0
+      },
+      "failure_reward": 0.0,
+      "frontier_reward": 0.0,
+      "robust_frontier_reward": 0.0,
+      "presentation_range": 0.0
+    }
+  ],
+  "proposals_attempted": 0,
+  "proposals_accepted": 0,
+  "elapsed_seconds": 430.16794225,
+  "training": false,
+  "complete": true,
+  "model_calls": 24
+}

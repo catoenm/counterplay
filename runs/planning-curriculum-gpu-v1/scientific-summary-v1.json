@@ -1,0 +1,92 @@
+{
+  "accounting": {
+    "all_old_reservations_and_eight_ledgers_unchanged": true,
+    "billing_settled": false,
+    "budget_sha256": "e25237fb67840264708282943671d3b2bc780d49f0a3659361bd6622e2570d5e",
+    "cumulative_commitment_usd": 243.576147678,
+    "old_original_guard_still_unresolved": true,
+    "original_new_reservation_usd": 90,
+    "pending_billing_retained_usd": 6,
+    "posted_partial_usage_usd": 0,
+    "unused_released_usd": 84,
+    "zero_posted_is_not_zero_cost": true
+  },
+  "at": "2026-10-25T10:46:37.313220+00:00",
+  "cleanup": {
+    "both_deleted_independent_404": true,
+    "gpu": "4f6c18ul5ptzri",
+    "guard": "zhyuuijjryt1wx",
+    "local_supervisor_and_watcher_exited": true,
+    "retrieved_committed_artifacts": 218
+  },
+  "comparison_run": false,
+  "evidence_sha256": {
+    "runs/cardinal-planning-curriculum-deployment-v1/independent-admission-review.json": "042270dccf1378c4e8659817b2b3212f2895596f6e1b53d87335326b4be92dd2",
+    "runs/cardinal-planning-curriculum-deployment-v1/independent-terminal-lifecycle-review.json": "9ff781dcecb95a0abaff10c3adc770f56406b887de6d32ae4ea843856236bedd",
+    "runs/cardinal-planning-curriculum-deployment-v1/scoped-accounting-application-review.json": "8fda2f31b121e59bed59454d0dc53536b7e985ae797d9b74523157345b1942f0",
+    "runs/cardinal-planning-curriculum-deployment-v1/scoped-accounting-applied.json": "08d6760342d32846f1273e72ff9adb50756e6af15738694d335ff79a278785b0",
+    "runs/cardinal-planning-curriculum-deployment-v1/terminal-scientific-review.json": "761351db28fbfdeb3e09195b6bed81734435340c15ebb6572a398f8430f27b71",
+    "runs/planning-curriculum-gpu-v1/admission/probe.json": "271c2577531ed2f074d8329cffdfbe2c60d9d60bc37b326b7c7c2435b65b3986",
+    "runs/planning-curriculum-gpu-v1/admission/signal-gate.json": "45cdc523bf38321a30b27c7b9a6fa65d81a7877d64bd6c3580dfcc9d134694ff",
+    "runs/planning-curriculum-gpu-v1/admission/timing-gate.json": "58535a990acd51f5337b040c2ad65c3ef33dfb442f08be9469dd3bf86451ca08",
+    "runs/planning-curriculum-gpu-v1/final-audit.json": "44462cda2c2db8343b75308d2ce32320766526017b35294ece94fe0f42ccfe01",
+    "runs/planning-curriculum-gpu-v1/manifest.json": "d2761dd55983d30844ec83da3bf54dbfea14578d496b5f47b9a65b550ce098b7",
+    "runs/planning-curriculum-gpu-v1/status.json": "3cf74c45196d21a5020310fd370ce0a32e2d03cd6773d4b996004d51fc308a93"
+  },
+  "heldout_evaluation_episodes": 0,
+  "kind": "planning_curriculum_scientific_summary_v1",
+  "manifest_sha256": "d2761dd55983d30844ec83da3bf54dbfea14578d496b5f47b9a65b550ce098b7",
+  "probe": {
+    "actual_elapsed_seconds": 40.14734025998041,
+    "decisions": 24,
+    "exact_restoration": true,
+    "passed": true,
+    "retained_updates": 0,
+    "temporary_optimizer_updates": 1
+  },
+  "recommended_next_step": "CPU-only tightening/proof of context bound and timing model plus a new-version audit receipt classifier regression; pre-register and independently review any future admission. Do not reinterpret this failed gate, resume this run or spend more under this result.",
+  "retained_optimizer_updates": 0,
+  "scientific_limits": [
+    "This screen provides reward contrast for a curriculum hypothesis, not evidence that curriculum training improves heldout performance.",
+    "No comparison or heldout draw occurred after timing failure.",
+    "One training-independent base screen; hard/easy scenario sets differ by intended depth.",
+    "Failed frozen final-audit result remains a limitation alongside separate detailed independent checks."
+  ],
+  "screen": {
+    "actions": 666,
+    "easy_pairs": 16,
+    "easy_successes": 11,
+    "easy_total": 32,
+    "episodes": 64,
+    "hard_successes_descriptive_only": 4,
+    "hard_total": 32,
+    "mixed_easy_pairs": 7,
+    "signal_passed": true
+  },
+  "state": "admission_timing_failed",
+  "timing_gate": {
+    "context_token_upper_bound": 1798,
+    "failure_reasons": [
+      "main_dollar_cap",
+      "aggregate_dollar_cap",
+      "immutable_aggregate_deadline"
+    ],
+    "interpretation": "Frozen conservative full-work/context projection, not actual spend or measured full-study duration. Worst-case quadratic context scaling, fixed overhead and 1.5x margin dominated; no overlap/zero-signal discounts.",
+    "passed": false,
+    "projected_main_hours": 53.5966979164592,
+    "projected_main_usd": 292.38593853247437,
+    "projected_total_usd": 298.82478070394416,
+    "remaining_hours": 11.819638580833333,
+    "required_remaining_hours_including_protected": 54.5966979164592,
+    "study_cap_usd": 90
+  },
+  "verification": {
+    "defect": "Auditor namespace guard misclassified legitimate actor-start-intent.json and learner-start-intent.json as RPC filenames. No frozen sources, raw evidence or failed audit changed; no audit entrypoint rerun.",
+    "independent_admission_review_passed": true,
+    "independent_terminal_lifecycle_review_passed": true,
+    "original_final_audit_passed": false,
+    "original_final_audit_preserved": true,
+    "original_final_audit_reason": "Noncanonical RPC filename",
+    "targeted_independent_scientific_review_passed": true
+  }
+}

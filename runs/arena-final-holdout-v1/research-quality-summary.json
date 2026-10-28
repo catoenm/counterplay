@@ -1,0 +1,385 @@
+{
+  "format_version": 1,
+  "kind": "descriptive_research_quality_summary",
+  "run": "/Users/mitchellcatoen/Documents/workspace/selfplay/runs/arena-final-holdout-v1",
+  "source_audit": {
+    "file": "analysis.json",
+    "sha256": "34cea3fcb07f919f908f23424c2e26a0738eff4ebaecd45248195d276a0a5f1e",
+    "complete": true,
+    "episodes_verified": 288,
+    "policy_transitions_verified": 3079
+  },
+  "manifest_sha256": "c7273175d589e91d63a0138f5e90a549c8ed4ed25693654916f224a0cf4344d4",
+  "rollout_files": {
+    "eval-chess-base.jsonl": {
+      "sha256": "98e8cf42e009b2d91baa6c3a1bc7a1b3b415de1213075e09d2d20d6425a0f653",
+      "episodes": 48
+    },
+    "eval-chess-heuristic.jsonl": {
+      "sha256": "b1c507d9485bf55b7ee45f03c239ac20c83a0efe78a1579d586c8c358dbfe79d",
+      "episodes": 48
+    },
+    "eval-market-base.jsonl": {
+      "sha256": "e8299a187046886e321c7b53d2343a20bd3bced7f309a467eb9d03dae46f21cd",
+      "episodes": 48
+    },
+    "eval-market-heuristic.jsonl": {
+      "sha256": "630cf1a45306813e739252fcd593b51c73dc157fbf48a02c23544522355a5662",
+      "episodes": 48
+    },
+    "eval-maze-base.jsonl": {
+      "sha256": "0f4ce1e6d237b2169e3f0dd2beda78babf07ab7ca89e32e245f287399bb1cf9f",
+      "episodes": 48
+    },
+    "eval-maze-heuristic.jsonl": {
+      "sha256": "776e897234b56cb2eddbd1ca017abdce50f5876829c7c8958b7bfe94e7fa86d6",
+      "episodes": 48
+    }
+  },
+  "method": {
+    "selection": "Every canonical episode listed in the completed independent audit; exact file hashes and row counts rechecked before aggregation. No trajectory or checkpoint selection.",
+    "termination": "Count recorded metrics.finish_reason; market absence of this field is labeled settlement because its fixed-horizon terminal valuation defines the game objective.",
+    "maze_completion": "Final candidate position equals final goal. Actual goal win additionally requires finish_reason=goal and positive candidate return. Distance-adjudicated positive returns are not labeled goal wins.",
+    "chess_checkmate": "metrics.checkmate plus candidate return sign identifies actual checkmate wins or losses. Material-adjudicated positive returns are not labeled checkmates.",
+    "market_absolute_pnl": "Use metrics.absolute_pnl[candidate_seat] directly, separately from relative tanh PnL-difference reward. Aggregate arithmetic mean and sign counts; no new profit estimate or financial claim.",
+    "denominators": "96 recorded games per environment;48 per candidate/environment;24 per candidate/opponent/environment. These descriptive game counts are correlated: there are12 paired scenario clusters per environment/opponent, shared across candidates and opponent conditions.",
+    "scope": "CPU-only aggregation of previously replay-verified saved records. No neural forward pass, API call, new match, or training."
+  },
+  "horizons": {
+    "market": 6,
+    "maze": 8,
+    "chess": 16
+  },
+  "environments": {
+    "market": {
+      "all_episodes": {
+        "episodes": 96,
+        "termination_reasons": {
+          "settlement": 96
+        },
+        "candidate_absolute_pnl": {
+          "sum": -752.0,
+          "mean": -7.833333333333333,
+          "positive_episodes": 32,
+          "zero_episodes": 3,
+          "negative_episodes": 61
+        },
+        "positive_relative_return_but_negative_absolute_pnl": 7
+      },
+      "by_candidate": {
+        "base": {
+          "all_opponents": {
+            "episodes": 48,
+            "termination_reasons": {
+              "settlement": 48
+            },
+            "candidate_absolute_pnl": {
+              "sum": -333.0,
+              "mean": -6.9375,
+              "positive_episodes": 18,
+              "zero_episodes": 2,
+              "negative_episodes": 28
+            },
+            "positive_relative_return_but_negative_absolute_pnl": 4
+          },
+          "by_opponent": {
+            "base": {
+              "episodes": 24,
+              "termination_reasons": {
+                "settlement": 24
+              },
+              "candidate_absolute_pnl": {
+                "sum": -165.0,
+                "mean": -6.875,
+                "positive_episodes": 8,
+                "zero_episodes": 2,
+                "negative_episodes": 14
+              },
+              "positive_relative_return_but_negative_absolute_pnl": 3
+            },
+            "heuristic": {
+              "episodes": 24,
+              "termination_reasons": {
+                "settlement": 24
+              },
+              "candidate_absolute_pnl": {
+                "sum": -168.0,
+                "mean": -7.0,
+                "positive_episodes": 10,
+                "zero_episodes": 0,
+                "negative_episodes": 14
+              },
+              "positive_relative_return_but_negative_absolute_pnl": 1
+            }
+          }
+        },
+        "cycle3": {
+          "all_opponents": {
+            "episodes": 48,
+            "termination_reasons": {
+              "settlement": 48
+            },
+            "candidate_absolute_pnl": {
+              "sum": -419.0,
+              "mean": -8.729166666666666,
+              "positive_episodes": 14,
+              "zero_episodes": 1,
+              "negative_episodes": 33
+            },
+            "positive_relative_return_but_negative_absolute_pnl": 3
+          },
+          "by_opponent": {
+            "base": {
+              "episodes": 24,
+              "termination_reasons": {
+                "settlement": 24
+              },
+              "candidate_absolute_pnl": {
+                "sum": -219.0,
+                "mean": -9.125,
+                "positive_episodes": 6,
+                "zero_episodes": 1,
+                "negative_episodes": 17
+              },
+              "positive_relative_return_but_negative_absolute_pnl": 3
+            },
+            "heuristic": {
+              "episodes": 24,
+              "termination_reasons": {
+                "settlement": 24
+              },
+              "candidate_absolute_pnl": {
+                "sum": -200.0,
+                "mean": -8.333333333333334,
+                "positive_episodes": 8,
+                "zero_episodes": 0,
+                "negative_episodes": 16
+              },
+              "positive_relative_return_but_negative_absolute_pnl": 0
+            }
+          }
+        }
+      }
+    },
+    "maze": {
+      "all_episodes": {
+        "episodes": 96,
+        "termination_reasons": {
+          "distance_adjudication_at_cap": 52,
+          "goal": 44
+        },
+        "candidate_goal_completions": 2,
+        "candidate_actual_goal_wins": 2,
+        "distance_adjudications": 52,
+        "initial_shortest_distance_counts": {
+          "4": 48,
+          "6": 40,
+          "8": 8
+        }
+      },
+      "by_candidate": {
+        "base": {
+          "all_opponents": {
+            "episodes": 48,
+            "termination_reasons": {
+              "distance_adjudication_at_cap": 27,
+              "goal": 21
+            },
+            "candidate_goal_completions": 1,
+            "candidate_actual_goal_wins": 1,
+            "distance_adjudications": 27,
+            "initial_shortest_distance_counts": {
+              "4": 24,
+              "6": 20,
+              "8": 4
+            }
+          },
+          "by_opponent": {
+            "base": {
+              "episodes": 24,
+              "termination_reasons": {
+                "distance_adjudication_at_cap": 22,
+                "goal": 2
+              },
+              "candidate_goal_completions": 1,
+              "candidate_actual_goal_wins": 1,
+              "distance_adjudications": 22,
+              "initial_shortest_distance_counts": {
+                "4": 12,
+                "6": 10,
+                "8": 2
+              }
+            },
+            "heuristic": {
+              "episodes": 24,
+              "termination_reasons": {
+                "distance_adjudication_at_cap": 5,
+                "goal": 19
+              },
+              "candidate_goal_completions": 0,
+              "candidate_actual_goal_wins": 0,
+              "distance_adjudications": 5,
+              "initial_shortest_distance_counts": {
+                "4": 12,
+                "6": 10,
+                "8": 2
+              }
+            }
+          }
+        },
+        "cycle3": {
+          "all_opponents": {
+            "episodes": 48,
+            "termination_reasons": {
+              "distance_adjudication_at_cap": 25,
+              "goal": 23
+            },
+            "candidate_goal_completions": 1,
+            "candidate_actual_goal_wins": 1,
+            "distance_adjudications": 25,
+            "initial_shortest_distance_counts": {
+              "4": 24,
+              "6": 20,
+              "8": 4
+            }
+          },
+          "by_opponent": {
+            "base": {
+              "episodes": 24,
+              "termination_reasons": {
+                "distance_adjudication_at_cap": 21,
+                "goal": 3
+              },
+              "candidate_goal_completions": 1,
+              "candidate_actual_goal_wins": 1,
+              "distance_adjudications": 21,
+              "initial_shortest_distance_counts": {
+                "4": 12,
+                "6": 10,
+                "8": 2
+              }
+            },
+            "heuristic": {
+              "episodes": 24,
+              "termination_reasons": {
+                "distance_adjudication_at_cap": 4,
+                "goal": 20
+              },
+              "candidate_goal_completions": 0,
+              "candidate_actual_goal_wins": 0,
+              "distance_adjudications": 4,
+              "initial_shortest_distance_counts": {
+                "4": 12,
+                "6": 10,
+                "8": 2
+              }
+            }
+          }
+        }
+      }
+    },
+    "chess": {
+      "all_episodes": {
+        "episodes": 96,
+        "termination_reasons": {
+          "checkmate": 3,
+          "claimed_threefold_repetition": 5,
+          "insufficient_material": 3,
+          "material_adjudication_at_cap": 85
+        },
+        "candidate_checkmate_wins": 0,
+        "candidate_checkmate_losses": 3,
+        "material_adjudications": 85,
+        "actual_rule_draws": 8
+      },
+      "by_candidate": {
+        "base": {
+          "all_opponents": {
+            "episodes": 48,
+            "termination_reasons": {
+              "checkmate": 1,
+              "claimed_threefold_repetition": 1,
+              "insufficient_material": 2,
+              "material_adjudication_at_cap": 44
+            },
+            "candidate_checkmate_wins": 0,
+            "candidate_checkmate_losses": 1,
+            "material_adjudications": 44,
+            "actual_rule_draws": 3
+          },
+          "by_opponent": {
+            "base": {
+              "episodes": 24,
+              "termination_reasons": {
+                "insufficient_material": 2,
+                "material_adjudication_at_cap": 22
+              },
+              "candidate_checkmate_wins": 0,
+              "candidate_checkmate_losses": 0,
+              "material_adjudications": 22,
+              "actual_rule_draws": 2
+            },
+            "heuristic": {
+              "episodes": 24,
+              "termination_reasons": {
+                "checkmate": 1,
+                "claimed_threefold_repetition": 1,
+                "material_adjudication_at_cap": 22
+              },
+              "candidate_checkmate_wins": 0,
+              "candidate_checkmate_losses": 1,
+              "material_adjudications": 22,
+              "actual_rule_draws": 1
+            }
+          }
+        },
+        "cycle3": {
+          "all_opponents": {
+            "episodes": 48,
+            "termination_reasons": {
+              "checkmate": 2,
+              "claimed_threefold_repetition": 4,
+              "insufficient_material": 1,
+              "material_adjudication_at_cap": 41
+            },
+            "candidate_checkmate_wins": 0,
+            "candidate_checkmate_losses": 2,
+            "material_adjudications": 41,
+            "actual_rule_draws": 5
+          },
+          "by_opponent": {
+            "base": {
+              "episodes": 24,
+              "termination_reasons": {
+                "insufficient_material": 1,
+                "material_adjudication_at_cap": 23
+              },
+              "candidate_checkmate_wins": 0,
+              "candidate_checkmate_losses": 0,
+              "material_adjudications": 23,
+              "actual_rule_draws": 1
+            },
+            "heuristic": {
+              "episodes": 24,
+              "termination_reasons": {
+                "checkmate": 2,
+                "claimed_threefold_repetition": 4,
+                "material_adjudication_at_cap": 18
+              },
+              "candidate_checkmate_wins": 0,
+              "candidate_checkmate_losses": 2,
+              "material_adjudications": 18,
+              "actual_rule_draws": 4
+            }
+          }
+        }
+      }
+    }
+  },
+  "limitations": [
+    "Maze distance caps and chess material caps are adjudications, not actual game wins.",
+    "Market relative outperformance can coexist with negative absolute PnL.",
+    "One training run, a narrow legal-action policy, and these fixed opponents do not establish general reasoning transfer or continual improvement.",
+    "All counts summarize the prescribed episodes; they are not independent Bernoulli trials."
+  ]
+}

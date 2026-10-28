@@ -1,0 +1,29 @@
+# Thinking enabled challenge calibration
+
+21 October 2026. Before further training, test whether frozen models can propose verified planning challenges and solve each other's tasks. The existing adapter study remains incomplete and paused. This calibration changes no weights and cannot establish self-play learning.
+
+## Design frozen before collection
+
+Use the pinned local `mlx-community/Qwen3-4B-4bit` snapshot `4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25`, with thinking enabled, temperature 0.6, top-p 0.95 and top-k 20. Allow 4096 generated tokens including reasoning. Batch up to four independent contexts with request-specific random streams. Constrain the final solver answer to legal JSON action sequences after reasoning ends; the grammar receives only tool labels and the step budget, never the goal, state or witness. Proposals use free JSON output and exact structural validation.
+
+The proposed frontier arm is OpenAI `gpt-6-astra`, standard service, medium reasoning, 4096 total output tokens, no tools, no conversation state, and strict JSON schema for final solver answers. Account availability is unconfirmed. Record the returned model identifier; the official page currently exposes an alias rather than a dated snapshot. If another provider is chosen, record its settings and pricing before its first call. Model-specific sampling and reasoning implementations differ: this is a comparison of configurations, not an isolated model-size experiment. Equal output caps do not match actual tokens, compute, or tokenizer units.
+
+Freeze six procedural tasks, two each at exact shortest depths 2, 4 and 6, modulus 11, four available actions. Exclude task families from all existing experiment and run task files, including the unfinished training study's held-out sets. These new tasks are development calibration only.
+
+Each model attempts six proposals, requesting depths 2, 4, 6, 2, 4, 6. Supply previous accepted proposals for diversity but no solver outcome feedback in this first screening. The proposer must supply a claimed goal and a witness reaching it in exactly the requested step budget. The arbiter executes the witness without repairing proposals. Record correctness validity, actual BFS shortest depth, requested-depth compliance, and duplicate/family overlap separately. Only valid, nonduplicate tasks with shortest depth at least two enter the solver pool. A too-easy valid proposal remains in the proposal statistics. Freeze each proposal pool before its solver evaluations.
+
+Both models solve the union of procedural, Qwen-proposed and frontier-proposed accepted tasks, with four canonical attempts and two renamed/reordered attempts each. Solver contexts contain only the public task, action rules and output format; no proposer text, witness, previous solution or previous attempt. A Qwen thinking-disabled arm solves the six procedural controls with the same cap and final grammar. Qwen generation seeds are fixed; API samples are independent requests without a claimed reproducible seed. Never replace an unfavorable completed attempt with a retry. Preserve partial runs and audit hashes on resume.
+
+## Metrics and admission gate
+
+Report proposal validity, distinct accepted families, requested versus actual depths, action-set diversity, per-source and per-depth verified solver success, tasks solved at least once, canonical mixed-outcome tasks, presentation effects, truncation/format/illegal-action failures, actual input/output tokens, time and cost. Bootstrap comparisons by task, not by individual attempt; small task counts remain exploratory. Four attempts give a noisy difficulty estimate and two renamed attempts are only a presentation diagnostic.
+
+A promising candidate pool has at least four accepted distinct proposals per model, spans at least two shortest-depth levels, and contains at least two canonical mixed-outcome tasks for a target solver whose failed attempts are completed legal wrong-goal plans. Truncation and formatting failures do not qualify a task as useful difficulty. This is a screening heuristic, not statistical proof of a curriculum benefit. Any candidates used for curriculum selection need independent resampling before training. If the stronger solver solves everything, report a ceiling and expand environment difficulty in a separately recorded calibration; do not reinterpret it as a failed self-play idea.
+
+## Cost and reproducibility
+
+Local inference incurs no cloud charge. The approved cumulative external pilot cap remains $100; reserve at most $35 for this initial API comparison (up to 114 calls with six accepted proposals per model). Use a persistent ledger that reserves a conservative per-request maximum before sending, retains reservations for unknown outcomes, counts reasoning tokens as output, prevents concurrent spend races, and never automatically retries. Keep the remainder available for a separately assessed follow-up. No cloud training machines are provisioned.
+
+The official Astra standard pricing checked on 21 October is $10 per million input tokens and $50 per million output tokens; cache writes can cost $12.50 per million. Use $12.50 input pricing conservatively for admission/accounting, without assuming discounts. Limit each serialized request body to 6000 UTF-8 bytes and reserve that many input-token units plus a 1024-token overhead allowance, and all 4096 output tokens. This is deliberately conservative for these small text requests; retain provider usage and stop on an accounting overrun. Account billing is authoritative; this local ledger covers only this project's requests.
+
+References: [model and pricing](https://developers.openai.com/api/docs/models/gpt-6-astra), [reasoning tokens and output limits](https://developers.openai.com/api/docs/guides/reasoning), [structured output](https://developers.openai.com/api/docs/guides/structured-outputs).

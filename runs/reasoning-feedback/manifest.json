@@ -1,0 +1,33 @@
+{
+  "config": {
+    "out": "runs/reasoning-feedback",
+    "model": "mlx-community/Qwen3-4B-4bit",
+    "revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+    "proposals": 8,
+    "attempts": 2,
+    "max_tokens": 4096,
+    "max_minutes": 20.0,
+    "max_calls": 40,
+    "seed": 3059,
+    "prompt_version": "v2",
+    "temperature": 0.6,
+    "variants": "canonical",
+    "thinking": true
+  },
+  "model": {
+    "model": "mlx-community/Qwen3-4B-4bit",
+    "snapshot": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+    "backend": "mlx",
+    "thinking": true,
+    "top_k": 20
+  },
+  "training": false,
+  "adaptation": "proposer context only",
+  "source_sha256": {
+    "pilot.py": "e706ee06462725161226a8e8d11704908f64e917bb0d836642820b5624000f38",
+    "feedback.py": "a5f0109c736c76fe77b591cdfda47885958a2919ac55d22d2d4702d13221aeec",
+    "__init__.py": "54b3c9dd5c0cc6221ed5af3bcaae9445ced78d30114e5c79b32833ce6d37f495",
+    "dataset.py": "b5a99b1070e4b8aba6cffc771552419f2aff16f67981f8bea219a1b059332b2d",
+    "environment.py": "ec6d2f589bc32acc0c9cd945f68de68a2af40d089d5873a622b8f92d64ca4667"
+  }
+}

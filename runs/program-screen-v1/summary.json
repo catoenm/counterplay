@@ -1,0 +1,59 @@
+{
+  "complete": true,
+  "screen": "JSON-AST controller authoring",
+  "training": false,
+  "valid_programs": 0,
+  "attempts": 4,
+  "model_matches": 0,
+  "generations": [
+    {
+      "sample_id": "controller-1",
+      "reasoning_mode": "high",
+      "response_file": "generation-1.json",
+      "finish_reason": "length",
+      "cost_usd": 0.0438594,
+      "completion_tokens": 16384,
+      "source_bytes": 0,
+      "valid": false,
+      "failure": "reasoning_truncation"
+    },
+    {
+      "sample_id": "controller-2",
+      "reasoning_mode": "high",
+      "response_file": "generation-2.json",
+      "finish_reason": "length",
+      "cost_usd": 0.0429378,
+      "completion_tokens": 16384,
+      "source_bytes": 0,
+      "valid": false,
+      "failure": "reasoning_truncation"
+    },
+    {
+      "sample_id": "controller-off-1",
+      "reasoning_mode": "off",
+      "response_file": "generation-off-1.json",
+      "finish_reason": "stop",
+      "cost_usd": 0.0031473,
+      "completion_tokens": 765,
+      "source_bytes": 2056,
+      "valid": false,
+      "failure": "ProgramValidationError",
+      "detail": "invalid bounded program"
+    },
+    {
+      "sample_id": "controller-off-2",
+      "reasoning_mode": "off",
+      "response_file": "generation-off-2.json",
+      "finish_reason": "stop",
+      "cost_usd": 0.0031955,
+      "completion_tokens": 1138,
+      "source_bytes": 3011,
+      "valid": false,
+      "failure": "ProgramValidationError",
+      "detail": "invalid bounded program"
+    }
+  ],
+  "source_unchanged": true,
+  "new_api_cost_usd": 0.09314,
+  "interpretation": "No executable model controller; high reasoning exhausted token budget, disabled reasoning returned invalid JSON. These are authoring failures, not game-strength results."
+}
